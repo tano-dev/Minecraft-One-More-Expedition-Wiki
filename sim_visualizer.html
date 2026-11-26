@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expedition Sim Visualizer — Enchantment Analytics</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --surface: #131924;
+      --surface-2: #1a2232;
+      --border: #263147;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --green: #3fb950;
+      --yellow: #d29922;
+      --purple: #bc8cff;
+      --pink: #f778ba;
+      --red: #f85149;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+    .dropzone {
+      border: 2px dashed var(--border);
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 28px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      margin-bottom: 24px;
+    }
+    .dropzone:hover, .dropzone.dragover {
+      border-color: var(--accent);
+      background: var(--surface-2);
+    }
+    .dropzone strong { color: var(--accent); }
+    .dropzone p { margin: 6px 0 0; color: var(--muted); font-size: 0.88rem; }
+    input[type="file"] { display: none; }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .kpi {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .kpi-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .kpi-value {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-top: 4px;
+      color: var(--text);
+      word-break: break-word;
+    }
+
+    .charts-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 1024px) {
+      .charts-grid { grid-template-columns: 1fr; }
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    .chart-scroll {
+      position: relative;
+      width: 100%;
+      overflow-y: auto;
+      max-height: 720px;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+    .search-input {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      min-width: 260px;
+      outline: none;
+    }
+    .search-input:focus { border-color: var(--accent); }
+    .btn {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+    th, td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      color: var(--muted);
+      font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+    }
+    th:hover { color: var(--accent); }
+    tr:hover td { background: rgba(88, 166, 255, 0.06); }
+    .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: rgba(88, 166, 255, 0.14);
+      color: var(--accent);
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Expedition Sim Visualizer</h1>
+        <div class="subtitle">Phân tích & trực quan hóa kết quả giả lập từ <code>/sim enchant</code> (Dark Theme)</div>
+      </div>
+      <div>
+        <button class="btn" id="pickBtn">Chọn file .json / .csv</button>
+      </div>
+    </header>
+
+    <div class="dropzone" id="dropzone">
+      <div>Kéo & thả file <strong>.json</strong> hoặc <strong>.csv</strong> từ thư mục <code>sim_output/</code> vào đây</div>
+      <p>Hoặc click để chọn file (hỗ trợ cả JSON đầy đủ lẫn CSV xuất từ <code>/sim enchant</code>)</p>
+      <input type="file" id="fileInput" accept=".json,.csv" />
+    </div>
+
+    <div id="dashboard" class="hidden">
+      <div class="kpi-grid" id="kpiGrid"></div>
+
+      <div class="charts-grid">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Tỉ lệ ra từng Enchantment (%) — Phân tách theo Level</h2>
+          </div>
+          <div class="chart-scroll">
+            <canvas id="barChart"></canvas>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Phân bố Level tổng thể</h2>
+          </div>
+          <div style="position: relative; height: 320px;">
+            <canvas id="levelChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="toolbar">
+          <h2 class="card-title">Bảng chi tiết</h2>
+          <input type="text" class="search-input" id="searchInput" placeholder="Tìm enchantment ID..." />
+        </div>
+        <div style="overflow-x: auto;">
+          <table id="dataTable">
+            <thead>
+              <tr id="tableHead"></tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const LEVEL_COLORS = [
+      '#58a6ff', // Lv 1
+      '#3fb950', // Lv 2
+      '#d29922', // Lv 3
+      '#bc8cff', // Lv 4
+      '#f778ba', // Lv 5
+      '#ff7b72', // Lv 6+
+    ];
+
+    let barChartInstance = null;
+    let levelChartInstance = null;
+    let currentData = null;
+    let sortKey = 'rate_percent';
+    let sortAsc = false;
+
+    const dropzone = document.getElementById('dropzone');
+    const fileInput = document.getElementById('fileInput');
+    const pickBtn = document.getElementById('pickBtn');
+    const dashboard = document.getElementById('dashboard');
+    const searchInput = document.getElementById('searchInput');
+
+    pickBtn.addEventListener('click', () => fileInput.click());
+    dropzone.addEventListener('click', () => fileInput.click());
+    dropzone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropzone.classList.add('dragover');
+    });
+    dropzone.addEventListener('dragleave', () => dropzone.classList.remove('dragover'));
+    dropzone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropzone.classList.remove('dragover');
+      if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+    });
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files.length) handleFile(e.target.files[0]);
+    });
+    searchInput.addEventListener('input', () => renderTable());
+
+    function handleFile(file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const text = e.target.result;
+        if (file.name.toLowerCase().endsWith('.json')) {
+          currentData = parseSimJson(JSON.parse(text), file.name);
+        } else {
+          currentData = parseSimCsv(text, file.name);
+        }
+        renderDashboard();
+      };
+      reader.readAsText(file, 'utf-8');
+    }
+
+    function parseSimJson(json, fileName) {
+      let maxLv = 1;
+      const rows = (json.results || []).map(r => {
+        const levels = {};
+        for (const [k, v] of Object.entries(r.levels || {})) {
+          const lv = parseInt(k, 10);
+          if (lv > maxLv) maxLv = lv;
+          levels[lv] = v;
+        }
+        return {
+          id: r.id,
+          count: r.count,
+          rate_percent: r.rate_percent,
+          levels
+        };
+      });
+      return {
+        fileName,
+        item: json.item || 'N/A',
+        rolls: json.rolls || 0,
+        enchant_level: json.enchant_level ?? 'N/A',
+        avg_enchants_per_roll: json.avg_enchants_per_roll ?? null,
+        empty_rolls: json.empty_rolls ?? null,
+        elapsed_ms: json.elapsed_ms ?? null,
+        maxLv,
+        rows
+      };
+    }
+
+    function parseSimCsv(csv, fileName) {
+      const lines = csv.trim().split(/\r?\n/);
+      const headers = lines[0].split(',').map(h => h.trim());
+      const lvCols = headers.filter(h => /^lv\d+$/.test(h)).map(h => parseInt(h.slice(2), 10));
+      const maxLv = lvCols.length ? Math.max(...lvCols) : 1;
+
+      const rows = [];
+      let totalRollsApprox = 0;
+      for (let i = 1; i < lines.length; i++) {
+        if (!lines[i].trim()) continue;
+        const cols = lines[i].split(',');
+        const id = cols[0];
+        const count = parseInt(cols[1], 10);
+        const rate_percent = parseFloat(cols[2]);
+        if (!totalRollsApprox && rate_percent > 0) {
+          totalRollsApprox = Math.round((count * 100) / rate_percent);
+        }
+        const levels = {};
+        for (let lv = 1; lv <= maxLv; lv++) {
+          const idx = headers.indexOf('lv' + lv);
+          if (idx !== -1) {
+            const val = parseInt(cols[idx], 10) || 0;
+            if (val > 0) levels[lv] = val;
+          }
+        }
+        rows.push({ id, count, rate_percent, levels });
+      }
+      return {
+        fileName,
+        item: fileName,
+        rolls: totalRollsApprox || 'N/A',
+        enchant_level: 'N/A',
+        avg_enchants_per_roll: null,
+        empty_rolls: null,
+        elapsed_ms: null,
+        maxLv,
+        rows
+      };
+    }
+
+    function renderDashboard() {
+      dashboard.classList.remove('hidden');
+      renderKpis();
+      renderBarChart();
+      renderLevelChart();
+      renderTable();
+    }
+
+    function renderKpis() {
+      const d = currentData;
+      const kpis = [
+        { label: 'Item', value: d.item },
+        { label: 'Số lần Roll', value: typeof d.rolls === 'number' ? d.rolls.toLocaleString('vi-VN') : d.rolls },
+        { label: 'Enchant Level', value: d.enchant_level },
+        { label: 'Số Enchant Unique', value: d.rows.length },
+        { label: 'TB Enchant / Roll', value: d.avg_enchants_per_roll !== null ? d.avg_enchants_per_roll.toFixed(2) : '—' },
+        { label: 'Thời gian chạy', value: d.elapsed_ms !== null ? `${d.elapsed_ms} ms` : '—' },
+      ];
+      document.getElementById('kpiGrid').innerHTML = kpis.map(k => `
+        <div class="kpi">
+          <div class="kpi-label">${k.label}</div>
+          <div class="kpi-value">${k.value}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderBarChart() {
+      const d = currentData;
+      const sorted = [...d.rows].sort((a, b) => b.rate_percent - a.rate_percent);
+      const labels = sorted.map(r => r.id);
+
+      const datasets = [];
+      for (let lv = 1; lv <= d.maxLv; lv++) {
+        datasets.push({
+          label: `Lv ${lv}`,
+          data: sorted.map(r => {
+            const c = r.levels[lv] || 0;
+            return r.count > 0 ? (c / r.count) * r.rate_percent : 0;
+          }),
+          backgroundColor: LEVEL_COLORS[(lv - 1) % LEVEL_COLORS.length],
+          borderRadius: 2,
+        });
+      }
+
+      const canvas = document.getElementById('barChart');
+      canvas.parentElement.style.height = Math.max(360, labels.length * 26 + 60) + 'px';
+
+      if (barChartInstance) barChartInstance.destroy();
+      barChartInstance = new Chart(canvas, {
+        type: 'bar',
+        data: { labels, datasets },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              stacked: true,
+              grid: { color: '#263147' },
+              ticks: { color: '#8b949e', callback: v => v + '%' },
+              title: { display: true, text: 'Tỉ lệ xuất hiện (%)', color: '#8b949e' }
+            },
+            y: {
+              stacked: true,
+              grid: { display: false },
+              ticks: { color: '#e6edf3', font: { size: 11 } }
+            }
+          },
+          plugins: {
+            legend: { labels: { color: '#e6edf3' } },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.x.toFixed(2)}%`
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function renderLevelChart() {
+      const d = currentData;
+      const totals = [];
+      const labels = [];
+      for (let lv = 1; lv <= d.maxLv; lv++) {
+        labels.push(`Level ${lv}`);
+        totals.push(d.rows.reduce((sum, r) => sum + (r.levels[lv] || 0), 0));
+      }
+
+      if (levelChartInstance) levelChartInstance.destroy();
+      levelChartInstance = new Chart(document.getElementById('levelChart'), {
+        type: 'doughnut',
+        data: {
+          labels,
+          datasets: [{
+            data: totals,
+            backgroundColor: labels.map((_, i) => LEVEL_COLORS[i % LEVEL_COLORS.length]),
+            borderColor: '#131924',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'bottom', labels: { color: '#e6edf3' } }
+          }
+        }
+      });
+    }
+
+    function renderTable() {
+      const d = currentData;
+      const q = searchInput.value.trim().toLowerCase();
+
+      const head = document.getElementById('tableHead');
+      let headHtml = `
+        <th data-key="id">Enchantment ID</th>
+        <th data-key="count" class="num">Số lần</th>
+        <th data-key="rate_percent" class="num">Tỉ lệ (%)</th>
+      `;
+      for (let lv = 1; lv <= d.maxLv; lv++) {
+        headHtml += `<th data-key="lv${lv}" class="num">Lv ${lv}</th>`;
+      }
+      head.innerHTML = headHtml;
+
+      head.querySelectorAll('th').forEach(th => {
+        th.addEventListener('click', () => {
+          const k = th.dataset.key;
+          if (sortKey === k) sortAsc = !sortAsc;
+          else { sortKey = k; sortAsc = k === 'id'; }
+          renderTable();
+        });
+      });
+
+      const filtered = d.rows.filter(r => r.id.toLowerCase().includes(q));
+      filtered.sort((a, b) => {
+        let va, vb;
+        if (sortKey === 'id') { va = a.id; vb = b.id; return sortAsc ? va.localeCompare(vb) : vb.localeCompare(va); }
+        if (sortKey.startsWith('lv')) {
+          const lv = parseInt(sortKey.slice(2), 10);
+          va = a.levels[lv] || 0; vb = b.levels[lv] || 0;
+        } else {
+          va = a[sortKey]; vb = b[sortKey];
+        }
+        return sortAsc ? va - vb : vb - va;
+      });
+
+      document.getElementById('tableBody').innerHTML = filtered.map(r => {
+        let lvCells = '';
+        for (let lv = 1; lv <= d.maxLv; lv++) {
+          lvCells += `<td class="num">${(r.levels[lv] || 0).toLocaleString('vi-VN')}</td>`;
+        }
+        return `
+          <tr>
+            <td><code>${r.id}</code></td>
+            <td class="num">${r.count.toLocaleString('vi-VN')}</td>
+            <td class="num"><span class="pill">${r.rate_percent.toFixed(2)}%</span></td>
+            ${lvCells}
+          </tr>
+        `;
+      }).join('');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fishing Wiki — One More Expedition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #0b0f17;
+      --surface: rgba(18, 24, 36, 0.88);
+      --surface-solid: #131926;
+      --surface-elevated: #1a2233;
+      --surface-hover: #212b40;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.16);
+
+      --mythic: #ff55ff;
+      --mythic-soft: rgba(255, 85, 255, 0.14);
+      --mythic-border: rgba(255, 85, 255, 0.45);
+
+      --special: #ff5555;
+      --special-soft: rgba(255, 85, 85, 0.14);
+      --special-border: rgba(255, 85, 85, 0.45);
+
+      --gold: #ffaa00;
+      --gold-soft: rgba(255, 170, 0, 0.14);
+      --gold-border: rgba(255, 170, 0, 0.42);
+
+      --epic: #e879f9;
+      --epic-soft: rgba(232, 121, 249, 0.13);
+      --epic-border: rgba(232, 121, 249, 0.38);
+
+      --rare: #38bdf8;
+      --rare-soft: rgba(56, 189, 248, 0.13);
+      --rare-border: rgba(56, 189, 248, 0.38);
+
+      --uncommon: #4ade80;
+      --uncommon-soft: rgba(74, 222, 128, 0.13);
+      --uncommon-border: rgba(74, 222, 128, 0.38);
+
+      --common: #cbd5e1;
+      --common-soft: rgba(148, 163, 184, 0.12);
+      --common-border: rgba(148, 163, 184, 0.28);
+
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --accent: #0ea5e9;
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --radius-sm: 8px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text-main);
+      background-color: var(--bg-base);
+      min-height: 100vh;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .bg-fixed {
+      position: fixed;
+      inset: 0;
+      z-index: -10;
+      pointer-events: none;
+      background: #0b0f17 url('assets/bg.jpg') no-repeat center center / cover;
+    }
+    .bg-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: -9;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(14, 165, 233, 0.11), transparent 45%),
+        radial-gradient(circle at 82% 20%, rgba(232, 121, 249, 0.10), transparent 45%),
+        linear-gradient(180deg, rgba(10, 14, 22, 0.82) 0%, rgba(10, 14, 22, 0.94) 55%, rgba(9, 12, 19, 0.98) 100%);
+    }
+
+    /* Sticky Top Navbar */
+    .header-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 28px;
+      background: rgba(11, 15, 23, 0.90);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(56, 189, 248, 0.35));
+    }
+
+    .brand-text h1 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #38bdf8;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+    }
+
+    .brand-text span {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .header-nav-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 8px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 700;
+      transition: all 0.18s ease;
+    }
+    .nav-btn:hover {
+      background: var(--surface-hover);
+      border-color: var(--border-strong);
+      transform: translateY(-1px);
+    }
+
+    .container {
+      max-width: 1420px;
+      margin: 0 auto;
+      padding: 26px 24px 72px;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(16, 28, 46, 0.94), rgba(15, 20, 33, 0.94));
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(56, 189, 248, 0.22);
+      border-radius: var(--radius-lg);
+      padding: 26px 30px;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    .hero-left {
+      max-width: 760px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(56, 189, 248, 0.14);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: #38bdf8;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.85rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .hero-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .stat-pill {
+      background: rgba(15, 21, 34, 0.9);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 10px 15px;
+      min-width: 102px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .stat-pill:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-strong);
+    }
+    .stat-pill .num {
+      font-size: 1.32rem;
+      font-weight: 900;
+      line-height: 1.1;
+      display: block;
+    }
+    .stat-pill .lbl {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-top: 3px;
+      display: block;
+    }
+
+    /* Main Mode Tabs */
+    .main-tabs-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+      background: var(--surface);
+      padding: 8px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .mode-tab-btn {
+      flex: 1;
+      min-width: 165px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 16px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.86rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .mode-tab-btn:hover {
+      background: var(--surface-elevated);
+      color: #fff;
+    }
+    .mode-tab-btn.active {
+      background: linear-gradient(135deg, rgba(14, 165, 233, 0.24), rgba(59, 130, 246, 0.22));
+      border-color: rgba(56, 189, 248, 0.55);
+      color: #ffffff;
+      box-shadow: 0 4px 16px rgba(14, 165, 233, 0.22);
+    }
+    .mode-tab-btn .badge-cnt {
+      background: rgba(255, 255, 255, 0.12);
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      color: #e2e8f0;
+    }
+
+    /* Filter Panel */
+    .controls-panel {
+      background: var(--surface);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 18px 22px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .search-sort-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 260px;
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      background: var(--surface-solid);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 11px 38px 11px 40px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    .search-box input:focus {
+      border-color: var(--rare);
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+    }
+    .search-box .icon-left {
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dim);
+      pointer-events: none;
+    }
+    .search-box .clear-btn {
+      position: absolute;
+      right: 11px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--text-dim);
+      cursor: pointer;
+      font-size: 0.95rem;
+      display: none;
+    }
+
+    .sort-select {
+      background: var(--surface-solid);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 11px 14px;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      font-family: inherit;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .view-toggle-btn {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 0.83rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.15s ease;
+    }
+    .view-toggle-btn:hover, .view-toggle-btn.active {
+      background: rgba(56, 189, 248, 0.18);
+      border-color: var(--rare);
+      color: #38bdf8;
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-label {
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      margin-right: 4px;
+      min-width: 82px;
+    }
+
+    .chip-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface-solid);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .chip-btn:hover {
+      background: var(--surface-elevated);
+      color: var(--text-main);
+    }
+    .chip-btn.active {
+      background: rgba(56, 189, 248, 0.16);
+      border-color: var(--rare);
+      color: #fff;
+    }
+
+    /* Results Meta Bar */
+    .results-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .results-meta strong { color: var(--text-main); }
+
+    /* Cards Grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 14px;
+    }
+
+    .wiki-card {
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      cursor: pointer;
+      transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .wiki-card:hover {
+      transform: translateY(-2px);
+      background: rgba(24, 32, 48, 0.95);
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+    }
+
+    /* Rarity Card Borders */
+    .wiki-card.rar-COMMON { border-left: 4px solid var(--common); }
+    .wiki-card.rar-UNCOMMON { border-left: 4px solid var(--uncommon); }
+    .wiki-card.rar-RARE { border-left: 4px solid var(--rare); }
+    .wiki-card.rar-EPIC { border-left: 4px solid var(--epic); }
+    .wiki-card.rar-LEGENDARY { border-left: 4px solid var(--gold); box-shadow: inset 0 0 22px rgba(255, 170, 0, 0.05); }
+    .wiki-card.rar-MYTHIC { border-left: 4px solid var(--mythic); box-shadow: inset 0 0 24px rgba(255, 85, 255, 0.07); }
+    .wiki-card.rar-SPECIAL { border-left: 4px solid var(--special); }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+    .rar-text-COMMON { color: var(--common); }
+    .rar-text-UNCOMMON { color: var(--uncommon); }
+    .rar-text-RARE { color: var(--rare); }
+    .rar-text-EPIC { color: var(--epic); }
+    .rar-text-LEGENDARY { color: var(--gold); }
+    .rar-text-MYTHIC { color: var(--mythic); }
+    .rar-text-SPECIAL { color: var(--special); }
+
+    .card-id {
+      font-size: 0.72rem;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      color: var(--text-dim);
+      margin-top: 2px;
+    }
+
+    .rarity-badge {
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .badge-COMMON { background: var(--common-soft); color: var(--common); border: 1px solid var(--common-border); }
+    .badge-UNCOMMON { background: var(--uncommon-soft); color: var(--uncommon); border: 1px solid var(--uncommon-border); }
+    .badge-RARE { background: var(--rare-soft); color: var(--rare); border: 1px solid var(--rare-border); }
+    .badge-EPIC { background: var(--epic-soft); color: var(--epic); border: 1px solid var(--epic-border); }
+    .badge-LEGENDARY { background: var(--gold-soft); color: var(--gold); border: 1px solid var(--gold-border); }
+    .badge-MYTHIC { background: var(--mythic-soft); color: var(--mythic); border: 1px solid var(--mythic-border); }
+    .badge-SPECIAL { background: var(--special-soft); color: var(--special); border: 1px solid var(--special-border); }
+
+    /* Stat Mini Pills inside card */
+    .card-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
+      background: rgba(11, 15, 23, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 8px 10px;
+      border-radius: 8px;
+      font-size: 0.76rem;
+    }
+    .stat-cell {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--text-muted);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .stat-cell strong {
+      color: #f8fafc;
+      font-weight: 700;
+    }
+
+    .card-desc {
+      font-size: 0.82rem;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: auto;
+      padding-top: 4px;
+    }
+
+    .mini-tag {
+      font-size: 0.69rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-muted);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .mini-tag.ability {
+      background: rgba(244, 63, 94, 0.14);
+      color: #fda4af;
+      border-color: rgba(244, 63, 94, 0.32);
+    }
+    .mini-tag.drop {
+      background: rgba(16, 185, 129, 0.13);
+      color: #6ee7b7;
+      border-color: rgba(16, 185, 129, 0.30);
+    }
+    .mini-tag.env {
+      background: rgba(56, 189, 248, 0.12);
+      color: #7dd3fc;
+      border-color: rgba(56, 189, 248, 0.28);
+    }
+
+    /* Compact Table View for Mobs */
+    .table-wrapper {
+      overflow-x: auto;
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+    }
+    .wiki-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.81rem;
+      text-align: left;
+    }
+    .wiki-table th {
+      background: #121826;
+      color: #94a3b8;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 0.71rem;
+      letter-spacing: 0.05em;
+      padding: 11px 12px;
+      border-bottom: 1px solid var(--border-strong);
+      white-space: nowrap;
+    }
+    .wiki-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: middle;
+    }
+    .wiki-table tr:hover td {
+      background: rgba(56, 189, 248, 0.06);
+      cursor: pointer;
+    }
+
+    /* 3x3 Crafting Grid */
+    .crafting-box {
+      display: inline-grid;
+      grid-template-columns: repeat(3, 46px);
+      grid-template-rows: repeat(3, 46px);
+      gap: 4px;
+      background: #1e2638;
+      padding: 6px;
+      border: 2px solid #334155;
+      border-radius: 8px;
+    }
+    .craft-slot {
+      background: #0f1522;
+      border: 1px solid #28354b;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 800;
+      color: #e2e8f0;
+      text-align: center;
+      padding: 2px;
+      line-height: 1.1;
+      overflow: hidden;
+    }
+    .craft-slot.filled {
+      background: rgba(56, 189, 248, 0.12);
+      border-color: rgba(56, 189, 248, 0.4);
+      color: #7dd3fc;
+    }
+
+    /* Guide & Mechanics Layout */
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 18px;
+    }
+    .guide-card {
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 20px 22px;
+    }
+    .guide-card h3 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #f5c451;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .guide-card p, .guide-card li {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.65;
+    }
+    .guide-card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+    .code-block {
+      background: #090d14;
+      border: 1px solid #263147;
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 0.78rem;
+      color: #7dd3fc;
+      overflow-x: auto;
+      margin-top: 10px;
+      white-space: pre;
+    }
+
+    /* Modal Detail View */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 7, 13, 0.82);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+    }
+    .modal-backdrop.active { display: flex; }
+
+    .modal-dialog {
+      background: #121826;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      max-width: 720px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 24px 26px;
+      position: relative;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.85);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+    .modal-close:hover { color: #fff; background: #ef4444; border-color: #ef4444; }
+
+    .mc-tooltip-box {
+      background: rgba(16, 3, 24, 0.96);
+      border: 2px solid #581c87;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 14px 0;
+      box-shadow: inset 0 0 20px rgba(168, 85, 247, 0.12);
+    }
+
+    .modal-section {
+      margin-top: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .modal-section h4 {
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .cmd-copy-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 12px;
+    }
+    .cmd-input {
+      flex: 1;
+      background: #090d15;
+      border: 1px solid #28354b;
+      color: #f5c451;
+      padding: 9px 12px;
+      border-radius: 8px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 0.8rem;
+    }
+    .copy-btn {
+      background: #0ea5e9;
+      border: none;
+      color: #fff;
+      padding: 9px 16px;
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 0.8rem;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .copy-btn:hover { background: #0284c7; }
+
+    @media (max-width: 768px) {
+      .header-bar { padding: 10px 16px; }
+      .container { padding: 18px 14px 50px; }
+      .hero-banner { padding: 20px; }
+      .hero-title { font-size: 1.45rem; }
+      .mode-tab-btn { min-width: 135px; font-size: 0.78rem; padding: 9px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-fixed"></div>
+  <div class="bg-overlay"></div>
+
+  <!-- Top Header -->
+  <header class="header-bar">
+    <a href="index.html" class="brand-link">
+      <img class="brand-icon" src="assets/icons/grass_block_3d.png?v=2" alt="Logo" />
+      <div class="brand-text">
+        <h1>EXPEDITION FISHING WIKI</h1>
+        <span>One More Expedition • KHTN Wiki</span>
+      </div>
+    </a>
+
+    <div class="header-nav-group">
+      <a href="index.html" class="nav-btn">🏠 Trang Chủ Wiki</a>
+      <a href="enchants.html" class="nav-btn" style="border-color: rgba(245, 196, 81, 0.4); color: #f5c451;">✨ Bách Khoa Phù Phép (400)</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+      <div class="hero-left">
+        <div class="hero-eyebrow">🎣 HỆ THỐNG CÂU CÁ RPG TOÀN DIỆN (LV.1 → LV.50)</div>
+        <h2 class="hero-title">Bách Khoa Toàn Thư Câu Cá & Thủy Quái</h2>
+        <p class="hero-desc">
+          Tra cứu toàn bộ <strong>112 Thủy Quái & Bosses</strong> (Overworld, Nether Lava & End Void), <strong>147 Vật Phẩm & Trang Bị</strong>, <strong>23 Cổ Vật (Artifacts)</strong>, <strong>94 Công Thức Chế Tạo</strong>, <strong>34 Quần Xã (Biomes)</strong> và <strong>45 Phù Phép Câu Cá</strong>.
+        </p>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-pill" onclick="switchMainTab('mobs')">
+          <span class="num" style="color:#38bdf8;" id="statMobs">112</span>
+          <span class="lbl">Thủy Quái</span>
+        </div>
+        <div class="stat-pill" onclick="switchMainTab('items')">
+          <span class="num" style="color:#f5c451;" id="statItems">147</span>
+          <span class="lbl">Trang Bị & Đồ</span>
+        </div>
+        <div class="stat-pill" onclick="switchMainTab('artifacts')">
+          <span class="num" style="color:#e879f9;" id="statArtifacts">23</span>
+          <span class="lbl">Cổ Vật</span>
+        </div>
+        <div class="stat-pill" onclick="switchMainTab('recipes')">
+          <span class="num" style="color:#4ade80;" id="statRecipes">94</span>
+          <span class="lbl">Công Thức</span>
+        </div>
+        <div class="stat-pill" onclick="switchMainTab('biomes')">
+          <span class="num" style="color:#fb923c;" id="statBiomes">34</span>
+          <span class="lbl">Biomes</span>
+        </div>
+        <div class="stat-pill" onclick="switchMainTab('enchants')">
+          <span class="num" style="color:#a78bfa;" id="statEnchants">45</span>
+          <span class="lbl">Enchants</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 Main Mode Tabs -->
+    <nav class="main-tabs-bar" id="mainTabsBar">
+      <button class="mode-tab-btn active" data-tab="mobs" onclick="switchMainTab('mobs')">
+        🐙 Thủy Quái & Bosses <span class="badge-cnt">112</span>
+      </button>
+      <button class="mode-tab-btn" data-tab="items" onclick="switchMainTab('items')">
+        🎣 Cần Câu, Vũ Khí & Giáp <span class="badge-cnt">147</span>
+      </button>
+      <button class="mode-tab-btn" data-tab="artifacts" onclick="switchMainTab('artifacts')">
+        🏺 Cổ Vật (Artifacts) <span class="badge-cnt">23</span>
+      </button>
+      <button class="mode-tab-btn" data-tab="enchants" onclick="switchMainTab('enchants')">
+        ✨ Phù Phép Câu Cá <span class="badge-cnt">45</span>
+      </button>
+      <button class="mode-tab-btn" data-tab="recipes" onclick="switchMainTab('recipes')">
+        ⚒️ Công Thức Chế Tạo <span class="badge-cnt">94</span>
+      </button>
+      <button class="mode-tab-btn" data-tab="biomes" onclick="switchMainTab('biomes')">
+        🌍 Bảng Tỉ Lệ Biomes <span class="badge-cnt">34</span>
+      </button>
+      <button class="mode-tab-btn" data-tab="guide" onclick="switchMainTab('guide')">
+        ⚙️ Cơ Chế & Config Độ Khó
+      </button>
+    </nav>
+
+    <!-- Controls & Dynamic Sub-Filters -->
+    <section class="controls-panel" id="controlsPanel">
+      <div class="search-sort-row">
+        <div class="search-box">
+          <span class="icon-left">🔍</span>
+          <input type="text" id="searchInput" placeholder="Tìm theo tên, ID, kỹ năng boss, vật phẩm rơi, biome..." autocomplete="off" />
+          <button class="clear-btn" id="clearSearchBtn" onclick="clearSearch()">✕</button>
+        </div>
+
+        <select class="sort-select" id="sortSelect" onchange="renderActiveTab()">
+          <option value="level_asc">Sắp xếp: Level yêu cầu (Thấp → Cao)</option>
+          <option value="level_desc">Sắp xếp: Level yêu cầu (Cao → Thấp)</option>
+          <option value="rarity_desc">Sắp xếp: Độ hiếm (Cao → Thấp)</option>
+          <option value="hp_desc">Sắp xếp: Máu HP (Cao → Thấp)</option>
+          <option value="name_asc">Sắp xếp: Tên (A → Z)</option>
+        </select>
+
+        <button class="view-toggle-btn" id="tableToggleBtn" onclick="toggleTableView()" style="display: inline-flex;">
+          📋 Chế độ Bảng (Table)
+        </button>
+      </div>
+
+      <!-- Dynamic Row 1: Category / Environment Filter -->
+      <div class="filter-group" id="subFilterRow1"></div>
+
+      <!-- Dynamic Row 2: Rarity Filter -->
+      <div class="filter-group" id="subFilterRow2"></div>
+    </section>
+
+    <!-- Results Count -->
+    <div class="results-meta" id="resultsMeta">
+      <span id="resultsCountText">Đang hiển thị <strong>112</strong> kết quả</span>
+      <span style="font-size:0.78rem; color:var(--text-dim);">💡 Nhấp vào bất kỳ thẻ hoặc dòng nào để xem chi tiết, công thức & copy lệnh Admin</span>
+    </div>
+
+    <!-- Main Content Container -->
+    <div id="wikiContentArea"></div>
+  </main>
+
+  <!-- Detail Modal -->
+  <div class="modal-backdrop" id="detailModal" onclick="if(event.target===this) closeDetailModal()">
+    <div class="modal-dialog" id="modalDialogContent"></div>
+  </div>
+
+  <script src="assets/js/fishing_data.js"></script>
+  <script src="assets/js/enchants_data.js"></script>
+  <script>
+    const DATA = window.FISHING_WIKI_DATA || { mobs: [], items: [], artifacts: [], recipes: [], biomes: [], balance: {} };
+    const ALL_ENCHS = window.ALL_ENCHANTMENTS || [];
+
+    // Extract 45 Fishing Enchantments
+    const FISHING_ENCHANTS = ALL_ENCHS.filter(e =>
+      e.id.startsWith("expedition_fishing:") ||
+      e.id === "minecraft:lure" ||
+      e.id === "minecraft:luck_of_the_sea" ||
+      e.id === "enchantencore:scholar_of_fishing" ||
+      e.id === "enchantencore:harpoon" ||
+      e.id === "enchantencore:yoink"
+    );
+
+    let activeTab = "mobs";
+    let activeSubFilter = "ALL";
+    let activeRarityFilter = "ALL";
+    let isTableView = false;
+
+    const searchInput = document.getElementById("searchInput");
+    const clearSearchBtn = document.getElementById("clearSearchBtn");
+    const sortSelect = document.getElementById("sortSelect");
+    const subFilterRow1 = document.getElementById("subFilterRow1");
+    const subFilterRow2 = document.getElementById("subFilterRow2");
+    const wikiContentArea = document.getElementById("wikiContentArea");
+    const resultsCountText = document.getElementById("resultsCountText");
+    const controlsPanel = document.getElementById("controlsPanel");
+    const resultsMeta = document.getElementById("resultsMeta");
+    const tableToggleBtn = document.getElementById("tableToggleBtn");
+
+    function escapeHtml(str) {
+      if (str === null || str === undefined) return "";
+      return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    function switchMainTab(tab) {
+      activeTab = tab;
+      activeSubFilter = "ALL";
+      activeRarityFilter = "ALL";
+
+      document.querySelectorAll(".mode-tab-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.tab === tab);
+      });
+
+      tableToggleBtn.style.display = (tab === "mobs") ? "inline-flex" : "none";
+      controlsPanel.style.display = (tab === "guide") ? "none" : "flex";
+      resultsMeta.style.display = (tab === "guide") ? "none" : "flex";
+
+      buildSubFilters();
+      renderActiveTab();
+    }
+
+    function toggleTableView() {
+      isTableView = !isTableView;
+      tableToggleBtn.classList.toggle("active", isTableView);
+      tableToggleBtn.innerText = isTableView ? "🃏 Chế độ Thẻ (Cards)" : "📋 Chế độ Bảng (Table)";
+      renderActiveTab();
+    }
+
+    function clearSearch() {
+      searchInput.value = "";
+      clearSearchBtn.style.display = "none";
+      renderActiveTab();
+    }
+
+    searchInput.addEventListener("input", () => {
+      clearSearchBtn.style.display = searchInput.value ? "block" : "none";
+      renderActiveTab();
+    });
+
+    function buildSubFilters() {
+      subFilterRow1.innerHTML = "";
+      subFilterRow2.innerHTML = "";
+
+      if (activeTab === "mobs") {
+        const filters = [
+          { id: "ALL", label: "🌟 Tất cả (112)" },
+          { id: "BOSS", label: "👑 Bosses (Epic/Legendary)" },
+          { id: "HOSTILE", label: "⚔️ Thủy Quái Hung Dữ" },
+          { id: "PASSIVE", label: "🐟 Cá & Thú Hiền Lành" },
+          { id: "TREASURE", label: "🧰 Rương Kho Báu" },
+          { id: "OVERWORLD", label: "🌊 Overworld" },
+          { id: "NETHER_LAVA", label: "🔥 Nether / Câu Lava (Lv.27+)" },
+          { id: "END_VOID", label: "🌌 The End / Câu Void (Lv.35+)" },
+          { id: "MOUNTED", label: "🐎 Cưỡi Thú (80/20 HP)" }
+        ];
+        renderChips(subFilterRow1, "Phân loại:", filters, activeSubFilter, val => {
+          activeSubFilter = val;
+          buildSubFilters();
+          renderActiveTab();
+        });
+        renderRarityRow(["ALL", "COMMON", "UNCOMMON", "RARE", "EPIC", "LEGENDARY"]);
+      } else if (activeTab === "items") {
+        const filters = [
+          { id: "ALL", label: "🌟 Tất cả (147)" },
+          { id: "ROD", label: "🎣 Cần Câu (Rods)" },
+          { id: "WEAPON", label: "🔱 Đinh Ba & Vũ Khí" },
+          { id: "ARMOR", label: "🛡️ Bộ Giáp Câu Cá" },
+          { id: "BAIT", label: "🪱 Mồi Câu, Nhẫn & Cọc Totem" },
+          { id: "MATERIAL", label: "💎 Nguyên Liệu Chế Tạo" }
+        ];
+        renderChips(subFilterRow1, "Loại đồ:", filters, activeSubFilter, val => {
+          activeSubFilter = val;
+          buildSubFilters();
+          renderActiveTab();
+        });
+        renderRarityRow(["ALL", "COMMON", "UNCOMMON", "RARE", "EPIC", "LEGENDARY", "MYTHIC", "SPECIAL"]);
+      } else if (activeTab === "artifacts") {
+        renderRarityRow(["ALL", "COMMON", "UNCOMMON", "RARE", "EPIC", "LEGENDARY"]);
+      } else if (activeTab === "enchants") {
+        const filters = [
+          { id: "ALL", label: "🌟 Tất cả (45)" },
+          { id: "ultimate", label: "👑 Ultimate (Max 1)" },
+          { id: "epic", label: "🔮 Epic" },
+          { id: "rare", label: "💎 Rare" },
+          { id: "common", label: "⚪ Common" }
+        ];
+        renderChips(subFilterRow1, "Cấp bậc:", filters, activeSubFilter, val => {
+          activeSubFilter = val;
+          buildSubFilters();
+          renderActiveTab();
+        });
+      } else if (activeTab === "biomes") {
+        const filters = [
+          { id: "ALL", label: "🌟 Tất cả (34)" },
+          { id: "OVERWORLD", label: "🌊 Overworld" },
+          { id: "CAVE", label: "🦇 Hang Động (Deep Dark / Lush)" },
+          { id: "NETHER", label: "🔥 Nether Lava" },
+          { id: "END", label: "🌌 The End / Void" }
+        ];
+        renderChips(subFilterRow1, "Chiều không gian:", filters, activeSubFilter, val => {
+          activeSubFilter = val;
+          buildSubFilters();
+          renderActiveTab();
+        });
+      }
+    }
+
+    function renderRarityRow(rarities) {
+      const items = rarities.map(r => ({
+        id: r,
+        label: r === "ALL" ? "Tất cả bậc" : r
+      }));
+      renderChips(subFilterRow2, "Độ hiếm:", items, activeRarityFilter, val => {
+        activeRarityFilter = val;
+        buildSubFilters();
+        renderActiveTab();
+      });
+    }
+
+    function renderChips(container, labelText, list, currentVal, onSelect) {
+      container.innerHTML = `<span class="filter-label">${labelText}</span>`;
+      list.forEach(item => {
+        const btn = document.createElement("button");
+        btn.className = "chip-btn" + (currentVal === item.id ? " active" : "");
+        btn.innerText = item.label;
+        btn.onclick = () => onSelect(item.id);
+        container.appendChild(btn);
+      });
+    }
+
+    function renderActiveTab() {
+      const q = searchInput.value.toLowerCase().trim();
+      const sortMode = sortSelect.value;
+
+      if (activeTab === "mobs") {
+        renderMobs(q, sortMode);
+      } else if (activeTab === "items") {
+        renderItems(q, sortMode);
+      } else if (activeTab === "artifacts") {
+        renderArtifacts(q, sortMode);
+      } else if (activeTab === "enchants") {
+        renderFishingEnchants(q);
+      } else if (activeTab === "recipes") {
+        renderRecipes(q);
+      } else if (activeTab === "biomes") {
+        renderBiomes(q);
+      } else if (activeTab === "guide") {
+        renderGuide();
+      }
+    }
+
+    function sortList(arr, sortMode) {
+      return arr.slice().sort((a, b) => {
+        if (sortMode === "level_asc") return (a.required_level || 0) - (b.required_level || 0) || (a.rarity_rank || 0) - (b.rarity_rank || 0);
+        if (sortMode === "level_desc") return (b.required_level || 0) - (a.required_level || 0) || (b.rarity_rank || 0) - (a.rarity_rank || 0);
+        if (sortMode === "rarity_desc") return (b.rarity_rank || 0) - (a.rarity_rank || 0) || (b.required_level || 0) - (a.required_level || 0);
+        if (sortMode === "hp_desc") return (b.hp_val || 0) - (a.hp_val || 0);
+        if (sortMode === "name_asc") return String(a.name || a.id).localeCompare(String(b.name || b.id));
+        return 0;
+      });
+    }
+
+    /* ==================== 1. RENDER MOBS ==================== */
+    function renderMobs(q, sortMode) {
+      let list = DATA.mobs.filter(m => {
+        if (activeRarityFilter !== "ALL" && m.rarity !== activeRarityFilter) return false;
+        if (activeSubFilter === "BOSS" && !m.is_boss) return false;
+        if (activeSubFilter === "HOSTILE" && m.category !== "HOSTILE") return false;
+        if (activeSubFilter === "PASSIVE" && m.category !== "PASSIVE") return false;
+        if (activeSubFilter === "TREASURE" && m.category !== "TREASURE") return false;
+        if (activeSubFilter === "MOUNTED" && !m.is_mounted) return false;
+        if (["OVERWORLD", "NETHER_LAVA", "END_VOID"].includes(activeSubFilter) && !(m.environments || []).includes(activeSubFilter)) return false;
+
+        if (!q) return true;
+        const abStr = (m.abilities || []).map(a => a.id + " " + a.description).join(" ").toLowerCase();
+        const drStr = (m.drops || []).map(d => d.item).join(" ").toLowerCase();
+        const bmStr = (m.biomes || []).map(b => b.biome).join(" ").toLowerCase();
+        return m.name.toLowerCase().includes(q) ||
+               m.id.toLowerCase().includes(q) ||
+               m.entity_type.toLowerCase().includes(q) ||
+               abStr.includes(q) || drStr.includes(q) || bmStr.includes(q);
+      });
+
+      list = sortList(list, sortMode);
+      resultsCountText.innerHTML = `Đang hiển thị <strong>${list.length}</strong> / ${DATA.mobs.length} Thủy Quái & Bosses`;
+
+      if (isTableView) {
+        let rowsHtml = list.map((m, idx) => {
+          const abTags = (m.abilities || []).map(a => `<span class="mini-tag ability">${escapeHtml(a.id)}</span>`).join(" ") || "—";
+          const drTags = (m.drops || []).map(d => `<span class="mini-tag drop">${escapeHtml(d.item)} (${d.chance}%)</span>`).join(" ") || "—";
+          return `
+            <tr onclick="openMobModal('${escapeHtml(m.id)}')">
+              <td>${idx + 1}</td>
+              <td><code>${escapeHtml(m.id)}</code></td>
+              <td><strong class="rar-text-${m.rarity}">${escapeHtml(m.name)}</strong></td>
+              <td><span class="rarity-badge badge-${m.rarity}">${m.rarity}</span></td>
+              <td><strong>Lv.${m.required_level}</strong></td>
+              <td>${m.xp} XP</td>
+              <td>${escapeHtml(m.entity_type)}</td>
+              <td><strong>${escapeHtml(m.hp_display)}</strong></td>
+              <td>${escapeHtml(m.dmg_display)}</td>
+              <td>${abTags}</td>
+              <td>${drTags}</td>
+            </tr>
+          `;
+        }).join("");
+
+        wikiContentArea.innerHTML = `
+          <div class="table-wrapper">
+            <table class="wiki-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>ID (/fish spawn)</th>
+                  <th>Tên Hiển Thị</th>
+                  <th>Bậc</th>
+                  <th>Level</th>
+                  <th>XP</th>
+                  <th>Entity Gốc</th>
+                  <th>Máu (HP)</th>
+                  <th>Sát Thương</th>
+                  <th>Kỹ Năng (Abilities)</th>
+                  <th>Vật Phẩm Rơi</th>
+                </tr>
+              </thead>
+              <tbody>${rowsHtml}</tbody>
+            </table>
+          </div>
+        `;
+        return;
+      }
+
+      wikiContentArea.innerHTML = `<div class="cards-grid">${list.map(m => {
+        const abHtml = (m.abilities || []).map(a => `<span class="mini-tag ability" title="${escapeHtml(a.description)}">⚡ ${escapeHtml(a.id)}</span>`).join("");
+        const drHtml = (m.drops || []).slice(0, 3).map(d => `<span class="mini-tag drop">🎁 ${escapeHtml(d.item)} (${d.chance}%)</span>`).join("");
+        const envHtml = (m.environments || []).map(e => `<span class="mini-tag env">📍 ${escapeHtml(e)}</span>`).join("");
+
+        return `
+          <div class="wiki-card rar-${m.rarity}" onclick="openMobModal('${escapeHtml(m.id)}')">
+            <div class="card-top">
+              <div>
+                <div class="card-title rar-text-${m.rarity}">${m.is_boss ? "👑 " : ""}${escapeHtml(m.name)}</div>
+                <div class="card-id">/fish spawn ${escapeHtml(m.id)} • ${escapeHtml(m.entity_type)}</div>
+              </div>
+              <span class="rarity-badge badge-${m.rarity}">${m.rarity}</span>
+            </div>
+
+            <div class="card-stats-grid">
+              <div class="stat-cell">❤️ Máu: <strong>${escapeHtml(m.hp_display)}</strong></div>
+              <div class="stat-cell">⚔️ Dmg: <strong>${escapeHtml(m.dmg_display)}</strong></div>
+              <div class="stat-cell">🎣 Yêu cầu: <strong>Lv.${m.required_level}</strong></div>
+              <div class="stat-cell">✨ Thưởng: <strong>${m.xp} XP</strong> (${m.weight} kg)</div>
+            </div>
+
+            <div class="card-tags">
+              ${envHtml}
+              ${abHtml}
+              ${drHtml}
+            </div>
+          </div>
+        `;
+      }).join("")}</div>`;
+    }
+
+    /* ==================== 2. RENDER ITEMS ==================== */
+    function renderItems(q, sortMode) {
+      let list = DATA.items.filter(it => {
+        if (activeRarityFilter !== "ALL" && it.rarity !== activeRarityFilter) return false;
+        if (activeSubFilter !== "ALL" && it.category !== activeSubFilter) return false;
+        if (!q) return true;
+        return it.name.toLowerCase().includes(q) ||
+               it.id.toLowerCase().includes(q) ||
+               it.description.toLowerCase().includes(q) ||
+               it.category.toLowerCase().includes(q);
+      });
+
+      list = sortList(list, sortMode);
+      resultsCountText.innerHTML = `Đang hiển thị <strong>${list.length}</strong> / ${DATA.items.length} Vật Phẩm & Trang Bị Câu Cá`;
+
+      wikiContentArea.innerHTML = `<div class="cards-grid">${list.map(it => {
+        const statsBadges = [];
+        if (it.required_level > 0) statsBadges.push(`<div class="stat-cell">🔓 Cấp: <strong>Lv.${it.required_level}</strong></div>`);
+        if (it.fishing_speed > 0) statsBadges.push(`<div class="stat-cell">⚡ Tốc câu: <strong>+${it.fishing_speed}%</strong></div>`);
+        if (it.scc > 0) statsBadges.push(`<div class="stat-cell">🐙 SCC: <strong>+${it.scc}%</strong></div>`);
+        if (it.sea_creature_attack > 0) statsBadges.push(`<div class="stat-cell">🔱 Sát thương TQ: <strong>+${it.sea_creature_attack}%</strong></div>`);
+        if (it.double_catch > 0) statsBadges.push(`<div class="stat-cell">🐟 Cá đôi: <strong>+${it.double_catch}%</strong></div>`);
+        if (it.armor > 0) statsBadges.push(`<div class="stat-cell">🛡️ Giáp: <strong>+${it.armor}</strong></div>`);
+
+        const statsBlock = statsBadges.length > 0 ? `<div class="card-stats-grid">${statsBadges.join("")}</div>` : "";
+        const tags = [`<span class="mini-tag env">${escapeHtml(it.category)}</span>`];
+        if (it.lava_capable) tags.push(`<span class="mini-tag ability">🔥 Câu Lava</span>`);
+        if (it.void_capable) tags.push(`<span class="mini-tag ability">🌌 Câu Void</span>`);
+        if ((it.recipes || []).length > 0) tags.push(`<span class="mini-tag drop">⚒️ Chế tạo được</span>`);
+        if ((it.dropped_by || []).length > 0) tags.push(`<span class="mini-tag drop">🎁 Rơi từ ${it.dropped_by.length} mob</span>`);
+
+        return `
+          <div class="wiki-card rar-${it.rarity}" onclick="openItemModal('${escapeHtml(it.id)}')">
+            <div class="card-top">
+              <div>
+                <div class="card-title rar-text-${it.rarity}">${escapeHtml(it.name)}</div>
+                <div class="card-id">/fish give ${escapeHtml(it.id)} • ${escapeHtml(it.material)}</div>
+              </div>
+              <span class="rarity-badge badge-${it.rarity}">${it.rarity}</span>
+            </div>
+            ${statsBlock}
+            <div class="card-desc">${escapeHtml(it.description || "Nguyên liệu / Vật phẩm chuyên dụng trong Expedition Fishing.")}</div>
+            <div class="card-tags">${tags.join("")}</div>
+          </div>
+        `;
+      }).join("")}</div>`;
+    }
+
+    /* ==================== 3. RENDER ARTIFACTS ==================== */
+    function renderArtifacts(q, sortMode) {
+      let list = DATA.artifacts.filter(a => {
+        if (activeRarityFilter !== "ALL" && a.rarity !== activeRarityFilter) return false;
+        if (!q) return true;
+        const effStr = (a.effects || []).map(e => e.stat).join(" ").toLowerCase();
+        return a.name.toLowerCase().includes(q) || a.id.toLowerCase().includes(q) || a.description.toLowerCase().includes(q) || effStr.includes(q);
+      });
+
+      list = sortList(list, sortMode);
+      resultsCountText.innerHTML = `Đang hiển thị <strong>${list.length}</strong> / ${DATA.artifacts.length} Cổ Vật (Artifacts — Tự động cộng chỉ số khi để trong Artifact Bag)`;
+
+      wikiContentArea.innerHTML = `<div class="cards-grid">${list.map(a => {
+        const effHtml = (a.effects || []).map(e =>
+          `<div class="stat-cell">✨ <strong>+${e.value}% ${escapeHtml(e.stat.replace(/_/g, " "))}</strong></div>`
+        ).join("");
+        return `
+          <div class="wiki-card rar-${a.rarity}" onclick="openArtifactModal('${escapeHtml(a.id)}')">
+            <div class="card-top">
+              <div>
+                <div class="card-title rar-text-${a.rarity}">🏺 ${escapeHtml(a.name)}</div>
+                <div class="card-id">Artifact ID: ${escapeHtml(a.id)}</div>
+              </div>
+              <span class="rarity-badge badge-${a.rarity}">${a.rarity}</span>
+            </div>
+            <div class="card-stats-grid">${effHtml}</div>
+            <div class="card-desc">${escapeHtml(a.description)}</div>
+          </div>
+        `;
+      }).join("")}</div>`;
+    }
+
+    /* ==================== 4. RENDER 45 FISHING ENCHANTS ==================== */
+    function renderFishingEnchants(q) {
+      let list = FISHING_ENCHANTS.filter(e => {
+        if (activeSubFilter !== "ALL" && e.tier !== activeSubFilter) return false;
+        if (!q) return true;
+        return e.name_en.toLowerCase().includes(q) ||
+               (e.name_vi && e.name_vi.toLowerCase().includes(q)) ||
+               e.id.toLowerCase().includes(q) ||
+               (e.summary && e.summary.toLowerCase().includes(q));
+      });
+
+      resultsCountText.innerHTML = `Đang hiển thị <strong>${list.length}</strong> / ${FISHING_ENCHANTS.length} Phù Phép Cần Câu (Tích hợp trực tiếp với FishingEngine)`;
+
+      const tierToRarity = { ultimate: "LEGENDARY", epic: "EPIC", rare: "RARE", common: "COMMON" };
+
+      wikiContentArea.innerHTML = `<div class="cards-grid">${list.map(e => {
+        const rar = tierToRarity[e.tier] || "COMMON";
+        return `
+          <div class="wiki-card rar-${rar}" onclick="window.location.href='enchants.html'">
+            <div class="card-top">
+              <div>
+                <div class="card-title rar-text-${rar}">✨ ${escapeHtml(e.name_en)} (Max Lv.${e.max_level})</div>
+                <div class="card-id">${escapeHtml(e.id)}</div>
+              </div>
+              <span class="rarity-badge badge-${rar}">${e.tier.toUpperCase()}</span>
+            </div>
+            <div class="card-desc">${escapeHtml(e.summary || e.detail)}</div>
+            <div class="card-tags">
+              <span class="mini-tag env">🎣 Fishing Rod</span>
+              ${e.obtain_table ? '<span class="mini-tag drop">🔮 Bàn Phù Phép</span>' : '<span class="mini-tag ability">🗝️ Dungeon / Kho Báu</span>'}
+            </div>
+          </div>
+        `;
+      }).join("")}</div>`;
+    }
+
+    /* ==================== 5. RENDER RECIPES ==================== */
+    function renderRecipes(q) {
+      let list = DATA.recipes.filter(r => {
+        if (!q) return true;
+        const ingStr = JSON.stringify(r.ingredients || {}).toLowerCase();
+        return r.id.toLowerCase().includes(q) || r.result.toLowerCase().includes(q) || ingStr.includes(q);
+      });
+
+      resultsCountText.innerHTML = `Đang hiển thị <strong>${list.length}</strong> / ${DATA.recipes.length} Công Thức Chế Tạo (/fish recipes)`;
+
+      wikiContentArea.innerHTML = `<div class="cards-grid">${list.map(r => {
+        const resItem = DATA.items.find(i => i.id === r.result);
+        const rar = resItem ? resItem.rarity : "RARE";
+        const resName = resItem ? resItem.name : r.result;
+        const gridHtml = buildCraftingGridHtml(r);
+        return `
+          <div class="wiki-card rar-${rar}" onclick="openItemModal('${escapeHtml(r.result)}')">
+            <div class="card-top">
+              <div>
+                <div class="card-title rar-text-${rar}">⚒️ ${escapeHtml(resName)} ${r.count > 1 ? 'x' + r.count : ''}</div>
+                <div class="card-id">Result: ${escapeHtml(r.result)} • Yêu cầu Lv.${r.level || 0}</div>
+              </div>
+              <span class="rarity-badge badge-${rar}">${r.recipe_type.toUpperCase()}</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:14px; margin-top:4px;">
+              ${gridHtml}
+              <div style="font-size:0.76rem; color:var(--text-muted); flex:1;">
+                <strong>Nguyên liệu:</strong><br/>
+                ${Object.entries(r.ingredients || {}).map(([k, v]) => `<code>${escapeHtml(k)}</code>: ${escapeHtml(Array.isArray(v) ? v.join(" / ") : v)}`).join("<br/>")}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("")}</div>`;
+    }
+
+    function buildCraftingGridHtml(r) {
+      const slots = Array(9).fill("");
+      if (r.recipe_type === "shapeless") {
+        const vals = Object.values(r.ingredients || {});
+        let idx = 0;
+        vals.forEach(v => {
+          if (idx < 9) slots[idx++] = Array.isArray(v) ? v[0] : v;
+        });
+      } else {
+        const pat = r.pattern || ["   ", "   ", "   "];
+        for (let row = 0; row < 3; row++) {
+          const line = pat[row] || "   ";
+          for (let col = 0; col < 3; col++) {
+            const ch = line[col] || " ";
+            if (ch !== " " && r.ingredients && r.ingredients[ch]) {
+              const raw = r.ingredients[ch];
+              slots[row * 3 + col] = Array.isArray(raw) ? raw[0] : raw;
+            }
+          }
+        }
+      }
+      return `<div class="crafting-box">${slots.map(s =>
+        `<div class="craft-slot ${s ? 'filled' : ''}" title="${escapeHtml(s)}">${escapeHtml(s ? s.replace(/enchanted_/g, "E.").slice(0, 10) : "")}</div>`
+      ).join("")}</div>`;
+    }
+
+    /* ==================== 6. RENDER BIOMES ==================== */
+    function renderBiomes(q) {
+      let list = DATA.biomes.filter(b => {
+        if (activeSubFilter !== "ALL" && b.dimension !== activeSubFilter) return false;
+        if (!q) return true;
+        const pStr = Object.keys(b.passive_weights || {}).join(" ").toLowerCase();
+        const hStr = Object.keys(b.hostile_weights || {}).join(" ").toLowerCase();
+        return b.id.toLowerCase().includes(q) || pStr.includes(q) || hStr.includes(q);
+      });
+
+      resultsCountText.innerHTML = `Đang hiển thị <strong>${list.length}</strong> / ${DATA.biomes.length} Quần Xã Câu Cá (Biome Loot Tables)`;
+
+      wikiContentArea.innerHTML = `<div class="cards-grid">${list.map(b => {
+        const hEntries = Object.entries(b.hostile_weights || {}).sort((a, c) => c[1] - a[1]);
+        const pEntries = Object.entries(b.passive_weights || {}).sort((a, c) => c[1] - a[1]);
+
+        return `
+          <div class="wiki-card rar-RARE">
+            <div class="card-top">
+              <div>
+                <div class="card-title rar-text-RARE">🌍 ${escapeHtml(b.id)}</div>
+                <div class="card-id">Chiều không gian: ${escapeHtml(b.dimension)}</div>
+              </div>
+              <span class="rarity-badge badge-RARE">${b.hostile_count} Hostile / ${b.passive_count} Passive</span>
+            </div>
+            <div class="card-desc">
+              <strong style="color:#fda4af;">⚔️ Thủy Quái Hung Dữ (Hostile Pool):</strong><br/>
+              ${hEntries.map(([m, w]) => `<span class="mini-tag ability" style="cursor:pointer;margin:2px;" onclick="openMobModal('${escapeHtml(m)}')">${escapeHtml(m)} (${w})</span>`).join(" ") || "Không có"}
+            </div>
+            <div class="card-desc" style="margin-top:6px;">
+              <strong style="color:#6ee7b7;">🐟 Cá Hiền Lành (Passive Pool):</strong><br/>
+              ${pEntries.map(([m, w]) => `<span class="mini-tag drop" style="cursor:pointer;margin:2px;" onclick="openMobModal('${escapeHtml(m)}')">${escapeHtml(m)} (${w})</span>`).join(" ") || "Không có"}
+            </div>
+          </div>
+        `;
+      }).join("")}</div>`;
+    }
+
+    /* ==================== 7. RENDER GUIDE & CONFIG ==================== */
+    function renderGuide() {
+      const mb = (DATA.balance && DATA.balance.mob_balance) || {};
+      wikiContentArea.innerHTML = `
+        <div class="guide-grid">
+          <div class="guide-card">
+            <h3>🌌 1. Cơ Chế Câu Cá Lava (Nether) & Void (The End)</h3>
+            <ul>
+              <li><strong>Lava Fishing (Lv.27+)</strong>: Yêu cầu cần câu có cờ <code>lava_capable</code> (hoặc từ cấp 27 trở lên). Khi câu ở Nether, người chơi tích tụ <strong>Nhiệt Độ (Heat 0 → 100)</strong>. Khi Heat ≥ 90 sẽ bị Slowness & Weakness; giảm nhiệt bằng <em>Frost Salve</em> (-25 Heat), <em>Magma Filter</em> (-50 Heat & kháng nhiệt 300s), hoặc phù phép <em>Thermal Cooling</em>.</li>
+              <li><strong>Void Fishing (Lv.35+)</strong>: Quăng phao trực tiếp ra khoảng không <strong>The End Void</strong> với <code>Void Walker Rod</code> (Lv.35) hoặc <code>Starlight Sovereign Rod</code> (Lv.45).</li>
+              <li><strong>Phao Hologram 3 Giai Đoạn</strong>: Phao câu trong Lava và Void hiển thị tên phát sáng trực quan: <code>⏳ Đang thu hút...</code> → <code>🫧 Cá đang rỉa mồi!</code> → <code>❗ CẮN CÂU! GIẬT NGAY! ❗</code>.</li>
+              <li><strong>Chống Rơi Void (Void Rift Recall)</strong>: Mọi thủy quái câu lên từ Void hoặc bị rơi xuống vực The End đều tự động mở cổng không gian <em>Reverse Portal</em> dịch chuyển thẳng lên mặt đất an toàn cạnh người chơi!</li>
+            </ul>
+          </div>
+
+          <div class="guide-card">
+            <h3>⚔️ 2. Sức Mạnh Trang Bị & Sát Thương Thủy Quái (SCA)</h3>
+            <ul>
+              <li><strong>Chỉ số Sea Creature Attack (SCA)</strong>: Tăng sát thương chuẩn cộng thêm vào mọi đòn đánh lên Thủy Quái.</li>
+              <li><strong>Vũ khí Đinh Ba Chuyên Dụng</strong>: <em>Novice Trident</em> (+35% SCA) → <em>Adept Trident</em> (+40%) → <em>Prismarine Harpoon</em> (+50%) → <em>Tidesplitter</em> (+70% + Xoáy nước) → <em>Dreadspear</em> (+85% + Xoáy linh hồn) → <em>Poseidon's / Hephaestean Trident</em> (+100% SCA + Nổ AoE).</li>
+              <li><strong>Cơ chế Boss Cưỡi Thú (80/20 Split)</strong>: Các Boss <code>MOUNTED</code> (như <em>Poseidon</em>, <em>Dead Rider</em>, <em>Nether Lord</em>, <em>Void Emperor</em>) chia <strong>80% tổng HP cho Boss</strong> và <strong>20% tổng HP cho Thú cưỡi</strong> độc lập.</li>
+              <li><strong>Kinh tế EconomyCraft</strong>: Câu trúng <em>Treasure Chest</em> tự động cộng thẳng tiền vàng vào ví Purse (50 → 7,500+ Coins tùy bậc).</li>
+            </ul>
+          </div>
+
+          <div class="guide-card">
+            <h3>⚖️ 3. Tùy Chỉnh Độ Khó Toàn Server (enchants_balance.json)</h3>
+            <p>Bạn có thể tăng/giảm độ khó của toàn bộ 112 Thủy Quái bất cứ lúc nào tại file <code>config/expedition-fishing/enchants_balance.json</code> rồi gõ <code>/fish reload</code>:</p>
+            <div class="code-block">"mob_balance": {
+  "global_hp_scale": ${mb.global_hp_scale ?? 1.0},
+  "global_damage_scale": ${mb.global_damage_scale ?? 1.0},
+  "ability_damage_scale": ${mb.ability_damage_scale ?? 1.0},
+  "max_boss_hp": ${mb.max_boss_hp ?? 2000.0},
+  "max_boss_damage": ${mb.max_boss_damage ?? 50.0}
+}</div>
+            <ul style="margin-top:10px;">
+              <li><code>global_hp_scale</code>: Nhân máu toàn bộ thủy quái (VD: đặt <code>0.7</code> để giảm 30% máu).</li>
+              <li><code>global_damage_scale</code>: Nhân sát thương đòn đánh thường của thủy quái.</li>
+              <li><code>ability_damage_scale</code>: Nhân sát thương của 49 chiêu thức Boss đặc biệt.</li>
+              <li><code>max_boss_hp</code> / <code>max_boss_damage</code>: Trần giới hạn tối đa không con boss nào vượt qua được.</li>
+            </ul>
+          </div>
+
+          <div class="guide-card">
+            <h3>💻 4. Tổng Hợp Lệnh Người Chơi & Admin (/fish)</h3>
+            <div class="code-block">/fish gui              - Mở Menu Bách Khoa Câu Cá trong game
+/fish stats            - Xem chỉ số câu cá hiện tại của bản thân
+/fish bag              - Mở Túi Cổ Vật (Artifact Bag)
+/fish recipes          - Xem danh sách công thức chế tạo
+/fish spawn &lt;mob_id&gt;   - [OP] Triệu hồi ngay bất kỳ Thủy Quái / Boss nào
+/fish give &lt;item_id&gt;   - [OP] Lấy vật phẩm / cần câu / giáp câu cá
+/fish setlevel &lt;1-50&gt;  - [OP] Chỉnh cấp độ Fishing tức thì
+/fish addxp &lt;amount&gt;   - [OP] Cộng điểm kinh nghiệm Fishing
+/fish reload           - [OP] Tải lại toàn bộ JSON config không cần tắt server</div>
+          </div>
+        </div>
+      `;
+    }
+
+    /* ==================== MODALS ==================== */
+    function openMobModal(mobId) {
+      const m = DATA.mobs.find(x => x.id === mobId);
+      if (!m) return;
+      const modal = document.getElementById("detailModal");
+      const box = document.getElementById("modalDialogContent");
+
+      const abList = (m.abilities || []).map(a =>
+        `<li style="margin-bottom:6px;"><strong style="color:#fda4af;">⚡ ${escapeHtml(a.id)}</strong> <span style="color:var(--text-dim);">(Hồi chiêu: ${a.cooldown_sec}s)</span><br/><span>${escapeHtml(a.description)}</span></li>`
+      ).join("") || "<li>Không có kỹ năng chủ động đặc biệt.</li>";
+
+      const drList = (m.drops || []).map(d =>
+        `<li>🎁 <code>${escapeHtml(d.item)}</code> — Số lượng: <strong>${d.min === d.max ? d.min : d.min + '-' + d.max}x</strong> (Tỉ lệ: <strong style="color:#4ade80;">${d.chance}%</strong>)</li>`
+      ).join("") || "<li>Không có vật phẩm rơi cố định.</li>";
+
+      const bmList = (m.biomes || []).map(b =>
+        `<span class="mini-tag env">${escapeHtml(b.biome)} (${b.pool}: ${b.weight})</span>`
+      ).join(" ") || `<span class="mini-tag env">${(m.environments || []).join(", ")}</span>`;
+
+      box.innerHTML = `
+        <button class="modal-close" onclick="closeDetailModal()">✕</button>
+        <span class="rarity-badge badge-${m.rarity}">${m.rarity} • ${m.category}</span>
+        <h2 class="rar-text-${m.rarity}" style="font-size:1.5rem; font-weight:900; margin-top:8px;">${escapeHtml(m.name)}</h2>
+        <div style="font-size:0.8rem; color:var(--text-muted);">ID: <code>${escapeHtml(m.id)}</code> • Entity gốc: <code>${escapeHtml(m.entity_type)}</code> • Kiểu Spawn: <code>${escapeHtml(m.spawn_type)}</code> (Scale: ${m.scale}x)</div>
+
+        <div class="mc-tooltip-box">
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:10px; font-size:0.86rem;">
+            <div>❤️ <strong>Máu (HP):</strong> <span style="color:#f87171;font-weight:800;">${escapeHtml(m.hp_display)}</span></div>
+            <div>⚔️ <strong>Sát thương:</strong> <span style="color:#fb923c;font-weight:800;">${escapeHtml(m.dmg_display)}</span></div>
+            <div>🎣 <strong>Cấp yêu cầu:</strong> <span style="color:#38bdf8;font-weight:800;">Lv.${m.required_level}</span></div>
+            <div>✨ <strong>Kinh nghiệm:</strong> <span style="color:#4ade80;font-weight:800;">+${m.xp} XP</span> (${m.weight} kg)</div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>⚡ Chiêu Thức & Cơ Chế Chiến Đấu (${(m.abilities || []).length})</h4>
+          <ul style="padding-left:18px; font-size:0.84rem; line-height:1.55;">${abList}</ul>
+        </div>
+
+        <div class="modal-section">
+          <h4>🎁 Vật Phẩm Rơi Khi Tiêu Diệt (Drops)</h4>
+          <ul style="padding-left:18px; font-size:0.84rem; line-height:1.6;">${drList}</ul>
+        </div>
+
+        <div class="modal-section">
+          <h4>🌍 Quần Xã Xuất Hiện (Biomes & Trọng Số)</h4>
+          <div style="display:flex; flex-wrap:wrap; gap:6px;">${bmList}</div>
+        </div>
+
+        <div class="cmd-copy-row">
+          <input type="text" class="cmd-input" id="modalCmdInput" readonly value="/fish spawn ${escapeHtml(m.id)}" />
+          <button class="copy-btn" onclick="copyModalCmd()">📋 Copy Lệnh Spawn</button>
+        </div>
+      `;
+      modal.classList.add("active");
+    }
+
+    function openItemModal(itemId) {
+      const it = DATA.items.find(x => x.id === itemId);
+      if (!it) return;
+      const modal = document.getElementById("detailModal");
+      const box = document.getElementById("modalDialogContent");
+
+      const recHtml = (it.recipes || []).map(r => `
+        <div style="display:flex; align-items:center; gap:14px; margin-bottom:10px;">
+          ${buildCraftingGridHtml(r)}
+          <div style="font-size:0.8rem;">
+            <div><strong>Yêu cầu Fishing Lv.${r.level || 0}</strong></div>
+            ${Object.entries(r.ingredients || {}).map(([k, v]) => `<code>${escapeHtml(k)}</code> = ${escapeHtml(Array.isArray(v) ? v.join(" / ") : v)}`).join("<br/>")}
+          </div>
+        </div>
+      `).join("") || "<div style='font-size:0.83rem;color:var(--text-muted);'>Không có công thức chế tạo trực tiếp.</div>";
+
+      const dropByHtml = (it.dropped_by || []).map(d =>
+        `<span class="mini-tag drop" style="cursor:pointer;" onclick="openMobModal('${escapeHtml(d.mob_id)}')">🐙 ${escapeHtml(d.mob_name)} (${d.chance}%)</span>`
+      ).join(" ") || "<span style='font-size:0.83rem;color:var(--text-muted);'>Không rơi trực tiếp từ thủy quái.</span>";
+
+      box.innerHTML = `
+        <button class="modal-close" onclick="closeDetailModal()">✕</button>
+        <span class="rarity-badge badge-${it.rarity}">${it.rarity} • ${it.category}</span>
+        <h2 class="rar-text-${it.rarity}" style="font-size:1.5rem; font-weight:900; margin-top:8px;">${escapeHtml(it.name)}</h2>
+        <div style="font-size:0.8rem; color:var(--text-muted);">ID: <code>${escapeHtml(it.id)}</code> • Vật liệu gốc: <code>${escapeHtml(it.material)}</code></div>
+
+        <div class="mc-tooltip-box">
+          <div style="font-size:0.88rem; color:#e2e8f0; margin-bottom:8px;">${escapeHtml(it.description)}</div>
+          <div style="display:flex; flex-wrap:wrap; gap:12px; font-size:0.83rem; color:#38bdf8;">
+            ${it.required_level > 0 ? `<span>🔓 Yêu cầu: <strong>Lv.${it.required_level}</strong></span>` : ""}
+            ${it.fishing_speed > 0 ? `<span>⚡ Tốc câu: <strong>+${it.fishing_speed}%</strong></span>` : ""}
+            ${it.scc > 0 ? `<span>🐙 SCC: <strong>+${it.scc}%</strong></span>` : ""}
+            ${it.sea_creature_attack > 0 ? `<span>🔱 Sát thương Thủy Quái: <strong>+${it.sea_creature_attack}%</strong></span>` : ""}
+            ${it.double_catch > 0 ? `<span>🐟 Cá đôi: <strong>+${it.double_catch}%</strong></span>` : ""}
+            ${it.armor > 0 ? `<span>🛡️ Giáp: <strong>+${it.armor}</strong></span>` : ""}
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>⚒️ Công Thức Chế Tạo</h4>
+          ${recHtml}
+        </div>
+
+        <div class="modal-section">
+          <h4>🐙 Rơi Ra Từ Thủy Quái</h4>
+          <div style="display:flex; flex-wrap:wrap; gap:6px;">${dropByHtml}</div>
+        </div>
+
+        <div class="cmd-copy-row">
+          <input type="text" class="cmd-input" id="modalCmdInput" readonly value="/fish give ${escapeHtml(it.id)} 1" />
+          <button class="copy-btn" onclick="copyModalCmd()">📋 Copy Lệnh Give</button>
+        </div>
+      `;
+      modal.classList.add("active");
+    }
+
+    function openArtifactModal(artId) {
+      const a = DATA.artifacts.find(x => x.id === artId);
+      if (!a) return;
+      const modal = document.getElementById("detailModal");
+      const box = document.getElementById("modalDialogContent");
+
+      box.innerHTML = `
+        <button class="modal-close" onclick="closeDetailModal()">✕</button>
+        <span class="rarity-badge badge-${a.rarity}">${a.rarity} • ARTIFACT</span>
+        <h2 class="rar-text-${a.rarity}" style="font-size:1.5rem; font-weight:900; margin-top:8px;">🏺 ${escapeHtml(a.name)}</h2>
+        <div style="font-size:0.8rem; color:var(--text-muted);">ID: <code>${escapeHtml(a.id)}</code></div>
+
+        <div class="mc-tooltip-box">
+          <p style="font-size:0.9rem; color:#e2e8f0; margin-bottom:10px;">${escapeHtml(a.description)}</p>
+          ${(a.effects || []).map(e => `<div style="color:#4ade80; font-weight:800;">✦ Nội tại khi bỏ vào Túi Cổ Vật (/fish bag): +${e.value}% ${escapeHtml(e.stat.replace(/_/g, " "))}</div>`).join("")}
+        </div>
+      `;
+      modal.classList.add("active");
+    }
+
+    function closeDetailModal() {
+      document.getElementById("detailModal").classList.remove("active");
+    }
+
+    function copyModalCmd() {
+      const inp = document.getElementById("modalCmdInput");
+      if (!inp) return;
+      navigator.clipboard.writeText(inp.value);
+      const btn = document.querySelector(".copy-btn");
+      if (btn) {
+        const old = btn.innerText;
+        btn.innerText = "✅ Đã Copy!";
+        setTimeout(() => btn.innerText = old, 1400);
+      }
+    }
+
+    // Initialize
+    buildSubFilters();
+    renderActiveTab();
+  </script>
+</body>
+</html>
