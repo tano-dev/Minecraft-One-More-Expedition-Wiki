@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One More Expedition — KHTN Server Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --card-bg: rgba(18, 24, 36, 0.90);
+      --card-inner: #161d2b;
+      --card-inner-hover: #212b3f;
+      --border-card: rgba(255, 255, 255, 0.09);
+      --border-gold: #c99c3e;
+      --gold-primary: #f5c451;
+      --gold-dark: #b8861e;
+      --text-white: #ffffff;
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --blue-tab: #3b82f6;
+      --green: #4ade80;
+      --aqua: #38bdf8;
+      --epic: #e879f9;
+      --red: #f87171;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.5;
+      background-color: #0d131f;
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .minecraft-bg-fixed {
+      position: fixed;
+      inset: 0;
+      z-index: -10;
+      pointer-events: none;
+      overflow: hidden;
+      background: #101726 url('assets/bg.jpg') no-repeat center center / cover;
+    }
+
+    .minecraft-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 25%, rgba(15, 23, 42, 0.45) 0%, rgba(7, 10, 18, 0.82) 100%);
+    }
+
+    .mc-pixel {
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+
+    /* TOP HEADER */
+    .header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px 24px;
+      background: rgba(11, 15, 23, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      flex-wrap: wrap;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .brand-cube-icon {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      filter: drop-shadow(0 3px 6px rgba(0,0,0,0.6));
+    }
+
+    .brand-text-stack { display: flex; flex-direction: column; line-height: 1.05; }
+
+    .brand-khtn {
+      font-size: 1.25rem;
+      font-weight: 900;
+      letter-spacing: 0.03em;
+      color: var(--gold-primary);
+      text-shadow: 2px 2px 0px #5c3d0e;
+    }
+
+    .brand-wiki {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #cbd5e1;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-tabs-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(10, 13, 19, 0.75);
+      border: 1px solid var(--border-card);
+      border-radius: 10px;
+      padding: 4px;
+      flex-wrap: wrap;
+    }
+
+    .nav-tab-btn {
+      padding: 6px 14px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-tab-btn:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .nav-tab-btn.active {
+      color: #ffffff;
+      background: rgba(37, 99, 235, 0.35);
+      border-color: var(--blue-tab);
+    }
+
+    .header-right-tools {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-container {
+      display: flex;
+      align-items: center;
+      background: #0d1118;
+      border: 1px solid #2d3648;
+      border-radius: 8px;
+      padding: 4px 10px;
+      width: 220px;
+    }
+
+    .search-container input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 0.84rem;
+      width: 100%;
+      font-family: inherit;
+    }
+
+    .lang-pill {
+      display: inline-flex;
+      background: #0d1118;
+      border: 1px solid #2d3648;
+      border-radius: 8px;
+      padding: 2px;
+      gap: 2px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 5px 9px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.15s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--gold-primary);
+      color: #111827;
+    }
+
+    /* MAIN 3-COLUMN LAYOUT */
+    .main-layout {
+      max-width: 1380px;
+      margin: 22px auto 48px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 230px minmax(0, 1fr) 290px;
+      gap: 20px;
+      align-items: start;
+    }
+
+    /* LEFT SIDEBAR */
+    .left-sidebar { display: flex; flex-direction: column; gap: 14px; }
+
+    .sidebar-brand-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border-card);
+      border-radius: 14px;
+      padding: 18px 14px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .sidebar-cube-img {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      margin-bottom: 8px;
+      filter: drop-shadow(0 6px 10px rgba(0,0,0,0.5));
+    }
+
+    .sidebar-khtn-title {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--gold-primary);
+      letter-spacing: 0.04em;
+    }
+
+    .sidebar-wiki-title {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .accordion-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-card);
+      border-radius: 14px;
+      padding: 10px;
+      backdrop-filter: blur(10px);
+    }
+
+    .accordion-group { margin-bottom: 6px; }
+    .accordion-group:last-child { margin-bottom: 0; }
+
+    .accordion-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 10px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    .accordion-title:hover { background: rgba(255, 255, 255, 0.04); color: #fff; }
+    .accordion-group.collapsed .accordion-list { display: none; }
+
+    .accordion-list {
+      list-style: none;
+      margin-top: 2px;
+    }
+
+    .accordion-list li a {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 10px;
+      border-radius: 8px;
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .accordion-list li a:hover {
+      background: rgba(59, 130, 246, 0.16);
+      color: #fff;
+    }
+
+    .accordion-list li a img {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* CENTER COLUMN */
+    .center-column { display: flex; flex-direction: column; gap: 18px; }
+
+    .announcement-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      background: linear-gradient(135deg, rgba(245, 196, 81, 0.16), rgba(37, 99, 235, 0.14));
+      border: 1px solid rgba(245, 196, 81, 0.35);
+      border-radius: 14px;
+      padding: 12px 16px;
+      backdrop-filter: blur(10px);
+    }
+
+    .announcement-main { display: flex; align-items: center; gap: 12px; }
+    .announcement-headline { font-size: 0.96rem; font-weight: 800; color: #fff; }
+    .announcement-caption { font-size: 0.82rem; color: var(--text-muted); margin-top: 2px; }
+    .announcement-caption code {
+      background: rgba(0, 0, 0, 0.45);
+      color: var(--gold-primary);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+
+    .banner-dismiss-x {
+      background: rgba(255, 255, 255, 0.08);
+      border: none;
+      color: var(--text-muted);
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .main-wiki-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-card);
+      border-radius: 16px;
+      padding: 22px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    .wiki-card-header-container {
+      border-bottom: 2px solid rgba(245, 196, 81, 0.25);
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .wiki-tab-badge h1 {
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+
+    .wiki-version-pill {
+      background: rgba(56, 189, 248, 0.14);
+      border: 1px solid rgba(56, 189, 248, 0.38);
+      color: var(--aqua);
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+
+    .wiki-intro-text {
+      font-size: 0.92rem;
+      color: var(--text-main);
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .browse-section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .browse-header-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.96rem;
+      font-weight: 800;
+      color: var(--gold-primary);
+    }
+
+    .browse-header-left img { width: 20px; height: 20px; }
+
+    /* 5x3 / Responsive Content Tiles Grid */
+    .tiles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .content-tile {
+      background: var(--card-inner);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .content-tile:hover {
+      transform: translateY(-2px);
+      background: var(--card-inner-hover);
+      border-color: rgba(245, 196, 81, 0.55);
+    }
+
+    .tile-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(10, 14, 23, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .tile-icon-box img {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+    }
+
+    .tile-info { min-width: 0; flex: 1; }
+
+    .tile-title {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tile-sub {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tile-badge {
+      font-size: 0.65rem;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-top: 4px;
+      background: rgba(245, 196, 81, 0.14);
+      color: var(--gold-primary);
+      border: 1px solid rgba(245, 196, 81, 0.3);
+    }
+
+    /* ABOUT / QUICK COMMANDS CARD */
+    .about-khtn-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-card);
+      border-radius: 16px;
+      padding: 20px;
+      backdrop-filter: blur(12px);
+    }
+
+    .about-title-ribbon {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .about-title-ribbon img { width: 22px; height: 22px; }
+    .about-title-ribbon h2 { font-size: 1.1rem; font-weight: 800; color: #fff; }
+
+    .quick-cmd-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .quick-cmd-chip {
+      background: var(--card-inner);
+      border: 1px solid var(--border-card);
+      border-radius: 10px;
+      padding: 10px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .quick-cmd-chip:hover { border-color: rgba(56, 189, 248, 0.5); background: var(--card-inner-hover); }
+    .quick-cmd-chip code { color: var(--aqua); font-weight: 800; font-size: 0.84rem; }
+    .quick-cmd-chip span { color: var(--text-muted); font-size: 0.76rem; text-align: right; }
+
+    /* RIGHT SIDEBAR */
+    .right-sidebar { display: flex; flex-direction: column; gap: 16px; }
+
+    .widget-panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border-card);
+      border-radius: 14px;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+
+    .widget-top-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 14px;
+      background: rgba(10, 14, 22, 0.7);
+      border-bottom: 1px solid var(--border-card);
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .widget-top-header img { width: 18px; height: 18px; }
+
+    .status-body { padding: 14px; }
+
+    .ip-copy-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      background: #0d121c;
+      border: 1px solid rgba(74, 222, 128, 0.35);
+      border-radius: 10px;
+      padding: 9px 12px;
+      margin-bottom: 10px;
+    }
+
+    .ip-text {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      font-size: 0.86rem;
+      color: #fff;
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 8px var(--green);
+      flex-shrink: 0;
+    }
+
+    .status-dot.offline { background: var(--red); box-shadow: 0 0 8px var(--red); }
+
+    .copy-ip-btn {
+      background: rgba(74, 222, 128, 0.16);
+      border: 1px solid rgba(74, 222, 128, 0.4);
+      color: var(--green);
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 4px 9px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .copy-ip-btn:hover { background: rgba(74, 222, 128, 0.28); }
+
+    .status-meta { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
+    .status-meta strong { color: #fff; }
+
+    .checklist-body { padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.8rem;
+      color: var(--text-main);
+    }
+    .checklist-num {
+      background: rgba(245, 196, 81, 0.18);
+      color: var(--gold-primary);
+      font-weight: 800;
+      font-size: 0.72rem;
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .clock-body { padding: 14px; text-align: center; }
+    .clock-big-digits { font-size: 1.55rem; font-weight: 900; color: #fff; }
+    .clock-sub-label { font-size: 0.78rem; color: var(--text-muted); margin-top: 3px; }
+
+    /* MODALS (CONTENT MODAL + LANGUAGE PICKER MODAL) */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 8, 15, 0.78);
+      backdrop-filter: blur(6px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+    }
+
+    .modal-backdrop.active { display: flex; }
+
+    .mc-modal-box {
+      background: #131926;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 780px;
+      max-height: 86vh;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      position: relative;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
+    }
+
+    .modal-close-x {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      cursor: pointer;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+
+    .modal-close-x:hover { color: #fff; }
+
+    .modal-nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 12px;
+      padding-right: 26px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      flex-wrap: wrap;
+    }
+
+    .modal-back-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: #fff;
+      padding: 5px 12px;
+      border-radius: 7px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .modal-search-box {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #0b0f17;
+      border: 1px solid #2d3648;
+      border-radius: 8px;
+      padding: 5px 10px;
+    }
+
+    .modal-search-box input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 0.82rem;
+      width: 170px;
+      font-family: inherit;
+    }
+
+    .modal-scroll-area {
+      overflow-y: auto;
+      margin-top: 14px;
+      padding-right: 4px;
+      flex: 1;
+    }
+
+    .item-subgrid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .sub-item-card {
+      background: #1a2233;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 11px;
+      padding: 12px;
+      cursor: pointer;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+
+    .sub-item-card:hover {
+      background: #222c42;
+      border-color: rgba(245, 196, 81, 0.5);
+    }
+
+    .sub-item-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .sub-item-icon {
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .sub-item-icon img { width: 22px; height: 22px; object-fit: contain; }
+    .sub-item-title { font-size: 0.9rem; font-weight: 800; color: #fff; }
+    .sub-item-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 5px;
+      background: rgba(56, 189, 248, 0.14);
+      color: var(--aqua);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+    .sub-item-snippet { font-size: 0.8rem; color: var(--text-muted); line-height: 1.45; }
+
+    .detail-card {
+      background: #0f1522;
+      border: 1px solid rgba(245, 196, 81, 0.35);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .detail-features-list { margin-top: 12px; }
+    .detail-features-list h4 { font-size: 0.88rem; color: var(--gold-primary); margin-bottom: 8px; }
+    .detail-features-list ul { padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+    .detail-features-list li { font-size: 0.86rem; color: var(--text-main); }
+
+    /* LANGUAGE STARTUP MODAL */
+    .lang-modal-box {
+      background: #131a29;
+      border: 1px solid rgba(245, 196, 81, 0.45);
+      border-radius: 18px;
+      width: 100%;
+      max-width: 480px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.75);
+    }
+
+    .lang-modal-header-icon { width: 42px; height: 42px; margin-bottom: 10px; }
+    .lang-modal-title { font-size: 1.25rem; font-weight: 900; color: #fff; }
+    .lang-modal-sub { font-size: 0.84rem; color: var(--text-muted); margin-top: 4px; margin-bottom: 18px; }
+
+    .lang-choice-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .lang-choice-card {
+      background: #1b2436;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      padding: 16px 12px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .lang-choice-card:hover {
+      background: #243048;
+      border-color: var(--gold-primary);
+      transform: translateY(-2px);
+    }
+
+    .lang-flag { font-size: 1.8rem; }
+    .lang-name { font-size: 0.96rem; font-weight: 800; color: #fff; }
+    .lang-desc { font-size: 0.74rem; color: var(--text-muted); }
+
+    .lang-dont-show-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .lang-dont-show-label input {
+      width: 15px;
+      height: 15px;
+      accent-color: var(--gold-primary);
+      cursor: pointer;
+    }
+
+    .color-gold { color: var(--gold-primary) !important; background: rgba(245, 196, 81, 0.14) !important; }
+    .color-aqua { color: var(--aqua) !important; background: rgba(56, 189, 248, 0.14) !important; }
+    .color-green { color: var(--green) !important; background: rgba(74, 222, 128, 0.14) !important; }
+    .color-mythic { color: var(--epic) !important; background: rgba(232, 121, 249, 0.14) !important; }
+    .color-special { color: var(--red) !important; background: rgba(248, 113, 113, 0.14) !important; }
+
+    @media (max-width: 1120px) {
+      .main-layout { grid-template-columns: 1fr; }
+      .left-sidebar, .right-sidebar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    }
+
+    @media (max-width: 720px) {
+      .tiles-grid, .item-subgrid, .quick-cmd-grid, .left-sidebar, .right-sidebar {
+        grid-template-columns: 1fr;
+      }
+      .search-container { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="minecraft-bg-fixed">
+    <div class="minecraft-bg-overlay"></div>
+  </div>
+
+  <!-- TOP HEADER -->
+  <header class="header-bar">
+    <a href="#" class="brand-group" onclick="resetSearch(); return false;">
+      <img class="brand-cube-icon mc-pixel" src="assets/icons/grass_block_side.png" alt="OME Logo" />
+      <div class="brand-text-stack">
+        <span class="brand-khtn">One More Expedition</span>
+        <span class="brand-wiki">KHTN Server Wiki • 26.3</span>
+      </div>
+    </a>
+
+    <nav class="nav-tabs-pill">
+      <a href="#" class="nav-tab-btn active" data-i18n="navHome">Trang Chủ</a>
+      <a href="enchants.html" class="nav-tab-btn" style="color: #f5c451; border-color: rgba(245, 196, 81, 0.35);">
+        <img class="mc-pixel" src="assets/icons/enchanted_book.png" style="width:16px;height:16px;" alt=""/>
+        <span data-i18n="navEnchants">Bách Khoa Phù Phép (474)</span>
+      </a>
+      <a href="fishing.html" class="nav-tab-btn" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35);">
+        <img class="mc-pixel" src="assets/icons/fishing_rod.png" style="width:16px;height:16px;" alt=""/>
+        <span data-i18n="navFishing">Bách Khoa Câu Cá (112)</span>
+      </a>
+      <button class="nav-tab-btn" onclick="openCommandsModal()">
+        <img class="mc-pixel" src="assets/icons/paper.png" style="width:16px;height:16px;" alt=""/>
+        <span data-i18n="navCommands">Lệnh Nhanh</span>
+      </button>
+    </nav>
+
+    <div class="header-right-tools">
+      <div class="search-container">
+        <input type="text" id="wikiSearchInput" placeholder="Tìm kiếm wiki, lệnh, tính năng..." autocomplete="off"/>
+        <span style="font-size:0.85rem;">🔍</span>
+      </div>
+      <div class="lang-pill" title="Switch Language / Đổi Ngôn Ngữ">
+        <button class="lang-btn active" id="btnLangVi" onclick="setLanguage('vi')">🇻🇳 VI</button>
+        <button class="lang-btn" id="btnLangEn" onclick="setLanguage('en')">🇬🇧 EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3-COLUMN MAIN LAYOUT -->
+  <main class="main-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar">
+      <div class="sidebar-brand-box">
+        <img class="sidebar-cube-img mc-pixel" src="assets/icons/beacon.png" alt="OME Beacon" />
+        <div class="sidebar-khtn-title">KHTN • OME</div>
+        <div class="sidebar-wiki-title" data-i18n="sidebarSub">Minecraft 26.3 Survival & Skyblock</div>
+      </div>
+
+      <div class="accordion-card">
+        <div class="accordion-group">
+          <div class="accordion-title" onclick="toggleAccordion(this)">
+            <span data-i18n="accCore">Hệ Thống Cốt Lõi</span>
+            <span>⌵</span>
+          </div>
+          <ul class="accordion-list">
+            <li><a onclick="openCategoryById('skyblock')"><img class="mc-pixel" src="assets/icons/oak_sapling.png" alt=""/> <span data-i18n="linkSkyblock">Skyblock (/is)</span></a></li>
+            <li><a onclick="openCategoryById('rtp')"><img class="mc-pixel" src="assets/icons/compass.png" alt=""/> <span data-i18n="linkRtp">Wilderness (/rtp)</span></a></li>
+            <li><a onclick="openCategoryById('combat')"><img class="mc-pixel" src="assets/icons/netherite_sword.png" alt=""/> <span data-i18n="linkCombat">Combat Log (2m)</span></a></li>
+            <li><a onclick="openCategoryById('stash')"><img class="mc-pixel" src="assets/icons/bundle.png" alt=""/> <span data-i18n="linkStash">Stash & KeepInv</span></a></li>
+          </ul>
+        </div>
+
+        <div class="accordion-group">
+          <div class="accordion-title" onclick="toggleAccordion(this)">
+            <span data-i18n="accProgression">Kinh Tế & Tiến Trình</span>
+            <span>⌵</span>
+          </div>
+          <ul class="accordion-list">
+            <li><a onclick="openCategoryById('economy')"><img class="mc-pixel" src="assets/icons/emerald.png" alt=""/> <span data-i18n="linkEconomy">Economy & /shop</span></a></li>
+            <li><a onclick="openCategoryById('prefix')"><img class="mc-pixel" src="assets/icons/name_tag.png" alt=""/> <span data-i18n="linkPrefix">Prefix & /rank</span></a></li>
+            <li><a onclick="openCategoryById('redeem')"><img class="mc-pixel" src="assets/icons/paper.png" alt=""/> <span data-i18n="linkRedeem">Redeem Codes</span></a></li>
+            <li><a onclick="openCategoryById('quests')"><img class="mc-pixel" src="assets/icons/writable_book.png" alt=""/> <span data-i18n="linkQuests">Daily Quests (/q)</span></a></li>
+          </ul>
+        </div>
+
+        <div class="accordion-group">
+          <div class="accordion-title" onclick="toggleAccordion(this)">
+            <span data-i18n="accEncyclopedias">Bách Khoa Chuyên Sâu</span>
+            <span>⌵</span>
+          </div>
+          <ul class="accordion-list">
+            <li><a href="enchants.html"><img class="mc-pixel" src="assets/icons/enchanted_book.png" alt=""/> <span data-i18n="linkEnchants">474 Phù Phép</span></a></li>
+            <li><a href="fishing.html"><img class="mc-pixel" src="assets/icons/fishing_rod.png" alt=""/> <span data-i18n="linkFishing">112 Thủy Quái</span></a></li>
+            <li><a onclick="openCategoryById('bosses')"><img class="mc-pixel" src="assets/icons/dragon_egg.png" alt=""/> <span data-i18n="linkBosses">World Bosses</span></a></li>
+            <li><a onclick="openCategoryById('world')"><img class="mc-pixel" src="assets/icons/spyglass.png" alt=""/> <span data-i18n="linkWorld">Biomes & Dungeons</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CENTER COLUMN -->
+    <section class="center-column">
+      <div class="announcement-box" id="welcomeBanner">
+        <div class="announcement-main">
+          <img class="mc-pixel" src="assets/icons/nether_star.png" style="width:28px;height:28px;" alt=""/>
+          <div>
+            <div class="announcement-headline" data-i18n="bannerTitle">Chào mừng đến với One More Expedition (MC 26.3)!</div>
+            <div class="announcement-caption" data-i18n="bannerSub">
+              Kết nối qua IP <code>mckhtn.redirectme.net</code> • Mở <code>/rank</code> để chỉnh Prefix & <code>/redeem</code> để nhập Code!
+            </div>
+          </div>
+        </div>
+        <button class="banner-dismiss-x" onclick="document.getElementById('welcomeBanner').style.display='none'">✕</button>
+      </div>
+
+      <article class="main-wiki-card">
+        <div class="wiki-card-header-container">
+          <div class="wiki-tab-badge">
+            <h1 data-i18n="mainHeading">Wiki Chính Thức — One More Expedition</h1>
+          </div>
+          <span class="wiki-version-pill">Minecraft 26.3 • Fabric SMP + Skyblock</span>
+        </div>
+
+        <p class="wiki-intro-text" data-i18n="mainIntro">
+          <strong>One More Expedition</strong> kết hợp sinh tồn thế giới mở (Terralith, Incendium, Stellarity, Dungeons &amp; Taverns) với đảo riêng Skyblock (<code>/is</code>), hệ thống 474 Phù phép, 112 Thủy quái Câu cá, Nhiệm vụ Co-op hàng ngày, Kinh tế EconomyCraft và danh hiệu Prefix Cosmetics.
+        </p>
+
+        <div class="browse-section-header">
+          <div class="browse-header-left">
+            <img class="mc-pixel" src="assets/icons/netherite_pickaxe.png" alt=""/>
+            <span data-i18n="browseTitle">Khám Phá Các Hệ Thống Server</span>
+          </div>
+          <span id="tilesMatchCount" style="font-size:0.78rem; color:var(--text-muted);"></span>
+        </div>
+
+        <div class="tiles-grid" id="contentGrid"></div>
+      </article>
+
+      <section class="about-khtn-card">
+        <div class="about-title-ribbon">
+          <img class="mc-pixel" src="assets/icons/book.png" alt=""/>
+          <h2 data-i18n="quickCmdTitle">Lệnh Thường Dùng (Nhấp Để Xem Chi Tiết)</h2>
+        </div>
+        <div class="quick-cmd-grid" id="quickCmdGrid"></div>
+      </section>
+    </section>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="right-sidebar">
+      <div class="widget-panel">
+        <div class="widget-top-header">
+          <img class="mc-pixel" src="assets/icons/emerald.png" alt=""/>
+          <span data-i18n="serverStatusTitle">Kết Nối Server</span>
+        </div>
+        <div class="status-body">
+          <div class="ip-copy-box">
+            <div class="ip-text">
+              <span class="status-dot" id="serverDot"></span>
+              <span>mckhtn.redirectme.net</span>
+            </div>
+            <button class="copy-ip-btn" id="copyIpBtn" onclick="copyServerIp()" data-i18n="copyBtn">Copy IP</button>
+          </div>
+          <div class="status-meta" id="serverStatusText">
+            Java Edition 26.3 • Checking status...
+          </div>
+        </div>
+      </div>
+
+      <div class="widget-panel">
+        <div class="widget-top-header">
+          <img class="mc-pixel" src="assets/icons/writable_book.png" alt=""/>
+          <span data-i18n="checklistTitle">Hướng Dẫn Tân Thủ</span>
+        </div>
+        <div class="checklist-body" id="newPlayerChecklist"></div>
+      </div>
+
+      <div class="widget-panel">
+        <div class="widget-top-header">
+          <img class="mc-pixel" src="assets/icons/clock.png" alt=""/>
+          <span data-i18n="clockTitle">Đồng Hồ Server</span>
+        </div>
+        <div class="clock-body">
+          <div class="clock-big-digits" id="skyblockClock">--:--</div>
+          <div class="clock-sub-label" data-i18n="clockZone">Múi giờ Việt Nam (UTC+7)</div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- CONTENT MODAL -->
+  <div class="modal-backdrop" id="wikiModal">
+    <div class="mc-modal-box">
+      <span class="modal-close-x" onclick="closeModal()">✕</span>
+      <div class="modal-nav-bar">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <button class="modal-back-btn" id="modalBackBtn" onclick="goBackToList()" style="display: none;" data-i18n="btnBack">← Quay lại</button>
+          <div>
+            <h2 id="modalTitle" style="font-size: 1.15rem; margin: 0; display: flex; align-items: center; gap: 8px;">
+              <span id="modalIcon"></span> <span id="modalHeaderName"></span>
+            </h2>
+            <p id="modalCategoryTag" style="font-size: 0.76rem; color: var(--text-dim); margin-top: 2px;"></p>
+          </div>
+        </div>
+        <div class="modal-search-box" id="modalSearchWrapper">
+          <span>🔍</span>
+          <input type="text" id="modalSubSearch" placeholder="Lọc trong mục này..." />
+        </div>
+      </div>
+
+      <div class="modal-scroll-area">
+        <div id="modalListView">
+          <div class="item-subgrid" id="modalSubGrid"></div>
+        </div>
+        <div id="modalDetailView" style="display: none;">
+          <div class="detail-card" id="modalTooltip"></div>
+          <div class="detail-features-list" id="modalExtraDetails" style="display: none;"></div>
+        </div>
+      </div>
+
+      <div style="margin-top: 14px; display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);">
+        <span id="modalItemsCount" style="font-size: 0.78rem; color: var(--text-dim);"></span>
+        <button onclick="closeModal()" style="background: #2563eb; border: none; color: #fff; padding: 6px 18px; border-radius: 7px; cursor: pointer; font-weight: 700; font-size: 0.82rem;" data-i18n="btnClose">Đóng</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STARTUP LANGUAGE PICKER MODAL -->
+  <div class="modal-backdrop" id="langModal">
+    <div class="lang-modal-box">
+      <img class="lang-modal-header-icon mc-pixel" src="assets/icons/enchanted_book.png" alt="Language"/>
+      <div class="lang-modal-title">Chọn Ngôn Ngữ / Choose Language</div>
+      <div class="lang-modal-sub">One More Expedition Wiki • mckhtn.redirectme.net</div>
+
+      <div class="lang-choice-grid">
+        <div class="lang-choice-card" onclick="chooseStartupLanguage('vi')">
+          <div class="lang-flag">🇻🇳</div>
+          <div class="lang-name">Tiếng Việt</div>
+          <div class="lang-desc">Giao diện & hướng dẫn Tiếng Việt</div>
+        </div>
+        <div class="lang-choice-card" onclick="chooseStartupLanguage('en')">
+          <div class="lang-flag">🇬🇧</div>
+          <div class="lang-name">English</div>
+          <div class="lang-desc">Full English guides & commands</div>
+        </div>
+      </div>
+
+      <label class="lang-dont-show-label">
+        <input type="checkbox" id="langDontShowCheck" />
+        <span>Không hiện lại nữa / Don't show this again</span>
+      </label>
+    </div>
+  </div>
+
+  <script>
+    const LANG_KEY = "ome_wiki_lang";
+    const DONT_SHOW_KEY = "ome_wiki_lang_dont_show";
+    let currentLang = localStorage.getItem(LANG_KEY) || "vi";
+    let currentCategory = null;
+    let currentSubItems = [];
+
+    const UI_TEXT = {
+      vi: {
+        navHome: "Trang Chủ",
+        navEnchants: "Bách Khoa Phù Phép (474)",
+        navFishing: "Bách Khoa Câu Cá (112)",
+        navCommands: "Lệnh Nhanh",
+        searchPlaceholder: "Tìm kiếm wiki, lệnh, tính năng...",
+        subSearchPlaceholder: "Lọc trong mục này...",
+        sidebarSub: "Minecraft 26.3 Sinh Tồn & Skyblock",
+        accCore: "Hệ Thống Cốt Lõi",
+        accProgression: "Kinh Tế & Tiến Trình",
+        accEncyclopedias: "Bách Khoa Chuyên Sâu",
+        linkSkyblock: "Skyblock (/is)",
+        linkRtp: "Wilderness (/rtp)",
+        linkCombat: "Combat Log (2 phút)",
+        linkStash: "Stash & KeepInv",
+        linkEconomy: "Economy & /shop",
+        linkPrefix: "Prefix & /rank",
+        linkRedeem: "Redeem Codes",
+        linkQuests: "Daily Quests (/q)",
+        linkEnchants: "474 Phù Phép",
+        linkFishing: "112 Thủy Quái",
+        linkBosses: "World Bosses",
+        linkWorld: "Biomes & Dungeons",
+        bannerTitle: "Chào mừng đến với One More Expedition (MC 26.3)!",
+        bannerSub: "Kết nối qua IP <code>mckhtn.redirectme.net</code> • Mở <code>/rank</code> để chỉnh Prefix & <code>/redeem</code> để nhập Code!",
+        mainHeading: "Wiki Chính Thức — One More Expedition",
+        mainIntro: "<strong>One More Expedition</strong> kết hợp sinh tồn thế giới mở (Terralith, Incendium, Stellarity, Dungeons &amp; Taverns) với đảo riêng Skyblock (<code>/is</code>), hệ thống 474 Phù phép, 112 Thủy quái Câu cá, Nhiệm vụ Co-op hàng ngày, Kinh tế EconomyCraft và danh hiệu Prefix Cosmetics.",
+        browseTitle: "Khám Phá Các Hệ Thống Server",
+        quickCmdTitle: "Lệnh Thường Dùng (Nhấp Để Xem Chi Tiết)",
+        serverStatusTitle: "Kết Nối Server",
+        copyBtn: "Copy IP",
+        copiedBtn: "Đã Copy!",
+        checklistTitle: "Hướng Dẫn Tân Thủ",
+        clockTitle: "Đồng Hồ Server",
+        clockZone: "Múi giờ Việt Nam (UTC+7)",
+        btnBack: "← Quay lại",
+        btnClose: "Đóng",
+        itemsAvail: "mục có sẵn",
+        detailPrefix: "Chi tiết: ",
+        featuresTitle: "✨ Chi Tiết & Cơ Chế",
+        noMatch: "Không tìm thấy mục nào khớp với tìm kiếm.",
+        checklist: [
+          "Đăng ký / đăng nhập bằng <code>/register</code> &amp; <code>/login</code> (có Spawn Shield bảo vệ tọa độ).",
+          "Gõ <code>/daily</code> nhận $1,000 mỗi ngày &amp; <code>/quest</code> nhận nhiệm vụ kiếm Coins + XP.",
+          "Gõ <code>/is</code> để về đảo Skyblock an toàn (bật KeepInventory riêng trên đảo).",
+          "Gõ <code>/rtp</code> (3 lần/ngày) để ra thế giới sinh tồn đào mỏ, săn Boss &amp; tìm rương."
+        ]
+      },
+      en: {
+        navHome: "Main Page",
+        navEnchants: "Enchantments Wiki (474)",
+        navFishing: "Fishing Wiki (112)",
+        navCommands: "Quick Commands",
+        searchPlaceholder: "Search wiki, commands, features...",
+        subSearchPlaceholder: "Filter this section...",
+        sidebarSub: "Minecraft 26.3 Survival & Skyblock",
+        accCore: "Core Systems",
+        accProgression: "Economy & Progression",
+        accEncyclopedias: "Full Encyclopedias",
+        linkSkyblock: "Skyblock (/is)",
+        linkRtp: "Wilderness (/rtp)",
+        linkCombat: "Combat Log (2m)",
+        linkStash: "Stash & KeepInv",
+        linkEconomy: "Economy & /shop",
+        linkPrefix: "Prefix & /rank",
+        linkRedeem: "Redeem Codes",
+        linkQuests: "Daily Quests (/q)",
+        linkEnchants: "474 Enchantments",
+        linkFishing: "112 Sea Creatures",
+        linkBosses: "World Bosses",
+        linkWorld: "Biomes & Dungeons",
+        bannerTitle: "Welcome to One More Expedition (MC 26.3)!",
+        bannerSub: "Connect via <code>mckhtn.redirectme.net</code> • Open <code>/rank</code> for Prefixes &amp; <code>/redeem</code> for Promo Codes!",
+        mainHeading: "Official Wiki — One More Expedition",
+        mainIntro: "<strong>One More Expedition</strong> blends open-world survival (Terralith, Incendium, Stellarity, Dungeons &amp; Taverns) with private Skyblock islands (<code>/is</code>), 474 Enchantments, 112 Fishing Sea Creatures, Co-op Daily Quests, EconomyCraft, and Prefix Cosmetics.",
+        browseTitle: "Browse Server Systems",
+        quickCmdTitle: "Essential Commands (Click For Details)",
+        serverStatusTitle: "Server Connection",
+        copyBtn: "Copy IP",
+        copiedBtn: "Copied!",
+        checklistTitle: "New Player Checklist",
+        clockTitle: "Server Clock",
+        clockZone: "Local Time (UTC+7)",
+        btnBack: "← Back",
+        btnClose: "Close",
+        itemsAvail: "entries available",
+        detailPrefix: "Details: ",
+        featuresTitle: "✨ Mechanics & Details",
+        noMatch: "No entries match your search.",
+        checklist: [
+          "Secure your account with <code>/register</code> &amp; <code>/login</code> (Spawn Shield hides coordinates until login).",
+          "Run <code>/daily</code> for $1,000 daily &amp; <code>/quest</code> for Coins + Adventure XP.",
+          "Use <code>/is</code> to visit your private Skyblock island (island-wide KeepInventory enabled).",
+          "Use <code>/rtp</code> (3/day) to explore Overworld biomes, Mine Treasures, and Bosses."
+        ]
+      }
+    };
+
+    const WIKI_CATEGORIES = [
+      {
+        id: "skyblock",
+        icon: "assets/icons/oak_sapling.png",
+        badge: { vi: "ĐẢO RIÊNG", en: "ISLAND" },
+        name: { vi: "Skyblock (/is)", en: "Skyblock (/is)" },
+        sub: { vi: "Đảo riêng 256×256, KeepInv & Visit", en: "256×256 Island, KeepInv & Visit" },
+        subItems: [
+          {
+            icon: "assets/icons/oak_sapling.png",
+            badge: "ISLAND CORE",
+            rarity: "color-green",
+            name: { vi: "Tạo & Quản Lý Đảo (/is)", en: "Island Management (/is)" },
+            desc: { vi: "Mỗi người chơi sở hữu một hòn đảo 256×256 riêng biệt với chống phá hoại, tự động cứu khi rơi xuống void và KeepInventory riêng trên đảo.", en: "Each player gets a private 256×256 island with anti-grief protection, void rescue, and island-only KeepInventory." },
+            features: {
+              vi: ["/is hoặc /is home — Về đảo của bạn", "/is sethome — Đặt điểm spawn mới trên đảo", "/is lock | /is unlock — Khóa/mở khách tham quan", "/is kick <tên> — Đuổi người chơi khỏi đảo"],
+              en: ["/is or /is home — Teleport to your island", "/is sethome — Set your island home point", "/is lock | /is unlock — Toggle visitor access", "/is kick <player> — Remove a visitor from your island"]
+            }
+          },
+          {
+            icon: "assets/icons/ender_pearl.png",
+            badge: "VISITING",
+            rarity: "color-aqua",
+            name: { vi: "Tham Quan & Quay Lại (/visit, /return)", en: "Visiting & Return (/visit, /return)" },
+            desc: { vi: "Mời bạn bè sang chơi hoặc đi tham quan đảo người khác, sau đó quay về vị trí cũ ở thế giới sinh tồn bất kỳ lúc nào.", en: "Invite friends or visit public islands, and return to your previous survival coordinates anytime." },
+            features: {
+              vi: ["/visit <tên> — Ghé thăm đảo đã mở khóa", "/invite <tên> — Mời bạn sang đảo", "/return — Quay lại đúng tọa độ trước khi dùng /is"],
+              en: ["/visit <player> — Visit an unlocked island", "/invite <player> — Invite a friend to your island", "/return — Return to your last survival location"]
+            }
+          }
+        ]
+      },
+      {
+        id: "rtp",
+        icon: "assets/icons/compass.png",
+        badge: { vi: "THÁM HIỂM", en: "EXPLORE" },
+        name: { vi: "Wilderness (/rtp)", en: "Wilderness (/rtp)" },
+        sub: { vi: "3 lượt/ngày • 30 phút hồi", en: "3 uses/day • 30m cooldown" },
+        subItems: [
+          {
+            icon: "assets/icons/compass.png",
+            badge: "RANDOM TELEPORT",
+            rarity: "color-green",
+            name: { vi: "Giới Hạn & Quy Tắc /rtp", en: "/rtp Limits & Rules" },
+            desc: { vi: "Dịch chuyển ngẫu nhiên tới vùng đất mới tại Overworld để đào khoáng sản, tìm cấu trúc và săn boss.", en: "Randomly teleport to unexplored Overworld terrain for mining, looting structures, and hunting." },
+            features: {
+              vi: ["Giới hạn 3 lần sử dụng mỗi ngày (tính cả /rtp back)", "Thời gian hồi chiêu: 30 phút giữa các lần dùng", "Chỉ hoạt động ở Overworld (bị chặn tại Nether & The End)", "Bị khóa khi đang trong trạng thái Combat Log"],
+              en: ["Limited to 3 uses per day (including /rtp back)", "30-minute cooldown between uses", "Overworld only (blocked in Nether & The End)", "Blocked while in Combat Log"]
+            }
+          }
+        ]
+      },
+      {
+        id: "combat",
+        icon: "assets/icons/netherite_sword.png",
+        badge: { vi: "CHỐNG THOÁT", en: "COMBAT LOG" },
+        name: { vi: "Combat & PvP", en: "Combat & PvP" },
+        sub: { vi: "Combat Log 2 phút (PvP & PvE)", en: "2-Min Combat Log (PvP & PvE)" },
+        subItems: [
+          {
+            icon: "assets/icons/netherite_sword.png",
+            badge: "2 MIN TIMER",
+            rarity: "color-special",
+            name: { vi: "Cơ Chế Combat Log 2 Phút", en: "2-Minute Combat Log Mechanic" },
+            desc: { vi: "Khi bạn đánh quái/người chơi hoặc bị quái/người chơi tấn công, trạng thái Combat sẽ kích hoạt trong 120 giây và hiển thị trực tiếp trên Sidebar.", en: "Hitting or taking damage from any mob or player activates a 120-second Combat Log timer shown live on your Sidebar." },
+            features: {
+              vi: ["Khóa lệnh thoát hiểm: /rtp, /is, /is home, /visit", "Hiển thị đếm ngược ⚔ Xs ngay trên Sidebar", "Trở về ✦ Safe sau 2 phút không giao tranh", "PvP bị tắt hoàn toàn bên trong thế giới Skyblock"],
+              en: ["Blocks escape commands: /rtp, /is, /is home, /visit", "Displays live ⚔ Xs countdown on Sidebar", "Returns to ✦ Safe after 2 minutes out of combat", "PvP is strictly disabled inside Skyblock"]
+            }
+          }
+        ]
+      },
+      {
+        id: "economy",
+        icon: "assets/icons/emerald.png",
+        badge: { vi: "KINH TẾ", en: "ECONOMY" },
+        name: { vi: "Economy & /shop", en: "Economy & /shop" },
+        sub: { vi: "/daily, /shop, /ah, Extras", en: "/daily, /shop, /ah, Extras" },
+        subItems: [
+          {
+            icon: "assets/icons/emerald.png",
+            badge: "ECONOMYCRAFT",
+            rarity: "color-gold",
+            name: { vi: "Cửa Hàng & Giao Dịch (/shop, /ah)", en: "Server Shop & Auction (/shop, /ah)" },
+            desc: { vi: "Hệ thống tiền tệ EconomyCraft với giá động cân bằng, phần thưởng điểm danh hàng ngày và Chợ Đấu Giá giữa người chơi.", en: "EconomyCraft currency with balanced dynamic pricing, daily rewards, and a player-driven Auction House." },
+            features: {
+              vi: ["/daily — Nhận $1,000 mỗi ngày", "/shop — Mua bán vật phẩm & mục Extras (Charms + Prefix Mystery Vouchers)", "/ah — Chợ đấu giá liên người chơi", "/sell hand & /worth — Bán nhanh hoặc xem giá đồ trên tay", "/bal & /pay <tên> <số_tiền> — Xem số dư & chuyển tiền"],
+              en: ["/daily — Claim $1,000 every day", "/shop — Buy/sell items & Extras tab (Charms + Prefix Mystery Vouchers)", "/ah — Player Auction House", "/sell hand & /worth — Quick-sell or check held item value", "/bal & /pay <player> <amount> — Check balance & transfer coins"]
+            }
+          }
+        ]
+      },
+      {
+        id: "prefix",
+        icon: "assets/icons/name_tag.png",
+        badge: { vi: "MỚI", en: "NEW" },
+        name: { vi: "Prefix & /rank", en: "Prefix & /rank" },
+        sub: { vi: "192 Biểu Tượng • Slot Machine", en: "192 Emblems • Slot Machine" },
+        subItems: [
+          {
+            icon: "assets/icons/name_tag.png",
+            badge: "10 CATEGORIES",
+            rarity: "color-mythic",
+            name: { vi: "Quản Lý Prefix (/prefix, /rank)", en: "Prefix Studio (/prefix, /rank)" },
+            desc: { vi: "Tùy biến biểu tượng đứng trước tên bạn trên Chat, Tablist và Nametag với 10 danh mục (192 biểu tượng), 16 màu và bật/tắt Bold.", en: "Customize your Chat, Tablist, and Nametag emblem across 10 categories (192 emblems), 16 colors, and Bold toggle." },
+            features: {
+              vi: ["Định dạng Chat: ▸ [prefix] Tên: nội dung", "10 nhóm: Combat, Professions, Royalty, Celestial, Nature, Greek, Runes, Mystic, Fun, Events (Limited)", "Dùng /prefix, /prefixes hoặc /rank để mở GUI"],
+              en: ["Chat format: ▸ [prefix] Name: message", "10 categories: Combat, Professions, Royalty, Celestial, Nature, Greek, Runes, Mystic, Fun, Events (Limited)", "Open with /prefix, /prefixes, or /rank"]
+            }
+          },
+          {
+            icon: "assets/icons/nether_star.png",
+            badge: "SLOT MACHINE",
+            rarity: "color-gold",
+            name: { vi: "Prefix Mystery Voucher (Quay Hũ)", en: "Prefix Mystery Voucher (Slot Spin)" },
+            desc: { vi: "Mua trong /shop (mục Extras, $100k–$150k) hoặc nhận từ sự kiện. Chuột phải để quay Slot Machine mở khóa ngẫu nhiên 1 biểu tượng chưa sở hữu!", en: "Buy in /shop (Extras tab, $100k–$150k) or win from events. Right-click to spin the Slot Machine for an unowned emblem!" },
+            features: {
+              vi: ["Chống trùng lặp 100%: chỉ quay ra emblem bạn chưa có", "Màn hình chiến thắng giữ nguyên để chụp ảnh khoe kèm nút Equip Now", "Được bảo vệ khỏi mất khi chết trong NiceKeepInventory & chặn đổi tên mob/Anvil"],
+              en: ["100% anti-duplicate: only rolls unowned emblems", "Victory screen stays open for screenshots with an instant Equip Now button", "Kept on death via NiceKeepInventory & protected from Anvils/mob naming"]
+            }
+          }
+        ]
+      },
+      {
+        id: "redeem",
+        icon: "assets/icons/paper.png",
+        badge: { vi: "GIFTCODE", en: "CODES" },
+        name: { vi: "Redeem Codes", en: "Redeem Codes" },
+        sub: { vi: "/redeem <code> & /code <code>", en: "/redeem <code> & /code <code>" },
+        subItems: [
+          {
+            icon: "assets/icons/paper.png",
+            badge: "PROMO SYSTEM",
+            rarity: "color-gold",
+            name: { vi: "Nhập Code Nhận Quà (/redeem, /code)", en: "Redeem Promo Codes (/redeem, /code)" },
+            desc: { vi: "Nhập mã sự kiện hoặc giftcode do Admin phát hành để nhận Coins, XP, Prefix Emblem, Mystery Voucher, vật phẩm và loot hiếm.", en: "Enter event or promo codes to claim Coins, XP, Prefix Emblems, Mystery Vouchers, items, and custom loot." },
+            features: {
+              vi: ["/redeem <mã> hoặc /code <mã> (không phân biệt hoa/thường)", "Hỗ trợ giới hạn lượt toàn server & thời hạn sử dụng", "Vật phẩm dư khi đầy túi tự động chuyển vào /stash"],
+              en: ["/redeem <code> or /code <code> (case-insensitive)", "Supports global redemption caps and expiration timers", "Overflow items safely route to /stash if inventory is full"]
+            }
+          }
+        ]
+      },
+      {
+        id: "quests",
+        icon: "assets/icons/writable_book.png",
+        badge: { vi: "NHIỆM VỤ", en: "QUESTS" },
+        name: { vi: "Daily Quests (/q)", en: "Daily Quests (/q)" },
+        sub: { vi: "10 Quest/ngày • Chuỗi 12.0x • Co-op", en: "10/day • 12.0x Streak • Co-op" },
+        subItems: [
+          {
+            icon: "assets/icons/writable_book.png",
+            badge: "PROGRESSION",
+            rarity: "color-gold",
+            name: { vi: "Hệ Thống Nhiệm Vụ (/quest, /q)", en: "Daily Quests (/quest, /q)" },
+            desc: { vi: "Hoàn thành tối đa 10 nhiệm vụ mỗi ngày để tăng Adventure Level, kiếm Coins và tích lũy chuỗi thưởng lên đến 12.0x.", en: "Complete up to 10 quests daily to level up Adventure Rank, earn Coins, and build up to a 12.0x streak multiplier." },
+            features: {
+              vi: ["/quest hoặc /q — Mở bảng nhận nhiệm vụ", "/quest share & /quest accept — Làm nhiệm vụ Co-op cùng bạn bè", "/quest stats — Xem cấp Adventure & thống kê", "Tương thích 3 phù phép Quest: Adventurer, Bounty Hunter, Contract Master"],
+              en: ["/quest or /q — Open Quest Draft UI", "/quest share & /quest accept — Co-op quests with friends", "/quest stats — Check Adventure Level & stats", "Boosted by 3 Quest enchants: Adventurer, Bounty Hunter, Contract Master"]
+            }
+          }
+        ]
+      },
+      {
+        id: "fishing",
+        icon: "assets/icons/fishing_rod.png",
+        badge: { vi: "FULL WIKI", en: "FULL WIKI" },
+        name: { vi: "Fishing Wiki", en: "Fishing Wiki" },
+        sub: { vi: "112 Thủy Quái • 43 Phù Phép", en: "112 Sea Creatures • 43 Enchants" },
+        subItems: [
+          {
+            icon: "assets/icons/fishing_rod.png",
+            badge: "EXPEDITION FISHING",
+            rarity: "color-aqua",
+            name: { vi: "Mở Bách Khoa Câu Cá (fishing.html)", en: "Open Fishing Encyclopedia (fishing.html)" },
+            desc: { vi: "Hệ thống Expedition Fishing Lv.1–50 xuyên suốt Overworld, Nether Lava và End Void với 112 Thủy Quái/Boss, 147 trang bị, 23 Cổ Vật và 43 phù phép câu cá.", en: "Expedition Fishing Lv.1–50 across Overworld, Nether Lava, and End Void with 112 Sea Creatures/Bosses, 147 gear items, 23 Artifacts, and 43 fishing enchants." },
+            features: {
+              vi: ["/fish — Mở Fishing Hub chính", "/fish bag — Mở túi 9 ô đựng Cổ Vật (Artifacts)", "/fish recipe | /fish stats | /fish chances", "<a href='fishing.html' style='color:#38bdf8;font-weight:800;text-decoration:underline;'>Nhấp vào đây để mở Bách Khoa Câu Cá →</a>"],
+              en: ["/fish — Open main Fishing Hub", "/fish bag — Open 9-slot Artifact Bag", "/fish recipe | /fish stats | /fish chances", "<a href='fishing.html' style='color:#38bdf8;font-weight:800;text-decoration:underline;'>Click here to open Fishing Wiki →</a>"]
+            }
+          }
+        ]
+      },
+      {
+        id: "enchants",
+        icon: "assets/icons/enchanted_book.png",
+        badge: { vi: "474 ENCHANTS", en: "474 ENCHANTS" },
+        name: { vi: "Enchantments Wiki", en: "Enchantments Wiki" },
+        sub: { vi: "474 Phù Phép • Auto-Smelt • Mining", en: "474 Enchants • Auto-Smelt • Mining" },
+        subItems: [
+          {
+            icon: "assets/icons/enchanted_book.png",
+            badge: "MASTER DATABASE",
+            rarity: "color-gold",
+            name: { vi: "Mở Bách Khoa Phù Phép (enchants.html)", en: "Open Enchantments Wiki (enchants.html)" },
+            desc: { vi: "Tra cứu toàn bộ 474 phù phép (Ultimate, Epic, Rare, Common, Curses) cùng 7 phù phép Đào Mỏ độc quyền, VeinMiner, Auto-Smelt và Steed Velocity.", en: "Browse all 474 enchantments (Ultimate, Epic, Rare, Common, Curses) plus 7 custom Mining Enchants, VeinMiner, Auto-Smelt, and Steed Velocity." },
+            features: {
+              vi: ["7 Mining Enchants: Divan's Efficiency, Amethyst's Blessing, Lapis's Blessing, Gleaming Chest, Coal's Blessing, Luck of the Mine, Dedicated Miner", "Đổi tên rõ ràng: Auto-Smelt (từ Pyrolysis) & Steed Velocity (từ Mounted Velocity)", "<a href='enchants.html' style='color:#f5c451;font-weight:800;text-decoration:underline;'>Nhấp vào đây để mở Bách Khoa Phù Phép →</a>"],
+              en: ["7 Mining Enchants: Divan's Efficiency, Amethyst's Blessing, Lapis's Blessing, Gleaming Chest, Coal's Blessing, Luck of the Mine, Dedicated Miner", "Renamed for clarity: Auto-Smelt & Steed Velocity", "<a href='enchants.html' style='color:#f5c451;font-weight:800;text-decoration:underline;'>Click here to open Enchantments Wiki →</a>"]
+            }
+          }
+        ]
+      },
+      {
+        id: "minetreasure",
+        icon: "assets/icons/netherite_pickaxe.png",
+        badge: { vi: "ĐÀO MỎ", en: "MINING" },
+        name: { vi: "Mine Treasure & Charms", en: "Mine Treasure & Charms" },
+        sub: { vi: "Rương Kho Báu & 4 Charms", en: "Treasure Chests & 4 Charms" },
+        subItems: [
+          {
+            icon: "assets/icons/netherite_pickaxe.png",
+            badge: "MINE TREASURE",
+            rarity: "color-gold",
+            name: { vi: "Kho Báu Đào Mỏ & Charms", en: "Mine Treasures & Charms" },
+            desc: { vi: "Khi đào đá và quặng dưới lòng đất, bạn có cơ hội phát hiện rương kho báu (Common, Rare, Epic, Legendary) cùng 4 loại Charm tăng tỉ lệ rơi.", en: "Mining stone and ores can unearth Common, Rare, Epic, or Legendary Treasure Chests, boosted by 4 Charm tiers." },
+            features: {
+              vi: ["4 loại Charm: Common, Rare, Epic, Legendary (mua trong /shop → Extras hoặc rớt khi đào với Dedicated Miner)", "Charms được giữ nguyên khi chết trong NiceKeepInventory", "/trigger mt_stats — Xem thống kê kho báu đã đào"],
+              en: ["4 Charm tiers: Common, Rare, Epic, Legendary (available in /shop → Extras or dropped via Dedicated Miner)", "Charms are kept on death by NiceKeepInventory", "/trigger mt_stats — View your Mine Treasure stats"]
+            }
+          }
+        ]
+      },
+      {
+        id: "stash",
+        icon: "assets/icons/bundle.png",
+        badge: { vi: "BẢO VỆ ĐỒ", en: "STORAGE" },
+        name: { vi: "Stash & KeepInv", en: "Stash & KeepInv" },
+        sub: { vi: "/stash • NiceKeepInventory", en: "/stash • NiceKeepInventory" },
+        subItems: [
+          {
+            icon: "assets/icons/bundle.png",
+            badge: "OVERFLOW STORAGE",
+            rarity: "color-aqua",
+            name: { vi: "Túi Dự Phòng /stash", en: "Overflow Storage (/stash)" },
+            desc: { vi: "Phần thưởng từ Boss, Quest hoặc Redeem Code khi túi đồ đầy sẽ được tự động chuyển an toàn vào /stash thay vì rơi mất.", en: "Rewards from Bosses, Quests, or Redeem Codes safely overflow into /stash when your inventory is full." },
+            features: {
+              vi: ["/stash — Mở kho lưu trữ tạm và nhận lại toàn bộ vật phẩm", "Không giữ block/mob drop thông thường để tránh đầy kho"],
+              en: ["/stash — Open overflow storage and claim your items", "Only stores Boss, Quest, Voucher, and Redeem Code overflow"]
+            }
+          },
+          {
+            icon: "assets/icons/totem_of_undying.png",
+            badge: "DEATH PROTECTION",
+            rarity: "color-green",
+            name: { vi: "NiceKeepInventory", en: "NiceKeepInventory" },
+            desc: { vi: "Giữ lại vũ khí, giáp, công cụ, thức ăn, Shulker, sách hướng dẫn, 4 loại Charms và Prefix Vouchers khi chết ở thế giới sinh tồn.", en: "Preserves gear, tools, food, Shulker boxes, guide books, all 4 Charms, and Prefix Vouchers on death in survival." },
+            features: {
+              vi: ["Tự động giữ nguyên Charms (4 màu dye) & Prefix Vouchers (name_tag)", "Trên đảo Skyblock (/is): bật KeepInventory 100% toàn bộ túi đồ"],
+              en: ["Protects Charms and Prefix Vouchers from dropping on death", "Inside Skyblock (/is): 100% full KeepInventory is enabled"]
+            }
+          }
+        ]
+      },
+      {
+        id: "bosses",
+        icon: "assets/icons/dragon_egg.png",
+        badge: { vi: "BOSSES", en: "BOSSES" },
+        name: { vi: "World Bosses", en: "World Bosses" },
+        sub: { vi: "Dragon • Wither • Inferno • EoL", en: "Dragon • Wither • Inferno • EoL" },
+        subItems: [
+          {
+            icon: "assets/icons/dragon_egg.png",
+            badge: "END BOSS",
+            rarity: "color-mythic",
+            name: { vi: "Ender Dragon (True Ending) & Empress of Light", en: "Ender Dragon & Empress of Light" },
+            desc: { vi: "Ender Dragon được nâng cấp nhiều pha chiến đấu, thưởng sách phù phép cấp Rồng và vật phẩm độc quyền Crystal Heartfish. Empress of Light (Stellarity) rớt đồ cá nhân thẳng vào túi / /stash.", en: "Multi-phase Ender Dragon dropping Dragon-tier enchant books and the exclusive Crystal Heartfish. Empress of Light (Stellarity) grants personal loot straight to inventory / /stash." },
+            features: {
+              vi: ["Crystal Heartfish: độc quyền từ Ender Dragon", "Sách Dragon-tier & loot cá nhân theo sát thương đóng góp"],
+              en: ["Crystal Heartfish: Ender Dragon exclusive drop", "Personal loot & Dragon-tier books scaled by damage contribution"]
+            }
+          },
+          {
+            icon: "assets/icons/nether_star.png",
+            badge: "WITHER & INFERNO",
+            rarity: "color-special",
+            name: { vi: "Witherswrath & Hovering Inferno", en: "Witherswrath & Hovering Inferno" },
+            desc: { vi: "Wither nâng cấp (đảm bảo 1x Nether Star + tỉ lệ Warping Witherblade 12%) và Hovering Inferno từ Incendium với AI chiến đấu mới.", en: "Enhanced Wither (guaranteed 1x Nether Star + 12% Warping Witherblade) and Incendium's Hovering Inferno with custom AI." },
+            features: {
+              vi: ["Loot Boss được trao cá nhân + tự vào /stash nếu đầy túi", "Không rơi ra đất gây lag hay bị cướp đồ"],
+              en: ["Personal boss loot routed to inventory / /stash", "No ground drops to prevent lag or loot stealing"]
+            }
+          }
+        ]
+      },
+      {
+        id: "world",
+        icon: "assets/icons/spyglass.png",
+        badge: { vi: "THẾ GIỚI", en: "WORLD" },
+        name: { vi: "Biomes & Dungeons", en: "Biomes & Dungeons" },
+        sub: { vi: "Terralith • Incendium • Stellarity", en: "Terralith • Incendium • Stellarity" },
+        subItems: [
+          {
+            icon: "assets/icons/spyglass.png",
+            badge: "WORLD GENERATION",
+            rarity: "color-aqua",
+            name: { vi: "Overworld, Nether & The End Mở Rộng", en: "Overworld, Nether & End Overhauls" },
+            desc: { vi: "Thế giới được tạo mới hoàn toàn với Tectonic + Terralith (Overworld), Incendium (Nether), Nullscape + Stellarity (The End) cùng hàng chục cấu trúc dungeon.", en: "Overhauled worldgen featuring Tectonic + Terralith (Overworld), Incendium (Nether), Nullscape + Stellarity (The End), and dozens of dungeon packs." },
+            features: {
+              vi: ["Dungeons & Taverns + DnT Overhaul toàn bộ công trình Vanilla", "Yggdrasil, Moog's Structures, Structory, Explorify, Tidal Towns", "More Mobs & Mine Treasure làm phong phú hành trình khám phá"],
+              en: ["Dungeons & Taverns + full Vanilla structure overhauls", "Yggdrasil, Moog's Structures, Structory, Explorify, Tidal Towns", "More Mobs & Mine Treasure for deeper exploration"]
+            }
+          }
+        ]
+      },
+      {
+        id: "warping",
+        icon: "assets/icons/ender_pearl.png",
+        badge: { vi: "DỊCH CHUYỂN", en: "WARPING" },
+        name: { vi: "Warping Wonders", en: "Warping Wonders" },
+        sub: { vi: "Waypoint Hubs • Portal Horn", en: "Waypoint Hubs • Portal Horn" },
+        subItems: [
+          {
+            icon: "assets/icons/ender_pearl.png",
+            badge: "WAYPOINTS",
+            rarity: "color-mythic",
+            name: { vi: "Waypoint Hubs & Vật Phẩm Dịch Chuyển", en: "Waypoint Hubs & Teleport Items" },
+            desc: { vi: "Đặt các trụ Waypoint Hub công khai hoặc riêng tư để dịch chuyển giữa các căn cứ, hoặc dùng Clock / Compass / Recovery Compass / Portal Horn.", en: "Place public or private Waypoint Hubs to warp between bases, or use Clock, Compass, Recovery Compass, and Portal Horn." },
+            features: {
+              vi: ["Chuột phải vào đầu nổi của Waypoint Hub để mở menu chọn điểm đến", "Hỗ trợ khóa riêng tư (Waypoint Lock) & đổi tên/màu bằng Name Tag/Dye"],
+              en: ["Right-click the floating head of a Waypoint Hub to open the warp menu", "Supports privacy locks (Waypoint Lock) & custom names/colors"]
+            }
+          }
+        ]
+      },
+      {
+        id: "utility",
+        icon: "assets/icons/amethyst_shard.png",
+        badge: { vi: "TIỆN ÍCH", en: "UTILITY" },
+        name: { vi: "Utility & QoL", en: "Utility & QoL" },
+        sub: { vi: "/skin, /sidebar, /wits, /flex", en: "/skin, /sidebar, /wits, /flex" },
+        subItems: [
+          {
+            icon: "assets/icons/amethyst_shard.png",
+            badge: "PLAYER TOOLS",
+            rarity: "color-aqua",
+            name: { vi: "Lệnh Tiện Ích Người Chơi", en: "Quality-of-Life Commands" },
+            desc: { vi: "Các lệnh giúp trải nghiệm mượt mà hơn khi chơi cùng bạn bè trên server.", en: "Helpful commands for customization, HUD control, and sharing items." },
+            features: {
+              vi: ["/skin set <tên> | /skin url <link> — Đổi skin trực tiếp", "/sidebar toggle — Ẩn/hiện bảng HUD bên phải", "/wits — Xem tên cấu trúc đang đứng", "/flex — Khoe vật phẩm đang cầm lên kênh chat", "/tips — Xem lại danh sách mẹo & lệnh server"],
+              en: ["/skin set <name> | /skin url <url> — Change your skin", "/sidebar toggle — Hide/show the HUD sidebar", "/wits — Identify the structure you are standing in", "/flex — Showcase your held item in chat", "/tips — View server command tips"]
+            }
+          }
+        ]
+      }
+    ];
+
+    const QUICK_COMMANDS = [
+      { cmd: "/is", vi: "Về đảo Skyblock", en: "Go to Skyblock", cat: "skyblock" },
+      { cmd: "/rtp", vi: "Dịch chuyển ngẫu nhiên (3/ngày)", en: "Random TP (3/day)", cat: "rtp" },
+      { cmd: "/rank", vi: "Quản lý Prefix & Màu sắc", en: "Prefix & Color Studio", cat: "prefix" },
+      { cmd: "/redeem <code>", vi: "Nhập mã nhận quà", en: "Claim promo code", cat: "redeem" },
+      { cmd: "/quest", vi: "Nhiệm vụ hàng ngày (Co-op)", en: "Daily & Co-op Quests", cat: "quests" },
+      { cmd: "/shop", vi: "Cửa hàng & Extras", en: "Server Shop & Extras", cat: "economy" },
+      { cmd: "/fish", vi: "Mở Fishing Hub", en: "Open Fishing Hub", cat: "fishing" },
+      { cmd: "/stash", vi: "Nhận đồ dư bị đầy túi", en: "Claim overflow items", cat: "stash" }
+    ];
+
+    function t(key) {
+      return (UI_TEXT[currentLang] && UI_TEXT[currentLang][key]) || UI_TEXT.vi[key] || key;
+    }
+
+    function applyTranslations() {
+      document.documentElement.lang = currentLang;
+      document.getElementById("btnLangVi").classList.toggle("active", currentLang === "vi");
+      document.getElementById("btnLangEn").classList.toggle("active", currentLang === "en");
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        const val = t(key);
+        if (val !== undefined) el.innerHTML = val;
+      });
+
+      document.getElementById("wikiSearchInput").placeholder = t("searchPlaceholder");
+      document.getElementById("modalSubSearch").placeholder = t("subSearchPlaceholder");
+
+      // Render Checklist
+      const checklistEl = document.getElementById("newPlayerChecklist");
+      checklistEl.innerHTML = UI_TEXT[currentLang].checklist.map((item, idx) => `
+        <div class="checklist-item">
+          <span class="checklist-num">${idx + 1}</span>
+          <span>${item}</span>
+        </div>
+      `).join("");
+
+      // Render Quick Commands
+      const qcEl = document.getElementById("quickCmdGrid");
+      qcEl.innerHTML = QUICK_COMMANDS.map(q => `
+        <div class="quick-cmd-chip" onclick="openCategoryById('${q.cat}')">
+          <code>${q.cmd}</code>
+          <span>${q[currentLang]}</span>
+        </div>
+      `).join("");
+
+      filterMainGrid(document.getElementById("wikiSearchInput").value);
+    }
+
+    function setLanguage(lang) {
+      currentLang = (lang === "en") ? "en" : "vi";
+      localStorage.setItem(LANG_KEY, currentLang);
+      applyTranslations();
+    }
+
+    function chooseStartupLanguage(lang) {
+      const dontShow = document.getElementById("langDontShowCheck").checked;
+      if (dontShow) {
+        localStorage.setItem(DONT_SHOW_KEY, "true");
+      } else {
+        localStorage.removeItem(DONT_SHOW_KEY);
+      }
+      setLanguage(lang);
+      document.getElementById("langModal").classList.remove("active");
+    }
+
+    function renderGrid(items) {
+      const grid = document.getElementById("contentGrid");
+      const countEl = document.getElementById("tilesMatchCount");
+      countEl.textContent = `${items.length} / ${WIKI_CATEGORIES.length}`;
+
+      if (items.length === 0) {
+        grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:28px; color:var(--text-dim);">${t("noMatch")}</div>`;
+        return;
+      }
+
+      grid.innerHTML = "";
+      items.forEach(cat => {
+        const tile = document.createElement("div");
+        tile.className = "content-tile";
+        tile.onclick = () => openCategoryModal(cat);
+        tile.innerHTML = `
+          <div class="tile-icon-box">
+            <img class="mc-pixel" src="${cat.icon}" alt="${cat.name[currentLang]}"/>
+          </div>
+          <div class="tile-info">
+            <div class="tile-title">${cat.name[currentLang]}</div>
+            <div class="tile-sub">${cat.sub[currentLang]}</div>
+            <span class="tile-badge">${cat.badge[currentLang]}</span>
+          </div>
+        `;
+        grid.appendChild(tile);
+      });
+    }
+
+    function filterMainGrid(query) {
+      const q = (query || "").toLowerCase().trim();
+      if (!q) {
+        renderGrid(WIKI_CATEGORIES);
+        return;
+      }
+      const filtered = WIKI_CATEGORIES.filter(cat => {
+        const matchTop = cat.name[currentLang].toLowerCase().includes(q) ||
+          cat.sub[currentLang].toLowerCase().includes(q) ||
+          cat.badge[currentLang].toLowerCase().includes(q);
+        const matchSub = (cat.subItems || []).some(s =>
+          s.name[currentLang].toLowerCase().includes(q) ||
+          s.desc[currentLang].toLowerCase().includes(q) ||
+          s.features[currentLang].join(" ").toLowerCase().includes(q)
+        );
+        return matchTop || matchSub;
+      });
+      renderGrid(filtered);
+    }
+
+    document.getElementById("wikiSearchInput").addEventListener("input", (e) => {
+      filterMainGrid(e.target.value);
+    });
+
+    function resetSearch() {
+      document.getElementById("wikiSearchInput").value = "";
+      filterMainGrid("");
+    }
+
+    function openCategoryById(id) {
+      const cat = WIKI_CATEGORIES.find(c => c.id === id);
+      if (cat) openCategoryModal(cat);
+    }
+
+    function openCommandsModal() {
+      const syntheticCat = {
+        id: "commands",
+        icon: "assets/icons/paper.png",
+        name: { vi: "Tổng Hợp Lệnh Nhanh", en: "Quick Command Reference" },
+        sub: { vi: "Tất cả lệnh người chơi", en: "All player commands" },
+        subItems: QUICK_COMMANDS.map(q => ({
+          icon: "assets/icons/paper.png",
+          badge: "COMMAND",
+          rarity: "color-aqua",
+          name: { vi: q.cmd, en: q.cmd },
+          desc: { vi: q.vi, en: q.en },
+          features: {
+            vi: [`Nhấp mục "${q.cat}" trong Wiki để xem hướng dẫn đầy đủ.`],
+            en: [`Open the "${q.cat}" Wiki category for full details.`]
+          }
+        }))
+      };
+      openCategoryModal(syntheticCat);
+    }
+
+    function openCategoryModal(cat) {
+      currentCategory = cat;
+      currentSubItems = cat.subItems || [];
+      document.getElementById("modalIcon").innerHTML = `<img class="mc-pixel" src="${cat.icon}" style="width:22px;height:22px;" alt=""/>`;
+      document.getElementById("modalHeaderName").textContent = cat.name[currentLang];
+      document.getElementById("modalCategoryTag").textContent = cat.sub[currentLang];
+
+      if (currentSubItems.length === 1) {
+        showDetailView(currentSubItems[0], false);
+      } else {
+        showListView();
+      }
+      document.getElementById("wikiModal").classList.add("active");
+    }
+
+    function showListView() {
+      document.getElementById("modalListView").style.display = "block";
+      document.getElementById("modalDetailView").style.display = "none";
+      document.getElementById("modalBackBtn").style.display = "none";
+      document.getElementById("modalSearchWrapper").style.display = "flex";
+      document.getElementById("modalSubSearch").value = "";
+      renderSubGrid(currentSubItems);
+    }
+
+    function renderSubGrid(items) {
+      const grid = document.getElementById("modalSubGrid");
+      document.getElementById("modalItemsCount").textContent = `${items.length} ${t("itemsAvail")}`;
+      if (items.length === 0) {
+        grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:24px; color:var(--text-dim);">${t("noMatch")}</div>`;
+        return;
+      }
+      grid.innerHTML = "";
+      items.forEach(sub => {
+        const card = document.createElement("div");
+        card.className = "sub-item-card";
+        card.onclick = () => showDetailView(sub, true);
+        card.innerHTML = `
+          <div class="sub-item-top">
+            <span class="sub-item-icon"><img class="mc-pixel" src="${sub.icon}" alt=""/></span>
+            <span class="sub-item-title">${sub.name[currentLang]}</span>
+          </div>
+          <span class="sub-item-badge ${sub.rarity || 'color-aqua'}">${sub.badge}</span>
+          <div class="sub-item-snippet">${sub.desc[currentLang]}</div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    document.getElementById("modalSubSearch").addEventListener("input", (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      if (!q) { renderSubGrid(currentSubItems); return; }
+      renderSubGrid(currentSubItems.filter(s =>
+        s.name[currentLang].toLowerCase().includes(q) ||
+        s.desc[currentLang].toLowerCase().includes(q) ||
+        s.badge.toLowerCase().includes(q)
+      ));
+    });
+
+    function showDetailView(sub, showBack) {
+      document.getElementById("modalListView").style.display = "none";
+      document.getElementById("modalDetailView").style.display = "block";
+      document.getElementById("modalBackBtn").style.display = showBack ? "inline-flex" : "none";
+      document.getElementById("modalSearchWrapper").style.display = "none";
+      document.getElementById("modalItemsCount").textContent = t("detailPrefix") + sub.name[currentLang];
+
+      document.getElementById("modalTooltip").innerHTML = `
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+          <img class="mc-pixel" src="${sub.icon}" style="width:26px;height:26px;" alt=""/>
+          <span style="font-size:1.05rem; font-weight:800; color:#fff;">${sub.name[currentLang]}</span>
+        </div>
+        <span class="sub-item-badge ${sub.rarity || 'color-gold'}">${sub.badge}</span>
+        <div style="color:#e2e8f0; font-size:0.9rem; line-height:1.6; margin-top:6px;">${sub.desc[currentLang]}</div>
+      `;
+
+      const extraEl = document.getElementById("modalExtraDetails");
+      const feats = sub.features ? sub.features[currentLang] : [];
+      if (feats && feats.length > 0) {
+        extraEl.innerHTML = `<h4>${t("featuresTitle")}</h4><ul>${feats.map(f => `<li>${f}</li>`).join("")}</ul>`;
+        extraEl.style.display = "block";
+      } else {
+        extraEl.style.display = "none";
+      }
+    }
+
+    function goBackToList() { showListView(); }
+    function closeModal() { document.getElementById("wikiModal").classList.remove("active"); }
+    document.getElementById("wikiModal").addEventListener("click", (e) => {
+      if (e.target.id === "wikiModal") closeModal();
+    });
+
+    function toggleAccordion(header) {
+      header.parentElement.classList.toggle("collapsed");
+    }
+
+    function copyServerIp() {
+      navigator.clipboard.writeText("mckhtn.redirectme.net").then(() => {
+        const btn = document.getElementById("copyIpBtn");
+        btn.textContent = t("copiedBtn");
+        setTimeout(() => { btn.textContent = t("copyBtn"); }, 1800);
+      });
+    }
+
+    function updateClock() {
+      const now = new Date();
+      let h = now.getHours();
+      const m = String(now.getMinutes()).padStart(2, "0");
+      const ampm = h >= 12 ? "pm" : "am";
+      h = h % 12 || 12;
+      document.getElementById("skyblockClock").textContent = `${h}:${m}${ampm}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    async function fetchServerStatus() {
+      const textEl = document.getElementById("serverStatusText");
+      const dotEl = document.getElementById("serverDot");
+      try {
+        const res = await fetch("https://api.mcsrvstat.us/3/mckhtn.redirectme.net");
+        const data = await res.json();
+        if (data && data.online) {
+          dotEl.classList.remove("offline");
+          const online = data.players ? data.players.online : 0;
+          const max = data.players ? data.players.max : 0;
+          textEl.innerHTML = `Online: <strong>${online} / ${max}</strong> • Minecraft ${data.version || "26.3"}`;
+        } else {
+          dotEl.classList.add("offline");
+          textEl.textContent = "Server offline / Maintenance (MC 26.3)";
+        }
+      } catch {
+        textEl.textContent = "Java Edition 26.3 • mckhtn.redirectme.net";
+      }
+    }
+    fetchServerStatus();
+
+    // Init translations & show Language Modal on entry unless user checked "Don't show again"
+    applyTranslations();
+    if (localStorage.getItem(DONT_SHOW_KEY) !== "true") {
+      document.getElementById("langModal").classList.add("active");
+    }
+  </script>
+</body>
+</html>
