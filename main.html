@@ -1069,10 +1069,10 @@
     <aside class="left-sidebar" id="col-left" data-col="left">
       <div class="sidebar-brand-box" data-frame-id="left_brand">
         <button type="button" class="frame-edit-btn" style="margin-bottom:6px;" onclick="openSidebarBrandEditor()">✏️ Edit</button>
-        <img class="sidebar-cube-img mc-pixel" id="leftBrandImg" src="assets/icons/beacon.png" alt="OME Beacon" />
-        <div class="sidebar-khtn-title" id="leftBrandTitle">KHTN • OME</div>
-        <div class="sidebar-wiki-title" data-i18n="sidebarSub">Support &amp; Donate Server</div>
-        <button type="button" onclick="openSupportModal()" style="margin-top:10px;width:100%;padding:7px 10px;border-radius:8px;border:1px solid rgba(245,196,81,0.5);background:linear-gradient(135deg,rgba(245,196,81,0.22),rgba(234,179,8,0.1));color:#f5c451;font-weight:800;font-size:0.78rem;cursor:pointer;font-family:inherit;" data-i18n="donateBtn">💛 Support / Donate</button>
+        <img class="sidebar-cube-img mc-pixel" id="leftBrandImg" src="assets/icons/emerald.png" alt="Support Server" />
+        <div class="sidebar-khtn-title" id="leftBrandTitle" data-i18n="supportTitle">Support &amp; Donate</div>
+        <div class="sidebar-wiki-title" data-i18n="sidebarSub">Help keep One More Expedition online 24/7!</div>
+        <button type="button" onclick="openSupportModal()" style="margin-top:10px;width:100%;background:linear-gradient(135deg,#f5c451,#d97706);border:none;color:#111827;font-weight:800;font-size:0.8rem;padding:7px 10px;border-radius:8px;cursor:pointer;font-family:inherit;" data-i18n="supportBtn">💛 Donate / Support Me</button>
       </div>
 
       <div class="accordion-card" data-frame-id="left_menu">
@@ -1176,7 +1176,7 @@
       <div class="widget-panel" data-frame-id="right_checklist">
         <div class="widget-top-header">
           <img class="mc-pixel" src="assets/icons/writable_book.png" alt=""/>
-          <span data-i18n="checklistTitle">Luật Server</span>
+          <span data-i18n="checklistTitle">Nội Quy Server</span>
           <button type="button" class="frame-edit-btn" onclick="openChecklistEditor()">✏️ Edit</button>
         </div>
         <div class="checklist-body" id="newPlayerChecklist"></div>
@@ -1293,8 +1293,9 @@
         navCommands: "Lệnh Nhanh",
         searchPlaceholder: "Tìm kiếm wiki, lệnh, tính năng...",
         subSearchPlaceholder: "Lọc trong mục này...",
-        sidebarSub: "Ủng Hộ Duy Trì Server",
-        donateBtn: "💛 Support / Donate Me",
+        sidebarSub: "Giúp duy trì One More Expedition chạy 24/7!",
+        supportTitle: "Ủng Hộ & Donate",
+        supportBtn: "💛 Support / Donate Me",
         accCore: "Hệ Thống Cốt Lõi",
         accProgression: "Kinh Tế & Tiến Trình",
         accEncyclopedias: "Bách Khoa Chuyên Sâu",
@@ -1311,7 +1312,7 @@
         linkBosses: "World Bosses",
         linkWorld: "Biomes & Dungeons",
         bannerTitle: "Chào mừng đến với One More Expedition (MC 26.3)!",
-        bannerSub: "Kết nối qua IP <code>mckhtn.redirectme.net:2050</code> • Mở <code>/rank</code> để chỉnh Prefix &amp; <code>/redeem</code> để nhập Code!",
+        bannerSub: "Kết nối qua IP <code>mckhtn.redirectme.net:2050</code> • Mở <code>/rank</code> để chỉnh Prefix & <code>/redeem</code> để nhập Code!",
         mainHeading: "Wiki Chính Thức — One More Expedition",
         mainIntro: "<strong>One More Expedition</strong> kết hợp sinh tồn thế giới mở (Terralith, Incendium, Stellarity, Dungeons &amp; Taverns) với đảo riêng Skyblock (<code>/is</code>), hệ thống 474 Phù phép, 112 Thủy quái Câu cá, Nhiệm vụ Co-op hàng ngày, Kinh tế EconomyCraft và danh hiệu Prefix Cosmetics.",
         browseTitle: "Khám Phá Các Hệ Thống Server",
@@ -1319,7 +1320,7 @@
         serverStatusTitle: "Kết Nối Server",
         copyBtn: "Copy IP",
         copiedBtn: "Đã Copy!",
-        checklistTitle: "Luật Server",
+        checklistTitle: "Nội Quy Server",
         clockTitle: "Đồng Hồ Server",
         clockZone: "Múi giờ Việt Nam (UTC+7)",
         btnBack: "← Quay lại",
@@ -1329,10 +1330,10 @@
         featuresTitle: "✨ Chi Tiết & Cơ Chế",
         noMatch: "Không tìm thấy mục nào khớp với tìm kiếm.",
         checklist: [
-          "<strong>Không gian lận:</strong> Cấm Hack, X-Ray, Auto-Click hay lợi dụng bug/dupe.",
-          "<strong>Không phá hoại:</strong> Tôn trọng công trình, không grief hoặc trộm đồ người khác.",
-          "<strong>Văn minh:</strong> Giữ chat lịch sự, không spam hay xúc phạm thành viên.",
-          "<strong>Hỗ trợ:</strong> Báo lỗi hoặc góp ý trực tiếp cho Admin qua Discord."
+          "Không sử dụng hack, cheat, X-Ray hoặc lợi dụng bug/exploit (ban vĩnh viễn).",
+          "Tôn trọng mọi người chơi, không phá hoại (grief) hoặc spam kênh chat.",
+          "Dùng <code>/is</code> để bảo vệ đảo riêng &amp; <code>/register</code> / <code>/login</code> bảo vệ tài khoản.",
+          "Gặp lỗi hoặc cần hỗ trợ hãy báo ngay qua Discord để Admin xử lý."
         ]
       },
       en: {
@@ -1342,8 +1343,9 @@
         navCommands: "Quick Commands",
         searchPlaceholder: "Search wiki, commands, features...",
         subSearchPlaceholder: "Filter this section...",
-        sidebarSub: "Support Keep Server Alive",
-        donateBtn: "💛 Support / Donate Me",
+        sidebarSub: "Help keep One More Expedition online 24/7!",
+        supportTitle: "Support & Donate",
+        supportBtn: "💛 Support / Donate Me",
         accCore: "Core Systems",
         accProgression: "Economy & Progression",
         accEncyclopedias: "Full Encyclopedias",
@@ -1378,10 +1380,10 @@
         featuresTitle: "✨ Mechanics & Details",
         noMatch: "No entries match your search.",
         checklist: [
-          "<strong>Fair Play:</strong> No hacks, X-Ray, auto-clickers, or bug/dupe exploits.",
-          "<strong>Respect Builds:</strong> No griefing, stealing, or trapping other players.",
-          "<strong>Friendly Chat:</strong> Be respectful, no spam, hate speech, or toxicity.",
-          "<strong>Need Help?</strong> Report bugs or contact Staff via our Discord."
+          "No hacking, cheating, X-Ray, or bug/exploit abuse.",
+          "Be respectful to other players — no griefing, harassment, or chat spam.",
+          "Use <code>/is</code> for your protected island &amp; <code>/register</code> / <code>/login</code> to secure your account.",
+          "Report bugs or issues on Discord so Admins can help right away."
         ]
       }
     };
@@ -1730,32 +1732,32 @@
             }
           }
         ]
-      }
+      },
       {
-        id: "recommend_mods",
-        icon: "assets/icons/beacon.png",
-        badge: { vi: "KHUYÊN DÙNG", en: "CLIENT MODS" },
-        name: { vi: "Recommend Mods", en: "Recommend Mods" },
-        sub: { vi: "Sodium • Iris • Simple Voice Chat", en: "Sodium • Iris • Simple Voice Chat" },
+        id: "recommended_mods",
+        icon: "assets/icons/nether_star.png",
+        badge: { vi: "MOD KHUYÊN DÙNG", en: "MODS" },
+        name: { vi: "Recommended Mods", en: "Recommended Mods" },
+        sub: { vi: "Voice Chat • Hiệu năng • Minimap", en: "Voice Chat • FPS • Minimap" },
         subItems: [
           {
-            icon: "assets/icons/beacon.png",
-            badge: "PERFORMANCE & VISUAL",
+            icon: "assets/icons/nether_star.png",
+            badge: "CLIENT MODS (26.3)",
             rarity: "color-aqua",
-            name: { vi: "Mod Tối Ưu FPS & Shaders", en: "FPS & Shaders (Client Optional)" },
-            desc: { vi: "Server chạy Fabric 26.3 chuẩn Vanilla Client — bạn vào chơi không cần cài mod, nhưng nên cài bộ mod client nhẹ để tăng FPS và dùng Voice Chat.", en: "The server runs Fabric 26.3 with full Vanilla Client support — no mods required, though these optional client mods boost FPS and immersion." },
+            name: { vi: "Bộ Mod Client Khuyên Dùng", en: "Recommended Client Mods" },
+            desc: { vi: "Server chạy Fabric 26.3 và hỗ trợ nhiều mod client tiện ích (không bắt buộc cài nhưng giúp trải nghiệm mượt hơn rất nhiều).", en: "The server runs Fabric 26.3 and supports helpful client-side mods (optional, but strongly recommended for the best experience)." },
             features: {
               vi: [
-                "Sodium + Lithium + FerriteCore — Tăng FPS mượt mà",
-                "Iris Shaders — Chơi kèm Shader đẹp mắt",
-                "Simple Voice Chat — Trò chuyện theo khoảng cách trực tiếp trong game",
-                "Mod Menu & REI / EMI — Xem công thức chế tạo nhanh"
+                "Simple Voice Chat (2.6.27+26.3) — Trò chuyện giọng nói trực tiếp trong game",
+                "Sodium + Lithium + Iris Shaders — Tăng FPS tối đa & hỗ trợ shader mượt",
+                "Xaero's Minimap / World Map — Bản đồ mini & đánh dấu tọa độ tiện lợi",
+                "Mod Menu + Roughly Enough Items (REI) — Xem công thức chế tạo nhanh"
               ],
               en: [
-                "Sodium + Lithium + FerriteCore — Smooth high-FPS gameplay",
-                "Iris Shaders — Full shader support",
-                "Simple Voice Chat — Proximity voice chat in-game",
-                "Mod Menu & REI / EMI — Quick crafting recipe viewer"
+                "Simple Voice Chat (2.6.27+26.3) — Proximity voice chat directly in-game",
+                "Sodium + Lithium + Iris Shaders — Massive FPS boost & shader support",
+                "Xaero's Minimap / World Map — Convenient minimap & personal waypoints",
+                "Mod Menu + Roughly Enough Items (REI) — Quick recipe viewer"
               ]
             }
           }
@@ -1772,36 +1774,6 @@
       { cmd: "/shop", vi: "Cửa hàng & Extras", en: "Server Shop & Extras", cat: "economy" },
       { cmd: "/fish", vi: "Mở Fishing Hub", en: "Open Fishing Hub", cat: "fishing" },
       { cmd: "/stash", vi: "Nhận đồ dư bị đầy túi", en: "Claim overflow items", cat: "stash" }
-      {
-        id: "recommend_mods",
-        icon: "assets/icons/beacon.png",
-        badge: { vi: "KHUYÊN DÙNG", en: "CLIENT MODS" },
-        name: { vi: "Recommend Mods", en: "Recommend Mods" },
-        sub: { vi: "Sodium • Iris • Simple Voice Chat", en: "Sodium • Iris • Simple Voice Chat" },
-        subItems: [
-          {
-            icon: "assets/icons/beacon.png",
-            badge: "PERFORMANCE & VISUAL",
-            rarity: "color-aqua",
-            name: { vi: "Mod Tối Ưu FPS & Shaders", en: "FPS & Shaders (Client Optional)" },
-            desc: { vi: "Server chạy Fabric 26.3 chuẩn Vanilla Client — bạn vào chơi không cần cài mod, nhưng nên cài bộ mod client nhẹ để tăng FPS và dùng Voice Chat.", en: "The server runs Fabric 26.3 with full Vanilla Client support — no mods required, though these optional client mods boost FPS and immersion." },
-            features: {
-              vi: [
-                "Sodium + Lithium + FerriteCore — Tăng FPS mượt mà",
-                "Iris Shaders — Chơi kèm Shader đẹp mắt",
-                "Simple Voice Chat — Trò chuyện theo khoảng cách trực tiếp trong game",
-                "Mod Menu & REI / EMI — Xem công thức chế tạo nhanh"
-              ],
-              en: [
-                "Sodium + Lithium + FerriteCore — Smooth high-FPS gameplay",
-                "Iris Shaders — Full shader support",
-                "Simple Voice Chat — Proximity voice chat in-game",
-                "Mod Menu & REI / EMI — Quick crafting recipe viewer"
-              ]
-            }
-          }
-        ]
-      }
     ];
 
     const LEFT_ACCORDION = [
@@ -1832,103 +1804,40 @@
           { icon: "assets/icons/spyglass.png", label: { en: "Biomes & Dungeons", vi: "Biomes & Dungeons" }, cat: "world" }
         ]
       }
-      {
-        id: "recommend_mods",
-        icon: "assets/icons/beacon.png",
-        badge: { vi: "KHUYÊN DÙNG", en: "CLIENT MODS" },
-        name: { vi: "Recommend Mods", en: "Recommend Mods" },
-        sub: { vi: "Sodium • Iris • Simple Voice Chat", en: "Sodium • Iris • Simple Voice Chat" },
-        subItems: [
-          {
-            icon: "assets/icons/beacon.png",
-            badge: "PERFORMANCE & VISUAL",
-            rarity: "color-aqua",
-            name: { vi: "Mod Tối Ưu FPS & Shaders", en: "FPS & Shaders (Client Optional)" },
-            desc: { vi: "Server chạy Fabric 26.3 chuẩn Vanilla Client — bạn vào chơi không cần cài mod, nhưng nên cài bộ mod client nhẹ để tăng FPS và dùng Voice Chat.", en: "The server runs Fabric 26.3 with full Vanilla Client support — no mods required, though these optional client mods boost FPS and immersion." },
-            features: {
-              vi: [
-                "Sodium + Lithium + FerriteCore — Tăng FPS mượt mà",
-                "Iris Shaders — Chơi kèm Shader đẹp mắt",
-                "Simple Voice Chat — Trò chuyện theo khoảng cách trực tiếp trong game",
-                "Mod Menu & REI / EMI — Xem công thức chế tạo nhanh"
-              ],
-              en: [
-                "Sodium + Lithium + FerriteCore — Smooth high-FPS gameplay",
-                "Iris Shaders — Full shader support",
-                "Simple Voice Chat — Proximity voice chat in-game",
-                "Mod Menu & REI / EMI — Quick crafting recipe viewer"
-              ]
-            }
-          }
-        ]
-      }
     ];
 
     const CUSTOM_WIDGETS = [
       {
-        id: "right_livemap",
+        id: "live_map",
         col: "right",
+        insertAfter: "right_status",
         icon: "assets/icons/compass.png",
-        title: { en: "Live World Map", vi: "Bản Đồ Trực Tuyến" },
+        title: { en: "Live World Map", vi: "Bản Đồ Thế Giới" },
         body: {
-          en: "Explore Overworld, Nether &amp; End terrain in real time with Squaremap.<br><a href='http://mckhtn.redirectme.net:8080' target='_blank' style='display:inline-block;margin-top:8px;padding:6px 12px;border-radius:8px;background:rgba(56,189,248,0.16);border:1px solid rgba(56,189,248,0.4);color:#38bdf8;font-weight:800;text-decoration:none;'>🗺️ Open Live Map →</a>",
-          vi: "Xem bản đồ Overworld, Nether &amp; The End trực tiếp theo thời gian thực.<br><a href='http://mckhtn.redirectme.net:8080' target='_blank' style='display:inline-block;margin-top:8px;padding:6px 12px;border-radius:8px;background:rgba(56,189,248,0.16);border:1px solid rgba(56,189,248,0.4);color:#38bdf8;font-weight:800;text-decoration:none;'>🗺️ Mở Live Map →</a>"
+          en: "<div style='margin-bottom:8px;'>Explore the Overworld, Nether &amp; End in real time via Squaremap.</div><a href='http://mckhtn.redirectme.net:8080' target='_blank' style='display:inline-block;background:rgba(56,189,248,0.16);border:1px solid rgba(56,189,248,0.4);color:#38bdf8;font-weight:800;padding:5px 12px;border-radius:7px;text-decoration:none;'>🗺️ Open Live Map →</a>",
+          vi: "<div style='margin-bottom:8px;'>Xem bản đồ thế giới Overworld, Nether &amp; End theo thời gian thực qua Squaremap.</div><a href='http://mckhtn.redirectme.net:8080' target='_blank' style='display:inline-block;background:rgba(56,189,248,0.16);border:1px solid rgba(56,189,248,0.4);color:#38bdf8;font-weight:800;padding:5px 12px;border-radius:7px;text-decoration:none;'>🗺️ Mở Live Map →</a>"
         }
       },
       {
-        id: "right_social",
+        id: "social",
         col: "right",
-        icon: "assets/icons/nether_star.png",
-        title: { en: "Community & Social", vi: "Cộng Đồng & Kết Nối" },
+        icon: "assets/icons/book.png",
+        title: { en: "Community & Social", vi: "Cộng Đồng & Social" },
         body: {
-          en: "Join our community to get event alerts, promo codes, and team up!<br><div style='display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;'><a href='https://discord.gg' target='_blank' style='padding:5px 10px;border-radius:7px;background:rgba(129,140,248,0.18);border:1px solid rgba(129,140,248,0.4);color:#a5b4fc;font-weight:800;text-decoration:none;'>💬 Discord</a><a href='https://youtube.com' target='_blank' style='padding:5px 10px;border-radius:7px;background:rgba(248,113,113,0.18);border:1px solid rgba(248,113,113,0.4);color:#fca5a5;font-weight:800;text-decoration:none;'>▶️ YouTube</a></div>",
-          vi: "Tham gia cộng đồng để nhận thông báo sự kiện, Giftcode và tìm đồng đội!<br><div style='display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;'><a href='https://discord.gg' target='_blank' style='padding:5px 10px;border-radius:7px;background:rgba(129,140,248,0.18);border:1px solid rgba(129,140,248,0.4);color:#a5b4fc;font-weight:800;text-decoration:none;'>💬 Discord</a><a href='https://youtube.com' target='_blank' style='padding:5px 10px;border-radius:7px;background:rgba(248,113,113,0.18);border:1px solid rgba(248,113,113,0.4);color:#fca5a5;font-weight:800;text-decoration:none;'>▶️ YouTube</a></div>"
+          en: "Join our community for events, redeem codes, bug reports, and patch notes!<div style='display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;'><a href='https://discord.gg' target='_blank' style='background:rgba(129,140,248,0.18);border:1px solid rgba(129,140,248,0.45);color:#a5b4fc;font-weight:800;padding:5px 10px;border-radius:7px;text-decoration:none;'>💬 Discord</a><a href='enchants.html' style='background:rgba(245,196,81,0.14);border:1px solid rgba(245,196,81,0.4);color:#f5c451;font-weight:800;padding:5px 10px;border-radius:7px;text-decoration:none;'>✨ Enchants</a></div>",
+          vi: "Tham gia cộng đồng để nhận giftcode sự kiện, báo lỗi và cập nhật mới nhất!<div style='display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;'><a href='https://discord.gg' target='_blank' style='background:rgba(129,140,248,0.18);border:1px solid rgba(129,140,248,0.45);color:#a5b4fc;font-weight:800;padding:5px 10px;border-radius:7px;text-decoration:none;'>💬 Discord</a><a href='enchants.html' style='background:rgba(245,196,81,0.14);border:1px solid rgba(245,196,81,0.4);color:#f5c451;font-weight:800;padding:5px 10px;border-radius:7px;text-decoration:none;'>✨ Phù Phép</a></div>"
         }
-      }
-      {
-        id: "recommend_mods",
-        icon: "assets/icons/beacon.png",
-        badge: { vi: "KHUYÊN DÙNG", en: "CLIENT MODS" },
-        name: { vi: "Recommend Mods", en: "Recommend Mods" },
-        sub: { vi: "Sodium • Iris • Simple Voice Chat", en: "Sodium • Iris • Simple Voice Chat" },
-        subItems: [
-          {
-            icon: "assets/icons/beacon.png",
-            badge: "PERFORMANCE & VISUAL",
-            rarity: "color-aqua",
-            name: { vi: "Mod Tối Ưu FPS & Shaders", en: "FPS & Shaders (Client Optional)" },
-            desc: { vi: "Server chạy Fabric 26.3 chuẩn Vanilla Client — bạn vào chơi không cần cài mod, nhưng nên cài bộ mod client nhẹ để tăng FPS và dùng Voice Chat.", en: "The server runs Fabric 26.3 with full Vanilla Client support — no mods required, though these optional client mods boost FPS and immersion." },
-            features: {
-              vi: [
-                "Sodium + Lithium + FerriteCore — Tăng FPS mượt mà",
-                "Iris Shaders — Chơi kèm Shader đẹp mắt",
-                "Simple Voice Chat — Trò chuyện theo khoảng cách trực tiếp trong game",
-                "Mod Menu & REI / EMI — Xem công thức chế tạo nhanh"
-              ],
-              en: [
-                "Sodium + Lithium + FerriteCore — Smooth high-FPS gameplay",
-                "Iris Shaders — Full shader support",
-                "Simple Voice Chat — Proximity voice chat in-game",
-                "Mod Menu & REI / EMI — Quick crafting recipe viewer"
-              ]
-            }
-          }
-        ]
       }
     ];
     const LAYOUT_STATE = {
       columns: { left: 230, right: 290, gap: 20, maxWidth: 1380 },
-      frameOrder: {
-        left: ["left_brand", "left_menu", "right_clock"],
-        center: ["center_banner", "center_tiles", "center_commands"],
-        right: ["right_status", "right_livemap", "right_checklist", "right_social"]
-      },
+      frameOrder: { left: null, center: null, right: null },
       frameSizes: {}
     };
     const SITE_META = {
       serverIp: "mckhtn.redirectme.net:2050",
-      leftBrandTitle: "KHTN • OME",
-      leftBrandIcon: "assets/icons/beacon.png",
+      leftBrandTitle: "Support & Donate",
+      leftBrandIcon: "assets/icons/emerald.png",
       versionPill: "Minecraft 26.3 • Fabric SMP + Skyblock"
     };
 
@@ -1974,7 +1883,38 @@
             ${w.body[currentLang] || w.body.en}
           </div>
         `;
+        if (w.insertAfter) {
+          const anchor = colEl.querySelector(`[data-frame-id="${w.insertAfter}"]`);
+          if (anchor && anchor.nextSibling) {
+            colEl.insertBefore(div, anchor.nextSibling);
+            return;
+          }
+        }
         colEl.appendChild(div);
+      });
+    }
+
+    function openSupportModal() {
+      const sub = {
+        icon: "assets/icons/emerald.png",
+        badge: "SUPPORT THE SERVER",
+        rarity: "color-gold",
+        name: { en: "Support & Donate — One More Expedition", vi: "Ủng Hộ & Donate — One More Expedition" },
+        desc: {
+          en: "Thank you for playing! Donations help pay for 24/7 server hosting, backups, and ongoing custom development. Cosmetic Prefix Vouchers & appreciation perks are purely non-pay-to-win.",
+          vi: "Cảm ơn bạn đã đồng hành cùng server! Mọi đóng góp đều dùng để duy trì máy chủ chạy 24/7, backup dữ liệu và phát triển thêm tính năng mới (hoàn toàn không Pay-to-Win)."
+        },
+        features: {
+          en: ["Join our Discord and message an Admin for donation methods", "Supporters receive exclusive Cosmetic Prefix Vouchers & Discord role"],
+          vi: ["Tham gia Discord và nhắn Admin để xem thông tin ủng hộ", "Người ủng hộ sẽ nhận Prefix Cosmetic Voucher kỷ niệm & role trên Discord"]
+        }
+      };
+      openCategoryModal({
+        id: "support",
+        icon: "assets/icons/emerald.png",
+        name: { en: "Support & Donate", vi: "Ủng Hộ Server" },
+        sub: { en: "Keep the server running 24/7", vi: "Duy trì máy chủ 24/7" },
+        subItems: [sub]
       });
     }
 
@@ -2248,42 +2188,11 @@
     setInterval(updateClock, 1000);
     updateClock();
 
-    function openSupportModal() {
-      openCategoryModal({
-        id: "support_donate",
-        icon: "assets/icons/gold_ingot.png",
-        name: { en: "Support & Donate", vi: "Ủng Hộ & Donate Server" },
-        sub: { en: "Help keep One More Expedition online 24/7!", vi: "Chung tay duy trì server One More Expedition 24/7!" },
-        subItems: [{
-          icon: "assets/icons/gold_ingot.png",
-          badge: "SUPPORT SERVER",
-          rarity: "color-gold",
-          name: { en: "Support / Donate Me", vi: "Ủng Hộ Duy Trì Server" },
-          desc: {
-            en: "Every contribution goes directly toward server hosting, upgrades, and new events. Supporters receive exclusive Prefix Cosmetics as a thank-you!",
-            vi: "Mọi sự ủng hộ đều được dùng để duy trì máy chủ 24/7 và phát triển tính năng mới. Người ủng hộ sẽ nhận danh hiệu Prefix Cosmetic đặc biệt!"
-          },
-          features: {
-            en: [
-              "Contact Admin on Discord to support / donate",
-              "Receive exclusive Royalty / Events Prefix Vouchers",
-              "100% non-pay-to-win — purely cosmetic & community support"
-            ],
-            vi: [
-              "Liên hệ Admin qua Discord để ủng hộ / donate",
-              "Nhận Prefix Cosmetic Voucher độc quyền (không Pay-to-Win)",
-              "Cảm ơn bạn đã đồng hành cùng One More Expedition!"
-            ]
-          }
-        }]
-      });
-    }
-
     async function fetchServerStatus() {
       const textEl = document.getElementById("serverStatusText");
       const dotEl = document.getElementById("serverDot");
       try {
-        const res = await fetch(`https://api.mcsrvstat.us/3/${encodeURIComponent(SITE_META.serverIp)}`);
+        const res = await fetch("https://api.mcsrvstat.us/3/" + encodeURIComponent(SITE_META.serverIp));
         const data = await res.json();
         if (data && data.online) {
           dotEl.classList.remove("offline");
@@ -2295,7 +2204,7 @@
           textEl.textContent = "Server offline / Maintenance (MC 26.3)";
         }
       } catch {
-        textEl.textContent = "Java Edition 26.3 • mckhtn.redirectme.net";
+        textEl.textContent = "Java Edition 26.3 • " + SITE_META.serverIp;
       }
     }
     fetchServerStatus();
@@ -2313,36 +2222,6 @@
       "assets/icons/amethyst_shard.png", "assets/icons/clock.png", "assets/icons/spyglass.png",
       "assets/icons/grass_block_side.png", "assets/icons/chest_front.png", "assets/icons/trident.png",
       "assets/icons/beacon.png"
-      {
-        id: "recommend_mods",
-        icon: "assets/icons/beacon.png",
-        badge: { vi: "KHUYÊN DÙNG", en: "CLIENT MODS" },
-        name: { vi: "Recommend Mods", en: "Recommend Mods" },
-        sub: { vi: "Sodium • Iris • Simple Voice Chat", en: "Sodium • Iris • Simple Voice Chat" },
-        subItems: [
-          {
-            icon: "assets/icons/beacon.png",
-            badge: "PERFORMANCE & VISUAL",
-            rarity: "color-aqua",
-            name: { vi: "Mod Tối Ưu FPS & Shaders", en: "FPS & Shaders (Client Optional)" },
-            desc: { vi: "Server chạy Fabric 26.3 chuẩn Vanilla Client — bạn vào chơi không cần cài mod, nhưng nên cài bộ mod client nhẹ để tăng FPS và dùng Voice Chat.", en: "The server runs Fabric 26.3 with full Vanilla Client support — no mods required, though these optional client mods boost FPS and immersion." },
-            features: {
-              vi: [
-                "Sodium + Lithium + FerriteCore — Tăng FPS mượt mà",
-                "Iris Shaders — Chơi kèm Shader đẹp mắt",
-                "Simple Voice Chat — Trò chuyện theo khoảng cách trực tiếp trong game",
-                "Mod Menu & REI / EMI — Xem công thức chế tạo nhanh"
-              ],
-              en: [
-                "Sodium + Lithium + FerriteCore — Smooth high-FPS gameplay",
-                "Iris Shaders — Full shader support",
-                "Simple Voice Chat — Proximity voice chat in-game",
-                "Mod Menu & REI / EMI — Quick crafting recipe viewer"
-              ]
-            }
-          }
-        ]
-      }
     ];
 
     function loadCustomEdits() {
