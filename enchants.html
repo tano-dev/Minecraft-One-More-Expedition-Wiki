@@ -7,6 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/server-icon.png" />
+  <link rel="stylesheet" href="assets/wiki-header.css" />
+  <script src="assets/wiki-lang-sync.js"></script>
   <style>
     :root {
       --bg-base: #0b0f17;
@@ -63,17 +66,62 @@
       inset: 0;
       z-index: -10;
       pointer-events: none;
-      background: #0b0f17 url('assets/bg.jpg') no-repeat center center / cover;
+      overflow: hidden;
+      background: #101726 url('assets/bg.jpg') no-repeat center center / cover;
     }
     .bg-overlay {
       position: fixed;
       inset: 0;
       z-index: -9;
       pointer-events: none;
-      background:
-        radial-gradient(circle at 20% 10%, rgba(255, 170, 0, 0.08), transparent 45%),
-        radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.08), transparent 45%),
-        linear-gradient(180deg, rgba(10, 14, 22, 0.82) 0%, rgba(10, 14, 22, 0.94) 55%, rgba(9, 12, 19, 0.98) 100%);
+      background: radial-gradient(circle at 50% 25%, rgba(15, 23, 42, 0.45) 0%, rgba(7, 10, 18, 0.82) 100%);
+    }
+
+    .mc-pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
+    .nav-tabs-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      flex-wrap: wrap;
+    }
+    .nav-tab-btn {
+      padding: 6px 13px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .nav-tab-btn:hover { color: #fff; background: rgba(255, 255, 255, 0.06); }
+    .nav-tab-btn.active { color: #fff; background: rgba(245, 196, 81, 0.2); }
+    @media (max-width: 1280px) {
+      .header-bar { padding: 10px 16px !important; gap: 10px !important; }
+      .nav-tab-btn { padding: 5px 10px; font-size: 0.78rem; }
+    }
+    @media (max-width: 1120px) {
+      .nav-tabs-pill { width: 100%; justify-content: center; order: 3; }
+    }
+    @media (max-width: 680px) {
+      .header-bar { padding: 9px 12px !important; gap: 8px !important; }
+      .nav-tabs-pill {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .nav-tabs-pill::-webkit-scrollbar { display: none; }
+      .nav-tab-btn { flex-shrink: 0; white-space: nowrap; font-size: 0.75rem; padding: 5px 9px; }
     }
 
     /* Sticky Top Navbar */
@@ -997,6 +1045,117 @@
       .enchants-grid { grid-template-columns: 1fr; }
       .specs-grid { grid-template-columns: 1fr; }
     }
+    .enchant-card.is-coming-soon {
+      opacity: 0.72;
+      border-color: rgba(148, 163, 184, 0.25) !important;
+      position: relative;
+    }
+    .enchant-card.is-coming-soon .card-title,
+    .enchant-card.is-coming-soon .card-desc,
+    .enchant-card.is-coming-soon .card-footer,
+    .enchant-card.is-coming-soon .lv-badge {
+      filter: blur(5px);
+      user-select: none;
+    }
+    .enchant-card.is-coming-soon:hover {
+      opacity: 0.9;
+    }
+    .filter-group-block {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .filter-group-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+    .reset-filter-btn {
+      padding: 8px 13px;
+      border-radius: 9px;
+      border: 1px solid rgba(248, 113, 113, 0.4);
+      background: rgba(248, 113, 113, 0.12);
+      color: #fca5a5;
+      font-size: 0.8rem;
+      font-weight: 800;
+      cursor: pointer;
+      font-family: inherit;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+    .reset-filter-btn:hover { background: rgba(248, 113, 113, 0.24); color: #fff; }
+    .adv-select-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .source-rates-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    @media (max-width: 900px) {
+      .source-rates-grid { grid-template-columns: 1fr; }
+    }
+    .source-rate-card {
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 11px 13px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      cursor: pointer;
+      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    }
+    .source-rate-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(245, 196, 81, 0.5);
+      background: rgba(24, 34, 54, 0.85);
+    }
+    .source-rate-cta {
+      margin-top: 5px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #38bdf8;
+    }
+    .rate-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 0.82rem;
+    }
+    .rate-table th, .rate-table td {
+      padding: 7px 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      text-align: left;
+    }
+    .rate-table th {
+      color: var(--text-muted);
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .source-rate-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(10, 14, 23, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .source-rate-icon img { width: 20px; height: 20px; }
+    .source-rate-title { font-size: 0.82rem; font-weight: 800; color: #f8fafc; margin-bottom: 3px; }
+    .source-rate-desc { font-size: 0.77rem; color: var(--text-muted); line-height: 1.45; }
+    .source-rate-desc strong { color: #f5c451; }
   </style>
 </head>
 <body>
@@ -1005,23 +1164,39 @@
   <div class="bg-overlay"></div>
 
   <!-- Navbar -->
-  <header class="header-bar">
-    <a href="index.html" class="brand-link">
-      <img src="https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/enchanted_book.png" alt="Enchanted Book" class="brand-icon" />
-      <div class="brand-text">
-        <h1>One More Expedition</h1>
-        <span id="headerSubtitle">Enchantments Codex</span>
+  <header class="ome-header">
+    <a href="main.html" class="ome-brand">
+      <img src="assets/server-icon.png" alt="OME Logo" class="ome-brand-icon" />
+      <div class="ome-brand-text">
+        <span class="ome-brand-title">One More Expedition</span>
+        <span class="ome-brand-sub">KHTN Server Wiki • 26.3</span>
       </div>
     </a>
 
-    <div class="header-actions">
-      <button type="button" id="editModeBtn" class="nav-btn">🛠️ Wiki Editor</button>
-      <a href="fishing.html" class="nav-btn" style="border-color: rgba(56, 189, 248, 0.4); color: #38bdf8;">
-        <span>🎣</span> Bách Khoa Câu Cá (112)
+    <nav class="ome-nav">
+      <a href="main.html" class="ome-nav-btn" style="border-color: rgba(59, 130, 246, 0.45); color: #93c5fd;">
+        <img src="assets/icons/grass_block_side.png" alt=""/>
+        <span data-i18n="navHome">Trang Chủ</span>
       </a>
-      <a href="index.html" class="nav-btn">
-        <span>🏠</span> Quay lại Wiki Chính
+      <a href="enchants.html" class="ome-nav-btn active" style="color: #f5c451; border-color: rgba(245, 196, 81, 0.7);">
+        <img src="assets/icons/enchanted_book.png" alt=""/>
+        <span data-i18n="navEnchants">Bách Khoa Phù Phép</span>
       </a>
+      <a href="fishing.html" class="ome-nav-btn" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.45);">
+        <img src="assets/icons/fishing_rod.png" alt=""/>
+        <span data-i18n="navFishing">Bách Khoa Câu Cá</span>
+      </a>
+      <a href="world.html" class="ome-nav-btn" style="color: #4ade80; border-color: rgba(74, 222, 128, 0.45);">
+        <img src="assets/icons/spyglass.png" alt=""/>
+        <span>Biomes &amp; Structures</span>
+      </a>
+    </nav>
+
+    <div class="ome-header-right">
+      <div class="ome-lang-pill">
+        <button type="button" class="ome-lang-btn" id="enchLangEn" onclick="setWikiLang('en')">🇺🇸 EN</button>
+        <button type="button" class="ome-lang-btn" id="enchLangVi" onclick="setWikiLang('vi')">🇻🇳 VI</button>
+      </div>
     </div>
   </header>
 
@@ -1031,134 +1206,117 @@
     <section class="hero-banner">
       <div class="hero-top">
         <h2 class="hero-title">
-          <span>Bách Khoa Phù Phép</span>
-          <span class="hero-pill">4-Tier Balanced System</span>
+          <span id="enchHeroTitle">Bách Khoa Phù Phép</span>
         </h2>
       </div>
-      <p class="hero-subtitle">
-        Tra cứu toàn bộ <strong id="totalHeroCount">400</strong> phù phép đang hoạt động trên server với thông số cộng dồn chi tiết theo từng cấp.
-        Quy tắc độc quyền: <strong>Tối đa 1 Ultimate / món trang bị</strong>; các phù phép Rare xuất hiện ở Bàn phù phép với tỉ lệ 2%–5%.
+      <p class="hero-subtitle" id="enchHeroSub">
+        Tra cứu toàn bộ <strong id="totalHeroCount">363</strong> phù phép có thể sở hữu hiện tại trên server kèm thông số cộng dồn theo cấp.
       </p>
-
-      <div class="stats-grid">
-        <div class="stat-card" data-quick-tier="ultimate" style="border-color: var(--gold-border);">
-          <div class="stat-card-left" style="color: var(--gold);"><span>👑</span> Ultimate</div>
-          <div class="stat-card-count" style="color: var(--gold);" id="statUlt">0</div>
-        </div>
-        <div class="stat-card" data-quick-tier="epic" style="border-color: var(--epic-border);">
-          <div class="stat-card-left" style="color: var(--epic);"><span>🟣</span> Epic</div>
-          <div class="stat-card-count" style="color: var(--epic);" id="statEpic">0</div>
-        </div>
-        <div class="stat-card" data-quick-tier="rare" style="border-color: var(--rare-border);">
-          <div class="stat-card-left" style="color: var(--rare);"><span>💎</span> Rare</div>
-          <div class="stat-card-count" style="color: var(--rare);" id="statRare">0</div>
-        </div>
-        <div class="stat-card" data-quick-tier="common" style="border-color: var(--common-border);">
-          <div class="stat-card-left" style="color: var(--common);"><span>⚪</span> Common</div>
-          <div class="stat-card-count" style="color: var(--common);" id="statCommon">0</div>
-        </div>
-        <div class="stat-card" data-quick-tier="curse" style="border-color: var(--curse-border);">
-          <div class="stat-card-left" style="color: var(--curse);"><span>☠️</span> Curses</div>
-          <div class="stat-card-count" style="color: var(--curse);" id="statCurse">0</div>
-        </div>
-      </div>
     </section>
 
     <!-- Filters -->
     <section class="controls-panel">
       <div class="search-sort-row">
-        <div class="search-box">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="searchInput" placeholder="Search enchantments by name, effect, or ID (e.g. protection, +2.5, lightning, bow)..." autocomplete="off" />
+        <div class="search-box" style="flex: 2; min-width: 240px;">
+          <span class="search-icon"><img class="mc-pixel" src="assets/icons/compass.png" style="width:15px;height:15px;vertical-align:middle;" alt=""/></span>
+          <input type="text" id="searchInput" placeholder="Search enchantments by name, effect, or ID..." autocomplete="off" />
           <button class="clear-search-btn" id="clearSearchBtn" title="Clear search">✕</button>
         </div>
 
-        <select id="packSelect" class="filter-select" title="Filter by pack">
-          <option value="all">Pack: Tất cả</option>
-        </select>
-
-        <select id="groupSelect" class="filter-select" title="Filter by exclusive conflict group">
-          <option value="all">Nhóm xung khắc: Tất cả</option>
-        </select>
-
         <select id="obtainSelect" class="filter-select" title="Filter by how to obtain">
-          <option value="all">Nguồn: Tất cả</option>
-          <option value="table">🔮 Bàn phù phép (Table)</option>
-          <option value="tradeable">🧑‍🌾 Dân làng Thủ thư</option>
-          <option value="loot_only">🎁 Chỉ rơi từ Loot / Rương</option>
+          <option value="all" data-en="Source: All" data-vi="Nguồn: Tất cả">Nguồn: Tất cả</option>
+          <option value="table" data-en="Enchanting Table" data-vi="Bàn phù phép (Table)">Bàn phù phép (Table)</option>
+          <option value="tradeable" data-en="Librarian Villager" data-vi="Dân làng Thủ thư">Dân làng Thủ thư</option>
+          <option value="loot_only" data-en="Loot / Chests Only" data-vi="Chỉ rơi từ Loot / Rương">Chỉ rơi từ Loot / Rương</option>
         </select>
 
         <select id="sortSelect" class="filter-select" title="Sort enchantments">
-          <option value="tier">Sắp xếp: Độ hiếm</option>
-          <option value="level">Cấp tối đa: Cao → Thấp</option>
-          <option value="name_asc">Tên: A → Z</option>
-          <option value="name_desc">Tên: Z → A</option>
-          <option value="anvil">Chi phí đe: Cao → Thấp</option>
+          <option value="tier" data-en="Sort: Rarity" data-vi="Sắp xếp: Độ hiếm">Sắp xếp: Độ hiếm</option>
+          <option value="level" data-en="Max Level: High → Low" data-vi="Cấp tối đa: Cao → Thấp">Cấp tối đa: Cao → Thấp</option>
+          <option value="name_asc" data-en="Name: A → Z" data-vi="Tên: A → Z">Tên: A → Z</option>
+          <option value="name_desc" data-en="Name: Z → A" data-vi="Tên: Z → A">Tên: Z → A</option>
+          <option value="anvil" data-en="Anvil Cost: High → Low" data-vi="Chi phí đe: Cao → Thấp">Chi phí đe: Cao → Thấp</option>
         </select>
+
+        <button type="button" class="reset-filter-btn" id="resetFiltersBtn" onclick="resetAllFilters()">↺ Reset</button>
       </div>
 
-      <div class="filter-row">
+      <div class="filter-group-block">
+        <div class="filter-group-label" id="lblFilterRarity">Độ hiếm / Rarity</div>
         <div class="pill-group" id="tierTabs">
           <button class="filter-btn active" data-tier="all" id="tabAll">All</button>
-          <button class="filter-btn" data-tier="ultimate" id="tabUlt">👑 Ultimate</button>
-          <button class="filter-btn" data-tier="epic" id="tabEpic">🟣 Epic</button>
-          <button class="filter-btn" data-tier="rare" id="tabRare">💎 Rare</button>
-          <button class="filter-btn" data-tier="common" id="tabCommon">⚪ Common</button>
-          <button class="filter-btn" data-tier="curse" id="tabCurse">☠️ Curses</button>
-        </div>
-
-        <div class="pill-group" id="gearChips">
-          <button class="filter-btn active" data-gear="all">All Gear</button>
-          <button class="filter-btn" data-gear="weapon">⚔️ Melee</button>
-          <button class="filter-btn" data-gear="ranged">🏹 Ranged</button>
-          <button class="filter-btn" data-gear="armor">🛡️ Armor & Elytra</button>
-          <button class="filter-btn" data-gear="tool">⛏️ Tools</button>
-          <button class="filter-btn" data-gear="mount">🐺 Mounts & Pets</button>
+          <button class="filter-btn" data-tier="epic" id="tabEpic"><img class="mc-pixel" src="assets/icons/enchanted_book_epic.png" style="width:15px;height:15px;vertical-align:middle;" alt=""/> Epic</button>
+          <button class="filter-btn" data-tier="rare" id="tabRare"><img class="mc-pixel" src="assets/icons/enchanted_book_rare.png" style="width:15px;height:15px;vertical-align:middle;" alt=""/> Rare</button>
+          <button class="filter-btn" data-tier="common" id="tabCommon"><img class="mc-pixel" src="assets/icons/enchanted_book_common.png" style="width:15px;height:15px;vertical-align:middle;" alt=""/> Common</button>
+          <button class="filter-btn" data-tier="curse" id="tabCurse"><img class="mc-pixel" src="assets/icons/blaze_powder.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> Curses</button>
+          <button class="filter-btn" data-tier="ultimate" id="tabUlt"><img class="mc-pixel" src="assets/icons/enchanted_book_ultimate.png" style="width:15px;height:15px;vertical-align:middle;" alt=""/> Ultimate (Soon™)</button>
         </div>
       </div>
 
-      <details id="excludeDetails" style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.08);">
-        <summary style="cursor: pointer; font-size: 0.85rem; color: #f87171; font-weight: 600; user-select: none;">
-          🚫 Bộ lọc Loại trừ (Tích để ẩn) <span id="excludeCountBadge" style="color: #9ca3af; font-weight: 400;"></span>
+      <div class="filter-group-block">
+        <div class="filter-group-label" id="lblFilterGear">Loại trang bị / Item Category</div>
+        <div class="pill-group" id="gearChips">
+          <button class="filter-btn active" data-gear="all" data-en="All Gear" data-vi="Tất cả">All Gear</button>
+          <button class="filter-btn" data-gear="sword" data-en="Sword" data-vi="Kiếm"><img class="mc-pixel" src="assets/icons/diamond_sword.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> <span>Sword</span></button>
+          <button class="filter-btn" data-gear="axe_mace" data-en="Axe & Mace" data-vi="Rìu & Chùy"><img class="mc-pixel" src="assets/icons/netherite_sword.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> <span>Axe &amp; Mace</span></button>
+          <button class="filter-btn" data-gear="bow_crossbow" data-en="Bow & Crossbow" data-vi="Cung & Nỏ"><img class="mc-pixel" src="assets/icons/spyglass.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> <span>Bow &amp; Crossbow</span></button>
+          <button class="filter-btn" data-gear="trident_spear" data-en="Trident & Spear" data-vi="Đinh ba & Giáo"><img class="mc-pixel" src="assets/icons/trident.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> <span>Trident &amp; Spear</span></button>
+          <button class="filter-btn" data-gear="armor" data-en="Armor" data-vi="Giáp"><img class="mc-pixel" src="assets/icons/totem_of_undying.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> <span>Armor</span></button>
+          <button class="filter-btn" data-gear="elytra" data-en="Elytra" data-vi="Cánh cứng"><img class="mc-pixel" src="assets/icons/ender_pearl.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> <span>Elytra</span></button>
+          <button class="filter-btn" data-gear="shield" data-en="Shield" data-vi="Khiên"><img class="mc-pixel" src="assets/icons/shield.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> <span>Shield</span></button>
+          <button class="filter-btn" data-gear="pickaxe" data-en="Pickaxe & Mining" data-vi="Cúp & Đào mỏ"><img class="mc-pixel" src="assets/icons/netherite_pickaxe.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> <span>Pickaxe</span></button>
+          <button class="filter-btn" data-gear="tools" data-en="Tools" data-vi="Công cụ"><img class="mc-pixel" src="assets/icons/diamond_pickaxe.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> <span>Tools</span></button>
+          <button class="filter-btn" data-gear="fishing_rod" data-en="Fishing Rod" data-vi="Cần câu"><img class="mc-pixel" src="assets/icons/fishing_rod.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> <span>Fishing Rod</span></button>
+          <button class="filter-btn" data-gear="mount" data-en="Mounts & Pets" data-vi="Thú cưỡi & Pet"><img class="mc-pixel" src="assets/icons/name_tag.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> <span>Mounts &amp; Pets</span></button>
+          <button class="filter-btn" data-gear="universal" data-en="Universal" data-vi="Mọi vật phẩm"><img class="mc-pixel" src="assets/icons/nether_star.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> <span>Universal</span></button>
+        </div>
+      </div>
+
+      <details id="excludeDetails" style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.08);">
+        <summary style="cursor: pointer; font-size: 0.84rem; color: #93c5fd; font-weight: 700; user-select: none; display: flex; align-items: center; gap: 6px;">
+          <img class="mc-pixel" src="assets/icons/amethyst_shard.png" style="width:14px;height:14px;" alt=""/> <span id="advSummaryLabel">Bộ lọc nâng cao &amp; Loại trừ (Nhóm xung khắc...)</span> <span id="excludeCountBadge" style="color: #9ca3af; font-weight: 400;"></span>
         </summary>
+        <div style="margin-top: 10px;">
+          <div class="adv-select-row">
+            <select id="groupSelect" class="filter-select" title="Filter by exclusive conflict group">
+              <option value="all" data-en="Conflict Group: All" data-vi="Nhóm xung khắc: Tất cả">Nhóm xung khắc: Tất cả</option>
+            </select>
+          </div>
         <div id="excludeRow" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 10px; padding: 12px; background: rgba(15, 23, 42, 0.55); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px;">
           <div>
-            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Packs</div>
-            <div id="excludePackChecks" style="display: flex; flex-direction: column; gap: 4px; max-height: 150px; overflow-y: auto;"></div>
-          </div>
-          <div>
-            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Rarity</div>
+            <div class="ex-col-title" data-en="Rarity" data-vi="Độ hiếm" style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Rarity</div>
             <div id="excludeTierChecks" style="display: flex; flex-direction: column; gap: 4px;">
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="ultimate"> 👑 Ultimate</label>
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="epic"> 🟣 Epic</label>
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="rare"> 💎 Rare</label>
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="common"> ⚪ Common</label>
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="curse"> ☠️ Curse</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="ultimate"> <img class="mc-pixel" src="assets/icons/enchanted_book_ultimate.png" style="width:14px;height:14px;" alt=""/> Ultimate</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="epic"> <img class="mc-pixel" src="assets/icons/enchanted_book_epic.png" style="width:14px;height:14px;" alt=""/> Epic</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="rare"> <img class="mc-pixel" src="assets/icons/enchanted_book_rare.png" style="width:14px;height:14px;" alt=""/> Rare</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="common"> <img class="mc-pixel" src="assets/icons/enchanted_book_common.png" style="width:14px;height:14px;" alt=""/> Common</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="curse"> <img class="mc-pixel" src="assets/icons/blaze_powder.png" style="width:14px;height:14px;" alt=""/> <span data-en="Curse" data-vi="Lời Nguyền">Curse</span></label>
             </div>
           </div>
           <div>
-            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Loại vật phẩm</div>
+            <div class="ex-col-title" data-en="Item Type" data-vi="Loại vật phẩm" style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Loại vật phẩm</div>
             <div id="excludeGearChecks" style="display: flex; flex-direction: column; gap: 4px;">
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="weapon"> ⚔️ Melee</label>
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="ranged"> 🏹 Ranged</label>
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="armor"> 🛡️ Armor & Elytra</label>
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="tool"> ⛏️ Tools</label>
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="mount"> 🐺 Mounts & Pets</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="weapon"> <img class="mc-pixel" src="assets/icons/diamond_sword.png" style="width:14px;height:14px;" alt=""/> <span data-en="Melee" data-vi="Cận chiến">Melee</span></label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="ranged"> <img class="mc-pixel" src="assets/icons/spyglass.png" style="width:14px;height:14px;" alt=""/> <span data-en="Ranged" data-vi="Tầm xa">Ranged</span></label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="armor"> <img class="mc-pixel" src="assets/icons/shield.png" style="width:14px;height:14px;" alt=""/> <span data-en="Armor & Elytra" data-vi="Giáp & Cánh cứng">Armor &amp; Elytra</span></label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="tool"> <img class="mc-pixel" src="assets/icons/diamond_pickaxe.png" style="width:14px;height:14px;" alt=""/> <span data-en="Tools" data-vi="Công cụ">Tools</span></label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="mount"> <img class="mc-pixel" src="assets/icons/name_tag.png" style="width:14px;height:14px;" alt=""/> <span data-en="Mounts & Pets" data-vi="Thú cưỡi & Pet">Mounts &amp; Pets</span></label>
             </div>
           </div>
           <div>
-            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Thuộc tính</div>
+            <div class="ex-col-title" data-en="Properties" data-vi="Thuộc tính" style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Thuộc tính</div>
             <div id="excludePropChecks" style="display: flex; flex-direction: column; gap: 4px;">
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="table"> 🔮 Bàn phù phép (Table)</label>
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="tradeable"> 🧑‍🌾 Dân làng (Tradeable)</label>
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="loot"> 🎁 Loot / Rương</label>
-              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="conflict"> ⚔️ Có nhóm xung khắc</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="table"> <img class="mc-pixel" src="assets/icons/enchanted_book.png" style="width:14px;height:14px;" alt=""/> <span data-en="Enchanting Table" data-vi="Bàn phù phép">Bàn phù phép</span></label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="tradeable"> <img class="mc-pixel" src="assets/icons/emerald.png" style="width:14px;height:14px;" alt=""/> <span data-en="Librarian Trade" data-vi="Dân làng Thủ thư">Dân làng Thủ thư</span></label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="loot"> <img class="mc-pixel" src="assets/icons/chest_front.png" style="width:14px;height:14px;" alt=""/> <span data-en="Loot / Chests" data-vi="Loot / Rương">Loot / Rương</span></label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="conflict"> <img class="mc-pixel" src="assets/icons/netherite_sword.png" style="width:14px;height:14px;" alt=""/> <span data-en="Has Conflict Group" data-vi="Có nhóm xung khắc">Có nhóm xung khắc</span></label>
             </div>
           </div>
           <div>
-            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Nhóm xung khắc</div>
+            <div class="ex-col-title" data-en="Conflict Groups" data-vi="Nhóm xung khắc" style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Nhóm xung khắc</div>
             <div id="excludeGroupChecks" style="display: flex; flex-direction: column; gap: 4px; max-height: 150px; overflow-y: auto;"></div>
           </div>
+        </div>
         </div>
       </details>
     </section>
@@ -1166,7 +1324,7 @@
     <!-- Results Bar -->
     <div class="results-bar">
       <span id="resultsCount">Showing 400 / 400 enchantments</span>
-      <span>Nhấp vào thẻ bất kỳ để xem thông số chi tiết &amp; lệnh /give</span>
+      <span id="resultsHint">Nhấp vào thẻ bất kỳ để xem thông số chi tiết</span>
     </div>
 
     <!-- Grid -->
@@ -1181,13 +1339,28 @@
 
   </main>
 
+  <!-- Source & Rates Detail Modal -->
+  <div class="modal-backdrop" id="sourceRateModal" onclick="if(event.target===this)this.classList.remove('active')">
+    <div class="modal-box" style="max-width:620px;">
+      <button class="modal-close-btn" onclick="document.getElementById('sourceRateModal').classList.remove('active')">✕</button>
+      <div class="modal-header">
+        <img src="assets/icons/enchanted_book.png" id="srcModalIcon" alt="" class="modal-book-icon mc-pixel" />
+        <div>
+          <h3 class="modal-title" id="srcModalTitle" style="color:#f5c451;">Enchanting Table</h3>
+          <div class="modal-id" id="srcModalSub">Detailed Drop &amp; Roll Breakdown</div>
+        </div>
+      </div>
+      <div id="srcModalBody" style="font-size:0.86rem;color:#e2e8f0;line-height:1.6;"></div>
+    </div>
+  </div>
+
   <!-- Detail Modal -->
   <div class="modal-backdrop" id="enchModal">
     <div class="modal-box">
       <button class="modal-close-btn" id="modalCloseBtn">✕</button>
 
       <div class="modal-header">
-        <img src="https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/enchanted_book.png" alt="Enchanted Book" class="modal-book-icon" />
+        <img src="assets/icons/enchanted_book.png" id="modalBookIcon" alt="Enchanted Book" class="modal-book-icon mc-pixel" />
         <div>
           <h3 class="modal-title" id="modalTitle">Enchantment</h3>
           <div class="modal-id" id="modalId">minecraft:protection</div>
@@ -1225,7 +1398,7 @@
       </div>
 
       <div class="conflict-box" id="modalConflictsBox" style="display: none;">
-        <div class="spec-label" style="margin-bottom: 8px; color: #fdba74;">⚔️ Nhóm xung khắc / Không thể gắn cùng (Click để lọc hoặc xem)</div>
+        <div class="spec-label" id="modalConflictsLabel" style="margin-bottom: 8px; color: #fdba74; display:flex; align-items:center; gap:6px;"><img class="mc-pixel" src="assets/icons/netherite_sword.png" style="width:14px;height:14px;" alt=""/> Nhóm xung khắc / Không thể gắn cùng (Click để lọc hoặc xem)</div>
         <div class="conflict-groups-row" id="modalConflictGroups"></div>
         <div class="conflict-chips" id="modalConflictChips"></div>
       </div>
@@ -1269,13 +1442,6 @@
         </div>
       </div>
 
-      <div>
-        <div class="spec-label" style="margin-bottom: 6px;">In-Game Command (/give)</div>
-        <div class="cmd-box">
-          <div class="cmd-text" id="cmdText">/give @p ...</div>
-          <button class="cmd-copy-btn" id="copyCmdBtn">📋 Copy</button>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -1298,17 +1464,30 @@
     let currentObtain = "all";
     let currentSearch = "";
     let currentSort = "tier";
+    let currentWikiLang = localStorage.getItem("ome_wiki_lang") || "en";
 
-    const allData = window.ALL_ENCHANTMENTS || [];
+    const isTechnicalEnchant = (x) =>
+      x.id.includes("_technical") ||
+      x.id.startsWith("mt:technical/") ||
+      x.id.includes("raj_") ||
+      x.id.includes("rusta_") ||
+      x.id === "nova_structures:function_only";
+
+    const allData = (window.ALL_ENCHANTMENTS || []).filter(x =>
+      x.enabled !== false &&
+      !isTechnicalEnchant(x) &&
+      (x.table || x.tradeable || x.loot || x.tier === "ultimate" || x.namespace === "expedition_fishing")
+    );
+    const obtainableCount = allData.filter(x => x.tier !== "ultimate").length;
 
     const isCurseItem = (item) =>
       item.tier === "curse" ||
       item.id.toLowerCase().includes("curse") ||
       item.name.toLowerCase().includes("curse");
 
-    // Populate dynamic counts
+    // Populate dynamic counts (all excludes Coming Soon Ultimates)
     const counts = {
-      all: allData.length,
+      all: obtainableCount,
       ultimate: allData.filter(x => x.tier === "ultimate").length,
       epic: allData.filter(x => x.tier === "epic").length,
       rare: allData.filter(x => x.tier === "rare").length,
@@ -1316,20 +1495,21 @@
       curse: allData.filter(isCurseItem).length
     };
 
-    document.getElementById("headerSubtitle").innerText = `Enchantments Codex • ${counts.all} Enchants`;
-    document.getElementById("totalHeroCount").innerText = counts.all;
-    document.getElementById("statUlt").innerText = counts.ultimate;
-    document.getElementById("statEpic").innerText = counts.epic;
-    document.getElementById("statRare").innerText = counts.rare;
-    document.getElementById("statCommon").innerText = counts.common;
-    document.getElementById("statCurse").innerText = counts.curse;
+    const hsEl = document.getElementById("headerSubtitle");
+    if (hsEl) hsEl.innerText = `Enchantments Codex • ${counts.all} Enchants`;
+    const thEl = document.getElementById("totalHeroCount");
+    if (thEl) thEl.innerText = counts.all;
+    ["statUlt", "statEpic", "statRare", "statCommon", "statCurse"].forEach((id, idx) => {
+      const el = document.getElementById(id);
+      if (el) el.innerText = [counts.ultimate, counts.epic, counts.rare, counts.common, counts.curse][idx];
+    });
 
     document.getElementById("tabAll").innerText = `All (${counts.all})`;
-    document.getElementById("tabUlt").innerText = `👑 Ultimate (${counts.ultimate})`;
-    document.getElementById("tabEpic").innerText = `🟣 Epic (${counts.epic})`;
-    document.getElementById("tabRare").innerText = `💎 Rare (${counts.rare})`;
-    document.getElementById("tabCommon").innerText = `⚪ Common (${counts.common})`;
-    document.getElementById("tabCurse").innerText = `☠️ Curses (${counts.curse})`;
+    document.getElementById("tabUlt").innerHTML = `<img class="mc-pixel" src="assets/icons/enchanted_book_ultimate.png" style="width:15px;height:15px;vertical-align:middle;" alt=""/> Ultimate (Soon™)`;
+    document.getElementById("tabEpic").innerHTML = `<img class="mc-pixel" src="assets/icons/enchanted_book_epic.png" style="width:15px;height:15px;vertical-align:middle;" alt=""/> Epic (${counts.epic})`;
+    document.getElementById("tabRare").innerHTML = `<img class="mc-pixel" src="assets/icons/enchanted_book_rare.png" style="width:15px;height:15px;vertical-align:middle;" alt=""/> Rare (${counts.rare})`;
+    document.getElementById("tabCommon").innerHTML = `<img class="mc-pixel" src="assets/icons/enchanted_book_common.png" style="width:15px;height:15px;vertical-align:middle;" alt=""/> Common (${counts.common})`;
+    document.getElementById("tabCurse").innerHTML = `<img class="mc-pixel" src="assets/icons/blaze_powder.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> Curses (${counts.curse})`;
 
     // DOM refs
     const grid = document.getElementById("enchantsGrid");
@@ -1366,7 +1546,7 @@
         const opt = document.createElement("option");
         opt.value = ns;
         opt.textContent = `${packLabels[ns] || ns} (${cnt})`;
-        packSelect.appendChild(opt);
+        if (packSelect) packSelect.appendChild(opt);
       });
 
     // Populate exclusive conflict groups dynamically
@@ -1387,12 +1567,12 @@
 
     const optStandalone = document.createElement("option");
     optStandalone.value = "__standalone__";
-    optStandalone.textContent = `🟢 Độc lập / Không xung khắc (${standaloneCount})`;
+    optStandalone.textContent = `Độc lập / Không xung khắc (${standaloneCount})`;
     groupSelect.appendChild(optStandalone);
 
     const optHasConf = document.createElement("option");
     optHasConf.value = "__has_conflict__";
-    optHasConf.textContent = `⚔️ Có xung khắc (${hasConflictCount})`;
+    optHasConf.textContent = `Có xung khắc (${hasConflictCount})`;
     groupSelect.appendChild(optHasConf);
 
     Object.entries(groupCounts)
@@ -1432,8 +1612,16 @@
     }
 
     function getGearIcon(cats) {
-      const map = { weapon: "⚔️", ranged: "🏹", armor: "🛡️", tool: "⛏️", mount: "🐺", universal: "✨" };
-      return (cats || []).map(c => map[c] || "📦").slice(0, 2).join(" ");
+      const icon = (src) => `<img class="mc-pixel" src="assets/icons/${src}" style="width:13px;height:13px;vertical-align:middle;" alt=""/>`;
+      const map = {
+        weapon: icon("diamond_sword.png"),
+        ranged: icon("spyglass.png"),
+        armor: icon("totem_of_undying.png"),
+        tool: icon("netherite_pickaxe.png"),
+        mount: icon("name_tag.png"),
+        universal: icon("nether_star.png")
+      };
+      return (cats || []).map(c => map[c] || icon("chest_front.png")).slice(0, 2).join(" ");
     }
 
     function escapeHtml(str) {
@@ -1446,30 +1634,33 @@
 
     function highlightNumbers(desc) {
       const safe = escapeHtml(desc);
-      return safe.replace(/([+-]?\d+(?:\.\d+)?(?:%|s|x)?(?:\s*[-–]\s*\d+(?:\.\d+)?(?:%|s|x)?)?)/g, '<span class="hl-num">$1</span>');
+      return safe
+        .replace(/([+-]?\d+(?:\.\d+)?(?:%|s|x)?(?:\s*[-–\/]\s*[+-]?\d+(?:\.\d+)?(?:%|s|x)?)?)/g, '<span class="hl-num">$1</span>')
+        .replace(/\b(Lv\.?\s*[IVX]+(?:\s*[-–\/]\s*(?:Lv\.?\s*)?[IVX]+)*)/g, '<span class="hl-num">$1</span>');
     }
 
     function getTierBadgeHtml(item) {
       if (isCurseItem(item)) {
-        return '<span class="badge badge-curse">☠️ Curse</span>';
+        return `<span class="badge badge-curse"><img class="mc-pixel" src="assets/icons/blaze_powder.png" style="width:13px;height:13px;vertical-align:middle;" alt=""/> ${currentWikiLang === "vi" ? "Lời Nguyền" : "Curse"}</span>`;
       }
-      if (item.tier === "ultimate") return '<span class="badge badge-ult">👑 Ultimate</span>';
-      if (item.tier === "epic") return '<span class="badge badge-epic">🟣 Epic</span>';
-      if (item.tier === "rare") return '<span class="badge badge-rare">💎 Rare</span>';
-      return '<span class="badge badge-common">⚪ Common</span>';
+      if (item.tier === "ultimate") return '<span class="badge badge-ult"><img class="mc-pixel" src="assets/icons/enchanted_book_ultimate.png" style="width:13px;height:13px;vertical-align:middle;" alt=""/> Ultimate</span>';
+      if (item.tier === "epic") return '<span class="badge badge-epic"><img class="mc-pixel" src="assets/icons/enchanted_book_epic.png" style="width:13px;height:13px;vertical-align:middle;" alt=""/> Epic</span>';
+      if (item.tier === "rare") return '<span class="badge badge-rare"><img class="mc-pixel" src="assets/icons/enchanted_book_rare.png" style="width:13px;height:13px;vertical-align:middle;" alt=""/> Rare</span>';
+      return '<span class="badge badge-common"><img class="mc-pixel" src="assets/icons/enchanted_book_common.png" style="width:13px;height:13px;vertical-align:middle;" alt=""/> Common</span>';
     }
 
     function getObtainBadgeHtml(item) {
-      if (item.table && item.tradeable) return '<span class="badge badge-obtain">🔮 Table • 🧑‍🌾 Villager</span>';
-      if (item.table) return '<span class="badge badge-obtain">🔮 Enchant Table</span>';
-      if (item.tradeable) return '<span class="badge badge-obtain">🧑‍🌾 Librarian</span>';
-      return '<span class="badge badge-obtain">🎁 Loot Only</span>';
+      if (item.tier === "ultimate") {
+        return '<span class="badge" style="background:rgba(148,163,184,0.16);border:1px solid rgba(148,163,184,0.38);color:#cbd5e1;"><img class="mc-pixel" src="assets/icons/clock.png" style="width:12px;height:12px;vertical-align:middle;" alt=""/> Coming Soon™</span>';
+      }
+      const vi = currentWikiLang === "vi";
+      if (item.table && item.tradeable) return `<span class="badge badge-obtain"><img class="mc-pixel" src="assets/icons/enchanted_book.png" style="width:12px;height:12px;vertical-align:middle;" alt=""/> ${vi ? "Bàn & Dân làng" : "Table • Villager"}</span>`;
+      if (item.table) return `<span class="badge badge-obtain"><img class="mc-pixel" src="assets/icons/enchanted_book.png" style="width:12px;height:12px;vertical-align:middle;" alt=""/> ${vi ? "Bàn Phù Phép" : "Enchant Table"}</span>`;
+      if (item.tradeable) return `<span class="badge badge-obtain"><img class="mc-pixel" src="assets/icons/emerald.png" style="width:12px;height:12px;vertical-align:middle;" alt=""/> ${vi ? "Thủ Thư" : "Librarian"}</span>`;
+      return `<span class="badge badge-obtain"><img class="mc-pixel" src="assets/icons/chest_front.png" style="width:12px;height:12px;vertical-align:middle;" alt=""/> ${vi ? "Chỉ Loot" : "Loot Only"}</span>`;
     }
 
     function getPackBadgeHtml(item) {
-      if (item.namespace === "stellarity") return '<span class="badge badge-pack">✨ Stellarity</span>';
-      if (item.namespace === "incendium") return '<span class="badge badge-pack">🔥 Incendium</span>';
-      if (item.namespace === "mt") return '<span class="badge badge-pack">💎 Mine Treasure</span>';
       return "";
     }
 
@@ -1478,7 +1669,7 @@
       if (groups.length === 0) return "";
       const label = groups[0];
       const extra = groups.length > 1 ? ` +${groups.length - 1}` : "";
-      return `<span class="badge badge-group" title="Nhóm xung khắc: ${escapeHtml(groups.join(', '))}">⚔️ ${escapeHtml(label)}${extra}</span>`;
+      return `<span class="badge badge-group" title="Nhóm xung khắc: ${escapeHtml(groups.join(', '))}"><img class="mc-pixel" src="assets/icons/netherite_sword.png" style="width:12px;height:12px;vertical-align:middle;" alt=""/> ${escapeHtml(label)}${extra}</span>`;
     }
 
     let excludedPacks = new Set();
@@ -1494,22 +1685,24 @@
     }
 
     const excludePackChecks = document.getElementById("excludePackChecks");
-    [...new Set(allData.map(i => i.namespace).filter(Boolean))].sort().forEach(ns => {
-      const lbl = document.createElement("label");
-      lbl.style.cssText = "display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;";
-      const cb = document.createElement("input");
-      cb.type = "checkbox";
-      cb.onchange = () => {
-        if (cb.checked) excludedPacks.add(ns);
-        else excludedPacks.delete(ns);
-        updateExcludeBadge();
-        currentPage = 1;
-        renderCards();
-      };
-      lbl.appendChild(cb);
-      lbl.append(" " + ns);
-      excludePackChecks.appendChild(lbl);
-    });
+    if (excludePackChecks) {
+      [...new Set(allData.map(i => i.namespace).filter(Boolean))].sort().forEach(ns => {
+        const lbl = document.createElement("label");
+        lbl.style.cssText = "display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;";
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.onchange = () => {
+          if (cb.checked) excludedPacks.add(ns);
+          else excludedPacks.delete(ns);
+          updateExcludeBadge();
+          currentPage = 1;
+          renderCards();
+        };
+        lbl.appendChild(cb);
+        lbl.append(" " + ns);
+        excludePackChecks.appendChild(lbl);
+      });
+    }
 
     const excludeGroupChecks = document.getElementById("excludeGroupChecks");
     [...new Set(allData.flatMap(i => i.exclusive_groups || []))].sort().forEach(g => {
@@ -1565,6 +1758,7 @@
     function filterAndSortData() {
       const filtered = allData.map(getEffectiveItem).filter(item => {
         if (item.enabled === false && currentTier !== "all") return false;
+        if (currentTier === "all" && item.tier === "ultimate") return false;
         if (currentTier === "curse") {
           if (!isCurseItem(item)) return false;
         } else if (currentTier === "common") {
@@ -1574,8 +1768,9 @@
         }
 
         if (currentGear !== "all") {
-          const cats = item.gear_categories || [];
-          if (!cats.includes(currentGear) && !cats.includes("universal")) return false;
+          const icats = item.item_cats || [];
+          const gcats = item.gear_categories || [];
+          if (!icats.includes(currentGear) && !gcats.includes(currentGear) && !icats.includes("universal")) return false;
         }
 
         if (currentPack !== "all" && item.namespace !== currentPack) return false;
@@ -1606,6 +1801,7 @@
             item.name.toLowerCase().includes(q) ||
             item.id.toLowerCase().includes(q) ||
             item.description.toLowerCase().includes(q) ||
+            (item.desc_vi || "").toLowerCase().includes(q) ||
             (item.supported_display || "").toLowerCase().includes(q) ||
             (item.exclusive_groups || []).some(g => g.toLowerCase().includes(q));
           if (!match) return false;
@@ -1642,7 +1838,7 @@
       currentPage = 1;
       searchInput.value = "";
       clearSearchBtn.classList.remove("visible");
-      packSelect.value = "all";
+      if (packSelect) packSelect.value = "all";
       groupSelect.value = "all";
       obtainSelect.value = "all";
       document.querySelectorAll("#tierTabs .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.tier === "all"));
@@ -1695,7 +1891,7 @@
           currentGear = s.currentGear;
           document.querySelectorAll("#gearChips .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.gear === currentGear));
         }
-        if (s.currentPack && packSelect.querySelector(`option[value="${s.currentPack}"]`)) {
+        if (s.currentPack && packSelect && packSelect.querySelector(`option[value="${s.currentPack}"]`)) {
           currentPack = s.currentPack;
           packSelect.value = s.currentPack;
         }
@@ -1750,7 +1946,11 @@
       saveFilterSettings();
       const filtered = filterAndSortData();
       const total = filtered.length;
-      resultsCount.innerHTML = `Showing <strong>${total}</strong> / <strong>${allData.length}</strong> enchantments`;
+      const vi = currentWikiLang === "vi";
+      const denom = currentTier === "ultimate" ? counts.ultimate : counts.all;
+      resultsCount.innerHTML = vi
+        ? `Hiển thị <strong>${total}</strong> / <strong>${denom}</strong> phù phép`
+        : `Showing <strong>${total}</strong> / <strong>${denom}</strong> enchantments`;
 
       const totalPages = Math.ceil(total / PAGE_SIZE) || 1;
       if (currentPage > totalPages) currentPage = totalPages;
@@ -1777,8 +1977,9 @@
         const item = getEffectiveItem(rawItem);
         const card = document.createElement("div");
         const curseClass = isCurseItem(item) ? " is-curse" : "";
+        const soonClass = item.tier === "ultimate" ? " is-coming-soon" : "";
         const modClass = pendingChanges[item.id] ? " card-modified" : "";
-        card.className = `enchant-card tier-${item.tier}${curseClass}${modClass}`;
+        card.className = `enchant-card tier-${item.tier}${curseClass}${soonClass}${modClass}`;
         card.onclick = () => openModal(rawItem);
 
         const romanMax = getRomanNumeral(item.max_level);
@@ -1797,11 +1998,11 @@
             ${getGroupBadgeHtml(item)}
           </div>
 
-          <p class="card-desc">${highlightNumbers(item.description)}</p>
+          <p class="card-desc">${highlightNumbers(currentWikiLang === "vi" && item.desc_vi ? item.desc_vi : item.description)}</p>
 
           <div class="card-footer">
             <span class="gear-label">${getGearIcon(item.gear_categories)} ${gearText}</span>
-            <span class="card-cta">Details ↗</span>
+            <span class="card-cta">${currentWikiLang === "vi" ? "Chi tiết ↗" : "Details ↗"}</span>
           </div>
 
           <div class="card-edit-row" onclick="event.stopPropagation()">
@@ -1839,7 +2040,7 @@
         grid.appendChild(card);
       });
 
-      pageIndicator.innerText = `Trang ${currentPage} / ${totalPages}`;
+      pageIndicator.innerText = `${currentWikiLang === "vi" ? "Trang" : "Page"} ${currentPage} / ${totalPages}`;
       prevPageBtn.disabled = currentPage <= 1;
       nextPageBtn.disabled = currentPage >= totalPages;
     }
@@ -1854,53 +2055,85 @@
         common: "#f8fafc"
       };
       const titleColor = isCurseItem(item) ? "var(--curse)" : (colorMap[item.tier] || "#f8fafc");
+      const modalBookIcon = document.getElementById("modalBookIcon");
+      if (modalBookIcon) {
+        modalBookIcon.src = isCurseItem(item)
+          ? "assets/icons/blaze_powder.png"
+          : item.tier === "ultimate"
+            ? "assets/icons/enchanted_book_ultimate.png"
+            : item.tier === "epic"
+              ? "assets/icons/enchanted_book_epic.png"
+              : item.tier === "rare"
+                ? "assets/icons/enchanted_book_rare.png"
+                : "assets/icons/enchanted_book_common.png";
+      }
 
-      modalTitle.innerText = item.name;
+      const isSoon = item.tier === "ultimate";
+      modalTitle.innerText = isSoon ? "??? (Coming Soon™)" : item.name;
       modalTitle.style.color = titleColor;
-      modalId.innerText = item.id;
+      modalTitle.style.filter = isSoon ? "blur(5px)" : "";
+      modalId.innerText = isSoon ? "ultimate:coming_soon" : item.id;
+      modalDesc.style.filter = isSoon ? "blur(5px)" : "";
+      specGear.style.filter = isSoon ? "blur(5px)" : "";
+      if (cmdText) cmdText.style.filter = isSoon ? "blur(5px)" : "";
 
+      const vi = currentWikiLang === "vi";
       if (item.tier === "ultimate") {
         modalAlert.style.display = "block";
         modalAlert.style.background = "var(--gold-soft)";
         modalAlert.style.borderColor = "var(--gold-border)";
         modalAlert.style.color = "#fde68a";
-        modalAlert.innerHTML = `<strong>👑 ULTIMATE RULE:</strong> Each item can hold at most <strong>1 Ultimate enchantment</strong>.`;
+        modalAlert.innerHTML = vi
+          ? `<img class="mc-pixel" src="assets/icons/clock.png" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;" alt=""/><strong>COMING SOON™:</strong> Phù phép <strong>Ultimate</strong> đang được cân bằng &amp; sẽ mở khóa sớm (tối đa 1 Ultimate / món trang bị).`
+          : `<img class="mc-pixel" src="assets/icons/clock.png" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;" alt=""/><strong>COMING SOON™:</strong> <strong>Ultimate</strong> enchantments are releasing soon (max 1 Ultimate per item).`;
       } else if (isCurseItem(item)) {
         modalAlert.style.display = "block";
         modalAlert.style.background = "var(--curse-soft)";
         modalAlert.style.borderColor = "var(--curse-border)";
         modalAlert.style.color = "#fecaca";
-        modalAlert.innerHTML = `<strong>☠️ CURSE:</strong> Applies a drawback, hazard, or penalty while equipped or used.`;
+        modalAlert.innerHTML = vi
+          ? `<img class="mc-pixel" src="assets/icons/blaze_powder.png" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;" alt=""/><strong>LỜI NGUYỀN:</strong> Gây ra hiệu ứng bất lợi hoặc rủi ro khi trang bị / sử dụng.`
+          : `<img class="mc-pixel" src="assets/icons/blaze_powder.png" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;" alt=""/><strong>CURSE:</strong> Applies a drawback, hazard, or penalty while equipped or used.`;
       } else {
         modalAlert.style.display = "none";
       }
 
-      modalDesc.innerHTML = highlightNumbers(item.description);
+      modalDesc.innerHTML = highlightNumbers(vi && item.desc_vi ? item.desc_vi : item.description);
 
-      specTier.innerText = item.tier.toUpperCase() + (isCurseItem(item) ? " (CURSE)" : "");
+      specTier.innerText = item.tier.toUpperCase() + (isCurseItem(item) ? (vi ? " (LỜI NGUYỀN)" : " (CURSE)") : "");
       specTier.style.color = titleColor;
-      specMaxLv.innerText = `Level ${getRomanNumeral(item.max_level)} (Max ${item.max_level})`;
-      specAnvil.innerText = `${item.anvil_cost} Levels`;
+      specMaxLv.innerText = vi
+        ? `Cấp ${getRomanNumeral(item.max_level)} (Tối đa ${item.max_level})`
+        : `Level ${getRomanNumeral(item.max_level)} (Max ${item.max_level})`;
+      specAnvil.innerText = `${item.anvil_cost} ${vi ? "Cấp XP" : "Levels"}`;
 
       const sources = [];
-      if (item.loot) sources.push("Loot Chests");
-      if (item.table) sources.push("Enchanting Table");
-      if (item.tradeable) sources.push("Librarian Villager");
-      specSource.innerText = sources.join(" • ") || "Special Event";
+      if (item.tier === "ultimate") {
+        sources.push("Coming Soon™");
+      } else {
+        if (item.loot) sources.push(vi ? "Rương Kho Báu / Loot" : "Loot Chests");
+        if (item.table) sources.push(vi ? "Bàn Phù Phép" : "Enchanting Table");
+        if (item.tradeable) sources.push(vi ? "Dân làng Thủ Thư" : "Librarian Villager");
+      }
+      specSource.innerText = sources.join(" • ") || (vi ? "Sự kiện / Câu cá" : "Special / Fishing");
 
       specGear.innerHTML = `<span>${escapeHtml(item.supported_display || "Compatible Gear")}</span> <span style="color:var(--text-dim); font-size:0.78rem; font-weight:500; display:block; margin-top:2px;">${escapeHtml(item.supported_items)}</span>`;
-      cmdText.innerText = item.give_command;
+      if (cmdText) cmdText.innerText = item.give_command;
 
       const excGroups = item.exclusive_groups || [];
       const confs = item.conflicts || [];
       if (excGroups.length > 0 || confs.length > 0) {
         modalConflictsBox.style.display = "block";
+        const confLbl = document.getElementById("modalConflictsLabel");
+        if (confLbl) {
+          confLbl.innerHTML = `<img class="mc-pixel" src="assets/icons/netherite_sword.png" style="width:14px;height:14px;" alt=""/> ${vi ? "Nhóm xung khắc / Không thể gắn cùng (Click để lọc hoặc xem)" : "Conflict Groups / Incompatible Enchantments (Click to filter or view)"}`;
+        }
         modalConflictGroups.innerHTML = "";
         excGroups.forEach(g => {
           const btn = document.createElement("button");
           btn.className = "conflict-group-btn";
           btn.type = "button";
-          btn.textContent = `🔍 Nhóm: ${g}`;
+          btn.innerHTML = `<img class="mc-pixel" src="assets/icons/compass.png" style="width:12px;height:12px;vertical-align:middle;margin-right:4px;" alt=""/>${vi ? "Nhóm" : "Group"}: ${escapeHtml(g)}`;
           btn.onclick = () => {
             currentGroup = g;
             groupSelect.value = g;
@@ -1928,7 +2161,9 @@
         } else {
           const note = document.createElement("span");
           note.style.cssText = "color: var(--text-dim); font-size: 0.78rem;";
-          note.textContent = "Chỉ gắn được 1 Ultimate trên mỗi món đồ (click nút Nhóm ở trên để xem toàn bộ Ultimate).";
+          note.textContent = vi
+            ? "Chỉ gắn được 1 Ultimate trên mỗi món đồ (click nút Nhóm ở trên để xem toàn bộ Ultimate)."
+            : "Only 1 Ultimate enchantment can be applied per item (click the Group button above to view all Ultimates).";
           modalConflictChips.appendChild(note);
         }
       } else {
@@ -1952,13 +2187,15 @@
     modalCloseBtn.onclick = closeModal;
     modal.onclick = (e) => { if (e.target === modal) closeModal(); };
 
-    copyCmdBtn.onclick = () => {
-      navigator.clipboard.writeText(cmdText.innerText).then(() => {
-        showToast("Copied /give command to clipboard!");
-      }).catch(() => {
-        showToast("Copy failed — please copy manually.");
-      });
-    };
+    if (copyCmdBtn && cmdText) {
+      copyCmdBtn.onclick = () => {
+        navigator.clipboard.writeText(cmdText.innerText).then(() => {
+          showToast("Copied /give command to clipboard!");
+        }).catch(() => {
+          showToast("Copy failed — please copy manually.");
+        });
+      };
+    }
 
     searchInput.addEventListener("input", (e) => {
       currentSearch = e.target.value.trim();
@@ -1976,11 +2213,13 @@
       searchInput.focus();
     };
 
-    packSelect.addEventListener("change", (e) => {
-      currentPack = e.target.value;
-      currentPage = 1;
-      renderCards();
-    });
+    if (packSelect) {
+      packSelect.addEventListener("change", (e) => {
+        currentPack = e.target.value;
+        currentPage = 1;
+        renderCards();
+      });
+    }
 
     groupSelect.addEventListener("change", (e) => {
       currentGroup = e.target.value;
@@ -2183,10 +2422,12 @@
       return false;
     }
 
-    editModeBtn.onclick = () => {
-      document.body.classList.toggle("edit-mode");
-      editModeBtn.classList.toggle("active-edit", document.body.classList.contains("edit-mode"));
-    };
+    if (editModeBtn) {
+      editModeBtn.onclick = () => {
+        document.body.classList.toggle("edit-mode");
+        editModeBtn.classList.toggle("active-edit", document.body.classList.contains("edit-mode"));
+      };
+    }
 
     discardChangesBtn.onclick = () => {
       Object.keys(pendingChanges).forEach(k => delete pendingChanges[k]);
@@ -2233,7 +2474,7 @@
 
     // Show Edit Mode button on localhost or ?edit=1, and detect local sync server
     const canShowEdit = ["localhost", "127.0.0.1"].includes(location.hostname) || location.search.includes("edit=1");
-    if (canShowEdit) {
+    if (canShowEdit && editModeBtn) {
       editModeBtn.style.display = "inline-flex";
     }
     if (["localhost", "127.0.0.1"].includes(location.hostname)) {
@@ -2245,8 +2486,345 @@
       }).catch(() => {});
     }
 
+    function setWikiLang(lang) {
+      const l = (lang === "vi") ? "vi" : "en";
+      currentWikiLang = l;
+      localStorage.setItem("ome_wiki_lang", l);
+      document.documentElement.lang = l;
+      const btnEn = document.getElementById("enchLangEn");
+      const btnVi = document.getElementById("enchLangVi");
+      if (btnEn && btnVi) {
+        btnEn.style.background = l === "en" ? "#f5c451" : "transparent";
+        btnEn.style.color = l === "en" ? "#111827" : "#94a3b8";
+        btnVi.style.background = l === "vi" ? "#f5c451" : "transparent";
+        btnVi.style.color = l === "vi" ? "#111827" : "#94a3b8";
+      }
+      const navUi = l === "en"
+        ? { navHome: "Main Page", navEnchants: "Enchantments Wiki", navFishing: "Fishing Wiki", navCommands: "Quick Commands" }
+        : { navHome: "Trang Chủ", navEnchants: "Bách Khoa Phù Phép", navFishing: "Bách Khoa Câu Cá", navCommands: "Lệnh Nhanh" };
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const k = el.getAttribute("data-i18n");
+        if (navUi[k]) el.textContent = navUi[k];
+      });
+      document.querySelectorAll("#gearChips .filter-btn[data-en]").forEach(btn => {
+        const lbl = btn.getAttribute(l === "vi" ? "data-vi" : "data-en");
+        const sp = btn.querySelector("span");
+        if (sp) sp.textContent = lbl;
+        else btn.textContent = lbl;
+      });
+      document.querySelectorAll("#obtainSelect option[data-en], #sortSelect option[data-en], #groupSelect option[data-en], #excludeRow [data-en]").forEach(el => {
+        el.textContent = el.getAttribute(l === "vi" ? "data-vi" : "data-en");
+      });
+      const tabAllEl = document.getElementById("tabAll");
+      const tabCurseEl = document.getElementById("tabCurse");
+      const tabUltEl = document.getElementById("tabUlt");
+      if (tabAllEl) tabAllEl.textContent = `${l === "vi" ? "Tất cả" : "All"} (${counts.all})`;
+      if (tabCurseEl) tabCurseEl.innerHTML = `<img class="mc-pixel" src="assets/icons/blaze_powder.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> ${l === "vi" ? "Lời Nguyền" : "Curses"} (${counts.curse})`;
+      if (tabUltEl) tabUltEl.innerHTML = `<img class="mc-pixel" src="assets/icons/enchanted_book_ultimate.png" style="width:15px;height:15px;vertical-align:middle;" alt=""/> Ultimate (${l === "vi" ? "Sắp có" : "Soon™"})`;
+      if (prevPageBtn) prevPageBtn.textContent = l === "vi" ? "← Trang trước" : "← Prev";
+      if (nextPageBtn) nextPageBtn.textContent = l === "vi" ? "Trang sau →" : "Next →";
+      const rLbl = document.getElementById("lblFilterRarity");
+      const gLbl = document.getElementById("lblFilterGear");
+      const rstBtn = document.getElementById("resetFiltersBtn");
+      const advLbl = document.getElementById("advSummaryLabel");
+      const resHint = document.getElementById("resultsHint");
+      if (rLbl) rLbl.textContent = l === "vi" ? "Độ hiếm" : "Rarity";
+      if (gLbl) gLbl.textContent = l === "vi" ? "Loại trang bị" : "Item Category";
+      if (rstBtn) rstBtn.textContent = l === "vi" ? "↺ Đặt lại" : "↺ Reset";
+      if (advLbl) advLbl.textContent = l === "vi" ? "Bộ lọc nâng cao & Loại trừ (Nhóm xung khắc...)" : "Advanced & Exclude Filters (Conflict Group...)";
+      if (resHint) resHint.textContent = l === "vi" ? "Nhấp vào thẻ bất kỳ để xem thông số chi tiết" : "Click any card to view full details";
+      if (searchInput) {
+        searchInput.placeholder = l === "vi"
+          ? "Tìm phù phép theo tên, hiệu ứng hoặc ID (vd: bảo vệ, +2.5, sét, cung)..."
+          : "Search enchantments by name, effect, or ID (e.g. protection, +2.5, lightning, bow)...";
+      }
+      const heroTitle = document.getElementById("enchHeroTitle");
+      const heroSub = document.getElementById("enchHeroSub");
+      const cnt = obtainableCount || 362;
+      if (l === "en") {
+        if (heroTitle) heroTitle.textContent = "Enchantments Encyclopedia";
+        if (heroSub) heroSub.innerHTML = `
+          <div>Browse all <strong id="totalHeroCount">${cnt}</strong> currently obtainable enchantments with per-level stat scaling.</div>
+          <div class="source-rates-grid">
+            <div class="source-rate-card" onclick="openSourceModal('table')">
+              <div class="source-rate-icon"><img class="mc-pixel" src="assets/icons/enchanted_book.png" alt=""/></div>
+              <div>
+                <div class="source-rate-title">Enchanting Table (Lv 30)</div>
+                <div class="source-rate-desc">Rolls <strong>2–5</strong> enchants (<strong>5%</strong> Rare, <strong>0.5%</strong> Epic) + <strong>0.8%</strong> Godroll.</div>
+                <div class="source-rate-cta">Click for full rates ↗</div>
+              </div>
+            </div>
+            <div class="source-rate-card" onclick="openSourceModal('chests')">
+              <div class="source-rate-icon"><img class="mc-pixel" src="assets/icons/chest_front.png" alt=""/></div>
+              <div>
+                <div class="source-rate-title">Dungeon &amp; Structure Chests</div>
+                <div class="source-rate-desc">Custom Books (<strong>1–5</strong> enchants) with <strong>12%</strong> Rare &amp; <strong>2.5%</strong> Epic.</div>
+                <div class="source-rate-cta">Click for full rates ↗</div>
+              </div>
+            </div>
+            <div class="source-rate-card" onclick="openSourceModal('other')">
+              <div class="source-rate-icon"><img class="mc-pixel" src="assets/icons/emerald.png" alt=""/></div>
+              <div>
+                <div class="source-rate-title">Villagers, Mining &amp; Fishing</div>
+                <div class="source-rate-desc">Librarian trades, Mine Treasure Pickaxe books, Fishing &amp; Ultimate status.</div>
+                <div class="source-rate-cta">Click for full breakdown ↗</div>
+              </div>
+            </div>
+          </div>`;
+      } else {
+        if (heroTitle) heroTitle.textContent = "Bách Khoa Phù Phép";
+        if (heroSub) heroSub.innerHTML = `
+          <div>Tra cứu toàn bộ <strong id="totalHeroCount">${cnt}</strong> phù phép có thể sở hữu hiện tại kèm thông số cộng dồn theo cấp.</div>
+          <div class="source-rates-grid">
+            <div class="source-rate-card" onclick="openSourceModal('table')">
+              <div class="source-rate-icon"><img class="mc-pixel" src="assets/icons/enchanted_book.png" alt=""/></div>
+              <div>
+                <div class="source-rate-title">Bàn Phù Phép (Lv 30)</div>
+                <div class="source-rate-desc">Roll <strong>2–5</strong> dòng (<strong>5%</strong> Rare, <strong>0.5%</strong> Epic) + <strong>0.8%</strong> Godroll.</div>
+                <div class="source-rate-cta">Nhấp xem chi tiết ↗</div>
+              </div>
+            </div>
+            <div class="source-rate-card" onclick="openSourceModal('chests')">
+              <div class="source-rate-icon"><img class="mc-pixel" src="assets/icons/chest_front.png" alt=""/></div>
+              <div>
+                <div class="source-rate-title">Rương Dungeon &amp; Công trình</div>
+                <div class="source-rate-desc">Sách Phù Phép (<strong>1–5</strong> dòng) với <strong>12%</strong> Rare &amp; <strong>2.5%</strong> Epic.</div>
+                <div class="source-rate-cta">Nhấp xem chi tiết ↗</div>
+              </div>
+            </div>
+            <div class="source-rate-card" onclick="openSourceModal('other')">
+              <div class="source-rate-icon"><img class="mc-pixel" src="assets/icons/emerald.png" alt=""/></div>
+              <div>
+                <div class="source-rate-title">Dân làng, Đào Mỏ &amp; Câu Cá</div>
+                <div class="source-rate-desc">Thủ Thư, sách Cúp Mine Treasure, Câu Cá &amp; thông tin Ultimate.</div>
+                <div class="source-rate-cta">Nhấp xem chi tiết ↗</div>
+              </div>
+            </div>
+          </div>`;
+      }
+      renderCards();
+    }
+
+    function openSourceModal(type) {
+      const vi = currentWikiLang === "vi";
+      const iconEl = document.getElementById("srcModalIcon");
+      const titleEl = document.getElementById("srcModalTitle");
+      const subEl = document.getElementById("srcModalSub");
+      const bodyEl = document.getElementById("srcModalBody");
+
+      if (type === "table") {
+        iconEl.src = "assets/icons/enchanted_book.png";
+        titleEl.textContent = vi ? "Bàn Phù Phép (Enchanting Table)" : "Enchanting Table (Lv 30)";
+        subEl.textContent = vi ? "Thông số roll chi tiết tại cấp 30" : "Detailed Roll & Godroll Mechanics";
+        bodyEl.innerHTML = vi ? `
+          <p style="margin-bottom:12px;">Khi phù phép tại Bàn Phù Phép ở <strong>Cấp 30</strong>, mỗi vật phẩm nhận được <strong>2–5 phù phép</strong> (tỉ lệ Rare &amp; Epic giảm tuyến tính ở cấp thấp hơn):</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;">
+            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:10px 12px;">
+              <div style="font-size:0.75rem;font-weight:800;color:#93c5fd;text-transform:uppercase;margin-bottom:6px;">Số Lượng Dòng Roll</div>
+              <table class="rate-table" style="margin-top:0;">
+                <thead><tr><th>Số phù phép</th><th>Tỉ lệ</th></tr></thead>
+                <tbody>
+                  <tr><td>2 phù phép</td><td><strong>20%</strong></td></tr>
+                  <tr><td>3 phù phép</td><td><strong>50%</strong></td></tr>
+                  <tr><td>4 phù phép</td><td><strong>22%</strong></td></tr>
+                  <tr><td>5 phù phép</td><td><strong>8%</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:10px 12px;">
+              <div style="font-size:0.75rem;font-weight:800;color:#f5c451;text-transform:uppercase;margin-bottom:6px;">Tỉ Lệ Độ Hiếm Mỗi Dòng (Lv 30)</div>
+              <table class="rate-table" style="margin-top:0;">
+                <thead><tr><th>Độ hiếm</th><th>Tỉ lệ</th></tr></thead>
+                <tbody>
+                  <tr><td>Common</td><td><strong>94.5%</strong></td></tr>
+                  <tr><td>Rare</td><td><strong style="color:#38bdf8;">5.0%</strong></td></tr>
+                  <tr><td>Epic</td><td><strong style="color:#e879f9;">0.5%</strong></td></tr>
+                  <tr><td>Ultimate</td><td><strong>0% (Coming Soon™)</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div style="margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(245,196,81,0.12);border:1px solid rgba(245,196,81,0.35);">
+            <img class="mc-pixel" src="assets/icons/nether_star.png" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;" alt=""/><strong>Cơ chế Godroll (0.8% từ Lv 20+):</strong> Kích hoạt sẽ roll thẳng <strong>6 phù phép</strong> với tỉ lệ <strong>35% Rare</strong>, <strong>15% Epic</strong> và <strong>50% Common</strong>!
+          </div>` : `
+          <p style="margin-bottom:12px;">At <strong>Table Level 30</strong>, each enchanted item rolls <strong>2–5 enchantments</strong> (Rare &amp; Epic chances scale linearly down at lower levels):</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;">
+            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:10px 12px;">
+              <div style="font-size:0.75rem;font-weight:800;color:#93c5fd;text-transform:uppercase;margin-bottom:6px;">Enchant Count Distribution</div>
+              <table class="rate-table" style="margin-top:0;">
+                <thead><tr><th>Enchant Count</th><th>Weight</th></tr></thead>
+                <tbody>
+                  <tr><td>2 enchants</td><td><strong>20%</strong></td></tr>
+                  <tr><td>3 enchants</td><td><strong>50%</strong></td></tr>
+                  <tr><td>4 enchants</td><td><strong>22%</strong></td></tr>
+                  <tr><td>5 enchants</td><td><strong>8%</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:10px 12px;">
+              <div style="font-size:0.75rem;font-weight:800;color:#f5c451;text-transform:uppercase;margin-bottom:6px;">Rarity Per Slot (Lv 30)</div>
+              <table class="rate-table" style="margin-top:0;">
+                <thead><tr><th>Tier</th><th>Rate</th></tr></thead>
+                <tbody>
+                  <tr><td>Common</td><td><strong>94.5%</strong></td></tr>
+                  <tr><td>Rare</td><td><strong style="color:#38bdf8;">5.0%</strong></td></tr>
+                  <tr><td>Epic</td><td><strong style="color:#e879f9;">0.5%</strong></td></tr>
+                  <tr><td>Ultimate</td><td><strong>0% (Coming Soon™)</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div style="margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(245,196,81,0.12);border:1px solid rgba(245,196,81,0.35);">
+            <img class="mc-pixel" src="assets/icons/nether_star.png" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;" alt=""/><strong>Godroll Mechanic (0.8% at Lv 20+):</strong> Rolls <strong>6 enchantments</strong> with boosted odds of <strong>35% Rare</strong>, <strong>15% Epic</strong>, and <strong>50% Common</strong>!
+          </div>`;
+      } else if (type === "chests") {
+        iconEl.src = "assets/icons/chest_front.png";
+        titleEl.textContent = vi ? "Rương Dungeon & Công trình" : "Dungeon & Structure Chests";
+        subEl.textContent = vi ? "Cơ chế Sách Phù Phép thay thế đồ rương" : "Custom Enchanted Book Loot Table";
+        bodyEl.innerHTML = vi ? `
+          <p style="margin-bottom:12px;">Trang bị phù phép ngẫu nhiên trong rương Dungeon/Công trình được chuyển thành <strong>Sách Phù Phép (1–5 dòng)</strong> để dễ ghép vào đồ chính:</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;">
+            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:10px 12px;">
+              <div style="font-size:0.75rem;font-weight:800;color:#93c5fd;text-transform:uppercase;margin-bottom:6px;">Số Dòng Trên Sách</div>
+              <table class="rate-table" style="margin-top:0;">
+                <thead><tr><th>Số dòng</th><th>Tỉ lệ</th></tr></thead>
+                <tbody>
+                  <tr><td>1 dòng</td><td><strong>45%</strong></td></tr>
+                  <tr><td>2 dòng</td><td><strong>30%</strong></td></tr>
+                  <tr><td>3 dòng</td><td><strong>15%</strong></td></tr>
+                  <tr><td>4 dòng</td><td><strong>7%</strong></td></tr>
+                  <tr><td>5 dòng</td><td><strong>3%</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:10px 12px;">
+              <div style="font-size:0.75rem;font-weight:800;color:#f5c451;text-transform:uppercase;margin-bottom:6px;">Tỉ Lệ Độ Hiếm Mỗi Dòng</div>
+              <table class="rate-table" style="margin-top:0;">
+                <thead><tr><th>Độ hiếm</th><th>Tỉ lệ</th></tr></thead>
+                <tbody>
+                  <tr><td>Common</td><td><strong>77.5%</strong></td></tr>
+                  <tr><td>Rare</td><td><strong style="color:#38bdf8;">12.0%</strong></td></tr>
+                  <tr><td>Epic</td><td><strong style="color:#e879f9;">2.5%</strong></td></tr>
+                  <tr><td>Curse (Lời Nguyền)</td><td><strong style="color:#f87171;">8.0%</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div style="margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(245,196,81,0.12);border:1px solid rgba(245,196,81,0.35);">
+            <strong><img class="mc-pixel" src="assets/icons/nether_star.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> Chest Godroll (0.2%):</strong> Khi kích hoạt, sách rơi từ rương sẽ nhận tối đa <strong>6 phù phép</strong> ở cấp tối đa (<strong>levelScale 1.0</strong>), nhân <strong>3x tỉ lệ Rare (36%)</strong> &amp; <strong>3x tỉ lệ Epic (7.5%)</strong> và có <strong>0% tỉ lệ Curse</strong>!
+          </div>
+          <div style="margin-top:8px;padding:10px 12px;border-radius:10px;background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.3);">
+            <strong><img class="mc-pixel" src="assets/icons/emerald.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> Lưu ý:</strong> Trang bị cổ vật đặc biệt của Mine Treasure vẫn được giữ nguyên trong rương, không bị thay thành sách.
+          </div>` : `
+          <p style="margin-bottom:12px;">Enchanted gear in Dungeon/Structure chests is replaced with custom <strong>Enchanted Books (1–5 enchants)</strong> so you can apply them to your own gear:</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;">
+            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:10px 12px;">
+              <div style="font-size:0.75rem;font-weight:800;color:#93c5fd;text-transform:uppercase;margin-bottom:6px;">Enchant Count Distribution</div>
+              <table class="rate-table" style="margin-top:0;">
+                <thead><tr><th>Enchant Count</th><th>Weight</th></tr></thead>
+                <tbody>
+                  <tr><td>1 enchant</td><td><strong>45%</strong></td></tr>
+                  <tr><td>2 enchants</td><td><strong>30%</strong></td></tr>
+                  <tr><td>3 enchants</td><td><strong>15%</strong></td></tr>
+                  <tr><td>4 enchants</td><td><strong>7%</strong></td></tr>
+                  <tr><td>5 enchants</td><td><strong>3%</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:10px 12px;">
+              <div style="font-size:0.75rem;font-weight:800;color:#f5c451;text-transform:uppercase;margin-bottom:6px;">Rarity Per Slot</div>
+              <table class="rate-table" style="margin-top:0;">
+                <thead><tr><th>Tier</th><th>Rate</th></tr></thead>
+                <tbody>
+                  <tr><td>Common</td><td><strong>77.5%</strong></td></tr>
+                  <tr><td>Rare</td><td><strong style="color:#38bdf8;">12.0%</strong></td></tr>
+                  <tr><td>Epic</td><td><strong style="color:#e879f9;">2.5%</strong></td></tr>
+                  <tr><td>Curse</td><td><strong style="color:#f87171;">8.0%</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div style="margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(245,196,81,0.12);border:1px solid rgba(245,196,81,0.35);">
+            <strong><img class="mc-pixel" src="assets/icons/nether_star.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> Chest Godroll (0.2%):</strong> Rolls <strong>6 enchantments</strong> at full max-level scaling (<strong>1.0x</strong>), triples Rare (<strong>36%</strong>) &amp; Epic (<strong>7.5%</strong>) odds, and guarantees <strong>0% Curse</strong>!
+          </div>
+          <div style="margin-top:8px;padding:10px 12px;border-radius:10px;background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.3);">
+            <strong><img class="mc-pixel" src="assets/icons/emerald.png" style="width:14px;height:14px;vertical-align:middle;" alt=""/> Note:</strong> Mine Treasure's own custom relic weapons &amp; armor are preserved untouched.
+          </div>`;
+      } else {
+        iconEl.src = "assets/icons/emerald.png";
+        titleEl.textContent = vi ? "Dân làng, Đào Mỏ & Câu Cá" : "Villagers, Mining & Fishing";
+        subEl.textContent = vi ? "Các nguồn phù phép chuyên biệt khác" : "Specialized Enchantment Sources";
+        bodyEl.innerHTML = vi ? `
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="padding:11px 13px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+              <div style="font-weight:800;color:#4ade80;margin-bottom:4px;display:flex;align-items:center;gap:6px;"><img class="mc-pixel" src="assets/icons/emerald.png" style="width:15px;height:15px;" alt=""/> Dân làng Thủ Thư (Librarian Villagers)</div>
+              <div style="color:#cbd5e1;font-size:0.83rem;">Giao dịch trực tiếp các sách phù phép bậc <strong>Common</strong> và <strong>Rare</strong> hợp lệ (không bán sách Epic, Curse hoặc Ultimate).</div>
+            </div>
+            <div style="padding:11px 13px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+              <div style="font-weight:800;color:#f5c451;margin-bottom:6px;display:flex;align-items:center;gap:6px;"><img class="mc-pixel" src="assets/icons/diamond_pickaxe.png" style="width:15px;height:15px;" alt=""/> Đào Mỏ &amp; Rương Mine Treasure</div>
+              <div style="color:#cbd5e1;font-size:0.83rem;margin-bottom:8px;">Rương Mine Treasure dưới lòng đất rơi sách Cúp tùy chỉnh. 7 phù phép đào mỏ chuyên dụng giúp tăng sản lượng kho báu:</div>
+              <table class="rate-table" style="margin-top:0;">
+                <thead><tr><th>Phù phép</th><th>Hiệu ứng mỗi cấp</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Amethyst's Blessing</strong></td><td>+15% / Lv tỉ lệ Rương Legendary</td></tr>
+                  <tr><td><strong>Lapis's Blessing</strong></td><td>+20% / Lv tỉ lệ Rương Epic</td></tr>
+                  <tr><td><strong>Coal's Blessing</strong></td><td>+20% / Lv tỉ lệ Rương Rare</td></tr>
+                  <tr><td><strong>Luck of the Mine</strong></td><td>+12% / Lv tỉ lệ mọi loại Rương</td></tr>
+                  <tr><td><strong>Dedicated Miner</strong></td><td>0.25% tỉ lệ rơi Charm (cấp cao ra Rare/Epic)</td></tr>
+                  <tr><td><strong>Divan's Efficiency</strong></td><td>Tốc độ đào gấp 2x Efficiency</td></tr>
+                  <tr><td><strong>Gleaming Chest</strong></td><td>+1 đến +3 lượt quay đồ trong Rương</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="padding:11px 13px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+              <div style="font-weight:800;color:#38bdf8;margin-bottom:4px;display:flex;align-items:center;gap:6px;"><img class="mc-pixel" src="assets/icons/fishing_rod.png" style="width:15px;height:15px;" alt=""/> Expedition Fishing</div>
+              <div style="color:#cbd5e1;font-size:0.83rem;">Các phù phép Cần Câu &amp; Thủy Quái nhận được qua <strong>Bàn Phù Phép</strong>, <strong>Rương Kho Báu câu cá</strong> và phần thưởng sự kiện.</div>
+            </div>
+            <div style="padding:11px 13px;border-radius:10px;background:rgba(245,196,81,0.1);border:1px solid rgba(245,196,81,0.35);">
+              <div style="font-weight:800;color:#fde68a;margin-bottom:3px;display:flex;align-items:center;gap:6px;"><img class="mc-pixel" src="assets/icons/clock.png" style="width:15px;height:15px;" alt=""/> Nhóm Ultimate (Coming Soon™)</div>
+              <div style="color:#fde68a;font-size:0.83rem;opacity:0.9;">Hiện đang khóa (<strong>0%</strong> tỉ lệ roll trên mọi nguồn) và sẽ mở khóa trong bản cập nhật sắp tới.</div>
+            </div>
+          </div>` : `
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="padding:11px 13px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+              <div style="font-weight:800;color:#4ade80;margin-bottom:4px;display:flex;align-items:center;gap:6px;"><img class="mc-pixel" src="assets/icons/emerald.png" style="width:15px;height:15px;" alt=""/> Librarian Villagers</div>
+              <div style="color:#cbd5e1;font-size:0.83rem;">Trade eligible <strong>Common</strong> and <strong>Rare</strong> enchanted books (Epic, Curse, and Ultimate books are excluded).</div>
+            </div>
+            <div style="padding:11px 13px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+              <div style="font-weight:800;color:#f5c451;margin-bottom:6px;display:flex;align-items:center;gap:6px;"><img class="mc-pixel" src="assets/icons/diamond_pickaxe.png" style="width:15px;height:15px;" alt=""/> Mining &amp; Mine Treasure Chests</div>
+              <div style="color:#cbd5e1;font-size:0.83rem;margin-bottom:8px;">Unearthed Mine Treasure chests drop Pickaxe-compatible custom books. 7 dedicated mining enchantments boost treasure rewards:</div>
+              <table class="rate-table" style="margin-top:0;">
+                <thead><tr><th>Enchantment</th><th>Effect Per Level</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Amethyst's Blessing</strong></td><td>+15% / Lv Legendary Chest chance</td></tr>
+                  <tr><td><strong>Lapis's Blessing</strong></td><td>+20% / Lv Epic Chest chance</td></tr>
+                  <tr><td><strong>Coal's Blessing</strong></td><td>+20% / Lv Rare Chest chance</td></tr>
+                  <tr><td><strong>Luck of the Mine</strong></td><td>+12% / Lv All Chest tiers chance</td></tr>
+                  <tr><td><strong>Dedicated Miner</strong></td><td>0.25% Charm drop (higher Lv → Rare/Epic)</td></tr>
+                  <tr><td><strong>Divan's Efficiency</strong></td><td>2x Efficiency mining speed</td></tr>
+                  <tr><td><strong>Gleaming Chest</strong></td><td>+1 to +3 extra Treasure Chest loot rolls</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="padding:11px 13px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+              <div style="font-weight:800;color:#38bdf8;margin-bottom:4px;display:flex;align-items:center;gap:6px;"><img class="mc-pixel" src="assets/icons/fishing_rod.png" style="width:15px;height:15px;" alt=""/> Expedition Fishing</div>
+              <div style="color:#cbd5e1;font-size:0.83rem;">Exclusive Fishing Rod &amp; Sea Creature enchantments obtained from the <strong>Enchanting Table</strong>, <strong>Fished Treasure Chests</strong>, and catches.</div>
+            </div>
+            <div style="padding:11px 13px;border-radius:10px;background:rgba(245,196,81,0.1);border:1px solid rgba(245,196,81,0.35);">
+              <div style="font-weight:800;color:#fde68a;margin-bottom:3px;display:flex;align-items:center;gap:6px;"><img class="mc-pixel" src="assets/icons/clock.png" style="width:15px;height:15px;" alt=""/> Ultimate Tier (Coming Soon™)</div>
+              <div style="color:#fde68a;font-size:0.83rem;opacity:0.9;">Currently locked (<strong>0%</strong> roll chance across all sources) and releasing in a future update.</div>
+            </div>
+          </div>`;
+      }
+      document.getElementById("sourceRateModal").classList.add("active");
+    }
+
     loadFilterSettings();
     renderCards();
+    setWikiLang(localStorage.getItem("ome_wiki_lang") || "en");
+    window.addEventListener("storage", e => {
+      if (e.key === "ome_wiki_lang" && e.newValue) setWikiLang(e.newValue);
+    });
   </script>
 </body>
 </html>

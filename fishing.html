@@ -7,6 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/server-icon.png" />
+  <link rel="stylesheet" href="assets/wiki-header.css" />
+  <script src="assets/wiki-lang-sync.js"></script>
   <style>
     :root {
       --bg-base: #0b0f17;
@@ -70,20 +73,65 @@
       inset: 0;
       z-index: -10;
       pointer-events: none;
-      background: #0b0f17 url('assets/bg.jpg') no-repeat center center / cover;
+      overflow: hidden;
+      background: #101726 url('assets/bg.jpg') no-repeat center center / cover;
     }
     .bg-overlay {
       position: fixed;
       inset: 0;
       z-index: -9;
       pointer-events: none;
-      background:
-        radial-gradient(circle at 18% 12%, rgba(14, 165, 233, 0.11), transparent 45%),
-        radial-gradient(circle at 82% 20%, rgba(232, 121, 249, 0.10), transparent 45%),
-        linear-gradient(180deg, rgba(10, 14, 22, 0.82) 0%, rgba(10, 14, 22, 0.94) 55%, rgba(9, 12, 19, 0.98) 100%);
+      background: radial-gradient(circle at 50% 25%, rgba(15, 23, 42, 0.45) 0%, rgba(7, 10, 18, 0.82) 100%);
     }
 
     /* Sticky Top Navbar */
+    .mc-pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
+    .nav-tabs-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      flex-wrap: wrap;
+    }
+    .nav-tab-btn {
+      padding: 6px 13px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .nav-tab-btn:hover { color: #fff; background: rgba(255, 255, 255, 0.06); }
+    .nav-tab-btn.active { color: #fff; background: rgba(56, 189, 248, 0.2); }
+    @media (max-width: 1280px) {
+      .header-bar { padding: 10px 16px !important; gap: 10px !important; }
+      .nav-tab-btn { padding: 5px 10px; font-size: 0.78rem; }
+    }
+    @media (max-width: 1120px) {
+      .nav-tabs-pill { width: 100%; justify-content: center; order: 3; }
+    }
+    @media (max-width: 680px) {
+      .header-bar { padding: 9px 12px !important; gap: 8px !important; }
+      .nav-tabs-pill {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .nav-tabs-pill::-webkit-scrollbar { display: none; }
+      .nav-tab-btn { flex-shrink: 0; white-space: nowrap; font-size: 0.75rem; padding: 5px 9px; }
+    }
+
     .header-bar {
       position: sticky;
       top: 0;
@@ -799,7 +847,54 @@
     .copy-btn:hover { background: #0284c7; }
 
     @media (max-width: 768px) {
-      .header-bar { padding: 10px 16px; }
+      .mc-pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
+    .nav-tabs-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      flex-wrap: wrap;
+    }
+    .nav-tab-btn {
+      padding: 6px 13px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .nav-tab-btn:hover { color: #fff; background: rgba(255, 255, 255, 0.06); }
+    .nav-tab-btn.active { color: #fff; background: rgba(56, 189, 248, 0.2); }
+    @media (max-width: 1280px) {
+      .header-bar { padding: 10px 16px !important; gap: 10px !important; }
+      .nav-tab-btn { padding: 5px 10px; font-size: 0.78rem; }
+    }
+    @media (max-width: 1120px) {
+      .nav-tabs-pill { width: 100%; justify-content: center; order: 3; }
+    }
+    @media (max-width: 680px) {
+      .header-bar { padding: 9px 12px !important; gap: 8px !important; }
+      .nav-tabs-pill {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .nav-tabs-pill::-webkit-scrollbar { display: none; }
+      .nav-tab-btn { flex-shrink: 0; white-space: nowrap; font-size: 0.75rem; padding: 5px 9px; }
+    }
+
+    .header-bar { padding: 10px 16px; }
       .container { padding: 18px 14px 50px; }
       .hero-banner { padding: 20px; }
       .hero-title { font-size: 1.45rem; }
@@ -812,18 +907,39 @@
   <div class="bg-overlay"></div>
 
   <!-- Top Header -->
-  <header class="header-bar">
-    <a href="index.html" class="brand-link">
-      <img class="brand-icon" src="assets/icons/grass_block_3d.png?v=2" alt="Logo" />
-      <div class="brand-text">
-        <h1>EXPEDITION FISHING WIKI</h1>
-        <span>One More Expedition • KHTN Wiki</span>
+  <header class="ome-header">
+    <a href="main.html" class="ome-brand">
+      <img class="ome-brand-icon" src="assets/server-icon.png" alt="OME Logo" />
+      <div class="ome-brand-text">
+        <span class="ome-brand-title">One More Expedition</span>
+        <span class="ome-brand-sub">KHTN Server Wiki • 26.3</span>
       </div>
     </a>
 
-    <div class="header-nav-group">
-      <a href="index.html" class="nav-btn">🏠 Trang Chủ Wiki</a>
-      <a href="enchants.html" class="nav-btn" style="border-color: rgba(245, 196, 81, 0.4); color: #f5c451;">✨ Bách Khoa Phù Phép (400)</a>
+    <nav class="ome-nav">
+      <a href="main.html" class="ome-nav-btn" style="border-color: rgba(59, 130, 246, 0.45); color: #93c5fd;">
+        <img src="assets/icons/grass_block_side.png" alt=""/>
+        <span data-i18n="navHome">Trang Chủ</span>
+      </a>
+      <a href="enchants.html" class="ome-nav-btn" style="color: #f5c451; border-color: rgba(245, 196, 81, 0.45);">
+        <img src="assets/icons/enchanted_book.png" alt=""/>
+        <span data-i18n="navEnchants">Bách Khoa Phù Phép</span>
+      </a>
+      <a href="fishing.html" class="ome-nav-btn active" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.7);">
+        <img src="assets/icons/fishing_rod.png" alt=""/>
+        <span data-i18n="navFishing">Bách Khoa Câu Cá</span>
+      </a>
+      <a href="world.html" class="ome-nav-btn" style="color: #4ade80; border-color: rgba(74, 222, 128, 0.45);">
+        <img src="assets/icons/spyglass.png" alt=""/>
+        <span>Biomes &amp; Structures</span>
+      </a>
+    </nav>
+
+    <div class="ome-header-right">
+      <div class="ome-lang-pill">
+        <button type="button" class="ome-lang-btn" id="fishLangEn" onclick="setWikiLang('en')">🇺🇸 EN</button>
+        <button type="button" class="ome-lang-btn" id="fishLangVi" onclick="setWikiLang('vi')">🇻🇳 VI</button>
+      </div>
     </div>
   </header>
 
@@ -831,37 +947,37 @@
     <!-- Hero Banner -->
     <section class="hero-banner">
       <div class="hero-left">
-        <div class="hero-eyebrow">🎣 HỆ THỐNG CÂU CÁ RPG TOÀN DIỆN (LV.1 → LV.50)</div>
-        <h2 class="hero-title">Bách Khoa Toàn Thư Câu Cá & Thủy Quái</h2>
-        <p class="hero-desc">
-          Tra cứu toàn bộ <strong>112 Thủy Quái & Bosses</strong> (Overworld, Nether Lava & End Void), <strong>147 Vật Phẩm & Trang Bị</strong>, <strong>23 Cổ Vật (Artifacts)</strong>, <strong>94 Công Thức Chế Tạo</strong>, <strong>34 Quần Xã (Biomes)</strong> và <strong>45 Phù Phép Câu Cá</strong>.
+        <div class="hero-eyebrow" id="fishEyebrow">🎣 HỆ THỐNG CÂU CÁ RPG TOÀN DIỆN (LV.1 → LV.50)</div>
+        <h2 class="hero-title" id="fishHeroTitle">Bách Khoa Toàn Thư Câu Cá & Thủy Quái</h2>
+        <p class="hero-desc" id="fishHeroDesc">
+          Tra cứu toàn bộ <strong>112 Thủy Quái & Bosses</strong> (Overworld, Nether Lava & End Void), <strong>147 Vật Phẩm & Trang Bị</strong>, <strong>23 Cổ Vật (Artifacts)</strong>, <strong>94 Công Thức Chế Tạo</strong>, <strong>34 Quần Xã (Biomes)</strong> và <strong>43 Phù Phép Câu Cá</strong>.
         </p>
       </div>
 
       <div class="hero-stats">
         <div class="stat-pill" onclick="switchMainTab('mobs')">
           <span class="num" style="color:#38bdf8;" id="statMobs">112</span>
-          <span class="lbl">Thủy Quái</span>
+          <span class="lbl" id="lblMobs">Thủy Quái</span>
         </div>
         <div class="stat-pill" onclick="switchMainTab('items')">
           <span class="num" style="color:#f5c451;" id="statItems">147</span>
-          <span class="lbl">Trang Bị & Đồ</span>
+          <span class="lbl" id="lblItems">Trang Bị & Đồ</span>
         </div>
         <div class="stat-pill" onclick="switchMainTab('artifacts')">
           <span class="num" style="color:#e879f9;" id="statArtifacts">23</span>
-          <span class="lbl">Cổ Vật</span>
+          <span class="lbl" id="lblArtifacts">Cổ Vật</span>
         </div>
         <div class="stat-pill" onclick="switchMainTab('recipes')">
           <span class="num" style="color:#4ade80;" id="statRecipes">94</span>
-          <span class="lbl">Công Thức</span>
+          <span class="lbl" id="lblRecipes">Công Thức</span>
         </div>
         <div class="stat-pill" onclick="switchMainTab('biomes')">
           <span class="num" style="color:#fb923c;" id="statBiomes">34</span>
-          <span class="lbl">Biomes</span>
+          <span class="lbl" id="lblBiomes">Biomes</span>
         </div>
         <div class="stat-pill" onclick="switchMainTab('enchants')">
-          <span class="num" style="color:#a78bfa;" id="statEnchants">45</span>
-          <span class="lbl">Enchants</span>
+          <span class="num" style="color:#a78bfa;" id="statEnchants">43</span>
+          <span class="lbl" id="lblEnchants">Enchants</span>
         </div>
       </div>
     </section>
@@ -869,25 +985,25 @@
     <!-- 7 Main Mode Tabs -->
     <nav class="main-tabs-bar" id="mainTabsBar">
       <button class="mode-tab-btn active" data-tab="mobs" onclick="switchMainTab('mobs')">
-        🐙 Thủy Quái & Bosses <span class="badge-cnt">112</span>
+        🐙 <span id="tabMobsLbl">Thủy Quái & Bosses</span> <span class="badge-cnt">112</span>
       </button>
       <button class="mode-tab-btn" data-tab="items" onclick="switchMainTab('items')">
-        🎣 Cần Câu, Vũ Khí & Giáp <span class="badge-cnt">147</span>
+        🎣 <span id="tabItemsLbl">Cần Câu, Vũ Khí & Giáp</span> <span class="badge-cnt">147</span>
       </button>
       <button class="mode-tab-btn" data-tab="artifacts" onclick="switchMainTab('artifacts')">
-        🏺 Cổ Vật (Artifacts) <span class="badge-cnt">23</span>
+        🏺 <span id="tabArtifactsLbl">Cổ Vật (Artifacts)</span> <span class="badge-cnt">23</span>
       </button>
       <button class="mode-tab-btn" data-tab="enchants" onclick="switchMainTab('enchants')">
-        ✨ Phù Phép Câu Cá <span class="badge-cnt">45</span>
+        ✨ <span id="tabEnchantsLbl">Phù Phép Câu Cá</span> <span class="badge-cnt">43</span>
       </button>
       <button class="mode-tab-btn" data-tab="recipes" onclick="switchMainTab('recipes')">
-        ⚒️ Công Thức Chế Tạo <span class="badge-cnt">94</span>
+        ⚒️ <span id="tabRecipesLbl">Công Thức Chế Tạo</span> <span class="badge-cnt">94</span>
       </button>
       <button class="mode-tab-btn" data-tab="biomes" onclick="switchMainTab('biomes')">
-        🌍 Bảng Tỉ Lệ Biomes <span class="badge-cnt">34</span>
+        🌍 <span id="tabBiomesLbl">Bảng Tỉ Lệ Biomes</span> <span class="badge-cnt">34</span>
       </button>
       <button class="mode-tab-btn" data-tab="guide" onclick="switchMainTab('guide')">
-        ⚙️ Cơ Chế & Config Độ Khó
+        ⚙️ <span id="tabGuideLbl">Cơ Chế & Config Độ Khó</span>
       </button>
     </nav>
 
@@ -1656,9 +1772,73 @@
       }
     }
 
+    function setWikiLang(lang) {
+      const l = (lang === "vi") ? "vi" : "en";
+      localStorage.setItem("ome_wiki_lang", l);
+      document.documentElement.lang = l;
+      const btnEn = document.getElementById("fishLangEn");
+      const btnVi = document.getElementById("fishLangVi");
+      if (btnEn && btnVi) {
+        btnEn.style.background = l === "en" ? "#f5c451" : "transparent";
+        btnEn.style.color = l === "en" ? "#111827" : "#94a3b8";
+        btnVi.style.background = l === "vi" ? "#f5c451" : "transparent";
+        btnVi.style.color = l === "vi" ? "#111827" : "#94a3b8";
+      }
+      const navUi = l === "en"
+        ? { navHome: "Main Page", navEnchants: "Enchantments Wiki", navFishing: "Fishing Wiki", navCommands: "Quick Commands" }
+        : { navHome: "Trang Chủ", navEnchants: "Bách Khoa Phù Phép", navFishing: "Bách Khoa Câu Cá", navCommands: "Lệnh Nhanh" };
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const k = el.getAttribute("data-i18n");
+        if (navUi[k]) el.textContent = navUi[k];
+      });
+      const map = l === "en" ? {
+        fishEyebrow: "🎣 COMPLETE RPG FISHING SYSTEM (LV.1 → LV.50)",
+        fishHeroTitle: "Fishing & Sea Creatures Encyclopedia",
+        fishHeroDesc: "Browse all <strong>112 Sea Creatures &amp; Bosses</strong> (Overworld, Nether Lava &amp; End Void), <strong>147 Rods, Weapons &amp; Armor</strong>, <strong>23 Artifacts</strong>, <strong>94 Crafting Recipes</strong>, <strong>34 Biomes</strong>, and <strong>43 Fishing Enchants</strong>.",
+        lblMobs: "Sea Creatures",
+        lblItems: "Rods &amp; Gear",
+        lblArtifacts: "Artifacts",
+        lblRecipes: "Recipes",
+        lblBiomes: "Biomes",
+        lblEnchants: "Enchants",
+        tabMobsLbl: "Sea Creatures &amp; Bosses",
+        tabItemsLbl: "Rods, Weapons &amp; Armor",
+        tabArtifactsLbl: "Artifacts",
+        tabEnchantsLbl: "Fishing Enchants",
+        tabRecipesLbl: "Crafting Recipes",
+        tabBiomesLbl: "Biome Drop Rates",
+        tabGuideLbl: "Mechanics &amp; Difficulty"
+      } : {
+        fishEyebrow: "🎣 HỆ THỐNG CÂU CÁ RPG TOÀN DIỆN (LV.1 → LV.50)",
+        fishHeroTitle: "Bách Khoa Toàn Thư Câu Cá & Thủy Quái",
+        fishHeroDesc: "Tra cứu toàn bộ <strong>112 Thủy Quái &amp; Bosses</strong> (Overworld, Nether Lava &amp; End Void), <strong>147 Vật Phẩm &amp; Trang Bị</strong>, <strong>23 Cổ Vật (Artifacts)</strong>, <strong>94 Công Thức Chế Tạo</strong>, <strong>34 Quần Xã (Biomes)</strong> và <strong>43 Phù Phép Câu Cá</strong>.",
+        lblMobs: "Thủy Quái",
+        lblItems: "Trang Bị &amp; Đồ",
+        lblArtifacts: "Cổ Vật",
+        lblRecipes: "Công Thức",
+        lblBiomes: "Biomes",
+        lblEnchants: "Enchants",
+        tabMobsLbl: "Thủy Quái &amp; Bosses",
+        tabItemsLbl: "Cần Câu, Vũ Khí &amp; Giáp",
+        tabArtifactsLbl: "Cổ Vật (Artifacts)",
+        tabEnchantsLbl: "Phù Phép Câu Cá",
+        tabRecipesLbl: "Công Thức Chế Tạo",
+        tabBiomesLbl: "Bảng Tỉ Lệ Biomes",
+        tabGuideLbl: "Cơ Chế &amp; Config Độ Khó"
+      };
+      for (const [id, val] of Object.entries(map)) {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = val;
+      }
+    }
+
     // Initialize
     buildSubFilters();
     renderActiveTab();
+    setWikiLang(localStorage.getItem("ome_wiki_lang") || "en");
+    window.addEventListener("storage", e => {
+      if (e.key === "ome_wiki_lang" && e.newValue) setWikiLang(e.newValue);
+    });
   </script>
 </body>
 </html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teleports — Waypoints — One More Expedition Wiki</title>
+  <link rel="icon" type="image/png" href="assets/server-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/wiki-header.css" />
+  <script src="assets/wiki-lang-sync.js"></script>
+  <style>
+    :root {
+      --bg-dark: #0d131f;
+      --card-bg: rgba(18, 24, 38, 0.9);
+      --border-card: rgba(255, 255, 255, 0.1);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --gold-primary: #f5c451;
+      --aqua: #38bdf8;
+      --green: #4ade80;
+      --epic: #e879f9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text-main); min-height: 100vh; line-height: 1.55;
+      background-color: var(--bg-dark); position: relative; -webkit-font-smoothing: antialiased;
+    }
+    .minecraft-bg-fixed {
+      position: fixed; inset: 0; z-index: -10; pointer-events: none;
+      background: #101726 url('assets/bg.jpg') no-repeat center center / cover;
+    }
+    .minecraft-bg-overlay {
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 50% 25%, rgba(15, 23, 42, 0.48) 0%, rgba(7, 10, 18, 0.88) 100%);
+    }
+    .mc-pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
+    .page-wrap { max-width: 1260px; margin: 0 auto; padding: 24px 20px 64px; }
+    .back-bar { margin-bottom: 18px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 10px;
+      background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #cbd5e1; text-decoration: none; font-size: 0.85rem; font-weight: 700; transition: all 0.2s;
+    }
+    .back-btn:hover { background: rgba(245, 196, 81, 0.14); border-color: rgba(245, 196, 81, 0.45); color: var(--gold-primary); }
+
+    .hero-card {
+      background: linear-gradient(135deg, rgba(24, 34, 54, 0.94), rgba(15, 23, 38, 0.96));
+      border: 1px solid rgba(245, 196, 81, 0.28); border-radius: 18px; padding: 24px 28px;
+      display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45); margin-bottom: 20px;
+    }
+    .hero-icon-box {
+      width: 68px; height: 68px; border-radius: 16px;
+      background: rgba(245, 196, 81, 0.12); border: 1px solid rgba(245, 196, 81, 0.35);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .hero-icon-box img { width: 44px; height: 44px; }
+    .hero-title { font-size: 1.7rem; font-weight: 800; color: #fef08a; line-height: 1.2; }
+    .hero-sub { color: #93c5fd; font-size: 0.95rem; font-weight: 700; margin-top: 4px; }
+    .hero-desc { color: var(--text-muted); font-size: 0.85rem; margin-top: 6px; max-width: 780px; }
+
+    .overview-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 14px; margin-bottom: 22px;
+    }
+    .info-card {
+      background: var(--card-bg); border: 1px solid var(--border-card);
+      border-radius: 14px; padding: 16px 18px;
+    }
+    .info-head {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.96rem; font-weight: 800; color: #fef08a; margin-bottom: 10px;
+    }
+    .info-head img { width: 20px; height: 20px; }
+    .info-list {
+      list-style: none; display: flex; flex-direction: column; gap: 6px;
+      font-size: 0.82rem; color: #cbd5e1;
+    }
+    .info-list code {
+      font-family: 'JetBrains Mono', monospace; background: rgba(255, 255, 255, 0.08);
+      padding: 1px 6px; border-radius: 5px; color: #fde68a; font-size: 0.78rem;
+    }
+
+    /* Filter Panel */
+    .filter-panel {
+      background: var(--card-bg); border: 1px solid var(--border-card);
+      border-radius: 16px; padding: 18px 20px; margin-bottom: 18px;
+    }
+    .search-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+    .search-box { flex: 1 1 300px; position: relative; display: flex; align-items: center; }
+    .search-box .search-ico { position: absolute; left: 13px; width: 16px; height: 16px; pointer-events: none; }
+    .search-box input {
+      width: 100%; padding: 10px 36px 10px 38px; border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.14); background: rgba(10, 15, 25, 0.85);
+      color: var(--text-main); font-size: 0.9rem; font-family: inherit; outline: none;
+    }
+    .search-box input:focus { border-color: var(--gold-primary); }
+    .clear-btn {
+      position: absolute; right: 10px; background: none; border: none;
+      color: var(--text-muted); cursor: pointer; font-size: 0.9rem; display: none;
+    }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .chip-btn {
+      display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.12); background: rgba(255, 255, 255, 0.04);
+      color: #cbd5e1; font-size: 0.8rem; font-weight: 700; cursor: pointer; font-family: inherit;
+      transition: all 0.15s;
+    }
+    .chip-btn img { width: 14px; height: 14px; }
+    .chip-btn:hover { border-color: rgba(245, 196, 81, 0.45); color: #fef08a; }
+    .chip-btn.active { background: rgba(245, 196, 81, 0.2); border-color: var(--gold-primary); color: #fde68a; }
+
+    .results-bar {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 14px; font-size: 0.85rem; color: var(--text-muted); flex-wrap: wrap; gap: 8px;
+    }
+
+    .wp-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px;
+    }
+    .wp-card {
+      background: var(--card-bg); border: 1px solid var(--border-card); border-radius: 14px;
+      padding: 16px; cursor: pointer; transition: all 0.2s ease;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .wp-card:hover {
+      border-color: rgba(245, 196, 81, 0.55); transform: translateY(-2px);
+      background: rgba(24, 33, 52, 0.95);
+    }
+    .wp-top { display: flex; align-items: center; gap: 12px; }
+    .wp-ico {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .wp-ico img { width: 26px; height: 26px; }
+    .wp-name { font-size: 0.96rem; font-weight: 800; line-height: 1.25; }
+    .wp-base { font-size: 0.75rem; color: #93c5fd; margin-top: 2px; }
+
+    /* Mini 3x3 Recipe Grid */
+    .recipe-wrap {
+      display: flex; align-items: center; gap: 12px;
+      padding: 10px; border-radius: 10px;
+      background: rgba(10, 15, 25, 0.65); border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .craft-3x3 {
+      display: grid; grid-template-columns: repeat(3, 28px); grid-template-rows: repeat(3, 28px); gap: 3px;
+      flex-shrink: 0;
+    }
+    .craft-cell {
+      width: 28px; height: 28px; border-radius: 5px;
+      background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.14);
+      display: flex; align-items: center; justify-content: center;
+      padding: 3px;
+    }
+    .craft-cell img { width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated; }
+    .modal-craft .craft-3x3 { grid-template-columns: repeat(3, 36px); grid-template-rows: repeat(3, 36px); gap: 4px; }
+    .modal-craft .craft-cell { width: 36px; height: 36px; padding: 4px; }
+    .recipe-legend { font-size: 0.74rem; color: #cbd5e1; line-height: 1.4; }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed; inset: 0; background: rgba(5, 8, 15, 0.82); backdrop-filter: blur(8px);
+      display: none; align-items: center; justify-content: center; z-index: 2000; padding: 18px;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal-box {
+      width: 100%; max-width: 560px; max-height: 90vh; overflow-y: auto;
+      background: #121928; border: 1px solid rgba(245, 196, 81, 0.38);
+      border-radius: 18px; padding: 24px; position: relative;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+    }
+    .modal-close {
+      position: absolute; top: 16px; right: 16px; width: 32px; height: 32px;
+      border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.06); color: #e2e8f0; cursor: pointer; font-size: 1rem;
+    }
+    .modal-section {
+      background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px; padding: 14px 16px; margin-top: 12px;
+    }
+    .other-systems { margin-top: 36px; padding-top: 22px; border-top: 1px solid rgba(255, 255, 255, 0.08); }
+    .other-title { font-size: 0.9rem; font-weight: 800; color: var(--text-muted); margin-bottom: 12px; }
+    .other-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .other-pill {
+      display: inline-flex; align-items: center; gap: 7px; padding: 6px 12px; border-radius: 10px;
+      background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 700;
+    }
+    .other-pill:hover { border-color: rgba(245, 196, 81, 0.45); color: #fef08a; }
+    .other-pill img { width: 16px; height: 16px; }
+  </style>
+</head>
+<body>
+  <div class="minecraft-bg-fixed"><div class="minecraft-bg-overlay"></div></div>
+
+  <header class="ome-header">
+    <a href="main.html" class="ome-brand">
+      <img class="ome-brand-icon" src="assets/server-icon.png" alt="OME Logo" />
+      <div class="ome-brand-text">
+        <span class="ome-brand-title">One More Expedition</span>
+        <span class="ome-brand-sub">KHTN Server Wiki • 26.3</span>
+      </div>
+    </a>
+
+    <nav class="ome-nav">
+      <a href="main.html" class="ome-nav-btn" style="border-color: rgba(59, 130, 246, 0.45); color: #93c5fd;">
+        <img src="assets/icons/grass_block_side.png" alt=""/>
+        <span data-i18n="navHome">Trang Chủ</span>
+      </a>
+      <a href="enchants.html" class="ome-nav-btn" style="color: #f5c451; border-color: rgba(245, 196, 81, 0.45);">
+        <img src="assets/icons/enchanted_book.png" alt=""/>
+        <span data-i18n="navEnchants">Bách Khoa Phù Phép</span>
+      </a>
+      <a href="fishing.html" class="ome-nav-btn" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.45);">
+        <img src="assets/icons/fishing_rod.png" alt=""/>
+        <span data-i18n="navFishing">Bách Khoa Câu Cá</span>
+      </a>
+      <a href="world.html" class="ome-nav-btn" style="color: #4ade80; border-color: rgba(74, 222, 128, 0.45);">
+        <img src="assets/icons/spyglass.png" alt=""/>
+        <span>Biomes &amp; Structures</span>
+      </a>
+    </nav>
+
+    <div class="ome-header-right">
+      <div class="ome-lang-pill">
+        <button class="ome-lang-btn" id="btnLangEn" onclick="setLanguage('en')">🇺🇸 EN</button>
+        <button class="ome-lang-btn active" id="btnLangVi" onclick="setLanguage('vi')">🇻🇳 VI</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <div class="back-bar">
+      <a href="main.html" class="back-btn" id="backHomeBtn">← Quay lại Trang Chủ</a>
+    </div>
+
+    <section class="hero-card">
+      <div class="hero-icon-box">
+        <img class="mc-pixel" src="assets/icons/ender_pearl.png" alt="Teleports" />
+      </div>
+      <div>
+        <h1 class="hero-title" id="heroTitle">Teleports</h1>
+        <p class="hero-sub" id="heroSub">Waypoints</p>
+        <p class="hero-desc" id="heroDesc"></p>
+      </div>
+    </section>
+
+    <section class="overview-grid" id="overviewGrid"></section>
+
+    <section class="filter-panel">
+      <div class="search-row">
+        <div class="search-box">
+          <img class="search-ico mc-pixel" src="assets/icons/compass.png" alt=""/>
+          <input type="text" id="wpSearchInput" placeholder="Tìm Waypoint theo tên hoặc khối vật liệu..." autocomplete="off" />
+          <button type="button" class="clear-btn" id="wpClearBtn">✕</button>
+        </div>
+      </div>
+      <div class="chip-row" id="wpCatChips">
+        <button type="button" class="chip-btn active" data-cat="all" id="catAll">Tất cả (49)</button>
+        <button type="button" class="chip-btn" data-cat="special"><img class="mc-pixel" src="assets/icons/items/wawo/waypoint_lock.png" alt=""/> <span id="catSpecial">Khóa &amp; Totem (2)</span></button>
+        <button type="button" class="chip-btn" data-cat="wood"><img class="mc-pixel" src="assets/icons/oak_sapling.png" alt=""/> <span id="catWood">Gỗ (13)</span></button>
+        <button type="button" class="chip-btn" data-cat="stone"><img class="mc-pixel" src="assets/icons/grass_block_side.png" alt=""/> <span id="catStone">Đá &amp; Gạch (11)</span></button>
+        <button type="button" class="chip-btn" data-cat="metal"><img class="mc-pixel" src="assets/icons/gold_ingot.png" alt=""/> <span id="catMetal">Kim loại &amp; Ngọc (6)</span></button>
+        <button type="button" class="chip-btn" data-cat="copper"><img class="mc-pixel" src="assets/icons/beacon.png" alt=""/> <span id="catCopper">Đồng / Copper (4)</span></button>
+        <button type="button" class="chip-btn" data-cat="nether_end"><img class="mc-pixel" src="assets/icons/nether_star.png" alt=""/> <span id="catNetherEnd">Nether &amp; End (8)</span></button>
+        <button type="button" class="chip-btn" data-cat="nature"><img class="mc-pixel" src="assets/icons/amethyst_shard.png" alt=""/> <span id="catNature">Tự nhiên (5)</span></button>
+      </div>
+    </section>
+
+    <div class="results-bar">
+      <span id="wpResultsCount"></span>
+      <span id="wpClickHint"></span>
+    </div>
+    <div class="wp-grid" id="wpGrid"></div>
+
+    <section class="other-systems">
+      <div class="other-title" id="otherTitle">Khám Phá Hệ Thống Khác</div>
+      <div class="other-pills" id="otherPills"></div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="wpModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close" onclick="closeWpModal()">✕</button>
+      <div style="display:flex;align-items:center;gap:14px;padding-right:34px;">
+        <div class="wp-ico" style="width:52px;height:52px;"><img class="mc-pixel" id="mIcon" src="assets/icons/ender_pearl.png" alt="" style="width:32px;height:32px;"/></div>
+        <div>
+          <h2 id="mTitle" style="font-size:1.22rem;font-weight:800;">Waypoint</h2>
+          <div id="mId" style="font-family:'JetBrains Mono',monospace;font-size:0.76rem;color:#94a3b8;margin-top:2px;"></div>
+        </div>
+      </div>
+      <div id="mBody"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/waypoints_data.js"></script>
+  <script>
+    const LANG_KEY = "ome_wiki_lang";
+    let currentLang = localStorage.getItem(LANG_KEY) || "vi";
+    let currentCat = "all";
+
+    const ALL_SYSTEMS = [
+      { id: "skyblock", icon: "assets/icons/oak_sapling.png", name: { vi: "Skyblock", en: "Skyblock" }, href: "skyblock.html" },
+      { id: "world", icon: "assets/icons/spyglass.png", name: { vi: "Biomes & Structures", en: "Biomes & Structures" }, href: "world.html" },
+      { id: "adventure", icon: "assets/icons/compass.png", name: { vi: "Adventure", en: "Adventure" }, href: "adventure.html" },
+      { id: "enchants", icon: "assets/icons/enchanted_book.png", name: { vi: "Enchantments", en: "Enchantments" }, href: "enchants.html" },
+      { id: "fishing", icon: "assets/icons/fishing_rod.png", name: { vi: "Fishing", en: "Fishing" }, href: "fishing.html" },
+      { id: "minetreasure", icon: "assets/icons/netherite_pickaxe.png", name: { vi: "Mine Treasure", en: "Mine Treasure" }, href: "minetreasure.html" },
+      { id: "bosses", icon: "assets/icons/dragonblade.png", name: { vi: "Items • Bosses", en: "Items • Bosses" }, href: "bosses.html" },
+      { id: "quests", icon: "assets/icons/writable_book.png", name: { vi: "Daily Quests", en: "Daily Quests" }, href: "quests.html" },
+      { id: "economy", icon: "assets/icons/emerald.png", name: { vi: "Economy", en: "Economy" }, href: "economy.html" },
+      { id: "prefix", icon: "assets/icons/name_tag.png", name: { vi: "Rank / Prefix", en: "Rank / Prefix" }, href: "prefix.html" },
+      { id: "redeem", icon: "assets/icons/paper.png", name: { vi: "Codes", en: "Codes" }, href: "redeem.html" },
+      { id: "utility", icon: "assets/icons/amethyst_shard.png", name: { vi: "Utility & QoL", en: "Utility & QoL" }, href: "utility.html" },
+      { id: "recommended_mods", icon: "assets/icons/nether_star.png", name: { vi: "Best Client Mods", en: "Best Client Mods" }, href: "mods.html" }
+    ];
+
+    function esc(s) {
+      return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang === "en" ? "en" : "vi";
+      localStorage.setItem(LANG_KEY, currentLang);
+      applyLang();
+    }
+
+    window.addEventListener("storage", e => {
+      if (e.key === LANG_KEY && e.newValue && e.newValue !== currentLang) {
+        currentLang = e.newValue === "en" ? "en" : "vi";
+        applyLang();
+      }
+    });
+
+    function applyLang() {
+      const vi = currentLang === "vi";
+      document.documentElement.lang = currentLang;
+      document.getElementById("btnLangEn").classList.toggle("active", !vi);
+      document.getElementById("btnLangVi").classList.toggle("active", vi);
+
+      document.getElementById("backHomeBtn").textContent = vi ? "← Quay lại Trang Chủ" : "← Back to Main Page";
+      document.getElementById("heroTitle").textContent = "Teleports";
+      document.getElementById("heroSub").textContent = "Waypoints";
+      document.getElementById("heroDesc").textContent = vi
+        ? "Hệ thống trụ dịch chuyển Waypoints (47 biến thể vật liệu + Waypoint Lock) cùng các lệnh dịch chuyển nhanh trên server."
+        : "Placeable Waypoint Hubs (47 material variants + Waypoint Lock) and essential server teleport commands.";
+
+      document.getElementById("wpSearchInput").placeholder = vi
+        ? "Tìm Waypoint theo tên hoặc khối vật liệu..."
+        : "Search Waypoints by name or base block...";
+      document.getElementById("wpClickHint").textContent = vi ? "Nhấp vào thẻ để xem chi tiết công thức 3×3" : "Click any card for full 3×3 recipe";
+      document.getElementById("otherTitle").textContent = vi ? "Khám Phá Hệ Thống Khác" : "Browse Other Systems";
+
+      document.getElementById("catAll").textContent = vi ? "Tất cả (49)" : "All (49)";
+      document.getElementById("catSpecial").textContent = vi ? "Khóa & Totem (2)" : "Lock & Totem (2)";
+      document.getElementById("catWood").textContent = vi ? "Gỗ (13)" : "Wood (13)";
+      document.getElementById("catStone").textContent = vi ? "Đá & Gạch (11)" : "Stone & Bricks (11)";
+      document.getElementById("catMetal").textContent = vi ? "Kim loại & Ngọc (6)" : "Metals & Gems (6)";
+      document.getElementById("catCopper").textContent = vi ? "Đồng / Copper (4)" : "Copper (4)";
+      document.getElementById("catNetherEnd").textContent = vi ? "Nether & End (8)" : "Nether & End (8)";
+      document.getElementById("catNature").textContent = vi ? "Tự nhiên (5)" : "Nature (5)";
+
+      renderOverview();
+      renderOtherPills();
+      renderWaypoints();
+    }
+
+    function renderOverview() {
+      const vi = currentLang === "vi";
+      const cards = [
+        {
+          icon: "assets/icons/ender_pearl.png",
+          title: vi ? "Đặt Trụ, Mua & Dịch Chuyển" : "Obtaining, Placing & Menu",
+          items: vi ? [
+            "<strong>Dân làng Bản Đồ (Lv 2):</strong> Bán các mẫu Acacia, Jungle, Oak, Sandstone, Mangrove, Spruce với giá <code>9–18 Emerald</code>.",
+            "<strong>Đặt trụ:</strong> Đổi tên trụ bằng <strong>Đe (Anvil)</strong> trước khi đặt; cầm trụ trên tay sẽ thấy viền giới hạn khoảng cách đặt. Đào bằng <strong>Cúp</strong>.",
+            "<strong>Dịch chuyển:</strong> Chuột phải vào đầu xoay (tay không) để mở Menu (hiện trụ của bạn, trụ công khai &amp; trụ khóa được cấp quyền). Đếm ngược mặc định <strong>3 giây</strong> — di chuyển sẽ hủy!"
+          ] : [
+            "<strong>Journeyman Cartographer (Lv 2):</strong> Sells Acacia, Jungle, Oak, Sandstone, Mangrove &amp; Spruce Hubs for <code>9–18 Emeralds</code>.",
+            "<strong>Placing:</strong> Rename in an <strong>Anvil</strong> before placing; holding a Hub outlines nearby exclusion zones. Mine with a <strong>Pickaxe</strong>.",
+            "<strong>Teleporting:</strong> Right-click the rotating head to open the Menu (lists your own, public, and trusted locked hubs). Default <strong>3s warm-up</strong> — moving cancels!"
+          ]
+        },
+        {
+          icon: "assets/icons/items/wawo/waypoint_lock.png",
+          title: vi ? "Thao Tác Chủ Trụ (Tiêu Hao Vật Phẩm)" : "Owner Actions (Consumed on Use)",
+          items: vi ? [
+            "<strong>Name Tag đã đổi tên:</strong> Đổi tên Waypoint • <strong>Sách đã đổi tên:</strong> Đặt mô tả khi rê chuột.",
+            "<strong>Thuốc nhuộm (Dye):</strong> Đổi màu tiêu đề trên trụ và trong Menu.",
+            "<strong>Giấy (Paper) đổi tên</strong> <code>trust &lt;tên&gt;</code> / <code>untrust &lt;tên&gt;</code>: Cấp hoặc gỡ quyền vào trụ đang khóa.",
+            "<strong>Waypoint Lock:</strong> Bật/tắt Công khai ↔ Khóa • <strong>Totem of Homecoming:</strong> Chuột phải để liên kết."
+          ] : [
+            "<strong>Renamed Name Tag:</strong> Renames waypoint • <strong>Renamed Book:</strong> Sets menu hover description.",
+            "<strong>Dye:</strong> Changes the title color on the block and in the menu.",
+            "<strong>Paper renamed</strong> <code>trust &lt;player&gt;</code> / <code>untrust &lt;player&gt;</code>: Grants or revokes access to a locked waypoint.",
+            "<strong>Waypoint Lock:</strong> Toggles Public ↔ Locked • <strong>Totem of Homecoming:</strong> Right-click to bind."
+          ]
+        },
+        {
+          icon: "assets/icons/oak_sapling.png",
+          title: vi ? "Dịch Chuyển Đảo Skyblock (/is)" : "Skyblock Island Warps (/is)",
+          items: vi ? [
+            "<code>/is</code> hoặc <code>/is home</code> — Dịch chuyển nhanh về đảo Skyblock cá nhân.",
+            "<code>/visit &lt;tên&gt;</code> — Ghé thăm đảo Skyblock của người chơi khác.",
+            "Các lệnh dịch chuyển đảo bị khóa tạm thời trong lúc dính <strong>Combat Log (2 phút)</strong>."
+          ] : [
+            "<code>/is</code> or <code>/is home</code> — Teleport directly to your Skyblock island.",
+            "<code>/visit &lt;player&gt;</code> — Visit another player's Skyblock island.",
+            "Island warp commands are temporarily blocked while in <strong>Combat Log (2m)</strong>."
+          ]
+        }
+      ];
+      document.getElementById("overviewGrid").innerHTML = cards.map(c => `
+        <div class="info-card">
+          <div class="info-head"><img class="mc-pixel" src="${c.icon}" alt=""/><span>${c.title}</span></div>
+          <ul class="info-list">${c.items.map(i => `<li>${i}</li>`).join("")}</ul>
+        </div>
+      `).join("");
+    }
+
+    function renderOtherPills() {
+      document.getElementById("otherPills").innerHTML = ALL_SYSTEMS.map(s => `
+        <a href="${s.href}" class="other-pill">
+          <img class="mc-pixel" src="${s.icon}" alt=""/>
+          <span>${esc(s.name[currentLang] || s.name.en)}</span>
+        </a>
+      `).join("");
+    }
+
+    function buildGridHtml(w) {
+      const pattern = w.pattern || [" X ", "EBE", "OOO"];
+      const icons = w.ing_icons || {};
+      const titles = {
+        X: "Ender Pearl",
+        E: "Raw Gold",
+        B: "Purple Carpet",
+        O: w.base_label || "Base Block",
+        I: "Iron Ingot",
+        N: "Iron Nugget",
+        a: "Amethyst Shard",
+        s: "Echo Shard"
+      };
+      let cells = "";
+      for (let r = 0; r < 3; r++) {
+        const row = (pattern[r] || "   ").padEnd(3, " ");
+        for (let c = 0; c < 3; c++) {
+          const ch = row[c];
+          if (ch === " " || !icons[ch]) {
+            cells += `<div class="craft-cell"></div>`;
+          } else {
+            cells += `<div class="craft-cell" title="${esc(titles[ch] || ch)}"><img class="mc-pixel" src="${esc(icons[ch])}" alt="${esc(titles[ch] || ch)}"/></div>`;
+          }
+        }
+      }
+      return `<div class="craft-3x3">${cells}</div>`;
+    }
+
+    function renderWaypoints() {
+      const vi = currentLang === "vi";
+      const q = document.getElementById("wpSearchInput").value.trim().toLowerCase();
+      document.getElementById("wpClearBtn").style.display = q ? "block" : "none";
+
+      const list = WAYPOINTS_DATA.filter(w => {
+        if (currentCat !== "all" && w.category !== currentCat) return false;
+        if (q) {
+          const hay = [w.name_en, w.name_vi, w.base_item, w.base_label, w.slug].join(" ").toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      document.getElementById("wpResultsCount").textContent = vi
+        ? `Đang hiển thị ${list.length} / ${WAYPOINTS_DATA.length} công thức Waypoint`
+        : `Showing ${list.length} of ${WAYPOINTS_DATA.length} Waypoint recipes`;
+
+      document.getElementById("wpGrid").innerHTML = list.map(w => {
+        const name = vi ? w.name_vi : w.name_en;
+        const ico = w.icon || "assets/icons/ender_pearl.png";
+        const legend = (vi ? w.ingredients_vi : w.ingredients_en).map(x => `<div>• ${esc(x)}</div>`).join("");
+        return `
+          <div class="wp-card" onclick="openWpModal('${esc(w.id)}')">
+            <div class="wp-top">
+              <div class="wp-ico"><img class="mc-pixel" src="${esc(ico)}" alt=""/></div>
+              <div style="min-width:0;">
+                <div class="wp-name">${esc(name)}</div>
+                <div class="wp-base">${esc(w.base_label)}</div>
+              </div>
+            </div>
+            <div class="recipe-wrap">
+              ${buildGridHtml(w)}
+              <div class="recipe-legend">${legend}</div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function openWpModal(id) {
+      const w = WAYPOINTS_DATA.find(x => x.id === id);
+      if (!w) return;
+      const vi = currentLang === "vi";
+      document.getElementById("mIcon").src = w.icon || "assets/icons/ender_pearl.png";
+      document.getElementById("mTitle").textContent = vi ? w.name_vi : w.name_en;
+      document.getElementById("mId").textContent = w.id;
+      const ings = vi ? w.ingredients_vi : w.ingredients_en;
+      document.getElementById("mBody").innerHTML = `
+        <div class="modal-section">
+          <div style="font-size:0.78rem;font-weight:800;color:#f5c451;text-transform:uppercase;margin-bottom:10px;">
+            ${vi ? "Sơ Đồ Bàn Chế Tạo 3×3 & Nguyên Liệu" : "3×3 Crafting Grid & Ingredients"}
+          </div>
+          <div class="modal-craft" style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
+            ${buildGridHtml(w)}
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:5px;font-size:0.86rem;color:#e2e8f0;">
+              ${ings.map(i => `<li>• ${esc(i)}</li>`).join("")}
+            </ul>
+          </div>
+        </div>
+      `;
+      document.getElementById("wpModal").classList.add("active");
+    }
+
+    function closeWpModal() {
+      document.getElementById("wpModal").classList.remove("active");
+    }
+
+    document.getElementById("wpSearchInput").addEventListener("input", renderWaypoints);
+    document.getElementById("wpClearBtn").addEventListener("click", () => {
+      document.getElementById("wpSearchInput").value = "";
+      renderWaypoints();
+    });
+    document.querySelectorAll("#wpCatChips .chip-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("#wpCatChips .chip-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentCat = btn.dataset.cat;
+        renderWaypoints();
+      });
+    });
+    document.getElementById("wpModal").addEventListener("click", e => {
+      if (e.target.id === "wpModal") closeWpModal();
+    });
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") closeWpModal();
+    });
+
+    applyLang();
+  </script>
+</body>
+</html>

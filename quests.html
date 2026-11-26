@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Quests — One More Expedition Wiki</title>
+  <link rel="icon" type="image/png" href="assets/server-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/wiki-header.css" />
+  <script src="assets/wiki-lang-sync.js"></script>
+  <style>
+    :root {
+      --bg-dark: #0d131f;
+      --card-bg: rgba(18, 24, 38, 0.9);
+      --border-card: rgba(255, 255, 255, 0.1);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --gold-primary: #f5c451;
+      --aqua: #38bdf8;
+      --green: #4ade80;
+      --epic: #e879f9;
+      --red: #f87171;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.55;
+      background-color: var(--bg-dark);
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+    }
+    .minecraft-bg-fixed {
+      position: fixed;
+      inset: 0;
+      z-index: -10;
+      pointer-events: none;
+      background: #101726 url('assets/bg.jpg') no-repeat center center / cover;
+    }
+    .minecraft-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 25%, rgba(15, 23, 42, 0.48) 0%, rgba(7, 10, 18, 0.88) 100%);
+    }
+    .mc-pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
+    .page-wrap { max-width: 1260px; margin: 0 auto; padding: 24px 20px 64px; }
+    .back-bar { margin-bottom: 18px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 14px; border-radius: 10px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #cbd5e1; text-decoration: none; font-size: 0.85rem; font-weight: 700;
+      transition: all 0.2s;
+    }
+    .back-btn:hover { background: rgba(245, 196, 81, 0.14); border-color: rgba(245, 196, 81, 0.45); color: var(--gold-primary); }
+
+    .hero-card {
+      background: linear-gradient(135deg, rgba(24, 34, 54, 0.94), rgba(15, 23, 38, 0.96));
+      border: 1px solid rgba(245, 196, 81, 0.28);
+      border-radius: 18px;
+      padding: 24px 28px;
+      display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
+      margin-bottom: 20px;
+    }
+    .hero-icon-box {
+      width: 68px; height: 68px; border-radius: 16px;
+      background: rgba(245, 196, 81, 0.12);
+      border: 1px solid rgba(245, 196, 81, 0.35);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .hero-icon-box img { width: 44px; height: 44px; }
+    .hero-title { font-size: 1.7rem; font-weight: 800; color: #fef08a; line-height: 1.2; }
+    .hero-sub { color: #93c5fd; font-size: 0.92rem; font-weight: 700; margin-top: 4px; }
+    .hero-desc { color: var(--text-muted); font-size: 0.85rem; margin-top: 6px; max-width: 780px; }
+
+    /* Overview 4-grid */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .info-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-card);
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+    .info-head {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.96rem; font-weight: 800; color: #fef08a;
+      margin-bottom: 10px;
+    }
+    .info-head img { width: 20px; height: 20px; }
+    .info-list {
+      list-style: none; display: flex; flex-direction: column; gap: 6px;
+      font-size: 0.82rem; color: #cbd5e1;
+    }
+    .info-list code {
+      font-family: 'JetBrains Mono', monospace;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 1px 6px; border-radius: 5px; color: #fde68a; font-size: 0.78rem;
+    }
+
+    /* Filter Panel */
+    .filter-panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border-card);
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 18px;
+    }
+    .search-row {
+      display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 14px;
+    }
+    .search-box { flex: 1 1 300px; position: relative; display: flex; align-items: center; }
+    .search-box .search-ico { position: absolute; left: 13px; width: 16px; height: 16px; pointer-events: none; }
+    .search-box input {
+      width: 100%; padding: 10px 36px 10px 38px; border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(10, 15, 25, 0.85); color: var(--text-main);
+      font-size: 0.9rem; font-family: inherit; outline: none;
+    }
+    .search-box input:focus { border-color: var(--gold-primary); }
+    .clear-btn {
+      position: absolute; right: 10px; background: none; border: none;
+      color: var(--text-muted); cursor: pointer; font-size: 0.9rem; display: none;
+    }
+    .filter-select {
+      padding: 9px 12px; border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(10, 15, 25, 0.88); color: var(--text-main);
+      font-size: 0.85rem; font-family: inherit; cursor: pointer;
+    }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .chip-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 12px; border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04); color: #cbd5e1;
+      font-size: 0.8rem; font-weight: 700; cursor: pointer; font-family: inherit;
+      transition: all 0.15s;
+    }
+    .chip-btn img { width: 14px; height: 14px; }
+    .chip-btn:hover { border-color: rgba(245, 196, 81, 0.45); color: #fef08a; }
+    .chip-btn.active { background: rgba(245, 196, 81, 0.2); border-color: var(--gold-primary); color: #fde68a; }
+
+    .results-bar {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 14px; font-size: 0.85rem; color: var(--text-muted); flex-wrap: wrap; gap: 8px;
+    }
+
+    .quests-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+      gap: 14px;
+    }
+    .quest-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-card);
+      border-radius: 14px;
+      padding: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .quest-card:hover {
+      border-color: rgba(245, 196, 81, 0.55);
+      transform: translateY(-2px);
+      background: rgba(24, 33, 52, 0.95);
+    }
+    .card-top { display: flex; align-items: flex-start; gap: 12px; }
+    .q-icon-wrap {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .q-icon-wrap img { width: 28px; height: 28px; }
+    .q-title { font-size: 0.98rem; font-weight: 800; line-height: 1.25; }
+    .q-sub { font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+
+    .badge-row { display: flex; flex-wrap: wrap; gap: 6px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 3px 8px; border-radius: 6px; font-size: 0.72rem; font-weight: 700;
+      border: 1px solid rgba(255, 255, 255, 0.12); background: rgba(255, 255, 255, 0.06); color: #e2e8f0;
+    }
+    .diff-EASY { color: #4ade80; border-color: rgba(74, 222, 128, 0.42); background: rgba(74, 222, 128, 0.12); }
+    .diff-MEDIUM { color: #f5c451; border-color: rgba(245, 196, 81, 0.42); background: rgba(245, 196, 81, 0.12); }
+    .diff-HARD { color: #f87171; border-color: rgba(248, 113, 113, 0.45); background: rgba(248, 113, 113, 0.14); }
+    .dim-pill { color: #bae6fd; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.12); }
+    .reward-pill { color: #fde68a; border-color: rgba(245, 196, 81, 0.35); background: rgba(245, 196, 81, 0.1); }
+    .q-desc { font-size: 0.82rem; color: #cbd5e1; }
+    .q-foot {
+      margin-top: auto; padding-top: 8px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.08);
+      font-size: 0.76rem; color: #93c5fd;
+      display: flex; justify-content: space-between; gap: 8px;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed; inset: 0; background: rgba(5, 8, 15, 0.82); backdrop-filter: blur(8px);
+      display: none; align-items: center; justify-content: center; z-index: 2000; padding: 18px;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal-box {
+      width: 100%; max-width: 620px; max-height: 90vh; overflow-y: auto;
+      background: #121928; border: 1px solid rgba(245, 196, 81, 0.38);
+      border-radius: 18px; padding: 24px; position: relative;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+    }
+    .modal-close {
+      position: absolute; top: 16px; right: 16px; width: 32px; height: 32px;
+      border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.06); color: #e2e8f0; cursor: pointer; font-size: 1rem;
+    }
+    .modal-header { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; padding-right: 36px; }
+    .modal-icon-big {
+      width: 56px; height: 56px; border-radius: 14px;
+      background: rgba(0, 0, 0, 0.45); border: 1px solid rgba(245, 196, 81, 0.35);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .modal-icon-big img { width: 38px; height: 38px; }
+    .modal-section {
+      background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px; padding: 14px 16px; margin-bottom: 12px;
+    }
+    .modal-sec-title {
+      font-size: 0.76rem; font-weight: 800; text-transform: uppercase;
+      color: var(--gold-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 6px;
+    }
+    .modal-sec-title img { width: 14px; height: 14px; }
+
+    .other-systems { margin-top: 36px; padding-top: 22px; border-top: 1px solid rgba(255, 255, 255, 0.08); }
+    .other-title { font-size: 0.9rem; font-weight: 800; color: var(--text-muted); margin-bottom: 12px; }
+    .other-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .other-pill {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 6px 12px; border-radius: 10px;
+      background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 700;
+    }
+    .other-pill:hover { border-color: rgba(245, 196, 81, 0.45); color: #fef08a; }
+    .other-pill img { width: 16px; height: 16px; }
+  </style>
+</head>
+<body>
+  <div class="minecraft-bg-fixed"><div class="minecraft-bg-overlay"></div></div>
+
+  <header class="ome-header">
+    <a href="main.html" class="ome-brand">
+      <img class="ome-brand-icon" src="assets/server-icon.png" alt="OME Logo" />
+      <div class="ome-brand-text">
+        <span class="ome-brand-title">One More Expedition</span>
+        <span class="ome-brand-sub">KHTN Server Wiki • 26.3</span>
+      </div>
+    </a>
+
+    <nav class="ome-nav">
+      <a href="main.html" class="ome-nav-btn" style="border-color: rgba(59, 130, 246, 0.45); color: #93c5fd;">
+        <img src="assets/icons/grass_block_side.png" alt=""/>
+        <span data-i18n="navHome">Trang Chủ</span>
+      </a>
+      <a href="enchants.html" class="ome-nav-btn" style="color: #f5c451; border-color: rgba(245, 196, 81, 0.45);">
+        <img src="assets/icons/enchanted_book.png" alt=""/>
+        <span data-i18n="navEnchants">Bách Khoa Phù Phép</span>
+      </a>
+      <a href="fishing.html" class="ome-nav-btn" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.45);">
+        <img src="assets/icons/fishing_rod.png" alt=""/>
+        <span data-i18n="navFishing">Bách Khoa Câu Cá</span>
+      </a>
+      <a href="world.html" class="ome-nav-btn" style="color: #4ade80; border-color: rgba(74, 222, 128, 0.45);">
+        <img src="assets/icons/spyglass.png" alt=""/>
+        <span>Biomes &amp; Structures</span>
+      </a>
+    </nav>
+
+    <div class="ome-header-right">
+      <div class="ome-lang-pill">
+        <button class="ome-lang-btn" id="btnLangEn" onclick="setLanguage('en')">🇺🇸 EN</button>
+        <button class="ome-lang-btn active" id="btnLangVi" onclick="setLanguage('vi')">🇻🇳 VI</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <div class="back-bar">
+      <a href="main.html" class="back-btn" id="backHomeBtn">← Quay lại Trang Chủ</a>
+    </div>
+
+    <section class="hero-card">
+      <div class="hero-icon-box">
+        <img class="mc-pixel" src="assets/icons/writable_book.png" alt="Daily Quests" />
+      </div>
+      <div>
+        <h1 class="hero-title" id="heroTitle">Hệ Thống Nhiệm Vụ Ngày (Daily Quests)</h1>
+        <p class="hero-sub" id="heroSub">10 Slots / Ngày • 9 Nhánh • Adventure Lv 50 • Co-op</p>
+        <p class="hero-desc" id="heroDesc"></p>
+      </div>
+    </section>
+
+    <!-- Overview 4 cards -->
+    <section class="overview-grid" id="overviewGrid"></section>
+
+    <!-- Interactive Quest Catalog -->
+    <section class="filter-panel">
+      <div class="search-row">
+        <div class="search-box">
+          <img class="search-ico mc-pixel" src="assets/icons/compass.png" alt=""/>
+          <input type="text" id="questSearchInput" placeholder="Tìm nhiệm vụ theo tên, quặng, quái, vật phẩm hoặc khu vực..." autocomplete="off" />
+          <button type="button" class="clear-btn" id="questClearBtn">✕</button>
+        </div>
+        <select id="diffSelect" class="filter-select">
+          <option value="all">Độ khó: Tất cả</option>
+          <option value="EASY">Easy (5 ô/ngày • 0.5x)</option>
+          <option value="MEDIUM">Medium (3 ô/ngày • 1.8x)</option>
+          <option value="HARD">Hard (2 ô/ngày • 5.0x)</option>
+        </select>
+        <select id="dimSelect" class="filter-select">
+          <option value="all">Chiều không gian: Tất cả</option>
+          <option value="overworld">Overworld (1.0x)</option>
+          <option value="nether">The Nether — Lv 15+ (1.2x)</option>
+          <option value="end">The End — Lv 30+ (1.4x)</option>
+        </select>
+      </div>
+
+      <div class="chip-row" id="branchChips">
+        <button type="button" class="chip-btn active" data-branch="all" id="brAll">Tất cả (9 nhánh)</button>
+        <button type="button" class="chip-btn" data-branch="EXPLORE_BIOME"><img class="mc-pixel" src="assets/icons/grass_block_side.png" alt=""/> <span id="brBio">Khám phá Biome</span></button>
+        <button type="button" class="chip-btn" data-branch="EXPLORE_STRUCTURE"><img class="mc-pixel" src="assets/icons/paper.png" alt=""/> <span id="brStr">Khám phá Công trình</span></button>
+        <button type="button" class="chip-btn" data-branch="EXPLORE_DUNGEON"><img class="mc-pixel" src="assets/icons/compass.png" alt=""/> <span id="brDun">Khám phá Dungeon</span></button>
+        <button type="button" class="chip-btn" data-branch="MINING"><img class="mc-pixel" src="assets/icons/diamond_pickaxe.png" alt=""/> <span id="brMin">Đào Mỏ</span></button>
+        <button type="button" class="chip-btn" data-branch="LOGGING"><img class="mc-pixel" src="assets/icons/oak_sapling.png" alt=""/> <span id="brLog">Chặt Gỗ</span></button>
+        <button type="button" class="chip-btn" data-branch="GATHER_SUBMIT"><img class="mc-pixel" src="assets/icons/chest_front.png" alt=""/> <span id="brGat">Giao Nộp Vật Phẩm</span></button>
+        <button type="button" class="chip-btn" data-branch="FISHING"><img class="mc-pixel" src="assets/icons/fishing_rod.png" alt=""/> <span id="brFis">Câu Cá</span></button>
+        <button type="button" class="chip-btn" data-branch="SLAYER"><img class="mc-pixel" src="assets/icons/diamond_sword.png" alt=""/> <span id="brSla">Săn Quái</span></button>
+        <button type="button" class="chip-btn" data-branch="ACTION"><img class="mc-pixel" src="assets/icons/ender_pearl.png" alt=""/> <span id="brAct">Hành Động &amp; Di Chuyển</span></button>
+      </div>
+    </section>
+
+    <div class="results-bar">
+      <span id="questResultsCount"></span>
+      <span id="questClickHint"></span>
+    </div>
+    <div class="quests-grid" id="questsGrid"></div>
+
+    <section class="other-systems">
+      <div class="other-title" id="otherTitle">Khám Phá Hệ Thống Khác</div>
+      <div class="other-pills" id="otherPills"></div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="questModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close" onclick="closeQuestModal()">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon-big"><img class="mc-pixel" id="qModalIcon" src="assets/icons/writable_book.png" alt=""/></div>
+        <div>
+          <h2 id="qModalTitle" style="font-size:1.25rem;font-weight:800;line-height:1.25;">Quest</h2>
+          <div class="badge-row" id="qModalBadges" style="margin-top:8px;"></div>
+        </div>
+      </div>
+      <div id="qModalBody"></div>
+    </div>
+  </div>
+
+  <script>
+    const LANG_KEY = "ome_wiki_lang";
+    let currentLang = localStorage.getItem(LANG_KEY) || "vi";
+    let currentBranch = "all";
+
+    const ALL_SYSTEMS = [
+      { id: "skyblock", icon: "assets/icons/oak_sapling.png", name: { vi: "Skyblock", en: "Skyblock" }, href: "skyblock.html" },
+      { id: "world", icon: "assets/icons/spyglass.png", name: { vi: "Biomes & Structures", en: "Biomes & Structures" }, href: "world.html" },
+      { id: "adventure", icon: "assets/icons/compass.png", name: { vi: "Adventure", en: "Adventure" }, href: "adventure.html" },
+      { id: "enchants", icon: "assets/icons/enchanted_book.png", name: { vi: "Enchantments", en: "Enchantments" }, href: "enchants.html" },
+      { id: "fishing", icon: "assets/icons/fishing_rod.png", name: { vi: "Fishing", en: "Fishing" }, href: "fishing.html" },
+      { id: "minetreasure", icon: "assets/icons/netherite_pickaxe.png", name: { vi: "Mine Treasure", en: "Mine Treasure" }, href: "minetreasure.html" },
+      { id: "bosses", icon: "assets/icons/dragonblade.png", name: { vi: "Items • Bosses", en: "Items • Bosses" }, href: "bosses.html" },
+      { id: "warping", icon: "assets/icons/ender_pearl.png", name: { vi: "Teleports", en: "Teleports" }, href: "warping.html" },
+      { id: "economy", icon: "assets/icons/emerald.png", name: { vi: "Economy", en: "Economy" }, href: "economy.html" },
+      { id: "prefix", icon: "assets/icons/name_tag.png", name: { vi: "Rank / Prefix", en: "Rank / Prefix" }, href: "prefix.html" },
+      { id: "redeem", icon: "assets/icons/paper.png", name: { vi: "Codes", en: "Codes" }, href: "redeem.html" },
+      { id: "utility", icon: "assets/icons/amethyst_shard.png", name: { vi: "Utility & QoL", en: "Utility & QoL" }, href: "utility.html" },
+      { id: "recommended_mods", icon: "assets/icons/nether_star.png", name: { vi: "Best Client Mods", en: "Best Client Mods" }, href: "mods.html" }
+    ];
+
+    // Complete catalog derived from QuestDraftGenerator.java & quests_config.json
+    const QUESTS_DATA = [
+      // EXPLORE
+      { id: "exp_biome_easy", branch: "EXPLORE_BIOME", diff: "EASY", dim: "overworld", icon: "assets/icons/grass_block_side.png",
+        name_en: "Explore Biome (Easy)", name_vi: "Khám Phá Biome (Dễ)",
+        target_en: "Reach unexplored Biome (500–1,200m)", target_vi: "Đến Biome chưa khám phá (500–1,200m)",
+        desc_en: "Visit an unexplored biome within 64 blocks radius. Excludes Deep Dark & Pale Garden.",
+        desc_vi: "Đến vùng Biome chưa từng đặt chân trong bán kính 64 block. Không xuất hiện Deep Dark & Pale Garden.",
+        reward: "0.50x × 1.35x | 50–68 XP (+10%/1km)" },
+      { id: "exp_biome_med", branch: "EXPLORE_BIOME", diff: "MEDIUM", dim: "all", icon: "assets/icons/grass_block_side.png",
+        name_en: "Explore Biome (Medium)", name_vi: "Khám Phá Biome (Trung Bình)",
+        target_en: "Reach unexplored Biome (1,500–2,800m)", target_vi: "Đến Biome chưa khám phá (1,500–2,800m)",
+        desc_en: "Long-range biome expedition (x0.65 distance in Nether, x1.15 in End). 64-block capture radius.",
+        desc_vi: "Thám hiểm Biome tầm trung (khoảng cách x0.65 ở Nether, x1.15 ở End). Bán kính nhận 64 block.",
+        reward: "1.80x × 1.35x | 130+ XP (+10%/1km)" },
+      { id: "exp_biome_hard", branch: "EXPLORE_BIOME", diff: "HARD", dim: "all", icon: "assets/icons/grass_block_side.png",
+        name_en: "Explore Biome (Hard)", name_vi: "Khám Phá Biome (Khó)",
+        target_en: "Reach unexplored Biome (3,500–6,000m)", target_vi: "Đến Biome chưa khám phá (3,500–6,000m)",
+        desc_en: "Deep frontier biome trek with +10% bonus Coins per 1,000 blocks distance.",
+        desc_vi: "Hành trình viễn chinh cực xa kèm +10% Coins thưởng thêm mỗi 1,000 block.",
+        reward: "5.00x × 1.35x | 320+ XP (+10%/1km)" },
+
+      { id: "exp_struct_easy", branch: "EXPLORE_STRUCTURE", diff: "EASY", dim: "overworld", icon: "assets/icons/paper.png",
+        name_en: "Explore Structure (Easy)", name_vi: "Khám Phá Công Trình (Dễ)",
+        target_en: "Reach unexplored Structure (600–1,300m)", target_vi: "Đến Công trình chưa khám phá (600–1,300m)",
+        desc_en: "Discover nearby villages, ruins, or camps (48-block capture radius). Coordinates unlock on accept.",
+        desc_vi: "Tìm đến làng, tàn tích hoặc trại lân cận (bán kính 48 block). Tọa độ mở khóa ngay khi nhận.",
+        reward: "0.50x × 1.50x | 50–75 XP" },
+      { id: "exp_struct_med", branch: "EXPLORE_STRUCTURE", diff: "MEDIUM", dim: "all", icon: "assets/icons/paper.png",
+        name_en: "Explore Structure (Medium)", name_vi: "Khám Phá Công Trình (Trung Bình)",
+        target_en: "Reach unexplored Structure (1,600–3,200m)", target_vi: "Đến Công trình chưa khám phá (1,600–3,200m)",
+        desc_en: "Locate mid-range modded or vanilla structures (48-block capture radius).",
+        desc_vi: "Định vị công trình tầm trung trên bản đồ (bán kính nhận 48 block).",
+        reward: "1.80x × 1.50x | 195+ XP" },
+      { id: "exp_struct_hard", branch: "EXPLORE_STRUCTURE", diff: "HARD", dim: "all", icon: "assets/icons/paper.png",
+        name_en: "Explore Structure (Hard)", name_vi: "Khám Phá Công Trình (Khó)",
+        target_en: "Reach unexplored Structure (3,800–6,500m)", target_vi: "Đến Công trình chưa khám phá (3,800–6,500m)",
+        desc_en: "Far expedition to major landmarks (48-block capture radius, +10%/1km distance bonus).",
+        desc_vi: "Viễn chinh công trình lớn ở cực xa (bán kính 48 block, +10%/1km khoảng cách).",
+        reward: "5.00x × 1.50x | 480+ XP" },
+
+      { id: "exp_dun_med", branch: "EXPLORE_DUNGEON", diff: "MEDIUM", dim: "all", icon: "assets/icons/compass.png",
+        name_en: "Explore Dungeon (Medium)", name_vi: "Khám Phá Dungeon (Trung Bình)",
+        target_en: "Reach unexplored Dungeon (1,800–3,500m)", target_vi: "Đến Dungeon chưa khám phá (1,800–3,500m)",
+        desc_en: "Venture into dangerous dungeons & trial structures (40-block capture radius).",
+        desc_vi: "Đột kích các hầm ngục nguy hiểm (bán kính nhận 40 block).",
+        reward: "1.80x × 1.75x | 228+ XP" },
+      { id: "exp_dun_hard", branch: "EXPLORE_DUNGEON", diff: "HARD", dim: "all", icon: "assets/icons/compass.png",
+        name_en: "Explore Dungeon (Hard)", name_vi: "Khám Phá Dungeon (Khó)",
+        target_en: "Reach unexplored Dungeon (4,200–7,500m)", target_vi: "Đến Dungeon chưa khám phá (4,200–7,500m)",
+        desc_en: "Raid Ancient Cities, Mansions, Monuments, Strongholds, Bastions, End Cities or modded boss dungeons.",
+        desc_vi: "Chinh phục Ancient City, Mansion, Monument, Stronghold, Bastion, End City hoặc dungeon mod.",
+        reward: "5.00x × 1.75x | 560+ XP" },
+
+      // MINING
+      { id: "min_ow_easy", branch: "MINING", diff: "EASY", dim: "overworld", icon: "assets/icons/diamond_pickaxe.png",
+        name_en: "Overworld Mining (Easy)", name_vi: "Đào Quặng Overworld (Dễ)",
+        target_en: "Coal Ore (24–36) • Copper Ore (24–36) • Iron Ore (16–24)", target_vi: "Than (24–36) • Đồng (24–36) • Sắt (16–24)",
+        desc_en: "Mine natural Coal, Copper, or Iron ore blocks underground.",
+        desc_vi: "Đào quặng Than, Đồng hoặc Sắt tự nhiên dưới lòng đất.",
+        reward: "0.50x Daily | 50 XP" },
+      { id: "min_ow_med", branch: "MINING", diff: "MEDIUM", dim: "overworld", icon: "assets/icons/amethyst_shard.png",
+        name_en: "Overworld Mining (Medium)", name_vi: "Đào Quặng Overworld (Trung Bình)",
+        target_en: "Gold (16–24) • Redstone (18–28) • Lapis (16–24) • Amethyst Cluster (8–14) • Sculk (20–32)",
+        target_vi: "Vàng (16–24) • Redstone (18–28) • Lapis (16–24) • Cụm Amethyst (8–14) • Sculk (20–32)",
+        desc_en: "Mine mid-tier Overworld minerals, geodes, or Deep Dark sculk.",
+        desc_vi: "Đào khoáng sản tầm trung, tinh thể Amethyst hoặc khối Sculk.",
+        reward: "1.80x Daily | 130 XP" },
+      { id: "min_ow_hard", branch: "MINING", diff: "HARD", dim: "overworld", icon: "assets/icons/diamond_pickaxe.png",
+        name_en: "Overworld Mining (Hard)", name_vi: "Đào Quặng Overworld (Khó)",
+        target_en: "Diamond Ore (14–20) • Emerald Ore (10–16) • Sculk Catalyst (3–5) • Obsidian (16–24)",
+        target_vi: "Quặng Kim Cương (14–20) • Ngọc Lục Bảo (10–16) • Sculk Catalyst (3–5) • Hắc Diện Thạch (16–24)",
+        desc_en: "High-tier Overworld mining targets.",
+        desc_vi: "Khai thác các khoáng sản quý hiếm bậc cao ở Overworld.",
+        reward: "5.00x Daily | 320 XP" },
+      { id: "min_net_easy", branch: "MINING", diff: "EASY", dim: "nether", icon: "assets/icons/netherite_pickaxe.png",
+        name_en: "Nether Mining (Easy)", name_vi: "Đào Quặng Nether (Dễ)",
+        target_en: "Nether Quartz Ore (20–30) • Nether Gold Ore (20–30)", target_vi: "Thạch Anh Nether (20–30) • Quặng Vàng Nether (20–30)",
+        desc_en: "Unlocks at Adventure Level 15. Includes 1.20x Nether reward multiplier.",
+        desc_vi: "Mở khóa ở Adventure Lv 15. Được nhân thưởng Nether 1.20x.",
+        reward: "0.50x × 1.20x | 60 XP" },
+      { id: "min_net_med", branch: "MINING", diff: "MEDIUM", dim: "nether", icon: "assets/icons/netherite_pickaxe.png",
+        name_en: "Nether Mining (Medium)", name_vi: "Đào Quặng Nether (Trung Bình)",
+        target_en: "Nether Quartz (40–56) • Nether Gold (36–48) • Glowstone (20–32)",
+        target_vi: "Thạch Anh (40–56) • Vàng Nether (36–48) • Đá Phát Sáng (20–32)",
+        desc_en: "Unlocks at Adventure Level 15. Includes 1.20x Nether reward multiplier.",
+        desc_vi: "Mở khóa ở Adventure Lv 15. Được nhân thưởng Nether 1.20x.",
+        reward: "1.80x × 1.20x | 156 XP" },
+      { id: "min_net_hard", branch: "MINING", diff: "HARD", dim: "nether", icon: "assets/icons/netherite_pickaxe.png",
+        name_en: "Nether Mining (Hard — Ancient Debris)", name_vi: "Đào Ancient Debris (Khó)",
+        target_en: "Ancient Debris (4–7)", target_vi: "Mảnh Vỡ Cổ Đại / Ancient Debris (4–7)",
+        desc_en: "Unlocks at Adventure Level 15. Mine Ancient Debris deep in the Nether.",
+        desc_vi: "Mở khóa ở Adventure Lv 15. Khai thác Ancient Debris dưới tầng sâu Nether.",
+        reward: "5.00x × 1.20x | 384 XP" },
+      { id: "min_end", branch: "MINING", diff: "HARD", dim: "end", icon: "assets/icons/dragon_egg.png",
+        name_en: "The End Mining (Easy/Med/Hard)", name_vi: "Đào Khoáng The End (Dễ/TB/Khó)",
+        target_en: "End Stone (48 Easy / 96 Med) • Obsidian (24–32 Hard)", target_vi: "Đá End Stone (48 Dễ / 96 TB) • Obsidian (24–32 Khó)",
+        desc_en: "Unlocks at Adventure Level 30. Includes 1.40x End reward multiplier.",
+        desc_vi: "Mở khóa ở Adventure Lv 30. Được nhân thưởng The End 1.40x.",
+        reward: "1.40x End Mult | 70–448 XP" },
+
+      // LOGGING
+      { id: "log_ow_easy", branch: "LOGGING", diff: "EASY", dim: "overworld", icon: "assets/icons/oak_sapling.png",
+        name_en: "Timber Harvesting (Easy)", name_vi: "Chặt Gỗ Overworld (Dễ)",
+        target_en: "Oak / Birch / Spruce Logs (24–36)", target_vi: "Gỗ Sồi / Bạch Dương / Vân Sam (24–36)",
+        desc_en: "Chop common forest timber in the Overworld.",
+        desc_vi: "Khai thác các loại gỗ phổ thông trong rừng Overworld.",
+        reward: "0.50x Daily | 50 XP" },
+      { id: "log_ow_med", branch: "LOGGING", diff: "MEDIUM", dim: "overworld", icon: "assets/icons/oak_sapling.png",
+        name_en: "Exotic Timber (Medium)", name_vi: "Chặt Gỗ Hiếm (Trung Bình)",
+        target_en: "Dark Oak / Acacia / Jungle / Cherry / Mangrove / Pale Oak (48–64)", target_vi: "Gỗ Sồi Sẫm / Keo / Rừng Nhiệt Đới / Anh Đào / Đước / Pale Oak (48–64)",
+        desc_en: "Harvest specialty logs across diverse Overworld biomes.",
+        desc_vi: "Thu hoạch các loại gỗ đặc trưng từ nhiều quần xã khác nhau.",
+        reward: "1.80x Daily | 130 XP" },
+      { id: "log_net", branch: "LOGGING", diff: "MEDIUM", dim: "nether", icon: "assets/icons/oak_sapling.png",
+        name_en: "Nether Stem Harvesting (Easy/Med)", name_vi: "Chặt Thân Nấm Nether (Dễ/TB)",
+        target_en: "Crimson / Warped Stems (20–30 Easy • 48–64 Med)", target_vi: "Thân Đỏ Thẫm / Dị Biến (20–30 Dễ • 48–64 TB)",
+        desc_en: "Unlocks at Adventure Level 15. Note: Logging never spawns in Hard slots.",
+        desc_vi: "Mở khóa ở Adventure Lv 15. Lưu ý: Nhánh Chặt Gỗ không xuất hiện ở ô Khó.",
+        reward: "1.20x Nether Mult | 60–156 XP" },
+
+      // GATHER_SUBMIT
+      { id: "gat_ow_easy", branch: "GATHER_SUBMIT", diff: "EASY", dim: "overworld", icon: "assets/icons/chest_front.png",
+        name_en: "Overworld Delivery (Easy)", name_vi: "Giao Nộp Overworld (Dễ)",
+        target_en: "Cobblestone / Sand (48–64) • Clay Ball / Moss Block (24–36)", target_vi: "Đá Cuội / Cát (48–64) • Đất Sét / Rêu (24–36)",
+        desc_en: "Gather items and submit via /quest GUI or /quest submit <slot>.",
+        desc_vi: "Thu thập vật phẩm rồi nộp trực tiếp trong /quest hoặc /quest submit <ô>.",
+        reward: "0.50x Daily | 50 XP" },
+      { id: "gat_ow_med", branch: "GATHER_SUBMIT", diff: "MEDIUM", dim: "overworld", icon: "assets/icons/amethyst_shard.png",
+        name_en: "Overworld Delivery (Medium)", name_vi: "Giao Nộp Overworld (Trung Bình)",
+        target_en: "Honey Bottle (8–12) • Slime Ball (12–20) • Amethyst / Prismarine Shard (16–24)", target_vi: "Chai Mật Ong (8–12) • Slime Ball (12–20) • Mảnh Amethyst / Prismarine (16–24)",
+        desc_en: "Gather mid-tier Overworld drops and submit in /quest.",
+        desc_vi: "Thu thập nguyên liệu tầm trung và giao nộp qua /quest.",
+        reward: "1.80x Daily | 130 XP" },
+      { id: "gat_ow_hard", branch: "GATHER_SUBMIT", diff: "HARD", dim: "overworld", icon: "assets/icons/emerald.png",
+        name_en: "Overworld Delivery (Hard)", name_vi: "Giao Nộp Overworld (Khó)",
+        target_en: "Echo Shard (4–8) • Breeze Rod (6–12) • Diamond (8–12) • Phantom Membrane (12–20) • Emerald / Prismarine Crystals (20–32)",
+        target_vi: "Echo Shard (4–8) • Breeze Rod (6–12) • Kim Cương (8–12) • Màng Phantom (12–20) • Ngọc Lục Bảo / Tinh Thể Prismarine (20–32)",
+        desc_en: "High-value Overworld delivery contract.",
+        desc_vi: "Đơn giao nộp tài nguyên giá trị cao ở Overworld.",
+        reward: "5.00x Daily | 320 XP" },
+      { id: "gat_net", branch: "GATHER_SUBMIT", diff: "HARD", dim: "nether", icon: "assets/icons/blaze_powder.png",
+        name_en: "Nether Delivery (Easy/Med/Hard)", name_vi: "Giao Nộp Nether (Dễ/TB/Khó)",
+        target_en: "Easy: Netherrack (48–64) | Med: Magma Cream (12–18), Glowstone/Quartz (24–40) | Hard: Ghast Tear (4–8), Blaze Rod (12–18), Crying Obsidian (16–24)",
+        target_vi: "Dễ: Netherrack (48–64) | TB: Kem Magma (12–18), Glowstone/Thạch Anh (24–40) | Khó: Nước Mắt Ghast (4–8), Que Blaze (12–18), Hắc Diện Thạch Khóc (16–24)",
+        desc_en: "Unlocks at Adventure Level 15. Includes 1.20x Nether multiplier.",
+        desc_vi: "Mở khóa ở Adventure Lv 15. Nhân thưởng Nether 1.20x.",
+        reward: "1.20x Nether Mult | 60–384 XP" },
+      { id: "gat_end", branch: "GATHER_SUBMIT", diff: "HARD", dim: "end", icon: "assets/icons/ender_pearl.png",
+        name_en: "The End Delivery (Easy/Med/Hard)", name_vi: "Giao Nộp The End (Dễ/TB/Khó)",
+        target_en: "Easy: End Stone (32–48) | Med: Chorus Fruit (24–36), Purpur (32–48) | Hard: Shulker Shell (4–8), Ender Pearl (16–24)",
+        target_vi: "Dễ: End Stone (32–48) | TB: Quả Chorus (24–36), Purpur (32–48) | Khó: Vỏ Shulker (4–8), Ngọc Ender (16–24)",
+        desc_en: "Unlocks at Adventure Level 30. Includes 1.40x End multiplier.",
+        desc_vi: "Mở khóa ở Adventure Lv 30. Nhân thưởng The End 1.40x.",
+        reward: "1.40x End Mult | 70–448 XP" },
+
+      // FISHING
+      { id: "fis_ow_easy", branch: "FISHING", diff: "EASY", dim: "overworld", icon: "assets/icons/fishing_rod.png",
+        name_en: "Casual Fishing (Easy)", name_vi: "Câu Cá Thường (Dễ)",
+        target_en: "Reel in 10–14 catches", target_vi: "Câu thành công 10–14 lần",
+        desc_en: "Any fish, treasure, or catch counts toward progress.",
+        desc_vi: "Mọi lần giật cần câu cá, kho báu hoặc sinh vật biển đều được tính.",
+        reward: "0.50x Daily | 50 XP" },
+      { id: "fis_ow_med", branch: "FISHING", diff: "MEDIUM", dim: "overworld", icon: "assets/icons/fishing_rod.png",
+        name_en: "Sea Creature Hunter (Medium)", name_vi: "Săn Thủy Quái Câu Cá (Trung Bình)",
+        target_en: "Slay 4–6 Sea Creatures", target_vi: "Hạ gục 4–6 Thủy Quái (Sea Creatures)",
+        desc_en: "Fish up and defeat Expedition Fishing Sea Creatures.",
+        desc_vi: "Câu lên và tiêu diệt các Thủy Quái trong hệ thống Expedition Fishing.",
+        reward: "1.80x Daily | 130 XP" },
+      { id: "fis_ow_hard", branch: "FISHING", diff: "HARD", dim: "overworld", icon: "assets/icons/fishing_rod.png",
+        name_en: "Rare & Treasure Catcher (Hard)", name_vi: "Câu Kho Báu & Thủy Quái Hiếm (Khó)",
+        target_en: "Fish up 3–4 Treasures or Rare Creatures", target_vi: "Câu được 3–4 Kho Báu hoặc Thủy Quái Hiếm",
+        desc_en: "High-tier Expedition Fishing luck challenge.",
+        desc_vi: "Thử thách câu kho báu hoặc thủy quái hiếm.",
+        reward: "5.00x Daily | 320 XP" },
+      { id: "fis_lava", branch: "FISHING", diff: "HARD", dim: "nether", icon: "assets/icons/blaze_powder.png",
+        name_en: "Nether Lava Fishing (Med/Hard)", name_vi: "Câu Cá Dung Nham Nether (TB/Khó)",
+        target_en: "Catch 8–12 (Med) or 16–22 (Hard) times in Nether Lava", target_vi: "Câu 8–12 (TB) hoặc 16–22 (Khó) lần trong Lava Nether",
+        desc_en: "Requires Adventure Lv 15+ and Fishing Lv 27+.",
+        desc_vi: "Yêu cầu Adventure Lv 15+ và Fishing Lv 27+.",
+        reward: "1.20x Nether Mult | 156–384 XP" },
+      { id: "fis_void", branch: "FISHING", diff: "HARD", dim: "end", icon: "assets/icons/ender_pearl.png",
+        name_en: "The End Void Fishing (Med/Hard)", name_vi: "Câu Cá Hư Không The End (TB/Khó)",
+        target_en: "Catch 8–10 (Med) or 14–20 (Hard) times in The End Void", target_vi: "Câu 8–10 (TB) hoặc 14–20 (Khó) lần tại Void The End",
+        desc_en: "Requires Adventure Lv 30+ and Fishing Lv 35+.",
+        desc_vi: "Yêu cầu Adventure Lv 30+ và Fishing Lv 35+.",
+        reward: "1.40x End Mult | 182–448 XP" },
+
+      // SLAYER
+      { id: "sla_ow_easy", branch: "SLAYER", diff: "EASY", dim: "overworld", icon: "assets/icons/diamond_sword.png",
+        name_en: "Overworld Slayer (Easy)", name_vi: "Săn Quái Overworld (Dễ)",
+        target_en: "Zombie/Skeleton/Spider/Husk/Stray (14–20) • Creeper/Drowned/Cave Spider (10–15) • Slime (8–14)",
+        target_vi: "Zombie/Skeleton/Nhện/Husk/Stray (14–20) • Creeper/Drowned/Cave Spider (10–15) • Slime (8–14)",
+        desc_en: "Hunt common Overworld hostile mobs.",
+        desc_vi: "Tiêu diệt các quái vật phổ thông ở Overworld.",
+        reward: "0.50x Daily | 50 XP" },
+      { id: "sla_ow_med", branch: "SLAYER", diff: "MEDIUM", dim: "overworld", icon: "assets/icons/diamond_sword.png",
+        name_en: "Overworld Slayer (Medium)", name_vi: "Săn Quái Overworld (Trung Bình)",
+        target_en: "Pillager/Bogged/Silverfish (12–18) • Phantom/Guardian (8–12) • Witch (6–10) • Breeze/Zombie Villager (4–6)",
+        target_vi: "Pillager/Bogged/Silverfish (12–18) • Phantom/Guardian (8–12) • Phù Thủy (6–10) • Breeze/Dân Làng Zombie (4–6)",
+        desc_en: "Hunt specialized Overworld mobs and Trial Chamber foes.",
+        desc_vi: "Săn các quái đặc biệt và quái trong Trial Chamber.",
+        reward: "1.80x Daily | 130 XP" },
+      { id: "sla_ow_hard", branch: "SLAYER", diff: "HARD", dim: "overworld", icon: "assets/icons/netherite_sword.png",
+        name_en: "Overworld Elite & Boss Bounty (Hard)", name_vi: "Săn Tinh Anh & Boss Overworld (Khó)",
+        target_en: "Warden (x1 • 1.5x) • Elder Guardian (x1 • 1.5x) • Ravager (2–3) • Evoker (3–5) • Vindicator (10–15)",
+        target_vi: "Warden (x1 • 1.5x) • Elder Guardian (x1 • 1.5x) • Ravager (2–3) • Evoker (3–5) • Vindicator (10–15)",
+        desc_en: "Warden & Elder Guardian bounties grant an extra 1.5x Coin & XP bonus!",
+        desc_vi: "Nhiệm vụ săn Warden & Elder Guardian được nhân thêm 1.5x Coins & XP!",
+        reward: "5.00x (up to 7.50x Boss) | 320–480 XP" },
+      { id: "sla_net", branch: "SLAYER", diff: "HARD", dim: "nether", icon: "assets/icons/nether_star.png",
+        name_en: "Nether Slayer & Wither Bounty (Easy/Med/Hard)", name_vi: "Săn Quái Nether & Wither (Dễ/TB/Khó)",
+        target_en: "Easy: Zombified Piglin (14–20), Magma Cube (10–16) | Med: Blaze/Piglin (12–18), Hoglin (8–14) | Hard: Wither (x1 • 1.5x), Piglin Brute (4–7), Ghast (8–14), Wither Skeleton (16–24)",
+        target_vi: "Dễ: Zombified Piglin (14–20), Magma Cube (10–16) | TB: Blaze/Piglin (12–18), Hoglin (8–14) | Khó: Wither (x1 • 1.5x), Piglin Brute (4–7), Ghast (8–14), Wither Skeleton (16–24)",
+        desc_en: "Unlocks at Adventure Level 15. Wither bounty grants 1.5x extra Coins & XP.",
+        desc_vi: "Mở khóa ở Adventure Lv 15. Săn Wither được nhân thêm 1.5x Coins & XP.",
+        reward: "1.20x Nether (up to 9.0x Wither) | 60–576 XP" },
+      { id: "sla_end", branch: "SLAYER", diff: "HARD", dim: "end", icon: "assets/icons/dragon_egg.png",
+        name_en: "The End Slayer & Dragon Bounty (Easy/Med/Hard)", name_vi: "Săn Quái The End & Ender Dragon (Dễ/TB/Khó)",
+        target_en: "Easy: Enderman (10–15), Endermite (6–10) | Med: Enderman (20–28), Shulker (6–10) | Hard: Ender Dragon (x1 • 1.5x), Shulker (12–18), Enderman (35–50)",
+        target_vi: "Dễ: Enderman (10–15), Endermite (6–10) | TB: Enderman (20–28), Shulker (6–10) | Khó: Ender Dragon (x1 • 1.5x), Shulker (12–18), Enderman (35–50)",
+        desc_en: "Unlocks at Adventure Level 30. Ender Dragon bounty grants 1.5x extra Coins & XP.",
+        desc_vi: "Mở khóa ở Adventure Lv 30. Săn Ender Dragon được nhân thêm 1.5x Coins & XP.",
+        reward: "1.40x End (up to 10.5x Dragon) | 70–672 XP" },
+
+      // ACTION
+      { id: "act_travel_ow", branch: "ACTION", diff: "MEDIUM", dim: "overworld", icon: "assets/icons/ender_pearl.png",
+        name_en: "Boat, Mount & Swim Travel", name_vi: "Di Chuyển Bằng Thuyền, Thú Cưỡi & Bơi",
+        target_en: "Boat: 500m (E) / 1,200m (M) / 2,500m (H) • Mount: 600m (E) / 1,500m (M) / 3,000m (H) • Swim: 300m (E) / 1,000m (M)",
+        target_vi: "Thuyền: 500m (D) / 1,200m (TB) / 2,500m (K) • Thú cưỡi: 600m (D) / 1,500m (TB) / 3,000m (K) • Bơi: 300m (D) / 1,000m (TB)",
+        desc_en: "Tracked via 12-block movement checkpoints.",
+        desc_vi: "Tính tiến độ theo từng mốc di chuyển mỗi 12 block.",
+        reward: "0.50x / 1.80x / 5.00x | 50–320 XP" },
+      { id: "act_strider", branch: "ACTION", diff: "HARD", dim: "nether", icon: "assets/icons/blaze_powder.png",
+        name_en: "Lava Strider Riding (Med/Hard)", name_vi: "Cưỡi Strider Trên Dung Nham (TB/Khó)",
+        target_en: "Ride Strider 700m (Med) or 1,500m (Hard) in The Nether", target_vi: "Cưỡi Strider 700m (TB) hoặc 1,500m (Khó) tại Nether",
+        desc_en: "Unlocks at Adventure Level 15. Includes 1.20x Nether multiplier.",
+        desc_vi: "Mở khóa ở Adventure Lv 15. Nhân thưởng Nether 1.20x.",
+        reward: "1.20x Nether Mult | 156–384 XP" },
+      { id: "act_elytra", branch: "ACTION", diff: "HARD", dim: "end", icon: "assets/icons/nether_star.png",
+        name_en: "Elytra Flight (Med/Hard)", name_vi: "Bay Lượn Bằng Elytra (TB/Khó)",
+        target_en: "Glide 2,500m (Med) or 5,000m (Hard) with Elytra", target_vi: "Lướt Elytra 2,500m (TB) hoặc 5,000m (Khó)",
+        desc_en: "Requires Adventure Level 30 (End Unlock).",
+        desc_vi: "Yêu cầu Adventure Lv 30 (Mở khóa The End).",
+        reward: "1.0x–1.4x Mult | 130–448 XP" },
+      { id: "act_stations", branch: "ACTION", diff: "EASY", dim: "overworld", icon: "assets/icons/enchanted_book.png",
+        name_en: "Crafting, Farming & Villager Actions", name_vi: "Nông Nghiệp, Chế Tạo & Giao Dịch",
+        target_en: "Harvest Crops (24–36 E) • Shear Sheep (8–12 E) • Smelt (16–24 E / 32–48 M) • Enchant (2–3 E / 4–6 M) • Brew (6–9 M) • Anvil (3–6 M) • Villager Trade (5–8 E / 8–12 M)",
+        target_vi: "Thu hoạch nông sản (24–36 D) • Cắt lông cừu (8–12 D) • Nung lò (16–24 D / 32–48 TB) • Phù phép (2–3 D / 4–6 TB) • Pha thuốc (6–9 TB) • Đập đe (3–6 TB) • Trao đổi Dân làng (5–8 D / 8–12 TB)",
+        desc_en: "Complete everyday survival station & farming tasks.",
+        desc_vi: "Thực hiện các thao tác sinh tồn tại bàn phù phép, lò nung, đe, giàn pha thuốc và dân làng.",
+        reward: "0.50x / 1.80x Daily | 50 / 130 XP" }
+    ];
+
+    function esc(s) {
+      return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang === "en" ? "en" : "vi";
+      localStorage.setItem(LANG_KEY, currentLang);
+      applyLang();
+    }
+
+    window.addEventListener("storage", e => {
+      if (e.key === LANG_KEY && e.newValue && e.newValue !== currentLang) {
+        currentLang = e.newValue === "en" ? "en" : "vi";
+        applyLang();
+      }
+    });
+
+    function applyLang() {
+      const vi = currentLang === "vi";
+      document.documentElement.lang = currentLang;
+      document.getElementById("btnLangEn").classList.toggle("active", !vi);
+      document.getElementById("btnLangVi").classList.toggle("active", vi);
+
+      document.getElementById("backHomeBtn").textContent = vi ? "← Quay lại Trang Chủ" : "← Back to Main Page";
+      document.getElementById("heroTitle").textContent = vi ? "Hệ Thống Nhiệm Vụ Ngày (Daily Quests)" : "Daily Quests Encyclopedia";
+      document.getElementById("heroSub").textContent = vi ? "10 Ô / Ngày • 9 Nhánh • Adventure Lv 50 • Co-op" : "10 Slots / Day • 9 Branches • Adventure Lv 50 • Co-op";
+      document.getElementById("heroDesc").textContent = vi
+        ? "Hoàn thành tối đa 10 nhiệm vụ mỗi ngày để tăng cấp Adventure, kiếm Coins theo hệ số chuỗi Daily và nhận thưởng Full 10/10 lên tới 12.0x."
+        : "Complete up to 10 daily quests to level up Adventure Rank, scale Coin payouts with your Daily multiplier, and unlock a 12.0x Full-10 completion bonus.";
+
+      document.getElementById("questSearchInput").placeholder = vi
+        ? "Tìm nhiệm vụ theo tên, quặng, quái, vật phẩm hoặc khu vực..."
+        : "Search quests by name, ore, mob, item, or biome...";
+      document.getElementById("questClickHint").textContent = vi ? "Nhấp vào thẻ nhiệm vụ để xem chi tiết" : "Click any quest card for full details";
+      document.getElementById("otherTitle").textContent = vi ? "Khám Phá Hệ Thống Khác" : "Browse Other Systems";
+
+      const dSel = document.getElementById("diffSelect");
+      dSel.options[0].text = vi ? "Độ khó: Tất cả" : "Difficulty: All";
+      dSel.options[1].text = vi ? "Easy (5 ô/ngày • 0.5x)" : "Easy (5 slots/day • 0.5x)";
+      dSel.options[2].text = vi ? "Medium (3 ô/ngày • 1.8x)" : "Medium (3 slots/day • 1.8x)";
+      dSel.options[3].text = vi ? "Hard (2 ô/ngày • 5.0x)" : "Hard (2 slots/day • 5.0x)";
+
+      const dimSel = document.getElementById("dimSelect");
+      dimSel.options[0].text = vi ? "Chiều không gian: Tất cả" : "Dimension: All";
+      dimSel.options[1].text = "Overworld (1.0x)";
+      dimSel.options[2].text = vi ? "The Nether — Lv 15+ (1.2x)" : "The Nether — Lv 15+ (1.2x)";
+      dimSel.options[3].text = vi ? "The End — Lv 30+ (1.4x)" : "The End — Lv 30+ (1.4x)";
+
+      document.getElementById("brAll").textContent = vi ? "Tất cả (9 nhánh)" : "All (9 Branches)";
+      document.getElementById("brBio").textContent = vi ? "Khám phá Biome" : "Explore Biome";
+      document.getElementById("brStr").textContent = vi ? "Khám phá Công trình" : "Explore Structure";
+      document.getElementById("brDun").textContent = vi ? "Khám phá Dungeon" : "Explore Dungeon";
+      document.getElementById("brMin").textContent = vi ? "Đào Mỏ" : "Mining";
+      document.getElementById("brLog").textContent = vi ? "Chặt Gỗ" : "Logging";
+      document.getElementById("brGat").textContent = vi ? "Giao Nộp Vật Phẩm" : "Gather & Submit";
+      document.getElementById("brFis").textContent = vi ? "Câu Cá" : "Fishing";
+      document.getElementById("brSla").textContent = vi ? "Săn Quái" : "Slayer";
+      document.getElementById("brAct").textContent = vi ? "Hành Động & Di Chuyển" : "Action & Travel";
+
+      renderOverview();
+      renderOtherPills();
+      renderQuests();
+    }
+
+    function renderOverview() {
+      const vi = currentLang === "vi";
+      const cards = [
+        {
+          icon: "assets/icons/writable_book.png",
+          title: vi ? "Cấu Trúc 10 Nhiệm Vụ / Ngày" : "10 Daily Slots & Drafts",
+          items: vi ? [
+            "Mỗi ngày có <strong>5 Easy</strong> (<code>0.50x</code> • <code>50 XP</code>), <strong>3 Medium</strong> (<code>1.80x</code> • <code>130 XP</code>), <strong>2 Hard</strong> (<code>5.00x</code> • <code>320 XP</code>).",
+            "Mỗi ô cho chọn <strong>4</strong> nhiệm vụ ngẫu nhiên + <strong>1</strong> lượt đổi miễn phí (Reroll)/ngày.",
+            "Hoàn thành cả <strong>10/10</strong> nhận thưởng lớn: <code>12.00x</code> Daily Coins + <code>+500 XP</code>!"
+          ] : [
+            "Daily board: <strong>5 Easy</strong> (<code>0.50x</code> • <code>50 XP</code>), <strong>3 Medium</strong> (<code>1.80x</code> • <code>130 XP</code>), <strong>2 Hard</strong> (<code>5.00x</code> • <code>320 XP</code>).",
+            "Each slot offers <strong>4</strong> draft choices + <strong>1</strong> base free reroll per day.",
+            "Completing all <strong>10/10</strong> grants a massive <code>12.00x</code> Daily Coin bonus + <code>+500 XP</code>!"
+          ]
+        },
+        {
+          icon: "assets/icons/nether_star.png",
+          title: vi ? "Cấp Adventure & Mở Khóa" : "Adventure Level & Unlocks",
+          items: vi ? [
+            "Cấp tối đa: <strong>Adventure Lv 50</strong> — tăng <code>+2.5%</code> Quest Coins mỗi cấp (tối đa +125%).",
+            "<strong>Lv 15:</strong> Mở khóa nhiệm vụ <strong>The Nether</strong> (thưởng <code>1.20x</code>).",
+            "<strong>Lv 30:</strong> Mở khóa nhiệm vụ <strong>The End</strong> (thưởng <code>1.40x</code>) và nhiệm vụ <strong>Bay Elytra</strong>."
+          ] : [
+            "Max Level: <strong>Adventure Lv 50</strong> — grants <code>+2.5%</code> Quest Coins per level (up to +125%).",
+            "<strong>Lv 15:</strong> Unlocks <strong>The Nether</strong> quests (<code>1.20x</code> reward multiplier).",
+            "<strong>Lv 30:</strong> Unlocks <strong>The End</strong> quests (<code>1.40x</code> reward multiplier) & <strong>Elytra</strong> quests."
+          ]
+        },
+        {
+          icon: "assets/icons/enchanted_book.png",
+          title: vi ? "4 Phù Phép Bổ Trợ Quest" : "4 Quest Enchantments",
+          items: vi ? [
+            "<strong>Adventurer:</strong> <code>+5%</code> Adventure XP mỗi cấp.",
+            "<strong>Bounty Hunter:</strong> <code>+4%</code> Quest Coins mỗi cấp.",
+            "<strong>Pathfinder:</strong> <code>+8%</code> tốc độ & <code>+16</code> block bán kính nhận mục tiêu mỗi cấp.",
+            "<strong>Contract Master:</strong> <code>+1</code> lựa chọn nhận quest & <code>+1</code> lượt Reroll miễn phí."
+          ] : [
+            "<strong>Adventurer:</strong> <code>+5%</code> Adventure XP per level.",
+            "<strong>Bounty Hunter:</strong> <code>+4%</code> Quest Coins per level.",
+            "<strong>Pathfinder:</strong> <code>+8%</code> movement speed & <code>+16</code> blocks capture radius per level.",
+            "<strong>Contract Master:</strong> <code>+1</code> extra draft choice & <code>+1</code> free daily reroll."
+          ]
+        },
+        {
+          icon: "assets/icons/paper.png",
+          title: vi ? "Lệnh & Chơi Co-op" : "Commands & Co-op Sharing",
+          items: vi ? [
+            "<code>/quest</code> hoặc <code>/q</code> — Mở bảng nhận & nộp nhiệm vụ.",
+            "<code>/quest share &lt;ô&gt;</code> &amp; <code>/quest accept &lt;mã&gt;</code> — Chia sẻ làm chung Co-op với bạn bè.",
+            "<code>/quest track &lt;ô|auto&gt;</code> — Ghim tiến độ lên Sidebar.",
+            "<code>/quest stats</code> &amp; <code>/quest submit &lt;ô&gt;</code> — Xem cấp Adventure &amp; nộp đồ."
+          ] : [
+            "<code>/quest</code> or <code>/q</code> — Open the Quest Draft Board.",
+            "<code>/quest share &lt;slot&gt;</code> &amp; <code>/quest accept &lt;code&gt;</code> — Share quests for Co-op progress.",
+            "<code>/quest track &lt;slot|auto&gt;</code> — Pin quest progress to the Sidebar.",
+            "<code>/quest stats</code> &amp; <code>/quest submit &lt;slot&gt;</code> — Check Adventure stats &amp; deliver items."
+          ]
+        }
+      ];
+      document.getElementById("overviewGrid").innerHTML = cards.map(c => `
+        <div class="info-card">
+          <div class="info-head"><img class="mc-pixel" src="${c.icon}" alt=""/><span>${c.title}</span></div>
+          <ul class="info-list">${c.items.map(i => `<li>${i}</li>`).join("")}</ul>
+        </div>
+      `).join("");
+    }
+
+    function renderOtherPills() {
+      document.getElementById("otherPills").innerHTML = ALL_SYSTEMS.map(s => `
+        <a href="${s.href}" class="other-pill">
+          <img class="mc-pixel" src="${s.icon}" alt=""/>
+          <span>${esc(s.name[currentLang] || s.name.en)}</span>
+        </a>
+      `).join("");
+    }
+
+    function dimLabel(dim, vi) {
+      if (dim === "nether") return vi ? "The Nether (Lv 15+)" : "The Nether (Lv 15+)";
+      if (dim === "end") return vi ? "The End (Lv 30+)" : "The End (Lv 30+)";
+      if (dim === "all") return vi ? "Mọi chiều (theo Lv)" : "All Dimensions (Lv scaled)";
+      return "Overworld";
+    }
+
+    function renderQuests() {
+      const vi = currentLang === "vi";
+      const q = document.getElementById("questSearchInput").value.trim().toLowerCase();
+      document.getElementById("questClearBtn").style.display = q ? "block" : "none";
+      const diff = document.getElementById("diffSelect").value;
+      const dim = document.getElementById("dimSelect").value;
+
+      const list = QUESTS_DATA.filter(it => {
+        if (currentBranch !== "all" && it.branch !== currentBranch) return false;
+        if (diff !== "all" && it.diff !== diff) return false;
+        if (dim !== "all" && it.dim !== dim && it.dim !== "all") return false;
+        if (q) {
+          const hay = [it.branch, it.name_en, it.name_vi, it.target_en, it.target_vi, it.desc_en, it.desc_vi].join(" ").toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      document.getElementById("questResultsCount").textContent = vi
+        ? `Đang hiển thị ${list.length} / ${QUESTS_DATA.length} nhóm nhiệm vụ`
+        : `Showing ${list.length} of ${QUESTS_DATA.length} quest pools`;
+
+      document.getElementById("questsGrid").innerHTML = list.map(it => `
+        <div class="quest-card" onclick="openQuestModal('${it.id}')">
+          <div class="card-top">
+            <div class="q-icon-wrap"><img class="mc-pixel" src="${it.icon}" alt=""/></div>
+            <div style="min-width:0;">
+              <div class="q-title">${esc(vi ? it.name_vi : it.name_en)}</div>
+              <div class="q-sub">${esc(it.branch)}</div>
+            </div>
+          </div>
+          <div class="badge-row">
+            <span class="badge diff-${it.diff}">${it.diff}</span>
+            <span class="badge dim-pill">${esc(dimLabel(it.dim, vi))}</span>
+          </div>
+          <div class="q-desc">${esc(vi ? it.target_vi : it.target_en)}</div>
+          <div class="q-foot">
+            <span class="badge reward-pill">${esc(it.reward)}</span>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function openQuestModal(id) {
+      const it = QUESTS_DATA.find(x => x.id === id);
+      if (!it) return;
+      const vi = currentLang === "vi";
+      document.getElementById("qModalIcon").src = it.icon;
+      document.getElementById("qModalTitle").textContent = vi ? it.name_vi : it.name_en;
+      document.getElementById("qModalBadges").innerHTML = `
+        <span class="badge diff-${it.diff}">${it.diff}</span>
+        <span class="badge dim-pill">${esc(dimLabel(it.dim, vi))}</span>
+        <span class="badge">${esc(it.branch)}</span>
+      `;
+      document.getElementById("qModalBody").innerHTML = `
+        <div class="modal-section">
+          <div class="modal-sec-title"><img class="mc-pixel" src="assets/icons/compass.png" alt=""/> ${vi ? "Mục Tiêu & Số Lượng" : "Targets & Quantities"}</div>
+          <div style="font-size:0.9rem;color:#f8fafc;">${esc(vi ? it.target_vi : it.target_en)}</div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-sec-title"><img class="mc-pixel" src="assets/icons/writable_book.png" alt=""/> ${vi ? "Cơ Chế & Điều Kiện" : "Mechanics & Requirements"}</div>
+          <div style="font-size:0.88rem;color:#cbd5e1;">${esc(vi ? it.desc_vi : it.desc_en)}</div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-sec-title"><img class="mc-pixel" src="assets/icons/emerald.png" alt=""/> ${vi ? "Phần Thưởng Cơ Bản" : "Base Reward Scaling"}</div>
+          <div style="font-size:0.9rem;color:#fde68a;font-weight:700;">${esc(it.reward)}</div>
+        </div>
+      `;
+      document.getElementById("questModal").classList.add("active");
+    }
+
+    function closeQuestModal() {
+      document.getElementById("questModal").classList.remove("active");
+    }
+
+    document.getElementById("questSearchInput").addEventListener("input", renderQuests);
+    document.getElementById("questClearBtn").addEventListener("click", () => {
+      document.getElementById("questSearchInput").value = "";
+      renderQuests();
+    });
+    document.getElementById("diffSelect").addEventListener("change", renderQuests);
+    document.getElementById("dimSelect").addEventListener("change", renderQuests);
+    document.querySelectorAll("#branchChips .chip-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("#branchChips .chip-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentBranch = btn.dataset.branch;
+        renderQuests();
+      });
+    });
+    document.getElementById("questModal").addEventListener("click", e => {
+      if (e.target.id === "questModal") closeQuestModal();
+    });
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") closeQuestModal();
+    });
+
+    applyLang();
+  </script>
+</body>
+</html>

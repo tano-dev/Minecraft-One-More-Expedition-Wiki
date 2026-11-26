@@ -7,6 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/server-icon.png" />
+  <link rel="stylesheet" href="assets/wiki-header.css" />
+  <script src="assets/wiki-lang-sync.js"></script>
   <style>
     :root {
       --card-bg: rgba(18, 24, 36, 0.90);
@@ -208,11 +211,16 @@
       display: grid;
       grid-template-columns: 230px minmax(0, 1fr) 290px;
       gap: 20px;
-      align-items: start;
+      align-items: stretch;
     }
 
     /* LEFT SIDEBAR */
     .left-sidebar { display: flex; flex-direction: column; gap: 14px; }
+    .left-sidebar > *:last-child,
+    .center-column > *:last-child,
+    .right-sidebar > *:last-child {
+      flex: 1;
+    }
 
     .sidebar-brand-box {
       background: var(--card-bg);
@@ -402,14 +410,17 @@
 
     .browse-header-left img { width: 20px; height: 20px; }
 
-    /* 5x3 / Responsive Content Tiles Grid */
+    /* Responsive Content Tiles Flex-Grid (centers last row) */
     .tiles-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 12px;
     }
 
     .content-tile {
+      flex: 0 0 calc((100% - 24px) / 3);
+      min-width: 0;
       background: var(--card-inner);
       border: 1px solid var(--border-card);
       border-radius: 12px;
@@ -485,42 +496,78 @@
       background: var(--card-bg);
       border: 1px solid var(--border-card);
       border-radius: 16px;
-      padding: 20px;
+      padding: 14px 16px;
       backdrop-filter: blur(12px);
     }
 
     .about-title-ribbon {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 12px;
+      gap: 8px;
+      margin-bottom: 6px;
     }
 
-    .about-title-ribbon img { width: 22px; height: 22px; }
-    .about-title-ribbon h2 { font-size: 1.1rem; font-weight: 800; color: #fff; }
+    .about-title-ribbon img { width: 19px; height: 19px; }
+    .about-title-ribbon h2 { font-size: 0.96rem; font-weight: 800; color: #fff; }
 
     .quick-cmd-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 12px;
+      gap: 5px;
+      margin-top: 6px;
     }
 
     .quick-cmd-chip {
       background: var(--card-inner);
       border: 1px solid var(--border-card);
-      border-radius: 10px;
-      padding: 10px 12px;
+      border-radius: 7px;
+      padding: 5px 9px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 10px;
+      gap: 6px;
       cursor: pointer;
+      transition: all 0.15s ease;
+      min-width: 0;
     }
 
-    .quick-cmd-chip:hover { border-color: rgba(56, 189, 248, 0.5); background: var(--card-inner-hover); }
-    .quick-cmd-chip code { color: var(--aqua); font-weight: 800; font-size: 0.84rem; }
-    .quick-cmd-chip span { color: var(--text-muted); font-size: 0.76rem; text-align: right; }
+    .quick-cmd-chip:hover,
+    .quick-cmd-chip.active {
+      border-color: rgba(56, 189, 248, 0.65);
+      background: rgba(56, 189, 248, 0.12);
+    }
+    .quick-cmd-chip code { color: var(--aqua); font-weight: 800; font-size: 0.76rem; flex-shrink: 0; }
+    .quick-cmd-chip span { color: var(--text-muted); font-size: 0.7rem; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    .cmd-detail-box {
+      margin-top: 10px;
+      padding: 10px 12px;
+      background: rgba(13, 18, 28, 0.9);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 10px;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: var(--text-main);
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .cmd-detail-box.active { display: flex; }
+    .cmd-detail-box code { color: var(--aqua); font-weight: 800; font-size: 0.85rem; }
+    .cmd-detail-link {
+      background: rgba(245, 196, 81, 0.14);
+      border: 1px solid rgba(245, 196, 81, 0.4);
+      color: var(--gold-primary);
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: inherit;
+      white-space: nowrap;
+    }
 
     /* RIGHT SIDEBAR */
     .right-sidebar { display: flex; flex-direction: column; gap: 16px; }
@@ -551,23 +598,33 @@
 
     .ip-copy-box {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: stretch;
       gap: 8px;
       background: #0d121c;
       border: 1px solid rgba(74, 222, 128, 0.35);
       border-radius: 10px;
-      padding: 9px 12px;
+      padding: 10px 11px;
       margin-bottom: 10px;
+      overflow: hidden;
     }
 
     .ip-text {
       display: flex;
       align-items: center;
-      gap: 8px;
+      justify-content: center;
+      gap: 7px;
       font-weight: 800;
-      font-size: 0.86rem;
+      font-size: 0.8rem;
       color: #fff;
+      min-width: 0;
+      text-align: center;
+    }
+
+    .ip-text #serverIpDisplay {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      line-height: 1.3;
     }
 
     .status-dot {
@@ -582,15 +639,17 @@
     .status-dot.offline { background: var(--red); box-shadow: 0 0 8px var(--red); }
 
     .copy-ip-btn {
+      width: 100%;
       background: rgba(74, 222, 128, 0.16);
       border: 1px solid rgba(74, 222, 128, 0.4);
       color: var(--green);
-      font-size: 0.72rem;
+      font-size: 0.76rem;
       font-weight: 800;
-      padding: 4px 9px;
-      border-radius: 6px;
+      padding: 6px 10px;
+      border-radius: 7px;
       cursor: pointer;
       font-family: inherit;
+      text-align: center;
     }
 
     .copy-ip-btn:hover { background: rgba(74, 222, 128, 0.28); }
@@ -841,64 +900,279 @@
       cursor: pointer;
     }
 
+    @keyframes langFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
     .color-gold { color: var(--gold-primary) !important; background: rgba(245, 196, 81, 0.14) !important; }
     .color-aqua { color: var(--aqua) !important; background: rgba(56, 189, 248, 0.14) !important; }
     .color-green { color: var(--green) !important; background: rgba(74, 222, 128, 0.14) !important; }
     .color-mythic { color: var(--epic) !important; background: rgba(232, 121, 249, 0.14) !important; }
     .color-special { color: var(--red) !important; background: rgba(248, 113, 113, 0.14) !important; }
 
-    @media (max-width: 1120px) {
-      .main-layout { grid-template-columns: 1fr; }
-      .left-sidebar, .right-sidebar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    @media (max-width: 1280px) {
+      .header-bar { padding: 10px 16px; gap: 10px; }
+      .nav-tab-btn { padding: 5px 10px; font-size: 0.78rem; }
+      .content-tile { flex: 0 0 calc((100% - 12px) / 2); }
     }
 
-    @media (max-width: 720px) {
-      .tiles-grid, .item-subgrid, .quick-cmd-grid, .left-sidebar, .right-sidebar {
+    @media (max-width: 1120px) {
+      .main-layout { grid-template-columns: 1fr; padding: 0 16px; }
+      .center-column { order: 1; }
+      .right-sidebar { order: 2; }
+      .left-sidebar { order: 3; }
+      [data-frame-id="left_menu"] { display: none !important; }
+      .left-sidebar, .right-sidebar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+      .left-sidebar > *:last-child,
+      .center-column > *:last-child,
+      .right-sidebar > *:last-child { flex: initial; }
+      .nav-tabs-pill { width: 100%; justify-content: center; }
+      .header-right-tools { width: 100%; justify-content: space-between; }
+    }
+
+    @media (max-width: 900px) {
+      #mainEditModeBtn, .frame-edit-btn { display: none !important; }
+    }
+
+    @media (max-width: 680px) {
+      .header-bar { padding: 9px 12px; gap: 8px; }
+      .brand-khtn { font-size: 0.88rem; }
+      .nav-tabs-pill {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .nav-tabs-pill::-webkit-scrollbar { display: none; }
+      .nav-tab-btn { flex-shrink: 0; white-space: nowrap; font-size: 0.75rem; padding: 5px 9px; }
+      .main-layout { padding: 0 12px; margin: 14px auto 32px; gap: 12px; }
+      .main-wiki-card, .about-khtn-card { padding: 13px; border-radius: 13px; }
+      .wiki-tab-badge h1 { font-size: 1.04rem; }
+      .wiki-intro-text { font-size: 0.82rem; margin-bottom: 12px; line-height: 1.45; }
+      .sidebar-brand-box { padding: 12px; }
+      .sidebar-brand-box .sidebar-wiki-title { display: none; }
+      .checklist-body { padding: 10px 12px; gap: 6px; font-size: 0.78rem; }
+      .item-subgrid, .quick-cmd-grid, .left-sidebar, .right-sidebar {
         grid-template-columns: 1fr;
       }
-      .search-container { width: 100%; }
+      .content-tile { flex: 0 0 100%; padding: 10px 12px; }
+      .search-container { flex: 1; min-width: 0; width: 100%; }
+      .mc-modal-box { width: 96vw; max-height: 90vh; padding: 14px; }
+    }
+
+    /* WIKI EDITOR MODE */
+    .editor-toggle-btn {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      background: rgba(245, 196, 81, 0.14);
+      border: 1px solid rgba(245, 196, 81, 0.45);
+      color: var(--gold-primary);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .editor-toggle-btn.active {
+      background: var(--gold-primary);
+      color: #111827;
+    }
+    .tile-edit-btn {
+      display: none;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(245, 196, 81, 0.92);
+      color: #111827;
+      border: none;
+      border-radius: 6px;
+      padding: 3px 7px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      cursor: pointer;
+      z-index: 5;
+    }
+    body.edit-mode .tile-edit-btn { display: inline-flex; align-items: center; gap: 3px; }
+    body.edit-mode .content-tile { border-style: dashed; border-color: rgba(245, 196, 81, 0.45); }
+    .tile-edit-actions {
+      display: none;
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      gap: 4px;
+      z-index: 6;
+    }
+    body.edit-mode .tile-edit-actions { display: flex; }
+    .tile-mini-btn {
+      background: rgba(15, 23, 42, 0.92);
+      color: #f5c451;
+      border: 1px solid rgba(245, 196, 81, 0.45);
+      border-radius: 5px;
+      padding: 2px 6px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .tile-mini-btn:hover { background: var(--gold-primary); color: #111827; }
+    .tile-mini-btn.del { color: #f87171; border-color: rgba(248, 113, 113, 0.45); }
+    .tile-mini-btn.del:hover { background: #ef4444; color: #fff; }
+    .frame-edit-btn {
+      display: none;
+      margin-left: auto;
+      background: rgba(245, 196, 81, 0.16);
+      border: 1px solid rgba(245, 196, 81, 0.45);
+      color: var(--gold-primary);
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    body.edit-mode .frame-edit-btn { display: inline-flex; align-items: center; gap: 4px; }
+    body.edit-mode .widget-panel,
+    body.edit-mode .about-khtn-card,
+    body.edit-mode .main-wiki-card,
+    body.edit-mode .accordion-card,
+    body.edit-mode .sidebar-brand-box,
+    body.edit-mode .announcement-box {
+      outline: 1.5px dashed rgba(245, 196, 81, 0.5);
+      resize: both;
+      overflow: auto;
+      position: relative;
+      min-width: 140px;
+      min-height: 60px;
+    }
+    .wireframe-bar {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      background: rgba(15, 23, 42, 0.92);
+      border-bottom: 1px solid rgba(245, 196, 81, 0.35);
+      padding: 4px 8px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: var(--gold-primary);
+      cursor: grab;
+      user-select: none;
+    }
+    body.edit-mode .wireframe-bar { display: flex; }
+    .wireframe-bar .wf-btns { display: flex; gap: 4px; align-items: center; }
+    .wf-size-badge { color: var(--aqua); font-family: monospace; font-size: 0.66rem; }
+    .wf-drop-target { outline: 2px solid #38bdf8 !important; background: rgba(56, 189, 248, 0.08) !important; }
+
+    .editor-dock {
+      display: none;
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1800;
+      background: rgba(13, 18, 28, 0.96);
+      border: 1px solid rgba(245, 196, 81, 0.5);
+      border-radius: 14px;
+      padding: 10px 16px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.7);
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      backdrop-filter: blur(12px);
+    }
+    body.edit-mode .editor-dock { display: flex; }
+    .ed-btn {
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: #1c2538;
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .ed-btn:hover { background: #28354f; }
+    .ed-btn.primary { background: #2563eb; border-color: #3b82f6; }
+    .ed-btn.gold { background: var(--gold-primary); color: #111827; border-color: var(--gold-primary); }
+    .ed-btn.danger { background: rgba(248, 113, 113, 0.16); color: #f87171; border-color: rgba(248, 113, 113, 0.4); }
+
+    .ed-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .ed-field { display: flex; flex-direction: column; gap: 4px; margin-bottom: 10px; }
+    .ed-field label { font-size: 0.74rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase; }
+    .ed-field input, .ed-field textarea, .ed-field select {
+      background: #0b0f17;
+      border: 1px solid #2d3648;
+      border-radius: 8px;
+      padding: 7px 10px;
+      color: #fff;
+      font-size: 0.84rem;
+      font-family: inherit;
+    }
+    .ed-field textarea { min-height: 70px; resize: vertical; }
+    .ed-sub-box {
+      background: #182030;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="minecraft-bg-fixed">
-    <div class="minecraft-bg-overlay"></div>
+  <div class="minecraft-bg-fixed" id="mcBgFixed">
+    <div class="minecraft-bg-overlay" id="mcBgOverlay"></div>
   </div>
 
   <!-- TOP HEADER -->
-  <header class="header-bar">
-    <a href="#" class="brand-group" onclick="resetSearch(); return false;">
-      <img class="brand-cube-icon mc-pixel" src="assets/icons/grass_block_side.png" alt="OME Logo" />
-      <div class="brand-text-stack">
-        <span class="brand-khtn">One More Expedition</span>
-        <span class="brand-wiki">KHTN Server Wiki • 26.3</span>
+  <header class="ome-header">
+    <a href="#" class="ome-brand" onclick="resetSearch(); return false;">
+      <img class="ome-brand-icon" src="assets/server-icon.png" alt="OME Logo" />
+      <div class="ome-brand-text">
+        <span class="ome-brand-title">One More Expedition</span>
+        <span class="ome-brand-sub">KHTN Server Wiki • 26.3</span>
       </div>
     </a>
 
-    <nav class="nav-tabs-pill">
-      <a href="#" class="nav-tab-btn active" data-i18n="navHome">Trang Chủ</a>
-      <a href="enchants.html" class="nav-tab-btn" style="color: #f5c451; border-color: rgba(245, 196, 81, 0.35);">
-        <img class="mc-pixel" src="assets/icons/enchanted_book.png" style="width:16px;height:16px;" alt=""/>
-        <span data-i18n="navEnchants">Bách Khoa Phù Phép (474)</span>
+    <nav class="ome-nav">
+      <a href="main.html" class="ome-nav-btn active" style="border-color: rgba(59, 130, 246, 0.7);">
+        <img src="assets/icons/grass_block_side.png" alt=""/>
+        <span data-i18n="navHome">Trang Chủ</span>
       </a>
-      <a href="fishing.html" class="nav-tab-btn" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35);">
-        <img class="mc-pixel" src="assets/icons/fishing_rod.png" style="width:16px;height:16px;" alt=""/>
-        <span data-i18n="navFishing">Bách Khoa Câu Cá (112)</span>
+      <a href="enchants.html" class="ome-nav-btn" style="color: #f5c451; border-color: rgba(245, 196, 81, 0.45);">
+        <img src="assets/icons/enchanted_book.png" alt=""/>
+        <span data-i18n="navEnchants">Bách Khoa Phù Phép</span>
       </a>
-      <button class="nav-tab-btn" onclick="openCommandsModal()">
-        <img class="mc-pixel" src="assets/icons/paper.png" style="width:16px;height:16px;" alt=""/>
-        <span data-i18n="navCommands">Lệnh Nhanh</span>
-      </button>
+      <a href="fishing.html" class="ome-nav-btn" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.45);">
+        <img src="assets/icons/fishing_rod.png" alt=""/>
+        <span data-i18n="navFishing">Bách Khoa Câu Cá</span>
+      </a>
+      <a href="world.html" class="ome-nav-btn" style="color: #4ade80; border-color: rgba(74, 222, 128, 0.45);">
+        <img src="assets/icons/spyglass.png" alt=""/>
+        <span data-i18n="navWorld">Biomes &amp; Structures</span>
+      </a>
     </nav>
 
-    <div class="header-right-tools">
+    <div class="ome-header-right">
       <div class="search-container">
         <input type="text" id="wikiSearchInput" placeholder="Tìm kiếm wiki, lệnh, tính năng..." autocomplete="off"/>
-        <span style="font-size:0.85rem;">🔍</span>
+        <img class="mc-pixel" src="assets/icons/compass.png" style="width:14px;height:14px;" alt=""/>
       </div>
-      <div class="lang-pill" title="Switch Language / Đổi Ngôn Ngữ">
-        <button class="lang-btn active" id="btnLangVi" onclick="setLanguage('vi')">🇻🇳 VI</button>
-        <button class="lang-btn" id="btnLangEn" onclick="setLanguage('en')">🇬🇧 EN</button>
+      <div class="ome-lang-pill" title="Switch Language / Đổi Ngôn Ngữ">
+        <button class="ome-lang-btn" id="btnLangEn" onclick="setLanguage('en')">🇺🇸 EN</button>
+        <button class="ome-lang-btn active" id="btnLangVi" onclick="setLanguage('vi')">🇻🇳 VI</button>
+        <div id="langPointerHint" onclick="dismissLangHint()" style="display:none;position:absolute;top:calc(100% + 10px);right:0;z-index:1200;cursor:pointer;pointer-events:auto;">
+          <div style="display:flex;flex-direction:column;align-items:flex-end;animation:langFloat 1.8s ease-in-out infinite;">
+            <svg width="46" height="36" viewBox="0 0 46 36" fill="none" style="margin-right:22px;filter:drop-shadow(0 2px 6px rgba(245,196,81,0.55));">
+              <path d="M8 34 C10 18, 22 14, 34 6" stroke="#f5c451" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="4 3"/>
+              <path d="M26 5 L35 5 L33 14" stroke="#f5c451" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div style="background:rgba(15,23,42,0.96);border:1.5px solid #f5c451;color:#fde68a;font-size:0.75rem;font-weight:800;padding:6px 11px;border-radius:10px;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,0.6);">
+              <img class="mc-pixel" src="assets/icons/compass.png" style="width:13px;height:13px;vertical-align:middle;margin-right:3px;" alt=""/> Choose Language / Chọn ngôn ngữ <span style="opacity:0.7;margin-left:4px;">✕</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -907,76 +1181,33 @@
   <main class="main-layout">
 
     <!-- LEFT SIDEBAR -->
-    <aside class="left-sidebar">
-      <div class="sidebar-brand-box">
-        <img class="sidebar-cube-img mc-pixel" src="assets/icons/beacon.png" alt="OME Beacon" />
-        <div class="sidebar-khtn-title">KHTN • OME</div>
-        <div class="sidebar-wiki-title" data-i18n="sidebarSub">Minecraft 26.3 Survival & Skyblock</div>
+    <aside class="left-sidebar" id="col-left" data-col="left">
+      <div class="sidebar-brand-box" data-frame-id="left_brand">
+        <button type="button" class="frame-edit-btn" style="margin-bottom:6px;" onclick="openSidebarBrandEditor()">✏️ Edit</button>
+        <img class="sidebar-cube-img mc-pixel" id="leftBrandImg" src="assets/icons/emerald.png" alt="Support Server" />
+        <div class="sidebar-khtn-title" id="leftBrandTitle" data-i18n="supportTitle">Support &amp; Donate</div>
+        <div class="sidebar-wiki-title" data-i18n="sidebarSub">Help keep One More Expedition online 24/7!</div>
+        <button type="button" onclick="openSupportModal()" style="margin-top:10px;width:100%;background:#f5c451;border:none;color:#111827;font-weight:800;font-size:0.8rem;padding:7px 10px;border-radius:8px;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;justify-content:center;gap:6px;" data-i18n="supportBtn"><img class="mc-pixel" src="assets/icons/emerald.png" style="width:14px;height:14px;" alt=""/> Donate / Support Me</button>
       </div>
 
-      <div class="accordion-card">
-        <div class="accordion-group">
-          <div class="accordion-title" onclick="toggleAccordion(this)">
-            <span data-i18n="accCore">Hệ Thống Cốt Lõi</span>
-            <span>⌵</span>
-          </div>
-          <ul class="accordion-list">
-            <li><a onclick="openCategoryById('skyblock')"><img class="mc-pixel" src="assets/icons/oak_sapling.png" alt=""/> <span data-i18n="linkSkyblock">Skyblock (/is)</span></a></li>
-            <li><a onclick="openCategoryById('rtp')"><img class="mc-pixel" src="assets/icons/compass.png" alt=""/> <span data-i18n="linkRtp">Wilderness (/rtp)</span></a></li>
-            <li><a onclick="openCategoryById('combat')"><img class="mc-pixel" src="assets/icons/netherite_sword.png" alt=""/> <span data-i18n="linkCombat">Combat Log (2m)</span></a></li>
-            <li><a onclick="openCategoryById('stash')"><img class="mc-pixel" src="assets/icons/bundle.png" alt=""/> <span data-i18n="linkStash">Stash & KeepInv</span></a></li>
-          </ul>
+      <div class="accordion-card" data-frame-id="left_menu">
+        <div style="display:flex;justify-content:flex-end;margin-bottom:4px;">
+          <button type="button" class="frame-edit-btn" onclick="openLeftAccordionEditor()">✏️ Edit Menu</button>
         </div>
-
-        <div class="accordion-group">
-          <div class="accordion-title" onclick="toggleAccordion(this)">
-            <span data-i18n="accProgression">Kinh Tế & Tiến Trình</span>
-            <span>⌵</span>
-          </div>
-          <ul class="accordion-list">
-            <li><a onclick="openCategoryById('economy')"><img class="mc-pixel" src="assets/icons/emerald.png" alt=""/> <span data-i18n="linkEconomy">Economy & /shop</span></a></li>
-            <li><a onclick="openCategoryById('prefix')"><img class="mc-pixel" src="assets/icons/name_tag.png" alt=""/> <span data-i18n="linkPrefix">Prefix & /rank</span></a></li>
-            <li><a onclick="openCategoryById('redeem')"><img class="mc-pixel" src="assets/icons/paper.png" alt=""/> <span data-i18n="linkRedeem">Redeem Codes</span></a></li>
-            <li><a onclick="openCategoryById('quests')"><img class="mc-pixel" src="assets/icons/writable_book.png" alt=""/> <span data-i18n="linkQuests">Daily Quests (/q)</span></a></li>
-          </ul>
-        </div>
-
-        <div class="accordion-group">
-          <div class="accordion-title" onclick="toggleAccordion(this)">
-            <span data-i18n="accEncyclopedias">Bách Khoa Chuyên Sâu</span>
-            <span>⌵</span>
-          </div>
-          <ul class="accordion-list">
-            <li><a href="enchants.html"><img class="mc-pixel" src="assets/icons/enchanted_book.png" alt=""/> <span data-i18n="linkEnchants">474 Phù Phép</span></a></li>
-            <li><a href="fishing.html"><img class="mc-pixel" src="assets/icons/fishing_rod.png" alt=""/> <span data-i18n="linkFishing">112 Thủy Quái</span></a></li>
-            <li><a onclick="openCategoryById('bosses')"><img class="mc-pixel" src="assets/icons/dragon_egg.png" alt=""/> <span data-i18n="linkBosses">World Bosses</span></a></li>
-            <li><a onclick="openCategoryById('world')"><img class="mc-pixel" src="assets/icons/spyglass.png" alt=""/> <span data-i18n="linkWorld">Biomes & Dungeons</span></a></li>
-          </ul>
-        </div>
+        <div id="leftAccordionContainer"></div>
       </div>
     </aside>
 
     <!-- CENTER COLUMN -->
-    <section class="center-column">
-      <div class="announcement-box" id="welcomeBanner">
-        <div class="announcement-main">
-          <img class="mc-pixel" src="assets/icons/nether_star.png" style="width:28px;height:28px;" alt=""/>
-          <div>
-            <div class="announcement-headline" data-i18n="bannerTitle">Chào mừng đến với One More Expedition (MC 26.3)!</div>
-            <div class="announcement-caption" data-i18n="bannerSub">
-              Kết nối qua IP <code>mckhtn.redirectme.net</code> • Mở <code>/rank</code> để chỉnh Prefix & <code>/redeem</code> để nhập Code!
-            </div>
-          </div>
-        </div>
-        <button class="banner-dismiss-x" onclick="document.getElementById('welcomeBanner').style.display='none'">✕</button>
-      </div>
-
-      <article class="main-wiki-card">
+    <section class="center-column" id="col-center" data-col="center">
+      <article class="main-wiki-card" data-frame-id="center_tiles">
         <div class="wiki-card-header-container">
           <div class="wiki-tab-badge">
             <h1 data-i18n="mainHeading">Wiki Chính Thức — One More Expedition</h1>
           </div>
-          <span class="wiki-version-pill">Minecraft 26.3 • Fabric SMP + Skyblock</span>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <button type="button" class="frame-edit-btn" onclick="openSiteTextEditor()">✏️ Edit Header</button>
+          </div>
         </div>
 
         <p class="wiki-intro-text" data-i18n="mainIntro">
@@ -988,33 +1219,39 @@
             <img class="mc-pixel" src="assets/icons/netherite_pickaxe.png" alt=""/>
             <span data-i18n="browseTitle">Khám Phá Các Hệ Thống Server</span>
           </div>
-          <span id="tilesMatchCount" style="font-size:0.78rem; color:var(--text-muted);"></span>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <button type="button" class="frame-edit-btn" onclick="openNewCategoryEditor()">➕ Add Tile</button>
+            <span id="tilesMatchCount" style="font-size:0.78rem; color:var(--text-muted);"></span>
+          </div>
         </div>
 
         <div class="tiles-grid" id="contentGrid"></div>
       </article>
 
-      <section class="about-khtn-card">
+      <section class="about-khtn-card" data-frame-id="center_commands">
         <div class="about-title-ribbon">
           <img class="mc-pixel" src="assets/icons/book.png" alt=""/>
           <h2 data-i18n="quickCmdTitle">Lệnh Thường Dùng (Nhấp Để Xem Chi Tiết)</h2>
+          <button type="button" class="frame-edit-btn" onclick="openQuickCommandsEditor()">✏️ Edit Commands</button>
         </div>
         <div class="quick-cmd-grid" id="quickCmdGrid"></div>
+        <div class="cmd-detail-box" id="cmdDetailBox"></div>
       </section>
     </section>
 
     <!-- RIGHT SIDEBAR -->
-    <aside class="right-sidebar">
-      <div class="widget-panel">
+    <aside class="right-sidebar" id="col-right" data-col="right">
+      <div class="widget-panel" data-frame-id="right_status">
         <div class="widget-top-header">
           <img class="mc-pixel" src="assets/icons/emerald.png" alt=""/>
           <span data-i18n="serverStatusTitle">Kết Nối Server</span>
+          <button type="button" class="frame-edit-btn" onclick="openServerWidgetEditor()">✏️ Edit</button>
         </div>
         <div class="status-body">
           <div class="ip-copy-box">
             <div class="ip-text">
               <span class="status-dot" id="serverDot"></span>
-              <span>mckhtn.redirectme.net</span>
+              <span id="serverIpDisplay">mckhtn.redirectme.net:2050</span>
             </div>
             <button class="copy-ip-btn" id="copyIpBtn" onclick="copyServerIp()" data-i18n="copyBtn">Copy IP</button>
           </div>
@@ -1024,23 +1261,13 @@
         </div>
       </div>
 
-      <div class="widget-panel">
+      <div class="widget-panel" data-frame-id="right_checklist">
         <div class="widget-top-header">
           <img class="mc-pixel" src="assets/icons/writable_book.png" alt=""/>
-          <span data-i18n="checklistTitle">Hướng Dẫn Tân Thủ</span>
+          <span data-i18n="checklistTitle">Nội Quy Server</span>
+          <button type="button" class="frame-edit-btn" onclick="openChecklistEditor()">✏️ Edit</button>
         </div>
         <div class="checklist-body" id="newPlayerChecklist"></div>
-      </div>
-
-      <div class="widget-panel">
-        <div class="widget-top-header">
-          <img class="mc-pixel" src="assets/icons/clock.png" alt=""/>
-          <span data-i18n="clockTitle">Đồng Hồ Server</span>
-        </div>
-        <div class="clock-body">
-          <div class="clock-big-digits" id="skyblockClock">--:--</div>
-          <div class="clock-sub-label" data-i18n="clockZone">Múi giờ Việt Nam (UTC+7)</div>
-        </div>
       </div>
     </aside>
   </main>
@@ -1060,7 +1287,7 @@
           </div>
         </div>
         <div class="modal-search-box" id="modalSearchWrapper">
-          <span>🔍</span>
+          <img class="mc-pixel" src="assets/icons/compass.png" style="width:14px;height:14px;" alt=""/>
           <input type="text" id="modalSubSearch" placeholder="Lọc trong mục này..." />
         </div>
       </div>
@@ -1086,45 +1313,78 @@
   <div class="modal-backdrop" id="langModal">
     <div class="lang-modal-box">
       <img class="lang-modal-header-icon mc-pixel" src="assets/icons/enchanted_book.png" alt="Language"/>
-      <div class="lang-modal-title">Chọn Ngôn Ngữ / Choose Language</div>
+      <div class="lang-modal-title">Choose Language / Chọn Ngôn Ngữ</div>
       <div class="lang-modal-sub">One More Expedition Wiki • mckhtn.redirectme.net</div>
 
       <div class="lang-choice-grid">
+        <div class="lang-choice-card" onclick="chooseStartupLanguage('en')">
+          <div class="lang-flag">🇺🇸</div>
+          <div class="lang-name">English (EN)</div>
+          <div class="lang-desc">Full English guides &amp; commands</div>
+        </div>
         <div class="lang-choice-card" onclick="chooseStartupLanguage('vi')">
           <div class="lang-flag">🇻🇳</div>
-          <div class="lang-name">Tiếng Việt</div>
-          <div class="lang-desc">Giao diện & hướng dẫn Tiếng Việt</div>
-        </div>
-        <div class="lang-choice-card" onclick="chooseStartupLanguage('en')">
-          <div class="lang-flag">🇬🇧</div>
-          <div class="lang-name">English</div>
-          <div class="lang-desc">Full English guides & commands</div>
+          <div class="lang-name">Tiếng Việt (VI)</div>
+          <div class="lang-desc">Giao diện &amp; hướng dẫn Tiếng Việt</div>
         </div>
       </div>
 
       <label class="lang-dont-show-label">
         <input type="checkbox" id="langDontShowCheck" />
-        <span>Không hiện lại nữa / Don't show this again</span>
+        <span>Don't show this again / Không hiện lại nữa</span>
       </label>
+    </div>
+  </div>
+
+  <!-- FLOATING EDITOR DOCK -->
+  <div class="editor-dock" id="editorDock">
+    <span style="font-size:0.8rem;font-weight:800;color:var(--gold-primary);">📐 WIREFRAME EDITOR</span>
+    <button class="ed-btn" onclick="openNewCategoryEditor()">➕ Add Tile</button>
+    <button class="ed-btn" onclick="openNewWidgetEditor()">➕ Add Frame</button>
+    <button class="ed-btn" onclick="openLayoutColumnsEditor()">📐 Column Widths</button>
+    <button class="ed-btn" onclick="openQuickCommandsEditor()">⚡ Commands</button>
+    <button class="ed-btn" onclick="openSiteTextEditor()">📝 Banner &amp; Intro</button>
+    <button class="ed-btn" onclick="document.getElementById('importJsonFile').click()">📥 Import JSON</button>
+    <input type="file" id="importJsonFile" accept=".json" style="display:none" onchange="importWikiJson(event)">
+    <button class="ed-btn gold" onclick="exportWikiJson()">💾 Export JSON</button>
+    <button class="ed-btn primary" onclick="copyWikiJson()">📋 Copy JSON</button>
+    <button class="ed-btn danger" onclick="resetCustomEdits()">↺ Reset</button>
+  </div>
+
+  <!-- EDITOR MODAL -->
+  <div class="modal-backdrop" id="editorModal">
+    <div class="mc-modal-box">
+      <span class="modal-close-x" onclick="closeEditorModal()">✕</span>
+      <div class="modal-nav-bar">
+        <h2 id="editorModalTitle" style="font-size:1.1rem;font-weight:800;color:#fff;">Edit Wiki</h2>
+      </div>
+      <div class="modal-scroll-area" id="editorModalBody"></div>
+      <div style="margin-top:12px;display:flex;justify-content:flex-end;gap:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.08);">
+        <button class="ed-btn" onclick="closeEditorModal()">Cancel</button>
+        <button class="ed-btn gold" id="editorSaveBtn">💾 Save Changes</button>
+      </div>
     </div>
   </div>
 
   <script>
     const LANG_KEY = "ome_wiki_lang";
     const DONT_SHOW_KEY = "ome_wiki_lang_dont_show";
-    let currentLang = localStorage.getItem(LANG_KEY) || "vi";
+    let currentLang = localStorage.getItem(LANG_KEY) || "en";
     let currentCategory = null;
     let currentSubItems = [];
 
     const UI_TEXT = {
       vi: {
         navHome: "Trang Chủ",
-        navEnchants: "Bách Khoa Phù Phép (474)",
-        navFishing: "Bách Khoa Câu Cá (112)",
+        navEnchants: "Bách Khoa Phù Phép",
+        navFishing: "Bách Khoa Câu Cá",
+        navWorld: "Biomes & Structures",
         navCommands: "Lệnh Nhanh",
         searchPlaceholder: "Tìm kiếm wiki, lệnh, tính năng...",
         subSearchPlaceholder: "Lọc trong mục này...",
-        sidebarSub: "Minecraft 26.3 Sinh Tồn & Skyblock",
+        sidebarSub: "Giúp duy trì One More Expedition chạy 24/7!",
+        supportTitle: "Ủng Hộ & Donate",
+        supportBtn: "<img class='mc-pixel' src='assets/icons/emerald.png' style='width:14px;height:14px;' alt=''/> Support / Donate Me",
         accCore: "Hệ Thống Cốt Lõi",
         accProgression: "Kinh Tế & Tiến Trình",
         accEncyclopedias: "Bách Khoa Chuyên Sâu",
@@ -1141,38 +1401,44 @@
         linkBosses: "World Bosses",
         linkWorld: "Biomes & Dungeons",
         bannerTitle: "Chào mừng đến với One More Expedition (MC 26.3)!",
-        bannerSub: "Kết nối qua IP <code>mckhtn.redirectme.net</code> • Mở <code>/rank</code> để chỉnh Prefix & <code>/redeem</code> để nhập Code!",
+        bannerSub: "Kết nối qua IP <code>mckhtn.redirectme.net:2050</code> • Mở <code>/rank</code> để chỉnh Prefix & <code>/redeem</code> để nhập Code!",
         mainHeading: "Wiki Chính Thức — One More Expedition",
-        mainIntro: "<strong>One More Expedition</strong> kết hợp sinh tồn thế giới mở (Terralith, Incendium, Stellarity, Dungeons &amp; Taverns) với đảo riêng Skyblock (<code>/is</code>), hệ thống 474 Phù phép, 112 Thủy quái Câu cá, Nhiệm vụ Co-op hàng ngày, Kinh tế EconomyCraft và danh hiệu Prefix Cosmetics.",
+        mainIntro: "<strong>One More Expedition</strong> mở ra một thế giới sinh tồn kỳ thú với muôn vàn vùng đất mới, hầm ngục bí ẩn và những Boss huyền thoại — kết hợp cùng đảo Skyblock riêng (<code>/is</code>), hàng trăm phù phép độc đáo, thủy quái săn bắt, nhiệm vụ Co-op, giao thương tự do và danh hiệu cá nhân.",
         browseTitle: "Khám Phá Các Hệ Thống Server",
         quickCmdTitle: "Lệnh Thường Dùng (Nhấp Để Xem Chi Tiết)",
         serverStatusTitle: "Kết Nối Server",
         copyBtn: "Copy IP",
         copiedBtn: "Đã Copy!",
-        checklistTitle: "Hướng Dẫn Tân Thủ",
+        checklistTitle: "Nội Quy Server",
         clockTitle: "Đồng Hồ Server",
         clockZone: "Múi giờ Việt Nam (UTC+7)",
         btnBack: "← Quay lại",
         btnClose: "Đóng",
         itemsAvail: "mục có sẵn",
         detailPrefix: "Chi tiết: ",
-        featuresTitle: "✨ Chi Tiết & Cơ Chế",
+        featuresTitle: "<img class='mc-pixel' src='assets/icons/nether_star.png' style='width:14px;height:14px;vertical-align:middle;margin-right:4px;' alt=''/> Chi Tiết & Cơ Chế",
         noMatch: "Không tìm thấy mục nào khớp với tìm kiếm.",
         checklist: [
-          "Đăng ký / đăng nhập bằng <code>/register</code> &amp; <code>/login</code> (có Spawn Shield bảo vệ tọa độ).",
-          "Gõ <code>/daily</code> nhận $1,000 mỗi ngày &amp; <code>/quest</code> nhận nhiệm vụ kiếm Coins + XP.",
-          "Gõ <code>/is</code> để về đảo Skyblock an toàn (bật KeepInventory riêng trên đảo).",
-          "Gõ <code>/rtp</code> (3 lần/ngày) để ra thế giới sinh tồn đào mỏ, săn Boss &amp; tìm rương."
+          "<strong>Cấm Hack / Cheat / Exploit:</strong> Không dùng client hack, X-Ray, macro hay lợi dụng bug/dupe.",
+          "<strong>Tôn Trọng Cộng Đồng:</strong> Không xúc phạm, gây gổ, phân biệt đối xử hoặc spam kênh chat.",
+          "<strong>Không Grief / Trộm Đồ:</strong> Tôn trọng đảo Skyblock (<code>/is</code>), công trình và rương đồ người khác.",
+          "<strong>Giao Dịch Công Bằng:</strong> Cấm lừa đảo (scam) khi trao đổi đồ, đấu giá (<code>/ah</code>) hay đặt đơn.",
+          "<strong>Không Lạm Dụng Tài Khoản Phụ:</strong> Cấm dùng nhiều acc để farm <code>/daily</code>, <code>/redeem</code> hoặc nhiệm vụ.",
+          "<strong>Farm Thân Thiện TPS:</strong> Không xây máy farm quá tải entity hay máy gây lag làm giảm hiệu năng server.",
+          "<strong>Báo Lỗi &amp; Góp Ý:</strong> Nếu phát hiện lỗi, gian lận, bug hoặc có góp ý, hãy liên hệ <code>tanokhoi</code> trên Discord."
         ]
       },
       en: {
         navHome: "Main Page",
-        navEnchants: "Enchantments Wiki (474)",
-        navFishing: "Fishing Wiki (112)",
+        navEnchants: "Enchantments Wiki",
+        navFishing: "Fishing Wiki",
+        navWorld: "Biomes & Structures",
         navCommands: "Quick Commands",
         searchPlaceholder: "Search wiki, commands, features...",
         subSearchPlaceholder: "Filter this section...",
-        sidebarSub: "Minecraft 26.3 Survival & Skyblock",
+        sidebarSub: "Help keep One More Expedition online 24/7!",
+        supportTitle: "Support & Donate",
+        supportBtn: "<img class='mc-pixel' src='assets/icons/emerald.png' style='width:14px;height:14px;' alt=''/> Support / Donate Me",
         accCore: "Core Systems",
         accProgression: "Economy & Progression",
         accEncyclopedias: "Full Encyclopedias",
@@ -1189,28 +1455,31 @@
         linkBosses: "World Bosses",
         linkWorld: "Biomes & Dungeons",
         bannerTitle: "Welcome to One More Expedition (MC 26.3)!",
-        bannerSub: "Connect via <code>mckhtn.redirectme.net</code> • Open <code>/rank</code> for Prefixes &amp; <code>/redeem</code> for Promo Codes!",
+        bannerSub: "Connect via <code>mckhtn.redirectme.net:2050</code> • Open <code>/rank</code> for Prefixes &amp; <code>/redeem</code> for Promo Codes!",
         mainHeading: "Official Wiki — One More Expedition",
-        mainIntro: "<strong>One More Expedition</strong> blends open-world survival (Terralith, Incendium, Stellarity, Dungeons &amp; Taverns) with private Skyblock islands (<code>/is</code>), 474 Enchantments, 112 Fishing Sea Creatures, Co-op Daily Quests, EconomyCraft, and Prefix Cosmetics.",
+        mainIntro: "<strong>One More Expedition</strong> invites you into an uncharted survival realm filled with towering biomes, hidden dungeons, and legendary bosses — paired with your own private Skyblock island (<code>/is</code>), hundreds of custom enchantments, rare sea creatures, co-op quests, player-driven trading, and collectible chat prefixes.",
         browseTitle: "Browse Server Systems",
         quickCmdTitle: "Essential Commands (Click For Details)",
         serverStatusTitle: "Server Connection",
         copyBtn: "Copy IP",
         copiedBtn: "Copied!",
-        checklistTitle: "New Player Checklist",
+        checklistTitle: "Server Rules",
         clockTitle: "Server Clock",
         clockZone: "Local Time (UTC+7)",
         btnBack: "← Back",
         btnClose: "Close",
         itemsAvail: "entries available",
         detailPrefix: "Details: ",
-        featuresTitle: "✨ Mechanics & Details",
+        featuresTitle: "<img class='mc-pixel' src='assets/icons/nether_star.png' style='width:14px;height:14px;vertical-align:middle;margin-right:4px;' alt=''/> Mechanics & Details",
         noMatch: "No entries match your search.",
         checklist: [
-          "Secure your account with <code>/register</code> &amp; <code>/login</code> (Spawn Shield hides coordinates until login).",
-          "Run <code>/daily</code> for $1,000 daily &amp; <code>/quest</code> for Coins + Adventure XP.",
-          "Use <code>/is</code> to visit your private Skyblock island (island-wide KeepInventory enabled).",
-          "Use <code>/rtp</code> (3/day) to explore Overworld biomes, Mine Treasures, and Bosses."
+          "<strong>No Cheating / Exploiting:</strong> No hacked clients, X-Ray, auto-clickers, or bug/dupe exploits.",
+          "<strong>Respect Everyone:</strong> No harassment, hate speech, toxicity, or chat/command spam.",
+          "<strong>No Griefing or Stealing:</strong> Respect Skyblock islands (<code>/is</code>), player builds, and storage.",
+          "<strong>Fair Trading:</strong> No scamming in player trades, Auction House (<code>/ah</code>), or buy orders.",
+          "<strong>No Alt-Account Abuse:</strong> Do not use alt accounts to farm <code>/daily</code>, <code>/redeem</code>, or quests.",
+          "<strong>Keep Lag-Free Farms:</strong> Avoid excessive entity cramming or lag machines that hurt server TPS.",
+          "<strong>Bug Reports &amp; Feedback:</strong> If you spot any bugs, exploits, cheaters, or have suggestions, contact <code>tanokhoi</code> on Discord."
         ]
       }
     };
@@ -1220,8 +1489,8 @@
         id: "skyblock",
         icon: "assets/icons/oak_sapling.png",
         badge: { vi: "ĐẢO RIÊNG", en: "ISLAND" },
-        name: { vi: "Skyblock (/is)", en: "Skyblock (/is)" },
-        sub: { vi: "Đảo riêng 256×256, KeepInv & Visit", en: "256×256 Island, KeepInv & Visit" },
+        name: { vi: "Skyblock", en: "Skyblock" },
+        sub: { vi: "Đảo Riêng • /is", en: "Private Island • /is" },
         subItems: [
           {
             icon: "assets/icons/oak_sapling.png",
@@ -1248,41 +1517,183 @@
         ]
       },
       {
-        id: "rtp",
-        icon: "assets/icons/compass.png",
-        badge: { vi: "THÁM HIỂM", en: "EXPLORE" },
-        name: { vi: "Wilderness (/rtp)", en: "Wilderness (/rtp)" },
-        sub: { vi: "3 lượt/ngày • 30 phút hồi", en: "3 uses/day • 30m cooldown" },
+        id: "world",
+        icon: "assets/icons/spyglass.png",
+        badge: { vi: "THẾ GIỚI", en: "WORLD" },
+        name: { vi: "Biomes & Structures", en: "Biomes & Structures" },
+        sub: { vi: "Thế Giới & Dungeon", en: "Worlds & Dungeons" },
         subItems: [
           {
-            icon: "assets/icons/compass.png",
-            badge: "RANDOM TELEPORT",
-            rarity: "color-green",
-            name: { vi: "Giới Hạn & Quy Tắc /rtp", en: "/rtp Limits & Rules" },
-            desc: { vi: "Dịch chuyển ngẫu nhiên tới vùng đất mới tại Overworld để đào khoáng sản, tìm cấu trúc và săn boss.", en: "Randomly teleport to unexplored Overworld terrain for mining, looting structures, and hunting." },
+            icon: "assets/icons/spyglass.png",
+            badge: "WORLD GENERATION",
+            rarity: "color-aqua",
+            name: { vi: "Overworld, Nether & The End Mở Rộng", en: "Overworld, Nether & End Overhauls" },
+            desc: { vi: "Thế giới được tạo mới hoàn toàn với Tectonic + Terralith (Overworld), Incendium (Nether), Nullscape + Stellarity (The End) cùng hàng chục cấu trúc dungeon.", en: "Overhauled worldgen featuring Tectonic + Terralith (Overworld), Incendium (Nether), Nullscape + Stellarity (The End), and dozens of dungeon packs." },
             features: {
-              vi: ["Giới hạn 3 lần sử dụng mỗi ngày (tính cả /rtp back)", "Thời gian hồi chiêu: 30 phút giữa các lần dùng", "Chỉ hoạt động ở Overworld (bị chặn tại Nether & The End)", "Bị khóa khi đang trong trạng thái Combat Log"],
-              en: ["Limited to 3 uses per day (including /rtp back)", "30-minute cooldown between uses", "Overworld only (blocked in Nether & The End)", "Blocked while in Combat Log"]
+              vi: ["Dungeons & Taverns + DnT Overhaul toàn bộ công trình Vanilla", "Yggdrasil, Moog's Structures, Structory, Explorify, Tidal Towns", "More Mobs & Mine Treasure làm phong phú hành trình khám phá"],
+              en: ["Dungeons & Taverns + full Vanilla structure overhauls", "Yggdrasil, Moog's Structures, Structory, Explorify, Tidal Towns", "More Mobs & Mine Treasure for deeper exploration"]
             }
           }
         ]
       },
       {
-        id: "combat",
-        icon: "assets/icons/netherite_sword.png",
-        badge: { vi: "CHỐNG THOÁT", en: "COMBAT LOG" },
-        name: { vi: "Combat & PvP", en: "Combat & PvP" },
-        sub: { vi: "Combat Log 2 phút (PvP & PvE)", en: "2-Min Combat Log (PvP & PvE)" },
+        id: "adventure",
+        icon: "assets/icons/compass.png",
+        badge: { vi: "PHIÊU LƯU", en: "ADVENTURE" },
+        name: { vi: "Adventure", en: "Adventure" },
+        sub: { vi: "Phiêu Lưu • Combat Log", en: "Explore • Combat Log" },
         subItems: [
           {
+            icon: "assets/icons/compass.png",
+            badge: "WILDERNESS EXPLORATION",
+            rarity: "color-green",
+            name: { vi: "Thám Hiểm Thế Giới & /rtp", en: "World Exploration & /rtp" },
+            desc: { vi: "Sử dụng /rtp để dịch chuyển ngẫu nhiên ra vùng đất mới tại Overworld (3 lần/ngày, hồi 30 phút) để săn Boss, loot Dungeon và khai thác tài nguyên.", en: "Use /rtp to randomly teleport into unexplored Overworld terrain (3 uses/day, 30m cooldown) to hunt bosses, loot dungeons, and gather resources." },
+            features: {
+              vi: ["Thế giới mở với Terralith, Incendium, Nullscape & Dungeons", "3 lượt /rtp mỗi ngày (30 phút hồi chiêu, chỉ dùng ở Overworld)"],
+              en: ["Overhauled worlds with Terralith, Incendium, Nullscape & Dungeons", "3 /rtp uses per day (30m cooldown, Overworld only)"]
+            }
+          },
+          {
             icon: "assets/icons/netherite_sword.png",
-            badge: "2 MIN TIMER",
+            badge: "2 MIN COMBAT LOG",
             rarity: "color-special",
             name: { vi: "Cơ Chế Combat Log 2 Phút", en: "2-Minute Combat Log Mechanic" },
-            desc: { vi: "Khi bạn đánh quái/người chơi hoặc bị quái/người chơi tấn công, trạng thái Combat sẽ kích hoạt trong 120 giây và hiển thị trực tiếp trên Sidebar.", en: "Hitting or taking damage from any mob or player activates a 120-second Combat Log timer shown live on your Sidebar." },
+            desc: { vi: "Khi giao tranh với quái hoặc người chơi, trạng thái Combat sẽ kích hoạt trong 120 giây và hiển thị trực tiếp trên Sidebar.", en: "Hitting or taking damage from any mob or player activates a 120-second Combat Log timer shown live on your Sidebar." },
             features: {
-              vi: ["Khóa lệnh thoát hiểm: /rtp, /is, /is home, /visit", "Hiển thị đếm ngược ⚔ Xs ngay trên Sidebar", "Trở về ✦ Safe sau 2 phút không giao tranh", "PvP bị tắt hoàn toàn bên trong thế giới Skyblock"],
-              en: ["Blocks escape commands: /rtp, /is, /is home, /visit", "Displays live ⚔ Xs countdown on Sidebar", "Returns to ✦ Safe after 2 minutes out of combat", "PvP is strictly disabled inside Skyblock"]
+              vi: ["Khóa lệnh thoát hiểm: /rtp, /is, /is home, /visit", "Hiển thị đếm ngược ⚔ Xs ngay trên Sidebar • Trở về ✦ Safe sau 2 phút", "PvP bị tắt hoàn toàn bên trong thế giới Skyblock"],
+              en: ["Blocks escape commands: /rtp, /is, /is home, /visit", "Displays live ⚔ Xs countdown on Sidebar • Returns to ✦ Safe after 2m", "PvP is strictly disabled inside Skyblock"]
+            }
+          }
+        ]
+      },
+      {
+        id: "enchants",
+        icon: "assets/icons/enchanted_book.png",
+        badge: { vi: "PHÙ PHÉP", en: "ENCHANTS" },
+        name: { vi: "Enchantments", en: "Enchantments" },
+        sub: { vi: "Phù Phép Mở Rộng", en: "Custom Enchants" },
+        subItems: [
+          {
+            icon: "assets/icons/enchanted_book.png",
+            badge: "MASTER DATABASE",
+            rarity: "color-gold",
+            name: { vi: "Mở Bách Khoa Phù Phép (enchants.html)", en: "Open Enchantments Wiki (enchants.html)" },
+            desc: { vi: "Tra cứu toàn bộ 474 phù phép (Ultimate, Epic, Rare, Common, Curses) cùng 7 phù phép Đào Mỏ độc quyền, VeinMiner, Auto-Smelt và Steed Velocity.", en: "Browse all 474 enchantments (Ultimate, Epic, Rare, Common, Curses) plus 7 custom Mining Enchants, VeinMiner, Auto-Smelt, and Steed Velocity." },
+            features: {
+              vi: ["7 Mining Enchants: Divan's Efficiency, Amethyst's Blessing, Lapis's Blessing, Gleaming Chest, Coal's Blessing, Luck of the Mine, Dedicated Miner", "Đổi tên rõ ràng: Auto-Smelt (từ Pyrolysis) & Steed Velocity (từ Mounted Velocity)", "<a href='enchants.html' style='color:#f5c451;font-weight:800;text-decoration:underline;'>Nhấp vào đây để mở Bách Khoa Phù Phép →</a>"],
+              en: ["7 Mining Enchants: Divan's Efficiency, Amethyst's Blessing, Lapis's Blessing, Gleaming Chest, Coal's Blessing, Luck of the Mine, Dedicated Miner", "Renamed for clarity: Auto-Smelt & Steed Velocity", "<a href='enchants.html' style='color:#f5c451;font-weight:800;text-decoration:underline;'>Click here to open Enchantments Wiki →</a>"]
+            }
+          }
+        ]
+      },
+      {
+        id: "fishing",
+        icon: "assets/icons/fishing_rod.png",
+        badge: { vi: "CÂU CÁ", en: "FISHING" },
+        name: { vi: "Fishing", en: "Fishing" },
+        sub: { vi: "Thủy Quái • Cần Câu", en: "Mobs • Rods • Events" },
+        subItems: [
+          {
+            icon: "assets/icons/fishing_rod.png",
+            badge: "EXPEDITION FISHING",
+            rarity: "color-aqua",
+            name: { vi: "Mở Bách Khoa Câu Cá (fishing.html)", en: "Open Fishing Encyclopedia (fishing.html)" },
+            desc: { vi: "Hệ thống Expedition Fishing Lv.1–50 xuyên suốt Overworld, Nether Lava và End Void với 112 Thủy Quái/Boss, 147 trang bị, 23 Cổ Vật và 43 phù phép câu cá.", en: "Expedition Fishing Lv.1–50 across Overworld, Nether Lava, and End Void with 112 Sea Creatures/Bosses, 147 gear items, 23 Artifacts, and 43 fishing enchants." },
+            features: {
+              vi: ["/fish — Mở Fishing Hub chính", "/fish bag — Mở túi 9 ô đựng Cổ Vật (Artifacts)", "/fish recipe | /fish stats | /fish chances", "<a href='fishing.html' style='color:#38bdf8;font-weight:800;text-decoration:underline;'>Nhấp vào đây để mở Bách Khoa Câu Cá →</a>"],
+              en: ["/fish — Open main Fishing Hub", "/fish bag — Open 9-slot Artifact Bag", "/fish recipe | /fish stats | /fish chances", "<a href='fishing.html' style='color:#38bdf8;font-weight:800;text-decoration:underline;'>Click here to open Fishing Wiki →</a>"]
+            }
+          }
+        ]
+      },
+      {
+        id: "minetreasure",
+        icon: "assets/icons/netherite_pickaxe.png",
+        badge: { vi: "ĐÀO MỎ", en: "MINING" },
+        name: { vi: "Mine Treasure", en: "Mine Treasure" },
+        sub: { vi: "Kho Báu • 4 Charms", en: "Chests • 4 Charms" },
+        subItems: [
+          {
+            icon: "assets/icons/netherite_pickaxe.png",
+            badge: "MINE TREASURE",
+            rarity: "color-gold",
+            name: { vi: "Kho Báu Đào Mỏ & Charms", en: "Mine Treasures & Charms" },
+            desc: { vi: "Khi đào đá và quặng dưới lòng đất, bạn có cơ hội phát hiện rương kho báu (Common, Rare, Epic, Legendary) cùng 4 loại Charm tăng tỉ lệ rơi.", en: "Mining stone and ores can unearth Common, Rare, Epic, or Legendary Treasure Chests, boosted by 4 Charm tiers." },
+            features: {
+              vi: ["4 loại Charm: Common, Rare, Epic, Legendary (mua trong /shop → Extras hoặc rớt khi đào với Dedicated Miner)", "Charms được giữ nguyên khi chết trong NiceKeepInventory", "/trigger mt_stats — Xem thống kê kho báu đã đào"],
+              en: ["4 Charm tiers: Common, Rare, Epic, Legendary (available in /shop → Extras or dropped via Dedicated Miner)", "Charms are kept on death by NiceKeepInventory", "/trigger mt_stats — View your Mine Treasure stats"]
+            }
+          }
+        ]
+      },
+      {
+        id: "bosses",
+        icon: "assets/icons/dragonblade.png",
+        badge: { vi: "BOSS & ĐỒ HIẾM", en: "BOSSES & LOOT" },
+        name: { vi: "Custom Items / Bosses", en: "Custom Items / Bosses" },
+        sub: { vi: "Items • Bosses", en: "Items • Bosses" },
+        subItems: [
+          {
+            icon: "assets/icons/dragon_egg.png",
+            badge: "END BOSS",
+            rarity: "color-mythic",
+            name: { vi: "Ender Dragon (True Ending) & Empress of Light", en: "Ender Dragon & Empress of Light" },
+            desc: { vi: "Ender Dragon được nâng cấp nhiều pha chiến đấu, thưởng sách phù phép cấp Rồng và vật phẩm độc quyền Crystal Heartfish. Empress of Light (Stellarity) rớt đồ cá nhân thẳng vào túi / /stash.", en: "Multi-phase Ender Dragon dropping Dragon-tier enchant books and the exclusive Crystal Heartfish. Empress of Light (Stellarity) grants personal loot straight to inventory / /stash." },
+            features: {
+              vi: ["Crystal Heartfish: độc quyền từ Ender Dragon", "Sách Dragon-tier & loot cá nhân theo sát thương đóng góp"],
+              en: ["Crystal Heartfish: Ender Dragon exclusive drop", "Personal loot & Dragon-tier books scaled by damage contribution"]
+            }
+          },
+          {
+            icon: "assets/icons/nether_star.png",
+            badge: "WITHER & INFERNO",
+            rarity: "color-special",
+            name: { vi: "Witherswrath & Hovering Inferno", en: "Witherswrath & Hovering Inferno" },
+            desc: { vi: "Wither nâng cấp (đảm bảo 1x Nether Star + tỉ lệ Warping Witherblade 12%) và Hovering Inferno từ Incendium với AI chiến đấu mới.", en: "Enhanced Wither (guaranteed 1x Nether Star + 12% Warping Witherblade) and Incendium's Hovering Inferno with custom AI." },
+            features: {
+              vi: ["Loot Boss được trao cá nhân + tự vào /stash nếu đầy túi", "Không rơi ra đất gây lag hay bị cướp đồ"],
+              en: ["Personal boss loot routed to inventory / /stash", "No ground drops to prevent lag or loot stealing"]
+            }
+          }
+        ]
+      },
+      {
+        id: "warping",
+        icon: "assets/icons/ender_pearl.png",
+        badge: { vi: "DỊCH CHUYỂN", en: "TELEPORTS" },
+        name: { vi: "Teleports", en: "Teleports" },
+        sub: { vi: "Waypoints", en: "Waypoints" },
+        subItems: [
+          {
+            icon: "assets/icons/ender_pearl.png",
+            badge: "WAYPOINTS",
+            rarity: "color-mythic",
+            name: { vi: "Hệ Thống Waypoints & Dịch Chuyển", en: "Waypoint Hubs & Teleports" },
+            desc: { vi: "Đặt các trụ Waypoint Hub công khai hoặc riêng tư (47 biến thể vật liệu) để dịch chuyển giữa các căn cứ, kết hợp lệnh đảo /is, /is home, /visit.", en: "Place public or private Waypoint Hubs (47 material variants) to teleport between bases, alongside /is, /is home, and /visit." },
+            features: {
+              vi: ["Chuột phải vào đầu nổi của Waypoint Hub để mở menu chọn điểm đến", "Hỗ trợ khóa riêng tư (Waypoint Lock) & đổi tên/màu bằng Name Tag/Dye"],
+              en: ["Right-click the floating head of a Waypoint Hub to open the teleport menu", "Supports privacy locks (Waypoint Lock) & custom names/colors"]
+            }
+          }
+        ]
+      },
+      {
+        id: "quests",
+        icon: "assets/icons/writable_book.png",
+        badge: { vi: "NHIỆM VỤ", en: "QUESTS" },
+        name: { vi: "Daily Quests", en: "Daily Quests" },
+        sub: { vi: "Nhiệm Vụ • Co-op", en: "Quests • Streaks • Co-op" },
+        subItems: [
+          {
+            icon: "assets/icons/writable_book.png",
+            badge: "PROGRESSION",
+            rarity: "color-gold",
+            name: { vi: "Hệ Thống Nhiệm Vụ (/quest, /q)", en: "Daily Quests (/quest, /q)" },
+            desc: { vi: "Hoàn thành tối đa 10 nhiệm vụ mỗi ngày để tăng Adventure Level, kiếm Coins và tích lũy chuỗi thưởng lên đến 12.0x.", en: "Complete up to 10 quests daily to level up Adventure Rank, earn Coins, and build up to a 12.0x streak multiplier." },
+            features: {
+              vi: ["/quest hoặc /q — Mở bảng nhận nhiệm vụ", "/quest share & /quest accept — Làm nhiệm vụ Co-op cùng bạn bè", "/quest stats — Xem cấp Adventure & thống kê", "Tương thích 3 phù phép Quest: Adventurer, Bounty Hunter, Contract Master"],
+              en: ["/quest or /q — Open Quest Draft UI", "/quest share & /quest accept — Co-op quests with friends", "/quest stats — Check Adventure Level & stats", "Boosted by 3 Quest enchants: Adventurer, Bounty Hunter, Contract Master"]
             }
           }
         ]
@@ -1291,8 +1702,8 @@
         id: "economy",
         icon: "assets/icons/emerald.png",
         badge: { vi: "KINH TẾ", en: "ECONOMY" },
-        name: { vi: "Economy & /shop", en: "Economy & /shop" },
-        sub: { vi: "/daily, /shop, /ah, Extras", en: "/daily, /shop, /ah, Extras" },
+        name: { vi: "Economy", en: "Economy" },
+        sub: { vi: "/shop • /ah • /orders", en: "/shop • /ah • /orders" },
         subItems: [
           {
             icon: "assets/icons/emerald.png",
@@ -1310,9 +1721,9 @@
       {
         id: "prefix",
         icon: "assets/icons/name_tag.png",
-        badge: { vi: "MỚI", en: "NEW" },
-        name: { vi: "Prefix & /rank", en: "Prefix & /rank" },
-        sub: { vi: "192 Biểu Tượng • Slot Machine", en: "192 Emblems • Slot Machine" },
+        badge: { vi: "DANH HIỆU", en: "COSMETICS" },
+        name: { vi: "Rank / Prefix", en: "Rank / Prefix" },
+        sub: { vi: "Danh Hiệu • /rank", en: "Emblems • /rank" },
         subItems: [
           {
             icon: "assets/icons/name_tag.png",
@@ -1342,8 +1753,8 @@
         id: "redeem",
         icon: "assets/icons/paper.png",
         badge: { vi: "GIFTCODE", en: "CODES" },
-        name: { vi: "Redeem Codes", en: "Redeem Codes" },
-        sub: { vi: "/redeem <code> & /code <code>", en: "/redeem <code> & /code <code>" },
+        name: { vi: "Codes", en: "Codes" },
+        sub: { vi: "/redeem • /code", en: "/redeem • /code" },
         subItems: [
           {
             icon: "assets/icons/paper.png",
@@ -1359,193 +1770,11 @@
         ]
       },
       {
-        id: "quests",
-        icon: "assets/icons/writable_book.png",
-        badge: { vi: "NHIỆM VỤ", en: "QUESTS" },
-        name: { vi: "Daily Quests (/q)", en: "Daily Quests (/q)" },
-        sub: { vi: "10 Quest/ngày • Chuỗi 12.0x • Co-op", en: "10/day • 12.0x Streak • Co-op" },
-        subItems: [
-          {
-            icon: "assets/icons/writable_book.png",
-            badge: "PROGRESSION",
-            rarity: "color-gold",
-            name: { vi: "Hệ Thống Nhiệm Vụ (/quest, /q)", en: "Daily Quests (/quest, /q)" },
-            desc: { vi: "Hoàn thành tối đa 10 nhiệm vụ mỗi ngày để tăng Adventure Level, kiếm Coins và tích lũy chuỗi thưởng lên đến 12.0x.", en: "Complete up to 10 quests daily to level up Adventure Rank, earn Coins, and build up to a 12.0x streak multiplier." },
-            features: {
-              vi: ["/quest hoặc /q — Mở bảng nhận nhiệm vụ", "/quest share & /quest accept — Làm nhiệm vụ Co-op cùng bạn bè", "/quest stats — Xem cấp Adventure & thống kê", "Tương thích 3 phù phép Quest: Adventurer, Bounty Hunter, Contract Master"],
-              en: ["/quest or /q — Open Quest Draft UI", "/quest share & /quest accept — Co-op quests with friends", "/quest stats — Check Adventure Level & stats", "Boosted by 3 Quest enchants: Adventurer, Bounty Hunter, Contract Master"]
-            }
-          }
-        ]
-      },
-      {
-        id: "fishing",
-        icon: "assets/icons/fishing_rod.png",
-        badge: { vi: "FULL WIKI", en: "FULL WIKI" },
-        name: { vi: "Fishing Wiki", en: "Fishing Wiki" },
-        sub: { vi: "112 Thủy Quái • 43 Phù Phép", en: "112 Sea Creatures • 43 Enchants" },
-        subItems: [
-          {
-            icon: "assets/icons/fishing_rod.png",
-            badge: "EXPEDITION FISHING",
-            rarity: "color-aqua",
-            name: { vi: "Mở Bách Khoa Câu Cá (fishing.html)", en: "Open Fishing Encyclopedia (fishing.html)" },
-            desc: { vi: "Hệ thống Expedition Fishing Lv.1–50 xuyên suốt Overworld, Nether Lava và End Void với 112 Thủy Quái/Boss, 147 trang bị, 23 Cổ Vật và 43 phù phép câu cá.", en: "Expedition Fishing Lv.1–50 across Overworld, Nether Lava, and End Void with 112 Sea Creatures/Bosses, 147 gear items, 23 Artifacts, and 43 fishing enchants." },
-            features: {
-              vi: ["/fish — Mở Fishing Hub chính", "/fish bag — Mở túi 9 ô đựng Cổ Vật (Artifacts)", "/fish recipe | /fish stats | /fish chances", "<a href='fishing.html' style='color:#38bdf8;font-weight:800;text-decoration:underline;'>Nhấp vào đây để mở Bách Khoa Câu Cá →</a>"],
-              en: ["/fish — Open main Fishing Hub", "/fish bag — Open 9-slot Artifact Bag", "/fish recipe | /fish stats | /fish chances", "<a href='fishing.html' style='color:#38bdf8;font-weight:800;text-decoration:underline;'>Click here to open Fishing Wiki →</a>"]
-            }
-          }
-        ]
-      },
-      {
-        id: "enchants",
-        icon: "assets/icons/enchanted_book.png",
-        badge: { vi: "474 ENCHANTS", en: "474 ENCHANTS" },
-        name: { vi: "Enchantments Wiki", en: "Enchantments Wiki" },
-        sub: { vi: "474 Phù Phép • Auto-Smelt • Mining", en: "474 Enchants • Auto-Smelt • Mining" },
-        subItems: [
-          {
-            icon: "assets/icons/enchanted_book.png",
-            badge: "MASTER DATABASE",
-            rarity: "color-gold",
-            name: { vi: "Mở Bách Khoa Phù Phép (enchants.html)", en: "Open Enchantments Wiki (enchants.html)" },
-            desc: { vi: "Tra cứu toàn bộ 474 phù phép (Ultimate, Epic, Rare, Common, Curses) cùng 7 phù phép Đào Mỏ độc quyền, VeinMiner, Auto-Smelt và Steed Velocity.", en: "Browse all 474 enchantments (Ultimate, Epic, Rare, Common, Curses) plus 7 custom Mining Enchants, VeinMiner, Auto-Smelt, and Steed Velocity." },
-            features: {
-              vi: ["7 Mining Enchants: Divan's Efficiency, Amethyst's Blessing, Lapis's Blessing, Gleaming Chest, Coal's Blessing, Luck of the Mine, Dedicated Miner", "Đổi tên rõ ràng: Auto-Smelt (từ Pyrolysis) & Steed Velocity (từ Mounted Velocity)", "<a href='enchants.html' style='color:#f5c451;font-weight:800;text-decoration:underline;'>Nhấp vào đây để mở Bách Khoa Phù Phép →</a>"],
-              en: ["7 Mining Enchants: Divan's Efficiency, Amethyst's Blessing, Lapis's Blessing, Gleaming Chest, Coal's Blessing, Luck of the Mine, Dedicated Miner", "Renamed for clarity: Auto-Smelt & Steed Velocity", "<a href='enchants.html' style='color:#f5c451;font-weight:800;text-decoration:underline;'>Click here to open Enchantments Wiki →</a>"]
-            }
-          }
-        ]
-      },
-      {
-        id: "minetreasure",
-        icon: "assets/icons/netherite_pickaxe.png",
-        badge: { vi: "ĐÀO MỎ", en: "MINING" },
-        name: { vi: "Mine Treasure & Charms", en: "Mine Treasure & Charms" },
-        sub: { vi: "Rương Kho Báu & 4 Charms", en: "Treasure Chests & 4 Charms" },
-        subItems: [
-          {
-            icon: "assets/icons/netherite_pickaxe.png",
-            badge: "MINE TREASURE",
-            rarity: "color-gold",
-            name: { vi: "Kho Báu Đào Mỏ & Charms", en: "Mine Treasures & Charms" },
-            desc: { vi: "Khi đào đá và quặng dưới lòng đất, bạn có cơ hội phát hiện rương kho báu (Common, Rare, Epic, Legendary) cùng 4 loại Charm tăng tỉ lệ rơi.", en: "Mining stone and ores can unearth Common, Rare, Epic, or Legendary Treasure Chests, boosted by 4 Charm tiers." },
-            features: {
-              vi: ["4 loại Charm: Common, Rare, Epic, Legendary (mua trong /shop → Extras hoặc rớt khi đào với Dedicated Miner)", "Charms được giữ nguyên khi chết trong NiceKeepInventory", "/trigger mt_stats — Xem thống kê kho báu đã đào"],
-              en: ["4 Charm tiers: Common, Rare, Epic, Legendary (available in /shop → Extras or dropped via Dedicated Miner)", "Charms are kept on death by NiceKeepInventory", "/trigger mt_stats — View your Mine Treasure stats"]
-            }
-          }
-        ]
-      },
-      {
-        id: "stash",
-        icon: "assets/icons/bundle.png",
-        badge: { vi: "BẢO VỆ ĐỒ", en: "STORAGE" },
-        name: { vi: "Stash & KeepInv", en: "Stash & KeepInv" },
-        sub: { vi: "/stash • NiceKeepInventory", en: "/stash • NiceKeepInventory" },
-        subItems: [
-          {
-            icon: "assets/icons/bundle.png",
-            badge: "OVERFLOW STORAGE",
-            rarity: "color-aqua",
-            name: { vi: "Túi Dự Phòng /stash", en: "Overflow Storage (/stash)" },
-            desc: { vi: "Phần thưởng từ Boss, Quest hoặc Redeem Code khi túi đồ đầy sẽ được tự động chuyển an toàn vào /stash thay vì rơi mất.", en: "Rewards from Bosses, Quests, or Redeem Codes safely overflow into /stash when your inventory is full." },
-            features: {
-              vi: ["/stash — Mở kho lưu trữ tạm và nhận lại toàn bộ vật phẩm", "Không giữ block/mob drop thông thường để tránh đầy kho"],
-              en: ["/stash — Open overflow storage and claim your items", "Only stores Boss, Quest, Voucher, and Redeem Code overflow"]
-            }
-          },
-          {
-            icon: "assets/icons/totem_of_undying.png",
-            badge: "DEATH PROTECTION",
-            rarity: "color-green",
-            name: { vi: "NiceKeepInventory", en: "NiceKeepInventory" },
-            desc: { vi: "Giữ lại vũ khí, giáp, công cụ, thức ăn, Shulker, sách hướng dẫn, 4 loại Charms và Prefix Vouchers khi chết ở thế giới sinh tồn.", en: "Preserves gear, tools, food, Shulker boxes, guide books, all 4 Charms, and Prefix Vouchers on death in survival." },
-            features: {
-              vi: ["Tự động giữ nguyên Charms (4 màu dye) & Prefix Vouchers (name_tag)", "Trên đảo Skyblock (/is): bật KeepInventory 100% toàn bộ túi đồ"],
-              en: ["Protects Charms and Prefix Vouchers from dropping on death", "Inside Skyblock (/is): 100% full KeepInventory is enabled"]
-            }
-          }
-        ]
-      },
-      {
-        id: "bosses",
-        icon: "assets/icons/dragon_egg.png",
-        badge: { vi: "BOSSES", en: "BOSSES" },
-        name: { vi: "World Bosses", en: "World Bosses" },
-        sub: { vi: "Dragon • Wither • Inferno • EoL", en: "Dragon • Wither • Inferno • EoL" },
-        subItems: [
-          {
-            icon: "assets/icons/dragon_egg.png",
-            badge: "END BOSS",
-            rarity: "color-mythic",
-            name: { vi: "Ender Dragon (True Ending) & Empress of Light", en: "Ender Dragon & Empress of Light" },
-            desc: { vi: "Ender Dragon được nâng cấp nhiều pha chiến đấu, thưởng sách phù phép cấp Rồng và vật phẩm độc quyền Crystal Heartfish. Empress of Light (Stellarity) rớt đồ cá nhân thẳng vào túi / /stash.", en: "Multi-phase Ender Dragon dropping Dragon-tier enchant books and the exclusive Crystal Heartfish. Empress of Light (Stellarity) grants personal loot straight to inventory / /stash." },
-            features: {
-              vi: ["Crystal Heartfish: độc quyền từ Ender Dragon", "Sách Dragon-tier & loot cá nhân theo sát thương đóng góp"],
-              en: ["Crystal Heartfish: Ender Dragon exclusive drop", "Personal loot & Dragon-tier books scaled by damage contribution"]
-            }
-          },
-          {
-            icon: "assets/icons/nether_star.png",
-            badge: "WITHER & INFERNO",
-            rarity: "color-special",
-            name: { vi: "Witherswrath & Hovering Inferno", en: "Witherswrath & Hovering Inferno" },
-            desc: { vi: "Wither nâng cấp (đảm bảo 1x Nether Star + tỉ lệ Warping Witherblade 12%) và Hovering Inferno từ Incendium với AI chiến đấu mới.", en: "Enhanced Wither (guaranteed 1x Nether Star + 12% Warping Witherblade) and Incendium's Hovering Inferno with custom AI." },
-            features: {
-              vi: ["Loot Boss được trao cá nhân + tự vào /stash nếu đầy túi", "Không rơi ra đất gây lag hay bị cướp đồ"],
-              en: ["Personal boss loot routed to inventory / /stash", "No ground drops to prevent lag or loot stealing"]
-            }
-          }
-        ]
-      },
-      {
-        id: "world",
-        icon: "assets/icons/spyglass.png",
-        badge: { vi: "THẾ GIỚI", en: "WORLD" },
-        name: { vi: "Biomes & Dungeons", en: "Biomes & Dungeons" },
-        sub: { vi: "Terralith • Incendium • Stellarity", en: "Terralith • Incendium • Stellarity" },
-        subItems: [
-          {
-            icon: "assets/icons/spyglass.png",
-            badge: "WORLD GENERATION",
-            rarity: "color-aqua",
-            name: { vi: "Overworld, Nether & The End Mở Rộng", en: "Overworld, Nether & End Overhauls" },
-            desc: { vi: "Thế giới được tạo mới hoàn toàn với Tectonic + Terralith (Overworld), Incendium (Nether), Nullscape + Stellarity (The End) cùng hàng chục cấu trúc dungeon.", en: "Overhauled worldgen featuring Tectonic + Terralith (Overworld), Incendium (Nether), Nullscape + Stellarity (The End), and dozens of dungeon packs." },
-            features: {
-              vi: ["Dungeons & Taverns + DnT Overhaul toàn bộ công trình Vanilla", "Yggdrasil, Moog's Structures, Structory, Explorify, Tidal Towns", "More Mobs & Mine Treasure làm phong phú hành trình khám phá"],
-              en: ["Dungeons & Taverns + full Vanilla structure overhauls", "Yggdrasil, Moog's Structures, Structory, Explorify, Tidal Towns", "More Mobs & Mine Treasure for deeper exploration"]
-            }
-          }
-        ]
-      },
-      {
-        id: "warping",
-        icon: "assets/icons/ender_pearl.png",
-        badge: { vi: "DỊCH CHUYỂN", en: "WARPING" },
-        name: { vi: "Warping Wonders", en: "Warping Wonders" },
-        sub: { vi: "Waypoint Hubs • Portal Horn", en: "Waypoint Hubs • Portal Horn" },
-        subItems: [
-          {
-            icon: "assets/icons/ender_pearl.png",
-            badge: "WAYPOINTS",
-            rarity: "color-mythic",
-            name: { vi: "Waypoint Hubs & Vật Phẩm Dịch Chuyển", en: "Waypoint Hubs & Teleport Items" },
-            desc: { vi: "Đặt các trụ Waypoint Hub công khai hoặc riêng tư để dịch chuyển giữa các căn cứ, hoặc dùng Clock / Compass / Recovery Compass / Portal Horn.", en: "Place public or private Waypoint Hubs to warp between bases, or use Clock, Compass, Recovery Compass, and Portal Horn." },
-            features: {
-              vi: ["Chuột phải vào đầu nổi của Waypoint Hub để mở menu chọn điểm đến", "Hỗ trợ khóa riêng tư (Waypoint Lock) & đổi tên/màu bằng Name Tag/Dye"],
-              en: ["Right-click the floating head of a Waypoint Hub to open the warp menu", "Supports privacy locks (Waypoint Lock) & custom names/colors"]
-            }
-          }
-        ]
-      },
-      {
         id: "utility",
         icon: "assets/icons/amethyst_shard.png",
         badge: { vi: "TIỆN ÍCH", en: "UTILITY" },
         name: { vi: "Utility & QoL", en: "Utility & QoL" },
-        sub: { vi: "/skin, /sidebar, /wits, /flex", en: "/skin, /sidebar, /wits, /flex" },
+        sub: { vi: "/skin • /flex • /wits", en: "/skin • /flex • /wits" },
         subItems: [
           {
             icon: "assets/icons/amethyst_shard.png",
@@ -1559,22 +1788,195 @@
             }
           }
         ]
+      },
+      {
+        id: "recommended_mods",
+        icon: "assets/icons/nether_star.png",
+        badge: { vi: "MODS", en: "MODS" },
+        name: { vi: "Best Client Mods", en: "Best Client Mods" },
+        sub: { vi: "Voice Chat • FPS • Map", en: "Voice Chat • FPS • Map" },
+        subItems: [
+          {
+            icon: "assets/icons/nether_star.png",
+            badge: "CLIENT MODS (26.3)",
+            rarity: "color-aqua",
+            name: { vi: "Bộ Mod Client Khuyên Dùng", en: "Recommended Client Mods" },
+            desc: { vi: "Server chạy Fabric 26.3 và hỗ trợ nhiều mod client tiện ích (không bắt buộc cài nhưng giúp trải nghiệm mượt hơn rất nhiều).", en: "The server runs Fabric 26.3 and supports helpful client-side mods (optional, but strongly recommended for the best experience)." },
+            features: {
+              vi: [
+                "Simple Voice Chat (2.6.27+26.3) — Trò chuyện giọng nói trực tiếp trong game",
+                "Sodium + Lithium + Iris Shaders — Tăng FPS tối đa & hỗ trợ shader mượt",
+                "Xaero's Minimap / World Map — Bản đồ mini & đánh dấu tọa độ tiện lợi",
+                "Mod Menu + Roughly Enough Items (REI) — Xem công thức chế tạo nhanh"
+              ],
+              en: [
+                "Simple Voice Chat (2.6.27+26.3) — Proximity voice chat directly in-game",
+                "Sodium + Lithium + Iris Shaders — Massive FPS boost & shader support",
+                "Xaero's Minimap / World Map — Convenient minimap & personal waypoints",
+                "Mod Menu + Roughly Enough Items (REI) — Quick recipe viewer"
+              ]
+            }
+          }
+        ]
       }
     ];
 
     const QUICK_COMMANDS = [
-      { cmd: "/is", vi: "Về đảo Skyblock", en: "Go to Skyblock", cat: "skyblock" },
-      { cmd: "/rtp", vi: "Dịch chuyển ngẫu nhiên (3/ngày)", en: "Random TP (3/day)", cat: "rtp" },
-      { cmd: "/rank", vi: "Quản lý Prefix & Màu sắc", en: "Prefix & Color Studio", cat: "prefix" },
-      { cmd: "/redeem <code>", vi: "Nhập mã nhận quà", en: "Claim promo code", cat: "redeem" },
-      { cmd: "/quest", vi: "Nhiệm vụ hàng ngày (Co-op)", en: "Daily & Co-op Quests", cat: "quests" },
-      { cmd: "/shop", vi: "Cửa hàng & Extras", en: "Server Shop & Extras", cat: "economy" },
-      { cmd: "/fish", vi: "Mở Fishing Hub", en: "Open Fishing Hub", cat: "fishing" },
-      { cmd: "/stash", vi: "Nhận đồ dư bị đầy túi", en: "Claim overflow items", cat: "stash" }
+      { cmd: "/is", shortEn: "Skyblock Island", shortVi: "Đảo Skyblock", vi: "Về đảo Skyblock cá nhân & mở menu quản lý đảo.", en: "Teleport to your Skyblock island & open island settings.", cat: "skyblock" },
+      { cmd: "/rtp", shortEn: "Random Teleport", shortVi: "Dịch chuyển ngẫu nhiên", vi: "Dịch chuyển ngẫu nhiên ra Overworld (3 lượt/ngày, hồi 30p).", en: "Randomly teleport in the Overworld (3/day, 30m cooldown).", cat: "adventure" },
+      { cmd: "/ah", shortEn: "Auction House", shortVi: "Chợ Đấu Giá", vi: "Mở Chợ Đấu Giá (Auction House) mua bán đồ với người chơi.", en: "Open the Auction House to buy & sell items with players.", cat: "economy" },
+      { cmd: "/orders", shortEn: "Buy Orders", shortVi: "Đơn Đặt Mua", vi: "Xem hoặc tạo đơn đặt mua vật phẩm từ người chơi khác.", en: "Browse or post item buy orders with other players.", cat: "economy" },
+      { cmd: "/skin", shortEn: "Change Skin", shortVi: "Đổi Skin", vi: "Đổi skin trực tiếp (/skin set <tên> hoặc /skin url <link>).", en: "Change your skin in-game (/skin set <name> or /skin url <link>).", cat: "utility" },
+      { cmd: "/shop", shortEn: "Server Shop", shortVi: "Cửa hàng Server", vi: "Mở cửa hàng Server & mục Extras (Charm, Voucher).", en: "Open the Server Shop & Extras (Charms, Vouchers).", cat: "economy" },
+      { cmd: "/daily", shortEn: "Daily Reward", shortVi: "Thưởng Hàng Ngày", vi: "Nhận thưởng điểm danh tiền tệ & quà mỗi ngày.", en: "Claim your daily login currency & bonus rewards.", cat: "economy" },
+      { cmd: "/rank", shortEn: "Prefix Studio", shortVi: "Danh Hiệu & Màu", vi: "Quản lý Prefix, màu chữ & hiệu ứng danh hiệu.", en: "Customize your chat Prefix, colors & cosmetic styles.", cat: "prefix" },
+      { cmd: "/redeem", shortEn: "Promo Codes", shortVi: "Nhập Giftcode", vi: "Nhập giftcode sự kiện (/redeem <code>) nhận quà.", en: "Redeem event promo codes (/redeem <code>) for rewards.", cat: "redeem" },
+      { cmd: "/quest", shortEn: "Daily & Co-op", shortVi: "Nhiệm Vụ Co-op", vi: "Mở bảng Nhiệm Vụ hàng ngày & Co-op cùng bạn bè.", en: "Open Daily & Co-op Quests to earn extra rewards.", cat: "quests" },
+      { cmd: "/fish", shortEn: "Fishing Hub", shortVi: "Trung Tâm Câu Cá", vi: "Mở Fishing Hub xem thủy quái, cần câu & giải đấu.", en: "Open Fishing Hub for Sea Creatures, rods & tournaments.", cat: "fishing" },
+      { cmd: "/stash", shortEn: "Overflow Loot", shortVi: "Kho Đồ Dự Phòng", vi: "Nhận lại vật phẩm Boss/sự kiện bị rơi khi đầy túi.", en: "Claim overflow Boss/event loot when your inventory is full.", cat: "economy" },
+      { cmd: "/flex", shortEn: "Show Hand Item", shortVi: "Khoe Vật Phẩm", vi: "Khoe vật phẩm đang cầm trên tay lên kênh chat server.", en: "Showcase the item in your hand to the server chat.", cat: "utility" },
+      { cmd: "/visit", shortEn: "Visit Islands", shortVi: "Thăm Đảo Bạn Bè", vi: "Ghé thăm đảo Skyblock của người chơi khác (/visit <tên>).", en: "Visit another player's Skyblock island (/visit <player>).", cat: "skyblock" }
     ];
+
+    const LEFT_ACCORDION = [
+      {
+        title: { en: "Core Systems", vi: "Hệ Thống Cốt Lõi" },
+        links: [
+          { icon: "assets/icons/oak_sapling.png", label: { en: "Skyblock", vi: "Skyblock" }, cat: "skyblock" },
+          { icon: "assets/icons/compass.png", label: { en: "Adventure", vi: "Adventure" }, cat: "adventure" },
+          { icon: "assets/icons/dragonblade.png", label: { en: "Custom Items / Bosses", vi: "Custom Items / Bosses" }, cat: "bosses" }
+        ]
+      },
+      {
+        title: { en: "Economy", vi: "Kinh Tế" },
+        links: [
+          { icon: "assets/icons/emerald.png", label: { en: "Economy", vi: "Economy" }, cat: "economy" },
+          { icon: "assets/icons/name_tag.png", label: { en: "Rank / Prefix", vi: "Rank / Prefix" }, cat: "prefix" },
+          { icon: "assets/icons/paper.png", label: { en: "Codes", vi: "Codes" }, cat: "redeem" },
+          { icon: "assets/icons/writable_book.png", label: { en: "Daily Quests", vi: "Daily Quests" }, cat: "quests" }
+        ]
+      },
+      {
+        title: { en: "Full Encyclopedias", vi: "Bách Khoa Chuyên Sâu" },
+        links: [
+          { icon: "assets/icons/enchanted_book.png", label: { en: "Enchantments", vi: "Phù Phép" }, href: "enchants.html" },
+          { icon: "assets/icons/fishing_rod.png", label: { en: "Sea Creatures", vi: "Thủy Quái" }, href: "fishing.html" },
+          { icon: "assets/icons/spyglass.png", label: { en: "Biomes & Structures", vi: "Biomes & Structures" }, cat: "world" }
+        ]
+      }
+    ];
+
+    const CUSTOM_WIDGETS = [
+      {
+        id: "live_map",
+        col: "right",
+        insertAfter: "right_status",
+        icon: "assets/icons/compass.png",
+        title: { en: "Live World Map", vi: "Bản Đồ Trực Tiếp" },
+        body: {
+          en: "<div style='margin-bottom:9px;color:var(--text-muted);font-size:0.79rem;'>Live map of Overworld, Nether &amp; End.</div><a href='http://mckhtn.redirectme.net:2052/' target='_blank' rel='noopener noreferrer' style='display:flex;align-items:center;justify-content:center;gap:6px;width:100%;background:rgba(56,189,248,0.16);border:1px solid rgba(56,189,248,0.45);color:#38bdf8;font-weight:800;font-size:0.78rem;padding:7px 12px;border-radius:8px;text-decoration:none;'><img class='mc-pixel' src='assets/icons/compass.png' style='width:15px;height:15px;' alt=''/> Open Live Map ↗</a>",
+          vi: "<div style='margin-bottom:9px;color:var(--text-muted);font-size:0.79rem;'>Bản đồ trực tuyến Overworld, Nether &amp; End.</div><a href='http://mckhtn.redirectme.net:2052/' target='_blank' rel='noopener noreferrer' style='display:flex;align-items:center;justify-content:center;gap:6px;width:100%;background:rgba(56,189,248,0.16);border:1px solid rgba(56,189,248,0.45);color:#38bdf8;font-weight:800;font-size:0.78rem;padding:7px 12px;border-radius:8px;text-decoration:none;'><img class='mc-pixel' src='assets/icons/compass.png' style='width:15px;height:15px;' alt=''/> Mở Live Map ↗</a>"
+        }
+      },
+      {
+        id: "social",
+        col: "left",
+        icon: "assets/icons/book.png",
+        title: { en: "Community & Social", vi: "Cộng Đồng & Social" },
+        body: {
+          en: "<div style='margin-bottom:10px;color:var(--text-muted);font-size:0.78rem;line-height:1.45;'>Join our Discord for events &amp; support, follow us on GitHub, or watch on YouTube!</div><div style='display:grid;grid-template-columns:1fr 1fr;gap:8px;'><a href='https://discord.gg/UhNPy7wgX7' target='_blank' rel='noopener noreferrer' style='display:inline-flex;align-items:center;justify-content:center;gap:6px;background:rgba(88,101,242,0.2);border:1px solid rgba(88,101,242,0.55);color:#c7d2fe;font-weight:800;font-size:0.76rem;padding:7px 8px;border-radius:8px;text-decoration:none;'><svg width='14' height='14' viewBox='0 0 24 24' fill='currentColor'><path d='M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z'/></svg>Discord</a><a href='https://github.com/tano-dev' target='_blank' rel='noopener noreferrer' style='display:inline-flex;align-items:center;justify-content:center;gap:6px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.22);color:#f1f5f9;font-weight:800;font-size:0.76rem;padding:7px 8px;border-radius:8px;text-decoration:none;'><svg width='14' height='14' viewBox='0 0 24 24' fill='currentColor'><path d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/></svg>GitHub</a></div><div style='display:flex;justify-content:center;margin-top:8px;'><a href='https://www.youtube.com/@ISuckAtCalculus' target='_blank' rel='noopener noreferrer' style='display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:54%;background:rgba(239,68,68,0.18);border:1px solid rgba(239,68,68,0.5);color:#fca5a5;font-weight:800;font-size:0.76rem;padding:7px 14px;border-radius:8px;text-decoration:none;'><svg width='14' height='14' viewBox='0 0 24 24' fill='currentColor'><path d='M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z'/></svg>YouTube</a></div>",
+          vi: "<div style='margin-bottom:10px;color:var(--text-muted);font-size:0.78rem;line-height:1.45;'>Tham gia Discord, xem GitHub hoặc theo dõi kênh YouTube của tụi mình!</div><div style='display:grid;grid-template-columns:1fr 1fr;gap:8px;'><a href='https://discord.gg/UhNPy7wgX7' target='_blank' rel='noopener noreferrer' style='display:inline-flex;align-items:center;justify-content:center;gap:6px;background:rgba(88,101,242,0.2);border:1px solid rgba(88,101,242,0.55);color:#c7d2fe;font-weight:800;font-size:0.76rem;padding:7px 8px;border-radius:8px;text-decoration:none;'><svg width='14' height='14' viewBox='0 0 24 24' fill='currentColor'><path d='M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z'/></svg>Discord</a><a href='https://github.com/tano-dev' target='_blank' rel='noopener noreferrer' style='display:inline-flex;align-items:center;justify-content:center;gap:6px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.22);color:#f1f5f9;font-weight:800;font-size:0.76rem;padding:7px 8px;border-radius:8px;text-decoration:none;'><svg width='14' height='14' viewBox='0 0 24 24' fill='currentColor'><path d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/></svg>GitHub</a></div><div style='display:flex;justify-content:center;margin-top:8px;'><a href='https://www.youtube.com/@ISuckAtCalculus' target='_blank' rel='noopener noreferrer' style='display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:54%;background:rgba(239,68,68,0.18);border:1px solid rgba(239,68,68,0.5);color:#fca5a5;font-weight:800;font-size:0.76rem;padding:7px 14px;border-radius:8px;text-decoration:none;'><svg width='14' height='14' viewBox='0 0 24 24' fill='currentColor'><path d='M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z'/></svg>YouTube</a></div>"
+        }
+      }
+    ];
+    const LAYOUT_STATE = {
+      columns: { left: 230, right: 290, gap: 20, maxWidth: 1380 },
+      frameOrder: { left: null, center: null, right: null },
+      frameSizes: {}
+    };
+    const SITE_META = {
+      serverIp: "mckhtn.redirectme.net:2050",
+      leftBrandTitle: "Support & Donate",
+      leftBrandIcon: "assets/icons/emerald.png",
+      versionPill: "Minecraft 26.3 • Fabric SMP + Skyblock",
+      bgImage: "assets/bg.jpg"
+    };
 
     function t(key) {
       return (UI_TEXT[currentLang] && UI_TEXT[currentLang][key]) || UI_TEXT.vi[key] || key;
+    }
+
+    function renderLeftAccordion() {
+      const container = document.getElementById("leftAccordionContainer");
+      if (!container) return;
+      container.innerHTML = LEFT_ACCORDION.map(grp => `
+        <div class="accordion-group">
+          <div class="accordion-title" onclick="toggleAccordion(this)">
+            <span>${grp.title[currentLang] || grp.title.en}</span>
+            <span>⌵</span>
+          </div>
+          <ul class="accordion-list">
+            ${(grp.links || []).map(lk => {
+              const action = lk.href ? `href="${lk.href}"` : `onclick="openCategoryById('${lk.cat || ""}')"`;
+              return `<li><a ${action}><img class="mc-pixel" src="${lk.icon || 'assets/icons/paper.png'}" alt=""/> <span>${lk.label[currentLang] || lk.label.en}</span></a></li>`;
+            }).join("")}
+          </ul>
+        </div>
+      `).join("");
+    }
+
+    function renderCustomWidgets() {
+      document.querySelectorAll("[data-custom-widget='true']").forEach(el => el.remove());
+      CUSTOM_WIDGETS.forEach((w, idx) => {
+        const colId = w.col === "left" ? "col-left" : (w.col === "center" ? "col-center" : "col-right");
+        const colEl = document.getElementById(colId) || document.getElementById("col-right");
+        const div = document.createElement("div");
+        div.className = "widget-panel";
+        div.setAttribute("data-custom-widget", "true");
+        div.setAttribute("data-frame-id", w.id || ("custom_frame_" + idx));
+        div.innerHTML = `
+          <div class="widget-top-header">
+            <img class="mc-pixel" src="${w.icon || 'assets/icons/nether_star.png'}" alt=""/>
+            <span>${w.title[currentLang] || w.title.en}</span>
+            <button type="button" class="frame-edit-btn" onclick="openCustomWidgetEditor(${idx})">✏️ Edit</button>
+          </div>
+          <div class="status-body" style="font-size:0.82rem;color:var(--text-main);line-height:1.55;">
+            ${w.body[currentLang] || w.body.en}
+          </div>
+        `;
+        if (w.insertAfter) {
+          const anchor = colEl.querySelector(`[data-frame-id="${w.insertAfter}"]`);
+          if (anchor && anchor.nextSibling) {
+            colEl.insertBefore(div, anchor.nextSibling);
+            return;
+          }
+        }
+        colEl.appendChild(div);
+      });
+    }
+
+    function openSupportModal() {
+      const sub = {
+        icon: "assets/icons/emerald.png",
+        badge: "SUPPORT THE SERVER",
+        rarity: "color-gold",
+        name: { en: "Support & Donate — One More Expedition", vi: "Ủng Hộ & Donate — One More Expedition" },
+        desc: {
+          en: "Thank you for playing! Donations help pay for 24/7 server hosting, backups, and ongoing custom development. Cosmetic Prefix Vouchers & appreciation perks are purely non-pay-to-win.",
+          vi: "Cảm ơn bạn đã đồng hành cùng server! Mọi đóng góp đều dùng để duy trì máy chủ chạy 24/7, backup dữ liệu và phát triển thêm tính năng mới (hoàn toàn không Pay-to-Win)."
+        },
+        features: {
+          en: ["Join our Discord and message an Admin for donation methods", "Supporters receive exclusive Cosmetic Prefix Vouchers & Discord role"],
+          vi: ["Tham gia Discord và nhắn Admin để xem thông tin ủng hộ", "Người ủng hộ sẽ nhận Prefix Cosmetic Voucher kỷ niệm & role trên Discord"]
+        }
+      };
+      openCategoryModal({
+        id: "support",
+        icon: "assets/icons/emerald.png",
+        name: { en: "Support & Donate", vi: "Ủng Hộ Server" },
+        sub: { en: "Keep the server running 24/7", vi: "Duy trì máy chủ 24/7" },
+        subItems: [sub]
+      });
     }
 
     function applyTranslations() {
@@ -1590,6 +1992,19 @@
 
       document.getElementById("wikiSearchInput").placeholder = t("searchPlaceholder");
       document.getElementById("modalSubSearch").placeholder = t("subSearchPlaceholder");
+      document.getElementById("serverIpDisplay").textContent = SITE_META.serverIp;
+      document.getElementById("leftBrandTitle").textContent = SITE_META.leftBrandTitle;
+      document.getElementById("leftBrandImg").src = SITE_META.leftBrandIcon;
+      const vPill = document.getElementById("versionPillText");
+      if (vPill) vPill.textContent = SITE_META.versionPill;
+      const bgEl = document.querySelector(".minecraft-bg-fixed");
+      if (bgEl && SITE_META.bgImage) {
+        bgEl.style.backgroundImage = `url('${SITE_META.bgImage}')`;
+      }
+
+      renderLeftAccordion();
+      renderCustomWidgets();
+      applyWireframeLayout();
 
       // Render Checklist
       const checklistEl = document.getElementById("newPlayerChecklist");
@@ -1600,21 +2015,49 @@
         </div>
       `).join("");
 
-      // Render Quick Commands
+      // Render Compact 2x7 Quick Commands
       const qcEl = document.getElementById("quickCmdGrid");
-      qcEl.innerHTML = QUICK_COMMANDS.map(q => `
-        <div class="quick-cmd-chip" onclick="openCategoryById('${q.cat}')">
+      qcEl.innerHTML = QUICK_COMMANDS.map((q, idx) => `
+        <div class="quick-cmd-chip" data-cmd-idx="${idx}" onclick="showQuickCommandDetail(${idx})">
           <code>${q.cmd}</code>
-          <span>${q[currentLang]}</span>
+          <span>${currentLang === "vi" ? (q.shortVi || q.vi) : (q.shortEn || q.en)}</span>
         </div>
       `).join("");
+      const detailEl = document.getElementById("cmdDetailBox");
+      if (detailEl && detailEl.classList.contains("active")) {
+        const activeIdx = parseInt(detailEl.getAttribute("data-active-idx") || "0", 10);
+        if (QUICK_COMMANDS[activeIdx]) showQuickCommandDetail(activeIdx);
+        else detailEl.classList.remove("active");
+      }
 
       filterMainGrid(document.getElementById("wikiSearchInput").value);
+    }
+
+    function showQuickCommandDetail(idx) {
+      const q = QUICK_COMMANDS[idx];
+      const box = document.getElementById("cmdDetailBox");
+      if (!q || !box) return;
+      document.querySelectorAll(".quick-cmd-chip").forEach(el => {
+        el.classList.toggle("active", parseInt(el.getAttribute("data-cmd-idx"), 10) === idx);
+      });
+      const guideBtn = q.cat && WIKI_CATEGORIES.some(c => c.id === q.cat)
+        ? `<button type="button" class="cmd-detail-link" onclick="openCategoryById('${q.cat}')">${currentLang === "vi" ? "Xem hướng dẫn →" : "Full Guide →"}</button>`
+        : "";
+      box.setAttribute("data-active-idx", String(idx));
+      box.innerHTML = `<div><code>${q.cmd}</code> — ${q[currentLang] || q.en}</div>${guideBtn}`;
+      box.classList.add("active");
+    }
+
+    function dismissLangHint() {
+      localStorage.setItem("ome_wiki_lang_hint_seen", "true");
+      const h = document.getElementById("langPointerHint");
+      if (h) h.style.display = "none";
     }
 
     function setLanguage(lang) {
       currentLang = (lang === "en") ? "en" : "vi";
       localStorage.setItem(LANG_KEY, currentLang);
+      dismissLangHint();
       applyTranslations();
     }
 
@@ -1643,15 +2086,29 @@
       items.forEach(cat => {
         const tile = document.createElement("div");
         tile.className = "content-tile";
-        tile.onclick = () => openCategoryModal(cat);
+        tile.onclick = () => {
+          if (document.body.classList.contains("edit-mode")) {
+            openCategoryEditor(cat.id);
+          } else if (PAGE_MAP[cat.id]) {
+            location.href = PAGE_MAP[cat.id] + "?lang=" + currentLang;
+          } else {
+            openCategoryModal(cat);
+          }
+        };
         tile.innerHTML = `
+          <div class="tile-edit-actions">
+            <button type="button" class="tile-mini-btn" title="Move Left" onclick="event.stopPropagation(); moveCategory('${cat.id}', -1)">◀</button>
+            <button type="button" class="tile-mini-btn" title="Move Right" onclick="event.stopPropagation(); moveCategory('${cat.id}', 1)">▶</button>
+            <button type="button" class="tile-mini-btn" title="Duplicate" onclick="event.stopPropagation(); duplicateCategory('${cat.id}')">⧉</button>
+            <button type="button" class="tile-mini-btn" title="Edit" onclick="event.stopPropagation(); openCategoryEditor('${cat.id}')">✏️</button>
+            <button type="button" class="tile-mini-btn del" title="Delete" onclick="event.stopPropagation(); if(confirm('Delete ${escapeAttr(cat.name.en)}?')) deleteCategory('${cat.id}')">🗑️</button>
+          </div>
           <div class="tile-icon-box">
             <img class="mc-pixel" src="${cat.icon}" alt="${cat.name[currentLang]}"/>
           </div>
           <div class="tile-info">
             <div class="tile-title">${cat.name[currentLang]}</div>
             <div class="tile-sub">${cat.sub[currentLang]}</div>
-            <span class="tile-badge">${cat.badge[currentLang]}</span>
           </div>
         `;
         grid.appendChild(tile);
@@ -1687,7 +2144,28 @@
       filterMainGrid("");
     }
 
+    const PAGE_MAP = {
+      skyblock: "skyblock.html",
+      world: "world.html",
+      adventure: "adventure.html",
+      enchants: "enchants.html",
+      fishing: "fishing.html",
+      minetreasure: "minetreasure.html",
+      bosses: "bosses.html",
+      warping: "warping.html",
+      quests: "quests.html",
+      economy: "economy.html",
+      prefix: "prefix.html",
+      redeem: "redeem.html",
+      utility: "utility.html",
+      recommended_mods: "mods.html"
+    };
+
     function openCategoryById(id) {
+      if (PAGE_MAP[id]) {
+        location.href = PAGE_MAP[id] + "?lang=" + currentLang;
+        return;
+      }
       const cat = WIKI_CATEGORIES.find(c => c.id === id);
       if (cat) openCategoryModal(cat);
     }
@@ -1808,29 +2286,18 @@
     }
 
     function copyServerIp() {
-      navigator.clipboard.writeText("mckhtn.redirectme.net").then(() => {
+      navigator.clipboard.writeText(SITE_META.serverIp).then(() => {
         const btn = document.getElementById("copyIpBtn");
         btn.textContent = t("copiedBtn");
         setTimeout(() => { btn.textContent = t("copyBtn"); }, 1800);
       });
     }
 
-    function updateClock() {
-      const now = new Date();
-      let h = now.getHours();
-      const m = String(now.getMinutes()).padStart(2, "0");
-      const ampm = h >= 12 ? "pm" : "am";
-      h = h % 12 || 12;
-      document.getElementById("skyblockClock").textContent = `${h}:${m}${ampm}`;
-    }
-    setInterval(updateClock, 1000);
-    updateClock();
-
     async function fetchServerStatus() {
       const textEl = document.getElementById("serverStatusText");
       const dotEl = document.getElementById("serverDot");
       try {
-        const res = await fetch("https://api.mcsrvstat.us/3/mckhtn.redirectme.net");
+        const res = await fetch("https://api.mcsrvstat.us/3/" + encodeURIComponent(SITE_META.serverIp));
         const data = await res.json();
         if (data && data.online) {
           dotEl.classList.remove("offline");
@@ -1842,13 +2309,759 @@
           textEl.textContent = "Server offline / Maintenance (MC 26.3)";
         }
       } catch {
-        textEl.textContent = "Java Edition 26.3 • mckhtn.redirectme.net";
+        textEl.textContent = "Java Edition 26.3 • " + SITE_META.serverIp;
       }
     }
     fetchServerStatus();
 
     // Init translations & show Language Modal on entry unless user checked "Don't show again"
+    const CUSTOM_DATA_KEY = "ome_wiki_custom_data_v14";
+    const AVAILABLE_ICONS = [
+      "assets/icons/oak_sapling.png", "assets/icons/compass.png", "assets/icons/recovery_compass.png",
+      "assets/icons/netherite_sword.png", "assets/icons/diamond_sword.png", "assets/icons/netherite_pickaxe.png",
+      "assets/icons/diamond_pickaxe.png", "assets/icons/fishing_rod.png", "assets/icons/enchanted_book.png",
+      "assets/icons/writable_book.png", "assets/icons/book.png", "assets/icons/emerald.png",
+      "assets/icons/gold_ingot.png", "assets/icons/name_tag.png", "assets/icons/paper.png",
+      "assets/icons/bundle.png", "assets/icons/totem_of_undying.png", "assets/icons/dragon_egg.png",
+      "assets/icons/nether_star.png", "assets/icons/blaze_powder.png", "assets/icons/ender_pearl.png",
+      "assets/icons/amethyst_shard.png", "assets/icons/clock.png", "assets/icons/spyglass.png",
+      "assets/icons/grass_block_side.png", "assets/icons/chest_front.png", "assets/icons/trident.png",
+      "assets/icons/beacon.png"
+    ];
+
+    function loadCustomEdits() {
+      try {
+        const raw = localStorage.getItem(CUSTOM_DATA_KEY);
+        if (!raw) return;
+        const parsed = JSON.parse(raw);
+        if (parsed.uiText) {
+          ["en", "vi"].forEach(l => {
+            if (parsed.uiText[l]) Object.assign(UI_TEXT[l], parsed.uiText[l]);
+          });
+        }
+        if (parsed.siteMeta) Object.assign(SITE_META, parsed.siteMeta);
+        if (Array.isArray(parsed.categories) && parsed.categories.length > 0) {
+          WIKI_CATEGORIES.length = 0;
+          parsed.categories.forEach(c => WIKI_CATEGORIES.push(c));
+        }
+        if (Array.isArray(parsed.quickCommands)) {
+          QUICK_COMMANDS.length = 0;
+          parsed.quickCommands.forEach(q => QUICK_COMMANDS.push(q));
+        }
+        if (Array.isArray(parsed.leftAccordion)) {
+          LEFT_ACCORDION.length = 0;
+          parsed.leftAccordion.forEach(g => LEFT_ACCORDION.push(g));
+        }
+        if (Array.isArray(parsed.customWidgets)) {
+          CUSTOM_WIDGETS.length = 0;
+          parsed.customWidgets.forEach(w => CUSTOM_WIDGETS.push(w));
+        }
+        if (parsed.layout) {
+          if (parsed.layout.columns) Object.assign(LAYOUT_STATE.columns, parsed.layout.columns);
+          if (parsed.layout.frameOrder) Object.assign(LAYOUT_STATE.frameOrder, parsed.layout.frameOrder);
+          if (parsed.layout.frameSizes) Object.assign(LAYOUT_STATE.frameSizes, parsed.layout.frameSizes);
+        }
+      } catch (e) {
+        console.warn("Failed to load custom wiki edits:", e);
+      }
+    }
+
+    function buildExportPayload() {
+      return {
+        siteMeta: SITE_META,
+        layout: LAYOUT_STATE,
+        uiText: {
+          en: {
+            bannerTitle: UI_TEXT.en.bannerTitle,
+            bannerSub: UI_TEXT.en.bannerSub,
+            mainHeading: UI_TEXT.en.mainHeading,
+            mainIntro: UI_TEXT.en.mainIntro,
+            browseTitle: UI_TEXT.en.browseTitle,
+            quickCmdTitle: UI_TEXT.en.quickCmdTitle,
+            checklist: UI_TEXT.en.checklist
+          },
+          vi: {
+            bannerTitle: UI_TEXT.vi.bannerTitle,
+            bannerSub: UI_TEXT.vi.bannerSub,
+            mainHeading: UI_TEXT.vi.mainHeading,
+            mainIntro: UI_TEXT.vi.mainIntro,
+            browseTitle: UI_TEXT.vi.browseTitle,
+            quickCmdTitle: UI_TEXT.vi.quickCmdTitle,
+            checklist: UI_TEXT.vi.checklist
+          }
+        },
+        categories: WIKI_CATEGORIES,
+        quickCommands: QUICK_COMMANDS,
+        leftAccordion: LEFT_ACCORDION,
+        customWidgets: CUSTOM_WIDGETS
+      };
+    }
+
+    function saveCustomEdits() {
+      localStorage.setItem(CUSTOM_DATA_KEY, JSON.stringify(buildExportPayload()));
+      applyTranslations();
+    window.addEventListener("resize", applyWireframeLayout);
+    window.addEventListener("storage", e => {
+      if (e.key === LANG_KEY && e.newValue && e.newValue !== currentLang) {
+        currentLang = e.newValue === "en" ? "en" : "vi";
+        applyTranslations();
+      }
+    });
+    if (localStorage.getItem("ome_wiki_lang_hint_seen") !== "true") {
+      const h = document.getElementById("langPointerHint");
+      if (h) h.style.display = "block";
+    }
+    }
+
+    function moveCategory(catId, delta) {
+      const idx = WIKI_CATEGORIES.findIndex(c => c.id === catId);
+      const target = idx + delta;
+      if (idx === -1 || target < 0 || target >= WIKI_CATEGORIES.length) return;
+      const [item] = WIKI_CATEGORIES.splice(idx, 1);
+      WIKI_CATEGORIES.splice(target, 0, item);
+      saveCustomEdits();
+    }
+
+    function duplicateCategory(catId) {
+      const idx = WIKI_CATEGORIES.findIndex(c => c.id === catId);
+      if (idx === -1) return;
+      const copy = JSON.parse(JSON.stringify(WIKI_CATEGORIES[idx]));
+      copy.id = catId + "_copy_" + Date.now();
+      copy.name.en += " (Copy)";
+      copy.name.vi += " (Bản sao)";
+      WIKI_CATEGORIES.splice(idx + 1, 0, copy);
+      saveCustomEdits();
+    }
+
+    function openSidebarBrandEditor() {
+      document.getElementById("editorModalTitle").textContent = "Edit Left Sidebar Brand";
+      const iconOpts = AVAILABLE_ICONS.map(ic => `<option value="${ic}" ${ic === SITE_META.leftBrandIcon ? "selected" : ""}>${ic.replace("assets/icons/", "")}</option>`).join("");
+      document.getElementById("editorModalBody").innerHTML = `
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Brand Icon</label><select id="edBrandIcon">${iconOpts}</select></div>
+          <div class="ed-field"><label>Brand Title</label><input id="edBrandTitle" value="${escapeAttr(SITE_META.leftBrandTitle)}"></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Subtitle (EN)</label><input id="edBrandSubEn" value="${escapeAttr(UI_TEXT.en.sidebarSub)}"></div>
+          <div class="ed-field"><label>Subtitle (VI)</label><input id="edBrandSubVi" value="${escapeAttr(UI_TEXT.vi.sidebarSub)}"></div>
+        </div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        SITE_META.leftBrandIcon = document.getElementById("edBrandIcon").value;
+        SITE_META.leftBrandTitle = document.getElementById("edBrandTitle").value;
+        UI_TEXT.en.sidebarSub = document.getElementById("edBrandSubEn").value;
+        UI_TEXT.vi.sidebarSub = document.getElementById("edBrandSubVi").value;
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openLeftAccordionEditor() {
+      document.getElementById("editorModalTitle").textContent = "Edit Left Sidebar Menu Groups";
+      const groupsHtml = LEFT_ACCORDION.map((g, gi) => `
+        <div class="ed-sub-box" data-gi="${gi}">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <strong style="color:var(--gold-primary);font-size:0.85rem;">Group #${gi + 1}</strong>
+            <button type="button" class="ed-btn danger" onclick="LEFT_ACCORDION.splice(${gi},1);saveCustomEdits();openLeftAccordionEditor();">🗑️ Delete Group</button>
+          </div>
+          <div class="ed-form-grid">
+            <div class="ed-field"><label>Group Title (EN)</label><input class="grp-title-en" value="${escapeAttr(g.title.en)}"></div>
+            <div class="ed-field"><label>Group Title (VI)</label><input class="grp-title-vi" value="${escapeAttr(g.title.vi)}"></div>
+          </div>
+          <div class="ed-field"><label>Links (1 per line: labelEN | labelVI | categoryId_or_url)</label>
+            <textarea class="grp-links">${escapeHtml((g.links || []).map(l => `${l.label.en} | ${l.label.vi} | ${l.href || l.cat || ""}`).join("\n"))}</textarea>
+          </div>
+        </div>
+      `).join("");
+      document.getElementById("editorModalBody").innerHTML = `
+        <div style="margin-bottom:10px;"><button type="button" class="ed-btn" onclick="LEFT_ACCORDION.push({title:{en:'New Group',vi:'Nhóm Mới'},links:[]});saveCustomEdits();openLeftAccordionEditor();">➕ Add Menu Group</button></div>
+        <div id="edAccordionList">${groupsHtml}</div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        document.querySelectorAll("#edAccordionList .ed-sub-box").forEach((box, gi) => {
+          const g = LEFT_ACCORDION[gi];
+          if (!g) return;
+          g.title.en = box.querySelector(".grp-title-en").value;
+          g.title.vi = box.querySelector(".grp-title-vi").value;
+          const lines = box.querySelector(".grp-links").value.split("\n").map(x => x.trim()).filter(Boolean);
+          g.links = lines.map((line, li) => {
+            const parts = line.split("|").map(p => p.trim());
+            const target = parts[2] || "skyblock";
+            const oldIcon = (g.links[li] && g.links[li].icon) || "assets/icons/paper.png";
+            const obj = { icon: oldIcon, label: { en: parts[0] || "Link", vi: parts[1] || parts[0] || "Link" } };
+            if (target.endsWith(".html") || target.startsWith("http")) obj.href = target;
+            else obj.cat = target;
+            return obj;
+          });
+        });
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openQuickCommandsEditor() {
+      document.getElementById("editorModalTitle").textContent = "Edit Quick Commands Frame";
+      const rows = QUICK_COMMANDS.map((q, qi) => `
+        <div class="ed-sub-box" data-qi="${qi}">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+            <strong style="color:var(--aqua);font-size:0.82rem;">Command #${qi + 1}</strong>
+            <button type="button" class="ed-btn danger" onclick="QUICK_COMMANDS.splice(${qi},1);saveCustomEdits();openQuickCommandsEditor();">🗑️</button>
+          </div>
+          <div class="ed-form-grid">
+            <div class="ed-field"><label>Command</label><input class="qc-cmd" value="${escapeAttr(q.cmd)}"></div>
+            <div class="ed-field"><label>Linked Category ID</label><input class="qc-cat" value="${escapeAttr(q.cat)}"></div>
+          </div>
+          <div class="ed-form-grid">
+            <div class="ed-field"><label>Description (EN)</label><input class="qc-en" value="${escapeAttr(q.en)}"></div>
+            <div class="ed-field"><label>Description (VI)</label><input class="qc-vi" value="${escapeAttr(q.vi)}"></div>
+          </div>
+        </div>
+      `).join("");
+      document.getElementById("editorModalBody").innerHTML = `
+        <div style="margin-bottom:10px;"><button type="button" class="ed-btn" onclick="QUICK_COMMANDS.push({cmd:'/newcmd',en:'Description',vi:'Mô tả',cat:'skyblock'});saveCustomEdits();openQuickCommandsEditor();">➕ Add Command</button></div>
+        <div id="edQcList">${rows}</div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        document.querySelectorAll("#edQcList .ed-sub-box").forEach((box, qi) => {
+          const q = QUICK_COMMANDS[qi];
+          if (!q) return;
+          q.cmd = box.querySelector(".qc-cmd").value;
+          q.cat = box.querySelector(".qc-cat").value;
+          q.en = box.querySelector(".qc-en").value;
+          q.vi = box.querySelector(".qc-vi").value;
+        });
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openServerWidgetEditor() {
+      document.getElementById("editorModalTitle").textContent = "Edit Server Connection Frame";
+      document.getElementById("editorModalBody").innerHTML = `
+        <div class="ed-field"><label>Server IP / Domain</label><input id="edServerIp" value="${escapeAttr(SITE_META.serverIp)}"></div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        SITE_META.serverIp = document.getElementById("edServerIp").value.trim() || "mckhtn.redirectme.net";
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openChecklistEditor() {
+      document.getElementById("editorModalTitle").textContent = "Edit New Player Checklist (1 line per step)";
+      document.getElementById("editorModalBody").innerHTML = `
+        <div class="ed-field"><label>Checklist Steps (EN)</label><textarea id="edChkEn" style="min-height:110px;">${escapeHtml(UI_TEXT.en.checklist.join("\n"))}</textarea></div>
+        <div class="ed-field"><label>Checklist Steps (VI)</label><textarea id="edChkVi" style="min-height:110px;">${escapeHtml(UI_TEXT.vi.checklist.join("\n"))}</textarea></div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        UI_TEXT.en.checklist = document.getElementById("edChkEn").value.split("\n").map(x => x.trim()).filter(Boolean);
+        UI_TEXT.vi.checklist = document.getElementById("edChkVi").value.split("\n").map(x => x.trim()).filter(Boolean);
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openNewWidgetEditor() {
+      const id = "custom_frame_" + Date.now();
+      CUSTOM_WIDGETS.push({
+        id,
+        col: "right",
+        icon: "assets/icons/nether_star.png",
+        title: { en: "Custom Frame", vi: "Khung Thông Tin Mới" },
+        body: { en: "Add your custom announcements, rules, or Discord link here.", vi: "Thêm thông báo, luật server hoặc link Discord tại đây." }
+      });
+      saveCustomEdits();
+      openCustomWidgetEditor(CUSTOM_WIDGETS.length - 1);
+    }
+
+    function openCustomWidgetEditor(idx) {
+      const w = CUSTOM_WIDGETS[idx];
+      if (!w) return;
+      document.getElementById("editorModalTitle").textContent = "Edit Custom Frame";
+      const iconOpts = AVAILABLE_ICONS.map(ic => `<option value="${ic}" ${ic === w.icon ? "selected" : ""}>${ic.replace("assets/icons/", "")}</option>`).join("");
+      document.getElementById("editorModalBody").innerHTML = `
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Icon</label><select id="edWidIcon">${iconOpts}</select></div>
+          <div class="ed-field"><label>Column</label>
+            <select id="edWidCol">
+              <option value="left" ${w.col === "left" ? "selected" : ""}>Left Sidebar</option>
+              <option value="center" ${w.col === "center" ? "selected" : ""}>Center Column</option>
+              <option value="right" ${(!w.col || w.col === "right") ? "selected" : ""}>Right Sidebar</option>
+            </select>
+          </div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Title (EN)</label><input id="edWidTitleEn" value="${escapeAttr(w.title.en)}"></div>
+          <div class="ed-field"><label>Title (VI)</label><input id="edWidTitleVi" value="${escapeAttr(w.title.vi)}"></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Content HTML/Text (EN)</label><textarea id="edWidBodyEn">${escapeHtml(w.body.en)}</textarea></div>
+          <div class="ed-field"><label>Content HTML/Text (VI)</label><textarea id="edWidBodyVi">${escapeHtml(w.body.vi)}</textarea></div>
+        </div>
+        <button type="button" class="ed-btn danger" onclick="CUSTOM_WIDGETS.splice(${idx},1);saveCustomEdits();closeEditorModal();">🗑️ Delete This Frame</button>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        w.icon = document.getElementById("edWidIcon").value;
+        w.col = document.getElementById("edWidCol").value;
+        w.title.en = document.getElementById("edWidTitleEn").value;
+        w.title.vi = document.getElementById("edWidTitleVi").value;
+        w.body.en = document.getElementById("edWidBodyEn").value;
+        w.body.vi = document.getElementById("edWidBodyVi").value;
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openLayoutColumnsEditor() {
+      document.getElementById("editorModalTitle").textContent = "Wireframe Column Widths (px)";
+      const c = LAYOUT_STATE.columns;
+      document.getElementById("editorModalBody").innerHTML = `
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Left Sidebar Width (px)</label><input type="number" id="edColLeft" value="${c.left}"></div>
+          <div class="ed-field"><label>Right Sidebar Width (px)</label><input type="number" id="edColRight" value="${c.right}"></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Column Gap (px)</label><input type="number" id="edColGap" value="${c.gap}"></div>
+          <div class="ed-field"><label>Max Container Width (px)</label><input type="number" id="edColMax" value="${c.maxWidth}"></div>
+        </div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        LAYOUT_STATE.columns.left = Math.max(150, Number(document.getElementById("edColLeft").value) || 230);
+        LAYOUT_STATE.columns.right = Math.max(180, Number(document.getElementById("edColRight").value) || 290);
+        LAYOUT_STATE.columns.gap = Math.max(8, Number(document.getElementById("edColGap").value) || 20);
+        LAYOUT_STATE.columns.maxWidth = Math.max(960, Number(document.getElementById("edColMax").value) || 1380);
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    let draggedFrameId = null;
+    const wfResizeObserver = new ResizeObserver(entries => {
+      if (!document.body.classList.contains("edit-mode")) return;
+      let changed = false;
+      for (const entry of entries) {
+        const el = entry.target;
+        const fid = el.getAttribute("data-frame-id");
+        if (!fid) continue;
+        const w = Math.round(el.getBoundingClientRect().width);
+        const h = Math.round(el.getBoundingClientRect().height);
+        const badge = el.querySelector(".wf-size-badge");
+        if (badge) badge.textContent = `${w}×${h}px`;
+        if (el.style.width || el.style.height) {
+          LAYOUT_STATE.frameSizes[fid] = { width: el.style.width || "", height: el.style.height || "" };
+          changed = true;
+        }
+      }
+      if (changed) {
+        localStorage.setItem(CUSTOM_DATA_KEY, JSON.stringify(buildExportPayload()));
+      }
+    });
+
+    function captureFrameOrder() {
+      ["left", "center", "right"].forEach(col => {
+        const colEl = document.getElementById("col-" + col);
+        if (!colEl) return;
+        LAYOUT_STATE.frameOrder[col] = Array.from(colEl.children)
+          .map(ch => ch.getAttribute("data-frame-id"))
+          .filter(Boolean);
+      });
+    }
+
+    function moveFrameStep(fid, dir) {
+      const el = document.querySelector(`[data-frame-id="${fid}"]`);
+      if (!el || !el.parentElement) return;
+      const parent = el.parentElement;
+      if (dir < 0 && el.previousElementSibling) {
+        parent.insertBefore(el, el.previousElementSibling);
+      } else if (dir > 0 && el.nextElementSibling) {
+        parent.insertBefore(el.nextElementSibling, el);
+      }
+      captureFrameOrder();
+      saveCustomEdits();
+    }
+
+    function moveFrameCol(fid, colDir) {
+      const cols = ["left", "center", "right"];
+      const el = document.querySelector(`[data-frame-id="${fid}"]`);
+      if (!el || !el.parentElement) return;
+      const curCol = el.parentElement.getAttribute("data-col");
+      const nextIdx = cols.indexOf(curCol) + colDir;
+      if (nextIdx < 0 || nextIdx >= cols.length) return;
+      const targetCol = document.getElementById("col-" + cols[nextIdx]);
+      if (targetCol) {
+        targetCol.appendChild(el);
+        const cw = CUSTOM_WIDGETS.find(w => w.id === fid);
+        if (cw) cw.col = cols[nextIdx];
+        captureFrameOrder();
+        saveCustomEdits();
+      }
+    }
+
+    function resetFrameSize(fid) {
+      const el = document.querySelector(`[data-frame-id="${fid}"]`);
+      if (el) {
+        el.style.width = "";
+        el.style.height = "";
+      }
+      delete LAYOUT_STATE.frameSizes[fid];
+      saveCustomEdits();
+    }
+
+    function applyWireframeLayout() {
+      const mainEl = document.querySelector(".main-layout");
+      if (mainEl) {
+        if (window.innerWidth > 1120) {
+          const c = LAYOUT_STATE.columns;
+          mainEl.style.gridTemplateColumns = `clamp(195px, 16.5vw, ${c.left}px) minmax(0, 1fr) clamp(235px, 20vw, ${c.right}px)`;
+          mainEl.style.gap = `clamp(12px, 1.4vw, ${c.gap}px)`;
+          mainEl.style.maxWidth = `${c.maxWidth}px`;
+        } else {
+          mainEl.style.gridTemplateColumns = "";
+          mainEl.style.gap = "";
+          mainEl.style.maxWidth = "";
+        }
+      }
+
+      // Restore frame placement & order across columns
+      ["left", "center", "right"].forEach(col => {
+        const colEl = document.getElementById("col-" + col);
+        const order = LAYOUT_STATE.frameOrder[col];
+        if (!colEl || !Array.isArray(order)) return;
+        order.forEach(fid => {
+          const el = document.querySelector(`[data-frame-id="${fid}"]`);
+          if (el) colEl.appendChild(el);
+        });
+      });
+
+      // Apply saved sizes & inject wireframe handle bars
+      document.querySelectorAll("[data-frame-id]").forEach(el => {
+        const fid = el.getAttribute("data-frame-id");
+        const sz = LAYOUT_STATE.frameSizes[fid];
+        if (sz) {
+          if (sz.width) el.style.width = sz.width;
+          if (sz.height) el.style.height = sz.height;
+        }
+        if (!el.querySelector(":scope > .wireframe-bar")) {
+          const bar = document.createElement("div");
+          bar.className = "wireframe-bar";
+          bar.innerHTML = `
+            <span>⠿ ${fid}</span>
+            <div class="wf-btns">
+              <span class="wf-size-badge">${Math.round(el.getBoundingClientRect().width)}×${Math.round(el.getBoundingClientRect().height)}px</span>
+              <button type="button" class="tile-mini-btn" title="Move Up" onclick="moveFrameStep('${fid}', -1)">▲</button>
+              <button type="button" class="tile-mini-btn" title="Move Down" onclick="moveFrameStep('${fid}', 1)">▼</button>
+              <button type="button" class="tile-mini-btn" title="Move Left Column" onclick="moveFrameCol('${fid}', -1)">◀</button>
+              <button type="button" class="tile-mini-btn" title="Move Right Column" onclick="moveFrameCol('${fid}', 1)">▶</button>
+              <button type="button" class="tile-mini-btn" title="Reset Size" onclick="resetFrameSize('${fid}')">↺</button>
+            </div>
+          `;
+          el.prepend(bar);
+
+          el.setAttribute("draggable", "false");
+          bar.addEventListener("mousedown", () => {
+            if (document.body.classList.contains("edit-mode")) el.setAttribute("draggable", "true");
+          });
+          bar.addEventListener("mouseup", () => el.setAttribute("draggable", "false"));
+          el.addEventListener("dragstart", () => { draggedFrameId = fid; });
+          el.addEventListener("dragend", () => {
+            el.setAttribute("draggable", "false");
+            draggedFrameId = null;
+            document.querySelectorAll(".wf-drop-target").forEach(x => x.classList.remove("wf-drop-target"));
+          });
+          el.addEventListener("dragover", e => {
+            if (!document.body.classList.contains("edit-mode") || !draggedFrameId || draggedFrameId === fid) return;
+            e.preventDefault();
+            el.classList.add("wf-drop-target");
+          });
+          el.addEventListener("dragleave", () => el.classList.remove("wf-drop-target"));
+          el.addEventListener("drop", e => {
+            e.preventDefault();
+            el.classList.remove("wf-drop-target");
+            if (!draggedFrameId || draggedFrameId === fid) return;
+            const src = document.querySelector(`[data-frame-id="${draggedFrameId}"]`);
+            if (src && el.parentElement) {
+              el.parentElement.insertBefore(src, el);
+              const targetCol = el.parentElement.getAttribute("data-col");
+              const cw = CUSTOM_WIDGETS.find(w => w.id === draggedFrameId);
+              if (cw && targetCol) cw.col = targetCol;
+              captureFrameOrder();
+              saveCustomEdits();
+            }
+          });
+          wfResizeObserver.observe(el);
+        }
+      });
+    }
+
+    function importWikiJson(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const parsed = JSON.parse(String(reader.result));
+          localStorage.setItem(CUSTOM_DATA_KEY, JSON.stringify(parsed));
+          loadCustomEdits();
+          applyTranslations();
+    window.addEventListener("resize", applyWireframeLayout);
+    window.addEventListener("storage", e => {
+      if (e.key === LANG_KEY && e.newValue && e.newValue !== currentLang) {
+        currentLang = e.newValue === "en" ? "en" : "vi";
+        applyTranslations();
+      }
+    });
+    if (localStorage.getItem("ome_wiki_lang_hint_seen") !== "true") {
+      const h = document.getElementById("langPointerHint");
+      if (h) h.style.display = "block";
+    }
+          alert("Imported JSON successfully!");
+        } catch (err) {
+          alert("Invalid JSON file: " + err.message);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function toggleMainEditMode() {
+      document.body.classList.toggle("edit-mode");
+      document.getElementById("mainEditModeBtn").classList.toggle("active", document.body.classList.contains("edit-mode"));
+    }
+
+    function closeEditorModal() {
+      document.getElementById("editorModal").classList.remove("active");
+    }
+
+    function openSiteTextEditor() {
+      document.getElementById("editorModalTitle").textContent = "Edit Banner & Intro (EN / VI)";
+      const body = document.getElementById("editorModalBody");
+      body.innerHTML = `
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Banner Title (EN)</label><input id="edBanTitleEn" value="${escapeAttr(UI_TEXT.en.bannerTitle)}"></div>
+          <div class="ed-field"><label>Banner Title (VI)</label><input id="edBanTitleVi" value="${escapeAttr(UI_TEXT.vi.bannerTitle)}"></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Banner Subtitle (EN)</label><textarea id="edBanSubEn">${escapeHtml(UI_TEXT.en.bannerSub)}</textarea></div>
+          <div class="ed-field"><label>Banner Subtitle (VI)</label><textarea id="edBanSubVi">${escapeHtml(UI_TEXT.vi.bannerSub)}</textarea></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Main Heading (EN)</label><input id="edHeadEn" value="${escapeAttr(UI_TEXT.en.mainHeading)}"></div>
+          <div class="ed-field"><label>Main Heading (VI)</label><input id="edHeadVi" value="${escapeAttr(UI_TEXT.vi.mainHeading)}"></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Main Intro (EN)</label><textarea id="edIntroEn">${escapeHtml(UI_TEXT.en.mainIntro)}</textarea></div>
+          <div class="ed-field"><label>Main Intro (VI)</label><textarea id="edIntroVi">${escapeHtml(UI_TEXT.vi.mainIntro)}</textarea></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Browse Title (EN)</label><input id="edBrowseEn" value="${escapeAttr(UI_TEXT.en.browseTitle)}"></div>
+          <div class="ed-field"><label>Browse Title (VI)</label><input id="edBrowseVi" value="${escapeAttr(UI_TEXT.vi.browseTitle)}"></div>
+        </div>
+        <div class="ed-field"><label>Version Badge</label><input id="edVersionPill" value="${escapeAttr(SITE_META.versionPill)}"></div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        UI_TEXT.en.bannerTitle = document.getElementById("edBanTitleEn").value;
+        UI_TEXT.vi.bannerTitle = document.getElementById("edBanTitleVi").value;
+        UI_TEXT.en.bannerSub = document.getElementById("edBanSubEn").value;
+        UI_TEXT.vi.bannerSub = document.getElementById("edBanSubVi").value;
+        UI_TEXT.en.mainHeading = document.getElementById("edHeadEn").value;
+        UI_TEXT.vi.mainHeading = document.getElementById("edHeadVi").value;
+        UI_TEXT.en.mainIntro = document.getElementById("edIntroEn").value;
+        UI_TEXT.vi.mainIntro = document.getElementById("edIntroVi").value;
+        UI_TEXT.en.browseTitle = document.getElementById("edBrowseEn").value;
+        UI_TEXT.vi.browseTitle = document.getElementById("edBrowseVi").value;
+        SITE_META.versionPill = document.getElementById("edVersionPill").value;
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openNewCategoryEditor() {
+      const id = "custom_" + Date.now();
+      WIKI_CATEGORIES.push({
+        id,
+        icon: "assets/icons/nether_star.png",
+        badge: { en: "NEW", vi: "MỚI" },
+        name: { en: "New Category", vi: "Danh Mục Mới" },
+        sub: { en: "Short description", vi: "Mô tả ngắn" },
+        subItems: [{
+          icon: "assets/icons/paper.png",
+          badge: "GUIDE",
+          rarity: "color-aqua",
+          name: { en: "New Guide", vi: "Hướng Dẫn Mới" },
+          desc: { en: "Description here...", vi: "Nội dung chi tiết..." },
+          features: { en: ["Feature 1"], vi: ["Tính năng 1"] }
+        }]
+      });
+      saveCustomEdits();
+      openCategoryEditor(id);
+    }
+
+    function openCategoryEditor(catId) {
+      const idx = WIKI_CATEGORIES.findIndex(c => c.id === catId);
+      if (idx === -1) return;
+      const cat = WIKI_CATEGORIES[idx];
+      document.getElementById("editorModalTitle").textContent = `Edit Category: ${cat.name[currentLang]}`;
+      const iconOpts = AVAILABLE_ICONS.map(ic => `<option value="${ic}" ${ic === cat.icon ? "selected" : ""}>${ic.replace("assets/icons/", "")}</option>`).join("");
+      const subsHtml = (cat.subItems || []).map((s, si) => `
+        <div class="ed-sub-box" data-sub-idx="${si}">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <strong style="color:var(--gold-primary);font-size:0.84rem;">Sub-Item #${si + 1}</strong>
+            <button type="button" class="ed-btn danger" onclick="deleteSubItem('${catId}', ${si})">🗑️ Delete</button>
+          </div>
+          <div class="ed-form-grid">
+            <div class="ed-field"><label>Title (EN)</label><input class="sub-name-en" value="${escapeAttr(s.name.en)}"></div>
+            <div class="ed-field"><label>Title (VI)</label><input class="sub-name-vi" value="${escapeAttr(s.name.vi)}"></div>
+          </div>
+          <div class="ed-form-grid">
+            <div class="ed-field"><label>Description (EN)</label><textarea class="sub-desc-en">${escapeHtml(s.desc.en)}</textarea></div>
+            <div class="ed-field"><label>Description (VI)</label><textarea class="sub-desc-vi">${escapeHtml(s.desc.vi)}</textarea></div>
+          </div>
+          <div class="ed-form-grid">
+            <div class="ed-field"><label>Bullets (EN, 1 per line)</label><textarea class="sub-feat-en">${escapeHtml((s.features.en || []).join("\n"))}</textarea></div>
+            <div class="ed-field"><label>Bullets (VI, 1 per line)</label><textarea class="sub-feat-vi">${escapeHtml((s.features.vi || []).join("\n"))}</textarea></div>
+          </div>
+        </div>
+      `).join("");
+
+      document.getElementById("editorModalBody").innerHTML = `
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Icon</label><select id="edCatIcon">${iconOpts}</select></div>
+          <div class="ed-field"><label>Badge (EN / VI)</label>
+            <div style="display:flex;gap:6px;">
+              <input id="edCatBadgeEn" value="${escapeAttr(cat.badge.en)}" style="width:50%">
+              <input id="edCatBadgeVi" value="${escapeAttr(cat.badge.vi)}" style="width:50%">
+            </div>
+          </div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Name (EN)</label><input id="edCatNameEn" value="${escapeAttr(cat.name.en)}"></div>
+          <div class="ed-field"><label>Name (VI)</label><input id="edCatNameVi" value="${escapeAttr(cat.name.vi)}"></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Subtitle (EN)</label><input id="edCatSubEn" value="${escapeAttr(cat.sub.en)}"></div>
+          <div class="ed-field"><label>Subtitle (VI)</label><input id="edCatSubVi" value="${escapeAttr(cat.sub.vi)}"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin:10px 0 8px;">
+          <strong style="color:#fff;font-size:0.9rem;">Sub-Items</strong>
+          <button type="button" class="ed-btn" onclick="addSubItem('${catId}')">➕ Add Sub-Item</button>
+        </div>
+        <div id="edSubList">${subsHtml}</div>
+        <div style="margin-top:10px;">
+          <button type="button" class="ed-btn danger" onclick="deleteCategory('${catId}')">🗑️ Delete Entire Category</button>
+        </div>
+      `;
+
+      document.getElementById("editorSaveBtn").onclick = () => {
+        cat.icon = document.getElementById("edCatIcon").value;
+        cat.badge.en = document.getElementById("edCatBadgeEn").value;
+        cat.badge.vi = document.getElementById("edCatBadgeVi").value;
+        cat.name.en = document.getElementById("edCatNameEn").value;
+        cat.name.vi = document.getElementById("edCatNameVi").value;
+        cat.sub.en = document.getElementById("edCatSubEn").value;
+        cat.sub.vi = document.getElementById("edCatSubVi").value;
+        document.querySelectorAll("#edSubList .ed-sub-box").forEach((box, i) => {
+          const s = cat.subItems[i];
+          if (!s) return;
+          s.name.en = box.querySelector(".sub-name-en").value;
+          s.name.vi = box.querySelector(".sub-name-vi").value;
+          s.desc.en = box.querySelector(".sub-desc-en").value;
+          s.desc.vi = box.querySelector(".sub-desc-vi").value;
+          s.features.en = box.querySelector(".sub-feat-en").value.split("\n").map(x => x.trim()).filter(Boolean);
+          s.features.vi = box.querySelector(".sub-feat-vi").value.split("\n").map(x => x.trim()).filter(Boolean);
+        });
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function addSubItem(catId) {
+      const cat = WIKI_CATEGORIES.find(c => c.id === catId);
+      if (!cat) return;
+      cat.subItems = cat.subItems || [];
+      cat.subItems.push({
+        icon: cat.icon,
+        badge: "INFO",
+        rarity: "color-aqua",
+        name: { en: "New Section", vi: "Mục Mới" },
+        desc: { en: "Description...", vi: "Mô tả..." },
+        features: { en: [], vi: [] }
+      });
+      saveCustomEdits();
+      openCategoryEditor(catId);
+    }
+
+    function deleteSubItem(catId, si) {
+      const cat = WIKI_CATEGORIES.find(c => c.id === catId);
+      if (!cat || !cat.subItems) return;
+      cat.subItems.splice(si, 1);
+      saveCustomEdits();
+      openCategoryEditor(catId);
+    }
+
+    function deleteCategory(catId) {
+      const idx = WIKI_CATEGORIES.findIndex(c => c.id === catId);
+      if (idx !== -1) {
+        WIKI_CATEGORIES.splice(idx, 1);
+        saveCustomEdits();
+        closeEditorModal();
+      }
+    }
+
+    function exportWikiJson() {
+      const data = buildExportPayload();
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "main_wiki_edits.json";
+      a.click();
+    }
+
+    function copyWikiJson() {
+      const data = buildExportPayload();
+      navigator.clipboard.writeText(JSON.stringify(data, null, 2));
+      alert("Đã copy JSON! Bạn chỉ cần gửi đoạn JSON này (hoặc file main_wiki_edits.json) cho AI để đồng bộ lên Wiki chính.");
+    }
+
+    function resetCustomEdits() {
+      if (confirm("Khôi phục toàn bộ nội dung Wiki về mặc định?")) {
+        localStorage.removeItem(CUSTOM_DATA_KEY);
+        location.reload();
+      }
+    }
+
+    function escapeHtml(s) {
+      return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+    function escapeAttr(s) {
+      return escapeHtml(s).replace(/"/g, "&quot;");
+    }
+
+    localStorage.removeItem("ome_wiki_bg_test");
+    loadCustomEdits();
+    if (location.protocol === "file:" || ["localhost", "127.0.0.1"].includes(location.hostname) || location.search.includes("edit=1")) {
+      const edBtn = document.getElementById("mainEditModeBtn");
+      if (edBtn) edBtn.style.display = "inline-flex";
+    }
     applyTranslations();
+    window.addEventListener("resize", applyWireframeLayout);
+    window.addEventListener("storage", e => {
+      if (e.key === LANG_KEY && e.newValue && e.newValue !== currentLang) {
+        currentLang = e.newValue === "en" ? "en" : "vi";
+        applyTranslations();
+      }
+    });
+    if (localStorage.getItem("ome_wiki_lang_hint_seen") !== "true") {
+      const h = document.getElementById("langPointerHint");
+      if (h) h.style.display = "block";
+    }
     if (localStorage.getItem(DONT_SHOW_KEY) !== "true") {
       document.getElementById("langModal").classList.add("active");
     }

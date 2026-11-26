@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Client Mods — One More Expedition Wiki</title>
+  <link rel="icon" type="image/png" href="assets/server-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/wiki-header.css" />
+  <script src="assets/wiki-lang-sync.js"></script>
+  <style>
+    :root {
+      --bg-dark: #0d131f;
+      --card-bg: rgba(18, 24, 38, 0.88);
+      --card-inner: rgba(25, 34, 52, 0.78);
+      --border-card: rgba(255, 255, 255, 0.1);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --gold-primary: #f5c451;
+      --aqua: #38bdf8;
+      --green: #4ade80;
+      --epic: #e879f9;
+      --red: #f87171;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.6;
+      background-color: var(--bg-dark);
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+    }
+    .minecraft-bg-fixed {
+      position: fixed;
+      inset: 0;
+      z-index: -10;
+      pointer-events: none;
+      background: #101726 url('assets/bg.jpg') no-repeat center center / cover;
+    }
+    .minecraft-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 25%, rgba(15, 23, 42, 0.45) 0%, rgba(7, 10, 18, 0.84) 100%);
+    }
+    .mc-pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
+    .header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px 24px;
+      background: rgba(11, 15, 23, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+    .brand-group { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .brand-cube-icon { width: 32px; height: 32px; border-radius: 6px; }
+    .brand-text-stack { display: flex; flex-direction: column; line-height: 1.15; }
+    .brand-khtn { font-size: 0.95rem; font-weight: 800; color: #fff; }
+    .brand-wiki { font-size: 0.72rem; font-weight: 600; color: var(--gold-primary); }
+    .nav-tabs-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      flex-wrap: wrap;
+    }
+    .nav-tab-btn {
+      padding: 6px 13px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .nav-tab-btn:hover { color: #fff; background: rgba(255, 255, 255, 0.06); }
+    .lang-pill {
+      display: inline-flex;
+      background: #0d1118;
+      border: 1px solid #2d3648;
+      border-radius: 8px;
+      padding: 2px;
+      gap: 2px;
+    }
+    .lang-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .lang-btn.active { background: var(--gold-primary); color: #111827; }
+    .page-wrap {
+      max-width: 980px;
+      margin: 26px auto 54px;
+      padding: 0 20px;
+    }
+    .back-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border-radius: 9px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-card);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 700;
+      backdrop-filter: blur(10px);
+    }
+    .back-btn:hover { border-color: rgba(245, 196, 81, 0.5); color: var(--gold-primary); }
+    .hero-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-card);
+      border-radius: 16px;
+      padding: 22px 24px;
+      backdrop-filter: blur(12px);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .hero-icon-box {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      background: rgba(10, 14, 23, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .hero-icon-box img { width: 38px; height: 38px; }
+    .hero-title { font-size: 1.5rem; font-weight: 800; color: #fff; line-height: 1.2; }
+    .hero-sub { font-size: 0.9rem; color: var(--text-muted); margin-top: 4px; }
+    .articles-stack { display: flex; flex-direction: column; gap: 16px; }
+    .article-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-card);
+      border-radius: 16px;
+      padding: 20px 22px;
+      backdrop-filter: blur(12px);
+    }
+    .article-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .article-title-row { display: flex; align-items: center; gap: 10px; }
+    .article-title-row img { width: 24px; height: 24px; }
+    .article-title-row h2 { font-size: 1.12rem; font-weight: 800; color: #fff; }
+    .article-badge {
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      background: rgba(245, 196, 81, 0.14);
+      color: var(--gold-primary);
+      border: 1px solid rgba(245, 196, 81, 0.35);
+    }
+    .article-desc { color: #cbd5e1; font-size: 0.92rem; margin-bottom: 14px; }
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .feature-list li {
+      background: var(--card-inner);
+      border: 1px solid var(--border-card);
+      border-radius: 10px;
+      padding: 10px 13px;
+      font-size: 0.87rem;
+      color: #e2e8f0;
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+    }
+    .feature-dot { color: var(--gold-primary); font-weight: 800; flex-shrink: 0; }
+    .other-systems {
+      margin-top: 24px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-card);
+      border-radius: 16px;
+      padding: 16px 20px;
+      backdrop-filter: blur(12px);
+    }
+    .other-title { font-size: 0.86rem; font-weight: 800; color: var(--text-muted); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .other-pills { display: flex; flex-wrap: wrap; gap: 7px; }
+    .other-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 11px;
+      border-radius: 8px;
+      background: var(--card-inner);
+      border: 1px solid var(--border-card);
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+    .other-pill:hover { border-color: rgba(56, 189, 248, 0.5); color: #fff; }
+    .other-pill.current { border-color: var(--gold-primary); color: var(--gold-primary); }
+    .other-pill img { width: 16px; height: 16px; }
+    @media (max-width: 1280px) {
+      .header-bar { padding: 10px 16px; gap: 10px; }
+      .nav-tab-btn { padding: 5px 10px; font-size: 0.78rem; }
+    }
+    @media (max-width: 1120px) {
+      .nav-tabs-pill { width: 100%; justify-content: center; order: 3; }
+    }
+    @media (max-width: 680px) {
+      .header-bar { padding: 9px 12px; gap: 8px; }
+      .brand-khtn { font-size: 0.88rem; }
+      .nav-tabs-pill {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .nav-tabs-pill::-webkit-scrollbar { display: none; }
+      .nav-tab-btn { flex-shrink: 0; white-space: nowrap; font-size: 0.75rem; padding: 5px 9px; }
+      .page-wrap { padding: 0 12px; margin: 16px auto 36px; }
+      .hero-card { padding: 16px; }
+      .article-card { padding: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="minecraft-bg-fixed">
+    <div class="minecraft-bg-overlay"></div>
+  </div>
+
+  <header class="ome-header">
+    <a href="main.html" class="ome-brand">
+      <img class="ome-brand-icon" src="assets/server-icon.png" alt="OME Logo" />
+      <div class="ome-brand-text">
+        <span class="ome-brand-title">One More Expedition</span>
+        <span class="ome-brand-sub">KHTN Server Wiki • 26.3</span>
+      </div>
+    </a>
+
+    <nav class="ome-nav">
+      <a href="main.html" class="ome-nav-btn" style="border-color: rgba(59, 130, 246, 0.45); color: #93c5fd;">
+        <img src="assets/icons/grass_block_side.png" alt=""/>
+        <span data-i18n="navHome">Trang Chủ</span>
+      </a>
+      <a href="enchants.html" class="ome-nav-btn" style="color: #f5c451; border-color: rgba(245, 196, 81, 0.45);">
+        <img src="assets/icons/enchanted_book.png" alt=""/>
+        <span data-i18n="navEnchants">Bách Khoa Phù Phép</span>
+      </a>
+      <a href="fishing.html" class="ome-nav-btn" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.45);">
+        <img src="assets/icons/fishing_rod.png" alt=""/>
+        <span data-i18n="navFishing">Bách Khoa Câu Cá</span>
+      </a>
+      <a href="world.html" class="ome-nav-btn" style="color: #4ade80; border-color: rgba(74, 222, 128, 0.45);">
+        <img src="assets/icons/spyglass.png" alt=""/>
+        <span>Biomes &amp; Structures</span>
+      </a>
+    </nav>
+
+    <div class="ome-header-right">
+      <div class="ome-lang-pill">
+        <button class="ome-lang-btn" id="btnLangEn" onclick="setLanguage('en')">🇺🇸 EN</button>
+        <button class="ome-lang-btn active" id="btnLangVi" onclick="setLanguage('vi')">🇻🇳 VI</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <div class="back-bar">
+      <a href="main.html" class="back-btn" id="backHomeBtn">← Back to Main Page</a>
+    </div>
+
+    <section class="hero-card">
+      <div class="hero-icon-box">
+        <img class="mc-pixel" src="assets/icons/nether_star.png" alt="Best Client Mods" />
+      </div>
+      <div>
+        <h1 class="hero-title" id="heroTitle">Best Client Mods</h1>
+        <p class="hero-sub" id="heroSub">Voice Chat • FPS • Map</p>
+      </div>
+    </section>
+
+    <section class="articles-stack" id="articlesContainer"></section>
+
+    <section class="other-systems">
+      <div class="other-title" id="otherTitle">Browse Other Systems</div>
+      <div class="other-pills" id="otherPills"></div>
+    </section>
+  </main>
+
+  <script>
+    const LANG_KEY = "ome_wiki_lang";
+    let currentLang = localStorage.getItem(LANG_KEY) || "en";
+    const PAGE_DATA = {"id": "recommended_mods", "icon": "assets/icons/nether_star.png", "badge": {"vi": "MODS", "en": "MODS"}, "name": {"vi": "Best Client Mods", "en": "Best Client Mods"}, "sub": {"vi": "Voice Chat • FPS • Map", "en": "Voice Chat • FPS • Map"}, "subItems": [{"icon": "assets/icons/nether_star.png", "badge": "CLIENT MODS (26.3)", "rarity": "color-aqua", "name": {"vi": "Bộ Mod Client Khuyên Dùng", "en": "Recommended Client Mods"}, "desc": {"vi": "Server chạy Fabric 26.3 và hỗ trợ nhiều mod client tiện ích (không bắt buộc cài nhưng giúp trải nghiệm mượt hơn rất nhiều).", "en": "The server runs Fabric 26.3 and supports helpful client-side mods (optional, but strongly recommended for the best experience)."}, "features": {"vi": ["Simple Voice Chat (2.6.27+26.3) — Trò chuyện giọng nói trực tiếp trong game", "Sodium + Lithium + Iris Shaders — Tăng FPS tối đa & hỗ trợ shader mượt", "Xaero's Minimap / World Map — Bản đồ mini & đánh dấu tọa độ tiện lợi", "Mod Menu + Roughly Enough Items (REI) — Xem công thức chế tạo nhanh"], "en": ["Simple Voice Chat (2.6.27+26.3) — Proximity voice chat directly in-game", "Sodium + Lithium + Iris Shaders — Massive FPS boost & shader support", "Xaero's Minimap / World Map — Convenient minimap & personal waypoints", "Mod Menu + Roughly Enough Items (REI) — Quick recipe viewer"]}}]};
+    const ALL_SYSTEMS = [{"id": "skyblock", "icon": "assets/icons/oak_sapling.png", "name": {"vi": "Skyblock", "en": "Skyblock"}, "href": "skyblock.html"}, {"id": "world", "icon": "assets/icons/spyglass.png", "name": {"vi": "Biomes & Structures", "en": "Biomes & Structures"}, "href": "world.html"}, {"id": "adventure", "icon": "assets/icons/compass.png", "name": {"vi": "Adventure", "en": "Adventure"}, "href": "adventure.html"}, {"id": "enchants", "icon": "assets/icons/enchanted_book.png", "name": {"vi": "Enchantments", "en": "Enchantments"}, "href": "enchants.html"}, {"id": "fishing", "icon": "assets/icons/fishing_rod.png", "name": {"vi": "Fishing", "en": "Fishing"}, "href": "fishing.html"}, {"id": "minetreasure", "icon": "assets/icons/netherite_pickaxe.png", "name": {"vi": "Mine Treasure", "en": "Mine Treasure"}, "href": "minetreasure.html"}, {"id": "bosses", "icon": "assets/icons/dragonblade.png", "name": {"vi": "Custom Items / Bosses", "en": "Custom Items / Bosses"}, "href": "bosses.html"}, {"id": "warping", "icon": "assets/icons/ender_pearl.png", "name": {"vi": "Teleports", "en": "Teleports"}, "href": "warping.html"}, {"id": "quests", "icon": "assets/icons/writable_book.png", "name": {"vi": "Daily Quests", "en": "Daily Quests"}, "href": "quests.html"}, {"id": "economy", "icon": "assets/icons/emerald.png", "name": {"vi": "Economy", "en": "Economy"}, "href": "economy.html"}, {"id": "prefix", "icon": "assets/icons/name_tag.png", "name": {"vi": "Rank / Prefix", "en": "Rank / Prefix"}, "href": "prefix.html"}, {"id": "redeem", "icon": "assets/icons/paper.png", "name": {"vi": "Codes", "en": "Codes"}, "href": "redeem.html"}, {"id": "utility", "icon": "assets/icons/amethyst_shard.png", "name": {"vi": "Utility & QoL", "en": "Utility & QoL"}, "href": "utility.html"}, {"id": "recommended_mods", "icon": "assets/icons/nether_star.png", "name": {"vi": "Best Client Mods", "en": "Best Client Mods"}, "href": "mods.html"}];
+
+    function setLanguage(lang) {
+      currentLang = (lang === "en") ? "en" : "vi";
+      localStorage.setItem(LANG_KEY, currentLang);
+      renderPage();
+    window.addEventListener("storage", e => {
+      if (e.key === LANG_KEY && e.newValue && e.newValue !== currentLang) {
+        currentLang = e.newValue === "en" ? "en" : "vi";
+        renderPage();
+      }
+    });
+    }
+
+    function renderPage() {
+      document.documentElement.lang = currentLang;
+      document.getElementById("btnLangEn").classList.toggle("active", currentLang === "en");
+      document.getElementById("btnLangVi").classList.toggle("active", currentLang === "vi");
+
+      const ui = currentLang === "vi" ? {
+        navHome: "Trang Chủ",
+        navEnchants: "Bách Khoa Phù Phép",
+        navFishing: "Bách Khoa Câu Cá",
+        navCommands: "Lệnh Nhanh",
+        back: "← Quay lại Trang Chủ",
+        other: "Khám Phá Hệ Thống Khác"
+      } : {
+        navHome: "Main Page",
+        navEnchants: "Enchantments Wiki",
+        navFishing: "Fishing Wiki",
+        navCommands: "Quick Commands",
+        back: "← Back to Main Page",
+        other: "Browse Other Systems"
+      };
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const k = el.getAttribute("data-i18n");
+        if (ui[k]) el.textContent = ui[k];
+      });
+      document.getElementById("backHomeBtn").textContent = ui.back;
+      document.getElementById("otherTitle").textContent = ui.other;
+      document.getElementById("heroTitle").textContent = PAGE_DATA.name[currentLang] || PAGE_DATA.name.en;
+      document.getElementById("heroSub").textContent = PAGE_DATA.sub[currentLang] || PAGE_DATA.sub.en;
+
+      document.getElementById("articlesContainer").innerHTML = (PAGE_DATA.subItems || []).map(item => `
+        <article class="article-card">
+          <div class="article-head">
+            <div class="article-title-row">
+              <img class="mc-pixel" src="${item.icon || PAGE_DATA.icon}" alt=""/>
+              <h2>${item.name[currentLang] || item.name.en}</h2>
+            </div>
+            ${item.badge ? `<span class="article-badge">${item.badge}</span>` : ""}
+          </div>
+          <p class="article-desc">${item.desc[currentLang] || item.desc.en}</p>
+          <ul class="feature-list">
+            ${((item.features && (item.features[currentLang] || item.features.en)) || []).map(f => `
+              <li><span class="feature-dot">▸</span><span>${f}</span></li>
+            `).join("")}
+          </ul>
+        </article>
+      `).join("");
+
+      document.getElementById("otherPills").innerHTML = ALL_SYSTEMS.map(sys => `
+        <a href="${sys.href}" class="other-pill ${sys.id === PAGE_DATA.id ? 'current' : ''}">
+          <img class="mc-pixel" src="${sys.icon}" alt=""/>
+          <span>${sys.name[currentLang] || sys.name.en}</span>
+        </a>
+      `).join("");
+    }
+
+    renderPage();
+    window.addEventListener("storage", e => {
+      if (e.key === LANG_KEY && e.newValue && e.newValue !== currentLang) {
+        currentLang = e.newValue === "en" ? "en" : "vi";
+        renderPage();
+      }
+    });
+  </script>
+</body>
+</html>

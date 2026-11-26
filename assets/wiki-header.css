@@ -1,0 +1,163 @@
+/* Shared Unified Header for all One More Expedition Wiki pages */
+.ome-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  padding: 10px 24px;
+  background: rgba(11, 15, 23, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.ome-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+  justify-self: start;
+}
+
+.ome-brand-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  object-fit: cover;
+  display: block;
+}
+
+.ome-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.ome-brand-title {
+  font-size: 0.96rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.ome-brand-sub {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #f5c451;
+}
+
+.ome-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: nowrap;
+  justify-self: center;
+}
+
+.ome-nav-btn {
+  padding: 6px 13px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+  line-height: 1.25;
+}
+
+.ome-nav-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.ome-nav-btn.active {
+  color: #ffffff;
+  background: rgba(37, 99, 235, 0.28);
+}
+
+.ome-nav-btn img {
+  width: 16px;
+  height: 16px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  flex-shrink: 0;
+}
+
+.ome-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  justify-self: end;
+}
+
+.ome-lang-pill {
+  position: relative;
+  display: inline-flex;
+  background: #0d1118;
+  border: 1px solid #2d3648;
+  border-radius: 8px;
+  padding: 2px;
+  gap: 2px;
+}
+
+.ome-lang-btn {
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 0.76rem;
+  font-weight: 800;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.ome-lang-btn.active {
+  background: #f5c451;
+  color: #111827;
+}
+
+@media (max-width: 1280px) {
+  .ome-header { padding: 10px 16px; gap: 10px; }
+  .ome-nav-btn { padding: 5px 10px; font-size: 0.78rem; }
+}
+
+@media (max-width: 1120px) {
+  .ome-header { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  .ome-nav { width: 100%; justify-content: center; order: 3; flex-wrap: wrap; }
+  .ome-header-right { margin-left: auto; }
+}
+
+@media (max-width: 680px) {
+  .ome-header { padding: 9px 12px; gap: 8px; }
+  .ome-brand-title { font-size: 0.88rem; }
+  .ome-header-right { width: 100%; justify-content: space-between; }
+  .ome-nav {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .ome-nav::-webkit-scrollbar { display: none; }
+  .ome-nav-btn { flex-shrink: 0; white-space: nowrap; font-size: 0.75rem; padding: 5px 9px; }
+}
