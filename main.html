@@ -1071,7 +1071,8 @@
         <button type="button" class="frame-edit-btn" style="margin-bottom:6px;" onclick="openSidebarBrandEditor()">✏️ Edit</button>
         <img class="sidebar-cube-img mc-pixel" id="leftBrandImg" src="assets/icons/beacon.png" alt="OME Beacon" />
         <div class="sidebar-khtn-title" id="leftBrandTitle">KHTN • OME</div>
-        <div class="sidebar-wiki-title" data-i18n="sidebarSub">Minecraft 26.3 Survival & Skyblock</div>
+        <div class="sidebar-wiki-title" data-i18n="sidebarSub">Support &amp; Donate Server</div>
+        <button type="button" onclick="openSupportModal()" style="margin-top:10px;width:100%;padding:7px 10px;border-radius:8px;border:1px solid rgba(245,196,81,0.5);background:linear-gradient(135deg,rgba(245,196,81,0.22),rgba(234,179,8,0.1));color:#f5c451;font-weight:800;font-size:0.78rem;cursor:pointer;font-family:inherit;" data-i18n="donateBtn">💛 Support / Donate</button>
       </div>
 
       <div class="accordion-card" data-frame-id="left_menu">
@@ -1079,6 +1080,17 @@
           <button type="button" class="frame-edit-btn" onclick="openLeftAccordionEditor()">✏️ Edit Menu</button>
         </div>
         <div id="leftAccordionContainer"></div>
+      </div>
+
+      <div class="widget-panel" data-frame-id="right_clock">
+        <div class="widget-top-header">
+          <img class="mc-pixel" src="assets/icons/clock.png" alt=""/>
+          <span data-i18n="clockTitle">Đồng Hồ Server</span>
+        </div>
+        <div class="clock-body">
+          <div class="clock-big-digits" id="skyblockClock">--:--</div>
+          <div class="clock-sub-label" data-i18n="clockZone">Múi giờ Việt Nam (UTC+7)</div>
+        </div>
       </div>
     </aside>
 
@@ -1151,7 +1163,7 @@
           <div class="ip-copy-box">
             <div class="ip-text">
               <span class="status-dot" id="serverDot"></span>
-              <span id="serverIpDisplay">mckhtn.redirectme.net</span>
+              <span id="serverIpDisplay">mckhtn.redirectme.net:2050</span>
             </div>
             <button class="copy-ip-btn" id="copyIpBtn" onclick="copyServerIp()" data-i18n="copyBtn">Copy IP</button>
           </div>
@@ -1164,21 +1176,10 @@
       <div class="widget-panel" data-frame-id="right_checklist">
         <div class="widget-top-header">
           <img class="mc-pixel" src="assets/icons/writable_book.png" alt=""/>
-          <span data-i18n="checklistTitle">Hướng Dẫn Tân Thủ</span>
+          <span data-i18n="checklistTitle">Luật Server</span>
           <button type="button" class="frame-edit-btn" onclick="openChecklistEditor()">✏️ Edit</button>
         </div>
         <div class="checklist-body" id="newPlayerChecklist"></div>
-      </div>
-
-      <div class="widget-panel" data-frame-id="right_clock">
-        <div class="widget-top-header">
-          <img class="mc-pixel" src="assets/icons/clock.png" alt=""/>
-          <span data-i18n="clockTitle">Đồng Hồ Server</span>
-        </div>
-        <div class="clock-body">
-          <div class="clock-big-digits" id="skyblockClock">--:--</div>
-          <div class="clock-sub-label" data-i18n="clockZone">Múi giờ Việt Nam (UTC+7)</div>
-        </div>
       </div>
     </aside>
   </main>
@@ -1292,7 +1293,8 @@
         navCommands: "Lệnh Nhanh",
         searchPlaceholder: "Tìm kiếm wiki, lệnh, tính năng...",
         subSearchPlaceholder: "Lọc trong mục này...",
-        sidebarSub: "Minecraft 26.3 Sinh Tồn & Skyblock",
+        sidebarSub: "Ủng Hộ Duy Trì Server",
+        donateBtn: "💛 Support / Donate Me",
         accCore: "Hệ Thống Cốt Lõi",
         accProgression: "Kinh Tế & Tiến Trình",
         accEncyclopedias: "Bách Khoa Chuyên Sâu",
@@ -1309,7 +1311,7 @@
         linkBosses: "World Bosses",
         linkWorld: "Biomes & Dungeons",
         bannerTitle: "Chào mừng đến với One More Expedition (MC 26.3)!",
-        bannerSub: "Kết nối qua IP <code>mckhtn.redirectme.net</code> • Mở <code>/rank</code> để chỉnh Prefix & <code>/redeem</code> để nhập Code!",
+        bannerSub: "Kết nối qua IP <code>mckhtn.redirectme.net:2050</code> • Mở <code>/rank</code> để chỉnh Prefix &amp; <code>/redeem</code> để nhập Code!",
         mainHeading: "Wiki Chính Thức — One More Expedition",
         mainIntro: "<strong>One More Expedition</strong> kết hợp sinh tồn thế giới mở (Terralith, Incendium, Stellarity, Dungeons &amp; Taverns) với đảo riêng Skyblock (<code>/is</code>), hệ thống 474 Phù phép, 112 Thủy quái Câu cá, Nhiệm vụ Co-op hàng ngày, Kinh tế EconomyCraft và danh hiệu Prefix Cosmetics.",
         browseTitle: "Khám Phá Các Hệ Thống Server",
@@ -1317,7 +1319,7 @@
         serverStatusTitle: "Kết Nối Server",
         copyBtn: "Copy IP",
         copiedBtn: "Đã Copy!",
-        checklistTitle: "Hướng Dẫn Tân Thủ",
+        checklistTitle: "Luật Server",
         clockTitle: "Đồng Hồ Server",
         clockZone: "Múi giờ Việt Nam (UTC+7)",
         btnBack: "← Quay lại",
@@ -1327,10 +1329,10 @@
         featuresTitle: "✨ Chi Tiết & Cơ Chế",
         noMatch: "Không tìm thấy mục nào khớp với tìm kiếm.",
         checklist: [
-          "Đăng ký / đăng nhập bằng <code>/register</code> &amp; <code>/login</code> (có Spawn Shield bảo vệ tọa độ).",
-          "Gõ <code>/daily</code> nhận $1,000 mỗi ngày &amp; <code>/quest</code> nhận nhiệm vụ kiếm Coins + XP.",
-          "Gõ <code>/is</code> để về đảo Skyblock an toàn (bật KeepInventory riêng trên đảo).",
-          "Gõ <code>/rtp</code> (3 lần/ngày) để ra thế giới sinh tồn đào mỏ, săn Boss &amp; tìm rương."
+          "<strong>Không gian lận:</strong> Cấm Hack, X-Ray, Auto-Click hay lợi dụng bug/dupe.",
+          "<strong>Không phá hoại:</strong> Tôn trọng công trình, không grief hoặc trộm đồ người khác.",
+          "<strong>Văn minh:</strong> Giữ chat lịch sự, không spam hay xúc phạm thành viên.",
+          "<strong>Hỗ trợ:</strong> Báo lỗi hoặc góp ý trực tiếp cho Admin qua Discord."
         ]
       },
       en: {
@@ -1340,7 +1342,8 @@
         navCommands: "Quick Commands",
         searchPlaceholder: "Search wiki, commands, features...",
         subSearchPlaceholder: "Filter this section...",
-        sidebarSub: "Minecraft 26.3 Survival & Skyblock",
+        sidebarSub: "Support Keep Server Alive",
+        donateBtn: "💛 Support / Donate Me",
         accCore: "Core Systems",
         accProgression: "Economy & Progression",
         accEncyclopedias: "Full Encyclopedias",
@@ -1357,7 +1360,7 @@
         linkBosses: "World Bosses",
         linkWorld: "Biomes & Dungeons",
         bannerTitle: "Welcome to One More Expedition (MC 26.3)!",
-        bannerSub: "Connect via <code>mckhtn.redirectme.net</code> • Open <code>/rank</code> for Prefixes &amp; <code>/redeem</code> for Promo Codes!",
+        bannerSub: "Connect via <code>mckhtn.redirectme.net:2050</code> • Open <code>/rank</code> for Prefixes &amp; <code>/redeem</code> for Promo Codes!",
         mainHeading: "Official Wiki — One More Expedition",
         mainIntro: "<strong>One More Expedition</strong> blends open-world survival (Terralith, Incendium, Stellarity, Dungeons &amp; Taverns) with private Skyblock islands (<code>/is</code>), 474 Enchantments, 112 Fishing Sea Creatures, Co-op Daily Quests, EconomyCraft, and Prefix Cosmetics.",
         browseTitle: "Browse Server Systems",
@@ -1365,7 +1368,7 @@
         serverStatusTitle: "Server Connection",
         copyBtn: "Copy IP",
         copiedBtn: "Copied!",
-        checklistTitle: "New Player Checklist",
+        checklistTitle: "Server Rules",
         clockTitle: "Server Clock",
         clockZone: "Local Time (UTC+7)",
         btnBack: "← Back",
@@ -1375,10 +1378,10 @@
         featuresTitle: "✨ Mechanics & Details",
         noMatch: "No entries match your search.",
         checklist: [
-          "Secure your account with <code>/register</code> &amp; <code>/login</code> (Spawn Shield hides coordinates until login).",
-          "Run <code>/daily</code> for $1,000 daily &amp; <code>/quest</code> for Coins + Adventure XP.",
-          "Use <code>/is</code> to visit your private Skyblock island (island-wide KeepInventory enabled).",
-          "Use <code>/rtp</code> (3/day) to explore Overworld biomes, Mine Treasures, and Bosses."
+          "<strong>Fair Play:</strong> No hacks, X-Ray, auto-clickers, or bug/dupe exploits.",
+          "<strong>Respect Builds:</strong> No griefing, stealing, or trapping other players.",
+          "<strong>Friendly Chat:</strong> Be respectful, no spam, hate speech, or toxicity.",
+          "<strong>Need Help?</strong> Report bugs or contact Staff via our Discord."
         ]
       }
     };
@@ -1728,6 +1731,36 @@
           }
         ]
       }
+      {
+        id: "recommend_mods",
+        icon: "assets/icons/beacon.png",
+        badge: { vi: "KHUYÊN DÙNG", en: "CLIENT MODS" },
+        name: { vi: "Recommend Mods", en: "Recommend Mods" },
+        sub: { vi: "Sodium • Iris • Simple Voice Chat", en: "Sodium • Iris • Simple Voice Chat" },
+        subItems: [
+          {
+            icon: "assets/icons/beacon.png",
+            badge: "PERFORMANCE & VISUAL",
+            rarity: "color-aqua",
+            name: { vi: "Mod Tối Ưu FPS & Shaders", en: "FPS & Shaders (Client Optional)" },
+            desc: { vi: "Server chạy Fabric 26.3 chuẩn Vanilla Client — bạn vào chơi không cần cài mod, nhưng nên cài bộ mod client nhẹ để tăng FPS và dùng Voice Chat.", en: "The server runs Fabric 26.3 with full Vanilla Client support — no mods required, though these optional client mods boost FPS and immersion." },
+            features: {
+              vi: [
+                "Sodium + Lithium + FerriteCore — Tăng FPS mượt mà",
+                "Iris Shaders — Chơi kèm Shader đẹp mắt",
+                "Simple Voice Chat — Trò chuyện theo khoảng cách trực tiếp trong game",
+                "Mod Menu & REI / EMI — Xem công thức chế tạo nhanh"
+              ],
+              en: [
+                "Sodium + Lithium + FerriteCore — Smooth high-FPS gameplay",
+                "Iris Shaders — Full shader support",
+                "Simple Voice Chat — Proximity voice chat in-game",
+                "Mod Menu & REI / EMI — Quick crafting recipe viewer"
+              ]
+            }
+          }
+        ]
+      }
     ];
 
     const QUICK_COMMANDS = [
@@ -1739,6 +1772,36 @@
       { cmd: "/shop", vi: "Cửa hàng & Extras", en: "Server Shop & Extras", cat: "economy" },
       { cmd: "/fish", vi: "Mở Fishing Hub", en: "Open Fishing Hub", cat: "fishing" },
       { cmd: "/stash", vi: "Nhận đồ dư bị đầy túi", en: "Claim overflow items", cat: "stash" }
+      {
+        id: "recommend_mods",
+        icon: "assets/icons/beacon.png",
+        badge: { vi: "KHUYÊN DÙNG", en: "CLIENT MODS" },
+        name: { vi: "Recommend Mods", en: "Recommend Mods" },
+        sub: { vi: "Sodium • Iris • Simple Voice Chat", en: "Sodium • Iris • Simple Voice Chat" },
+        subItems: [
+          {
+            icon: "assets/icons/beacon.png",
+            badge: "PERFORMANCE & VISUAL",
+            rarity: "color-aqua",
+            name: { vi: "Mod Tối Ưu FPS & Shaders", en: "FPS & Shaders (Client Optional)" },
+            desc: { vi: "Server chạy Fabric 26.3 chuẩn Vanilla Client — bạn vào chơi không cần cài mod, nhưng nên cài bộ mod client nhẹ để tăng FPS và dùng Voice Chat.", en: "The server runs Fabric 26.3 with full Vanilla Client support — no mods required, though these optional client mods boost FPS and immersion." },
+            features: {
+              vi: [
+                "Sodium + Lithium + FerriteCore — Tăng FPS mượt mà",
+                "Iris Shaders — Chơi kèm Shader đẹp mắt",
+                "Simple Voice Chat — Trò chuyện theo khoảng cách trực tiếp trong game",
+                "Mod Menu & REI / EMI — Xem công thức chế tạo nhanh"
+              ],
+              en: [
+                "Sodium + Lithium + FerriteCore — Smooth high-FPS gameplay",
+                "Iris Shaders — Full shader support",
+                "Simple Voice Chat — Proximity voice chat in-game",
+                "Mod Menu & REI / EMI — Quick crafting recipe viewer"
+              ]
+            }
+          }
+        ]
+      }
     ];
 
     const LEFT_ACCORDION = [
@@ -1769,16 +1832,101 @@
           { icon: "assets/icons/spyglass.png", label: { en: "Biomes & Dungeons", vi: "Biomes & Dungeons" }, cat: "world" }
         ]
       }
+      {
+        id: "recommend_mods",
+        icon: "assets/icons/beacon.png",
+        badge: { vi: "KHUYÊN DÙNG", en: "CLIENT MODS" },
+        name: { vi: "Recommend Mods", en: "Recommend Mods" },
+        sub: { vi: "Sodium • Iris • Simple Voice Chat", en: "Sodium • Iris • Simple Voice Chat" },
+        subItems: [
+          {
+            icon: "assets/icons/beacon.png",
+            badge: "PERFORMANCE & VISUAL",
+            rarity: "color-aqua",
+            name: { vi: "Mod Tối Ưu FPS & Shaders", en: "FPS & Shaders (Client Optional)" },
+            desc: { vi: "Server chạy Fabric 26.3 chuẩn Vanilla Client — bạn vào chơi không cần cài mod, nhưng nên cài bộ mod client nhẹ để tăng FPS và dùng Voice Chat.", en: "The server runs Fabric 26.3 with full Vanilla Client support — no mods required, though these optional client mods boost FPS and immersion." },
+            features: {
+              vi: [
+                "Sodium + Lithium + FerriteCore — Tăng FPS mượt mà",
+                "Iris Shaders — Chơi kèm Shader đẹp mắt",
+                "Simple Voice Chat — Trò chuyện theo khoảng cách trực tiếp trong game",
+                "Mod Menu & REI / EMI — Xem công thức chế tạo nhanh"
+              ],
+              en: [
+                "Sodium + Lithium + FerriteCore — Smooth high-FPS gameplay",
+                "Iris Shaders — Full shader support",
+                "Simple Voice Chat — Proximity voice chat in-game",
+                "Mod Menu & REI / EMI — Quick crafting recipe viewer"
+              ]
+            }
+          }
+        ]
+      }
     ];
 
-    const CUSTOM_WIDGETS = [];
+    const CUSTOM_WIDGETS = [
+      {
+        id: "right_livemap",
+        col: "right",
+        icon: "assets/icons/compass.png",
+        title: { en: "Live World Map", vi: "Bản Đồ Trực Tuyến" },
+        body: {
+          en: "Explore Overworld, Nether &amp; End terrain in real time with Squaremap.<br><a href='http://mckhtn.redirectme.net:8080' target='_blank' style='display:inline-block;margin-top:8px;padding:6px 12px;border-radius:8px;background:rgba(56,189,248,0.16);border:1px solid rgba(56,189,248,0.4);color:#38bdf8;font-weight:800;text-decoration:none;'>🗺️ Open Live Map →</a>",
+          vi: "Xem bản đồ Overworld, Nether &amp; The End trực tiếp theo thời gian thực.<br><a href='http://mckhtn.redirectme.net:8080' target='_blank' style='display:inline-block;margin-top:8px;padding:6px 12px;border-radius:8px;background:rgba(56,189,248,0.16);border:1px solid rgba(56,189,248,0.4);color:#38bdf8;font-weight:800;text-decoration:none;'>🗺️ Mở Live Map →</a>"
+        }
+      },
+      {
+        id: "right_social",
+        col: "right",
+        icon: "assets/icons/nether_star.png",
+        title: { en: "Community & Social", vi: "Cộng Đồng & Kết Nối" },
+        body: {
+          en: "Join our community to get event alerts, promo codes, and team up!<br><div style='display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;'><a href='https://discord.gg' target='_blank' style='padding:5px 10px;border-radius:7px;background:rgba(129,140,248,0.18);border:1px solid rgba(129,140,248,0.4);color:#a5b4fc;font-weight:800;text-decoration:none;'>💬 Discord</a><a href='https://youtube.com' target='_blank' style='padding:5px 10px;border-radius:7px;background:rgba(248,113,113,0.18);border:1px solid rgba(248,113,113,0.4);color:#fca5a5;font-weight:800;text-decoration:none;'>▶️ YouTube</a></div>",
+          vi: "Tham gia cộng đồng để nhận thông báo sự kiện, Giftcode và tìm đồng đội!<br><div style='display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;'><a href='https://discord.gg' target='_blank' style='padding:5px 10px;border-radius:7px;background:rgba(129,140,248,0.18);border:1px solid rgba(129,140,248,0.4);color:#a5b4fc;font-weight:800;text-decoration:none;'>💬 Discord</a><a href='https://youtube.com' target='_blank' style='padding:5px 10px;border-radius:7px;background:rgba(248,113,113,0.18);border:1px solid rgba(248,113,113,0.4);color:#fca5a5;font-weight:800;text-decoration:none;'>▶️ YouTube</a></div>"
+        }
+      }
+      {
+        id: "recommend_mods",
+        icon: "assets/icons/beacon.png",
+        badge: { vi: "KHUYÊN DÙNG", en: "CLIENT MODS" },
+        name: { vi: "Recommend Mods", en: "Recommend Mods" },
+        sub: { vi: "Sodium • Iris • Simple Voice Chat", en: "Sodium • Iris • Simple Voice Chat" },
+        subItems: [
+          {
+            icon: "assets/icons/beacon.png",
+            badge: "PERFORMANCE & VISUAL",
+            rarity: "color-aqua",
+            name: { vi: "Mod Tối Ưu FPS & Shaders", en: "FPS & Shaders (Client Optional)" },
+            desc: { vi: "Server chạy Fabric 26.3 chuẩn Vanilla Client — bạn vào chơi không cần cài mod, nhưng nên cài bộ mod client nhẹ để tăng FPS và dùng Voice Chat.", en: "The server runs Fabric 26.3 with full Vanilla Client support — no mods required, though these optional client mods boost FPS and immersion." },
+            features: {
+              vi: [
+                "Sodium + Lithium + FerriteCore — Tăng FPS mượt mà",
+                "Iris Shaders — Chơi kèm Shader đẹp mắt",
+                "Simple Voice Chat — Trò chuyện theo khoảng cách trực tiếp trong game",
+                "Mod Menu & REI / EMI — Xem công thức chế tạo nhanh"
+              ],
+              en: [
+                "Sodium + Lithium + FerriteCore — Smooth high-FPS gameplay",
+                "Iris Shaders — Full shader support",
+                "Simple Voice Chat — Proximity voice chat in-game",
+                "Mod Menu & REI / EMI — Quick crafting recipe viewer"
+              ]
+            }
+          }
+        ]
+      }
+    ];
     const LAYOUT_STATE = {
       columns: { left: 230, right: 290, gap: 20, maxWidth: 1380 },
-      frameOrder: { left: null, center: null, right: null },
+      frameOrder: {
+        left: ["left_brand", "left_menu", "right_clock"],
+        center: ["center_banner", "center_tiles", "center_commands"],
+        right: ["right_status", "right_livemap", "right_checklist", "right_social"]
+      },
       frameSizes: {}
     };
     const SITE_META = {
-      serverIp: "mckhtn.redirectme.net",
+      serverIp: "mckhtn.redirectme.net:2050",
       leftBrandTitle: "KHTN • OME",
       leftBrandIcon: "assets/icons/beacon.png",
       versionPill: "Minecraft 26.3 • Fabric SMP + Skyblock"
@@ -2100,11 +2248,42 @@
     setInterval(updateClock, 1000);
     updateClock();
 
+    function openSupportModal() {
+      openCategoryModal({
+        id: "support_donate",
+        icon: "assets/icons/gold_ingot.png",
+        name: { en: "Support & Donate", vi: "Ủng Hộ & Donate Server" },
+        sub: { en: "Help keep One More Expedition online 24/7!", vi: "Chung tay duy trì server One More Expedition 24/7!" },
+        subItems: [{
+          icon: "assets/icons/gold_ingot.png",
+          badge: "SUPPORT SERVER",
+          rarity: "color-gold",
+          name: { en: "Support / Donate Me", vi: "Ủng Hộ Duy Trì Server" },
+          desc: {
+            en: "Every contribution goes directly toward server hosting, upgrades, and new events. Supporters receive exclusive Prefix Cosmetics as a thank-you!",
+            vi: "Mọi sự ủng hộ đều được dùng để duy trì máy chủ 24/7 và phát triển tính năng mới. Người ủng hộ sẽ nhận danh hiệu Prefix Cosmetic đặc biệt!"
+          },
+          features: {
+            en: [
+              "Contact Admin on Discord to support / donate",
+              "Receive exclusive Royalty / Events Prefix Vouchers",
+              "100% non-pay-to-win — purely cosmetic & community support"
+            ],
+            vi: [
+              "Liên hệ Admin qua Discord để ủng hộ / donate",
+              "Nhận Prefix Cosmetic Voucher độc quyền (không Pay-to-Win)",
+              "Cảm ơn bạn đã đồng hành cùng One More Expedition!"
+            ]
+          }
+        }]
+      });
+    }
+
     async function fetchServerStatus() {
       const textEl = document.getElementById("serverStatusText");
       const dotEl = document.getElementById("serverDot");
       try {
-        const res = await fetch("https://api.mcsrvstat.us/3/mckhtn.redirectme.net");
+        const res = await fetch(`https://api.mcsrvstat.us/3/${encodeURIComponent(SITE_META.serverIp)}`);
         const data = await res.json();
         if (data && data.online) {
           dotEl.classList.remove("offline");
@@ -2134,6 +2313,36 @@
       "assets/icons/amethyst_shard.png", "assets/icons/clock.png", "assets/icons/spyglass.png",
       "assets/icons/grass_block_side.png", "assets/icons/chest_front.png", "assets/icons/trident.png",
       "assets/icons/beacon.png"
+      {
+        id: "recommend_mods",
+        icon: "assets/icons/beacon.png",
+        badge: { vi: "KHUYÊN DÙNG", en: "CLIENT MODS" },
+        name: { vi: "Recommend Mods", en: "Recommend Mods" },
+        sub: { vi: "Sodium • Iris • Simple Voice Chat", en: "Sodium • Iris • Simple Voice Chat" },
+        subItems: [
+          {
+            icon: "assets/icons/beacon.png",
+            badge: "PERFORMANCE & VISUAL",
+            rarity: "color-aqua",
+            name: { vi: "Mod Tối Ưu FPS & Shaders", en: "FPS & Shaders (Client Optional)" },
+            desc: { vi: "Server chạy Fabric 26.3 chuẩn Vanilla Client — bạn vào chơi không cần cài mod, nhưng nên cài bộ mod client nhẹ để tăng FPS và dùng Voice Chat.", en: "The server runs Fabric 26.3 with full Vanilla Client support — no mods required, though these optional client mods boost FPS and immersion." },
+            features: {
+              vi: [
+                "Sodium + Lithium + FerriteCore — Tăng FPS mượt mà",
+                "Iris Shaders — Chơi kèm Shader đẹp mắt",
+                "Simple Voice Chat — Trò chuyện theo khoảng cách trực tiếp trong game",
+                "Mod Menu & REI / EMI — Xem công thức chế tạo nhanh"
+              ],
+              en: [
+                "Sodium + Lithium + FerriteCore — Smooth high-FPS gameplay",
+                "Iris Shaders — Full shader support",
+                "Simple Voice Chat — Proximity voice chat in-game",
+                "Mod Menu & REI / EMI — Quick crafting recipe viewer"
+              ]
+            }
+          }
+        ]
+      }
     ];
 
     function loadCustomEdits() {
