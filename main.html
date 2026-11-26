@@ -936,8 +936,31 @@
     body.edit-mode .accordion-card,
     body.edit-mode .sidebar-brand-box,
     body.edit-mode .announcement-box {
-      outline: 1px dashed rgba(245, 196, 81, 0.35);
+      outline: 1.5px dashed rgba(245, 196, 81, 0.5);
+      resize: both;
+      overflow: auto;
+      position: relative;
+      min-width: 140px;
+      min-height: 60px;
     }
+    .wireframe-bar {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      background: rgba(15, 23, 42, 0.92);
+      border-bottom: 1px solid rgba(245, 196, 81, 0.35);
+      padding: 4px 8px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: var(--gold-primary);
+      cursor: grab;
+      user-select: none;
+    }
+    body.edit-mode .wireframe-bar { display: flex; }
+    .wireframe-bar .wf-btns { display: flex; gap: 4px; align-items: center; }
+    .wf-size-badge { color: var(--aqua); font-family: monospace; font-size: 0.66rem; }
+    .wf-drop-target { outline: 2px solid #38bdf8 !important; background: rgba(56, 189, 248, 0.08) !important; }
 
     .editor-dock {
       display: none;
@@ -1043,15 +1066,15 @@
   <main class="main-layout">
 
     <!-- LEFT SIDEBAR -->
-    <aside class="left-sidebar">
-      <div class="sidebar-brand-box">
+    <aside class="left-sidebar" id="col-left" data-col="left">
+      <div class="sidebar-brand-box" data-frame-id="left_brand">
         <button type="button" class="frame-edit-btn" style="margin-bottom:6px;" onclick="openSidebarBrandEditor()">✏️ Edit</button>
         <img class="sidebar-cube-img mc-pixel" id="leftBrandImg" src="assets/icons/beacon.png" alt="OME Beacon" />
         <div class="sidebar-khtn-title" id="leftBrandTitle">KHTN • OME</div>
         <div class="sidebar-wiki-title" data-i18n="sidebarSub">Minecraft 26.3 Survival & Skyblock</div>
       </div>
 
-      <div class="accordion-card">
+      <div class="accordion-card" data-frame-id="left_menu">
         <div style="display:flex;justify-content:flex-end;margin-bottom:4px;">
           <button type="button" class="frame-edit-btn" onclick="openLeftAccordionEditor()">✏️ Edit Menu</button>
         </div>
@@ -1060,8 +1083,8 @@
     </aside>
 
     <!-- CENTER COLUMN -->
-    <section class="center-column">
-      <div class="announcement-box" id="welcomeBanner">
+    <section class="center-column" id="col-center" data-col="center">
+      <div class="announcement-box" id="welcomeBanner" data-frame-id="center_banner">
         <div class="announcement-main">
           <img class="mc-pixel" src="assets/icons/nether_star.png" style="width:28px;height:28px;" alt=""/>
           <div>
@@ -1077,7 +1100,7 @@
         </div>
       </div>
 
-      <article class="main-wiki-card">
+      <article class="main-wiki-card" data-frame-id="center_tiles">
         <div class="wiki-card-header-container">
           <div class="wiki-tab-badge">
             <h1 data-i18n="mainHeading">Wiki Chính Thức — One More Expedition</h1>
@@ -1106,7 +1129,7 @@
         <div class="tiles-grid" id="contentGrid"></div>
       </article>
 
-      <section class="about-khtn-card">
+      <section class="about-khtn-card" data-frame-id="center_commands">
         <div class="about-title-ribbon">
           <img class="mc-pixel" src="assets/icons/book.png" alt=""/>
           <h2 data-i18n="quickCmdTitle">Lệnh Thường Dùng (Nhấp Để Xem Chi Tiết)</h2>
@@ -1117,8 +1140,8 @@
     </section>
 
     <!-- RIGHT SIDEBAR -->
-    <aside class="right-sidebar">
-      <div class="widget-panel">
+    <aside class="right-sidebar" id="col-right" data-col="right">
+      <div class="widget-panel" data-frame-id="right_status">
         <div class="widget-top-header">
           <img class="mc-pixel" src="assets/icons/emerald.png" alt=""/>
           <span data-i18n="serverStatusTitle">Kết Nối Server</span>
@@ -1138,7 +1161,7 @@
         </div>
       </div>
 
-      <div class="widget-panel">
+      <div class="widget-panel" data-frame-id="right_checklist">
         <div class="widget-top-header">
           <img class="mc-pixel" src="assets/icons/writable_book.png" alt=""/>
           <span data-i18n="checklistTitle">Hướng Dẫn Tân Thủ</span>
@@ -1147,9 +1170,7 @@
         <div class="checklist-body" id="newPlayerChecklist"></div>
       </div>
 
-      <div id="customWidgetsContainer" style="display:flex;flex-direction:column;gap:16px;"></div>
-
-      <div class="widget-panel">
+      <div class="widget-panel" data-frame-id="right_clock">
         <div class="widget-top-header">
           <img class="mc-pixel" src="assets/icons/clock.png" alt=""/>
           <span data-i18n="clockTitle">Đồng Hồ Server</span>
@@ -1228,9 +1249,10 @@
 
   <!-- FLOATING EDITOR DOCK -->
   <div class="editor-dock" id="editorDock">
-    <span style="font-size:0.8rem;font-weight:800;color:var(--gold-primary);">✏️ EDIT MODE</span>
+    <span style="font-size:0.8rem;font-weight:800;color:var(--gold-primary);">📐 WIREFRAME EDITOR</span>
     <button class="ed-btn" onclick="openNewCategoryEditor()">➕ Add Tile</button>
-    <button class="ed-btn" onclick="openNewWidgetEditor()">➕ Add Side Frame</button>
+    <button class="ed-btn" onclick="openNewWidgetEditor()">➕ Add Frame</button>
+    <button class="ed-btn" onclick="openLayoutColumnsEditor()">📐 Column Widths</button>
     <button class="ed-btn" onclick="openQuickCommandsEditor()">⚡ Commands</button>
     <button class="ed-btn" onclick="openSiteTextEditor()">📝 Banner &amp; Intro</button>
     <button class="ed-btn" onclick="document.getElementById('importJsonFile').click()">📥 Import JSON</button>
@@ -1750,6 +1772,11 @@
     ];
 
     const CUSTOM_WIDGETS = [];
+    const LAYOUT_STATE = {
+      columns: { left: 230, right: 290, gap: 20, maxWidth: 1380 },
+      frameOrder: { left: null, center: null, right: null },
+      frameSizes: {}
+    };
     const SITE_META = {
       serverIp: "mckhtn.redirectme.net",
       leftBrandTitle: "KHTN • OME",
@@ -1781,10 +1808,15 @@
     }
 
     function renderCustomWidgets() {
-      const container = document.getElementById("customWidgetsContainer");
-      if (!container) return;
-      container.innerHTML = CUSTOM_WIDGETS.map((w, idx) => `
-        <div class="widget-panel">
+      document.querySelectorAll("[data-custom-widget='true']").forEach(el => el.remove());
+      CUSTOM_WIDGETS.forEach((w, idx) => {
+        const colId = w.col === "left" ? "col-left" : (w.col === "center" ? "col-center" : "col-right");
+        const colEl = document.getElementById(colId) || document.getElementById("col-right");
+        const div = document.createElement("div");
+        div.className = "widget-panel";
+        div.setAttribute("data-custom-widget", "true");
+        div.setAttribute("data-frame-id", w.id || ("custom_frame_" + idx));
+        div.innerHTML = `
           <div class="widget-top-header">
             <img class="mc-pixel" src="${w.icon || 'assets/icons/nether_star.png'}" alt=""/>
             <span>${w.title[currentLang] || w.title.en}</span>
@@ -1793,8 +1825,9 @@
           <div class="status-body" style="font-size:0.82rem;color:var(--text-main);line-height:1.55;">
             ${w.body[currentLang] || w.body.en}
           </div>
-        </div>
-      `).join("");
+        `;
+        colEl.appendChild(div);
+      });
     }
 
     function applyTranslations() {
@@ -1817,6 +1850,7 @@
 
       renderLeftAccordion();
       renderCustomWidgets();
+      applyWireframeLayout();
 
       // Render Checklist
       const checklistEl = document.getElementById("newPlayerChecklist");
@@ -2129,6 +2163,11 @@
           CUSTOM_WIDGETS.length = 0;
           parsed.customWidgets.forEach(w => CUSTOM_WIDGETS.push(w));
         }
+        if (parsed.layout) {
+          if (parsed.layout.columns) Object.assign(LAYOUT_STATE.columns, parsed.layout.columns);
+          if (parsed.layout.frameOrder) Object.assign(LAYOUT_STATE.frameOrder, parsed.layout.frameOrder);
+          if (parsed.layout.frameSizes) Object.assign(LAYOUT_STATE.frameSizes, parsed.layout.frameSizes);
+        }
       } catch (e) {
         console.warn("Failed to load custom wiki edits:", e);
       }
@@ -2137,6 +2176,7 @@
     function buildExportPayload() {
       return {
         siteMeta: SITE_META,
+        layout: LAYOUT_STATE,
         uiText: {
           en: {
             bannerTitle: UI_TEXT.en.bannerTitle,
@@ -2323,7 +2363,10 @@
     }
 
     function openNewWidgetEditor() {
+      const id = "custom_frame_" + Date.now();
       CUSTOM_WIDGETS.push({
+        id,
+        col: "right",
         icon: "assets/icons/nether_star.png",
         title: { en: "Custom Frame", vi: "Khung Thông Tin Mới" },
         body: { en: "Add your custom announcements, rules, or Discord link here.", vi: "Thêm thông báo, luật server hoặc link Discord tại đây." }
@@ -2335,10 +2378,19 @@
     function openCustomWidgetEditor(idx) {
       const w = CUSTOM_WIDGETS[idx];
       if (!w) return;
-      document.getElementById("editorModalTitle").textContent = "Edit Right-Sidebar Custom Frame";
+      document.getElementById("editorModalTitle").textContent = "Edit Custom Frame";
       const iconOpts = AVAILABLE_ICONS.map(ic => `<option value="${ic}" ${ic === w.icon ? "selected" : ""}>${ic.replace("assets/icons/", "")}</option>`).join("");
       document.getElementById("editorModalBody").innerHTML = `
-        <div class="ed-field"><label>Icon</label><select id="edWidIcon">${iconOpts}</select></div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Icon</label><select id="edWidIcon">${iconOpts}</select></div>
+          <div class="ed-field"><label>Column</label>
+            <select id="edWidCol">
+              <option value="left" ${w.col === "left" ? "selected" : ""}>Left Sidebar</option>
+              <option value="center" ${w.col === "center" ? "selected" : ""}>Center Column</option>
+              <option value="right" ${(!w.col || w.col === "right") ? "selected" : ""}>Right Sidebar</option>
+            </select>
+          </div>
+        </div>
         <div class="ed-form-grid">
           <div class="ed-field"><label>Title (EN)</label><input id="edWidTitleEn" value="${escapeAttr(w.title.en)}"></div>
           <div class="ed-field"><label>Title (VI)</label><input id="edWidTitleVi" value="${escapeAttr(w.title.vi)}"></div>
@@ -2351,6 +2403,7 @@
       `;
       document.getElementById("editorSaveBtn").onclick = () => {
         w.icon = document.getElementById("edWidIcon").value;
+        w.col = document.getElementById("edWidCol").value;
         w.title.en = document.getElementById("edWidTitleEn").value;
         w.title.vi = document.getElementById("edWidTitleVi").value;
         w.body.en = document.getElementById("edWidBodyEn").value;
@@ -2359,6 +2412,182 @@
         closeEditorModal();
       };
       document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openLayoutColumnsEditor() {
+      document.getElementById("editorModalTitle").textContent = "Wireframe Column Widths (px)";
+      const c = LAYOUT_STATE.columns;
+      document.getElementById("editorModalBody").innerHTML = `
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Left Sidebar Width (px)</label><input type="number" id="edColLeft" value="${c.left}"></div>
+          <div class="ed-field"><label>Right Sidebar Width (px)</label><input type="number" id="edColRight" value="${c.right}"></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Column Gap (px)</label><input type="number" id="edColGap" value="${c.gap}"></div>
+          <div class="ed-field"><label>Max Container Width (px)</label><input type="number" id="edColMax" value="${c.maxWidth}"></div>
+        </div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        LAYOUT_STATE.columns.left = Math.max(150, Number(document.getElementById("edColLeft").value) || 230);
+        LAYOUT_STATE.columns.right = Math.max(180, Number(document.getElementById("edColRight").value) || 290);
+        LAYOUT_STATE.columns.gap = Math.max(8, Number(document.getElementById("edColGap").value) || 20);
+        LAYOUT_STATE.columns.maxWidth = Math.max(960, Number(document.getElementById("edColMax").value) || 1380);
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    let draggedFrameId = null;
+    const wfResizeObserver = new ResizeObserver(entries => {
+      if (!document.body.classList.contains("edit-mode")) return;
+      let changed = false;
+      for (const entry of entries) {
+        const el = entry.target;
+        const fid = el.getAttribute("data-frame-id");
+        if (!fid) continue;
+        const w = Math.round(el.getBoundingClientRect().width);
+        const h = Math.round(el.getBoundingClientRect().height);
+        const badge = el.querySelector(".wf-size-badge");
+        if (badge) badge.textContent = `${w}×${h}px`;
+        if (el.style.width || el.style.height) {
+          LAYOUT_STATE.frameSizes[fid] = { width: el.style.width || "", height: el.style.height || "" };
+          changed = true;
+        }
+      }
+      if (changed) {
+        localStorage.setItem(CUSTOM_DATA_KEY, JSON.stringify(buildExportPayload()));
+      }
+    });
+
+    function captureFrameOrder() {
+      ["left", "center", "right"].forEach(col => {
+        const colEl = document.getElementById("col-" + col);
+        if (!colEl) return;
+        LAYOUT_STATE.frameOrder[col] = Array.from(colEl.children)
+          .map(ch => ch.getAttribute("data-frame-id"))
+          .filter(Boolean);
+      });
+    }
+
+    function moveFrameStep(fid, dir) {
+      const el = document.querySelector(`[data-frame-id="${fid}"]`);
+      if (!el || !el.parentElement) return;
+      const parent = el.parentElement;
+      if (dir < 0 && el.previousElementSibling) {
+        parent.insertBefore(el, el.previousElementSibling);
+      } else if (dir > 0 && el.nextElementSibling) {
+        parent.insertBefore(el.nextElementSibling, el);
+      }
+      captureFrameOrder();
+      saveCustomEdits();
+    }
+
+    function moveFrameCol(fid, colDir) {
+      const cols = ["left", "center", "right"];
+      const el = document.querySelector(`[data-frame-id="${fid}"]`);
+      if (!el || !el.parentElement) return;
+      const curCol = el.parentElement.getAttribute("data-col");
+      const nextIdx = cols.indexOf(curCol) + colDir;
+      if (nextIdx < 0 || nextIdx >= cols.length) return;
+      const targetCol = document.getElementById("col-" + cols[nextIdx]);
+      if (targetCol) {
+        targetCol.appendChild(el);
+        const cw = CUSTOM_WIDGETS.find(w => w.id === fid);
+        if (cw) cw.col = cols[nextIdx];
+        captureFrameOrder();
+        saveCustomEdits();
+      }
+    }
+
+    function resetFrameSize(fid) {
+      const el = document.querySelector(`[data-frame-id="${fid}"]`);
+      if (el) {
+        el.style.width = "";
+        el.style.height = "";
+      }
+      delete LAYOUT_STATE.frameSizes[fid];
+      saveCustomEdits();
+    }
+
+    function applyWireframeLayout() {
+      const mainEl = document.querySelector(".main-layout");
+      if (mainEl && window.innerWidth > 1120) {
+        const c = LAYOUT_STATE.columns;
+        mainEl.style.gridTemplateColumns = `${c.left}px minmax(0, 1fr) ${c.right}px`;
+        mainEl.style.gap = `${c.gap}px`;
+        mainEl.style.maxWidth = `${c.maxWidth}px`;
+      }
+
+      // Restore frame placement & order across columns
+      ["left", "center", "right"].forEach(col => {
+        const colEl = document.getElementById("col-" + col);
+        const order = LAYOUT_STATE.frameOrder[col];
+        if (!colEl || !Array.isArray(order)) return;
+        order.forEach(fid => {
+          const el = document.querySelector(`[data-frame-id="${fid}"]`);
+          if (el) colEl.appendChild(el);
+        });
+      });
+
+      // Apply saved sizes & inject wireframe handle bars
+      document.querySelectorAll("[data-frame-id]").forEach(el => {
+        const fid = el.getAttribute("data-frame-id");
+        const sz = LAYOUT_STATE.frameSizes[fid];
+        if (sz) {
+          if (sz.width) el.style.width = sz.width;
+          if (sz.height) el.style.height = sz.height;
+        }
+        if (!el.querySelector(":scope > .wireframe-bar")) {
+          const bar = document.createElement("div");
+          bar.className = "wireframe-bar";
+          bar.innerHTML = `
+            <span>⠿ ${fid}</span>
+            <div class="wf-btns">
+              <span class="wf-size-badge">${Math.round(el.getBoundingClientRect().width)}×${Math.round(el.getBoundingClientRect().height)}px</span>
+              <button type="button" class="tile-mini-btn" title="Move Up" onclick="moveFrameStep('${fid}', -1)">▲</button>
+              <button type="button" class="tile-mini-btn" title="Move Down" onclick="moveFrameStep('${fid}', 1)">▼</button>
+              <button type="button" class="tile-mini-btn" title="Move Left Column" onclick="moveFrameCol('${fid}', -1)">◀</button>
+              <button type="button" class="tile-mini-btn" title="Move Right Column" onclick="moveFrameCol('${fid}', 1)">▶</button>
+              <button type="button" class="tile-mini-btn" title="Reset Size" onclick="resetFrameSize('${fid}')">↺</button>
+            </div>
+          `;
+          el.prepend(bar);
+
+          el.setAttribute("draggable", "false");
+          bar.addEventListener("mousedown", () => {
+            if (document.body.classList.contains("edit-mode")) el.setAttribute("draggable", "true");
+          });
+          bar.addEventListener("mouseup", () => el.setAttribute("draggable", "false"));
+          el.addEventListener("dragstart", () => { draggedFrameId = fid; });
+          el.addEventListener("dragend", () => {
+            el.setAttribute("draggable", "false");
+            draggedFrameId = null;
+            document.querySelectorAll(".wf-drop-target").forEach(x => x.classList.remove("wf-drop-target"));
+          });
+          el.addEventListener("dragover", e => {
+            if (!document.body.classList.contains("edit-mode") || !draggedFrameId || draggedFrameId === fid) return;
+            e.preventDefault();
+            el.classList.add("wf-drop-target");
+          });
+          el.addEventListener("dragleave", () => el.classList.remove("wf-drop-target"));
+          el.addEventListener("drop", e => {
+            e.preventDefault();
+            el.classList.remove("wf-drop-target");
+            if (!draggedFrameId || draggedFrameId === fid) return;
+            const src = document.querySelector(`[data-frame-id="${draggedFrameId}"]`);
+            if (src && el.parentElement) {
+              el.parentElement.insertBefore(src, el);
+              const targetCol = el.parentElement.getAttribute("data-col");
+              const cw = CUSTOM_WIDGETS.find(w => w.id === draggedFrameId);
+              if (cw && targetCol) cw.col = targetCol;
+              captureFrameOrder();
+              saveCustomEdits();
+            }
+          });
+          wfResizeObserver.observe(el);
+        }
+      });
     }
 
     function importWikiJson(event) {
