@@ -895,6 +895,49 @@
     }
     body.edit-mode .tile-edit-btn { display: inline-flex; align-items: center; gap: 3px; }
     body.edit-mode .content-tile { border-style: dashed; border-color: rgba(245, 196, 81, 0.45); }
+    .tile-edit-actions {
+      display: none;
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      gap: 4px;
+      z-index: 6;
+    }
+    body.edit-mode .tile-edit-actions { display: flex; }
+    .tile-mini-btn {
+      background: rgba(15, 23, 42, 0.92);
+      color: #f5c451;
+      border: 1px solid rgba(245, 196, 81, 0.45);
+      border-radius: 5px;
+      padding: 2px 6px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .tile-mini-btn:hover { background: var(--gold-primary); color: #111827; }
+    .tile-mini-btn.del { color: #f87171; border-color: rgba(248, 113, 113, 0.45); }
+    .tile-mini-btn.del:hover { background: #ef4444; color: #fff; }
+    .frame-edit-btn {
+      display: none;
+      margin-left: auto;
+      background: rgba(245, 196, 81, 0.16);
+      border: 1px solid rgba(245, 196, 81, 0.45);
+      color: var(--gold-primary);
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    body.edit-mode .frame-edit-btn { display: inline-flex; align-items: center; gap: 4px; }
+    body.edit-mode .widget-panel,
+    body.edit-mode .about-khtn-card,
+    body.edit-mode .main-wiki-card,
+    body.edit-mode .accordion-card,
+    body.edit-mode .sidebar-brand-box,
+    body.edit-mode .announcement-box {
+      outline: 1px dashed rgba(245, 196, 81, 0.35);
+    }
 
     .editor-dock {
       display: none;
@@ -1002,50 +1045,17 @@
     <!-- LEFT SIDEBAR -->
     <aside class="left-sidebar">
       <div class="sidebar-brand-box">
-        <img class="sidebar-cube-img mc-pixel" src="assets/icons/beacon.png" alt="OME Beacon" />
-        <div class="sidebar-khtn-title">KHTN • OME</div>
+        <button type="button" class="frame-edit-btn" style="margin-bottom:6px;" onclick="openSidebarBrandEditor()">✏️ Edit</button>
+        <img class="sidebar-cube-img mc-pixel" id="leftBrandImg" src="assets/icons/beacon.png" alt="OME Beacon" />
+        <div class="sidebar-khtn-title" id="leftBrandTitle">KHTN • OME</div>
         <div class="sidebar-wiki-title" data-i18n="sidebarSub">Minecraft 26.3 Survival & Skyblock</div>
       </div>
 
       <div class="accordion-card">
-        <div class="accordion-group">
-          <div class="accordion-title" onclick="toggleAccordion(this)">
-            <span data-i18n="accCore">Hệ Thống Cốt Lõi</span>
-            <span>⌵</span>
-          </div>
-          <ul class="accordion-list">
-            <li><a onclick="openCategoryById('skyblock')"><img class="mc-pixel" src="assets/icons/oak_sapling.png" alt=""/> <span data-i18n="linkSkyblock">Skyblock (/is)</span></a></li>
-            <li><a onclick="openCategoryById('rtp')"><img class="mc-pixel" src="assets/icons/compass.png" alt=""/> <span data-i18n="linkRtp">Wilderness (/rtp)</span></a></li>
-            <li><a onclick="openCategoryById('combat')"><img class="mc-pixel" src="assets/icons/netherite_sword.png" alt=""/> <span data-i18n="linkCombat">Combat Log (2m)</span></a></li>
-            <li><a onclick="openCategoryById('stash')"><img class="mc-pixel" src="assets/icons/bundle.png" alt=""/> <span data-i18n="linkStash">Stash & KeepInv</span></a></li>
-          </ul>
+        <div style="display:flex;justify-content:flex-end;margin-bottom:4px;">
+          <button type="button" class="frame-edit-btn" onclick="openLeftAccordionEditor()">✏️ Edit Menu</button>
         </div>
-
-        <div class="accordion-group">
-          <div class="accordion-title" onclick="toggleAccordion(this)">
-            <span data-i18n="accProgression">Kinh Tế & Tiến Trình</span>
-            <span>⌵</span>
-          </div>
-          <ul class="accordion-list">
-            <li><a onclick="openCategoryById('economy')"><img class="mc-pixel" src="assets/icons/emerald.png" alt=""/> <span data-i18n="linkEconomy">Economy & /shop</span></a></li>
-            <li><a onclick="openCategoryById('prefix')"><img class="mc-pixel" src="assets/icons/name_tag.png" alt=""/> <span data-i18n="linkPrefix">Prefix & /rank</span></a></li>
-            <li><a onclick="openCategoryById('redeem')"><img class="mc-pixel" src="assets/icons/paper.png" alt=""/> <span data-i18n="linkRedeem">Redeem Codes</span></a></li>
-            <li><a onclick="openCategoryById('quests')"><img class="mc-pixel" src="assets/icons/writable_book.png" alt=""/> <span data-i18n="linkQuests">Daily Quests (/q)</span></a></li>
-          </ul>
-        </div>
-
-        <div class="accordion-group">
-          <div class="accordion-title" onclick="toggleAccordion(this)">
-            <span data-i18n="accEncyclopedias">Bách Khoa Chuyên Sâu</span>
-            <span>⌵</span>
-          </div>
-          <ul class="accordion-list">
-            <li><a href="enchants.html"><img class="mc-pixel" src="assets/icons/enchanted_book.png" alt=""/> <span data-i18n="linkEnchants">474 Phù Phép</span></a></li>
-            <li><a href="fishing.html"><img class="mc-pixel" src="assets/icons/fishing_rod.png" alt=""/> <span data-i18n="linkFishing">112 Thủy Quái</span></a></li>
-            <li><a onclick="openCategoryById('bosses')"><img class="mc-pixel" src="assets/icons/dragon_egg.png" alt=""/> <span data-i18n="linkBosses">World Bosses</span></a></li>
-            <li><a onclick="openCategoryById('world')"><img class="mc-pixel" src="assets/icons/spyglass.png" alt=""/> <span data-i18n="linkWorld">Biomes & Dungeons</span></a></li>
-          </ul>
-        </div>
+        <div id="leftAccordionContainer"></div>
       </div>
     </aside>
 
@@ -1061,7 +1071,10 @@
             </div>
           </div>
         </div>
-        <button class="banner-dismiss-x" onclick="document.getElementById('welcomeBanner').style.display='none'">✕</button>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <button type="button" class="frame-edit-btn" onclick="openSiteTextEditor()">✏️ Edit</button>
+          <button class="banner-dismiss-x" onclick="document.getElementById('welcomeBanner').style.display='none'">✕</button>
+        </div>
       </div>
 
       <article class="main-wiki-card">
@@ -1069,7 +1082,10 @@
           <div class="wiki-tab-badge">
             <h1 data-i18n="mainHeading">Wiki Chính Thức — One More Expedition</h1>
           </div>
-          <span class="wiki-version-pill">Minecraft 26.3 • Fabric SMP + Skyblock</span>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span class="wiki-version-pill" id="versionPillText">Minecraft 26.3 • Fabric SMP + Skyblock</span>
+            <button type="button" class="frame-edit-btn" onclick="openSiteTextEditor()">✏️ Edit Header</button>
+          </div>
         </div>
 
         <p class="wiki-intro-text" data-i18n="mainIntro">
@@ -1081,7 +1097,10 @@
             <img class="mc-pixel" src="assets/icons/netherite_pickaxe.png" alt=""/>
             <span data-i18n="browseTitle">Khám Phá Các Hệ Thống Server</span>
           </div>
-          <span id="tilesMatchCount" style="font-size:0.78rem; color:var(--text-muted);"></span>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <button type="button" class="frame-edit-btn" onclick="openNewCategoryEditor()">➕ Add Tile</button>
+            <span id="tilesMatchCount" style="font-size:0.78rem; color:var(--text-muted);"></span>
+          </div>
         </div>
 
         <div class="tiles-grid" id="contentGrid"></div>
@@ -1091,6 +1110,7 @@
         <div class="about-title-ribbon">
           <img class="mc-pixel" src="assets/icons/book.png" alt=""/>
           <h2 data-i18n="quickCmdTitle">Lệnh Thường Dùng (Nhấp Để Xem Chi Tiết)</h2>
+          <button type="button" class="frame-edit-btn" onclick="openQuickCommandsEditor()">✏️ Edit Commands</button>
         </div>
         <div class="quick-cmd-grid" id="quickCmdGrid"></div>
       </section>
@@ -1102,12 +1122,13 @@
         <div class="widget-top-header">
           <img class="mc-pixel" src="assets/icons/emerald.png" alt=""/>
           <span data-i18n="serverStatusTitle">Kết Nối Server</span>
+          <button type="button" class="frame-edit-btn" onclick="openServerWidgetEditor()">✏️ Edit</button>
         </div>
         <div class="status-body">
           <div class="ip-copy-box">
             <div class="ip-text">
               <span class="status-dot" id="serverDot"></span>
-              <span>mckhtn.redirectme.net</span>
+              <span id="serverIpDisplay">mckhtn.redirectme.net</span>
             </div>
             <button class="copy-ip-btn" id="copyIpBtn" onclick="copyServerIp()" data-i18n="copyBtn">Copy IP</button>
           </div>
@@ -1121,9 +1142,12 @@
         <div class="widget-top-header">
           <img class="mc-pixel" src="assets/icons/writable_book.png" alt=""/>
           <span data-i18n="checklistTitle">Hướng Dẫn Tân Thủ</span>
+          <button type="button" class="frame-edit-btn" onclick="openChecklistEditor()">✏️ Edit</button>
         </div>
         <div class="checklist-body" id="newPlayerChecklist"></div>
       </div>
+
+      <div id="customWidgetsContainer" style="display:flex;flex-direction:column;gap:16px;"></div>
 
       <div class="widget-panel">
         <div class="widget-top-header">
@@ -1205,8 +1229,12 @@
   <!-- FLOATING EDITOR DOCK -->
   <div class="editor-dock" id="editorDock">
     <span style="font-size:0.8rem;font-weight:800;color:var(--gold-primary);">✏️ EDIT MODE</span>
-    <button class="ed-btn" onclick="openNewCategoryEditor()">➕ Add Category</button>
-    <button class="ed-btn" onclick="openSiteTextEditor()">📝 Edit Banner &amp; Intro</button>
+    <button class="ed-btn" onclick="openNewCategoryEditor()">➕ Add Tile</button>
+    <button class="ed-btn" onclick="openNewWidgetEditor()">➕ Add Side Frame</button>
+    <button class="ed-btn" onclick="openQuickCommandsEditor()">⚡ Commands</button>
+    <button class="ed-btn" onclick="openSiteTextEditor()">📝 Banner &amp; Intro</button>
+    <button class="ed-btn" onclick="document.getElementById('importJsonFile').click()">📥 Import JSON</button>
+    <input type="file" id="importJsonFile" accept=".json" style="display:none" onchange="importWikiJson(event)">
     <button class="ed-btn gold" onclick="exportWikiJson()">💾 Export JSON</button>
     <button class="ed-btn primary" onclick="copyWikiJson()">📋 Copy JSON</button>
     <button class="ed-btn danger" onclick="resetCustomEdits()">↺ Reset</button>
@@ -1691,8 +1719,82 @@
       { cmd: "/stash", vi: "Nhận đồ dư bị đầy túi", en: "Claim overflow items", cat: "stash" }
     ];
 
+    const LEFT_ACCORDION = [
+      {
+        title: { en: "Core Systems", vi: "Hệ Thống Cốt Lõi" },
+        links: [
+          { icon: "assets/icons/oak_sapling.png", label: { en: "Skyblock (/is)", vi: "Skyblock (/is)" }, cat: "skyblock" },
+          { icon: "assets/icons/compass.png", label: { en: "Wilderness (/rtp)", vi: "Wilderness (/rtp)" }, cat: "rtp" },
+          { icon: "assets/icons/netherite_sword.png", label: { en: "Combat Log (2m)", vi: "Combat Log (2 phút)" }, cat: "combat" },
+          { icon: "assets/icons/bundle.png", label: { en: "Stash & KeepInv", vi: "Stash & KeepInv" }, cat: "stash" }
+        ]
+      },
+      {
+        title: { en: "Economy & Progression", vi: "Kinh Tế & Tiến Trình" },
+        links: [
+          { icon: "assets/icons/emerald.png", label: { en: "Economy & /shop", vi: "Economy & /shop" }, cat: "economy" },
+          { icon: "assets/icons/name_tag.png", label: { en: "Prefix & /rank", vi: "Prefix & /rank" }, cat: "prefix" },
+          { icon: "assets/icons/paper.png", label: { en: "Redeem Codes", vi: "Redeem Codes" }, cat: "redeem" },
+          { icon: "assets/icons/writable_book.png", label: { en: "Daily Quests (/q)", vi: "Daily Quests (/q)" }, cat: "quests" }
+        ]
+      },
+      {
+        title: { en: "Full Encyclopedias", vi: "Bách Khoa Chuyên Sâu" },
+        links: [
+          { icon: "assets/icons/enchanted_book.png", label: { en: "474 Enchantments", vi: "474 Phù Phép" }, href: "enchants.html" },
+          { icon: "assets/icons/fishing_rod.png", label: { en: "112 Sea Creatures", vi: "112 Thủy Quái" }, href: "fishing.html" },
+          { icon: "assets/icons/dragon_egg.png", label: { en: "World Bosses", vi: "World Bosses" }, cat: "bosses" },
+          { icon: "assets/icons/spyglass.png", label: { en: "Biomes & Dungeons", vi: "Biomes & Dungeons" }, cat: "world" }
+        ]
+      }
+    ];
+
+    const CUSTOM_WIDGETS = [];
+    const SITE_META = {
+      serverIp: "mckhtn.redirectme.net",
+      leftBrandTitle: "KHTN • OME",
+      leftBrandIcon: "assets/icons/beacon.png",
+      versionPill: "Minecraft 26.3 • Fabric SMP + Skyblock"
+    };
+
     function t(key) {
       return (UI_TEXT[currentLang] && UI_TEXT[currentLang][key]) || UI_TEXT.vi[key] || key;
+    }
+
+    function renderLeftAccordion() {
+      const container = document.getElementById("leftAccordionContainer");
+      if (!container) return;
+      container.innerHTML = LEFT_ACCORDION.map(grp => `
+        <div class="accordion-group">
+          <div class="accordion-title" onclick="toggleAccordion(this)">
+            <span>${grp.title[currentLang] || grp.title.en}</span>
+            <span>⌵</span>
+          </div>
+          <ul class="accordion-list">
+            ${(grp.links || []).map(lk => {
+              const action = lk.href ? `href="${lk.href}"` : `onclick="openCategoryById('${lk.cat || ""}')"`;
+              return `<li><a ${action}><img class="mc-pixel" src="${lk.icon || 'assets/icons/paper.png'}" alt=""/> <span>${lk.label[currentLang] || lk.label.en}</span></a></li>`;
+            }).join("")}
+          </ul>
+        </div>
+      `).join("");
+    }
+
+    function renderCustomWidgets() {
+      const container = document.getElementById("customWidgetsContainer");
+      if (!container) return;
+      container.innerHTML = CUSTOM_WIDGETS.map((w, idx) => `
+        <div class="widget-panel">
+          <div class="widget-top-header">
+            <img class="mc-pixel" src="${w.icon || 'assets/icons/nether_star.png'}" alt=""/>
+            <span>${w.title[currentLang] || w.title.en}</span>
+            <button type="button" class="frame-edit-btn" onclick="openCustomWidgetEditor(${idx})">✏️ Edit</button>
+          </div>
+          <div class="status-body" style="font-size:0.82rem;color:var(--text-main);line-height:1.55;">
+            ${w.body[currentLang] || w.body.en}
+          </div>
+        </div>
+      `).join("");
     }
 
     function applyTranslations() {
@@ -1708,6 +1810,13 @@
 
       document.getElementById("wikiSearchInput").placeholder = t("searchPlaceholder");
       document.getElementById("modalSubSearch").placeholder = t("subSearchPlaceholder");
+      document.getElementById("serverIpDisplay").textContent = SITE_META.serverIp;
+      document.getElementById("leftBrandTitle").textContent = SITE_META.leftBrandTitle;
+      document.getElementById("leftBrandImg").src = SITE_META.leftBrandIcon;
+      document.getElementById("versionPillText").textContent = SITE_META.versionPill;
+
+      renderLeftAccordion();
+      renderCustomWidgets();
 
       // Render Checklist
       const checklistEl = document.getElementById("newPlayerChecklist");
@@ -1769,7 +1878,13 @@
           }
         };
         tile.innerHTML = `
-          <button type="button" class="tile-edit-btn" onclick="event.stopPropagation(); openCategoryEditor('${cat.id}')">✏️ Edit</button>
+          <div class="tile-edit-actions">
+            <button type="button" class="tile-mini-btn" title="Move Left" onclick="event.stopPropagation(); moveCategory('${cat.id}', -1)">◀</button>
+            <button type="button" class="tile-mini-btn" title="Move Right" onclick="event.stopPropagation(); moveCategory('${cat.id}', 1)">▶</button>
+            <button type="button" class="tile-mini-btn" title="Duplicate" onclick="event.stopPropagation(); duplicateCategory('${cat.id}')">⧉</button>
+            <button type="button" class="tile-mini-btn" title="Edit" onclick="event.stopPropagation(); openCategoryEditor('${cat.id}')">✏️</button>
+            <button type="button" class="tile-mini-btn del" title="Delete" onclick="event.stopPropagation(); if(confirm('Delete ${escapeAttr(cat.name.en)}?')) deleteCategory('${cat.id}')">🗑️</button>
+          </div>
           <div class="tile-icon-box">
             <img class="mc-pixel" src="${cat.icon}" alt="${cat.name[currentLang]}"/>
           </div>
@@ -1933,7 +2048,7 @@
     }
 
     function copyServerIp() {
-      navigator.clipboard.writeText("mckhtn.redirectme.net").then(() => {
+      navigator.clipboard.writeText(SITE_META.serverIp).then(() => {
         const btn = document.getElementById("copyIpBtn");
         btn.textContent = t("copiedBtn");
         setTimeout(() => { btn.textContent = t("copyBtn"); }, 1800);
@@ -1997,35 +2112,271 @@
             if (parsed.uiText[l]) Object.assign(UI_TEXT[l], parsed.uiText[l]);
           });
         }
+        if (parsed.siteMeta) Object.assign(SITE_META, parsed.siteMeta);
         if (Array.isArray(parsed.categories) && parsed.categories.length > 0) {
           WIKI_CATEGORIES.length = 0;
           parsed.categories.forEach(c => WIKI_CATEGORIES.push(c));
+        }
+        if (Array.isArray(parsed.quickCommands)) {
+          QUICK_COMMANDS.length = 0;
+          parsed.quickCommands.forEach(q => QUICK_COMMANDS.push(q));
+        }
+        if (Array.isArray(parsed.leftAccordion)) {
+          LEFT_ACCORDION.length = 0;
+          parsed.leftAccordion.forEach(g => LEFT_ACCORDION.push(g));
+        }
+        if (Array.isArray(parsed.customWidgets)) {
+          CUSTOM_WIDGETS.length = 0;
+          parsed.customWidgets.forEach(w => CUSTOM_WIDGETS.push(w));
         }
       } catch (e) {
         console.warn("Failed to load custom wiki edits:", e);
       }
     }
 
-    function saveCustomEdits() {
-      const payload = {
+    function buildExportPayload() {
+      return {
+        siteMeta: SITE_META,
         uiText: {
           en: {
             bannerTitle: UI_TEXT.en.bannerTitle,
             bannerSub: UI_TEXT.en.bannerSub,
             mainHeading: UI_TEXT.en.mainHeading,
-            mainIntro: UI_TEXT.en.mainIntro
+            mainIntro: UI_TEXT.en.mainIntro,
+            browseTitle: UI_TEXT.en.browseTitle,
+            quickCmdTitle: UI_TEXT.en.quickCmdTitle,
+            checklist: UI_TEXT.en.checklist
           },
           vi: {
             bannerTitle: UI_TEXT.vi.bannerTitle,
             bannerSub: UI_TEXT.vi.bannerSub,
             mainHeading: UI_TEXT.vi.mainHeading,
-            mainIntro: UI_TEXT.vi.mainIntro
+            mainIntro: UI_TEXT.vi.mainIntro,
+            browseTitle: UI_TEXT.vi.browseTitle,
+            quickCmdTitle: UI_TEXT.vi.quickCmdTitle,
+            checklist: UI_TEXT.vi.checklist
           }
         },
-        categories: WIKI_CATEGORIES
+        categories: WIKI_CATEGORIES,
+        quickCommands: QUICK_COMMANDS,
+        leftAccordion: LEFT_ACCORDION,
+        customWidgets: CUSTOM_WIDGETS
       };
-      localStorage.setItem(CUSTOM_DATA_KEY, JSON.stringify(payload));
+    }
+
+    function saveCustomEdits() {
+      localStorage.setItem(CUSTOM_DATA_KEY, JSON.stringify(buildExportPayload()));
       applyTranslations();
+    }
+
+    function moveCategory(catId, delta) {
+      const idx = WIKI_CATEGORIES.findIndex(c => c.id === catId);
+      const target = idx + delta;
+      if (idx === -1 || target < 0 || target >= WIKI_CATEGORIES.length) return;
+      const [item] = WIKI_CATEGORIES.splice(idx, 1);
+      WIKI_CATEGORIES.splice(target, 0, item);
+      saveCustomEdits();
+    }
+
+    function duplicateCategory(catId) {
+      const idx = WIKI_CATEGORIES.findIndex(c => c.id === catId);
+      if (idx === -1) return;
+      const copy = JSON.parse(JSON.stringify(WIKI_CATEGORIES[idx]));
+      copy.id = catId + "_copy_" + Date.now();
+      copy.name.en += " (Copy)";
+      copy.name.vi += " (Bản sao)";
+      WIKI_CATEGORIES.splice(idx + 1, 0, copy);
+      saveCustomEdits();
+    }
+
+    function openSidebarBrandEditor() {
+      document.getElementById("editorModalTitle").textContent = "Edit Left Sidebar Brand";
+      const iconOpts = AVAILABLE_ICONS.map(ic => `<option value="${ic}" ${ic === SITE_META.leftBrandIcon ? "selected" : ""}>${ic.replace("assets/icons/", "")}</option>`).join("");
+      document.getElementById("editorModalBody").innerHTML = `
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Brand Icon</label><select id="edBrandIcon">${iconOpts}</select></div>
+          <div class="ed-field"><label>Brand Title</label><input id="edBrandTitle" value="${escapeAttr(SITE_META.leftBrandTitle)}"></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Subtitle (EN)</label><input id="edBrandSubEn" value="${escapeAttr(UI_TEXT.en.sidebarSub)}"></div>
+          <div class="ed-field"><label>Subtitle (VI)</label><input id="edBrandSubVi" value="${escapeAttr(UI_TEXT.vi.sidebarSub)}"></div>
+        </div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        SITE_META.leftBrandIcon = document.getElementById("edBrandIcon").value;
+        SITE_META.leftBrandTitle = document.getElementById("edBrandTitle").value;
+        UI_TEXT.en.sidebarSub = document.getElementById("edBrandSubEn").value;
+        UI_TEXT.vi.sidebarSub = document.getElementById("edBrandSubVi").value;
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openLeftAccordionEditor() {
+      document.getElementById("editorModalTitle").textContent = "Edit Left Sidebar Menu Groups";
+      const groupsHtml = LEFT_ACCORDION.map((g, gi) => `
+        <div class="ed-sub-box" data-gi="${gi}">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <strong style="color:var(--gold-primary);font-size:0.85rem;">Group #${gi + 1}</strong>
+            <button type="button" class="ed-btn danger" onclick="LEFT_ACCORDION.splice(${gi},1);saveCustomEdits();openLeftAccordionEditor();">🗑️ Delete Group</button>
+          </div>
+          <div class="ed-form-grid">
+            <div class="ed-field"><label>Group Title (EN)</label><input class="grp-title-en" value="${escapeAttr(g.title.en)}"></div>
+            <div class="ed-field"><label>Group Title (VI)</label><input class="grp-title-vi" value="${escapeAttr(g.title.vi)}"></div>
+          </div>
+          <div class="ed-field"><label>Links (1 per line: labelEN | labelVI | categoryId_or_url)</label>
+            <textarea class="grp-links">${escapeHtml((g.links || []).map(l => `${l.label.en} | ${l.label.vi} | ${l.href || l.cat || ""}`).join("\n"))}</textarea>
+          </div>
+        </div>
+      `).join("");
+      document.getElementById("editorModalBody").innerHTML = `
+        <div style="margin-bottom:10px;"><button type="button" class="ed-btn" onclick="LEFT_ACCORDION.push({title:{en:'New Group',vi:'Nhóm Mới'},links:[]});saveCustomEdits();openLeftAccordionEditor();">➕ Add Menu Group</button></div>
+        <div id="edAccordionList">${groupsHtml}</div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        document.querySelectorAll("#edAccordionList .ed-sub-box").forEach((box, gi) => {
+          const g = LEFT_ACCORDION[gi];
+          if (!g) return;
+          g.title.en = box.querySelector(".grp-title-en").value;
+          g.title.vi = box.querySelector(".grp-title-vi").value;
+          const lines = box.querySelector(".grp-links").value.split("\n").map(x => x.trim()).filter(Boolean);
+          g.links = lines.map((line, li) => {
+            const parts = line.split("|").map(p => p.trim());
+            const target = parts[2] || "skyblock";
+            const oldIcon = (g.links[li] && g.links[li].icon) || "assets/icons/paper.png";
+            const obj = { icon: oldIcon, label: { en: parts[0] || "Link", vi: parts[1] || parts[0] || "Link" } };
+            if (target.endsWith(".html") || target.startsWith("http")) obj.href = target;
+            else obj.cat = target;
+            return obj;
+          });
+        });
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openQuickCommandsEditor() {
+      document.getElementById("editorModalTitle").textContent = "Edit Quick Commands Frame";
+      const rows = QUICK_COMMANDS.map((q, qi) => `
+        <div class="ed-sub-box" data-qi="${qi}">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+            <strong style="color:var(--aqua);font-size:0.82rem;">Command #${qi + 1}</strong>
+            <button type="button" class="ed-btn danger" onclick="QUICK_COMMANDS.splice(${qi},1);saveCustomEdits();openQuickCommandsEditor();">🗑️</button>
+          </div>
+          <div class="ed-form-grid">
+            <div class="ed-field"><label>Command</label><input class="qc-cmd" value="${escapeAttr(q.cmd)}"></div>
+            <div class="ed-field"><label>Linked Category ID</label><input class="qc-cat" value="${escapeAttr(q.cat)}"></div>
+          </div>
+          <div class="ed-form-grid">
+            <div class="ed-field"><label>Description (EN)</label><input class="qc-en" value="${escapeAttr(q.en)}"></div>
+            <div class="ed-field"><label>Description (VI)</label><input class="qc-vi" value="${escapeAttr(q.vi)}"></div>
+          </div>
+        </div>
+      `).join("");
+      document.getElementById("editorModalBody").innerHTML = `
+        <div style="margin-bottom:10px;"><button type="button" class="ed-btn" onclick="QUICK_COMMANDS.push({cmd:'/newcmd',en:'Description',vi:'Mô tả',cat:'skyblock'});saveCustomEdits();openQuickCommandsEditor();">➕ Add Command</button></div>
+        <div id="edQcList">${rows}</div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        document.querySelectorAll("#edQcList .ed-sub-box").forEach((box, qi) => {
+          const q = QUICK_COMMANDS[qi];
+          if (!q) return;
+          q.cmd = box.querySelector(".qc-cmd").value;
+          q.cat = box.querySelector(".qc-cat").value;
+          q.en = box.querySelector(".qc-en").value;
+          q.vi = box.querySelector(".qc-vi").value;
+        });
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openServerWidgetEditor() {
+      document.getElementById("editorModalTitle").textContent = "Edit Server Connection Frame";
+      document.getElementById("editorModalBody").innerHTML = `
+        <div class="ed-field"><label>Server IP / Domain</label><input id="edServerIp" value="${escapeAttr(SITE_META.serverIp)}"></div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        SITE_META.serverIp = document.getElementById("edServerIp").value.trim() || "mckhtn.redirectme.net";
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openChecklistEditor() {
+      document.getElementById("editorModalTitle").textContent = "Edit New Player Checklist (1 line per step)";
+      document.getElementById("editorModalBody").innerHTML = `
+        <div class="ed-field"><label>Checklist Steps (EN)</label><textarea id="edChkEn" style="min-height:110px;">${escapeHtml(UI_TEXT.en.checklist.join("\n"))}</textarea></div>
+        <div class="ed-field"><label>Checklist Steps (VI)</label><textarea id="edChkVi" style="min-height:110px;">${escapeHtml(UI_TEXT.vi.checklist.join("\n"))}</textarea></div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        UI_TEXT.en.checklist = document.getElementById("edChkEn").value.split("\n").map(x => x.trim()).filter(Boolean);
+        UI_TEXT.vi.checklist = document.getElementById("edChkVi").value.split("\n").map(x => x.trim()).filter(Boolean);
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openNewWidgetEditor() {
+      CUSTOM_WIDGETS.push({
+        icon: "assets/icons/nether_star.png",
+        title: { en: "Custom Frame", vi: "Khung Thông Tin Mới" },
+        body: { en: "Add your custom announcements, rules, or Discord link here.", vi: "Thêm thông báo, luật server hoặc link Discord tại đây." }
+      });
+      saveCustomEdits();
+      openCustomWidgetEditor(CUSTOM_WIDGETS.length - 1);
+    }
+
+    function openCustomWidgetEditor(idx) {
+      const w = CUSTOM_WIDGETS[idx];
+      if (!w) return;
+      document.getElementById("editorModalTitle").textContent = "Edit Right-Sidebar Custom Frame";
+      const iconOpts = AVAILABLE_ICONS.map(ic => `<option value="${ic}" ${ic === w.icon ? "selected" : ""}>${ic.replace("assets/icons/", "")}</option>`).join("");
+      document.getElementById("editorModalBody").innerHTML = `
+        <div class="ed-field"><label>Icon</label><select id="edWidIcon">${iconOpts}</select></div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Title (EN)</label><input id="edWidTitleEn" value="${escapeAttr(w.title.en)}"></div>
+          <div class="ed-field"><label>Title (VI)</label><input id="edWidTitleVi" value="${escapeAttr(w.title.vi)}"></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Content HTML/Text (EN)</label><textarea id="edWidBodyEn">${escapeHtml(w.body.en)}</textarea></div>
+          <div class="ed-field"><label>Content HTML/Text (VI)</label><textarea id="edWidBodyVi">${escapeHtml(w.body.vi)}</textarea></div>
+        </div>
+        <button type="button" class="ed-btn danger" onclick="CUSTOM_WIDGETS.splice(${idx},1);saveCustomEdits();closeEditorModal();">🗑️ Delete This Frame</button>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        w.icon = document.getElementById("edWidIcon").value;
+        w.title.en = document.getElementById("edWidTitleEn").value;
+        w.title.vi = document.getElementById("edWidTitleVi").value;
+        w.body.en = document.getElementById("edWidBodyEn").value;
+        w.body.vi = document.getElementById("edWidBodyVi").value;
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function importWikiJson(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const parsed = JSON.parse(String(reader.result));
+          localStorage.setItem(CUSTOM_DATA_KEY, JSON.stringify(parsed));
+          loadCustomEdits();
+          applyTranslations();
+          alert("Imported JSON successfully!");
+        } catch (err) {
+          alert("Invalid JSON file: " + err.message);
+        }
+      };
+      reader.readAsText(file);
     }
 
     function toggleMainEditMode() {
@@ -2057,6 +2408,11 @@
           <div class="ed-field"><label>Main Intro (EN)</label><textarea id="edIntroEn">${escapeHtml(UI_TEXT.en.mainIntro)}</textarea></div>
           <div class="ed-field"><label>Main Intro (VI)</label><textarea id="edIntroVi">${escapeHtml(UI_TEXT.vi.mainIntro)}</textarea></div>
         </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Browse Title (EN)</label><input id="edBrowseEn" value="${escapeAttr(UI_TEXT.en.browseTitle)}"></div>
+          <div class="ed-field"><label>Browse Title (VI)</label><input id="edBrowseVi" value="${escapeAttr(UI_TEXT.vi.browseTitle)}"></div>
+        </div>
+        <div class="ed-field"><label>Version Badge</label><input id="edVersionPill" value="${escapeAttr(SITE_META.versionPill)}"></div>
       `;
       document.getElementById("editorSaveBtn").onclick = () => {
         UI_TEXT.en.bannerTitle = document.getElementById("edBanTitleEn").value;
@@ -2067,6 +2423,9 @@
         UI_TEXT.vi.mainHeading = document.getElementById("edHeadVi").value;
         UI_TEXT.en.mainIntro = document.getElementById("edIntroEn").value;
         UI_TEXT.vi.mainIntro = document.getElementById("edIntroVi").value;
+        UI_TEXT.en.browseTitle = document.getElementById("edBrowseEn").value;
+        UI_TEXT.vi.browseTitle = document.getElementById("edBrowseVi").value;
+        SITE_META.versionPill = document.getElementById("edVersionPill").value;
         saveCustomEdits();
         closeEditorModal();
       };
@@ -2207,8 +2566,8 @@
     }
 
     function exportWikiJson() {
-      const raw = localStorage.getItem(CUSTOM_DATA_KEY) || JSON.stringify({ categories: WIKI_CATEGORIES }, null, 2);
-      const blob = new Blob([JSON.stringify(JSON.parse(raw), null, 2)], { type: "application/json" });
+      const data = buildExportPayload();
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
       const a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
       a.download = "main_wiki_edits.json";
@@ -2216,8 +2575,8 @@
     }
 
     function copyWikiJson() {
-      const raw = localStorage.getItem(CUSTOM_DATA_KEY) || JSON.stringify({ categories: WIKI_CATEGORIES }, null, 2);
-      navigator.clipboard.writeText(JSON.stringify(JSON.parse(raw), null, 2));
+      const data = buildExportPayload();
+      navigator.clipboard.writeText(JSON.stringify(data, null, 2));
       alert("Đã copy JSON! Bạn chỉ cần gửi đoạn JSON này (hoặc file main_wiki_edits.json) cho AI để đồng bộ lên Wiki chính.");
     }
 
