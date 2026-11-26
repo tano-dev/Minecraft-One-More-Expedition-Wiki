@@ -1,0 +1,2287 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enchantments Wiki — One More Expedition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #0b0f17;
+      --surface: rgba(18, 24, 36, 0.86);
+      --surface-solid: #131926;
+      --surface-elevated: #1a2233;
+      --surface-hover: #212b40;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.16);
+
+      --gold: #ffaa00;
+      --gold-soft: rgba(255, 170, 0, 0.14);
+      --gold-border: rgba(255, 170, 0, 0.42);
+
+      --epic: #e879f9;
+      --epic-soft: rgba(232, 121, 249, 0.13);
+      --epic-border: rgba(232, 121, 249, 0.38);
+
+      --rare: #38bdf8;
+      --rare-soft: rgba(56, 189, 248, 0.13);
+      --rare-border: rgba(56, 189, 248, 0.38);
+
+      --common: #cbd5e1;
+      --common-soft: rgba(148, 163, 184, 0.12);
+      --common-border: rgba(148, 163, 184, 0.28);
+
+      --curse: #f87171;
+      --curse-soft: rgba(248, 113, 113, 0.14);
+      --curse-border: rgba(248, 113, 113, 0.42);
+
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --accent: #3b82f6;
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --radius-sm: 8px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text-main);
+      background-color: var(--bg-base);
+      min-height: 100vh;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Fixed Backdrop matching index.html */
+    .bg-fixed {
+      position: fixed;
+      inset: 0;
+      z-index: -10;
+      pointer-events: none;
+      background: #0b0f17 url('assets/bg.jpg') no-repeat center center / cover;
+    }
+    .bg-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: -9;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(255, 170, 0, 0.08), transparent 45%),
+        radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.08), transparent 45%),
+        linear-gradient(180deg, rgba(10, 14, 22, 0.82) 0%, rgba(10, 14, 22, 0.94) 55%, rgba(9, 12, 19, 0.98) 100%);
+    }
+
+    /* Sticky Top Navbar */
+    .header-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 28px;
+      background: rgba(11, 15, 23, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(255, 170, 0, 0.35));
+    }
+
+    .brand-text h1 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #f5c451;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+    }
+
+    .brand-text span {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 8px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 700;
+      transition: all 0.18s ease;
+    }
+    .nav-btn:hover {
+      background: var(--surface-hover);
+      border-color: var(--border-strong);
+      transform: translateY(-1px);
+    }
+
+    /* Main Layout */
+    .container {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 28px 24px 64px;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(22, 29, 44, 0.92), rgba(15, 20, 31, 0.92));
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      margin-bottom: 22px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    }
+    .hero-banner::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), var(--epic), var(--rare), transparent);
+      opacity: 0.8;
+    }
+
+    .hero-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero-pill {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: var(--gold);
+      border: 1px solid var(--gold-border);
+    }
+
+    .hero-subtitle {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      max-width: 820px;
+      margin-bottom: 18px;
+    }
+
+    .hero-subtitle strong {
+      color: #fde68a;
+      font-weight: 700;
+    }
+
+    /* Quick Tier Stat Cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 10px;
+    }
+
+    .stat-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+    .stat-card:hover {
+      background: rgba(255, 255, 255, 0.06);
+      transform: translateY(-1px);
+    }
+    .stat-card-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .stat-card-count {
+      font-size: 0.95rem;
+      font-weight: 800;
+    }
+
+    /* Controls Panel */
+    .controls-panel {
+      background: var(--surface);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 18px 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .search-sort-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto auto;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      color: var(--text-dim);
+      font-size: 0.95rem;
+      pointer-events: none;
+    }
+
+    #searchInput {
+      width: 100%;
+      background: var(--surface-solid);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 11px 38px 11px 40px;
+      border-radius: var(--radius-md);
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 500;
+      outline: none;
+      transition: border-color 0.16s ease, box-shadow 0.16s ease;
+    }
+    #searchInput::placeholder { color: var(--text-dim); }
+    #searchInput:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.18);
+    }
+
+    .clear-search-btn {
+      position: absolute;
+      right: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      border: none;
+      color: var(--text-muted);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      font-size: 0.75rem;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .clear-search-btn.visible { display: inline-flex; }
+    .clear-search-btn:hover { background: rgba(255, 255, 255, 0.16); color: #fff; }
+
+    .filter-select {
+      background: var(--surface-solid);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 11px 14px;
+      border-radius: var(--radius-md);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      outline: none;
+    }
+    .filter-select:focus { border-color: var(--accent); }
+
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .filter-btn:hover {
+      background: rgba(255, 255, 255, 0.09);
+      color: var(--text-main);
+    }
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      box-shadow: 0 2px 10px rgba(59, 130, 246, 0.35);
+    }
+
+    .filter-btn[data-tier="ultimate"].active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #111827;
+      box-shadow: 0 2px 12px rgba(255, 170, 0, 0.4);
+    }
+    .filter-btn[data-tier="epic"].active {
+      background: var(--epic);
+      border-color: var(--epic);
+      color: #111827;
+      box-shadow: 0 2px 12px rgba(232, 121, 249, 0.35);
+    }
+    .filter-btn[data-tier="rare"].active {
+      background: var(--rare);
+      border-color: var(--rare);
+      color: #0b1120;
+      box-shadow: 0 2px 12px rgba(56, 189, 248, 0.35);
+    }
+    .filter-btn[data-tier="curse"].active {
+      background: var(--curse);
+      border-color: var(--curse);
+      color: #111827;
+      box-shadow: 0 2px 12px rgba(248, 113, 113, 0.35);
+    }
+
+    /* Results Info Bar */
+    .results-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding: 0 4px;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+    .results-bar strong { color: var(--text-main); }
+
+    /* Cards Grid */
+    .enchants-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 16px;
+    }
+
+    .enchant-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: var(--surface);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      cursor: pointer;
+      transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
+    }
+    .enchant-card:hover {
+      transform: translateY(-3px);
+      background: var(--surface-elevated);
+      border-color: var(--border-strong);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Subtle left/top accent by tier */
+    .enchant-card.tier-ultimate {
+      border-color: rgba(255, 170, 0, 0.32);
+      background: linear-gradient(160deg, rgba(255, 170, 0, 0.07), rgba(18, 24, 36, 0.9) 45%);
+    }
+    .enchant-card.tier-ultimate:hover {
+      border-color: var(--gold);
+      box-shadow: 0 10px 28px rgba(255, 170, 0, 0.16);
+    }
+    .enchant-card.tier-epic { border-color: rgba(232, 121, 249, 0.25); }
+    .enchant-card.tier-epic:hover { border-color: var(--epic); }
+    .enchant-card.tier-rare { border-color: rgba(56, 189, 248, 0.22); }
+    .enchant-card.tier-rare:hover { border-color: var(--rare); }
+    .enchant-card.is-curse { border-color: rgba(248, 113, 113, 0.28); }
+    .enchant-card.is-curse:hover { border-color: var(--curse); }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+    }
+    .tier-ultimate .card-title { color: var(--gold); }
+    .tier-epic .card-title { color: var(--epic); }
+    .tier-rare .card-title { color: var(--rare); }
+    .tier-common .card-title { color: #f8fafc; }
+    .is-curse .card-title { color: var(--curse); }
+
+    .lv-badge {
+      flex-shrink: 0;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      letter-spacing: 0.03em;
+    }
+
+    .card-badges {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+      letter-spacing: 0.02em;
+    }
+    .badge-ult { background: var(--gold-soft); color: var(--gold); border: 1px solid var(--gold-border); }
+    .badge-epic { background: var(--epic-soft); color: var(--epic); border: 1px solid var(--epic-border); }
+    .badge-rare { background: var(--rare-soft); color: var(--rare); border: 1px solid var(--rare-border); }
+    .badge-common { background: var(--common-soft); color: var(--common); border: 1px solid var(--common-border); }
+    .badge-curse { background: var(--curse-soft); color: var(--curse); border: 1px solid var(--curse-border); }
+    .badge-obtain { background: rgba(255, 255, 255, 0.04); color: var(--text-muted); border: 1px solid var(--border-subtle); }
+    .badge-pack { background: rgba(168, 85, 247, 0.14); color: #d8b4fe; border: 1px solid rgba(168, 85, 247, 0.35); }
+    .badge-group { background: rgba(249, 115, 22, 0.14); color: #fdba74; border: 1px solid rgba(249, 115, 22, 0.35); }
+
+    .conflict-box {
+      background: rgba(249, 115, 22, 0.08);
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+    .conflict-groups-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .conflict-group-btn {
+      background: rgba(249, 115, 22, 0.18);
+      border: 1px solid rgba(249, 115, 22, 0.45);
+      color: #fed7aa;
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .conflict-group-btn:hover {
+      background: rgba(249, 115, 22, 0.32);
+      color: #fff;
+    }
+    .conflict-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+    .conflict-chip {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      border-radius: 8px;
+      padding: 4px 9px;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .conflict-chip:hover {
+      background: rgba(249, 115, 22, 0.18);
+      border-color: rgba(249, 115, 22, 0.45);
+      color: #fed7aa;
+    }
+
+    .card-desc {
+      font-size: 0.855rem;
+      color: #cbd5e1;
+      line-height: 1.55;
+      flex: 1;
+    }
+
+    .hl-num {
+      color: #fde68a;
+      font-weight: 700;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .gear-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+
+    .card-cta {
+      color: var(--text-dim);
+      font-weight: 600;
+      transition: color 0.15s ease;
+    }
+    .enchant-card:hover .card-cta { color: var(--text-main); }
+
+    /* Pagination */
+    .pagination-bar {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .page-btn {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 9px 18px;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .page-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+    .page-btn:not(:disabled):hover {
+      background: var(--surface-hover);
+      border-color: var(--accent);
+    }
+
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--surface);
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-lg);
+      color: var(--text-muted);
+    }
+    .empty-state button {
+      margin-top: 14px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 8, 15, 0.78);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 200;
+    }
+    .modal-backdrop.active { display: flex; }
+
+    .modal-box {
+      width: 100%;
+      max-width: 600px;
+      background: #121824;
+      border: 1px solid var(--border-strong);
+      border-radius: 18px;
+      padding: 24px 26px;
+      position: relative;
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.65);
+      animation: modalPop 0.18s ease-out;
+    }
+    @keyframes modalPop {
+      from { opacity: 0; transform: scale(0.96) translateY(8px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-close-btn:hover { background: rgba(255, 255, 255, 0.12); color: #fff; }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+      padding-right: 36px;
+    }
+
+    .modal-book-icon {
+      width: 46px;
+      height: 46px;
+      image-rendering: pixelated;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+    }
+
+    .modal-title {
+      font-size: 1.35rem;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .modal-id {
+      font-family: Consolas, monospace;
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      margin-top: 3px;
+    }
+
+    .modal-alert {
+      display: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 0.83rem;
+      margin-bottom: 14px;
+      border: 1px solid transparent;
+    }
+
+    .modal-desc {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: #e2e8f0;
+      margin-bottom: 16px;
+    }
+    .modal-desc-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      margin-bottom: 6px;
+    }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .spec-item {
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid var(--border-subtle);
+      padding: 10px 12px;
+      border-radius: 10px;
+    }
+
+    .spec-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+      margin-bottom: 3px;
+    }
+
+    .spec-val {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .cmd-box {
+      display: flex;
+      align-items: center;
+      background: #090d16;
+      border: 1px solid rgba(99, 102, 241, 0.35);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .cmd-text {
+      flex: 1;
+      font-family: Consolas, monospace;
+      font-size: 0.78rem;
+      padding: 10px 12px;
+      color: #a5b4fc;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .cmd-copy-btn {
+      background: #4f46e5;
+      border: none;
+      color: #fff;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 10px 16px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    .cmd-copy-btn:hover { background: #4338ca; }
+
+    /* Toast */
+    .toast-msg {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #10b981;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      z-index: 300;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: all 0.22s ease;
+    }
+    .toast-msg.show { opacity: 1; transform: translateY(0); }
+
+    /* Editor & Table Simulator Styles */
+    .header-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .nav-btn.active-edit {
+      background: rgba(245, 158, 11, 0.2);
+      border-color: rgba(245, 158, 11, 0.55);
+      color: #fde68a;
+    }
+    .ench-card.card-modified {
+      border-color: rgba(245, 158, 11, 0.75) !important;
+      box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.35), 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+    .card-edit-row {
+      display: none;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.12);
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    body.edit-mode .card-edit-row { display: flex; }
+    .edit-mini-select {
+      background: rgba(15, 23, 42, 0.9);
+      color: #f8fafc;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 7px;
+      padding: 3px 7px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .edit-mini-toggle {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-dim);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 7px;
+      padding: 3px 7px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .edit-mini-toggle.on {
+      background: rgba(16, 185, 129, 0.18);
+      border-color: rgba(16, 185, 129, 0.5);
+      color: #6ee7b7;
+    }
+    .modal-editor-box {
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.32);
+      border-radius: 12px;
+      padding: 14px;
+      display: none;
+      flex-direction: column;
+      gap: 12px;
+    }
+    body.edit-mode .modal-editor-box { display: flex; }
+    .editor-row-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      align-items: end;
+    }
+    .editor-field label {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      font-weight: 700;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+    .editor-field select, .editor-field input[type="number"] {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.9);
+      color: #f8fafc;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .group-check-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+      gap: 6px;
+      max-height: 165px;
+      overflow-y: auto;
+      padding: 8px;
+      background: rgba(10, 14, 22, 0.6);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .group-check-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.76rem;
+      color: var(--text-main);
+      cursor: pointer;
+    }
+    .editor-save-bar {
+      position: fixed;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 250;
+      display: none;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      background: rgba(15, 23, 42, 0.96);
+      border: 1px solid rgba(245, 158, 11, 0.55);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.65);
+      padding: 10px 18px;
+      border-radius: 14px;
+      backdrop-filter: blur(12px);
+    }
+    .editor-save-bar.visible { display: flex; }
+    .save-btn-primary {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: #0b0f17;
+      border: none;
+      border-radius: 9px;
+      padding: 7px 14px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .save-btn-primary:disabled { opacity: 0.6; cursor: wait; }
+    .save-btn-ghost {
+      background: rgba(255, 255, 255, 0.07);
+      color: var(--text-main);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 9px;
+      padding: 7px 12px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .sim-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+    .sim-table th, .sim-table td {
+      padding: 8px 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: left;
+    }
+    .sim-table th { color: var(--text-dim); font-size: 0.74rem; text-transform: uppercase; }
+    .sim-row { cursor: pointer; transition: background 0.15s ease; }
+    .sim-row:hover, .sim-row.selected { background: rgba(56, 189, 248, 0.12); }
+    .sim-pct-good { color: #34d399; font-weight: 800; }
+    .sim-pct-warn { color: #fbbf24; font-weight: 800; }
+    .sim-breakdown {
+      margin-top: 12px;
+      max-height: 220px;
+      overflow-y: auto;
+      background: rgba(10, 14, 22, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .header-bar { padding: 10px 16px; }
+      .container { padding: 18px 14px 48px; }
+      .hero-banner { padding: 20px; }
+      .hero-title { font-size: 1.38rem; }
+      .search-sort-row { grid-template-columns: 1fr; }
+      .enchants-grid { grid-template-columns: 1fr; }
+      .specs-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-fixed"></div>
+  <div class="bg-overlay"></div>
+
+  <!-- Navbar -->
+  <header class="header-bar">
+    <a href="index.html" class="brand-link">
+      <img src="assets/icons/enchanted_book.png" alt="Enchanted Book" class="brand-icon" style="image-rendering:pixelated;" />
+      <div class="brand-text">
+        <h1>One More Expedition</h1>
+        <span id="headerSubtitle">Enchantments Codex</span>
+      </div>
+    </a>
+
+    <div class="header-actions">
+      <div style="display:inline-flex;background:#0d1118;border:1px solid #2d3648;border-radius:8px;padding:2px;gap:2px;">
+        <button type="button" id="enchLangEn" onclick="setWikiLang('en')" style="border:none;border-radius:6px;padding:5px 9px;font-size:0.75rem;font-weight:800;cursor:pointer;background:transparent;color:#94a3b8;">🇺🇸 EN</button>
+        <button type="button" id="enchLangVi" onclick="setWikiLang('vi')" style="border:none;border-radius:6px;padding:5px 9px;font-size:0.75rem;font-weight:800;cursor:pointer;background:transparent;color:#94a3b8;">🇻🇳 VI</button>
+      </div>
+      <button type="button" id="editModeBtn" class="nav-btn">🛠️ Wiki Editor</button>
+      <a href="fishing.html" class="nav-btn" style="border-color: rgba(56, 189, 248, 0.4); color: #38bdf8;" id="enchNavFishing">
+        <span>🎣</span> Bách Khoa Câu Cá (112)
+      </a>
+      <a href="index.html" class="nav-btn" id="enchNavHome">
+        <span>🏠</span> Quay lại Wiki Chính
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="hero-banner">
+      <div class="hero-top">
+        <h2 class="hero-title">
+          <span id="enchHeroTitle">Bách Khoa Phù Phép</span>
+          <span class="hero-pill">4-Tier Balanced System</span>
+        </h2>
+      </div>
+      <p class="hero-subtitle" id="enchHeroSub">
+        Tra cứu toàn bộ <strong id="totalHeroCount">474</strong> phù phép đang hoạt động trên server với thông số cộng dồn chi tiết theo từng cấp.
+        Quy tắc độc quyền: <strong>Tối đa 1 Ultimate / món trang bị</strong>; các phù phép Rare xuất hiện ở Bàn phù phép với tỉ lệ 2%–5%.
+      </p>
+
+      <div class="stats-grid">
+        <div class="stat-card" data-quick-tier="ultimate" style="border-color: var(--gold-border);">
+          <div class="stat-card-left" style="color: var(--gold);"><span>👑</span> Ultimate</div>
+          <div class="stat-card-count" style="color: var(--gold);" id="statUlt">0</div>
+        </div>
+        <div class="stat-card" data-quick-tier="epic" style="border-color: var(--epic-border);">
+          <div class="stat-card-left" style="color: var(--epic);"><span>🟣</span> Epic</div>
+          <div class="stat-card-count" style="color: var(--epic);" id="statEpic">0</div>
+        </div>
+        <div class="stat-card" data-quick-tier="rare" style="border-color: var(--rare-border);">
+          <div class="stat-card-left" style="color: var(--rare);"><span>💎</span> Rare</div>
+          <div class="stat-card-count" style="color: var(--rare);" id="statRare">0</div>
+        </div>
+        <div class="stat-card" data-quick-tier="common" style="border-color: var(--common-border);">
+          <div class="stat-card-left" style="color: var(--common);"><span>⚪</span> Common</div>
+          <div class="stat-card-count" style="color: var(--common);" id="statCommon">0</div>
+        </div>
+        <div class="stat-card" data-quick-tier="curse" style="border-color: var(--curse-border);">
+          <div class="stat-card-left" style="color: var(--curse);"><span>☠️</span> Curses</div>
+          <div class="stat-card-count" style="color: var(--curse);" id="statCurse">0</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="controls-panel">
+      <div class="search-sort-row">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search enchantments by name, effect, or ID (e.g. protection, +2.5, lightning, bow)..." autocomplete="off" />
+          <button class="clear-search-btn" id="clearSearchBtn" title="Clear search">✕</button>
+        </div>
+
+        <select id="packSelect" class="filter-select" title="Filter by pack">
+          <option value="all">Pack: Tất cả</option>
+        </select>
+
+        <select id="groupSelect" class="filter-select" title="Filter by exclusive conflict group">
+          <option value="all">Nhóm xung khắc: Tất cả</option>
+        </select>
+
+        <select id="obtainSelect" class="filter-select" title="Filter by how to obtain">
+          <option value="all">Nguồn: Tất cả</option>
+          <option value="table">🔮 Bàn phù phép (Table)</option>
+          <option value="tradeable">🧑‍🌾 Dân làng Thủ thư</option>
+          <option value="loot_only">🎁 Chỉ rơi từ Loot / Rương</option>
+        </select>
+
+        <select id="sortSelect" class="filter-select" title="Sort enchantments">
+          <option value="tier">Sắp xếp: Độ hiếm</option>
+          <option value="level">Cấp tối đa: Cao → Thấp</option>
+          <option value="name_asc">Tên: A → Z</option>
+          <option value="name_desc">Tên: Z → A</option>
+          <option value="anvil">Chi phí đe: Cao → Thấp</option>
+        </select>
+      </div>
+
+      <div class="filter-row">
+        <div class="pill-group" id="tierTabs">
+          <button class="filter-btn active" data-tier="all" id="tabAll">All</button>
+          <button class="filter-btn" data-tier="ultimate" id="tabUlt">👑 Ultimate</button>
+          <button class="filter-btn" data-tier="epic" id="tabEpic">🟣 Epic</button>
+          <button class="filter-btn" data-tier="rare" id="tabRare">💎 Rare</button>
+          <button class="filter-btn" data-tier="common" id="tabCommon">⚪ Common</button>
+          <button class="filter-btn" data-tier="curse" id="tabCurse">☠️ Curses</button>
+        </div>
+
+        <div class="pill-group" id="gearChips">
+          <button class="filter-btn active" data-gear="all">All Gear</button>
+          <button class="filter-btn" data-gear="weapon">⚔️ Melee</button>
+          <button class="filter-btn" data-gear="ranged">🏹 Ranged</button>
+          <button class="filter-btn" data-gear="armor">🛡️ Armor & Elytra</button>
+          <button class="filter-btn" data-gear="tool">⛏️ Tools</button>
+          <button class="filter-btn" data-gear="mount">🐺 Mounts & Pets</button>
+        </div>
+      </div>
+
+      <details id="excludeDetails" style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.08);">
+        <summary style="cursor: pointer; font-size: 0.85rem; color: #f87171; font-weight: 600; user-select: none;">
+          🚫 Bộ lọc Loại trừ (Tích để ẩn) <span id="excludeCountBadge" style="color: #9ca3af; font-weight: 400;"></span>
+        </summary>
+        <div id="excludeRow" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 10px; padding: 12px; background: rgba(15, 23, 42, 0.55); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px;">
+          <div>
+            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Packs</div>
+            <div id="excludePackChecks" style="display: flex; flex-direction: column; gap: 4px; max-height: 150px; overflow-y: auto;"></div>
+          </div>
+          <div>
+            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Rarity</div>
+            <div id="excludeTierChecks" style="display: flex; flex-direction: column; gap: 4px;">
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="ultimate"> 👑 Ultimate</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="epic"> 🟣 Epic</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="rare"> 💎 Rare</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="common"> ⚪ Common</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-tier="curse"> ☠️ Curse</label>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Loại vật phẩm</div>
+            <div id="excludeGearChecks" style="display: flex; flex-direction: column; gap: 4px;">
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="weapon"> ⚔️ Melee</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="ranged"> 🏹 Ranged</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="armor"> 🛡️ Armor & Elytra</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="tool"> ⛏️ Tools</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-gear="mount"> 🐺 Mounts & Pets</label>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Thuộc tính</div>
+            <div id="excludePropChecks" style="display: flex; flex-direction: column; gap: 4px;">
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="table"> 🔮 Bàn phù phép (Table)</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="tradeable"> 🧑‍🌾 Dân làng (Tradeable)</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="loot"> 🎁 Loot / Rương</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;"><input type="checkbox" data-ex-prop="conflict"> ⚔️ Có nhóm xung khắc</label>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.78rem; color: #94a3b8; font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">Nhóm xung khắc</div>
+            <div id="excludeGroupChecks" style="display: flex; flex-direction: column; gap: 4px; max-height: 150px; overflow-y: auto;"></div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- Results Bar -->
+    <div class="results-bar">
+      <span id="resultsCount">Showing 400 / 400 enchantments</span>
+      <span>Nhấp vào thẻ bất kỳ để xem thông số chi tiết &amp; lệnh /give</span>
+    </div>
+
+    <!-- Grid -->
+    <div class="enchants-grid" id="enchantsGrid"></div>
+
+    <!-- Pagination -->
+    <div class="pagination-bar" id="paginationBar">
+      <button class="page-btn" id="prevPageBtn">← Trang trước</button>
+      <span id="pageIndicator" style="font-size: 0.86rem; font-weight: 700;">Trang 1 / 1</span>
+      <button class="page-btn" id="nextPageBtn">Trang sau →</button>
+    </div>
+
+  </main>
+
+  <!-- Detail Modal -->
+  <div class="modal-backdrop" id="enchModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn">✕</button>
+
+      <div class="modal-header">
+        <img src="https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.1/assets/minecraft/textures/item/enchanted_book.png" alt="Enchanted Book" class="modal-book-icon" />
+        <div>
+          <h3 class="modal-title" id="modalTitle">Enchantment</h3>
+          <div class="modal-id" id="modalId">minecraft:protection</div>
+        </div>
+      </div>
+
+      <div class="modal-alert" id="modalAlert"></div>
+
+      <div class="modal-desc">
+        <div class="modal-desc-label">Effect &amp; Per-Level Scaling</div>
+        <div id="modalDesc"></div>
+      </div>
+
+      <div class="specs-grid">
+        <div class="spec-item">
+          <div class="spec-label">Rarity Tier</div>
+          <div class="spec-val" id="specTier">Ultimate</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Max Level</div>
+          <div class="spec-val" id="specMaxLv">V (5)</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Base Anvil Cost</div>
+          <div class="spec-val" id="specAnvil">4 Levels</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">How to Obtain</div>
+          <div class="spec-val" id="specSource">Loot Chests</div>
+        </div>
+        <div class="spec-item" style="grid-column: 1 / -1;">
+          <div class="spec-label">Compatible Equipment</div>
+          <div class="spec-val" id="specGear">Armor</div>
+        </div>
+      </div>
+
+      <div class="conflict-box" id="modalConflictsBox" style="display: none;">
+        <div class="spec-label" style="margin-bottom: 8px; color: #fdba74;">⚔️ Nhóm xung khắc / Không thể gắn cùng (Click để lọc hoặc xem)</div>
+        <div class="conflict-groups-row" id="modalConflictGroups"></div>
+        <div class="conflict-chips" id="modalConflictChips"></div>
+      </div>
+
+      <div class="modal-editor-box" id="modalEditorBox">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+          <div class="spec-label" style="color:#fde68a;">🛠️ Chỉnh sửa Enchantment (Edit Mode)</div>
+          <button type="button" class="save-btn-ghost" id="edClearGroupsBtn" style="padding:3px 9px; font-size:0.74rem;">🟢 Đặt Độc lập (Gỡ hết nhóm)</button>
+        </div>
+        <div class="editor-row-grid">
+          <div class="editor-field">
+            <label>Rarity Tier</label>
+            <select id="edTierSelect">
+              <option value="common">Common</option>
+              <option value="rare">Rare</option>
+              <option value="epic">Epic</option>
+              <option value="ultimate">Ultimate</option>
+              <option value="curse">Curse</option>
+              <option value="disabled">Disable (Xóa khỏi game)</option>
+            </select>
+          </div>
+          <div class="editor-field">
+            <label>Table Weight</label>
+            <input type="number" id="edTableWeight" min="1" max="100" value="1" />
+          </div>
+          <div class="editor-field" style="display:flex; gap:8px; flex-wrap:wrap; padding-bottom:4px;">
+            <label style="display:flex; align-items:center; gap:4px; text-transform:none; font-size:0.8rem; color:var(--text-main); cursor:pointer;">
+              <input type="checkbox" id="edTableCheck" /> 🔮 Table
+            </label>
+            <label style="display:flex; align-items:center; gap:4px; text-transform:none; font-size:0.8rem; color:var(--text-main); cursor:pointer;">
+              <input type="checkbox" id="edTradeCheck" /> 🧑‍🌾 Trade
+            </label>
+            <label style="display:flex; align-items:center; gap:4px; text-transform:none; font-size:0.8rem; color:var(--text-main); cursor:pointer;">
+              <input type="checkbox" id="edLootCheck" /> 🎁 Loot
+            </label>
+          </div>
+        </div>
+        <div class="editor-field">
+          <label>Nhóm xung khắc (Exclusive Groups)</label>
+          <div class="group-check-grid" id="edGroupsGrid"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="spec-label" style="margin-bottom: 6px;">In-Game Command (/give)</div>
+        <div class="cmd-box">
+          <div class="cmd-text" id="cmdText">/give @p ...</div>
+          <button class="cmd-copy-btn" id="copyCmdBtn">📋 Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="editor-save-bar" id="editorSaveBar">
+    <span id="dirtyCountLabel" style="font-size:0.84rem; font-weight:700; color:#fde68a;">0 thay đổi</span>
+    <button type="button" class="save-btn-ghost" id="discardChangesBtn">↩️ Hủy</button>
+    <button type="button" class="save-btn-primary" id="syncChangesBtn">💾 Save &amp; Sync Datapack</button>
+  </div>
+
+  <div class="toast-msg" id="toastMsg">Copied /give command!</div>
+
+  <script src="assets/js/enchants_data.js"></script>
+  <script>
+    const PAGE_SIZE = 36;
+    let currentPage = 1;
+    let currentTier = "all";
+    let currentGear = "all";
+    let currentPack = "all";
+    let currentGroup = "all";
+    let currentObtain = "all";
+    let currentSearch = "";
+    let currentSort = "tier";
+
+    const allData = window.ALL_ENCHANTMENTS || [];
+
+    const isCurseItem = (item) =>
+      item.tier === "curse" ||
+      item.id.toLowerCase().includes("curse") ||
+      item.name.toLowerCase().includes("curse");
+
+    // Populate dynamic counts
+    const counts = {
+      all: allData.length,
+      ultimate: allData.filter(x => x.tier === "ultimate").length,
+      epic: allData.filter(x => x.tier === "epic").length,
+      rare: allData.filter(x => x.tier === "rare").length,
+      common: allData.filter(x => x.tier === "common" && !isCurseItem(x)).length,
+      curse: allData.filter(isCurseItem).length
+    };
+
+    document.getElementById("headerSubtitle").innerText = `Enchantments Codex • ${counts.all} Enchants`;
+    document.getElementById("totalHeroCount").innerText = counts.all;
+    document.getElementById("statUlt").innerText = counts.ultimate;
+    document.getElementById("statEpic").innerText = counts.epic;
+    document.getElementById("statRare").innerText = counts.rare;
+    document.getElementById("statCommon").innerText = counts.common;
+    document.getElementById("statCurse").innerText = counts.curse;
+
+    document.getElementById("tabAll").innerText = `All (${counts.all})`;
+    document.getElementById("tabUlt").innerText = `👑 Ultimate (${counts.ultimate})`;
+    document.getElementById("tabEpic").innerText = `🟣 Epic (${counts.epic})`;
+    document.getElementById("tabRare").innerText = `💎 Rare (${counts.rare})`;
+    document.getElementById("tabCommon").innerText = `⚪ Common (${counts.common})`;
+    document.getElementById("tabCurse").innerText = `☠️ Curses (${counts.curse})`;
+
+    // DOM refs
+    const grid = document.getElementById("enchantsGrid");
+    const resultsCount = document.getElementById("resultsCount");
+    const searchInput = document.getElementById("searchInput");
+    const clearSearchBtn = document.getElementById("clearSearchBtn");
+    const packSelect = document.getElementById("packSelect");
+    const groupSelect = document.getElementById("groupSelect");
+    const obtainSelect = document.getElementById("obtainSelect");
+
+    // Populate all packs dynamically
+    const packLabels = {
+      enchantencore: "Enchantments Encore",
+      expedition_fishing: "Expedition Fishing",
+      minecraft: "Minecraft Vanilla",
+      enchantplus: "NeoEnchant",
+      mt: "Mine Treasure",
+      stellarity: "Stellarity",
+      nova_structures: "Nova Structures (DnT)",
+      enchantsplus: "Enchants+",
+      kattersstructures: "Katters Structures",
+      incendium: "Incendium",
+      wither: "Wither",
+      bound: "Bound",
+      "veinminer-enchantment": "Veinminer"
+    };
+    const packCounts = {};
+    allData.forEach(x => {
+      packCounts[x.namespace] = (packCounts[x.namespace] || 0) + 1;
+    });
+    Object.entries(packCounts)
+      .sort((a, b) => b[1] - a[1])
+      .forEach(([ns, cnt]) => {
+        const opt = document.createElement("option");
+        opt.value = ns;
+        opt.textContent = `${packLabels[ns] || ns} (${cnt})`;
+        packSelect.appendChild(opt);
+      });
+
+    // Populate exclusive conflict groups dynamically
+    const groupCounts = {};
+    let standaloneCount = 0;
+    let hasConflictCount = 0;
+    allData.forEach(x => {
+      const grps = x.exclusive_groups || [];
+      if (grps.length === 0) {
+        standaloneCount++;
+      } else {
+        hasConflictCount++;
+        grps.forEach(g => {
+          groupCounts[g] = (groupCounts[g] || 0) + 1;
+        });
+      }
+    });
+
+    const optStandalone = document.createElement("option");
+    optStandalone.value = "__standalone__";
+    optStandalone.textContent = `🟢 Độc lập / Không xung khắc (${standaloneCount})`;
+    groupSelect.appendChild(optStandalone);
+
+    const optHasConf = document.createElement("option");
+    optHasConf.value = "__has_conflict__";
+    optHasConf.textContent = `⚔️ Có xung khắc (${hasConflictCount})`;
+    groupSelect.appendChild(optHasConf);
+
+    Object.entries(groupCounts)
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .forEach(([grp, cnt]) => {
+        const opt = document.createElement("option");
+        opt.value = grp;
+        opt.textContent = `${grp} (${cnt})`;
+        groupSelect.appendChild(opt);
+      });
+    const sortSelect = document.getElementById("sortSelect");
+    const prevPageBtn = document.getElementById("prevPageBtn");
+    const nextPageBtn = document.getElementById("nextPageBtn");
+    const pageIndicator = document.getElementById("pageIndicator");
+
+    const modal = document.getElementById("enchModal");
+    const modalCloseBtn = document.getElementById("modalCloseBtn");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalId = document.getElementById("modalId");
+    const modalAlert = document.getElementById("modalAlert");
+    const modalDesc = document.getElementById("modalDesc");
+    const specTier = document.getElementById("specTier");
+    const specMaxLv = document.getElementById("specMaxLv");
+    const specAnvil = document.getElementById("specAnvil");
+    const specSource = document.getElementById("specSource");
+    const specGear = document.getElementById("specGear");
+    const modalConflictsBox = document.getElementById("modalConflictsBox");
+    const modalConflictGroups = document.getElementById("modalConflictGroups");
+    const modalConflictChips = document.getElementById("modalConflictChips");
+    const cmdText = document.getElementById("cmdText");
+    const copyCmdBtn = document.getElementById("copyCmdBtn");
+    const toast = document.getElementById("toastMsg");
+
+    function getRomanNumeral(n) {
+      const romans = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
+      return romans[n] || String(n);
+    }
+
+    function getGearIcon(cats) {
+      const map = { weapon: "⚔️", ranged: "🏹", armor: "🛡️", tool: "⛏️", mount: "🐺", universal: "✨" };
+      return (cats || []).map(c => map[c] || "📦").slice(0, 2).join(" ");
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function highlightNumbers(desc) {
+      const safe = escapeHtml(desc);
+      return safe.replace(/([+-]?\d+(?:\.\d+)?(?:%|s|x)?(?:\s*[-–]\s*\d+(?:\.\d+)?(?:%|s|x)?)?)/g, '<span class="hl-num">$1</span>');
+    }
+
+    function getTierBadgeHtml(item) {
+      if (isCurseItem(item)) {
+        return '<span class="badge badge-curse">☠️ Curse</span>';
+      }
+      if (item.tier === "ultimate") return '<span class="badge badge-ult">👑 Ultimate</span>';
+      if (item.tier === "epic") return '<span class="badge badge-epic">🟣 Epic</span>';
+      if (item.tier === "rare") return '<span class="badge badge-rare">💎 Rare</span>';
+      return '<span class="badge badge-common">⚪ Common</span>';
+    }
+
+    function getObtainBadgeHtml(item) {
+      if (item.table && item.tradeable) return '<span class="badge badge-obtain">🔮 Table • 🧑‍🌾 Villager</span>';
+      if (item.table) return '<span class="badge badge-obtain">🔮 Enchant Table</span>';
+      if (item.tradeable) return '<span class="badge badge-obtain">🧑‍🌾 Librarian</span>';
+      return '<span class="badge badge-obtain">🎁 Loot Only</span>';
+    }
+
+    function getPackBadgeHtml(item) {
+      if (item.namespace === "stellarity") return '<span class="badge badge-pack">✨ Stellarity</span>';
+      if (item.namespace === "incendium") return '<span class="badge badge-pack">🔥 Incendium</span>';
+      if (item.namespace === "mt") return '<span class="badge badge-pack">💎 Mine Treasure</span>';
+      return "";
+    }
+
+    function getGroupBadgeHtml(item) {
+      const groups = (item.exclusive_groups || []).filter(g => g !== "Ultimate (Max 1/item)");
+      if (groups.length === 0) return "";
+      const label = groups[0];
+      const extra = groups.length > 1 ? ` +${groups.length - 1}` : "";
+      return `<span class="badge badge-group" title="Nhóm xung khắc: ${escapeHtml(groups.join(', '))}">⚔️ ${escapeHtml(label)}${extra}</span>`;
+    }
+
+    let excludedPacks = new Set();
+    let excludedTiers = new Set();
+    let excludedGears = new Set();
+    let excludedProps = new Set();
+    let excludedGroups = new Set();
+
+    function updateExcludeBadge() {
+      const total = excludedPacks.size + excludedTiers.size + excludedGears.size + excludedProps.size + excludedGroups.size;
+      const badge = document.getElementById("excludeCountBadge");
+      if (badge) badge.textContent = total > 0 ? `(Đang ẩn ${total} mục)` : "";
+    }
+
+    const excludePackChecks = document.getElementById("excludePackChecks");
+    [...new Set(allData.map(i => i.namespace).filter(Boolean))].sort().forEach(ns => {
+      const lbl = document.createElement("label");
+      lbl.style.cssText = "display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;";
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.onchange = () => {
+        if (cb.checked) excludedPacks.add(ns);
+        else excludedPacks.delete(ns);
+        updateExcludeBadge();
+        currentPage = 1;
+        renderCards();
+      };
+      lbl.appendChild(cb);
+      lbl.append(" " + ns);
+      excludePackChecks.appendChild(lbl);
+    });
+
+    const excludeGroupChecks = document.getElementById("excludeGroupChecks");
+    [...new Set(allData.flatMap(i => i.exclusive_groups || []))].sort().forEach(g => {
+      const lbl = document.createElement("label");
+      lbl.style.cssText = "display:flex;align-items:center;gap:6px;font-size:0.82rem;cursor:pointer;";
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.onchange = () => {
+        if (cb.checked) excludedGroups.add(g);
+        else excludedGroups.delete(g);
+        updateExcludeBadge();
+        currentPage = 1;
+        renderCards();
+      };
+      lbl.appendChild(cb);
+      lbl.append(" " + g);
+      excludeGroupChecks.appendChild(lbl);
+    });
+
+    document.querySelectorAll("#excludeTierChecks [data-ex-tier]").forEach(cb => {
+      cb.onchange = () => {
+        const t = cb.dataset.exTier;
+        if (cb.checked) excludedTiers.add(t);
+        else excludedTiers.delete(t);
+        updateExcludeBadge();
+        currentPage = 1;
+        renderCards();
+      };
+    });
+
+    document.querySelectorAll("#excludeGearChecks [data-ex-gear]").forEach(cb => {
+      cb.onchange = () => {
+        const g = cb.dataset.exGear;
+        if (cb.checked) excludedGears.add(g);
+        else excludedGears.delete(g);
+        updateExcludeBadge();
+        currentPage = 1;
+        renderCards();
+      };
+    });
+
+    document.querySelectorAll("#excludePropChecks [data-ex-prop]").forEach(cb => {
+      cb.onchange = () => {
+        const p = cb.dataset.exProp;
+        if (cb.checked) excludedProps.add(p);
+        else excludedProps.delete(p);
+        updateExcludeBadge();
+        currentPage = 1;
+        renderCards();
+      };
+    });
+
+    function filterAndSortData() {
+      const filtered = allData.map(getEffectiveItem).filter(item => {
+        if (item.enabled === false && currentTier !== "all") return false;
+        if (currentTier === "curse") {
+          if (!isCurseItem(item)) return false;
+        } else if (currentTier === "common") {
+          if (item.tier !== "common" || isCurseItem(item)) return false;
+        } else if (currentTier !== "all" && item.tier !== currentTier) {
+          return false;
+        }
+
+        if (currentGear !== "all") {
+          const cats = item.gear_categories || [];
+          if (!cats.includes(currentGear) && !cats.includes("universal")) return false;
+        }
+
+        if (currentPack !== "all" && item.namespace !== currentPack) return false;
+        if (currentGroup === "__standalone__") {
+          if ((item.exclusive_groups || []).length > 0) return false;
+        } else if (currentGroup === "__has_conflict__") {
+          if ((item.exclusive_groups || []).length === 0) return false;
+        } else if (currentGroup !== "all" && !(item.exclusive_groups || []).includes(currentGroup)) {
+          return false;
+        }
+
+        if (currentObtain === "table" && !item.table) return false;
+        if (currentObtain === "tradeable" && !item.tradeable) return false;
+        if (currentObtain === "loot_only" && (item.table || item.tradeable)) return false;
+
+        if (excludedPacks.has(item.namespace)) return false;
+        if (excludedTiers.has(isCurseItem(item) ? "curse" : item.tier)) return false;
+        if (excludedGears.size > 0 && (item.gear_categories || []).some(g => excludedGears.has(g))) return false;
+        if (excludedGroups.size > 0 && (item.exclusive_groups || []).some(g => excludedGroups.has(g))) return false;
+        if (excludedProps.has("table") && item.table) return false;
+        if (excludedProps.has("tradeable") && item.tradeable) return false;
+        if (excludedProps.has("loot") && item.loot) return false;
+        if (excludedProps.has("conflict") && (item.exclusive_groups || []).length > 0) return false;
+
+        if (currentSearch) {
+          const q = currentSearch.toLowerCase();
+          const match =
+            item.name.toLowerCase().includes(q) ||
+            item.id.toLowerCase().includes(q) ||
+            item.description.toLowerCase().includes(q) ||
+            (item.supported_display || "").toLowerCase().includes(q) ||
+            (item.exclusive_groups || []).some(g => g.toLowerCase().includes(q));
+          if (!match) return false;
+        }
+
+        return true;
+      });
+
+      const TIER_RANK = { ultimate: 0, epic: 1, rare: 2, common: 3, curse: 4 };
+      filtered.sort((a, b) => {
+        const nameCmp = (a.name || "").localeCompare(b.name || "");
+        if (currentSort === "tier") {
+          const ra = TIER_RANK[a.tier] ?? (typeof a.tier_order === "number" ? a.tier_order : 99);
+          const rb = TIER_RANK[b.tier] ?? (typeof b.tier_order === "number" ? b.tier_order : 99);
+          return ra - rb || nameCmp;
+        }
+        if (currentSort === "level") return (Number(b.max_level) || 0) - (Number(a.max_level) || 0) || nameCmp;
+        if (currentSort === "name_asc") return nameCmp;
+        if (currentSort === "name_desc") return (b.name || "").localeCompare(a.name || "");
+        if (currentSort === "anvil") return (Number(b.anvil_cost) || 0) - (Number(a.anvil_cost) || 0) || nameCmp;
+        return 0;
+      });
+
+      return filtered;
+    }
+
+    function resetAllFilters() {
+      currentTier = "all";
+      currentGear = "all";
+      currentPack = "all";
+      currentGroup = "all";
+      currentObtain = "all";
+      currentSearch = "";
+      currentPage = 1;
+      searchInput.value = "";
+      clearSearchBtn.classList.remove("visible");
+      packSelect.value = "all";
+      groupSelect.value = "all";
+      obtainSelect.value = "all";
+      document.querySelectorAll("#tierTabs .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.tier === "all"));
+      document.querySelectorAll("#gearChips .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.gear === "all"));
+      excludedPacks.clear();
+      excludedTiers.clear();
+      excludedGears.clear();
+      excludedProps.clear();
+      excludedGroups.clear();
+      document.querySelectorAll("#excludeRow input[type='checkbox']").forEach(cb => { cb.checked = false; });
+      updateExcludeBadge();
+      renderCards();
+    }
+
+    const FILTER_STORAGE_KEY = "ome_enchants_filter_settings_v1";
+
+    function saveFilterSettings() {
+      try {
+        localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify({
+          currentSort,
+          currentTier,
+          currentGear,
+          currentPack,
+          currentGroup,
+          currentObtain,
+          currentSearch,
+          excludedPacks: [...excludedPacks],
+          excludedTiers: [...excludedTiers],
+          excludedGears: [...excludedGears],
+          excludedProps: [...excludedProps],
+          excludedGroups: [...excludedGroups]
+        }));
+      } catch (e) {}
+    }
+
+    function loadFilterSettings() {
+      try {
+        const raw = localStorage.getItem(FILTER_STORAGE_KEY);
+        if (!raw) return;
+        const s = JSON.parse(raw);
+        if (s.currentSort && sortSelect.querySelector(`option[value="${s.currentSort}"]`)) {
+          currentSort = s.currentSort;
+          sortSelect.value = s.currentSort;
+        }
+        if (s.currentTier) {
+          currentTier = s.currentTier;
+          document.querySelectorAll("#tierTabs .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.tier === currentTier));
+        }
+        if (s.currentGear) {
+          currentGear = s.currentGear;
+          document.querySelectorAll("#gearChips .filter-btn").forEach(b => b.classList.toggle("active", b.dataset.gear === currentGear));
+        }
+        if (s.currentPack && packSelect.querySelector(`option[value="${s.currentPack}"]`)) {
+          currentPack = s.currentPack;
+          packSelect.value = s.currentPack;
+        }
+        if (s.currentGroup && groupSelect.querySelector(`option[value="${s.currentGroup}"]`)) {
+          currentGroup = s.currentGroup;
+          groupSelect.value = s.currentGroup;
+        }
+        if (s.currentObtain && obtainSelect.querySelector(`option[value="${s.currentObtain}"]`)) {
+          currentObtain = s.currentObtain;
+          obtainSelect.value = s.currentObtain;
+        }
+        if (typeof s.currentSearch === "string") {
+          currentSearch = s.currentSearch;
+          searchInput.value = s.currentSearch;
+          clearSearchBtn.classList.toggle("visible", s.currentSearch.length > 0);
+        }
+        if (Array.isArray(s.excludedPacks)) {
+          s.excludedPacks.forEach(v => excludedPacks.add(v));
+          document.querySelectorAll("#excludePackChecks input[type='checkbox']").forEach(cb => {
+            cb.checked = excludedPacks.has(cb.dataset.pack || cb.parentElement?.textContent?.trim());
+          });
+        }
+        if (Array.isArray(s.excludedTiers)) {
+          s.excludedTiers.forEach(v => excludedTiers.add(v));
+          document.querySelectorAll("#excludeTierChecks input[type='checkbox']").forEach(cb => {
+            cb.checked = excludedTiers.has(cb.value);
+          });
+        }
+        if (Array.isArray(s.excludedGears)) {
+          s.excludedGears.forEach(v => excludedGears.add(v));
+          document.querySelectorAll("#excludeGearChecks input[type='checkbox']").forEach(cb => {
+            cb.checked = excludedGears.has(cb.value);
+          });
+        }
+        if (Array.isArray(s.excludedProps)) {
+          s.excludedProps.forEach(v => excludedProps.add(v));
+          document.querySelectorAll("#excludePropChecks input[type='checkbox']").forEach(cb => {
+            cb.checked = excludedProps.has(cb.value);
+          });
+        }
+        if (Array.isArray(s.excludedGroups)) {
+          s.excludedGroups.forEach(v => excludedGroups.add(v));
+          document.querySelectorAll("#excludeGroupChecks input[type='checkbox']").forEach(cb => {
+            cb.checked = excludedGroups.has(cb.dataset.group || cb.parentElement?.textContent?.trim());
+          });
+        }
+        updateExcludeBadge();
+      } catch (e) {}
+    }
+
+    function renderCards() {
+      saveFilterSettings();
+      const filtered = filterAndSortData();
+      const total = filtered.length;
+      resultsCount.innerHTML = `Showing <strong>${total}</strong> / <strong>${allData.length}</strong> enchantments`;
+
+      const totalPages = Math.ceil(total / PAGE_SIZE) || 1;
+      if (currentPage > totalPages) currentPage = totalPages;
+
+      const start = (currentPage - 1) * PAGE_SIZE;
+      const paginated = filtered.slice(start, start + PAGE_SIZE);
+
+      grid.innerHTML = "";
+
+      if (paginated.length === 0) {
+        grid.innerHTML = `
+          <div class="empty-state">
+            <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-main);">Không tìm thấy phù phép nào phù hợp</div>
+            <div style="font-size: 0.85rem; margin-top: 4px;">Thử đổi từ khóa hoặc xóa bớt bộ lọc hiện tại.</div>
+            <button onclick="resetAllFilters()">Đặt lại bộ lọc</button>
+          </div>`;
+        prevPageBtn.disabled = true;
+        nextPageBtn.disabled = true;
+        pageIndicator.innerText = "Trang 0 / 0";
+        return;
+      }
+
+      paginated.forEach(rawItem => {
+        const item = getEffectiveItem(rawItem);
+        const card = document.createElement("div");
+        const curseClass = isCurseItem(item) ? " is-curse" : "";
+        const modClass = pendingChanges[item.id] ? " card-modified" : "";
+        card.className = `enchant-card tier-${item.tier}${curseClass}${modClass}`;
+        card.onclick = () => openModal(rawItem);
+
+        const romanMax = getRomanNumeral(item.max_level);
+        const gearText = escapeHtml(item.supported_display || "Compatible Gear");
+
+        card.innerHTML = `
+          <div class="card-header">
+            <div class="card-title">${escapeHtml(item.name)}</div>
+            <span class="lv-badge">Lv. ${romanMax}</span>
+          </div>
+
+          <div class="card-badges">
+            ${getTierBadgeHtml(item)}
+            ${getObtainBadgeHtml(item)}
+            ${getPackBadgeHtml(item)}
+            ${getGroupBadgeHtml(item)}
+          </div>
+
+          <p class="card-desc">${highlightNumbers(item.description)}</p>
+
+          <div class="card-footer">
+            <span class="gear-label">${getGearIcon(item.gear_categories)} ${gearText}</span>
+            <span class="card-cta">Details ↗</span>
+          </div>
+
+          <div class="card-edit-row" onclick="event.stopPropagation()">
+            <select class="edit-mini-select" data-edit-tier="${escapeHtml(item.id)}">
+              <option value="common" ${item.tier === "common" ? "selected" : ""}>Common</option>
+              <option value="rare" ${item.tier === "rare" ? "selected" : ""}>Rare</option>
+              <option value="epic" ${item.tier === "epic" ? "selected" : ""}>Epic</option>
+              <option value="ultimate" ${item.tier === "ultimate" ? "selected" : ""}>Ultimate</option>
+              <option value="curse" ${item.tier === "curse" ? "selected" : ""}>Curse</option>
+              <option value="disabled" ${item.enabled === false ? "selected" : ""}>Disable</option>
+            </select>
+            <button type="button" class="edit-mini-toggle ${item.table ? "on" : ""}" data-edit-flag="table" data-eid="${escapeHtml(item.id)}">🔮 Table</button>
+            <button type="button" class="edit-mini-toggle ${item.tradeable ? "on" : ""}" data-edit-flag="tradeable" data-eid="${escapeHtml(item.id)}">🧑‍🌾 Trade</button>
+            <button type="button" class="edit-mini-toggle ${item.loot ? "on" : ""}" data-edit-flag="loot" data-eid="${escapeHtml(item.id)}">🎁 Loot</button>
+          </div>
+        `;
+
+        const tierSel = card.querySelector("[data-edit-tier]");
+        if (tierSel) {
+          tierSel.onchange = (e) => {
+            const val = e.target.value;
+            const patch = { tier: val, enabled: val !== "disabled" };
+            if (val !== "common" && val !== "rare") patch.table = false;
+            updatePendingChange(item.id, patch);
+          };
+        }
+        card.querySelectorAll("[data-edit-flag]").forEach(btn => {
+          btn.onclick = () => {
+            const flag = btn.dataset.editFlag;
+            const cur = getEffectiveItem(rawItem);
+            updatePendingChange(item.id, { [flag]: !cur[flag] });
+          };
+        });
+
+        grid.appendChild(card);
+      });
+
+      pageIndicator.innerText = `Trang ${currentPage} / ${totalPages}`;
+      prevPageBtn.disabled = currentPage <= 1;
+      nextPageBtn.disabled = currentPage >= totalPages;
+    }
+
+    function openModal(rawItem) {
+      const item = getEffectiveItem(rawItem);
+      currentModalItem = rawItem;
+      const colorMap = {
+        ultimate: "var(--gold)",
+        epic: "var(--epic)",
+        rare: "var(--rare)",
+        common: "#f8fafc"
+      };
+      const titleColor = isCurseItem(item) ? "var(--curse)" : (colorMap[item.tier] || "#f8fafc");
+
+      modalTitle.innerText = item.name;
+      modalTitle.style.color = titleColor;
+      modalId.innerText = item.id;
+
+      if (item.tier === "ultimate") {
+        modalAlert.style.display = "block";
+        modalAlert.style.background = "var(--gold-soft)";
+        modalAlert.style.borderColor = "var(--gold-border)";
+        modalAlert.style.color = "#fde68a";
+        modalAlert.innerHTML = `<strong>👑 ULTIMATE RULE:</strong> Each item can hold at most <strong>1 Ultimate enchantment</strong>.`;
+      } else if (isCurseItem(item)) {
+        modalAlert.style.display = "block";
+        modalAlert.style.background = "var(--curse-soft)";
+        modalAlert.style.borderColor = "var(--curse-border)";
+        modalAlert.style.color = "#fecaca";
+        modalAlert.innerHTML = `<strong>☠️ CURSE:</strong> Applies a drawback, hazard, or penalty while equipped or used.`;
+      } else {
+        modalAlert.style.display = "none";
+      }
+
+      modalDesc.innerHTML = highlightNumbers(item.description);
+
+      specTier.innerText = item.tier.toUpperCase() + (isCurseItem(item) ? " (CURSE)" : "");
+      specTier.style.color = titleColor;
+      specMaxLv.innerText = `Level ${getRomanNumeral(item.max_level)} (Max ${item.max_level})`;
+      specAnvil.innerText = `${item.anvil_cost} Levels`;
+
+      const sources = [];
+      if (item.loot) sources.push("Loot Chests");
+      if (item.table) sources.push("Enchanting Table");
+      if (item.tradeable) sources.push("Librarian Villager");
+      specSource.innerText = sources.join(" • ") || "Special Event";
+
+      specGear.innerHTML = `<span>${escapeHtml(item.supported_display || "Compatible Gear")}</span> <span style="color:var(--text-dim); font-size:0.78rem; font-weight:500; display:block; margin-top:2px;">${escapeHtml(item.supported_items)}</span>`;
+      cmdText.innerText = item.give_command;
+
+      const excGroups = item.exclusive_groups || [];
+      const confs = item.conflicts || [];
+      if (excGroups.length > 0 || confs.length > 0) {
+        modalConflictsBox.style.display = "block";
+        modalConflictGroups.innerHTML = "";
+        excGroups.forEach(g => {
+          const btn = document.createElement("button");
+          btn.className = "conflict-group-btn";
+          btn.type = "button";
+          btn.textContent = `🔍 Nhóm: ${g}`;
+          btn.onclick = () => {
+            currentGroup = g;
+            groupSelect.value = g;
+            currentPage = 1;
+            closeModal();
+            renderCards();
+          };
+          modalConflictGroups.appendChild(btn);
+        });
+
+        modalConflictChips.innerHTML = "";
+        if (confs.length > 0) {
+          confs.forEach(c => {
+            const chip = document.createElement("button");
+            chip.className = "conflict-chip";
+            chip.type = "button";
+            chip.textContent = c.name;
+            chip.title = c.id;
+            chip.onclick = () => {
+              const target = allData.find(x => x.id === c.id);
+              if (target) openModal(target);
+            };
+            modalConflictChips.appendChild(chip);
+          });
+        } else {
+          const note = document.createElement("span");
+          note.style.cssText = "color: var(--text-dim); font-size: 0.78rem;";
+          note.textContent = "Chỉ gắn được 1 Ultimate trên mỗi món đồ (click nút Nhóm ở trên để xem toàn bộ Ultimate).";
+          modalConflictChips.appendChild(note);
+        }
+      } else {
+        modalConflictsBox.style.display = "none";
+      }
+
+      modal.classList.add("active");
+    }
+
+    function closeModal() {
+      modal.classList.remove("active");
+    }
+
+    function showToast(msg) {
+      toast.innerText = msg;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 2400);
+    }
+
+    // Event bindings
+    modalCloseBtn.onclick = closeModal;
+    modal.onclick = (e) => { if (e.target === modal) closeModal(); };
+
+    copyCmdBtn.onclick = () => {
+      navigator.clipboard.writeText(cmdText.innerText).then(() => {
+        showToast("Copied /give command to clipboard!");
+      }).catch(() => {
+        showToast("Copy failed — please copy manually.");
+      });
+    };
+
+    searchInput.addEventListener("input", (e) => {
+      currentSearch = e.target.value.trim();
+      clearSearchBtn.classList.toggle("visible", currentSearch.length > 0);
+      currentPage = 1;
+      renderCards();
+    });
+
+    clearSearchBtn.onclick = () => {
+      searchInput.value = "";
+      currentSearch = "";
+      clearSearchBtn.classList.remove("visible");
+      currentPage = 1;
+      renderCards();
+      searchInput.focus();
+    };
+
+    packSelect.addEventListener("change", (e) => {
+      currentPack = e.target.value;
+      currentPage = 1;
+      renderCards();
+    });
+
+    groupSelect.addEventListener("change", (e) => {
+      currentGroup = e.target.value;
+      currentPage = 1;
+      renderCards();
+    });
+
+    obtainSelect.addEventListener("change", (e) => {
+      currentObtain = e.target.value;
+      currentPage = 1;
+      renderCards();
+    });
+
+    sortSelect.addEventListener("change", (e) => {
+      currentSort = e.target.value;
+      currentPage = 1;
+      renderCards();
+    });
+
+    function setTierFilter(tier) {
+      currentTier = tier;
+      currentPage = 1;
+      document.querySelectorAll("#tierTabs .filter-btn").forEach(b => {
+        b.classList.toggle("active", b.dataset.tier === tier);
+      });
+      renderCards();
+    }
+
+    document.querySelectorAll("#tierTabs .filter-btn").forEach(btn => {
+      btn.onclick = () => setTierFilter(btn.dataset.tier);
+    });
+
+    document.querySelectorAll(".stat-card[data-quick-tier]").forEach(card => {
+      card.onclick = () => setTierFilter(card.dataset.quickTier);
+    });
+
+    document.querySelectorAll("#gearChips .filter-btn").forEach(btn => {
+      btn.onclick = () => {
+        document.querySelectorAll("#gearChips .filter-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentGear = btn.dataset.gear;
+        currentPage = 1;
+        renderCards();
+      };
+    });
+
+    prevPageBtn.onclick = () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderCards();
+        window.scrollTo({ top: 320, behavior: "smooth" });
+      }
+    };
+
+    nextPageBtn.onclick = () => {
+      currentPage++;
+      renderCards();
+      window.scrollTo({ top: 320, behavior: "smooth" });
+    };
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+
+    // =========================================================
+    // LIVE EDITOR
+    // =========================================================
+    const pendingChanges = {};
+    let currentModalItem = null;
+    let isLocalServer = false;
+
+    const editModeBtn = document.getElementById("editModeBtn");
+    const editorSaveBar = document.getElementById("editorSaveBar");
+    const dirtyCountLabel = document.getElementById("dirtyCountLabel");
+    const discardChangesBtn = document.getElementById("discardChangesBtn");
+    const syncChangesBtn = document.getElementById("syncChangesBtn");
+
+    const edTierSelect = document.getElementById("edTierSelect");
+    const edTableWeight = document.getElementById("edTableWeight");
+    const edTableCheck = document.getElementById("edTableCheck");
+    const edTradeCheck = document.getElementById("edTradeCheck");
+    const edLootCheck = document.getElementById("edLootCheck");
+    const edGroupsGrid = document.getElementById("edGroupsGrid");
+    const edClearGroupsBtn = document.getElementById("edClearGroupsBtn");
+
+    const allKnownGroups = Object.keys(groupCounts).sort((a, b) => a.localeCompare(b));
+
+    function getEffectiveItem(rawItem) {
+      const p = pendingChanges[rawItem.id];
+      if (!p) return rawItem;
+      return { ...rawItem, ...p };
+    }
+
+    function updatePendingChange(eid, patch) {
+      const base = allData.find(x => x.id === eid);
+      if (!base) return;
+      const merged = { ...(pendingChanges[eid] || {}), ...patch };
+      pendingChanges[eid] = merged;
+      refreshDirtyBar();
+      renderCards();
+      if (currentModalItem && currentModalItem.id === eid) {
+        populateModalEditor(getEffectiveItem(base));
+      }
+    }
+
+    function refreshDirtyBar() {
+      const cnt = Object.keys(pendingChanges).length;
+      dirtyCountLabel.innerText = `${cnt} thay đổi chưa đồng bộ`;
+      editorSaveBar.classList.toggle("visible", cnt > 0);
+      syncChangesBtn.innerText = isLocalServer ? "💾 Save & Sync Datapack" : "📥 Export Patch (.json)";
+    }
+
+    function populateModalEditor(item) {
+      edTierSelect.value = item.enabled === false ? "disabled" : item.tier;
+      edTableWeight.value = item.table_weight || 1;
+      edTableCheck.checked = !!item.table;
+      edTradeCheck.checked = !!item.tradeable;
+      edLootCheck.checked = item.loot !== false;
+
+      const activeGroups = new Set(item.exclusive_groups || []);
+      edGroupsGrid.innerHTML = "";
+      allKnownGroups.forEach(grp => {
+        const lbl = document.createElement("label");
+        lbl.className = "group-check-item";
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.checked = activeGroups.has(grp);
+        cb.onchange = () => {
+          const cur = new Set(getEffectiveItem(currentModalItem).exclusive_groups || []);
+          if (cb.checked) cur.add(grp); else cur.delete(grp);
+          updatePendingChange(item.id, { exclusive_groups: Array.from(cur) });
+        };
+        lbl.appendChild(cb);
+        lbl.appendChild(document.createTextNode(grp));
+        edGroupsGrid.appendChild(lbl);
+      });
+    }
+
+    edTierSelect.onchange = () => {
+      if (!currentModalItem) return;
+      const val = edTierSelect.value;
+      const patch = { tier: val, enabled: val !== "disabled" };
+      if (val !== "common" && val !== "rare") patch.table = false;
+      updatePendingChange(currentModalItem.id, patch);
+    };
+    edTableWeight.onchange = () => {
+      if (!currentModalItem) return;
+      const w = Math.max(1, Math.min(100, parseInt(edTableWeight.value || "1", 10)));
+      updatePendingChange(currentModalItem.id, { table_weight: w });
+    };
+    edTableCheck.onchange = () => {
+      if (!currentModalItem) return;
+      updatePendingChange(currentModalItem.id, { table: edTableCheck.checked });
+    };
+    edTradeCheck.onchange = () => {
+      if (!currentModalItem) return;
+      updatePendingChange(currentModalItem.id, { tradeable: edTradeCheck.checked });
+    };
+    edLootCheck.onchange = () => {
+      if (!currentModalItem) return;
+      updatePendingChange(currentModalItem.id, { loot: edLootCheck.checked });
+    };
+    edClearGroupsBtn.onclick = () => {
+      if (!currentModalItem) return;
+      updatePendingChange(currentModalItem.id, { exclusive_groups: [] });
+    };
+
+    // Hook modal open to also populate editor box
+    const _origOpenModal = openModal;
+    openModal = function(rawItem) {
+      _origOpenModal(rawItem);
+      populateModalEditor(getEffectiveItem(rawItem));
+    };
+
+    // Enchanting Table Simulator (matches scripts/enchant_manager.py ITEM_PROFILES + Shield/Elytra)
+    const SIM_PROFILES = {
+      Sword: new Set(["#minecraft:enchantable/sword", "#minecraft:enchantable/sharp_weapon", "#minecraft:enchantable/weapon", "#minecraft:enchantable/fire_aspect", "#minecraft:enchantable/durability", "#minecraft:enchantable/vanishing", "#enchantencore:weapons", "#enchantencore:all_tools", "#enchantsplus:toolsnsword", "#enchantsplus:weapons", "#nova_structures:enchantable/combat_weapons", "#nova_structures:enchantable/combat_tools"]),
+      Pickaxe: new Set(["#minecraft:enchantable/mining", "#minecraft:enchantable/mining_loot", "#minecraft:enchantable/durability", "#enchantencore:all_tools", "#enchantsplus:toolsnsword", "#enchantsplus:tools"]),
+      Axe: new Set(["#minecraft:enchantable/mining", "#minecraft:enchantable/mining_loot", "#minecraft:enchantable/sharp_weapon", "#minecraft:enchantable/weapon", "#minecraft:enchantable/durability", "#enchantencore:weapons", "#enchantencore:all_tools", "#enchantsplus:toolsnsword", "#enchantsplus:tools"]),
+      Bow: new Set(["#minecraft:enchantable/bow", "#minecraft:enchantable/durability", "#enchantsplus:bows", "#enchantencore:all_bows"]),
+      Crossbow: new Set(["#minecraft:enchantable/crossbow", "#minecraft:enchantable/durability"]),
+      Trident: new Set(["#minecraft:enchantable/trident", "#minecraft:enchantable/durability"]),
+      Helmet: new Set(["#minecraft:enchantable/armor", "#minecraft:enchantable/head_armor", "#minecraft:head_armor", "#minecraft:enchantable/durability"]),
+      Chestplate: new Set(["#minecraft:enchantable/armor", "#minecraft:enchantable/chest_armor", "#minecraft:chest_armor", "#minecraft:enchantable/durability"]),
+      Leggings: new Set(["#minecraft:enchantable/armor", "#minecraft:enchantable/leg_armor", "#minecraft:enchantable/durability"]),
+      Boots: new Set(["#minecraft:enchantable/armor", "#minecraft:enchantable/foot_armor", "#minecraft:foot_armor", "#minecraft:enchantable/durability"]),
+      Shield: new Set(["#minecraft:enchantable/shield", "#enchantencore:shield", "#minecraft:enchantable/durability"]),
+      Elytra: new Set(["#minecraft:enchantable/elytra", "#enchantencore:elytra", "#minecraft:enchantable/equippable", "#minecraft:enchantable/durability"]),
+    };
+
+    function matchesSimProfile(supportedItems, profileSet) {
+      if (!supportedItems) return false;
+      const s = String(supportedItems);
+      if (profileSet.has(s)) return true;
+      for (const tag of profileSet) {
+        if (s.includes(tag)) return true;
+      }
+      return false;
+    }
+
+    editModeBtn.onclick = () => {
+      document.body.classList.toggle("edit-mode");
+      editModeBtn.classList.toggle("active-edit", document.body.classList.contains("edit-mode"));
+    };
+
+    discardChangesBtn.onclick = () => {
+      Object.keys(pendingChanges).forEach(k => delete pendingChanges[k]);
+      refreshDirtyBar();
+      renderCards();
+      if (currentModalItem && modal.classList.contains("active")) {
+        populateModalEditor(currentModalItem);
+      }
+      showToast("Đã hủy toàn bộ thay đổi chưa lưu.");
+    };
+
+    syncChangesBtn.onclick = async () => {
+      const cnt = Object.keys(pendingChanges).length;
+      if (cnt === 0) return;
+
+      if (!isLocalServer) {
+        const blob = new Blob([JSON.stringify({ changes: pendingChanges }, null, 2)], { type: "application/json" });
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = "wiki_edits_patch.json";
+        a.click();
+        showToast("Đã tải wiki_edits_patch.json!");
+        return;
+      }
+
+      syncChangesBtn.disabled = true;
+      syncChangesBtn.innerText = "⏳ Đang đồng bộ datapack...";
+      try {
+        const resp = await fetch("/api/sync", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ changes: pendingChanges })
+        });
+        const res = await resp.json();
+        if (!res.ok) throw new Error(res.error || "Sync failed");
+        showToast(`Đã đồng bộ ${res.updated} enchantments vào datapack & web! Đang tải lại...`);
+        setTimeout(() => location.reload(), 900);
+      } catch (err) {
+        showToast("Lỗi đồng bộ: " + err.message);
+        syncChangesBtn.disabled = false;
+        refreshDirtyBar();
+      }
+    };
+
+    // Show Edit Mode button on localhost or ?edit=1, and detect local sync server
+    const canShowEdit = ["localhost", "127.0.0.1"].includes(location.hostname) || location.search.includes("edit=1");
+    if (canShowEdit) {
+      editModeBtn.style.display = "inline-flex";
+    }
+    if (["localhost", "127.0.0.1"].includes(location.hostname)) {
+      fetch("/api/health").then(r => r.json()).then(d => {
+        if (d && d.ok) {
+          isLocalServer = true;
+          refreshDirtyBar();
+        }
+      }).catch(() => {});
+    }
+
+    function setWikiLang(lang) {
+      const l = (lang === "vi") ? "vi" : "en";
+      localStorage.setItem("ome_wiki_lang", l);
+      document.documentElement.lang = l;
+      const btnEn = document.getElementById("enchLangEn");
+      const btnVi = document.getElementById("enchLangVi");
+      if (btnEn && btnVi) {
+        btnEn.style.background = l === "en" ? "#f5c451" : "transparent";
+        btnEn.style.color = l === "en" ? "#111827" : "#94a3b8";
+        btnVi.style.background = l === "vi" ? "#f5c451" : "transparent";
+        btnVi.style.color = l === "vi" ? "#111827" : "#94a3b8";
+      }
+      const navFish = document.getElementById("enchNavFishing");
+      const navHome = document.getElementById("enchNavHome");
+      const heroTitle = document.getElementById("enchHeroTitle");
+      const heroSub = document.getElementById("enchHeroSub");
+      const cnt = document.getElementById("totalHeroCount")?.innerText || "474";
+      if (l === "en") {
+        if (navFish) navFish.innerHTML = "<span>🎣</span> Fishing Wiki (112)";
+        if (navHome) navHome.innerHTML = "<span>🏠</span> Back to Main Wiki";
+        if (heroTitle) heroTitle.textContent = "Enchantments Encyclopedia";
+        if (heroSub) heroSub.innerHTML = `Browse all <strong id="totalHeroCount">${cnt}</strong> active enchantments on the server with per-level stat scaling. Exclusive rule: <strong>Max 1 Ultimate per item</strong>; Rare enchants appear in Enchanting Tables at 2%–5%.`;
+      } else {
+        if (navFish) navFish.innerHTML = "<span>🎣</span> Bách Khoa Câu Cá (112)";
+        if (navHome) navHome.innerHTML = "<span>🏠</span> Quay lại Wiki Chính";
+        if (heroTitle) heroTitle.textContent = "Bách Khoa Phù Phép";
+        if (heroSub) heroSub.innerHTML = `Tra cứu toàn bộ <strong id="totalHeroCount">${cnt}</strong> phù phép đang hoạt động trên server với thông số cộng dồn chi tiết theo từng cấp. Quy tắc độc quyền: <strong>Tối đa 1 Ultimate / món trang bị</strong>; các phù phép Rare xuất hiện ở Bàn phù phép với tỉ lệ 2%–5%.`;
+      }
+    }
+
+    loadFilterSettings();
+    renderCards();
+    setWikiLang(localStorage.getItem("ome_wiki_lang") || "en");
+  </script>
+</body>
+</html>

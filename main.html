@@ -897,8 +897,8 @@
         <span style="font-size:0.85rem;">🔍</span>
       </div>
       <div class="lang-pill" title="Switch Language / Đổi Ngôn Ngữ">
+        <button class="lang-btn" id="btnLangEn" onclick="setLanguage('en')">🇺🇸 EN</button>
         <button class="lang-btn active" id="btnLangVi" onclick="setLanguage('vi')">🇻🇳 VI</button>
-        <button class="lang-btn" id="btnLangEn" onclick="setLanguage('en')">🇬🇧 EN</button>
       </div>
     </div>
   </header>
@@ -1086,25 +1086,25 @@
   <div class="modal-backdrop" id="langModal">
     <div class="lang-modal-box">
       <img class="lang-modal-header-icon mc-pixel" src="assets/icons/enchanted_book.png" alt="Language"/>
-      <div class="lang-modal-title">Chọn Ngôn Ngữ / Choose Language</div>
+      <div class="lang-modal-title">Choose Language / Chọn Ngôn Ngữ</div>
       <div class="lang-modal-sub">One More Expedition Wiki • mckhtn.redirectme.net</div>
 
       <div class="lang-choice-grid">
+        <div class="lang-choice-card" onclick="chooseStartupLanguage('en')">
+          <div class="lang-flag">🇺🇸</div>
+          <div class="lang-name">English (EN)</div>
+          <div class="lang-desc">Full English guides &amp; commands</div>
+        </div>
         <div class="lang-choice-card" onclick="chooseStartupLanguage('vi')">
           <div class="lang-flag">🇻🇳</div>
-          <div class="lang-name">Tiếng Việt</div>
-          <div class="lang-desc">Giao diện & hướng dẫn Tiếng Việt</div>
-        </div>
-        <div class="lang-choice-card" onclick="chooseStartupLanguage('en')">
-          <div class="lang-flag">🇬🇧</div>
-          <div class="lang-name">English</div>
-          <div class="lang-desc">Full English guides & commands</div>
+          <div class="lang-name">Tiếng Việt (VI)</div>
+          <div class="lang-desc">Giao diện &amp; hướng dẫn Tiếng Việt</div>
         </div>
       </div>
 
       <label class="lang-dont-show-label">
         <input type="checkbox" id="langDontShowCheck" />
-        <span>Không hiện lại nữa / Don't show this again</span>
+        <span>Don't show this again / Không hiện lại nữa</span>
       </label>
     </div>
   </div>
@@ -1112,7 +1112,7 @@
   <script>
     const LANG_KEY = "ome_wiki_lang";
     const DONT_SHOW_KEY = "ome_wiki_lang_dont_show";
-    let currentLang = localStorage.getItem(LANG_KEY) || "vi";
+    let currentLang = localStorage.getItem(LANG_KEY) || "en";
     let currentCategory = null;
     let currentSubItems = [];
 
