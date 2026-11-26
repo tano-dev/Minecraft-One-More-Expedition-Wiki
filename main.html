@@ -858,6 +858,98 @@
       }
       .search-container { width: 100%; }
     }
+
+    /* WIKI EDITOR MODE */
+    .editor-toggle-btn {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      background: rgba(245, 196, 81, 0.14);
+      border: 1px solid rgba(245, 196, 81, 0.45);
+      color: var(--gold-primary);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .editor-toggle-btn.active {
+      background: var(--gold-primary);
+      color: #111827;
+    }
+    .tile-edit-btn {
+      display: none;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(245, 196, 81, 0.92);
+      color: #111827;
+      border: none;
+      border-radius: 6px;
+      padding: 3px 7px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      cursor: pointer;
+      z-index: 5;
+    }
+    body.edit-mode .tile-edit-btn { display: inline-flex; align-items: center; gap: 3px; }
+    body.edit-mode .content-tile { border-style: dashed; border-color: rgba(245, 196, 81, 0.45); }
+
+    .editor-dock {
+      display: none;
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1800;
+      background: rgba(13, 18, 28, 0.96);
+      border: 1px solid rgba(245, 196, 81, 0.5);
+      border-radius: 14px;
+      padding: 10px 16px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.7);
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      backdrop-filter: blur(12px);
+    }
+    body.edit-mode .editor-dock { display: flex; }
+    .ed-btn {
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: #1c2538;
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .ed-btn:hover { background: #28354f; }
+    .ed-btn.primary { background: #2563eb; border-color: #3b82f6; }
+    .ed-btn.gold { background: var(--gold-primary); color: #111827; border-color: var(--gold-primary); }
+    .ed-btn.danger { background: rgba(248, 113, 113, 0.16); color: #f87171; border-color: rgba(248, 113, 113, 0.4); }
+
+    .ed-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .ed-field { display: flex; flex-direction: column; gap: 4px; margin-bottom: 10px; }
+    .ed-field label { font-size: 0.74rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase; }
+    .ed-field input, .ed-field textarea, .ed-field select {
+      background: #0b0f17;
+      border: 1px solid #2d3648;
+      border-radius: 8px;
+      padding: 7px 10px;
+      color: #fff;
+      font-size: 0.84rem;
+      font-family: inherit;
+    }
+    .ed-field textarea { min-height: 70px; resize: vertical; }
+    .ed-sub-box {
+      background: #182030;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
@@ -892,6 +984,7 @@
     </nav>
 
     <div class="header-right-tools">
+      <button type="button" id="mainEditModeBtn" class="editor-toggle-btn" onclick="toggleMainEditMode()">🛠️ Wiki Editor</button>
       <div class="search-container">
         <input type="text" id="wikiSearchInput" placeholder="Tìm kiếm wiki, lệnh, tính năng..." autocomplete="off"/>
         <span style="font-size:0.85rem;">🔍</span>
@@ -1106,6 +1199,31 @@
         <input type="checkbox" id="langDontShowCheck" />
         <span>Don't show this again / Không hiện lại nữa</span>
       </label>
+    </div>
+  </div>
+
+  <!-- FLOATING EDITOR DOCK -->
+  <div class="editor-dock" id="editorDock">
+    <span style="font-size:0.8rem;font-weight:800;color:var(--gold-primary);">✏️ EDIT MODE</span>
+    <button class="ed-btn" onclick="openNewCategoryEditor()">➕ Add Category</button>
+    <button class="ed-btn" onclick="openSiteTextEditor()">📝 Edit Banner &amp; Intro</button>
+    <button class="ed-btn gold" onclick="exportWikiJson()">💾 Export JSON</button>
+    <button class="ed-btn primary" onclick="copyWikiJson()">📋 Copy JSON</button>
+    <button class="ed-btn danger" onclick="resetCustomEdits()">↺ Reset</button>
+  </div>
+
+  <!-- EDITOR MODAL -->
+  <div class="modal-backdrop" id="editorModal">
+    <div class="mc-modal-box">
+      <span class="modal-close-x" onclick="closeEditorModal()">✕</span>
+      <div class="modal-nav-bar">
+        <h2 id="editorModalTitle" style="font-size:1.1rem;font-weight:800;color:#fff;">Edit Wiki</h2>
+      </div>
+      <div class="modal-scroll-area" id="editorModalBody"></div>
+      <div style="margin-top:12px;display:flex;justify-content:flex-end;gap:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.08);">
+        <button class="ed-btn" onclick="closeEditorModal()">Cancel</button>
+        <button class="ed-btn gold" id="editorSaveBtn">💾 Save Changes</button>
+      </div>
     </div>
   </div>
 
@@ -1643,8 +1761,15 @@
       items.forEach(cat => {
         const tile = document.createElement("div");
         tile.className = "content-tile";
-        tile.onclick = () => openCategoryModal(cat);
+        tile.onclick = () => {
+          if (document.body.classList.contains("edit-mode")) {
+            openCategoryEditor(cat.id);
+          } else {
+            openCategoryModal(cat);
+          }
+        };
         tile.innerHTML = `
+          <button type="button" class="tile-edit-btn" onclick="event.stopPropagation(); openCategoryEditor('${cat.id}')">✏️ Edit</button>
           <div class="tile-icon-box">
             <img class="mc-pixel" src="${cat.icon}" alt="${cat.name[currentLang]}"/>
           </div>
@@ -1848,6 +1973,272 @@
     fetchServerStatus();
 
     // Init translations & show Language Modal on entry unless user checked "Don't show again"
+    const CUSTOM_DATA_KEY = "ome_wiki_custom_data_v1";
+    const AVAILABLE_ICONS = [
+      "assets/icons/oak_sapling.png", "assets/icons/compass.png", "assets/icons/recovery_compass.png",
+      "assets/icons/netherite_sword.png", "assets/icons/diamond_sword.png", "assets/icons/netherite_pickaxe.png",
+      "assets/icons/diamond_pickaxe.png", "assets/icons/fishing_rod.png", "assets/icons/enchanted_book.png",
+      "assets/icons/writable_book.png", "assets/icons/book.png", "assets/icons/emerald.png",
+      "assets/icons/gold_ingot.png", "assets/icons/name_tag.png", "assets/icons/paper.png",
+      "assets/icons/bundle.png", "assets/icons/totem_of_undying.png", "assets/icons/dragon_egg.png",
+      "assets/icons/nether_star.png", "assets/icons/blaze_powder.png", "assets/icons/ender_pearl.png",
+      "assets/icons/amethyst_shard.png", "assets/icons/clock.png", "assets/icons/spyglass.png",
+      "assets/icons/grass_block_side.png", "assets/icons/chest_front.png", "assets/icons/trident.png",
+      "assets/icons/beacon.png"
+    ];
+
+    function loadCustomEdits() {
+      try {
+        const raw = localStorage.getItem(CUSTOM_DATA_KEY);
+        if (!raw) return;
+        const parsed = JSON.parse(raw);
+        if (parsed.uiText) {
+          ["en", "vi"].forEach(l => {
+            if (parsed.uiText[l]) Object.assign(UI_TEXT[l], parsed.uiText[l]);
+          });
+        }
+        if (Array.isArray(parsed.categories) && parsed.categories.length > 0) {
+          WIKI_CATEGORIES.length = 0;
+          parsed.categories.forEach(c => WIKI_CATEGORIES.push(c));
+        }
+      } catch (e) {
+        console.warn("Failed to load custom wiki edits:", e);
+      }
+    }
+
+    function saveCustomEdits() {
+      const payload = {
+        uiText: {
+          en: {
+            bannerTitle: UI_TEXT.en.bannerTitle,
+            bannerSub: UI_TEXT.en.bannerSub,
+            mainHeading: UI_TEXT.en.mainHeading,
+            mainIntro: UI_TEXT.en.mainIntro
+          },
+          vi: {
+            bannerTitle: UI_TEXT.vi.bannerTitle,
+            bannerSub: UI_TEXT.vi.bannerSub,
+            mainHeading: UI_TEXT.vi.mainHeading,
+            mainIntro: UI_TEXT.vi.mainIntro
+          }
+        },
+        categories: WIKI_CATEGORIES
+      };
+      localStorage.setItem(CUSTOM_DATA_KEY, JSON.stringify(payload));
+      applyTranslations();
+    }
+
+    function toggleMainEditMode() {
+      document.body.classList.toggle("edit-mode");
+      document.getElementById("mainEditModeBtn").classList.toggle("active", document.body.classList.contains("edit-mode"));
+    }
+
+    function closeEditorModal() {
+      document.getElementById("editorModal").classList.remove("active");
+    }
+
+    function openSiteTextEditor() {
+      document.getElementById("editorModalTitle").textContent = "Edit Banner & Intro (EN / VI)";
+      const body = document.getElementById("editorModalBody");
+      body.innerHTML = `
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Banner Title (EN)</label><input id="edBanTitleEn" value="${escapeAttr(UI_TEXT.en.bannerTitle)}"></div>
+          <div class="ed-field"><label>Banner Title (VI)</label><input id="edBanTitleVi" value="${escapeAttr(UI_TEXT.vi.bannerTitle)}"></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Banner Subtitle (EN)</label><textarea id="edBanSubEn">${escapeHtml(UI_TEXT.en.bannerSub)}</textarea></div>
+          <div class="ed-field"><label>Banner Subtitle (VI)</label><textarea id="edBanSubVi">${escapeHtml(UI_TEXT.vi.bannerSub)}</textarea></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Main Heading (EN)</label><input id="edHeadEn" value="${escapeAttr(UI_TEXT.en.mainHeading)}"></div>
+          <div class="ed-field"><label>Main Heading (VI)</label><input id="edHeadVi" value="${escapeAttr(UI_TEXT.vi.mainHeading)}"></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Main Intro (EN)</label><textarea id="edIntroEn">${escapeHtml(UI_TEXT.en.mainIntro)}</textarea></div>
+          <div class="ed-field"><label>Main Intro (VI)</label><textarea id="edIntroVi">${escapeHtml(UI_TEXT.vi.mainIntro)}</textarea></div>
+        </div>
+      `;
+      document.getElementById("editorSaveBtn").onclick = () => {
+        UI_TEXT.en.bannerTitle = document.getElementById("edBanTitleEn").value;
+        UI_TEXT.vi.bannerTitle = document.getElementById("edBanTitleVi").value;
+        UI_TEXT.en.bannerSub = document.getElementById("edBanSubEn").value;
+        UI_TEXT.vi.bannerSub = document.getElementById("edBanSubVi").value;
+        UI_TEXT.en.mainHeading = document.getElementById("edHeadEn").value;
+        UI_TEXT.vi.mainHeading = document.getElementById("edHeadVi").value;
+        UI_TEXT.en.mainIntro = document.getElementById("edIntroEn").value;
+        UI_TEXT.vi.mainIntro = document.getElementById("edIntroVi").value;
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function openNewCategoryEditor() {
+      const id = "custom_" + Date.now();
+      WIKI_CATEGORIES.push({
+        id,
+        icon: "assets/icons/nether_star.png",
+        badge: { en: "NEW", vi: "MỚI" },
+        name: { en: "New Category", vi: "Danh Mục Mới" },
+        sub: { en: "Short description", vi: "Mô tả ngắn" },
+        subItems: [{
+          icon: "assets/icons/paper.png",
+          badge: "GUIDE",
+          rarity: "color-aqua",
+          name: { en: "New Guide", vi: "Hướng Dẫn Mới" },
+          desc: { en: "Description here...", vi: "Nội dung chi tiết..." },
+          features: { en: ["Feature 1"], vi: ["Tính năng 1"] }
+        }]
+      });
+      saveCustomEdits();
+      openCategoryEditor(id);
+    }
+
+    function openCategoryEditor(catId) {
+      const idx = WIKI_CATEGORIES.findIndex(c => c.id === catId);
+      if (idx === -1) return;
+      const cat = WIKI_CATEGORIES[idx];
+      document.getElementById("editorModalTitle").textContent = `Edit Category: ${cat.name[currentLang]}`;
+      const iconOpts = AVAILABLE_ICONS.map(ic => `<option value="${ic}" ${ic === cat.icon ? "selected" : ""}>${ic.replace("assets/icons/", "")}</option>`).join("");
+      const subsHtml = (cat.subItems || []).map((s, si) => `
+        <div class="ed-sub-box" data-sub-idx="${si}">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <strong style="color:var(--gold-primary);font-size:0.84rem;">Sub-Item #${si + 1}</strong>
+            <button type="button" class="ed-btn danger" onclick="deleteSubItem('${catId}', ${si})">🗑️ Delete</button>
+          </div>
+          <div class="ed-form-grid">
+            <div class="ed-field"><label>Title (EN)</label><input class="sub-name-en" value="${escapeAttr(s.name.en)}"></div>
+            <div class="ed-field"><label>Title (VI)</label><input class="sub-name-vi" value="${escapeAttr(s.name.vi)}"></div>
+          </div>
+          <div class="ed-form-grid">
+            <div class="ed-field"><label>Description (EN)</label><textarea class="sub-desc-en">${escapeHtml(s.desc.en)}</textarea></div>
+            <div class="ed-field"><label>Description (VI)</label><textarea class="sub-desc-vi">${escapeHtml(s.desc.vi)}</textarea></div>
+          </div>
+          <div class="ed-form-grid">
+            <div class="ed-field"><label>Bullets (EN, 1 per line)</label><textarea class="sub-feat-en">${escapeHtml((s.features.en || []).join("\n"))}</textarea></div>
+            <div class="ed-field"><label>Bullets (VI, 1 per line)</label><textarea class="sub-feat-vi">${escapeHtml((s.features.vi || []).join("\n"))}</textarea></div>
+          </div>
+        </div>
+      `).join("");
+
+      document.getElementById("editorModalBody").innerHTML = `
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Icon</label><select id="edCatIcon">${iconOpts}</select></div>
+          <div class="ed-field"><label>Badge (EN / VI)</label>
+            <div style="display:flex;gap:6px;">
+              <input id="edCatBadgeEn" value="${escapeAttr(cat.badge.en)}" style="width:50%">
+              <input id="edCatBadgeVi" value="${escapeAttr(cat.badge.vi)}" style="width:50%">
+            </div>
+          </div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Name (EN)</label><input id="edCatNameEn" value="${escapeAttr(cat.name.en)}"></div>
+          <div class="ed-field"><label>Name (VI)</label><input id="edCatNameVi" value="${escapeAttr(cat.name.vi)}"></div>
+        </div>
+        <div class="ed-form-grid">
+          <div class="ed-field"><label>Subtitle (EN)</label><input id="edCatSubEn" value="${escapeAttr(cat.sub.en)}"></div>
+          <div class="ed-field"><label>Subtitle (VI)</label><input id="edCatSubVi" value="${escapeAttr(cat.sub.vi)}"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin:10px 0 8px;">
+          <strong style="color:#fff;font-size:0.9rem;">Sub-Items</strong>
+          <button type="button" class="ed-btn" onclick="addSubItem('${catId}')">➕ Add Sub-Item</button>
+        </div>
+        <div id="edSubList">${subsHtml}</div>
+        <div style="margin-top:10px;">
+          <button type="button" class="ed-btn danger" onclick="deleteCategory('${catId}')">🗑️ Delete Entire Category</button>
+        </div>
+      `;
+
+      document.getElementById("editorSaveBtn").onclick = () => {
+        cat.icon = document.getElementById("edCatIcon").value;
+        cat.badge.en = document.getElementById("edCatBadgeEn").value;
+        cat.badge.vi = document.getElementById("edCatBadgeVi").value;
+        cat.name.en = document.getElementById("edCatNameEn").value;
+        cat.name.vi = document.getElementById("edCatNameVi").value;
+        cat.sub.en = document.getElementById("edCatSubEn").value;
+        cat.sub.vi = document.getElementById("edCatSubVi").value;
+        document.querySelectorAll("#edSubList .ed-sub-box").forEach((box, i) => {
+          const s = cat.subItems[i];
+          if (!s) return;
+          s.name.en = box.querySelector(".sub-name-en").value;
+          s.name.vi = box.querySelector(".sub-name-vi").value;
+          s.desc.en = box.querySelector(".sub-desc-en").value;
+          s.desc.vi = box.querySelector(".sub-desc-vi").value;
+          s.features.en = box.querySelector(".sub-feat-en").value.split("\n").map(x => x.trim()).filter(Boolean);
+          s.features.vi = box.querySelector(".sub-feat-vi").value.split("\n").map(x => x.trim()).filter(Boolean);
+        });
+        saveCustomEdits();
+        closeEditorModal();
+      };
+      document.getElementById("editorModal").classList.add("active");
+    }
+
+    function addSubItem(catId) {
+      const cat = WIKI_CATEGORIES.find(c => c.id === catId);
+      if (!cat) return;
+      cat.subItems = cat.subItems || [];
+      cat.subItems.push({
+        icon: cat.icon,
+        badge: "INFO",
+        rarity: "color-aqua",
+        name: { en: "New Section", vi: "Mục Mới" },
+        desc: { en: "Description...", vi: "Mô tả..." },
+        features: { en: [], vi: [] }
+      });
+      saveCustomEdits();
+      openCategoryEditor(catId);
+    }
+
+    function deleteSubItem(catId, si) {
+      const cat = WIKI_CATEGORIES.find(c => c.id === catId);
+      if (!cat || !cat.subItems) return;
+      cat.subItems.splice(si, 1);
+      saveCustomEdits();
+      openCategoryEditor(catId);
+    }
+
+    function deleteCategory(catId) {
+      const idx = WIKI_CATEGORIES.findIndex(c => c.id === catId);
+      if (idx !== -1) {
+        WIKI_CATEGORIES.splice(idx, 1);
+        saveCustomEdits();
+        closeEditorModal();
+      }
+    }
+
+    function exportWikiJson() {
+      const raw = localStorage.getItem(CUSTOM_DATA_KEY) || JSON.stringify({ categories: WIKI_CATEGORIES }, null, 2);
+      const blob = new Blob([JSON.stringify(JSON.parse(raw), null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "main_wiki_edits.json";
+      a.click();
+    }
+
+    function copyWikiJson() {
+      const raw = localStorage.getItem(CUSTOM_DATA_KEY) || JSON.stringify({ categories: WIKI_CATEGORIES }, null, 2);
+      navigator.clipboard.writeText(JSON.stringify(JSON.parse(raw), null, 2));
+      alert("Đã copy JSON! Bạn chỉ cần gửi đoạn JSON này (hoặc file main_wiki_edits.json) cho AI để đồng bộ lên Wiki chính.");
+    }
+
+    function resetCustomEdits() {
+      if (confirm("Khôi phục toàn bộ nội dung Wiki về mặc định?")) {
+        localStorage.removeItem(CUSTOM_DATA_KEY);
+        location.reload();
+      }
+    }
+
+    function escapeHtml(s) {
+      return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+    function escapeAttr(s) {
+      return escapeHtml(s).replace(/"/g, "&quot;");
+    }
+
+    loadCustomEdits();
+    if (location.protocol === "file:" || ["localhost", "127.0.0.1"].includes(location.hostname) || location.search.includes("edit=1")) {
+      document.getElementById("mainEditModeBtn").style.display = "inline-flex";
+    }
     applyTranslations();
     if (localStorage.getItem(DONT_SHOW_KEY) !== "true") {
       document.getElementById("langModal").classList.add("active");
