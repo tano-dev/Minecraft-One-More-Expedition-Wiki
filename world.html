@@ -573,16 +573,86 @@
     }
 
     let active3dCleanup = null;
-    let threeModsPromise = null;
+    let threePromise = null;
 
     async function getThree() {
-      if (!threeModsPromise) {
-        threeModsPromise = Promise.all([
-          import("https://esm.sh/three@0.170.0"),
-          import("https://esm.sh/three@0.170.0/examples/jsm/controls/OrbitControls.js")
-        ]);
+      if (!threePromise) {
+        threePromise = import("https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js");
       }
-      return threeModsPromise;
+      return threePromise;
+    }
+
+    function renderFallbackIso(box, dataRes, slider, yValEl, autoBtn, resetBtn) {
+      const [sx, sy, sz] = dataRes.s;
+      const colors = dataRes.c || [];
+      const b = dataRes.b || [];
+      const items = [];
+      for (let i = 0; i < b.length; i += 4) items.push([b[i], b[i + 1], b[i + 2], b[i + 3]]);
+
+      const canvas = document.createElement("canvas");
+      const w = box.clientWidth || 640;
+      const h = box.clientHeight || 340;
+      canvas.width = w;
+      canvas.height = h;
+      box.appendChild(canvas);
+      const ctx = canvas.getContext("2d");
+
+      let yaw = Math.PI * 0.25;
+      let pitch = 0.55;
+      let zoom = Math.min(w, h) / (Math.max(sx, sy, sz, 6) * 2.1);
+      let autoRot = true;
+      let yMax = sy;
+      let dragging = false, lx = 0, ly = 0;
+
+      const cx = sx / 2 - 0.5, cy = sy / 2 - 0.5, cz = sz / 2 - 0.5;
+      const draw = () => {
+        ctx.clearRect(0, 0, w, h);
+        const cosY = Math.cos(yaw), sinY = Math.sin(yaw);
+        const cosP = Math.cos(pitch), sinP = Math.sin(pitch);
+        const proj = [];
+        for (let i = 0; i < items.length; i++) {
+          const [x, y, z, ci] = items[i];
+          if (y >= yMax) continue;
+          const dx = x - cx, dy = y - cy, dz = z - cz;
+          const rx = dx * cosY - dz * sinY;
+          const rz = dx * sinY + dz * cosY;
+          const ry = dy * cosP - rz * sinP;
+          const depth = dy * sinP + rz * cosP;
+          proj.push({ sx: w / 2 + rx * zoom, sy: h / 2 - ry * zoom, depth, col: colors[ci] ?? 0x8a8f99 });
+        }
+        proj.sort((a, b) => a.depth - b.depth);
+        const szPx = Math.max(2, zoom * 1.12);
+        for (let i = 0; i < proj.length; i++) {
+          const p = proj[i];
+          const hex = "#" + p.col.toString(16).padStart(6, "0");
+          ctx.fillStyle = hex;
+          ctx.fillRect(p.sx - szPx / 2, p.sy - szPx / 2, szPx, szPx);
+        }
+      };
+
+      canvas.onpointerdown = e => { dragging = true; lx = e.clientX; ly = e.clientY; canvas.setPointerCapture(e.pointerId); };
+      canvas.onpointermove = e => {
+        if (!dragging) return;
+        yaw += (e.clientX - lx) * 0.012;
+        pitch = Math.max(-1.2, Math.min(1.2, pitch + (e.clientY - ly) * 0.01));
+        lx = e.clientX; ly = e.clientY;
+        draw();
+      };
+      canvas.onpointerup = () => { dragging = false; };
+      canvas.onwheel = e => { e.preventDefault(); zoom = Math.max(2, Math.min(40, zoom * (e.deltaY > 0 ? 0.9 : 1.1))); draw(); };
+
+      if (slider) slider.oninput = () => { yMax = parseInt(slider.value, 10); if (yValEl) yValEl.textContent = `Y ≤ ${yMax}`; draw(); };
+      if (autoBtn) autoBtn.onclick = () => { autoRot = !autoRot; autoBtn.classList.toggle("on", autoRot); };
+      if (resetBtn) resetBtn.onclick = () => { yaw = Math.PI * 0.25; pitch = 0.55; zoom = Math.min(w, h) / (Math.max(sx, sy, sz, 6) * 2.1); draw(); };
+
+      let raf = 0;
+      const tick = () => {
+        raf = requestAnimationFrame(tick);
+        if (autoRot && !dragging) { yaw += 0.008; draw(); }
+      };
+      draw();
+      tick();
+      return () => { cancelAnimationFrame(raf); canvas.remove(); };
     }
 
     async function mount3dViewer(file, vi) {
@@ -590,56 +660,74 @@
       const box = document.getElementById("viewerCanvasBox");
       const status = document.getElementById("viewerStatus");
       if (!box) return;
+      if (window.location.protocol === "file:") {
+        if (status) status.textContent = vi
+          ? "Trình duyệt chặn tải 3D ở chế độ file://. Hãy mở qua GitHub Pages hoặc http://localhost:8080"
+          : "Browser blocks 3D fetch on file://. Open via GitHub Pages or http://localhost:8080";
+        return;
+      }
+      let dataRes;
       try {
-        const [dataRes, [THREE, { OrbitControls }]] = await Promise.all([
-          fetch(`assets/data/structures_3d/${file}`).then(r => {
-            if (!r.ok) throw new Error("HTTP " + r.status);
-            return r.json();
-          }),
-          getThree()
-        ]);
+        const resp = await fetch(`assets/data/structures_3d/${file}`);
+        if (!resp.ok) throw new Error("HTTP " + resp.status);
+        dataRes = await resp.json();
+      } catch (err) {
+        if (status) status.textContent = vi ? `Không thể tải dữ liệu 3D (${err.message}).` : `Failed to load 3D data (${err.message}).`;
+        return;
+      }
+      if (!document.getElementById("viewerCanvasBox")) return;
+
+      const [sx, sy, sz] = dataRes.s;
+      const orig = dataRes.orig || dataRes.s;
+      const colors = dataRes.c || [];
+      const b = dataRes.b || [];
+      const totalBlocks = Math.floor(b.length / 4);
+
+      const dimLabel = document.getElementById("viewerDimsLabel");
+      if (dimLabel) {
+        dimLabel.textContent = `${orig[0]}×${orig[1]}×${orig[2]} • ${totalBlocks} blocks${dataRes.lod > 1 ? ` (${dataRes.lod}x LOD)` : ""}`;
+      }
+      const slider = document.getElementById("ySliceSlider");
+      const yValEl = document.getElementById("ySliceVal");
+      if (slider) {
+        slider.max = sy;
+        slider.value = sy;
+        if (yValEl) yValEl.textContent = `Y ≤ ${sy}`;
+      }
+      const autoBtn = document.getElementById("autoRotBtn");
+      const resetBtn = document.getElementById("resetCamBtn");
+
+      try {
+        const THREE = await getThree();
         if (!document.getElementById("viewerCanvasBox")) return;
         if (status) status.style.display = "none";
-
-        const [sx, sy, sz] = dataRes.s;
-        const orig = dataRes.orig || dataRes.s;
-        const colors = dataRes.c || [];
-        const b = dataRes.b || [];
-        const totalBlocks = Math.floor(b.length / 4);
-
-        const dimLabel = document.getElementById("viewerDimsLabel");
-        if (dimLabel) {
-          dimLabel.textContent = `${orig[0]}×${orig[1]}×${orig[2]} • ${totalBlocks} blocks${dataRes.lod > 1 ? ` (${dataRes.lod}x LOD)` : ""}`;
-        }
-
-        const slider = document.getElementById("ySliceSlider");
-        const yValEl = document.getElementById("ySliceVal");
-        if (slider) {
-          slider.max = sy;
-          slider.value = sy;
-          if (yValEl) yValEl.textContent = `Y ≤ ${sy}`;
-        }
 
         const w = box.clientWidth || 640;
         const h = box.clientHeight || 340;
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(45, w / h, 0.1, 1000);
         const maxDim = Math.max(sx, sy, sz, 6);
-        const dist = maxDim * 1.65;
-        camera.position.set(dist * 0.78, dist * 0.62, dist * 0.78);
+        let radius = maxDim * 1.65;
+        let theta = Math.PI * 0.25;
+        let phi = 1.05;
+        let autoRotate = true;
+
+        const updateCam = () => {
+          camera.position.set(
+            radius * Math.sin(phi) * Math.cos(theta),
+            radius * Math.cos(phi),
+            radius * Math.sin(phi) * Math.sin(theta)
+          );
+          camera.lookAt(0, 0, 0);
+        };
+        updateCam();
 
         const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
         renderer.setSize(w, h);
         box.appendChild(renderer.domElement);
 
-        const controls = new OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
-        controls.autoRotate = true;
-        controls.autoRotateSpeed = 1.6;
-        controls.target.set(0, 0, 0);
-
-        scene.add(new THREE.AmbientLight(0xffffff, 0.82));
+        scene.add(new THREE.AmbientLight(0xffffff, 0.85));
         const dir1 = new THREE.DirectionalLight(0xfff4d6, 0.95);
         dir1.position.set(1.2, 2.0, 1.0);
         scene.add(dir1);
@@ -653,11 +741,8 @@
         const dummy = new THREE.Object3D();
         const col = new THREE.Color();
 
-        // Sort blocks by Y ascending so Y-slicing is simply mesh.count!
         const items = [];
-        for (let i = 0; i < b.length; i += 4) {
-          items.push([b[i], b[i + 1], b[i + 2], b[i + 3]]);
-        }
+        for (let i = 0; i < b.length; i += 4) items.push([b[i], b[i + 1], b[i + 2], b[i + 3]]);
         items.sort((p, q) => p[1] - q[1]);
 
         const cx = sx / 2 - 0.5;
@@ -680,6 +765,24 @@
         if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
         scene.add(mesh);
 
+        // Native pointer + wheel orbit controls (no external OrbitControls dependency)
+        let dragging = false, lx = 0, ly = 0;
+        const dom = renderer.domElement;
+        dom.onpointerdown = e => { dragging = true; lx = e.clientX; ly = e.clientY; dom.setPointerCapture(e.pointerId); };
+        dom.onpointermove = e => {
+          if (!dragging) return;
+          theta += (e.clientX - lx) * 0.01;
+          phi = Math.max(0.2, Math.min(Math.PI - 0.2, phi - (e.clientY - ly) * 0.01));
+          lx = e.clientX; ly = e.clientY;
+          updateCam();
+        };
+        dom.onpointerup = () => { dragging = false; };
+        dom.onwheel = e => {
+          e.preventDefault();
+          radius = Math.max(4, Math.min(maxDim * 5, radius * (e.deltaY > 0 ? 1.1 : 0.9)));
+          updateCam();
+        };
+
         if (slider) {
           slider.oninput = () => {
             const yMax = parseInt(slider.value, 10);
@@ -687,41 +790,41 @@
             if (yValEl) yValEl.textContent = `Y ≤ ${yMax}`;
           };
         }
-
-        const autoBtn = document.getElementById("autoRotBtn");
         if (autoBtn) {
           autoBtn.onclick = () => {
-            controls.autoRotate = !controls.autoRotate;
-            autoBtn.classList.toggle("on", controls.autoRotate);
+            autoRotate = !autoRotate;
+            autoBtn.classList.toggle("on", autoRotate);
           };
         }
-        const resetBtn = document.getElementById("resetCamBtn");
         if (resetBtn) {
           resetBtn.onclick = () => {
-            camera.position.set(dist * 0.78, dist * 0.62, dist * 0.78);
-            controls.target.set(0, 0, 0);
-            controls.update();
+            radius = maxDim * 1.65; theta = Math.PI * 0.25; phi = 1.05;
+            updateCam();
           };
         }
 
         let rafId = 0;
         const animate = () => {
           rafId = requestAnimationFrame(animate);
-          controls.update();
+          if (autoRotate && !dragging) {
+            theta += 0.006;
+            updateCam();
+          }
           renderer.render(scene, camera);
         };
         animate();
 
         active3dCleanup = () => {
           cancelAnimationFrame(rafId);
-          controls.dispose();
           geo.dispose();
           mat.dispose();
           renderer.dispose();
-          if (renderer.domElement.parentNode) renderer.domElement.remove();
+          if (dom.parentNode) dom.remove();
         };
       } catch (err) {
-        if (status) status.textContent = vi ? "Không thể tải mô hình 3D." : "Failed to load 3D model.";
+        // Fallback to pure-Canvas 2D isometric 3D projection if WebGL/CDN unavailable
+        if (status) status.style.display = "none";
+        active3dCleanup = renderFallbackIso(box, dataRes, slider, yValEl, autoBtn, resetBtn);
       }
     }
 
