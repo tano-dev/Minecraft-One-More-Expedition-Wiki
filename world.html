@@ -167,6 +167,56 @@
     .dim-nether { color: #f87171; border-color: rgba(248, 113, 113, 0.42); background: rgba(248, 113, 113, 0.14); }
     .dim-end { color: #e879f9; border-color: rgba(232, 121, 249, 0.42); background: rgba(232, 121, 249, 0.14); }
     .spread-pill { color: #fde68a; border-color: rgba(245, 196, 81, 0.35); background: rgba(245, 196, 81, 0.1); }
+    .badge-3d { color: #38bdf8; border-color: rgba(56, 189, 248, 0.55); background: rgba(56, 189, 248, 0.16); }
+
+    .viewer-3d-wrap {
+      margin-top: 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      background: radial-gradient(circle at 50% 35%, #162136 0%, #090e18 100%);
+      overflow: hidden;
+    }
+    .viewer-canvas-box {
+      width: 100%;
+      height: 340px;
+      position: relative;
+      cursor: grab;
+    }
+    .viewer-canvas-box:active { cursor: grabbing; }
+    .viewer-status {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #93c5fd;
+      font-size: 0.85rem;
+      font-weight: 700;
+      pointer-events: none;
+    }
+    .viewer-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 10px 14px;
+      background: rgba(10, 15, 25, 0.88);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.78rem;
+    }
+    .viewer-btn {
+      padding: 4px 10px;
+      border-radius: 7px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.06);
+      color: #e2e8f0;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .viewer-btn.on { border-color: var(--aqua); color: #7dd3fc; background: rgba(56, 189, 248, 0.16); }
 
     /* Pagination */
     .pager {
@@ -188,7 +238,7 @@
     }
     .modal-overlay.active { display: flex; }
     .modal-box {
-      width: 100%; max-width: 580px; background: #121928; border: 1px solid rgba(245, 196, 81, 0.38);
+      width: 100%; max-width: 720px; max-height: 92vh; overflow-y: auto; background: #121928; border: 1px solid rgba(245, 196, 81, 0.38);
       border-radius: 18px; padding: 24px; position: relative; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
     }
     .modal-close {
@@ -510,6 +560,7 @@
             <span class="badge dim-${x.dim}">${dimName(x.dim)}</span>
             <span class="badge">${esc(x.pack)}</span>
             ${x.spread ? `<span class="badge spread-pill">${esc(x.spread)}</span>` : ""}
+            ${x.has3d ? `<span class="badge badge-3d">3D</span>` : ""}
           </div>
         </div>
       `).join("");
@@ -519,6 +570,159 @@
       currentPage += delta;
       renderWorld();
       window.scrollTo({ top: 240, behavior: "smooth" });
+    }
+
+    let active3dCleanup = null;
+    let threeModsPromise = null;
+
+    async function getThree() {
+      if (!threeModsPromise) {
+        threeModsPromise = Promise.all([
+          import("https://esm.sh/three@0.170.0"),
+          import("https://esm.sh/three@0.170.0/examples/jsm/controls/OrbitControls.js")
+        ]);
+      }
+      return threeModsPromise;
+    }
+
+    async function mount3dViewer(file, vi) {
+      if (active3dCleanup) { active3dCleanup(); active3dCleanup = null; }
+      const box = document.getElementById("viewerCanvasBox");
+      const status = document.getElementById("viewerStatus");
+      if (!box) return;
+      try {
+        const [dataRes, [THREE, { OrbitControls }]] = await Promise.all([
+          fetch(`assets/data/structures_3d/${file}`).then(r => {
+            if (!r.ok) throw new Error("HTTP " + r.status);
+            return r.json();
+          }),
+          getThree()
+        ]);
+        if (!document.getElementById("viewerCanvasBox")) return;
+        if (status) status.style.display = "none";
+
+        const [sx, sy, sz] = dataRes.s;
+        const orig = dataRes.orig || dataRes.s;
+        const colors = dataRes.c || [];
+        const b = dataRes.b || [];
+        const totalBlocks = Math.floor(b.length / 4);
+
+        const dimLabel = document.getElementById("viewerDimsLabel");
+        if (dimLabel) {
+          dimLabel.textContent = `${orig[0]}×${orig[1]}×${orig[2]} • ${totalBlocks} blocks${dataRes.lod > 1 ? ` (${dataRes.lod}x LOD)` : ""}`;
+        }
+
+        const slider = document.getElementById("ySliceSlider");
+        const yValEl = document.getElementById("ySliceVal");
+        if (slider) {
+          slider.max = sy;
+          slider.value = sy;
+          if (yValEl) yValEl.textContent = `Y ≤ ${sy}`;
+        }
+
+        const w = box.clientWidth || 640;
+        const h = box.clientHeight || 340;
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(45, w / h, 0.1, 1000);
+        const maxDim = Math.max(sx, sy, sz, 6);
+        const dist = maxDim * 1.65;
+        camera.position.set(dist * 0.78, dist * 0.62, dist * 0.78);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+        renderer.setSize(w, h);
+        box.appendChild(renderer.domElement);
+
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.autoRotate = true;
+        controls.autoRotateSpeed = 1.6;
+        controls.target.set(0, 0, 0);
+
+        scene.add(new THREE.AmbientLight(0xffffff, 0.82));
+        const dir1 = new THREE.DirectionalLight(0xfff4d6, 0.95);
+        dir1.position.set(1.2, 2.0, 1.0);
+        scene.add(dir1);
+        const dir2 = new THREE.DirectionalLight(0x93c5fd, 0.45);
+        dir2.position.set(-1.2, -0.5, -1.0);
+        scene.add(dir2);
+
+        const geo = new THREE.BoxGeometry(1, 1, 1);
+        const mat = new THREE.MeshLambertMaterial();
+        const mesh = new THREE.InstancedMesh(geo, mat, totalBlocks);
+        const dummy = new THREE.Object3D();
+        const col = new THREE.Color();
+
+        // Sort blocks by Y ascending so Y-slicing is simply mesh.count!
+        const items = [];
+        for (let i = 0; i < b.length; i += 4) {
+          items.push([b[i], b[i + 1], b[i + 2], b[i + 3]]);
+        }
+        items.sort((p, q) => p[1] - q[1]);
+
+        const cx = sx / 2 - 0.5;
+        const cy = sy / 2 - 0.5;
+        const cz = sz / 2 - 0.5;
+        const yCutoffCount = new Array(sy + 1).fill(0);
+        for (let i = 0; i < items.length; i++) {
+          const [x, y, z, ci] = items[i];
+          dummy.position.set(x - cx, y - cy, z - cz);
+          dummy.updateMatrix();
+          mesh.setMatrixAt(i, dummy.matrix);
+          col.setHex(colors[ci] ?? 0x8a8f99);
+          mesh.setColorAt(i, col);
+          if (y + 1 <= sy) yCutoffCount[y + 1] = i + 1;
+        }
+        for (let y = 1; y <= sy; y++) {
+          if (yCutoffCount[y] === 0) yCutoffCount[y] = yCutoffCount[y - 1];
+        }
+        mesh.instanceMatrix.needsUpdate = true;
+        if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
+        scene.add(mesh);
+
+        if (slider) {
+          slider.oninput = () => {
+            const yMax = parseInt(slider.value, 10);
+            mesh.count = yCutoffCount[yMax] ?? totalBlocks;
+            if (yValEl) yValEl.textContent = `Y ≤ ${yMax}`;
+          };
+        }
+
+        const autoBtn = document.getElementById("autoRotBtn");
+        if (autoBtn) {
+          autoBtn.onclick = () => {
+            controls.autoRotate = !controls.autoRotate;
+            autoBtn.classList.toggle("on", controls.autoRotate);
+          };
+        }
+        const resetBtn = document.getElementById("resetCamBtn");
+        if (resetBtn) {
+          resetBtn.onclick = () => {
+            camera.position.set(dist * 0.78, dist * 0.62, dist * 0.78);
+            controls.target.set(0, 0, 0);
+            controls.update();
+          };
+        }
+
+        let rafId = 0;
+        const animate = () => {
+          rafId = requestAnimationFrame(animate);
+          controls.update();
+          renderer.render(scene, camera);
+        };
+        animate();
+
+        active3dCleanup = () => {
+          cancelAnimationFrame(rafId);
+          controls.dispose();
+          geo.dispose();
+          mat.dispose();
+          renderer.dispose();
+          if (renderer.domElement.parentNode) renderer.domElement.remove();
+        };
+      } catch (err) {
+        if (status) status.textContent = vi ? "Không thể tải mô hình 3D." : "Failed to load 3D model.";
+      }
     }
 
     function openWorldModal(idx) {
@@ -531,9 +735,27 @@
         <span class="badge dim-${x.dim}">${dimName(x.dim)}</span>
         <span class="badge">${esc(x.pack)}</span>
         ${x.spread ? `<span class="badge spread-pill">${vi ? "Giãn cách:" : "Spread:"} ${esc(x.spread)}</span>` : ""}
+        ${x.has3d ? `<span class="badge badge-3d">3D NBT</span>` : ""}
       `;
       const cmd = currentMode === "biomes" ? `/locate biome ${x.id}` : `/locate structure ${x.id}`;
       document.getElementById("wModalBody").innerHTML = `
+        ${x.has3d ? `
+        <div class="viewer-3d-wrap">
+          <div class="viewer-canvas-box" id="viewerCanvasBox">
+            <div class="viewer-status" id="viewerStatus">${vi ? "Đang tải mô hình 3D..." : "Loading 3D structure..."}</div>
+          </div>
+          <div class="viewer-toolbar">
+            <span id="viewerDimsLabel" style="color:#93c5fd;font-weight:700;">3D Preview</span>
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+              <label style="display:flex;align-items:center;gap:6px;color:#cbd5e1;">
+                <span id="ySliceVal" style="font-family:'JetBrains Mono',monospace;">Y</span>
+                <input type="range" id="ySliceSlider" min="1" max="32" value="32" style="width:95px;accent-color:#38bdf8;" />
+              </label>
+              <button type="button" class="viewer-btn on" id="autoRotBtn">${vi ? "Tự xoay" : "Auto-Rotate"}</button>
+              <button type="button" class="viewer-btn" id="resetCamBtn">${vi ? "Đặt lại góc" : "Reset"}</button>
+            </div>
+          </div>
+        </div>` : ""}
         ${x.step ? `<div class="modal-sec"><strong>${vi ? "Tầng tạo sinh (Generation Step):" : "Generation Step:"}</strong> ${esc(x.step)}</div>` : ""}
         <div class="modal-sec">
           <strong>${vi ? "ID / Lệnh tham khảo:" : "Reference ID / Locate Command:"}</strong>
@@ -541,9 +763,11 @@
         </div>
       `;
       document.getElementById("worldModal").classList.add("active");
+      if (x.has3d) mount3dViewer(x.has3d, vi);
     }
 
     function closeWorldModal() {
+      if (active3dCleanup) { active3dCleanup(); active3dCleanup = null; }
       document.getElementById("worldModal").classList.remove("active");
     }
 
