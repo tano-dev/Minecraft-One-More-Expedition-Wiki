@@ -1892,17 +1892,6 @@
         }
       },
       {
-        id: "donate_widget",
-        col: "right",
-        insertAfter: "live_map",
-        icon: "assets/icons/emerald.png",
-        title: { en: "Support & Donate", vi: "Ủng Hộ Server" },
-        body: {
-          en: "<div style='margin-bottom:9px;color:var(--text-muted);font-size:0.78rem;line-height:1.45;'>Keep the server running 24/7 (non-P2W). Choose International or Vietnam Bank:</div><a href='https://ko-fi.com/tanokhoi' target='_blank' rel='noopener noreferrer' style='display:flex;align-items:center;justify-content:center;gap:6px;width:100%;margin-bottom:9px;background:rgba(245,196,81,0.18);border:1px solid rgba(245,196,81,0.55);color:#fde68a;font-weight:800;font-size:0.79rem;padding:8px 12px;border-radius:8px;text-decoration:none;'>☕ Support on Ko-fi (Global) ↗</a><div onclick='openSupportModal()' style='cursor:pointer;background:rgba(10,14,23,0.75);border:1px solid rgba(74,222,128,0.35);border-radius:10px;padding:8px;text-align:center;'><div style='font-size:0.73rem;font-weight:800;color:#4ade80;margin-bottom:6px;'>🇻🇳 Vietcombank (VietQR) — Click to zoom</div><img src='assets/donate_vietcombank_qr.png' alt='Vietcombank VietQR' style='width:100%;max-width:165px;border-radius:8px;display:block;margin:0 auto;'/></div>",
-          vi: "<div style='margin-bottom:9px;color:var(--text-muted);font-size:0.78rem;line-height:1.45;'>Góp phần duy trì máy chủ 24/7 (không Pay-to-Win). Hỗ trợ Quốc tế &amp; Ngân hàng VN:</div><a href='https://ko-fi.com/tanokhoi' target='_blank' rel='noopener noreferrer' style='display:flex;align-items:center;justify-content:center;gap:6px;width:100%;margin-bottom:9px;background:rgba(245,196,81,0.18);border:1px solid rgba(245,196,81,0.55);color:#fde68a;font-weight:800;font-size:0.79rem;padding:8px 12px;border-radius:8px;text-decoration:none;'>☕ Ủng hộ qua Ko-fi (Quốc tế) ↗</a><div onclick='openSupportModal()' style='cursor:pointer;background:rgba(10,14,23,0.75);border:1px solid rgba(74,222,128,0.35);border-radius:10px;padding:8px;text-align:center;'><div style='font-size:0.73rem;font-weight:800;color:#4ade80;margin-bottom:6px;'>🇻🇳 Vietcombank (VietQR) — Bấm để phóng to</div><img src='assets/donate_vietcombank_qr.png' alt='Vietcombank VietQR' style='width:100%;max-width:165px;border-radius:8px;display:block;margin:0 auto;'/></div>"
-        }
-      },
-      {
         id: "social",
         col: "left",
         icon: "assets/icons/book.png",
@@ -1979,15 +1968,60 @@
       });
     }
 
+    function switchDonateTab(tab) {
+      const isUsd = tab === "usd";
+      const btnUsd = document.getElementById("donTabUsd");
+      const btnVnd = document.getElementById("donTabVnd");
+      const pUsd = document.getElementById("donPanelUsd");
+      const pVnd = document.getElementById("donPanelVnd");
+      if (!btnUsd || !btnVnd || !pUsd || !pVnd) return;
+      btnUsd.style.background = isUsd ? "#f5c451" : "rgba(255,255,255,0.06)";
+      btnUsd.style.color = isUsd ? "#111827" : "#cbd5e1";
+      btnVnd.style.background = !isUsd ? "#4ade80" : "rgba(255,255,255,0.06)";
+      btnVnd.style.color = !isUsd ? "#052e16" : "#cbd5e1";
+      pUsd.style.display = isUsd ? "block" : "none";
+      pVnd.style.display = !isUsd ? "block" : "none";
+    }
+
     function openSupportModal() {
+      const isEn = currentLang === "en";
+      const htmlBox = (intro, usdTitle, usdSub, vndTitle, vndSub) => `
+        <div style="margin-bottom:12px;">${intro}</div>
+        <div style="display:flex;gap:8px;margin-bottom:12px;">
+          <button type="button" id="donTabUsd" onclick="switchDonateTab('usd')" style="flex:1;padding:9px 12px;border-radius:9px;border:1px solid rgba(245,196,81,0.5);font-weight:800;font-size:0.84rem;cursor:pointer;font-family:inherit;background:${isEn ? '#f5c451' : 'rgba(255,255,255,0.06)'};color:${isEn ? '#111827' : '#cbd5e1'};">💵 USD (Ko-fi)</button>
+          <button type="button" id="donTabVnd" onclick="switchDonateTab('vnd')" style="flex:1;padding:9px 12px;border-radius:9px;border:1px solid rgba(74,222,128,0.5);font-weight:800;font-size:0.84rem;cursor:pointer;font-family:inherit;background:${!isEn ? '#4ade80' : 'rgba(255,255,255,0.06)'};color:${!isEn ? '#052e16' : '#cbd5e1'};">🇻🇳 VND (Vietcombank)</button>
+        </div>
+        <div id="donPanelUsd" style="display:${isEn ? 'block' : 'none'};background:rgba(245,196,81,0.08);border:1px solid rgba(245,196,81,0.4);border-radius:12px;padding:16px;text-align:center;">
+          <div style="font-weight:800;color:#fde68a;font-size:0.95rem;margin-bottom:6px;">${usdTitle}</div>
+          <div style="font-size:0.83rem;color:#cbd5e1;margin-bottom:14px;">${usdSub}</div>
+          <a href="https://ko-fi.com/tanokhoi" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#f5c451;color:#111827;font-weight:800;font-size:0.88rem;padding:10px 18px;border-radius:9px;text-decoration:none;">☕ ko-fi.com/tanokhoi ↗</a>
+        </div>
+        <div id="donPanelVnd" style="display:${!isEn ? 'block' : 'none'};background:rgba(74,222,128,0.07);border:1px solid rgba(74,222,128,0.4);border-radius:12px;padding:16px;text-align:center;">
+          <div style="font-weight:800;color:#4ade80;font-size:0.95rem;margin-bottom:6px;">${vndTitle}</div>
+          <div style="font-size:0.83rem;color:#cbd5e1;margin-bottom:12px;">${vndSub}</div>
+          <img src="assets/donate_vietcombank_qr.png" alt="Vietcombank VietQR" style="width:100%;max-width:225px;border-radius:10px;display:block;margin:0 auto;" />
+        </div>
+      `;
       const sub = {
         icon: "assets/icons/emerald.png",
         badge: "SUPPORT THE SERVER",
         rarity: "color-gold",
         name: { en: "Support & Donate — One More Expedition", vi: "Ủng Hộ & Donate — One More Expedition" },
         desc: {
-          en: "Thank you for playing! Donations help pay for 24/7 server hosting, backups, and ongoing custom development (strictly non-Pay-to-Win).<div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px;'><div style='background:rgba(245,196,81,0.08);border:1px solid rgba(245,196,81,0.4);border-radius:12px;padding:14px;text-align:center;'><div style='font-weight:800;color:#fde68a;margin-bottom:8px;'>🌍 International (Ko-fi)</div><div style='font-size:0.82rem;color:#cbd5e1;margin-bottom:12px;'>PayPal / Card for international players</div><a href='https://ko-fi.com/tanokhoi' target='_blank' rel='noopener noreferrer' style='display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#f5c451;color:#111827;font-weight:800;font-size:0.86rem;padding:9px 16px;border-radius:8px;text-decoration:none;'>☕ ko-fi.com/tanokhoi ↗</a></div><div style='background:rgba(74,222,128,0.07);border:1px solid rgba(74,222,128,0.4);border-radius:12px;padding:14px;text-align:center;'><div style='font-weight:800;color:#4ade80;margin-bottom:8px;'>🇻🇳 Vietnam Bank (Vietcombank)</div><img src='assets/donate_vietcombank_qr.png' alt='Vietcombank VietQR' style='width:100%;max-width:210px;border-radius:10px;display:block;margin:0 auto;'/></div></div>",
-          vi: "Cảm ơn bạn đã đồng hành cùng server! Mọi đóng góp đều dùng để duy trì máy chủ chạy 24/7, backup dữ liệu và phát triển thêm tính năng mới (hoàn toàn không Pay-to-Win).<div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px;'><div style='background:rgba(245,196,81,0.08);border:1px solid rgba(245,196,81,0.4);border-radius:12px;padding:14px;text-align:center;'><div style='font-weight:800;color:#fde68a;margin-bottom:8px;'>🌍 Quốc tế (Ko-fi)</div><div style='font-size:0.82rem;color:#cbd5e1;margin-bottom:12px;'>Hỗ trợ PayPal / Thẻ quốc tế cho người chơi nước ngoài</div><a href='https://ko-fi.com/tanokhoi' target='_blank' rel='noopener noreferrer' style='display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#f5c451;color:#111827;font-weight:800;font-size:0.86rem;padding:9px 16px;border-radius:8px;text-decoration:none;'>☕ ko-fi.com/tanokhoi ↗</a></div><div style='background:rgba(74,222,128,0.07);border:1px solid rgba(74,222,128,0.4);border-radius:12px;padding:14px;text-align:center;'><div style='font-weight:800;color:#4ade80;margin-bottom:8px;'>🇻🇳 Ngân hàng Việt Nam (Vietcombank)</div><img src='assets/donate_vietcombank_qr.png' alt='Vietcombank VietQR' style='width:100%;max-width:210px;border-radius:10px;display:block;margin:0 auto;'/></div></div>"
+          en: htmlBox(
+            "Thank you for playing! Donations help pay for 24/7 server hosting, backups, and ongoing custom development (strictly non-Pay-to-Win).",
+            "🌍 International Support (USD)",
+            "Donate via PayPal / International Card on Ko-fi",
+            "🇻🇳 Vietnam Bank Transfer (VND)",
+            "Scan Vietcombank VietQR / Napas 247 with any Vietnamese banking app"
+          ),
+          vi: htmlBox(
+            "Cảm ơn bạn đã đồng hành cùng server! Mọi đóng góp đều dùng để duy trì máy chủ chạy 24/7, backup dữ liệu và phát triển thêm tính năng mới (hoàn toàn không Pay-to-Win).",
+            "🌍 Ủng Hộ Quốc Tế (USD)",
+            "Hỗ trợ PayPal / Thẻ quốc tế qua Ko-fi",
+            "🇻🇳 Chuyển Khoản Ngân Hàng Việt Nam (VND)",
+            "Quét mã Vietcombank VietQR / Napas 247 bằng mọi app ngân hàng"
+          )
         },
         features: {
           en: ["Include your Minecraft IGN in the transfer note / Ko-fi message", "Supporters receive exclusive Cosmetic Prefix Vouchers & Discord role"],
