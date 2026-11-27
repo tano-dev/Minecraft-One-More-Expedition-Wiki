@@ -605,6 +605,7 @@
 
     function renderFallbackIso(box, dataRes, slider, yValEl, autoBtn, resetBtn) {
       const [sx, sy, sz] = dataRes.s;
+      const [cols] = dataRes.a || [25, 24];
       const mats = dataRes.m || [];
       const b = dataRes.b || [];
       const items = [];
@@ -617,6 +618,12 @@
       canvas.height = h;
       box.appendChild(canvas);
       const ctx = canvas.getContext("2d");
+      ctx.imageSmoothingEnabled = false;
+
+      const atlasImg = new Image();
+      let atlasReady = false;
+      atlasImg.onload = () => { atlasReady = true; draw(); };
+      atlasImg.src = "assets/data/block_atlas.png";
 
       let yaw = Math.PI * 0.25;
       let pitch = 0.55;
@@ -628,6 +635,7 @@
       const cx = sx / 2 - 0.5, cy = sy / 2 - 0.5, cz = sz / 2 - 0.5;
       const draw = () => {
         ctx.clearRect(0, 0, w, h);
+        ctx.imageSmoothingEnabled = false;
         const cosY = Math.cos(yaw), sinY = Math.sin(yaw);
         const cosP = Math.cos(pitch), sinP = Math.sin(pitch);
         const proj = [];
@@ -639,15 +647,22 @@
           const rz = dx * sinY + dz * cosY;
           const ry = dy * cosP - rz * sinP;
           const depth = dy * sinP + rz * cosP;
-          const tint = (mats[mi] && mats[mi][1]) ? mats[mi][1] : 0x8a8f99;
-          proj.push({ sx: w / 2 + rx * zoom, sy: h / 2 - ry * zoom, depth, col: tint === 0xffffff ? 0x9ca3af : tint });
+          const mEntry = mats[mi] || [-1, 0x8a8f99];
+          proj.push({ sx: w / 2 + rx * zoom, sy: h / 2 - ry * zoom, depth, tile: mEntry[0], col: mEntry[1] ?? 0x8a8f99 });
         }
         proj.sort((a, b) => a.depth - b.depth);
-        const szPx = Math.max(2, zoom * 1.12);
+        const szPx = Math.max(3, zoom * 1.15);
         for (let i = 0; i < proj.length; i++) {
           const p = proj[i];
-          ctx.fillStyle = "#" + p.col.toString(16).padStart(6, "0");
-          ctx.fillRect(p.sx - szPx / 2, p.sy - szPx / 2, szPx, szPx);
+          if (atlasReady && p.tile >= 0) {
+            const tx = (p.tile % cols) * 16;
+            const ty = Math.floor(p.tile / cols) * 16;
+            ctx.drawImage(atlasImg, tx, ty, 16, 16, p.sx - szPx / 2, p.sy - szPx / 2, szPx, szPx);
+          } else {
+            const c = p.col === 0xffffff ? 0x9ca3af : p.col;
+            ctx.fillStyle = "#" + c.toString(16).padStart(6, "0");
+            ctx.fillRect(p.sx - szPx / 2, p.sy - szPx / 2, szPx, szPx);
+          }
         }
       };
 
@@ -763,25 +778,49 @@
         const tileAttr = new THREE.InstancedBufferAttribute(tileOffsets, 2);
         geo.setAttribute("aTile", tileAttr);
 
-        const mat = new THREE.MeshLambertMaterial({ map: atlasTex });
-        mat.onBeforeCompile = shader => {
-          shader.uniforms.uTileSize = { value: new THREE.Vector2(1 / cols, 1 / rows) };
-          shader.vertexShader = shader.vertexShader
-            .replace("#include <common>", "#include <common>\nattribute vec2 aTile;\nvarying vec2 vTile;\nvarying vec2 vLocalUv;")
-            .replace("#include <uv_vertex>", "#include <uv_vertex>\nvTile = aTile;\nvLocalUv = uv;");
-          shader.fragmentShader = shader.fragmentShader
-            .replace("#include <common>", "#include <common>\nuniform vec2 uTileSize;\nvarying vec2 vTile;\nvarying vec2 vLocalUv;")
-            .replace(
-              "#include <map_fragment>",
-              `#ifdef USE_MAP
-                if (vTile.x >= 0.0) {
-                  vec2 insetUv = mix(vec2(0.02), vec2(0.98), vLocalUv);
-                  vec4 sampledDiffuseColor = texture2D( map, vTile + insetUv * uTileSize );
-                  diffuseColor *= sampledDiffuseColor;
-                }
-              #endif`
-            );
-        };
+        const mat = new THREE.ShaderMaterial({
+          uniforms: {
+            uAtlas: { value: atlasTex },
+            uTileSize: { value: new THREE.Vector2(1 / cols, 1 / rows) }
+          },
+          vertexShader: `
+            attribute vec2 aTile;
+            varying vec2 vTile;
+            varying vec2 vUv;
+            varying vec3 vTint;
+            varying float vShade;
+            void main() {
+              vTile = aTile;
+              vUv = uv;
+              #ifdef USE_INSTANCING_COLOR
+                vTint = instanceColor;
+              #else
+                vTint = vec3(1.0);
+              #endif
+              vec3 n = normalize(normal);
+              vShade = n.y > 0.5 ? 1.0 : (n.y < -0.5 ? 0.55 : (abs(n.x) > 0.5 ? 0.82 : 0.72));
+              gl_Position = projectionMatrix * modelViewMatrix * instanceMatrix * vec4(position, 1.0);
+            }
+          `,
+          fragmentShader: `
+            uniform sampler2D uAtlas;
+            uniform vec2 uTileSize;
+            varying vec2 vTile;
+            varying vec2 vUv;
+            varying vec3 vTint;
+            varying float vShade;
+            void main() {
+              vec3 baseCol = vTint;
+              if (vTile.x >= 0.0) {
+                vec2 insetUv = mix(vec2(0.015), vec2(0.985), vUv);
+                vec4 tex = texture2D(uAtlas, vTile + insetUv * uTileSize);
+                if (tex.a < 0.15) discard;
+                baseCol = tex.rgb * vTint;
+              }
+              gl_FragColor = vec4(baseCol * vShade, 1.0);
+            }
+          `
+        });
 
         const mesh = new THREE.InstancedMesh(geo, mat, totalBlocks);
         const dummy = new THREE.Object3D();
