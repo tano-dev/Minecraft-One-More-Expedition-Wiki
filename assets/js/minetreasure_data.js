@@ -684,7 +684,7 @@ const MINE_TREASURE_DATA = {
     },
     "rare": {
      "rolls": "Biome/Luck Scaled Binomial +1–6 bonus",
-     "total_weight": 23,
+     "total_weight": 29,
      "items": [
       {
        "name": "Grenade",
@@ -703,7 +703,7 @@ const MINE_TREASURE_DATA = {
        ],
        "attrs": [],
        "ref_id": "mt:custom_items/grenade",
-       "pct": 4.35,
+       "pct": 3.45,
        "icon": "assets/icons/mc/host_armor_trim_smithing_template.png"
       },
       {
@@ -722,7 +722,7 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/boomproof_hat",
-       "pct": 4.35,
+       "pct": 3.45,
        "icon": "assets/icons/mc/orange_stained_glass.png"
       },
       {
@@ -739,7 +739,7 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35,
+       "pct": 3.45,
        "icon": "assets/icons/mc/chest.png"
       },
       {
@@ -762,6 +762,20 @@ const MINE_TREASURE_DATA = {
        "icon": "assets/icons/mc/blue_dye.png"
       },
       {
+       "name": "Gold Ingot",
+       "raw_id": "minecraft:gold_ingot",
+       "icon_id": "minecraft:gold_ingot",
+       "weight": 3,
+       "count": "4–10",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 10.34,
+       "icon": "assets/icons/mc/gold_ingot.png"
+      },
+      {
        "name": "Bone",
        "raw_id": "minecraft:bone",
        "icon_id": "minecraft:bone",
@@ -772,7 +786,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7,
+       "pct": 6.9,
        "icon": "assets/icons/mc/bone.png"
       },
       {
@@ -786,7 +800,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7,
+       "pct": 6.9,
        "icon": "assets/icons/mc/skeleton_skull.png"
       },
       {
@@ -800,7 +814,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7,
+       "pct": 6.9,
        "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
@@ -814,7 +828,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7,
+       "pct": 6.9,
        "icon": "assets/icons/mc/tnt.png"
       },
       {
@@ -828,7 +842,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7,
+       "pct": 6.9,
        "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
@@ -842,7 +856,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7,
+       "pct": 6.9,
        "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
@@ -856,7 +870,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7,
+       "pct": 6.9,
        "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
@@ -870,8 +884,22 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7,
+       "pct": 6.9,
        "icon": "assets/icons/mc/tipped_arrow.png"
+      },
+      {
+       "name": "Emerald",
+       "raw_id": "minecraft:emerald",
+       "icon_id": "minecraft:emerald",
+       "weight": 2,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.9,
+       "icon": "assets/icons/mc/emerald.png"
       },
       {
        "name": "Tipped Arrow",
@@ -884,7 +912,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35,
+       "pct": 3.45,
        "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
@@ -898,7 +926,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35,
+       "pct": 3.45,
        "icon": "assets/icons/mc/gold_block.png"
       },
       {
@@ -912,7 +940,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35,
+       "pct": 3.45,
        "icon": "assets/icons/mc/crossbow.png"
       },
       {
@@ -928,8 +956,22 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 4.35,
+       "pct": 3.45,
        "icon": "assets/icons/mc/book.png"
+      },
+      {
+       "name": "Diamond",
+       "raw_id": "minecraft:diamond",
+       "icon_id": "minecraft:diamond",
+       "weight": 1,
+       "count": "1–2",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.45,
+       "icon": "assets/icons/mc/diamond.png"
       }
      ]
     },
@@ -1041,7 +1083,7 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:golden_apple",
        "icon_id": "minecraft:golden_apple",
        "weight": 2,
-       "count": "1",
+       "count": "5",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
@@ -6180,7 +6222,7 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:golden_apple",
        "icon_id": "minecraft:golden_apple",
        "weight": 2,
-       "count": "1",
+       "count": "5",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
@@ -6534,7 +6576,7 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:golden_apple",
        "icon_id": "minecraft:golden_apple",
        "weight": 2,
-       "count": "1",
+       "count": "5",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
@@ -10576,7 +10618,7 @@ const MINE_TREASURE_DATA = {
     },
     "rare": {
      "rolls": "Biome/Luck Scaled Binomial +1–6 bonus",
-     "total_weight": 36,
+     "total_weight": 32,
      "items": [
       {
        "name": "Flower Pie",
@@ -10593,7 +10635,7 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/flower_pie",
-       "pct": 5.56,
+       "pct": 6.25,
        "icon": "assets/icons/mc/pumpkin_pie.png"
       },
       {
@@ -10611,7 +10653,7 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/healing_flower",
-       "pct": 2.78,
+       "pct": 3.12,
        "icon": "assets/icons/mc/structure_block.png"
       },
       {
@@ -10631,7 +10673,7 @@ const MINE_TREASURE_DATA = {
        "attrs": [
         "Attack Damage: 3–3"
        ],
-       "pct": 2.78,
+       "pct": 3.12,
        "icon": "assets/icons/mc/stone_hoe.png"
       },
       {
@@ -10664,162 +10706,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33,
+       "pct": 9.38,
        "icon": "assets/icons/mc/coarse_dirt.png"
-      },
-      {
-       "name": "Blue Orchid",
-       "raw_id": "minecraft:blue_orchid",
-       "icon_id": "minecraft:blue_orchid",
-       "weight": 2,
-       "count": "2–4",
-       "chance_cond": null,
-       "is_custom": false,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 5.56,
-       "icon": "assets/icons/mc/blue_orchid.png"
-      },
-      {
-       "name": "Allium",
-       "raw_id": "minecraft:allium",
-       "icon_id": "minecraft:allium",
-       "weight": 2,
-       "count": "2–4",
-       "chance_cond": null,
-       "is_custom": false,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 5.56,
-       "icon": "assets/icons/mc/allium.png"
-      },
-      {
-       "name": "Azure Bluet",
-       "raw_id": "minecraft:azure_bluet",
-       "icon_id": "minecraft:azure_bluet",
-       "weight": 2,
-       "count": "2–4",
-       "chance_cond": null,
-       "is_custom": false,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 5.56,
-       "icon": "assets/icons/mc/azure_bluet.png"
-      },
-      {
-       "name": "Oxeye Daisy",
-       "raw_id": "minecraft:oxeye_daisy",
-       "icon_id": "minecraft:oxeye_daisy",
-       "weight": 2,
-       "count": "2–4",
-       "chance_cond": null,
-       "is_custom": false,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 5.56,
-       "icon": "assets/icons/mc/oxeye_daisy.png"
-      },
-      {
-       "name": "Cornflower",
-       "raw_id": "minecraft:cornflower",
-       "icon_id": "minecraft:cornflower",
-       "weight": 2,
-       "count": "2–4",
-       "chance_cond": null,
-       "is_custom": false,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 5.56,
-       "icon": "assets/icons/mc/cornflower.png"
-      },
-      {
-       "name": "Lily Of The Valley",
-       "raw_id": "minecraft:lily_of_the_valley",
-       "icon_id": "minecraft:lily_of_the_valley",
-       "weight": 2,
-       "count": "2–4",
-       "chance_cond": null,
-       "is_custom": false,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 5.56,
-       "icon": "assets/icons/mc/lily_of_the_valley.png"
-      },
-      {
-       "name": "Sunflower",
-       "raw_id": "minecraft:sunflower",
-       "icon_id": "minecraft:sunflower",
-       "weight": 2,
-       "count": "2–4",
-       "chance_cond": null,
-       "is_custom": false,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 5.56,
-       "icon": "assets/icons/mc/sunflower.png"
-      },
-      {
-       "name": "Lilac",
-       "raw_id": "minecraft:lilac",
-       "icon_id": "minecraft:lilac",
-       "weight": 2,
-       "count": "2–4",
-       "chance_cond": null,
-       "is_custom": false,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 5.56,
-       "icon": "assets/icons/mc/lilac.png"
-      },
-      {
-       "name": "Rose Bush",
-       "raw_id": "minecraft:rose_bush",
-       "icon_id": "minecraft:rose_bush",
-       "weight": 2,
-       "count": "2–4",
-       "chance_cond": null,
-       "is_custom": false,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 5.56,
-       "icon": "assets/icons/mc/rose_bush.png"
-      },
-      {
-       "name": "Peony",
-       "raw_id": "minecraft:peony",
-       "icon_id": "minecraft:peony",
-       "weight": 2,
-       "count": "2–4",
-       "chance_cond": null,
-       "is_custom": false,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 5.56,
-       "icon": "assets/icons/mc/peony.png"
-      },
-      {
-       "name": "Hanging Roots",
-       "raw_id": "minecraft:hanging_roots",
-       "icon_id": "minecraft:hanging_roots",
-       "weight": 2,
-       "count": "2–4",
-       "chance_cond": null,
-       "is_custom": false,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 5.56,
-       "icon": "assets/icons/mc/hanging_roots.png"
       },
       {
        "name": "Chorus Fruit",
@@ -10832,7 +10720,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56,
+       "pct": 6.25,
        "icon": "assets/icons/mc/chorus_fruit.png"
       },
       {
@@ -10846,8 +10734,78 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56,
+       "pct": 6.25,
        "icon": "assets/icons/mc/experience_bottle.png"
+      },
+      {
+       "name": "Emerald",
+       "raw_id": "minecraft:emerald",
+       "icon_id": "minecraft:emerald",
+       "weight": 2,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.25,
+       "icon": "assets/icons/mc/emerald.png"
+      },
+      {
+       "name": "Gold Ingot",
+       "raw_id": "minecraft:gold_ingot",
+       "icon_id": "minecraft:gold_ingot",
+       "weight": 2,
+       "count": "3–6",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.25,
+       "icon": "assets/icons/mc/gold_ingot.png"
+      },
+      {
+       "name": "Iron Ingot",
+       "raw_id": "minecraft:iron_ingot",
+       "icon_id": "minecraft:iron_ingot",
+       "weight": 2,
+       "count": "4–8",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.25,
+       "icon": "assets/icons/mc/iron_ingot.png"
+      },
+      {
+       "name": "Blue Orchid",
+       "raw_id": "minecraft:blue_orchid",
+       "icon_id": "minecraft:blue_orchid",
+       "weight": 1,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.12,
+       "icon": "assets/icons/mc/blue_orchid.png"
+      },
+      {
+       "name": "Allium",
+       "raw_id": "minecraft:allium",
+       "icon_id": "minecraft:allium",
+       "weight": 1,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.12,
+       "icon": "assets/icons/mc/allium.png"
       },
       {
        "name": "Cherry Sapling",
@@ -10860,8 +10818,120 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.78,
+       "pct": 3.12,
        "icon": "assets/icons/mc/cherry_sapling.png"
+      },
+      {
+       "name": "Azure Bluet",
+       "raw_id": "minecraft:azure_bluet",
+       "icon_id": "minecraft:azure_bluet",
+       "weight": 1,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.12,
+       "icon": "assets/icons/mc/azure_bluet.png"
+      },
+      {
+       "name": "Oxeye Daisy",
+       "raw_id": "minecraft:oxeye_daisy",
+       "icon_id": "minecraft:oxeye_daisy",
+       "weight": 1,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.12,
+       "icon": "assets/icons/mc/oxeye_daisy.png"
+      },
+      {
+       "name": "Cornflower",
+       "raw_id": "minecraft:cornflower",
+       "icon_id": "minecraft:cornflower",
+       "weight": 1,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.12,
+       "icon": "assets/icons/mc/cornflower.png"
+      },
+      {
+       "name": "Lily Of The Valley",
+       "raw_id": "minecraft:lily_of_the_valley",
+       "icon_id": "minecraft:lily_of_the_valley",
+       "weight": 1,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.12,
+       "icon": "assets/icons/mc/lily_of_the_valley.png"
+      },
+      {
+       "name": "Sunflower",
+       "raw_id": "minecraft:sunflower",
+       "icon_id": "minecraft:sunflower",
+       "weight": 1,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.12,
+       "icon": "assets/icons/mc/sunflower.png"
+      },
+      {
+       "name": "Lilac",
+       "raw_id": "minecraft:lilac",
+       "icon_id": "minecraft:lilac",
+       "weight": 1,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.12,
+       "icon": "assets/icons/mc/lilac.png"
+      },
+      {
+       "name": "Rose Bush",
+       "raw_id": "minecraft:rose_bush",
+       "icon_id": "minecraft:rose_bush",
+       "weight": 1,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.12,
+       "icon": "assets/icons/mc/rose_bush.png"
+      },
+      {
+       "name": "Peony",
+       "raw_id": "minecraft:peony",
+       "icon_id": "minecraft:peony",
+       "weight": 1,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.12,
+       "icon": "assets/icons/mc/peony.png"
       },
       {
        "name": "Enchanted Book",
@@ -10876,8 +10946,22 @@ const MINE_TREASURE_DATA = {
         "Stored: Mending 1"
        ],
        "attrs": [],
-       "pct": 2.78,
+       "pct": 3.12,
        "icon": "assets/icons/mc/enchanted_book.png"
+      },
+      {
+       "name": "Hanging Roots",
+       "raw_id": "minecraft:hanging_roots",
+       "icon_id": "minecraft:hanging_roots",
+       "weight": 1,
+       "count": "2–4",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.12,
+       "icon": "assets/icons/mc/hanging_roots.png"
       },
       {
        "name": "Book",
@@ -10892,8 +10976,22 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 2.78,
+       "pct": 3.12,
        "icon": "assets/icons/mc/book.png"
+      },
+      {
+       "name": "Diamond",
+       "raw_id": "minecraft:diamond",
+       "icon_id": "minecraft:diamond",
+       "weight": 1,
+       "count": "1–2",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.12,
+       "icon": "assets/icons/mc/diamond.png"
       }
      ]
     },
@@ -12074,7 +12172,7 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:golden_apple",
        "icon_id": "minecraft:golden_apple",
        "weight": 2,
-       "count": "1",
+       "count": "5",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
@@ -13032,7 +13130,7 @@ const MINE_TREASURE_DATA = {
     },
     "legendary": {
      "rolls": "Biome/Luck Scaled Binomial +1–6 bonus",
-     "total_weight": 14,
+     "total_weight": 20,
      "items": [
       {
        "name": "Jungle Shoes",
@@ -13056,7 +13154,7 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/jungle/jungle_shoes",
        "is_exclusive": true,
-       "pct": 7.14,
+       "pct": 5.0,
        "icon": "assets/icons/mc/leather_boots.png"
       },
       {
@@ -13086,29 +13184,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/jungle/rumble_axe",
        "is_exclusive": true,
-       "pct": 7.14,
+       "pct": 5.0,
        "icon": "assets/icons/mc/wooden_axe.png"
-      },
-      {
-       "name": "Roaring Jungle",
-       "raw_id": "minecraft:globe_banner_pattern",
-       "icon_id": "minecraft:globe_banner_pattern",
-       "weight": 2,
-       "count": "1",
-       "chance_cond": null,
-       "is_custom": true,
-       "lore": [
-        "RUNE",
-        "Ability:",
-        "When activated increases movement",
-        "by 40% and attack speed by 20% for",
-        "10 seconds."
-       ],
-       "enchants": [],
-       "attrs": [],
-       "ref_id": "mt:runes/roaring_jungle",
-       "pct": 14.29,
-       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Legendary Charm",
@@ -13130,6 +13207,27 @@ const MINE_TREASURE_DATA = {
        "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
+       "name": "Roaring Jungle",
+       "raw_id": "minecraft:globe_banner_pattern",
+       "icon_id": "minecraft:globe_banner_pattern",
+       "weight": 2,
+       "count": "1",
+       "chance_cond": null,
+       "is_custom": true,
+       "lore": [
+        "RUNE",
+        "Ability:",
+        "When activated increases movement",
+        "by 40% and attack speed by 20% for",
+        "10 seconds."
+       ],
+       "enchants": [],
+       "attrs": [],
+       "ref_id": "mt:runes/roaring_jungle",
+       "pct": 10.0,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
+      },
+      {
        "name": "Sculk Sensor",
        "raw_id": "minecraft:sculk_sensor",
        "icon_id": "minecraft:sculk_sensor",
@@ -13140,7 +13238,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 21.43,
+       "pct": 15.0,
        "icon": "assets/icons/mc/sculk_sensor.png"
       },
       {
@@ -13154,7 +13252,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 21.43,
+       "pct": 15.0,
        "icon": "assets/icons/mc/green_shulker_box.png"
       },
       {
@@ -13168,7 +13266,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29,
+       "pct": 10.0,
        "icon": "assets/icons/mc/golden_apple.png"
       },
       {
@@ -13182,8 +13280,64 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29,
+       "pct": 10.0,
        "icon": "assets/icons/mc/enchanted_book.png"
+      },
+      {
+       "name": "Diamond",
+       "raw_id": "minecraft:diamond",
+       "icon_id": "minecraft:diamond",
+       "weight": 2,
+       "count": "3–6",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 10.0,
+       "icon": "assets/icons/mc/diamond.png"
+      },
+      {
+       "name": "Emerald",
+       "raw_id": "minecraft:emerald",
+       "icon_id": "minecraft:emerald",
+       "weight": 2,
+       "count": "5–10",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 10.0,
+       "icon": "assets/icons/mc/emerald.png"
+      },
+      {
+       "name": "Netherite Scrap",
+       "raw_id": "minecraft:netherite_scrap",
+       "icon_id": "minecraft:netherite_scrap",
+       "weight": 1,
+       "count": "1–2",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 5.0,
+       "icon": "assets/icons/mc/netherite_scrap.png"
+      },
+      {
+       "name": "Enchanted Golden Apple",
+       "raw_id": "minecraft:enchanted_golden_apple",
+       "icon_id": "minecraft:enchanted_golden_apple",
+       "weight": 1,
+       "count": "1",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 5.0,
+       "icon": "assets/icons/mc/enchanted_golden_apple.png"
       }
      ]
     }
@@ -13695,7 +13849,7 @@ const MINE_TREASURE_DATA = {
     },
     "epic": {
      "rolls": "Biome/Luck Scaled Binomial +1–6 bonus",
-     "total_weight": 24,
+     "total_weight": 30,
      "items": [
       {
        "name": "Lush Arrow",
@@ -13708,7 +13862,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5,
+       "pct": 10.0,
        "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
@@ -13723,7 +13877,7 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/glowy_arrow",
-       "pct": 12.5,
+       "pct": 10.0,
        "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
@@ -13741,7 +13895,7 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/juicy_experience_drink",
-       "pct": 8.33,
+       "pct": 6.67,
        "icon": "assets/icons/mc/honey_bottle.png"
       },
       {
@@ -13758,44 +13912,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33,
+       "pct": 6.67,
        "icon": "assets/icons/mc/glow_item_frame.png"
-      },
-      {
-       "name": "Experient Trousers",
-       "raw_id": "minecraft:leather_leggings",
-       "icon_id": "minecraft:leather_leggings",
-       "weight": 1,
-       "count": "1",
-       "chance_cond": null,
-       "is_custom": true,
-       "lore": [
-        "Ability:",
-        "Walking gives a small",
-        "amount of experience."
-       ],
-       "enchants": [],
-       "attrs": [],
-       "ref_id": "mt:custom_items/experient_trousers",
-       "pct": 4.17,
-       "icon": "assets/icons/mc/leather_leggings.png"
-      },
-      {
-       "name": "Shrink Potion",
-       "raw_id": "minecraft:splash_potion",
-       "icon_id": "minecraft:splash_potion",
-       "weight": 1,
-       "count": "1",
-       "chance_cond": null,
-       "is_custom": true,
-       "lore": [
-        "Shrink (04:00)",
-        "Works on players only"
-       ],
-       "enchants": [],
-       "attrs": [],
-       "pct": 4.17,
-       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Epic Charm",
@@ -13817,6 +13935,42 @@ const MINE_TREASURE_DATA = {
        "icon": "assets/icons/mc/red_dye.png"
       },
       {
+       "name": "Experient Trousers",
+       "raw_id": "minecraft:leather_leggings",
+       "icon_id": "minecraft:leather_leggings",
+       "weight": 1,
+       "count": "1",
+       "chance_cond": null,
+       "is_custom": true,
+       "lore": [
+        "Ability:",
+        "Walking gives a small",
+        "amount of experience."
+       ],
+       "enchants": [],
+       "attrs": [],
+       "ref_id": "mt:custom_items/experient_trousers",
+       "pct": 3.33,
+       "icon": "assets/icons/mc/leather_leggings.png"
+      },
+      {
+       "name": "Shrink Potion",
+       "raw_id": "minecraft:splash_potion",
+       "icon_id": "minecraft:splash_potion",
+       "weight": 1,
+       "count": "1",
+       "chance_cond": null,
+       "is_custom": true,
+       "lore": [
+        "Shrink (04:00)",
+        "Works on players only"
+       ],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.33,
+       "icon": "assets/icons/mc/splash_potion.png"
+      },
+      {
        "name": "End Stone",
        "raw_id": "minecraft:end_stone",
        "icon_id": "minecraft:end_stone",
@@ -13827,7 +13981,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33,
+       "pct": 6.67,
        "icon": "assets/icons/mc/end_stone.png"
       },
       {
@@ -13841,7 +13995,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33,
+       "pct": 6.67,
        "icon": "assets/icons/mc/golden_apple.png"
       },
       {
@@ -13849,13 +14003,13 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:experience_bottle",
        "icon_id": "minecraft:experience_bottle",
        "weight": 2,
-       "count": "1",
+       "count": "4–10",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33,
+       "pct": 6.67,
        "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
@@ -13869,7 +14023,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33,
+       "pct": 6.67,
        "icon": "assets/icons/mc/chorus_fruit.png"
       },
       {
@@ -13883,8 +14037,50 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33,
+       "pct": 6.67,
        "icon": "assets/icons/mc/chorus_plant.png"
+      },
+      {
+       "name": "Diamond",
+       "raw_id": "minecraft:diamond",
+       "icon_id": "minecraft:diamond",
+       "weight": 2,
+       "count": "1–3",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.67,
+       "icon": "assets/icons/mc/diamond.png"
+      },
+      {
+       "name": "Emerald",
+       "raw_id": "minecraft:emerald",
+       "icon_id": "minecraft:emerald",
+       "weight": 2,
+       "count": "3–6",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.67,
+       "icon": "assets/icons/mc/emerald.png"
+      },
+      {
+       "name": "Amethyst Shard",
+       "raw_id": "minecraft:amethyst_shard",
+       "icon_id": "minecraft:amethyst_shard",
+       "weight": 2,
+       "count": "6–12",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.67,
+       "icon": "assets/icons/mc/amethyst_shard.png"
       },
       {
        "name": "Shears",
@@ -13897,7 +14093,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17,
+       "pct": 3.33,
        "icon": "assets/icons/mc/shears.png"
       },
       {
@@ -13914,14 +14110,14 @@ const MINE_TREASURE_DATA = {
         "Stored: Unbreaking 3"
        ],
        "attrs": [],
-       "pct": 4.17,
+       "pct": 3.33,
        "icon": "assets/icons/mc/enchanted_book.png"
       }
      ]
     },
     "legendary": {
      "rolls": "Biome/Luck Scaled Binomial +1–6 bonus",
-     "total_weight": 22,
+     "total_weight": 30,
      "items": [
       {
        "name": "Lush Cave Pants",
@@ -13947,22 +14143,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
        "is_exclusive": true,
-       "pct": 9.09,
+       "pct": 6.67,
        "icon": "assets/icons/mc/leather_leggings.png"
-      },
-      {
-       "name": "Lush Arrow",
-       "raw_id": "minecraft:tipped_arrow",
-       "icon_id": "minecraft:tipped_arrow",
-       "weight": 3,
-       "count": "1",
-       "chance_cond": null,
-       "is_custom": true,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 13.64,
-       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Legendary Charm",
@@ -13984,6 +14166,20 @@ const MINE_TREASURE_DATA = {
        "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
+       "name": "Lush Arrow",
+       "raw_id": "minecraft:tipped_arrow",
+       "icon_id": "minecraft:tipped_arrow",
+       "weight": 3,
+       "count": "1",
+       "chance_cond": null,
+       "is_custom": true,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 10.0,
+       "icon": "assets/icons/mc/tipped_arrow.png"
+      },
+      {
        "name": "Juicy Experience Drink",
        "raw_id": "minecraft:honey_bottle",
        "icon_id": "minecraft:honey_bottle",
@@ -13998,7 +14194,7 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/juicy_experience_drink",
-       "pct": 9.09,
+       "pct": 6.67,
        "icon": "assets/icons/mc/honey_bottle.png"
       },
       {
@@ -14012,7 +14208,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09,
+       "pct": 6.67,
        "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
@@ -14026,7 +14222,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.55,
+       "pct": 3.33,
        "icon": "assets/icons/mc/potion.png"
       },
       {
@@ -14043,7 +14239,7 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.55,
+       "pct": 3.33,
        "icon": "assets/icons/mc/splash_potion.png"
       },
       {
@@ -14051,13 +14247,13 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:glow_ink_sac",
        "icon_id": "minecraft:glow_ink_sac",
        "weight": 3,
-       "count": "1",
+       "count": "4–8",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.64,
+       "pct": 10.0,
        "icon": "assets/icons/mc/glow_ink_sac.png"
       },
       {
@@ -14071,7 +14267,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09,
+       "pct": 6.67,
        "icon": "assets/icons/mc/lime_shulker_box.png"
       },
       {
@@ -14079,13 +14275,13 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:golden_apple",
        "icon_id": "minecraft:golden_apple",
        "weight": 2,
-       "count": "1",
+       "count": "2–5",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09,
+       "pct": 6.67,
        "icon": "assets/icons/mc/golden_apple.png"
       },
       {
@@ -14099,7 +14295,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09,
+       "pct": 6.67,
        "icon": "assets/icons/mc/honey_block.png"
       },
       {
@@ -14113,8 +14309,78 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09,
+       "pct": 6.67,
        "icon": "assets/icons/mc/enchanted_book.png"
+      },
+      {
+       "name": "Diamond",
+       "raw_id": "minecraft:diamond",
+       "icon_id": "minecraft:diamond",
+       "weight": 2,
+       "count": "3–6",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.67,
+       "icon": "assets/icons/mc/diamond.png"
+      },
+      {
+       "name": "Emerald",
+       "raw_id": "minecraft:emerald",
+       "icon_id": "minecraft:emerald",
+       "weight": 2,
+       "count": "4–8",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.67,
+       "icon": "assets/icons/mc/emerald.png"
+      },
+      {
+       "name": "Experience Bottle",
+       "raw_id": "minecraft:experience_bottle",
+       "icon_id": "minecraft:experience_bottle",
+       "weight": 2,
+       "count": "8–16",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.67,
+       "icon": "assets/icons/mc/experience_bottle.png"
+      },
+      {
+       "name": "Netherite Scrap",
+       "raw_id": "minecraft:netherite_scrap",
+       "icon_id": "minecraft:netherite_scrap",
+       "weight": 1,
+       "count": "1–2",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.33,
+       "icon": "assets/icons/mc/netherite_scrap.png"
+      },
+      {
+       "name": "Enchanted Golden Apple",
+       "raw_id": "minecraft:enchanted_golden_apple",
+       "icon_id": "minecraft:enchanted_golden_apple",
+       "weight": 1,
+       "count": "1",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.33,
+       "icon": "assets/icons/mc/enchanted_golden_apple.png"
       }
      ]
     }
@@ -14683,7 +14949,7 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:golden_apple",
        "icon_id": "minecraft:golden_apple",
        "weight": 3,
-       "count": "1",
+       "count": "2",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
@@ -14697,7 +14963,7 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:gold_block",
        "icon_id": "minecraft:gold_block",
        "weight": 3,
-       "count": "1",
+       "count": "5",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
@@ -14711,7 +14977,7 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:iron_block",
        "icon_id": "minecraft:iron_block",
        "weight": 3,
-       "count": "1",
+       "count": "5",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
@@ -15500,7 +15766,7 @@ const MINE_TREASURE_DATA = {
     },
     "epic": {
      "rolls": "Biome/Luck Scaled Binomial +1–6 bonus",
-     "total_weight": 23,
+     "total_weight": 31,
      "items": [
       {
        "name": "Mooshroom Spawn Egg",
@@ -15515,7 +15781,7 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04,
+       "pct": 9.68,
        "icon": "assets/icons/mc/mooshroom_spawn_egg.png"
       },
       {
@@ -15529,25 +15795,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7,
+       "pct": 6.45,
        "icon": "assets/icons/mc/suspicious_stew.png"
-      },
-      {
-       "name": "Enlarge Potion",
-       "raw_id": "minecraft:splash_potion",
-       "icon_id": "minecraft:splash_potion",
-       "weight": 1,
-       "count": "1",
-       "chance_cond": null,
-       "is_custom": true,
-       "lore": [
-        "Enlarge (04:00)",
-        "Works on players only"
-       ],
-       "enchants": [],
-       "attrs": [],
-       "pct": 4.35,
-       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Epic Charm",
@@ -15569,6 +15818,23 @@ const MINE_TREASURE_DATA = {
        "icon": "assets/icons/mc/red_dye.png"
       },
       {
+       "name": "Enlarge Potion",
+       "raw_id": "minecraft:splash_potion",
+       "icon_id": "minecraft:splash_potion",
+       "weight": 1,
+       "count": "1",
+       "chance_cond": null,
+       "is_custom": true,
+       "lore": [
+        "Enlarge (04:00)",
+        "Works on players only"
+       ],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.23,
+       "icon": "assets/icons/mc/splash_potion.png"
+      },
+      {
        "name": "Bone Block",
        "raw_id": "minecraft:bone_block",
        "icon_id": "minecraft:bone_block",
@@ -15579,7 +15845,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04,
+       "pct": 9.68,
        "icon": "assets/icons/mc/bone_block.png"
       },
       {
@@ -15593,7 +15859,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04,
+       "pct": 9.68,
        "icon": "assets/icons/mc/fermented_spider_eye.png"
       },
       {
@@ -15607,7 +15873,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04,
+       "pct": 9.68,
        "icon": "assets/icons/mc/crimson_fungus.png"
       },
       {
@@ -15621,7 +15887,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04,
+       "pct": 9.68,
        "icon": "assets/icons/mc/warped_fungus.png"
       },
       {
@@ -15637,7 +15903,7 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 13.04,
+       "pct": 9.68,
        "icon": "assets/icons/mc/book.png"
       },
       {
@@ -15651,8 +15917,64 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7,
+       "pct": 6.45,
        "icon": "assets/icons/mc/red_bundle.png"
+      },
+      {
+       "name": "Diamond",
+       "raw_id": "minecraft:diamond",
+       "icon_id": "minecraft:diamond",
+       "weight": 2,
+       "count": "1–3",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.45,
+       "icon": "assets/icons/mc/diamond.png"
+      },
+      {
+       "name": "Emerald",
+       "raw_id": "minecraft:emerald",
+       "icon_id": "minecraft:emerald",
+       "weight": 2,
+       "count": "3–6",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.45,
+       "icon": "assets/icons/mc/emerald.png"
+      },
+      {
+       "name": "Experience Bottle",
+       "raw_id": "minecraft:experience_bottle",
+       "icon_id": "minecraft:experience_bottle",
+       "weight": 2,
+       "count": "4–8",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.45,
+       "icon": "assets/icons/mc/experience_bottle.png"
+      },
+      {
+       "name": "Golden Apple",
+       "raw_id": "minecraft:golden_apple",
+       "icon_id": "minecraft:golden_apple",
+       "weight": 2,
+       "count": "1–2",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.45,
+       "icon": "assets/icons/mc/golden_apple.png"
       }
      ]
     },
@@ -17711,7 +18033,7 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:cooked_salmon",
        "icon_id": "minecraft:cooked_salmon",
        "weight": 3,
-       "count": "1",
+       "count": "5",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
@@ -17725,7 +18047,7 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:cooked_cod",
        "icon_id": "minecraft:cooked_cod",
        "weight": 3,
-       "count": "1",
+       "count": "5",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
@@ -17769,7 +18091,7 @@ const MINE_TREASURE_DATA = {
        "raw_id": "minecraft:golden_apple",
        "icon_id": "minecraft:golden_apple",
        "weight": 2,
-       "count": "1",
+       "count": "5",
        "chance_cond": null,
        "is_custom": false,
        "lore": [],
@@ -21859,7 +22181,7 @@ const MINE_TREASURE_DATA = {
     },
     "legendary": {
      "rolls": "Biome/Luck Scaled Binomial +1–6 bonus",
-     "total_weight": 17,
+     "total_weight": 16,
      "items": [
       {
        "name": "Taiga Pants",
@@ -21883,7 +22205,7 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/taiga/taiga_pants",
        "is_exclusive": true,
-       "pct": 5.88,
+       "pct": 6.25,
        "icon": "assets/icons/mc/leather_leggings.png"
       },
       {
@@ -21924,7 +22246,7 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/mysterichant",
-       "pct": 5.88,
+       "pct": 6.25,
        "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
@@ -21940,7 +22262,7 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88,
+       "pct": 6.25,
        "icon": "assets/icons/mc/witch_spawn_egg.png"
       },
       {
@@ -21959,7 +22281,7 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88,
+       "pct": 6.25,
        "icon": "assets/icons/mc/spyglass.png"
       },
       {
@@ -21987,7 +22309,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 17.65,
+       "pct": 18.75,
        "icon": "assets/icons/mc/gold_block.png"
       },
       {
@@ -22001,7 +22323,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 17.65,
+       "pct": 18.75,
        "icon": "assets/icons/mc/bookshelf.png"
       },
       {
@@ -22015,22 +22337,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76,
+       "pct": 12.5,
        "icon": "assets/icons/mc/ender_chest.png"
-      },
-      {
-       "name": "Enchanting Table",
-       "raw_id": "minecraft:enchanting_table",
-       "icon_id": "minecraft:enchanting_table",
-       "weight": 2,
-       "count": "4–8",
-       "chance_cond": null,
-       "is_custom": false,
-       "lore": [],
-       "enchants": [],
-       "attrs": [],
-       "pct": 11.76,
-       "icon": "assets/icons/mc/enchanting_table.png"
       },
       {
        "name": "Enchanted Book",
@@ -22043,8 +22351,22 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76,
+       "pct": 12.5,
        "icon": "assets/icons/mc/enchanted_book.png"
+      },
+      {
+       "name": "Enchanting Table",
+       "raw_id": "minecraft:enchanting_table",
+       "icon_id": "minecraft:enchanting_table",
+       "weight": 1,
+       "count": "1–2",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 6.25,
+       "icon": "assets/icons/mc/enchanting_table.png"
       },
       {
        "name": "Netherite Scrap",
@@ -22057,7 +22379,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88,
+       "pct": 6.25,
        "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
@@ -23997,7 +24319,7 @@ const MINE_TREASURE_DATA = {
     },
     "legendary": {
      "rolls": "Biome/Luck Scaled Binomial +1–6 bonus",
-     "total_weight": 20,
+     "total_weight": 28,
      "items": [
       {
        "name": "Wind Chestplate",
@@ -24024,7 +24346,7 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/wind/wind_chestplate",
        "is_exclusive": true,
-       "pct": 5.0,
+       "pct": 3.57,
        "icon": "assets/icons/mc/leather_chestplate.png"
       },
       {
@@ -24053,7 +24375,7 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/wind/hurricane_sword",
        "is_exclusive": true,
-       "pct": 5.0,
+       "pct": 3.57,
        "icon": "assets/icons/mc/iron_sword.png"
       },
       {
@@ -24067,7 +24389,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0,
+       "pct": 10.71,
        "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
@@ -24105,7 +24427,7 @@ const MINE_TREASURE_DATA = {
        ],
        "attrs": [],
        "ref_id": "mt:custom_items/kinetic_bomb",
-       "pct": 10.0,
+       "pct": 7.14,
        "icon": "assets/icons/mc/flow_armor_trim_smithing_template.png"
       },
       {
@@ -24122,7 +24444,7 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.0,
+       "pct": 3.57,
        "icon": "assets/icons/mc/splash_potion.png"
       },
       {
@@ -24136,7 +24458,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0,
+       "pct": 10.71,
        "icon": "assets/icons/mc/arrow.png"
       },
       {
@@ -24150,7 +24472,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0,
+       "pct": 10.71,
        "icon": "assets/icons/mc/feather.png"
       },
       {
@@ -24164,7 +24486,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0,
+       "pct": 7.14,
        "icon": "assets/icons/mc/white_shulker_box.png"
       },
       {
@@ -24178,7 +24500,7 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0,
+       "pct": 7.14,
        "icon": "assets/icons/mc/golden_apple.png"
       },
       {
@@ -24192,8 +24514,78 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0,
+       "pct": 7.14,
        "icon": "assets/icons/mc/enchanted_book.png"
+      },
+      {
+       "name": "Diamond",
+       "raw_id": "minecraft:diamond",
+       "icon_id": "minecraft:diamond",
+       "weight": 2,
+       "count": "3–6",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 7.14,
+       "icon": "assets/icons/mc/diamond.png"
+      },
+      {
+       "name": "Emerald",
+       "raw_id": "minecraft:emerald",
+       "icon_id": "minecraft:emerald",
+       "weight": 2,
+       "count": "4–8",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 7.14,
+       "icon": "assets/icons/mc/emerald.png"
+      },
+      {
+       "name": "Experience Bottle",
+       "raw_id": "minecraft:experience_bottle",
+       "icon_id": "minecraft:experience_bottle",
+       "weight": 2,
+       "count": "6–12",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 7.14,
+       "icon": "assets/icons/mc/experience_bottle.png"
+      },
+      {
+       "name": "Netherite Scrap",
+       "raw_id": "minecraft:netherite_scrap",
+       "icon_id": "minecraft:netherite_scrap",
+       "weight": 1,
+       "count": "1–2",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.57,
+       "icon": "assets/icons/mc/netherite_scrap.png"
+      },
+      {
+       "name": "Enchanted Golden Apple",
+       "raw_id": "minecraft:enchanted_golden_apple",
+       "icon_id": "minecraft:enchanted_golden_apple",
+       "weight": 1,
+       "count": "1",
+       "chance_cond": null,
+       "is_custom": false,
+       "lore": [],
+       "enchants": [],
+       "attrs": [],
+       "pct": 3.57,
+       "icon": "assets/icons/mc/enchanted_golden_apple.png"
       }
      ]
     }
