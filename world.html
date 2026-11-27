@@ -574,6 +574,7 @@
 
     let active3dCleanup = null;
     let threePromise = null;
+    let atlasPromise = null;
 
     async function getThree() {
       if (!threePromise) {
@@ -582,9 +583,29 @@
       return threePromise;
     }
 
+    async function getAtlasTexture(THREE) {
+      if (!atlasPromise) {
+        atlasPromise = new Promise((resolve, reject) => {
+          new THREE.TextureLoader().load(
+            "assets/data/block_atlas.png",
+            tex => {
+              tex.magFilter = THREE.NearestFilter;
+              tex.minFilter = THREE.NearestFilter;
+              tex.generateMipmaps = false;
+              tex.colorSpace = THREE.SRGBColorSpace;
+              resolve(tex);
+            },
+            undefined,
+            reject
+          );
+        });
+      }
+      return atlasPromise;
+    }
+
     function renderFallbackIso(box, dataRes, slider, yValEl, autoBtn, resetBtn) {
       const [sx, sy, sz] = dataRes.s;
-      const colors = dataRes.c || [];
+      const mats = dataRes.m || [];
       const b = dataRes.b || [];
       const items = [];
       for (let i = 0; i < b.length; i += 4) items.push([b[i], b[i + 1], b[i + 2], b[i + 3]]);
@@ -611,21 +632,21 @@
         const cosP = Math.cos(pitch), sinP = Math.sin(pitch);
         const proj = [];
         for (let i = 0; i < items.length; i++) {
-          const [x, y, z, ci] = items[i];
+          const [x, y, z, mi] = items[i];
           if (y >= yMax) continue;
           const dx = x - cx, dy = y - cy, dz = z - cz;
           const rx = dx * cosY - dz * sinY;
           const rz = dx * sinY + dz * cosY;
           const ry = dy * cosP - rz * sinP;
           const depth = dy * sinP + rz * cosP;
-          proj.push({ sx: w / 2 + rx * zoom, sy: h / 2 - ry * zoom, depth, col: colors[ci] ?? 0x8a8f99 });
+          const tint = (mats[mi] && mats[mi][1]) ? mats[mi][1] : 0x8a8f99;
+          proj.push({ sx: w / 2 + rx * zoom, sy: h / 2 - ry * zoom, depth, col: tint === 0xffffff ? 0x9ca3af : tint });
         }
         proj.sort((a, b) => a.depth - b.depth);
         const szPx = Math.max(2, zoom * 1.12);
         for (let i = 0; i < proj.length; i++) {
           const p = proj[i];
-          const hex = "#" + p.col.toString(16).padStart(6, "0");
-          ctx.fillStyle = hex;
+          ctx.fillStyle = "#" + p.col.toString(16).padStart(6, "0");
           ctx.fillRect(p.sx - szPx / 2, p.sy - szPx / 2, szPx, szPx);
         }
       };
@@ -679,7 +700,8 @@
 
       const [sx, sy, sz] = dataRes.s;
       const orig = dataRes.orig || dataRes.s;
-      const colors = dataRes.c || [];
+      const [cols, rows] = dataRes.a || [25, 24];
+      const mats = dataRes.m || [];
       const b = dataRes.b || [];
       const totalBlocks = Math.floor(b.length / 4);
 
@@ -699,6 +721,7 @@
 
       try {
         const THREE = await getThree();
+        const atlasTex = await getAtlasTexture(THREE);
         if (!document.getElementById("viewerCanvasBox")) return;
         if (status) status.style.display = "none";
 
@@ -727,16 +750,39 @@
         renderer.setSize(w, h);
         box.appendChild(renderer.domElement);
 
-        scene.add(new THREE.AmbientLight(0xffffff, 0.85));
-        const dir1 = new THREE.DirectionalLight(0xfff4d6, 0.95);
+        scene.add(new THREE.AmbientLight(0xffffff, 0.92));
+        const dir1 = new THREE.DirectionalLight(0xfff4d6, 0.85);
         dir1.position.set(1.2, 2.0, 1.0);
         scene.add(dir1);
-        const dir2 = new THREE.DirectionalLight(0x93c5fd, 0.45);
+        const dir2 = new THREE.DirectionalLight(0x93c5fd, 0.4);
         dir2.position.set(-1.2, -0.5, -1.0);
         scene.add(dir2);
 
         const geo = new THREE.BoxGeometry(1, 1, 1);
-        const mat = new THREE.MeshLambertMaterial();
+        const tileOffsets = new Float32Array(totalBlocks * 2);
+        const tileAttr = new THREE.InstancedBufferAttribute(tileOffsets, 2);
+        geo.setAttribute("aTile", tileAttr);
+
+        const mat = new THREE.MeshLambertMaterial({ map: atlasTex });
+        mat.onBeforeCompile = shader => {
+          shader.uniforms.uTileSize = { value: new THREE.Vector2(1 / cols, 1 / rows) };
+          shader.vertexShader = shader.vertexShader
+            .replace("#include <common>", "#include <common>\nattribute vec2 aTile;\nvarying vec2 vTile;\nvarying vec2 vLocalUv;")
+            .replace("#include <uv_vertex>", "#include <uv_vertex>\nvTile = aTile;\nvLocalUv = uv;");
+          shader.fragmentShader = shader.fragmentShader
+            .replace("#include <common>", "#include <common>\nuniform vec2 uTileSize;\nvarying vec2 vTile;\nvarying vec2 vLocalUv;")
+            .replace(
+              "#include <map_fragment>",
+              `#ifdef USE_MAP
+                if (vTile.x >= 0.0) {
+                  vec2 insetUv = mix(vec2(0.02), vec2(0.98), vLocalUv);
+                  vec4 sampledDiffuseColor = texture2D( map, vTile + insetUv * uTileSize );
+                  diffuseColor *= sampledDiffuseColor;
+                }
+              #endif`
+            );
+        };
+
         const mesh = new THREE.InstancedMesh(geo, mat, totalBlocks);
         const dummy = new THREE.Object3D();
         const col = new THREE.Color();
@@ -750,22 +796,36 @@
         const cz = sz / 2 - 0.5;
         const yCutoffCount = new Array(sy + 1).fill(0);
         for (let i = 0; i < items.length; i++) {
-          const [x, y, z, ci] = items[i];
+          const [x, y, z, mi] = items[i];
           dummy.position.set(x - cx, y - cy, z - cz);
           dummy.updateMatrix();
           mesh.setMatrixAt(i, dummy.matrix);
-          col.setHex(colors[ci] ?? 0x8a8f99);
+
+          const mEntry = mats[mi] || [-1, 0x8a8f99];
+          const tileIdx = mEntry[0];
+          const tint = mEntry[1] ?? 0xffffff;
+          col.setHex(tint);
           mesh.setColorAt(i, col);
+
+          if (tileIdx >= 0) {
+            const cIdx = tileIdx % cols;
+            const rIdx = Math.floor(tileIdx / cols);
+            tileOffsets[i * 2] = cIdx / cols;
+            tileOffsets[i * 2 + 1] = 1.0 - (rIdx + 1) / rows;
+          } else {
+            tileOffsets[i * 2] = -1.0;
+            tileOffsets[i * 2 + 1] = -1.0;
+          }
           if (y + 1 <= sy) yCutoffCount[y + 1] = i + 1;
         }
         for (let y = 1; y <= sy; y++) {
           if (yCutoffCount[y] === 0) yCutoffCount[y] = yCutoffCount[y - 1];
         }
+        tileAttr.needsUpdate = true;
         mesh.instanceMatrix.needsUpdate = true;
         if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
         scene.add(mesh);
 
-        // Native pointer + wheel orbit controls (no external OrbitControls dependency)
         let dragging = false, lx = 0, ly = 0;
         const dom = renderer.domElement;
         dom.onpointerdown = e => { dragging = true; lx = e.clientX; ly = e.clientY; dom.setPointerCapture(e.pointerId); };
@@ -822,7 +882,6 @@
           if (dom.parentNode) dom.remove();
         };
       } catch (err) {
-        // Fallback to pure-Canvas 2D isometric 3D projection if WebGL/CDN unavailable
         if (status) status.style.display = "none";
         active3dCleanup = renderFallbackIso(box, dataRes, slider, yValEl, autoBtn, resetBtn);
       }
