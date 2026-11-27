@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/wiki-header.css" />
   <script src="assets/wiki-lang-sync.js"></script>
-  <script src="assets/js/minetreasure_data.js?v=3"></script>
+  <script src="assets/js/minetreasure_data.js?v=4"></script>
   <style>
     :root {
       --bg-dark: #0d131f;
@@ -384,10 +384,32 @@
 
       <div class="sec-card">
         <div class="sec-head">
+          <h2 class="sec-title" id="expEnchTitle">Phù Phép Hỗ Trợ Đào Kho Báu (Expedition Enchants)</h2>
+          <a href="enchants.html" class="back-btn" style="padding:5px 12px;font-size:0.78rem;" id="expEnchLink">Xem tất cả trong Bách Khoa Phù Phép →</a>
+        </div>
+        <p class="sec-sub" id="expEnchSub"></p>
+        <div class="excl-grid" id="expEnchGrid" style="margin-bottom:0;"></div>
+      </div>
+
+      <div class="sec-card">
+        <div class="sec-head">
           <h2 class="sec-title" id="ratesTitle">Bảng Tỉ Lệ Rơi Chính Xác Theo 43 Block (Standard Mode)</h2>
-          <button type="button" class="toggle-btn" id="charmToggleBtn" onclick="toggleCharmPreview()">
-            <span id="charmToggleText">Charm: TẮT (Tỉ lệ gốc)</span>
-          </button>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            <button type="button" class="toggle-btn" id="charmToggleBtn" onclick="toggleCharmPreview()">
+              <span id="charmToggleText">Charm: TẮT</span>
+            </button>
+            <select id="luckEnchantSel" class="ctrl-input" style="width:auto;padding:6px 10px;font-size:0.8rem;" onchange="renderRatesPanel()">
+              <option value="0">Luck of the Mine: Lv 0</option>
+              <option value="1">Luck of the Mine: Lv I (+12%)</option>
+              <option value="2">Luck of the Mine: Lv II (+24%)</option>
+              <option value="3">Luck of the Mine: Lv III (+36%)</option>
+              <option value="4">Luck of the Mine: Lv IV (+48%)</option>
+              <option value="5">Luck of the Mine: Lv V (+60%)</option>
+            </select>
+            <button type="button" class="toggle-btn" id="blessingToggleBtn" onclick="toggleBlessingsPreview()">
+              <span id="blessingToggleText">Blessings: TẮT</span>
+            </button>
+          </div>
         </div>
         <p class="sec-sub" id="ratesSub"></p>
         <div class="tbl-wrap" style="border:1px solid var(--border-card);border-radius:12px;">
@@ -441,6 +463,7 @@
     let selectedDimFilter = "all";
     let selectedTierFilter = "all";
     let charmActive = false;
+    let blessingsActive = false;
     let activeMythCat = "all";
 
     const MT = MINE_TREASURE_DATA;
@@ -468,6 +491,11 @@
 
     function toggleCharmPreview() {
       charmActive = !charmActive;
+      renderRatesPanel();
+    }
+
+    function toggleBlessingsPreview() {
+      blessingsActive = !blessingsActive;
       renderRatesPanel();
     }
 
@@ -654,6 +682,10 @@
                     else if (it.is_custom) badges.push(`<span class="badge epic">Custom</span>`);
                     if (it.chance_cond != null) badges.push(`<span class="badge aqua">Bonus</span>`);
                     const details = [...(it.enchants || []), ...(it.attrs || []), ...(it.lore || []).slice(0, 2)].join(" • ");
+                    const hasRandEnch = (it.enchants || []).some(e => e.includes("Random Enchant"));
+                    const poolNote = hasRandEnch && MT.enchant_pool_count
+                      ? ` <a href="enchants.html" style="color:var(--aqua);text-decoration:underline;font-weight:700;">(${MT.enchant_pool_count} ${vi ? "phù phép" : "enchants"})</a>`
+                      : "";
                     return `<tr>
                       <td>
                         <div class="item-cell">
@@ -667,7 +699,7 @@
                       <td class="mono">${esc(it.count)}</td>
                       <td class="mono">${it.chance_cond != null ? "—" : it.weight}</td>
                       <td class="mono" style="color:var(--green);">${fmtPct(it.pct)}</td>
-                      <td style="font-size:0.77rem;color:#cbd5e1;max-width:300px;">${esc(details || "—")}</td>
+                      <td style="font-size:0.77rem;color:#cbd5e1;max-width:300px;">${esc(details || "—")}${poolNote}</td>
                     </tr>`;
                   }).join("") || `<tr><td colspan="5" style="text-align:center;color:var(--text-muted);">${vi ? "Không có vật phẩm khớp tìm kiếm" : "No matching items"}</td></tr>`}
                 </tbody>
@@ -690,11 +722,41 @@
         ? "Điểm cơ sở Standard: Common = 10,000 | Rare = 2,500 | Epic = 320 | Legendary = 160 | Mythical = 40. Tỉ lệ cuối = (Điểm × Hệ số Block) × (1.25 nếu đang bật Charm)."
         : "Standard base scores: Common = 10,000 | Rare = 2,500 | Epic = 320 | Legendary = 160 | Mythical = 40. Final chance = (Score × Block Multiplier) × (1.25 with active Charm).";
 
+      document.getElementById("expEnchTitle").textContent = vi ? "Phù Phép Hỗ Trợ Đào Kho Báu (Expedition Enchants)" : "Mining Treasure Enchants (Expedition Enchants)";
+      document.getElementById("expEnchLink").textContent = vi ? "Xem tất cả trong Bách Khoa Phù Phép →" : "View all in Enchantments Wiki →";
+      document.getElementById("expEnchSub").textContent = vi
+        ? `Các phù phép tùy chỉnh trên Cúp giúp tăng mạnh tỉ lệ rơi rương, số lượt quay vật phẩm và tỉ lệ rơi Charm. Sách phù phép ngẫu nhiên trong rương dùng chung pool ${MT.enchant_pool_count || 187} phù phép của server.`
+        : `Custom Pickaxe enchantments that boost chest drop rates, loot rolls, and Charm drops. Random Enchanted Books in chests roll from the server's ${MT.enchant_pool_count || 187}-enchant pool.`;
+
+      document.getElementById("expEnchGrid").innerHTML = (MT.expedition_enchants || []).map(en => `
+        <div class="item-card">
+          <div class="item-card-top">
+            <div class="item-card-left">
+              ${iconImg(en.icon, 26)}
+              <span class="item-card-name">${esc(en.name)}</span>
+            </div>
+            <span class="badge aqua">Max Lv ${en.max_level} • Weight ${en.weight}</span>
+          </div>
+          <div class="item-lore">${esc(vi ? en.desc_vi : en.desc_en)}</div>
+        </div>
+      `).join("");
+
+      const luckLv = parseInt((document.getElementById("luckEnchantSel") || {}).value || "0", 10) || 0;
+      const luckMult = 1 + luckLv * 0.12;
+      const charmMult = charmActive ? 1.25 : 1.0;
+
       const tBtn = document.getElementById("charmToggleBtn");
       tBtn.classList.toggle("on", charmActive);
       document.getElementById("charmToggleText").textContent = vi
-        ? (charmActive ? "Charm: ĐANG BẬT (+25%)" : "Charm: TẮT (Tỉ lệ gốc)")
-        : (charmActive ? "Charm: ACTIVE (+25%)" : "Charm: OFF (Base Rates)");
+        ? (charmActive ? "Charm: BẬT (+25%)" : "Charm: TẮT")
+        : (charmActive ? "Charm: ON (+25%)" : "Charm: OFF");
+
+      const bBtn = document.getElementById("blessingToggleBtn");
+      bBtn.classList.toggle("on", blessingsActive);
+      document.getElementById("blessingToggleText").textContent = vi
+        ? (blessingsActive ? "Blessings Lv V: BẬT" : "Blessings Lv V: TẮT")
+        : (blessingsActive ? "Blessings Lv V: ON" : "Blessings Lv V: OFF");
+
       document.getElementById("thTier").textContent = vi ? "Nhóm Block & Hệ Số" : "Block Tier & Multiplier";
 
       document.getElementById("mechGrid").innerHTML = (vi ? [
@@ -722,17 +784,22 @@
       }).join("");
 
       document.getElementById("ratesBody").innerHTML = MT.block_tiers.map(t => {
-        const r = charmActive ? t.charm_rates : t.rates;
+        const base = t.rates;
+        const cRate = (base.common || 0) * charmMult * luckMult;
+        const rRate = (base.rare || 0) * charmMult * luckMult * (blessingsActive ? 2.0 : 1.0);
+        const eRate = (base.epic || 0) * charmMult * luckMult * (blessingsActive ? 2.0 : 1.0);
+        const lRate = (base.legendary || 0) * charmMult * luckMult * (blessingsActive ? 1.75 : 1.0);
+        const mRate = (base.mythical || 0) * charmMult;
         return `<tr>
           <td>
             <div style="font-weight:800;color:#fff;">${esc(vi ? t.name_vi : t.name_en)}</div>
             <div class="block-chips">${t.blocks_pretty.map((b, i) => `<span class="b-chip">${iconImg((t.block_icons || [])[i], 16)}${esc(b)}</span>`).join("")}</div>
           </td>
-          <td class="mono t-common">${fmtPct(r.common)}</td>
-          <td class="mono t-rare">${fmtPct(r.rare)}</td>
-          <td class="mono t-epic">${fmtPct(r.epic)}</td>
-          <td class="mono t-legendary">${fmtPct(r.legendary)}</td>
-          <td class="mono t-mythical">${fmtPct(r.mythical)}</td>
+          <td class="mono t-common">${fmtPct(cRate)}</td>
+          <td class="mono t-rare">${fmtPct(rRate)}</td>
+          <td class="mono t-epic">${fmtPct(eRate)}</td>
+          <td class="mono t-legendary">${fmtPct(lRate)}</td>
+          <td class="mono t-mythical">${fmtPct(mRate)}</td>
         </tr>`;
       }).join("");
     }

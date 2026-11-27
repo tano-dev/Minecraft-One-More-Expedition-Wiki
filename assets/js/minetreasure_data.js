@@ -24761,5 +24761,74 @@ const MINE_TREASURE_DATA = {
    "pct": 100.0,
    "icon": "assets/icons/mc/blue_dye.png"
   }
- ]
+ ],
+ "expedition_enchants": [
+  {
+   "id": "expedition:luck_of_the_mine",
+   "name": "Luck of the Mine",
+   "max_level": 5,
+   "weight": 8,
+   "anvil_cost": 2,
+   "desc_vi": "Tăng +12% tỉ lệ đào trúng mọi Rương Kho Báu Mine Treasure (Common, Rare, Epic, Legendary) bằng Cúp mỗi cấp (tối đa +60% ở Lv V).",
+   "desc_en": "Increases all Mine Treasure chest drop rates (Common, Rare, Epic, Legendary) by +12% per level (max +60% at Lv V).",
+   "raw_id": "minecraft:enchanted_book",
+   "icon": "assets/icons/mc/enchanted_book.png"
+  },
+  {
+   "id": "expedition:coals_blessing",
+   "name": "Coal's Blessing",
+   "max_level": 5,
+   "weight": 8,
+   "anvil_cost": 2,
+   "desc_vi": "Tăng +20% tỉ lệ đào trúng Rương Kho Báu Rare (Mine Treasure) bằng Cúp mỗi cấp (tối đa +100% ở Lv V).",
+   "desc_en": "Increases Rare Mine Treasure chest drop rate by +20% per level (max +100% at Lv V).",
+   "raw_id": "minecraft:enchanted_book",
+   "icon": "assets/icons/mc/enchanted_book.png"
+  },
+  {
+   "id": "expedition:lapiss_blessing",
+   "name": "Lapis's Blessing",
+   "max_level": 5,
+   "weight": 4,
+   "anvil_cost": 4,
+   "desc_vi": "Tăng +20% tỉ lệ đào trúng Rương Kho Báu Epic (Mine Treasure) bằng Cúp mỗi cấp (tối đa +100% ở Lv V).",
+   "desc_en": "Increases Epic Mine Treasure chest drop rate by +20% per level (max +100% at Lv V).",
+   "raw_id": "minecraft:enchanted_book",
+   "icon": "assets/icons/mc/enchanted_book.png"
+  },
+  {
+   "id": "expedition:amethysts_blessing",
+   "name": "Amethyst's Blessing",
+   "max_level": 5,
+   "weight": 2,
+   "anvil_cost": 6,
+   "desc_vi": "Tăng +15% tỉ lệ đào trúng Rương Kho Báu Legendary (Mine Treasure) bằng Cúp mỗi cấp (tối đa +75% ở Lv V).",
+   "desc_en": "Increases Legendary Mine Treasure chest drop rate by +15% per level (max +75% at Lv V).",
+   "raw_id": "minecraft:enchanted_book",
+   "icon": "assets/icons/mc/enchanted_book.png"
+  },
+  {
+   "id": "expedition:gleaming_chest",
+   "name": "Gleaming Chest",
+   "max_level": 3,
+   "weight": 4,
+   "anvil_cost": 5,
+   "desc_vi": "Thêm +1 lượt quay vật phẩm cho Rương Kho Báu (Mine Treasure) xuất hiện khi cầm Cúp mỗi cấp (tối đa +3 lượt ở Lv III).",
+   "desc_en": "Adds +1 extra loot roll per level to unearthed Mine Treasure chests (max +3 rolls at Lv III).",
+   "raw_id": "minecraft:enchanted_book",
+   "icon": "assets/icons/mc/enchanted_book.png"
+  },
+  {
+   "id": "expedition:dedicated_miner",
+   "name": "Dedicated Miner",
+   "max_level": 5,
+   "weight": 6,
+   "anvil_cost": 3,
+   "desc_vi": "Đào đá hoặc quặng có 0.25% cơ hội rơi Mine Treasure Charm; cấp cao tăng tỉ lệ ra Charm Rare và Epic (tối đa 45% Rare / 25% Epic ở Lv V).",
+   "desc_en": "Mining stone or ores has a 0.25% chance to drop a Mine Treasure Charm; higher levels increase Rare (up to 45%) & Epic (up to 25%) Charm odds.",
+   "raw_id": "minecraft:enchanted_book",
+   "icon": "assets/icons/mc/enchanted_book.png"
+  }
+ ],
+ "enchant_pool_count": 187
 };
