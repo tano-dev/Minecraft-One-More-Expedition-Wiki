@@ -1894,20 +1894,6 @@ const STRUCTURES_DATA = [
   "has3d": "6c1f2031258e.json"
  },
  {
-  "id": "ati_structures:ancient_temple",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ancient Temple",
-  "name_vi": "Ancient Temple",
-  "has3d": "6c1f2031258e.json"
- },
- {
   "id": "ati_structures:ancient_vessel",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -1920,34 +1906,6 @@ const STRUCTURES_DATA = [
   "name_en": "Ancient Vessel",
   "name_vi": "Ancient Vessel",
   "has3d": "cc9ff1e4819d.json"
- },
- {
-  "id": "ati_structures:ancient_vessel",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ancient Vessel",
-  "name_vi": "Ancient Vessel",
-  "has3d": "cc9ff1e4819d.json"
- },
- {
-  "id": "ati_structures:arachnid_dwelling",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Arachnid Dwelling",
-  "name_vi": "Arachnid Dwelling",
-  "has3d": "284b527e0d4e.json"
  },
  {
   "id": "ati_structures:arachnid_dwelling",
@@ -1978,20 +1936,6 @@ const STRUCTURES_DATA = [
   "has3d": "7e9f35b4e43a.json"
  },
  {
-  "id": "ati_structures:ati_stoneworks",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ati Stoneworks",
-  "name_vi": "Ati Stoneworks",
-  "has3d": "7e9f35b4e43a.json"
- },
- {
   "id": "ati_structures:castillo",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -2004,34 +1948,6 @@ const STRUCTURES_DATA = [
   "name_en": "Castillo",
   "name_vi": "Castillo",
   "has3d": "a7584a3ccf4b.json"
- },
- {
-  "id": "ati_structures:castillo",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Castillo",
-  "name_vi": "Castillo",
-  "has3d": "a7584a3ccf4b.json"
- },
- {
-  "id": "ati_structures:catalonian_castle",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Catalonian Castle",
-  "name_vi": "Catalonian Castle",
-  "has3d": "9e5af64a35e5.json"
  },
  {
   "id": "ati_structures:catalonian_castle",
@@ -2062,20 +1978,6 @@ const STRUCTURES_DATA = [
   "has3d": "340af50f2e0b.json"
  },
  {
-  "id": "ati_structures:dark_keep",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Keep",
-  "name_vi": "Dark Keep",
-  "has3d": "340af50f2e0b.json"
- },
- {
   "id": "ati_structures:dark_tower",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -2088,34 +1990,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dark Tower",
   "name_vi": "Dark Tower",
   "has3d": "72e0d8255ba1.json"
- },
- {
-  "id": "ati_structures:dark_tower",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Tower",
-  "name_vi": "Dark Tower",
-  "has3d": "72e0d8255ba1.json"
- },
- {
-  "id": "ati_structures:deepslate_keep",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Deepslate Keep",
-  "name_vi": "Deepslate Keep",
-  "has3d": "5a9020f6fb14.json"
  },
  {
   "id": "ati_structures:deepslate_keep",
@@ -2146,20 +2020,6 @@ const STRUCTURES_DATA = [
   "has3d": "c53265c48a5d.json"
  },
  {
-  "id": "ati_structures:desert_outpost",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Outpost",
-  "name_vi": "Desert Outpost",
-  "has3d": "c53265c48a5d.json"
- },
- {
   "id": "ati_structures:dojo",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -2172,34 +2032,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dojo",
   "name_vi": "Dojo",
   "has3d": "81f3dccb5d80.json"
- },
- {
-  "id": "ati_structures:dojo",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dojo",
-  "name_vi": "Dojo",
-  "has3d": "81f3dccb5d80.json"
- },
- {
-  "id": "ati_structures:fortified_temple",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Fortified Temple",
-  "name_vi": "Fortified Temple",
-  "has3d": "8fac0e99db46.json"
  },
  {
   "id": "ati_structures:fortified_temple",
@@ -2230,20 +2062,6 @@ const STRUCTURES_DATA = [
   "has3d": "b04da8a0a4f4.json"
  },
  {
-  "id": "ati_structures:gnome_hut",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Gnome Hut",
-  "name_vi": "Gnome Hut",
-  "has3d": "b04da8a0a4f4.json"
- },
- {
   "id": "ati_structures:granite_fort",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -2256,34 +2074,6 @@ const STRUCTURES_DATA = [
   "name_en": "Granite Fort",
   "name_vi": "Granite Fort",
   "has3d": "74a6c86e6e9e.json"
- },
- {
-  "id": "ati_structures:granite_fort",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Granite Fort",
-  "name_vi": "Granite Fort",
-  "has3d": "74a6c86e6e9e.json"
- },
- {
-  "id": "ati_structures:haunted_ruin",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Haunted Ruin",
-  "name_vi": "Haunted Ruin",
-  "has3d": "d223ed09da81.json"
  },
  {
   "id": "ati_structures:haunted_ruin",
@@ -2314,20 +2104,6 @@ const STRUCTURES_DATA = [
   "has3d": "56f25b6ff27f.json"
  },
  {
-  "id": "ati_structures:herobrine_stronghold",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Herobrine Stronghold",
-  "name_vi": "Herobrine Stronghold",
-  "has3d": "56f25b6ff27f.json"
- },
- {
   "id": "ati_structures:ice_tribe",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -2340,34 +2116,6 @@ const STRUCTURES_DATA = [
   "name_en": "Ice Tribe",
   "name_vi": "Ice Tribe",
   "has3d": "360edc40dc0d.json"
- },
- {
-  "id": "ati_structures:ice_tribe",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ice Tribe",
-  "name_vi": "Ice Tribe",
-  "has3d": "360edc40dc0d.json"
- },
- {
-  "id": "ati_structures:illager_homestead",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Illager Homestead",
-  "name_vi": "Illager Homestead",
-  "has3d": "e557b3ac1d74.json"
  },
  {
   "id": "ati_structures:illager_homestead",
@@ -2398,20 +2146,6 @@ const STRUCTURES_DATA = [
   "has3d": "6226c41c5132.json"
  },
  {
-  "id": "ati_structures:illager_tower",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Illager Tower",
-  "name_vi": "Illager Tower",
-  "has3d": "6226c41c5132.json"
- },
- {
   "id": "ati_structures:jungle_grotto",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -2424,34 +2158,6 @@ const STRUCTURES_DATA = [
   "name_en": "Jungle Grotto",
   "name_vi": "Jungle Grotto",
   "has3d": "2af52b566456.json"
- },
- {
-  "id": "ati_structures:jungle_grotto",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Grotto",
-  "name_vi": "Jungle Grotto",
-  "has3d": "2af52b566456.json"
- },
- {
-  "id": "ati_structures:jungle_settlement",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Settlement",
-  "name_vi": "Jungle Settlement",
-  "has3d": "6001aef3b043.json"
  },
  {
   "id": "ati_structures:jungle_settlement",
@@ -2482,20 +2188,6 @@ const STRUCTURES_DATA = [
   "has3d": "a5cd4cba7fb4.json"
  },
  {
-  "id": "ati_structures:lighthouse",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Lighthouse",
-  "name_vi": "Lighthouse",
-  "has3d": "a5cd4cba7fb4.json"
- },
- {
   "id": "ati_structures:manor",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -2508,34 +2200,6 @@ const STRUCTURES_DATA = [
   "name_en": "Manor",
   "name_vi": "Manor",
   "has3d": "603a6f784b2c.json"
- },
- {
-  "id": "ati_structures:manor",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Manor",
-  "name_vi": "Manor",
-  "has3d": "603a6f784b2c.json"
- },
- {
-  "id": "ati_structures:marble_chateau",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Marble Chateau",
-  "name_vi": "Marble Chateau",
-  "has3d": "3239d039fb4c.json"
  },
  {
   "id": "ati_structures:marble_chateau",
@@ -2566,20 +2230,6 @@ const STRUCTURES_DATA = [
   "has3d": "1fedfd84d44b.json"
  },
  {
-  "id": "ati_structures:monastery_tower",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Monastery Tower",
-  "name_vi": "Monastery Tower",
-  "has3d": "1fedfd84d44b.json"
- },
- {
   "id": "ati_structures:mosque",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -2592,34 +2242,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mosque",
   "name_vi": "Mosque",
   "has3d": "0ee37794cdc3.json"
- },
- {
-  "id": "ati_structures:mosque",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mosque",
-  "name_vi": "Mosque",
-  "has3d": "0ee37794cdc3.json"
- },
- {
-  "id": "ati_structures:mud_tower",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mud Tower",
-  "name_vi": "Mud Tower",
-  "has3d": "6a4d95fef0f7.json"
  },
  {
   "id": "ati_structures:mud_tower",
@@ -2650,20 +2272,6 @@ const STRUCTURES_DATA = [
   "has3d": "3dbb75694971.json"
  },
  {
-  "id": "ati_structures:nomadic_camp",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nomadic Camp",
-  "name_vi": "Nomadic Camp",
-  "has3d": "3dbb75694971.json"
- },
- {
   "id": "ati_structures:old_fort",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -2676,34 +2284,6 @@ const STRUCTURES_DATA = [
   "name_en": "Old Fort",
   "name_vi": "Old Fort",
   "has3d": "a8db34cc3d5e.json"
- },
- {
-  "id": "ati_structures:old_fort",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Old Fort",
-  "name_vi": "Old Fort",
-  "has3d": "a8db34cc3d5e.json"
- },
- {
-  "id": "ati_structures:old_home",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Old Home",
-  "name_vi": "Old Home",
-  "has3d": "46e97b912336.json"
  },
  {
   "id": "ati_structures:old_home",
@@ -2734,20 +2314,6 @@ const STRUCTURES_DATA = [
   "has3d": "1c27bc956438.json"
  },
  {
-  "id": "ati_structures:old_residence",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Old Residence",
-  "name_vi": "Old Residence",
-  "has3d": "1c27bc956438.json"
- },
- {
   "id": "ati_structures:overgrown_outpost",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -2760,34 +2326,6 @@ const STRUCTURES_DATA = [
   "name_en": "Overgrown Outpost",
   "name_vi": "Overgrown Outpost",
   "has3d": "d62522c317f3.json"
- },
- {
-  "id": "ati_structures:overgrown_outpost",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Overgrown Outpost",
-  "name_vi": "Overgrown Outpost",
-  "has3d": "d62522c317f3.json"
- },
- {
-  "id": "ati_structures:pufferfish_cave",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Pufferfish Cave",
-  "name_vi": "Pufferfish Cave",
-  "has3d": "709a672d1274.json"
  },
  {
   "id": "ati_structures:pufferfish_cave",
@@ -2818,20 +2356,6 @@ const STRUCTURES_DATA = [
   "has3d": "38a79837ce12.json"
  },
  {
-  "id": "ati_structures:quarry",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Quarry",
-  "name_vi": "Quarry",
-  "has3d": "38a79837ce12.json"
- },
- {
   "id": "ati_structures:rotten_log",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -2844,34 +2368,6 @@ const STRUCTURES_DATA = [
   "name_en": "Rotten Log",
   "name_vi": "Rotten Log",
   "has3d": "5cb9122729e9.json"
- },
- {
-  "id": "ati_structures:rotten_log",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rotten Log",
-  "name_vi": "Rotten Log",
-  "has3d": "5cb9122729e9.json"
- },
- {
-  "id": "ati_structures:rotting_temple",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rotting Temple",
-  "name_vi": "Rotting Temple",
-  "has3d": "a6c54608af9f.json"
  },
  {
   "id": "ati_structures:rotting_temple",
@@ -2902,20 +2398,6 @@ const STRUCTURES_DATA = [
   "has3d": "74d5d1e37b18.json"
  },
  {
-  "id": "ati_structures:rotting_temple_underground",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Rotting Temple Underground",
-  "name_vi": "Rotting Temple Underground",
-  "has3d": "74d5d1e37b18.json"
- },
- {
   "id": "ati_structures:ruined_castle",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -2928,34 +2410,6 @@ const STRUCTURES_DATA = [
   "name_en": "Ruined Castle",
   "name_vi": "Ruined Castle",
   "has3d": "65bc6397eaad.json"
- },
- {
-  "id": "ati_structures:ruined_castle",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruined Castle",
-  "name_vi": "Ruined Castle",
-  "has3d": "65bc6397eaad.json"
- },
- {
-  "id": "ati_structures:sculk_deposit",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Sculk Deposit",
-  "name_vi": "Sculk Deposit",
-  "has3d": "f037cab05a59.json"
  },
  {
   "id": "ati_structures:sculk_deposit",
@@ -2986,20 +2440,6 @@ const STRUCTURES_DATA = [
   "has3d": "334678f036c9.json"
  },
  {
-  "id": "ati_structures:silverfish_nest",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Silverfish Nest",
-  "name_vi": "Silverfish Nest",
-  "has3d": "334678f036c9.json"
- },
- {
   "id": "ati_structures:sinking_temple",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -3012,34 +2452,6 @@ const STRUCTURES_DATA = [
   "name_en": "Sinking Temple",
   "name_vi": "Sinking Temple",
   "has3d": "a8a4ca396d95.json"
- },
- {
-  "id": "ati_structures:sinking_temple",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sinking Temple",
-  "name_vi": "Sinking Temple",
-  "has3d": "a8a4ca396d95.json"
- },
- {
-  "id": "ati_structures:small_keep",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Keep",
-  "name_vi": "Small Keep",
-  "has3d": "57eb9ebee8c3.json"
  },
  {
   "id": "ati_structures:small_keep",
@@ -3070,20 +2482,6 @@ const STRUCTURES_DATA = [
   "has3d": "2b938fd58d2d.json"
  },
  {
-  "id": "ati_structures:spider_nest",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Spider Nest",
-  "name_vi": "Spider Nest",
-  "has3d": "2b938fd58d2d.json"
- },
- {
   "id": "ati_structures:steam_house",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -3096,34 +2494,6 @@ const STRUCTURES_DATA = [
   "name_en": "Steam House",
   "name_vi": "Steam House",
   "has3d": "3405c830d5bc.json"
- },
- {
-  "id": "ati_structures:steam_house",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Steam House",
-  "name_vi": "Steam House",
-  "has3d": "3405c830d5bc.json"
- },
- {
-  "id": "ati_structures:storage_house",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Storage House",
-  "name_vi": "Storage House",
-  "has3d": "1221ced3177d.json"
  },
  {
   "id": "ati_structures:storage_house",
@@ -3154,20 +2524,6 @@ const STRUCTURES_DATA = [
   "has3d": "a8fbfca25299.json"
  },
  {
-  "id": "ati_structures:storage_shack",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Storage Shack",
-  "name_vi": "Storage Shack",
-  "has3d": "a8fbfca25299.json"
- },
- {
   "id": "ati_structures:stray_ruins",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -3180,34 +2536,6 @@ const STRUCTURES_DATA = [
   "name_en": "Stray Ruins",
   "name_vi": "Stray Ruins",
   "has3d": "76eb9dc250d3.json"
- },
- {
-  "id": "ati_structures:stray_ruins",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stray Ruins",
-  "name_vi": "Stray Ruins",
-  "has3d": "76eb9dc250d3.json"
- },
- {
-  "id": "ati_structures:tavern",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Tavern",
-  "name_vi": "Tavern",
-  "has3d": "e55959f5e27a.json"
  },
  {
   "id": "ati_structures:tavern",
@@ -3238,20 +2566,6 @@ const STRUCTURES_DATA = [
   "has3d": "fd263f85b45d.json"
  },
  {
-  "id": "ati_structures:underground_monument",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Underground Monument",
-  "name_vi": "Underground Monument",
-  "has3d": "fd263f85b45d.json"
- },
- {
   "id": "ati_structures:underwater_dungeon",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -3264,34 +2578,6 @@ const STRUCTURES_DATA = [
   "name_en": "Underwater Dungeon",
   "name_vi": "Underwater Dungeon",
   "has3d": "f1e6a79707d7.json"
- },
- {
-  "id": "ati_structures:underwater_dungeon",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Underwater Dungeon",
-  "name_vi": "Underwater Dungeon",
-  "has3d": "f1e6a79707d7.json"
- },
- {
-  "id": "ati_structures:villager_inn",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Villager Inn",
-  "name_vi": "Villager Inn",
-  "has3d": "f98d46371143.json"
  },
  {
   "id": "ati_structures:villager_inn",
@@ -3322,20 +2608,6 @@ const STRUCTURES_DATA = [
   "has3d": "427edae5f954.json"
  },
  {
-  "id": "ati_structures:warden_monument",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Warden Monument",
-  "name_vi": "Warden Monument",
-  "has3d": "427edae5f954.json"
- },
- {
   "id": "ati_structures:wither_cavern",
   "pack": "ATi Structures",
   "dim": "overworld",
@@ -3348,34 +2620,6 @@ const STRUCTURES_DATA = [
   "name_en": "Wither Cavern",
   "name_vi": "Wither Cavern",
   "has3d": "3acd33f66469.json"
- },
- {
-  "id": "ati_structures:wither_cavern",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Wither Cavern",
-  "name_vi": "Wither Cavern",
-  "has3d": "3acd33f66469.json"
- },
- {
-  "id": "ati_structures:wither_keep",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wither Keep",
-  "name_vi": "Wither Keep",
-  "has3d": "eee3c8290c63.json"
  },
  {
   "id": "ati_structures:wither_keep",
@@ -3406,20 +2650,6 @@ const STRUCTURES_DATA = [
   "has3d": "876908912d87.json"
  },
  {
-  "id": "ati_structures:woodland_keep",
-  "pack": "ATi Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Woodland Keep",
-  "name_vi": "Woodland Keep",
-  "has3d": "876908912d87.json"
- },
- {
   "id": "adorabuild_structures:acacia_house_medium_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -3432,34 +2662,6 @@ const STRUCTURES_DATA = [
   "name_en": "Acacia House Medium 1",
   "name_vi": "Acacia House Medium 1",
   "has3d": "6fc5dba73af1.json"
- },
- {
-  "id": "adorabuild_structures:acacia_house_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Acacia House Medium 1",
-  "name_vi": "Acacia House Medium 1",
-  "has3d": "6fc5dba73af1.json"
- },
- {
-  "id": "adorabuild_structures:acacia_house_medium_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Acacia House Medium 2",
-  "name_vi": "Acacia House Medium 2",
-  "has3d": "925d69fc1e46.json"
  },
  {
   "id": "adorabuild_structures:acacia_house_medium_2",
@@ -3490,20 +2692,6 @@ const STRUCTURES_DATA = [
   "has3d": "89e80ede9c96.json"
  },
  {
-  "id": "adorabuild_structures:acacia_house_medium_3",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Acacia House Medium 3",
-  "name_vi": "Acacia House Medium 3",
-  "has3d": "89e80ede9c96.json"
- },
- {
   "id": "adorabuild_structures:acacia_house_small_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -3516,34 +2704,6 @@ const STRUCTURES_DATA = [
   "name_en": "Acacia House Small 1",
   "name_vi": "Acacia House Small 1",
   "has3d": "1d667b0469d8.json"
- },
- {
-  "id": "adorabuild_structures:acacia_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Acacia House Small 1",
-  "name_vi": "Acacia House Small 1",
-  "has3d": "1d667b0469d8.json"
- },
- {
-  "id": "adorabuild_structures:acacia_house_small_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Acacia House Small 2",
-  "name_vi": "Acacia House Small 2",
-  "has3d": "d6a1feea5d44.json"
  },
  {
   "id": "adorabuild_structures:acacia_house_small_2",
@@ -3574,20 +2734,6 @@ const STRUCTURES_DATA = [
   "has3d": "047e815d0172.json"
  },
  {
-  "id": "adorabuild_structures:acacia_well_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Acacia Well 1",
-  "name_vi": "Acacia Well 1",
-  "has3d": "047e815d0172.json"
- },
- {
   "id": "adorabuild_structures:ancient_palace_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -3600,34 +2746,6 @@ const STRUCTURES_DATA = [
   "name_en": "Ancient Palace 1",
   "name_vi": "Ancient Palace 1",
   "has3d": "867b7426bf13.json"
- },
- {
-  "id": "adorabuild_structures:ancient_palace_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ancient Palace 1",
-  "name_vi": "Ancient Palace 1",
-  "has3d": "867b7426bf13.json"
- },
- {
-  "id": "adorabuild_structures:ancient_palace_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ancient Palace 2",
-  "name_vi": "Ancient Palace 2",
-  "has3d": "5e118d356b88.json"
  },
  {
   "id": "adorabuild_structures:ancient_palace_2",
@@ -3658,20 +2776,6 @@ const STRUCTURES_DATA = [
   "has3d": "90c944d451b1.json"
  },
  {
-  "id": "adorabuild_structures:ancient_palace_3",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ancient Palace 3",
-  "name_vi": "Ancient Palace 3",
-  "has3d": "90c944d451b1.json"
- },
- {
   "id": "adorabuild_structures:bamboo_campfire_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -3684,34 +2788,6 @@ const STRUCTURES_DATA = [
   "name_en": "Bamboo Campfire 1",
   "name_vi": "Bamboo Campfire 1",
   "has3d": "740eb567cc71.json"
- },
- {
-  "id": "adorabuild_structures:bamboo_campfire_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bamboo Campfire 1",
-  "name_vi": "Bamboo Campfire 1",
-  "has3d": "740eb567cc71.json"
- },
- {
-  "id": "adorabuild_structures:bamboo_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bamboo House Small 1",
-  "name_vi": "Bamboo House Small 1",
-  "has3d": "7763ece25d36.json"
  },
  {
   "id": "adorabuild_structures:bamboo_house_small_1",
@@ -3742,20 +2818,6 @@ const STRUCTURES_DATA = [
   "has3d": "61e59a0b59a4.json"
  },
  {
-  "id": "adorabuild_structures:bamboo_house_small_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bamboo House Small 2",
-  "name_vi": "Bamboo House Small 2",
-  "has3d": "61e59a0b59a4.json"
- },
- {
   "id": "adorabuild_structures:bamboo_raft_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -3768,34 +2830,6 @@ const STRUCTURES_DATA = [
   "name_en": "Bamboo Raft 1",
   "name_vi": "Bamboo Raft 1",
   "has3d": "e011ed9ff57c.json"
- },
- {
-  "id": "adorabuild_structures:bamboo_raft_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bamboo Raft 1",
-  "name_vi": "Bamboo Raft 1",
-  "has3d": "e011ed9ff57c.json"
- },
- {
-  "id": "adorabuild_structures:basalt_chambers_large_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Basalt Deltas",
-  "where_vi": "Đồng bằng Bazan",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Basalt Chambers Large 1",
-  "name_vi": "Basalt Chambers Large 1",
-  "has3d": "87542ed47269.json"
  },
  {
   "id": "adorabuild_structures:basalt_chambers_large_1",
@@ -3826,20 +2860,6 @@ const STRUCTURES_DATA = [
   "has3d": "ad3b25876c7f.json"
  },
  {
-  "id": "adorabuild_structures:birch_beehive_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Beehive 1",
-  "name_vi": "Birch Beehive 1",
-  "has3d": "ad3b25876c7f.json"
- },
- {
   "id": "adorabuild_structures:birch_house_medium_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -3852,34 +2872,6 @@ const STRUCTURES_DATA = [
   "name_en": "Birch House Medium 1",
   "name_vi": "Birch House Medium 1",
   "has3d": "9fbe99edf13d.json"
- },
- {
-  "id": "adorabuild_structures:birch_house_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch House Medium 1",
-  "name_vi": "Birch House Medium 1",
-  "has3d": "9fbe99edf13d.json"
- },
- {
-  "id": "adorabuild_structures:birch_house_medium_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch House Medium 2",
-  "name_vi": "Birch House Medium 2",
-  "has3d": "5fc66ff0f769.json"
  },
  {
   "id": "adorabuild_structures:birch_house_medium_2",
@@ -3910,20 +2902,6 @@ const STRUCTURES_DATA = [
   "has3d": "f9d758e69a8c.json"
  },
  {
-  "id": "adorabuild_structures:birch_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch House Small 1",
-  "name_vi": "Birch House Small 1",
-  "has3d": "f9d758e69a8c.json"
- },
- {
   "id": "adorabuild_structures:birch_house_small_2",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -3936,34 +2914,6 @@ const STRUCTURES_DATA = [
   "name_en": "Birch House Small 2",
   "name_vi": "Birch House Small 2",
   "has3d": "ad6192768b3e.json"
- },
- {
-  "id": "adorabuild_structures:birch_house_small_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch House Small 2",
-  "name_vi": "Birch House Small 2",
-  "has3d": "ad6192768b3e.json"
- },
- {
-  "id": "adorabuild_structures:birch_tree_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Tree 1",
-  "name_vi": "Birch Tree 1",
-  "has3d": "405f312aa7e2.json"
  },
  {
   "id": "adorabuild_structures:birch_tree_1",
@@ -3994,20 +2944,6 @@ const STRUCTURES_DATA = [
   "has3d": "0c499ae3b568.json"
  },
  {
-  "id": "adorabuild_structures:blackstone_bastion_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Blackstone Bastion Medium 1",
-  "name_vi": "Blackstone Bastion Medium 1",
-  "has3d": "0c499ae3b568.json"
- },
- {
   "id": "adorabuild_structures:blackstone_bastion_medium_2",
   "pack": "AdoraBuild",
   "dim": "nether",
@@ -4020,34 +2956,6 @@ const STRUCTURES_DATA = [
   "name_en": "Blackstone Bastion Medium 2",
   "name_vi": "Blackstone Bastion Medium 2",
   "has3d": "2d4cc3b0fd70.json"
- },
- {
-  "id": "adorabuild_structures:blackstone_bastion_medium_2",
-  "pack": "AdoraBuild",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Blackstone Bastion Medium 2",
-  "name_vi": "Blackstone Bastion Medium 2",
-  "has3d": "2d4cc3b0fd70.json"
- },
- {
-  "id": "adorabuild_structures:blackstone_bastion_medium_3",
-  "pack": "AdoraBuild",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Blackstone Bastion Medium 3",
-  "name_vi": "Blackstone Bastion Medium 3",
-  "has3d": "20f2f66a828b.json"
  },
  {
   "id": "adorabuild_structures:blackstone_bastion_medium_3",
@@ -4078,20 +2986,6 @@ const STRUCTURES_DATA = [
   "has3d": "46e542c9dda9.json"
  },
  {
-  "id": "adorabuild_structures:blackstone_bastion_small_1",
-  "pack": "AdoraBuild",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Blackstone Bastion Small 1",
-  "name_vi": "Blackstone Bastion Small 1",
-  "has3d": "46e542c9dda9.json"
- },
- {
   "id": "adorabuild_structures:blackstone_temple_small_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -4104,34 +2998,6 @@ const STRUCTURES_DATA = [
   "name_en": "Blackstone Temple Small 1",
   "name_vi": "Blackstone Temple Small 1",
   "has3d": "f69986c6ce6b.json"
- },
- {
-  "id": "adorabuild_structures:blackstone_temple_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Blackstone Temple Small 1",
-  "name_vi": "Blackstone Temple Small 1",
-  "has3d": "f69986c6ce6b.json"
- },
- {
-  "id": "adorabuild_structures:cherry_house_large_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cherry House Large 1",
-  "name_vi": "Cherry House Large 1",
-  "has3d": "583e10a4fc10.json"
  },
  {
   "id": "adorabuild_structures:cherry_house_large_1",
@@ -4162,20 +3028,6 @@ const STRUCTURES_DATA = [
   "has3d": "395ec250411f.json"
  },
  {
-  "id": "adorabuild_structures:cherry_house_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cherry House Medium 1",
-  "name_vi": "Cherry House Medium 1",
-  "has3d": "395ec250411f.json"
- },
- {
   "id": "adorabuild_structures:cherry_house_medium_2",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -4188,34 +3040,6 @@ const STRUCTURES_DATA = [
   "name_en": "Cherry House Medium 2",
   "name_vi": "Cherry House Medium 2",
   "has3d": "7dd18eb27b2f.json"
- },
- {
-  "id": "adorabuild_structures:cherry_house_medium_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cherry House Medium 2",
-  "name_vi": "Cherry House Medium 2",
-  "has3d": "7dd18eb27b2f.json"
- },
- {
-  "id": "adorabuild_structures:cherry_raft_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cherry Raft 1",
-  "name_vi": "Cherry Raft 1",
-  "has3d": "a887795ade89.json"
  },
  {
   "id": "adorabuild_structures:cherry_raft_1",
@@ -4246,20 +3070,6 @@ const STRUCTURES_DATA = [
   "has3d": "abdc35b2274f.json"
  },
  {
-  "id": "adorabuild_structures:cherry_tree_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cherry Tree 1",
-  "name_vi": "Cherry Tree 1",
-  "has3d": "abdc35b2274f.json"
- },
- {
   "id": "adorabuild_structures:crimson_house_medium_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -4272,34 +3082,6 @@ const STRUCTURES_DATA = [
   "name_en": "Crimson House Medium 1",
   "name_vi": "Crimson House Medium 1",
   "has3d": "33f1525c90bc.json"
- },
- {
-  "id": "adorabuild_structures:crimson_house_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Crimson Forest",
-  "where_vi": "Rừng Đỏ Thẫm (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Crimson House Medium 1",
-  "name_vi": "Crimson House Medium 1",
-  "has3d": "33f1525c90bc.json"
- },
- {
-  "id": "adorabuild_structures:crimson_house_medium_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Crimson Forest",
-  "where_vi": "Rừng Đỏ Thẫm (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Crimson House Medium 2",
-  "name_vi": "Crimson House Medium 2",
-  "has3d": "97dd14c1475c.json"
  },
  {
   "id": "adorabuild_structures:crimson_house_medium_2",
@@ -4330,20 +3112,6 @@ const STRUCTURES_DATA = [
   "has3d": "06c7177479f6.json"
  },
  {
-  "id": "adorabuild_structures:dark_oak_house_large_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Oak House Large 1",
-  "name_vi": "Dark Oak House Large 1",
-  "has3d": "06c7177479f6.json"
- },
- {
   "id": "adorabuild_structures:dark_oak_house_small_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -4356,34 +3124,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dark Oak House Small 1",
   "name_vi": "Dark Oak House Small 1",
   "has3d": "711db6086973.json"
- },
- {
-  "id": "adorabuild_structures:dark_oak_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Oak House Small 1",
-  "name_vi": "Dark Oak House Small 1",
-  "has3d": "711db6086973.json"
- },
- {
-  "id": "adorabuild_structures:dark_oak_mansion_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.0x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Oak Mansion Medium 1",
-  "name_vi": "Dark Oak Mansion Medium 1",
-  "has3d": "879d6bb00a8c.json"
  },
  {
   "id": "adorabuild_structures:dark_oak_mansion_medium_1",
@@ -4414,20 +3154,6 @@ const STRUCTURES_DATA = [
   "has3d": "0cbc7c4edb4d.json"
  },
  {
-  "id": "adorabuild_structures:dark_oak_ship_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Oak Ship 1",
-  "name_vi": "Dark Oak Ship 1",
-  "has3d": "0cbc7c4edb4d.json"
- },
- {
   "id": "adorabuild_structures:end_bubble_large_1",
   "pack": "AdoraBuild",
   "dim": "end",
@@ -4440,34 +3166,6 @@ const STRUCTURES_DATA = [
   "name_en": "End Bubble Large 1",
   "name_vi": "End Bubble Large 1",
   "has3d": "2614c0b5b042.json"
- },
- {
-  "id": "adorabuild_structures:end_bubble_large_1",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End Bubble Large 1",
-  "name_vi": "End Bubble Large 1",
-  "has3d": "2614c0b5b042.json"
- },
- {
-  "id": "adorabuild_structures:end_bubble_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End Bubble Medium 1",
-  "name_vi": "End Bubble Medium 1",
-  "has3d": "5e15e2e2545f.json"
  },
  {
   "id": "adorabuild_structures:end_bubble_medium_1",
@@ -4498,20 +3196,6 @@ const STRUCTURES_DATA = [
   "has3d": "a0a668cc65a9.json"
  },
  {
-  "id": "adorabuild_structures:end_bubble_medium_2",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End Bubble Medium 2",
-  "name_vi": "End Bubble Medium 2",
-  "has3d": "a0a668cc65a9.json"
- },
- {
   "id": "adorabuild_structures:end_gateway_large_1",
   "pack": "AdoraBuild",
   "dim": "end",
@@ -4524,34 +3208,6 @@ const STRUCTURES_DATA = [
   "name_en": "End Gateway Large 1",
   "name_vi": "End Gateway Large 1",
   "has3d": "cd49e43d1eb5.json"
- },
- {
-  "id": "adorabuild_structures:end_gateway_large_1",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End Gateway Large 1",
-  "name_vi": "End Gateway Large 1",
-  "has3d": "cd49e43d1eb5.json"
- },
- {
-  "id": "adorabuild_structures:end_gateway_small_1",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End Gateway Small 1",
-  "name_vi": "End Gateway Small 1",
-  "has3d": "1682a23fbed0.json"
  },
  {
   "id": "adorabuild_structures:end_gateway_small_1",
@@ -4582,20 +3238,6 @@ const STRUCTURES_DATA = [
   "has3d": "0c641063c4f5.json"
  },
  {
-  "id": "adorabuild_structures:end_house_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End House Medium 1",
-  "name_vi": "End House Medium 1",
-  "has3d": "0c641063c4f5.json"
- },
- {
   "id": "adorabuild_structures:end_house_medium_2",
   "pack": "AdoraBuild",
   "dim": "end",
@@ -4608,34 +3250,6 @@ const STRUCTURES_DATA = [
   "name_en": "End House Medium 2",
   "name_vi": "End House Medium 2",
   "has3d": "e4fa71f20d90.json"
- },
- {
-  "id": "adorabuild_structures:end_house_medium_2",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End House Medium 2",
-  "name_vi": "End House Medium 2",
-  "has3d": "e4fa71f20d90.json"
- },
- {
-  "id": "adorabuild_structures:end_house_medium_3",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End House Medium 3",
-  "name_vi": "End House Medium 3",
-  "has3d": "b82234b724dc.json"
  },
  {
   "id": "adorabuild_structures:end_house_medium_3",
@@ -4666,20 +3280,6 @@ const STRUCTURES_DATA = [
   "has3d": "897ff980c211.json"
  },
  {
-  "id": "adorabuild_structures:end_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End House Small 1",
-  "name_vi": "End House Small 1",
-  "has3d": "897ff980c211.json"
- },
- {
   "id": "adorabuild_structures:end_house_small_2",
   "pack": "AdoraBuild",
   "dim": "end",
@@ -4692,34 +3292,6 @@ const STRUCTURES_DATA = [
   "name_en": "End House Small 2",
   "name_vi": "End House Small 2",
   "has3d": "4cfdb31f4939.json"
- },
- {
-  "id": "adorabuild_structures:end_house_small_2",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End House Small 2",
-  "name_vi": "End House Small 2",
-  "has3d": "4cfdb31f4939.json"
- },
- {
-  "id": "adorabuild_structures:end_ship_small_1",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End Ship Small 1",
-  "name_vi": "End Ship Small 1",
-  "has3d": "cf4fdf05d697.json"
  },
  {
   "id": "adorabuild_structures:end_ship_small_1",
@@ -4750,20 +3322,6 @@ const STRUCTURES_DATA = [
   "has3d": "406f8aee30e7.json"
  },
  {
-  "id": "adorabuild_structures:end_temple_large_1",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End Temple Large 1",
-  "name_vi": "End Temple Large 1",
-  "has3d": "406f8aee30e7.json"
- },
- {
   "id": "adorabuild_structures:end_temple_small_1",
   "pack": "AdoraBuild",
   "dim": "end",
@@ -4776,34 +3334,6 @@ const STRUCTURES_DATA = [
   "name_en": "End Temple Small 1",
   "name_vi": "End Temple Small 1",
   "has3d": "6288da3347ce.json"
- },
- {
-  "id": "adorabuild_structures:end_temple_small_1",
-  "pack": "AdoraBuild",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End Temple Small 1",
-  "name_vi": "End Temple Small 1",
-  "has3d": "6288da3347ce.json"
- },
- {
-  "id": "adorabuild_structures:frozen_house_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Frozen House Medium 1",
-  "name_vi": "Frozen House Medium 1",
-  "has3d": "e5a735949608.json"
  },
  {
   "id": "adorabuild_structures:frozen_house_medium_1",
@@ -4834,20 +3364,6 @@ const STRUCTURES_DATA = [
   "has3d": "335e9a5b19f1.json"
  },
  {
-  "id": "adorabuild_structures:frozen_hut_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Frozen Hut 1",
-  "name_vi": "Frozen Hut 1",
-  "has3d": "335e9a5b19f1.json"
- },
- {
   "id": "adorabuild_structures:frozen_hut_2",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -4860,34 +3376,6 @@ const STRUCTURES_DATA = [
   "name_en": "Frozen Hut 2",
   "name_vi": "Frozen Hut 2",
   "has3d": "57f136c98b25.json"
- },
- {
-  "id": "adorabuild_structures:frozen_hut_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Frozen Hut 2",
-  "name_vi": "Frozen Hut 2",
-  "has3d": "57f136c98b25.json"
- },
- {
-  "id": "adorabuild_structures:jungle_boat_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Boat 1",
-  "name_vi": "Jungle Boat 1",
-  "has3d": "a3745746fcee.json"
  },
  {
   "id": "adorabuild_structures:jungle_boat_1",
@@ -4918,20 +3406,6 @@ const STRUCTURES_DATA = [
   "has3d": "d4e4e9c2e891.json"
  },
  {
-  "id": "adorabuild_structures:jungle_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle House Small 1",
-  "name_vi": "Jungle House Small 1",
-  "has3d": "d4e4e9c2e891.json"
- },
- {
   "id": "adorabuild_structures:jungle_tree_house_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -4944,34 +3418,6 @@ const STRUCTURES_DATA = [
   "name_en": "Jungle Tree House 1",
   "name_vi": "Jungle Tree House 1",
   "has3d": "f775a76c8464.json"
- },
- {
-  "id": "adorabuild_structures:jungle_tree_house_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Tree House 1",
-  "name_vi": "Jungle Tree House 1",
-  "has3d": "f775a76c8464.json"
- },
- {
-  "id": "adorabuild_structures:library_large_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Library Large 1",
-  "name_vi": "Library Large 1",
-  "has3d": "8773aff16e37.json"
  },
  {
   "id": "adorabuild_structures:library_large_1",
@@ -5002,20 +3448,6 @@ const STRUCTURES_DATA = [
   "has3d": "4fb14ac8112a.json"
  },
  {
-  "id": "adorabuild_structures:library_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Library Small 1",
-  "name_vi": "Library Small 1",
-  "has3d": "4fb14ac8112a.json"
- },
- {
   "id": "adorabuild_structures:mangrove_house_small_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -5028,34 +3460,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mangrove House Small 1",
   "name_vi": "Mangrove House Small 1",
   "has3d": "64060a89dc99.json"
- },
- {
-  "id": "adorabuild_structures:mangrove_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mangrove House Small 1",
-  "name_vi": "Mangrove House Small 1",
-  "has3d": "64060a89dc99.json"
- },
- {
-  "id": "adorabuild_structures:mangrove_ship_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mangrove Ship 1",
-  "name_vi": "Mangrove Ship 1",
-  "has3d": "800a06dc1815.json"
  },
  {
   "id": "adorabuild_structures:mangrove_ship_1",
@@ -5086,20 +3490,6 @@ const STRUCTURES_DATA = [
   "has3d": "e5d19e3b76e5.json"
  },
  {
-  "id": "adorabuild_structures:mangrove_tree_house_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mangrove Tree House 1",
-  "name_vi": "Mangrove Tree House 1",
-  "has3d": "e5d19e3b76e5.json"
- },
- {
   "id": "adorabuild_structures:mangrove_tree_house_2",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -5112,34 +3502,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mangrove Tree House 2",
   "name_vi": "Mangrove Tree House 2",
   "has3d": "2de9a3d2780a.json"
- },
- {
-  "id": "adorabuild_structures:mangrove_tree_house_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mangrove Tree House 2",
-  "name_vi": "Mangrove Tree House 2",
-  "has3d": "2de9a3d2780a.json"
- },
- {
-  "id": "adorabuild_structures:mountain_mine_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mountain Mine 1",
-  "name_vi": "Mountain Mine 1",
-  "has3d": "b9a31b0c4545.json"
  },
  {
   "id": "adorabuild_structures:mountain_mine_1",
@@ -5170,20 +3532,6 @@ const STRUCTURES_DATA = [
   "has3d": "336d7692aac0.json"
  },
  {
-  "id": "adorabuild_structures:mountain_mine_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mountain Mine 2",
-  "name_vi": "Mountain Mine 2",
-  "has3d": "336d7692aac0.json"
- },
- {
   "id": "adorabuild_structures:mushroom_large_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -5196,34 +3544,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mushroom Large 1",
   "name_vi": "Mushroom Large 1",
   "has3d": "c74e990dae5f.json"
- },
- {
-  "id": "adorabuild_structures:mushroom_large_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mushroom Large 1",
-  "name_vi": "Mushroom Large 1",
-  "has3d": "c74e990dae5f.json"
- },
- {
-  "id": "adorabuild_structures:nether_fortress_large_1",
-  "pack": "AdoraBuild",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nether Fortress Large 1",
-  "name_vi": "Nether Fortress Large 1",
-  "has3d": "5dc910711d71.json"
  },
  {
   "id": "adorabuild_structures:nether_fortress_large_1",
@@ -5254,20 +3574,6 @@ const STRUCTURES_DATA = [
   "has3d": "262e58718ea4.json"
  },
  {
-  "id": "adorabuild_structures:nether_fortress_large_2",
-  "pack": "AdoraBuild",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nether Fortress Large 2",
-  "name_vi": "Nether Fortress Large 2",
-  "has3d": "262e58718ea4.json"
- },
- {
   "id": "adorabuild_structures:nether_fortress_medium_1",
   "pack": "AdoraBuild",
   "dim": "nether",
@@ -5280,34 +3586,6 @@ const STRUCTURES_DATA = [
   "name_en": "Nether Fortress Medium 1",
   "name_vi": "Nether Fortress Medium 1",
   "has3d": "f568863a1c7e.json"
- },
- {
-  "id": "adorabuild_structures:nether_fortress_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nether Fortress Medium 1",
-  "name_vi": "Nether Fortress Medium 1",
-  "has3d": "f568863a1c7e.json"
- },
- {
-  "id": "adorabuild_structures:nether_fossil_1",
-  "pack": "AdoraBuild",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nether Fossil 1",
-  "name_vi": "Nether Fossil 1",
-  "has3d": "31b60bcd1a49.json"
  },
  {
   "id": "adorabuild_structures:nether_fossil_1",
@@ -5338,20 +3616,6 @@ const STRUCTURES_DATA = [
   "has3d": "29d1da5ffd3e.json"
  },
  {
-  "id": "adorabuild_structures:nether_portal_small_1",
-  "pack": "AdoraBuild",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nether Portal Small 1",
-  "name_vi": "Nether Portal Small 1",
-  "has3d": "29d1da5ffd3e.json"
- },
- {
   "id": "adorabuild_structures:nether_temple_medium_1",
   "pack": "AdoraBuild",
   "dim": "nether",
@@ -5364,34 +3628,6 @@ const STRUCTURES_DATA = [
   "name_en": "Nether Temple Medium 1",
   "name_vi": "Nether Temple Medium 1",
   "has3d": "1b1310a09cae.json"
- },
- {
-  "id": "adorabuild_structures:nether_temple_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nether Temple Medium 1",
-  "name_vi": "Nether Temple Medium 1",
-  "has3d": "1b1310a09cae.json"
- },
- {
-  "id": "adorabuild_structures:oak_house_large_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak House Large 1",
-  "name_vi": "Oak House Large 1",
-  "has3d": "f31156dbf40a.json"
  },
  {
   "id": "adorabuild_structures:oak_house_large_1",
@@ -5422,20 +3658,6 @@ const STRUCTURES_DATA = [
   "has3d": "2b0a6a247812.json"
  },
  {
-  "id": "adorabuild_structures:oak_house_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak House Medium 1",
-  "name_vi": "Oak House Medium 1",
-  "has3d": "2b0a6a247812.json"
- },
- {
   "id": "adorabuild_structures:oak_house_medium_2",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -5448,34 +3670,6 @@ const STRUCTURES_DATA = [
   "name_en": "Oak House Medium 2",
   "name_vi": "Oak House Medium 2",
   "has3d": "325e1513964c.json"
- },
- {
-  "id": "adorabuild_structures:oak_house_medium_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak House Medium 2",
-  "name_vi": "Oak House Medium 2",
-  "has3d": "325e1513964c.json"
- },
- {
-  "id": "adorabuild_structures:oak_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak House Small 1",
-  "name_vi": "Oak House Small 1",
-  "has3d": "92256ff7bb58.json"
  },
  {
   "id": "adorabuild_structures:oak_house_small_1",
@@ -5506,20 +3700,6 @@ const STRUCTURES_DATA = [
   "has3d": "8fbf7a159d3b.json"
  },
  {
-  "id": "adorabuild_structures:oak_house_small_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak House Small 2",
-  "name_vi": "Oak House Small 2",
-  "has3d": "8fbf7a159d3b.json"
- },
- {
   "id": "adorabuild_structures:oak_house_small_3",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -5532,34 +3712,6 @@ const STRUCTURES_DATA = [
   "name_en": "Oak House Small 3",
   "name_vi": "Oak House Small 3",
   "has3d": "3f6cfea4e18f.json"
- },
- {
-  "id": "adorabuild_structures:oak_house_small_3",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak House Small 3",
-  "name_vi": "Oak House Small 3",
-  "has3d": "3f6cfea4e18f.json"
- },
- {
-  "id": "adorabuild_structures:oak_hut_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak Hut 1",
-  "name_vi": "Oak Hut 1",
-  "has3d": "97d594fd5db8.json"
  },
  {
   "id": "adorabuild_structures:oak_hut_1",
@@ -5590,20 +3742,6 @@ const STRUCTURES_DATA = [
   "has3d": "5645703e9c99.json"
  },
  {
-  "id": "adorabuild_structures:oak_ship_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak Ship 1",
-  "name_vi": "Oak Ship 1",
-  "has3d": "5645703e9c99.json"
- },
- {
   "id": "adorabuild_structures:oak_tree_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -5616,34 +3754,6 @@ const STRUCTURES_DATA = [
   "name_en": "Oak Tree 1",
   "name_vi": "Oak Tree 1",
   "has3d": "4a3fa2768059.json"
- },
- {
-  "id": "adorabuild_structures:oak_tree_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak Tree 1",
-  "name_vi": "Oak Tree 1",
-  "has3d": "4a3fa2768059.json"
- },
- {
-  "id": "adorabuild_structures:ocean_bubble_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Bubble 1",
-  "name_vi": "Ocean Bubble 1",
-  "has3d": "fd5c60986c11.json"
  },
  {
   "id": "adorabuild_structures:ocean_bubble_1",
@@ -5674,20 +3784,6 @@ const STRUCTURES_DATA = [
   "has3d": "3bfa2e6720b4.json"
  },
  {
-  "id": "adorabuild_structures:ocean_temple_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Temple Medium 1",
-  "name_vi": "Ocean Temple Medium 1",
-  "has3d": "3bfa2e6720b4.json"
- },
- {
   "id": "adorabuild_structures:ocean_temple_medium_2",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -5700,34 +3796,6 @@ const STRUCTURES_DATA = [
   "name_en": "Ocean Temple Medium 2",
   "name_vi": "Ocean Temple Medium 2",
   "has3d": "7ef209fa7ae3.json"
- },
- {
-  "id": "adorabuild_structures:ocean_temple_medium_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Temple Medium 2",
-  "name_vi": "Ocean Temple Medium 2",
-  "has3d": "7ef209fa7ae3.json"
- },
- {
-  "id": "adorabuild_structures:ocean_temple_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Temple Small 1",
-  "name_vi": "Ocean Temple Small 1",
-  "has3d": "87c3d71d57d3.json"
  },
  {
   "id": "adorabuild_structures:ocean_temple_small_1",
@@ -5758,20 +3826,6 @@ const STRUCTURES_DATA = [
   "has3d": "a0aede6c6349.json"
  },
  {
-  "id": "adorabuild_structures:ocean_temple_small_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Temple Small 2",
-  "name_vi": "Ocean Temple Small 2",
-  "has3d": "a0aede6c6349.json"
- },
- {
   "id": "adorabuild_structures:pale_fortress_large_1",
   "pack": "AdoraBuild",
   "dim": "nether",
@@ -5784,34 +3838,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pale Fortress Large 1",
   "name_vi": "Pale Fortress Large 1",
   "has3d": "87427004f1ab.json"
- },
- {
-  "id": "adorabuild_structures:pale_fortress_large_1",
-  "pack": "AdoraBuild",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pale Fortress Large 1",
-  "name_vi": "Pale Fortress Large 1",
-  "has3d": "87427004f1ab.json"
- },
- {
-  "id": "adorabuild_structures:pale_fortress_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pale Fortress Medium 1",
-  "name_vi": "Pale Fortress Medium 1",
-  "has3d": "c4c6bf14092f.json"
  },
  {
   "id": "adorabuild_structures:pale_fortress_medium_1",
@@ -5842,20 +3868,6 @@ const STRUCTURES_DATA = [
   "has3d": "6dddfc2d5a96.json"
  },
  {
-  "id": "adorabuild_structures:pale_garden_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Pale Garden",
-  "where_vi": "Khu Rừng Nhợt Nhạt",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pale Garden Medium 1",
-  "name_vi": "Pale Garden Medium 1",
-  "has3d": "6dddfc2d5a96.json"
- },
- {
   "id": "adorabuild_structures:pale_house_medium_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -5868,34 +3880,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pale House Medium 1",
   "name_vi": "Pale House Medium 1",
   "has3d": "c84a1c89e15c.json"
- },
- {
-  "id": "adorabuild_structures:pale_house_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pale House Medium 1",
-  "name_vi": "Pale House Medium 1",
-  "has3d": "c84a1c89e15c.json"
- },
- {
-  "id": "adorabuild_structures:pale_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pale House Small 1",
-  "name_vi": "Pale House Small 1",
-  "has3d": "58606d6a98b4.json"
  },
  {
   "id": "adorabuild_structures:pale_house_small_1",
@@ -5925,19 +3909,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Poplar House Medium 1"
  },
  {
-  "id": "adorabuild_structures:poplar_house_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Poplar House Medium 1",
-  "name_vi": "Poplar House Medium 1"
- },
- {
   "id": "adorabuild_structures:poplar_house_small_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -5949,32 +3920,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Poplar House Small 1",
   "name_vi": "Poplar House Small 1"
- },
- {
-  "id": "adorabuild_structures:poplar_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Poplar House Small 1",
-  "name_vi": "Poplar House Small 1"
- },
- {
-  "id": "adorabuild_structures:poplar_house_small_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Poplar House Small 2",
-  "name_vi": "Poplar House Small 2"
  },
  {
   "id": "adorabuild_structures:poplar_house_small_2",
@@ -6003,19 +3948,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Poplar Hut 1"
  },
  {
-  "id": "adorabuild_structures:poplar_hut_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Poplar Hut 1",
-  "name_vi": "Poplar Hut 1"
- },
- {
   "id": "adorabuild_structures:poplar_tower_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -6027,33 +3959,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Poplar Tower 1",
   "name_vi": "Poplar Tower 1"
- },
- {
-  "id": "adorabuild_structures:poplar_tower_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Poplar Tower 1",
-  "name_vi": "Poplar Tower 1"
- },
- {
-  "id": "adorabuild_structures:prison_large_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Prison Large 1",
-  "name_vi": "Prison Large 1",
-  "has3d": "03e46d029cbb.json"
  },
  {
   "id": "adorabuild_structures:prison_large_1",
@@ -6084,20 +3989,6 @@ const STRUCTURES_DATA = [
   "has3d": "34e02adc80dd.json"
  },
  {
-  "id": "adorabuild_structures:prison_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Prison Small 1",
-  "name_vi": "Prison Small 1",
-  "has3d": "34e02adc80dd.json"
- },
- {
   "id": "adorabuild_structures:red_sand_house_medium_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -6110,34 +4001,6 @@ const STRUCTURES_DATA = [
   "name_en": "Red Sand House Medium 1",
   "name_vi": "Red Sand House Medium 1",
   "has3d": "ffef777b4006.json"
- },
- {
-  "id": "adorabuild_structures:red_sand_house_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Red Sand House Medium 1",
-  "name_vi": "Red Sand House Medium 1",
-  "has3d": "ffef777b4006.json"
- },
- {
-  "id": "adorabuild_structures:red_sand_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Red Sand House Small 1",
-  "name_vi": "Red Sand House Small 1",
-  "has3d": "a1515432391b.json"
  },
  {
   "id": "adorabuild_structures:red_sand_house_small_1",
@@ -6168,20 +4031,6 @@ const STRUCTURES_DATA = [
   "has3d": "26876142729f.json"
  },
  {
-  "id": "adorabuild_structures:red_sand_temple_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Red Sand Temple Medium 1",
-  "name_vi": "Red Sand Temple Medium 1",
-  "has3d": "26876142729f.json"
- },
- {
   "id": "adorabuild_structures:red_sand_temple_small_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -6194,34 +4043,6 @@ const STRUCTURES_DATA = [
   "name_en": "Red Sand Temple Small 1",
   "name_vi": "Red Sand Temple Small 1",
   "has3d": "367be385e26c.json"
- },
- {
-  "id": "adorabuild_structures:red_sand_temple_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Red Sand Temple Small 1",
-  "name_vi": "Red Sand Temple Small 1",
-  "has3d": "367be385e26c.json"
- },
- {
-  "id": "adorabuild_structures:sand_castle_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sand Castle Small 1",
-  "name_vi": "Sand Castle Small 1",
-  "has3d": "33aedd05c40b.json"
  },
  {
   "id": "adorabuild_structures:sand_castle_small_1",
@@ -6252,20 +4073,6 @@ const STRUCTURES_DATA = [
   "has3d": "67b910d8824e.json"
  },
  {
-  "id": "adorabuild_structures:sand_castle_tiny_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sand Castle Tiny 1",
-  "name_vi": "Sand Castle Tiny 1",
-  "has3d": "67b910d8824e.json"
- },
- {
   "id": "adorabuild_structures:sand_house_medium_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -6278,34 +4085,6 @@ const STRUCTURES_DATA = [
   "name_en": "Sand House Medium 1",
   "name_vi": "Sand House Medium 1",
   "has3d": "56cf6c5ea931.json"
- },
- {
-  "id": "adorabuild_structures:sand_house_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sand House Medium 1",
-  "name_vi": "Sand House Medium 1",
-  "has3d": "56cf6c5ea931.json"
- },
- {
-  "id": "adorabuild_structures:sand_house_medium_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sand House Medium 2",
-  "name_vi": "Sand House Medium 2",
-  "has3d": "f78d465caa7e.json"
  },
  {
   "id": "adorabuild_structures:sand_house_medium_2",
@@ -6336,20 +4115,6 @@ const STRUCTURES_DATA = [
   "has3d": "3ef50962414e.json"
  },
  {
-  "id": "adorabuild_structures:sand_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sand House Small 1",
-  "name_vi": "Sand House Small 1",
-  "has3d": "3ef50962414e.json"
- },
- {
   "id": "adorabuild_structures:sand_house_small_2",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -6362,34 +4127,6 @@ const STRUCTURES_DATA = [
   "name_en": "Sand House Small 2",
   "name_vi": "Sand House Small 2",
   "has3d": "5e8655095aed.json"
- },
- {
-  "id": "adorabuild_structures:sand_house_small_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sand House Small 2",
-  "name_vi": "Sand House Small 2",
-  "has3d": "5e8655095aed.json"
- },
- {
-  "id": "adorabuild_structures:sand_pyramid_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sand Pyramid 1",
-  "name_vi": "Sand Pyramid 1",
-  "has3d": "b43b9a8ba326.json"
  },
  {
   "id": "adorabuild_structures:sand_pyramid_1",
@@ -6420,20 +4157,6 @@ const STRUCTURES_DATA = [
   "has3d": "73de4b822b7f.json"
  },
  {
-  "id": "adorabuild_structures:sand_underground_castle_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sand Underground Castle 1",
-  "name_vi": "Sand Underground Castle 1",
-  "has3d": "73de4b822b7f.json"
- },
- {
   "id": "adorabuild_structures:spruce_house_large_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -6446,34 +4169,6 @@ const STRUCTURES_DATA = [
   "name_en": "Spruce House Large 1",
   "name_vi": "Spruce House Large 1",
   "has3d": "564beb6b2b80.json"
- },
- {
-  "id": "adorabuild_structures:spruce_house_large_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce House Large 1",
-  "name_vi": "Spruce House Large 1",
-  "has3d": "564beb6b2b80.json"
- },
- {
-  "id": "adorabuild_structures:spruce_house_medium_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce House Medium 1",
-  "name_vi": "Spruce House Medium 1",
-  "has3d": "c501ff9d5cd7.json"
  },
  {
   "id": "adorabuild_structures:spruce_house_medium_1",
@@ -6504,20 +4199,6 @@ const STRUCTURES_DATA = [
   "has3d": "dad24e7b1abd.json"
  },
  {
-  "id": "adorabuild_structures:spruce_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce House Small 1",
-  "name_vi": "Spruce House Small 1",
-  "has3d": "dad24e7b1abd.json"
- },
- {
   "id": "adorabuild_structures:spruce_house_small_2",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -6530,34 +4211,6 @@ const STRUCTURES_DATA = [
   "name_en": "Spruce House Small 2",
   "name_vi": "Spruce House Small 2",
   "has3d": "eac524ec98a6.json"
- },
- {
-  "id": "adorabuild_structures:spruce_house_small_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce House Small 2",
-  "name_vi": "Spruce House Small 2",
-  "has3d": "eac524ec98a6.json"
- },
- {
-  "id": "adorabuild_structures:spruce_house_small_3",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce House Small 3",
-  "name_vi": "Spruce House Small 3",
-  "has3d": "74e613c7749a.json"
  },
  {
   "id": "adorabuild_structures:spruce_house_small_3",
@@ -6588,20 +4241,6 @@ const STRUCTURES_DATA = [
   "has3d": "676c88405bdd.json"
  },
  {
-  "id": "adorabuild_structures:spruce_ship_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce Ship 1",
-  "name_vi": "Spruce Ship 1",
-  "has3d": "676c88405bdd.json"
- },
- {
   "id": "adorabuild_structures:warped_house_small_1",
   "pack": "AdoraBuild",
   "dim": "overworld",
@@ -6614,34 +4253,6 @@ const STRUCTURES_DATA = [
   "name_en": "Warped House Small 1",
   "name_vi": "Warped House Small 1",
   "has3d": "e3802c20f0fa.json"
- },
- {
-  "id": "adorabuild_structures:warped_house_small_1",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Warped House Small 1",
-  "name_vi": "Warped House Small 1",
-  "has3d": "e3802c20f0fa.json"
- },
- {
-  "id": "adorabuild_structures:warped_house_small_2",
-  "pack": "AdoraBuild",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Warped House Small 2",
-  "name_vi": "Warped House Small 2",
-  "has3d": "37e297b9a4c9.json"
  },
  {
   "id": "adorabuild_structures:warped_house_small_2",
@@ -6672,20 +4283,6 @@ const STRUCTURES_DATA = [
   "has3d": "1e376d1108a7.json"
  },
  {
-  "id": "ctov:large/village_mountain_alpine",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Alpine Village(Large)",
-  "name_vi": "Alpine Village(Large)",
-  "has3d": "1e376d1108a7.json"
- },
- {
   "id": "ctov:medium/village_mountain_alpine",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -6698,34 +4295,6 @@ const STRUCTURES_DATA = [
   "name_en": "Alpine Village(Medium)",
   "name_vi": "Alpine Village(Medium)",
   "has3d": "39a03cdcf1a7.json"
- },
- {
-  "id": "ctov:medium/village_mountain_alpine",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Alpine Village(Medium)",
-  "name_vi": "Alpine Village(Medium)",
-  "has3d": "39a03cdcf1a7.json"
- },
- {
-  "id": "ctov:small/village_mountain_alpine",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Alpine Village(Small)",
-  "name_vi": "Alpine Village(Small)",
-  "has3d": "05089f3288f1.json"
  },
  {
   "id": "ctov:small/village_mountain_alpine",
@@ -6756,34 +4325,6 @@ const STRUCTURES_DATA = [
   "has3d": "7cc82507b574.json"
  },
  {
-  "id": "ctov:large/village_mesa_fortified",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Badlands Fortified Village(Large)",
-  "name_vi": "Badlands Fortified Village(Large)",
-  "has3d": "7cc82507b574.json"
- },
- {
-  "id": "ctov:medium/village_mesa_fortified",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Badlands Fortified Village(Medium)",
-  "name_vi": "Badlands Fortified Village(Medium)",
-  "has3d": "3c0bde825119.json"
- },
- {
   "id": "ctov:medium/village_mesa_fortified",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -6812,20 +4353,6 @@ const STRUCTURES_DATA = [
   "has3d": "8ba20853791b.json"
  },
  {
-  "id": "ctov:small/village_mesa_fortified",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Badlands Fortified Village(Small)",
-  "name_vi": "Badlands Fortified Village(Small)",
-  "has3d": "8ba20853791b.json"
- },
- {
   "id": "ctov:pillager_outpost_badlands",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -6837,33 +4364,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Badlands Pillager Outpost",
   "name_vi": "Badlands Pillager Outpost"
- },
- {
-  "id": "ctov:pillager_outpost_badlands",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Badlands Pillager Outpost",
-  "name_vi": "Badlands Pillager Outpost"
- },
- {
-  "id": "ctov:large/village_mesa",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Badlands Village(Large)",
-  "name_vi": "Badlands Village(Large)",
-  "has3d": "4690bb2178b7.json"
  },
  {
   "id": "ctov:large/village_mesa",
@@ -6894,34 +4394,6 @@ const STRUCTURES_DATA = [
   "has3d": "fe1c6d37df06.json"
  },
  {
-  "id": "ctov:medium/village_mesa",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Badlands Village(Medium)",
-  "name_vi": "Badlands Village(Medium)",
-  "has3d": "fe1c6d37df06.json"
- },
- {
-  "id": "ctov:small/village_mesa",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Badlands Village(Small)",
-  "name_vi": "Badlands Village(Small)",
-  "has3d": "1cf12ec2f689.json"
- },
- {
   "id": "ctov:small/village_mesa",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -6947,33 +4419,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Beach Pillager Outpost",
   "name_vi": "Beach Pillager Outpost"
- },
- {
-  "id": "ctov:pillager_outpost_beach",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Beach Pillager Outpost",
-  "name_vi": "Beach Pillager Outpost"
- },
- {
-  "id": "ctov:large/village_beach",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Beach Village(Large)",
-  "name_vi": "Beach Village(Large)",
-  "has3d": "6f57861d547c.json"
  },
  {
   "id": "ctov:large/village_beach",
@@ -7004,20 +4449,6 @@ const STRUCTURES_DATA = [
   "has3d": "c5766bc574b8.json"
  },
  {
-  "id": "ctov:medium/village_beach",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Beach Village(Medium)",
-  "name_vi": "Beach Village(Medium)",
-  "has3d": "c5766bc574b8.json"
- },
- {
   "id": "ctov:small/village_beach",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -7030,34 +4461,6 @@ const STRUCTURES_DATA = [
   "name_en": "Beach Village(Small)",
   "name_vi": "Beach Village(Small)",
   "has3d": "d53983af2d26.json"
- },
- {
-  "id": "ctov:small/village_beach",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Beach Village(Small)",
-  "name_vi": "Beach Village(Small)",
-  "has3d": "d53983af2d26.json"
- },
- {
-  "id": "ctov:large/village_christmas",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Christmas Village(Large)",
-  "name_vi": "Christmas Village(Large)",
-  "has3d": "cfe25db6e943.json"
  },
  {
   "id": "ctov:large/village_christmas",
@@ -7088,20 +4491,6 @@ const STRUCTURES_DATA = [
   "has3d": "87878cae422f.json"
  },
  {
-  "id": "ctov:medium/village_christmas",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Christmas Village(Medium)",
-  "name_vi": "Christmas Village(Medium)",
-  "has3d": "87878cae422f.json"
- },
- {
   "id": "ctov:small/village_christmas",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -7114,34 +4503,6 @@ const STRUCTURES_DATA = [
   "name_en": "Christmas Village(Small)",
   "name_vi": "Christmas Village(Small)",
   "has3d": "c31718bce868.json"
- },
- {
-  "id": "ctov:small/village_christmas",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Christmas Village(Small)",
-  "name_vi": "Christmas Village(Small)",
-  "has3d": "c31718bce868.json"
- },
- {
-  "id": "ctov:large/village_dark_forest",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Forest Village(Large)",
-  "name_vi": "Dark Forest Village(Large)",
-  "has3d": "8a7ebaa37c2b.json"
  },
  {
   "id": "ctov:large/village_dark_forest",
@@ -7172,34 +4533,6 @@ const STRUCTURES_DATA = [
   "has3d": "d920b23d1566.json"
  },
  {
-  "id": "ctov:medium/village_dark_forest",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Forest Village(Medium)",
-  "name_vi": "Dark Forest Village(Medium)",
-  "has3d": "d920b23d1566.json"
- },
- {
-  "id": "ctov:small/village_dark_forest",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Forest Village(Small)",
-  "name_vi": "Dark Forest Village(Small)",
-  "has3d": "8e1844fe2e64.json"
- },
- {
   "id": "ctov:small/village_dark_forest",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -7227,19 +4560,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Dark forest Pillager Outpost"
  },
  {
-  "id": "ctov:pillager_outpost_dark_forest",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark forest Pillager Outpost",
-  "name_vi": "Dark forest Pillager Outpost"
- },
- {
   "id": "ctov:pillager_outpost_desert",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -7251,33 +4571,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Desert Pillager Outpost",
   "name_vi": "Desert Pillager Outpost"
- },
- {
-  "id": "ctov:pillager_outpost_desert",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Pillager Outpost",
-  "name_vi": "Desert Pillager Outpost"
- },
- {
-  "id": "ctov:large/village_desert",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Village(Large)",
-  "name_vi": "Desert Village(Large)",
-  "has3d": "fb3312a5555d.json"
  },
  {
   "id": "ctov:large/village_desert",
@@ -7308,20 +4601,6 @@ const STRUCTURES_DATA = [
   "has3d": "084c33842adc.json"
  },
  {
-  "id": "ctov:medium/village_desert",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Village(Medium)",
-  "name_vi": "Desert Village(Medium)",
-  "has3d": "084c33842adc.json"
- },
- {
   "id": "ctov:small/village_desert",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -7334,34 +4613,6 @@ const STRUCTURES_DATA = [
   "name_en": "Desert Village(Small)",
   "name_vi": "Desert Village(Small)",
   "has3d": "467be6202004.json"
- },
- {
-  "id": "ctov:small/village_desert",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Village(Small)",
-  "name_vi": "Desert Village(Small)",
-  "has3d": "467be6202004.json"
- },
- {
-  "id": "ctov:large/village_mountain",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Japanese Village(Large)",
-  "name_vi": "Japanese Village(Large)",
-  "has3d": "d5d6bc9987a1.json"
  },
  {
   "id": "ctov:large/village_mountain",
@@ -7392,34 +4643,6 @@ const STRUCTURES_DATA = [
   "has3d": "a179535fecca.json"
  },
  {
-  "id": "ctov:medium/village_mountain",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Japanese Village(Medium)",
-  "name_vi": "Japanese Village(Medium)",
-  "has3d": "a179535fecca.json"
- },
- {
-  "id": "ctov:small/village_mountain",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Japanese Village(Small)",
-  "name_vi": "Japanese Village(Small)",
-  "has3d": "a8256e443666.json"
- },
- {
   "id": "ctov:small/village_mountain",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -7445,33 +4668,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Jungle Pillager Outpost",
   "name_vi": "Jungle Pillager Outpost"
- },
- {
-  "id": "ctov:pillager_outpost_jungle",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Pillager Outpost",
-  "name_vi": "Jungle Pillager Outpost"
- },
- {
-  "id": "ctov:large/village_jungle",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Village(Large)",
-  "name_vi": "Jungle Village(Large)",
-  "has3d": "393816e2fa28.json"
  },
  {
   "id": "ctov:large/village_jungle",
@@ -7502,34 +4698,6 @@ const STRUCTURES_DATA = [
   "has3d": "fbe9e535791d.json"
  },
  {
-  "id": "ctov:medium/village_jungle",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Village(Medium)",
-  "name_vi": "Jungle Village(Medium)",
-  "has3d": "fbe9e535791d.json"
- },
- {
-  "id": "ctov:small/village_jungle",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Village(Small)",
-  "name_vi": "Jungle Village(Small)",
-  "has3d": "0594e8f9d290.json"
- },
- {
   "id": "ctov:small/village_jungle",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -7555,33 +4723,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Mountain Pillager Outpost",
   "name_vi": "Mountain Pillager Outpost"
- },
- {
-  "id": "ctov:pillager_outpost_mountain",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mountain Pillager Outpost",
-  "name_vi": "Mountain Pillager Outpost"
- },
- {
-  "id": "ctov:large/village_mushroom",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mushroom Village(Large)",
-  "name_vi": "Mushroom Village(Large)",
-  "has3d": "b0f328c860ec.json"
  },
  {
   "id": "ctov:large/village_mushroom",
@@ -7612,20 +4753,6 @@ const STRUCTURES_DATA = [
   "has3d": "fa959a571908.json"
  },
  {
-  "id": "ctov:medium/village_mushroom",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mushroom Village(Medium)",
-  "name_vi": "Mushroom Village(Medium)",
-  "has3d": "fa959a571908.json"
- },
- {
   "id": "ctov:small/village_mushroom",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -7638,34 +4765,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mushroom Village(Small)",
   "name_vi": "Mushroom Village(Small)",
   "has3d": "0907493fa737.json"
- },
- {
-  "id": "ctov:small/village_mushroom",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mushroom Village(Small)",
-  "name_vi": "Mushroom Village(Small)",
-  "has3d": "0907493fa737.json"
- },
- {
-  "id": "ctov:large/village_plains_fortified",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Plains Fortified Village(Large)",
-  "name_vi": "Plains Fortified Village(Large)",
-  "has3d": "fb3d1e21f9a1.json"
  },
  {
   "id": "ctov:large/village_plains_fortified",
@@ -7696,34 +4795,6 @@ const STRUCTURES_DATA = [
   "has3d": "47436542bec6.json"
  },
  {
-  "id": "ctov:medium/village_plains_fortified",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Plains Fortified Village(Medium)",
-  "name_vi": "Plains Fortified Village(Medium)",
-  "has3d": "47436542bec6.json"
- },
- {
-  "id": "ctov:small/village_plains_fortified",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Plains Fortified Village(Small)",
-  "name_vi": "Plains Fortified Village(Small)",
-  "has3d": "56982b8519a2.json"
- },
- {
   "id": "ctov:small/village_plains_fortified",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -7749,33 +4820,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Plains Pillager Outpost",
   "name_vi": "Plains Pillager Outpost"
- },
- {
-  "id": "ctov:pillager_outpost_plains",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Plains Pillager Outpost",
-  "name_vi": "Plains Pillager Outpost"
- },
- {
-  "id": "ctov:large/village_plains",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Plains Village(Large)",
-  "name_vi": "Plains Village(Large)",
-  "has3d": "8e47d0d2e9cd.json"
  },
  {
   "id": "ctov:large/village_plains",
@@ -7806,20 +4850,6 @@ const STRUCTURES_DATA = [
   "has3d": "74cdf50ed96c.json"
  },
  {
-  "id": "ctov:medium/village_plains",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Plains Village(Medium)",
-  "name_vi": "Plains Village(Medium)",
-  "has3d": "74cdf50ed96c.json"
- },
- {
   "id": "ctov:small/village_plains",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -7832,34 +4862,6 @@ const STRUCTURES_DATA = [
   "name_en": "Plains Village(Small)",
   "name_vi": "Plains Village(Small)",
   "has3d": "c5017cf63d93.json"
- },
- {
-  "id": "ctov:small/village_plains",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Plains Village(Small)",
-  "name_vi": "Plains Village(Small)",
-  "has3d": "c5017cf63d93.json"
- },
- {
-  "id": "ctov:large/village_savanna_na",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Savanna Native American Village(Large)",
-  "name_vi": "Savanna Native American Village(Large)",
-  "has3d": "c3efd35eb4a3.json"
  },
  {
   "id": "ctov:large/village_savanna_na",
@@ -7890,34 +4892,6 @@ const STRUCTURES_DATA = [
   "has3d": "6d1336bb5414.json"
  },
  {
-  "id": "ctov:medium/village_savanna_na",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Savanna Native American Village(Medium)",
-  "name_vi": "Savanna Native American Village(Medium)",
-  "has3d": "6d1336bb5414.json"
- },
- {
-  "id": "ctov:small/village_savanna_na",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Savanna Native American Village(Small)",
-  "name_vi": "Savanna Native American Village(Small)",
-  "has3d": "27a1c1e008fe.json"
- },
- {
   "id": "ctov:small/village_savanna_na",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -7943,33 +4917,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Savanna Pillager Outpost",
   "name_vi": "Savanna Pillager Outpost"
- },
- {
-  "id": "ctov:pillager_outpost_savanna",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Savanna Pillager Outpost",
-  "name_vi": "Savanna Pillager Outpost"
- },
- {
-  "id": "ctov:large/village_savanna",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Savanna Village(Large)",
-  "name_vi": "Savanna Village(Large)",
-  "has3d": "b2eb46e8c032.json"
  },
  {
   "id": "ctov:large/village_savanna",
@@ -8000,34 +4947,6 @@ const STRUCTURES_DATA = [
   "has3d": "25766f45a97a.json"
  },
  {
-  "id": "ctov:medium/village_savanna",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Savanna Village(Medium)",
-  "name_vi": "Savanna Village(Medium)",
-  "has3d": "25766f45a97a.json"
- },
- {
-  "id": "ctov:small/village_savanna",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Savanna Village(Small)",
-  "name_vi": "Savanna Village(Small)",
-  "has3d": "d09b0177247c.json"
- },
- {
   "id": "ctov:small/village_savanna",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -8053,33 +4972,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Snowy Pillager Outpost",
   "name_vi": "Snowy Pillager Outpost"
- },
- {
-  "id": "ctov:pillager_outpost_snowy",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Snowy Pillager Outpost",
-  "name_vi": "Snowy Pillager Outpost"
- },
- {
-  "id": "ctov:large/village_swamp_fortified",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Fortified Village(Large)",
-  "name_vi": "Swamp Fortified Village(Large)",
-  "has3d": "c2fa6e0840cf.json"
  },
  {
   "id": "ctov:large/village_swamp_fortified",
@@ -8110,34 +5002,6 @@ const STRUCTURES_DATA = [
   "has3d": "993487cf3b91.json"
  },
  {
-  "id": "ctov:medium/village_swamp_fortified",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Fortified Village(Medium)",
-  "name_vi": "Swamp Fortified Village(Medium)",
-  "has3d": "993487cf3b91.json"
- },
- {
-  "id": "ctov:small/village_swamp_fortified",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Fortified Village(Small)",
-  "name_vi": "Swamp Fortified Village(Small)",
-  "has3d": "f7ce705fdd54.json"
- },
- {
   "id": "ctov:small/village_swamp_fortified",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -8163,33 +5027,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Swamp Pillager Outpost",
   "name_vi": "Swamp Pillager Outpost"
- },
- {
-  "id": "ctov:pillager_outpost_swamp",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Pillager Outpost",
-  "name_vi": "Swamp Pillager Outpost"
- },
- {
-  "id": "ctov:large/village_swamp",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Village(Large)",
-  "name_vi": "Swamp Village(Large)",
-  "has3d": "1790bb1c74ac.json"
  },
  {
   "id": "ctov:large/village_swamp",
@@ -8220,20 +5057,6 @@ const STRUCTURES_DATA = [
   "has3d": "9bc264c2a702.json"
  },
  {
-  "id": "ctov:medium/village_swamp",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Village(Medium)",
-  "name_vi": "Swamp Village(Medium)",
-  "has3d": "9bc264c2a702.json"
- },
- {
   "id": "ctov:small/village_swamp",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -8246,34 +5069,6 @@ const STRUCTURES_DATA = [
   "name_en": "Swamp Village(Small)",
   "name_vi": "Swamp Village(Small)",
   "has3d": "225620e36aa6.json"
- },
- {
-  "id": "ctov:small/village_swamp",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Village(Small)",
-  "name_vi": "Swamp Village(Small)",
-  "has3d": "225620e36aa6.json"
- },
- {
-  "id": "ctov:large/village_taiga_fortified",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga Fortified Village(Large)",
-  "name_vi": "Taiga Fortified Village(Large)",
-  "has3d": "2b030fc4b6ac.json"
  },
  {
   "id": "ctov:large/village_taiga_fortified",
@@ -8304,34 +5099,6 @@ const STRUCTURES_DATA = [
   "has3d": "b9cdc359bd10.json"
  },
  {
-  "id": "ctov:medium/village_taiga_fortified",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga Fortified Village(Medium)",
-  "name_vi": "Taiga Fortified Village(Medium)",
-  "has3d": "b9cdc359bd10.json"
- },
- {
-  "id": "ctov:small/village_taiga_fortified",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga Fortified Village(Small)",
-  "name_vi": "Taiga Fortified Village(Small)",
-  "has3d": "a60df7735f9f.json"
- },
- {
   "id": "ctov:small/village_taiga_fortified",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -8357,33 +5124,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Taiga Pillager Outpost",
   "name_vi": "Taiga Pillager Outpost"
- },
- {
-  "id": "ctov:pillager_outpost_taiga",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga Pillager Outpost",
-  "name_vi": "Taiga Pillager Outpost"
- },
- {
-  "id": "ctov:large/village_taiga",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga Village(Large)",
-  "name_vi": "Taiga Village(Large)",
-  "has3d": "6b3212761071.json"
  },
  {
   "id": "ctov:large/village_taiga",
@@ -8414,20 +5154,6 @@ const STRUCTURES_DATA = [
   "has3d": "9a2adfa9c068.json"
  },
  {
-  "id": "ctov:medium/village_taiga",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga Village(Medium)",
-  "name_vi": "Taiga Village(Medium)",
-  "has3d": "9a2adfa9c068.json"
- },
- {
   "id": "ctov:small/village_taiga",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -8440,34 +5166,6 @@ const STRUCTURES_DATA = [
   "name_en": "Taiga Village(Small)",
   "name_vi": "Taiga Village(Small)",
   "has3d": "ba99d2cb2a97.json"
- },
- {
-  "id": "ctov:small/village_taiga",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga Village(Small)",
-  "name_vi": "Taiga Village(Small)",
-  "has3d": "ba99d2cb2a97.json"
- },
- {
-  "id": "ctov:large/village_desert_oasis",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Desert Oasis",
-  "name_vi": "Village Desert Oasis",
-  "has3d": "d9c02f8da3cf.json"
  },
  {
   "id": "ctov:large/village_desert_oasis",
@@ -8498,20 +5196,6 @@ const STRUCTURES_DATA = [
   "has3d": "8df4671df4ad.json"
  },
  {
-  "id": "ctov:medium/village_desert_oasis",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Desert Oasis",
-  "name_vi": "Village Desert Oasis",
-  "has3d": "8df4671df4ad.json"
- },
- {
   "id": "ctov:small/village_desert_oasis",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -8524,34 +5208,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Desert Oasis",
   "name_vi": "Village Desert Oasis",
   "has3d": "c9ad2c69907e.json"
- },
- {
-  "id": "ctov:small/village_desert_oasis",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Desert Oasis",
-  "name_vi": "Village Desert Oasis",
-  "has3d": "c9ad2c69907e.json"
- },
- {
-  "id": "ctov:large/village_snowy_igloo",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Snowy Igloo",
-  "name_vi": "Village Snowy Igloo",
-  "has3d": "a4606eb0a621.json"
  },
  {
   "id": "ctov:large/village_snowy_igloo",
@@ -8582,20 +5238,6 @@ const STRUCTURES_DATA = [
   "has3d": "6127dbec3659.json"
  },
  {
-  "id": "ctov:medium/village_snowy_igloo",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Snowy Igloo",
-  "name_vi": "Village Snowy Igloo",
-  "has3d": "6127dbec3659.json"
- },
- {
   "id": "ctov:small/village_snowy_igloo",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -8608,34 +5250,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Snowy Igloo",
   "name_vi": "Village Snowy Igloo",
   "has3d": "854d85a104fd.json"
- },
- {
-  "id": "ctov:small/village_snowy_igloo",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Snowy Igloo",
-  "name_vi": "Village Snowy Igloo",
-  "has3d": "854d85a104fd.json"
- },
- {
-  "id": "ctov:large/village_underground",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Underground",
-  "name_vi": "Village Underground",
-  "has3d": "4c776b11203b.json"
  },
  {
   "id": "ctov:large/village_underground",
@@ -8666,20 +5280,6 @@ const STRUCTURES_DATA = [
   "has3d": "41e4eb4c6746.json"
  },
  {
-  "id": "ctov:medium/village_underground",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Underground",
-  "name_vi": "Village Underground",
-  "has3d": "41e4eb4c6746.json"
- },
- {
   "id": "ctov:small/village_underground",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -8692,34 +5292,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Underground",
   "name_vi": "Village Underground",
   "has3d": "903299e88d16.json"
- },
- {
-  "id": "ctov:small/village_underground",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Underground",
-  "name_vi": "Village Underground",
-  "has3d": "903299e88d16.json"
- },
- {
-  "id": "ctov:large/village_jungle_tree",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "jungle Tree Village(Large)",
-  "name_vi": "jungle Tree Village(Large)",
-  "has3d": "fe817de131a6.json"
  },
  {
   "id": "ctov:large/village_jungle_tree",
@@ -8750,20 +5322,6 @@ const STRUCTURES_DATA = [
   "has3d": "cad70986730f.json"
  },
  {
-  "id": "ctov:medium/village_jungle_tree",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "jungle Tree Village(Medium)",
-  "name_vi": "jungle Tree Village(Medium)",
-  "has3d": "cad70986730f.json"
- },
- {
   "id": "ctov:small/village_jungle_tree",
   "pack": "CTOV Villages",
   "dim": "overworld",
@@ -8776,34 +5334,6 @@ const STRUCTURES_DATA = [
   "name_en": "jungle Tree Village(Small)",
   "name_vi": "jungle Tree Village(Small)",
   "has3d": "c4bd84e08df5.json"
- },
- {
-  "id": "ctov:small/village_jungle_tree",
-  "pack": "CTOV Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "jungle Tree Village(Small)",
-  "name_vi": "jungle Tree Village(Small)",
-  "has3d": "c4bd84e08df5.json"
- },
- {
-  "id": "ddd:major_dungeon_desert",
-  "pack": "DDD Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.7x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Major Dungeon Desert",
-  "name_vi": "Major Dungeon Desert",
-  "has3d": "ed6fa00a3570.json"
  },
  {
   "id": "ddd:major_dungeon_desert",
@@ -8834,20 +5364,6 @@ const STRUCTURES_DATA = [
   "has3d": "708c0e07dbd0.json"
  },
  {
-  "id": "ddd:major_dungeon_frozen",
-  "pack": "DDD Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.7x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Major Dungeon Frozen",
-  "name_vi": "Major Dungeon Frozen",
-  "has3d": "708c0e07dbd0.json"
- },
- {
   "id": "ddd:major_dungeon_plains",
   "pack": "DDD Dungeons",
   "dim": "overworld",
@@ -8860,34 +5376,6 @@ const STRUCTURES_DATA = [
   "name_en": "Major Dungeon Plains",
   "name_vi": "Major Dungeon Plains",
   "has3d": "27b703ff34b8.json"
- },
- {
-  "id": "ddd:major_dungeon_plains",
-  "pack": "DDD Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.7x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Major Dungeon Plains",
-  "name_vi": "Major Dungeon Plains",
-  "has3d": "27b703ff34b8.json"
- },
- {
-  "id": "ddd:minor_dungeon_desert",
-  "pack": "DDD Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.7x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Minor Dungeon Desert",
-  "name_vi": "Minor Dungeon Desert",
-  "has3d": "6c17b05e7124.json"
  },
  {
   "id": "ddd:minor_dungeon_desert",
@@ -8918,20 +5406,6 @@ const STRUCTURES_DATA = [
   "has3d": "aacd76a9501f.json"
  },
  {
-  "id": "ddd:minor_dungeon_frozen",
-  "pack": "DDD Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.7x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Minor Dungeon Frozen",
-  "name_vi": "Minor Dungeon Frozen",
-  "has3d": "aacd76a9501f.json"
- },
- {
   "id": "ddd:minor_dungeon_plains",
   "pack": "DDD Dungeons",
   "dim": "overworld",
@@ -8944,34 +5418,6 @@ const STRUCTURES_DATA = [
   "name_en": "Minor Dungeon Plains",
   "name_vi": "Minor Dungeon Plains",
   "has3d": "322eac647298.json"
- },
- {
-  "id": "ddd:minor_dungeon_plains",
-  "pack": "DDD Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.7x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Minor Dungeon Plains",
-  "name_vi": "Minor Dungeon Plains",
-  "has3d": "322eac647298.json"
- },
- {
-  "id": "ddd:monolithic_tower",
-  "pack": "DDD Dungeons",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.7x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Monolithic Tower",
-  "name_vi": "Monolithic Tower",
-  "has3d": "d34dce4de414.json"
  },
  {
   "id": "ddd:monolithic_tower",
@@ -9002,20 +5448,6 @@ const STRUCTURES_DATA = [
   "has3d": "405d378f8201.json"
  },
  {
-  "id": "ddd:spider_lair",
-  "pack": "DDD Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.7x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Spider Lair",
-  "name_vi": "Spider Lair",
-  "has3d": "405d378f8201.json"
- },
- {
   "id": "ddd:wizard_tower",
   "pack": "DDD Dungeons",
   "dim": "overworld",
@@ -9028,33 +5460,6 @@ const STRUCTURES_DATA = [
   "name_en": "Wizard Tower",
   "name_vi": "Wizard Tower",
   "has3d": "3a40367a758e.json"
- },
- {
-  "id": "ddd:wizard_tower",
-  "pack": "DDD Dungeons",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.7x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wizard Tower",
-  "name_vi": "Wizard Tower",
-  "has3d": "3a40367a758e.json"
- },
- {
-  "id": "decubed_dungeons:ancient_city_remnant",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Deep Dark",
-  "where_vi": "Vực Sâu (Deep Dark)",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Ancient City Remnant",
-  "name_vi": "Ancient City Remnant"
  },
  {
   "id": "decubed_dungeons:ancient_city_remnant",
@@ -9084,33 +5489,6 @@ const STRUCTURES_DATA = [
   "has3d": "38cfec2d995f.json"
  },
  {
-  "id": "decubed_dungeons:cold_dungeon",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Cold Dungeon",
-  "name_vi": "Cold Dungeon",
-  "has3d": "38cfec2d995f.json"
- },
- {
-  "id": "decubed_dungeons:deepwater_dungeon",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Deepwater Dungeon",
-  "name_vi": "Deepwater Dungeon"
- },
- {
   "id": "decubed_dungeons:deepwater_dungeon",
   "pack": "Decubed Dungeons",
   "dim": "overworld",
@@ -9138,20 +5516,6 @@ const STRUCTURES_DATA = [
   "has3d": "985a24225c7b.json"
  },
  {
-  "id": "decubed_dungeons:dungeon_ruins",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Dungeon Ruins",
-  "name_vi": "Dungeon Ruins",
-  "has3d": "985a24225c7b.json"
- },
- {
   "id": "decubed_dungeons:dusty_tomb",
   "pack": "Decubed Dungeons",
   "dim": "overworld",
@@ -9163,33 +5527,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Dưới lòng đất",
   "name_en": "Dusty Tomb",
   "name_vi": "Dusty Tomb"
- },
- {
-  "id": "decubed_dungeons:dusty_tomb",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Dusty Tomb",
-  "name_vi": "Dusty Tomb"
- },
- {
-  "id": "decubed_dungeons:frozen_dungeon",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Frozen Dungeon",
-  "name_vi": "Frozen Dungeon",
-  "has3d": "b78f9e18d430.json"
  },
  {
   "id": "decubed_dungeons:frozen_dungeon",
@@ -9220,20 +5557,6 @@ const STRUCTURES_DATA = [
   "has3d": "05aa8442b537.json"
  },
  {
-  "id": "decubed_dungeons:infested_dungeon",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Infested Dungeon",
-  "name_vi": "Infested Dungeon",
-  "has3d": "05aa8442b537.json"
- },
- {
   "id": "decubed_dungeons:insidious_dungeon",
   "pack": "Decubed Dungeons",
   "dim": "overworld",
@@ -9245,32 +5568,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Dưới lòng đất",
   "name_en": "Insidious Dungeon",
   "name_vi": "Insidious Dungeon"
- },
- {
-  "id": "decubed_dungeons:insidious_dungeon",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Insidious Dungeon",
-  "name_vi": "Insidious Dungeon"
- },
- {
-  "id": "decubed_dungeons:lush_dungeon",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Lush Dungeon",
-  "name_vi": "Lush Dungeon"
  },
  {
   "id": "decubed_dungeons:lush_dungeon",
@@ -9300,20 +5597,6 @@ const STRUCTURES_DATA = [
   "has3d": "7e3c430965ce.json"
  },
  {
-  "id": "decubed_dungeons:mouldy_dungeon",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mouldy Dungeon",
-  "name_vi": "Mouldy Dungeon",
-  "has3d": "7e3c430965ce.json"
- },
- {
   "id": "decubed_dungeons:muddy_dungeon",
   "pack": "Decubed Dungeons",
   "dim": "overworld",
@@ -9325,32 +5608,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Dưới lòng đất",
   "name_en": "Muddy Dungeon",
   "name_vi": "Muddy Dungeon"
- },
- {
-  "id": "decubed_dungeons:muddy_dungeon",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Muddy Dungeon",
-  "name_vi": "Muddy Dungeon"
- },
- {
-  "id": "decubed_dungeons:scorched_tomb",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Scorched Tomb",
-  "name_vi": "Scorched Tomb"
  },
  {
   "id": "decubed_dungeons:scorched_tomb",
@@ -9380,20 +5637,6 @@ const STRUCTURES_DATA = [
   "has3d": "c0c24603055f.json"
  },
  {
-  "id": "decubed_dungeons:webbed_dungeon",
-  "pack": "Decubed Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Webbed Dungeon",
-  "name_vi": "Webbed Dungeon",
-  "has3d": "c0c24603055f.json"
- },
- {
   "id": "minecraft:ancient_city",
   "pack": "DnT Overhauls",
   "dim": "overworld",
@@ -9405,33 +5648,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Dưới lòng đất",
   "name_en": "Ancient City",
   "name_vi": "Ancient City"
- },
- {
-  "id": "minecraft:ancient_city",
-  "pack": "DnT Overhauls",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.8x",
-  "where_en": "Deep Dark",
-  "where_vi": "Vực Sâu (Deep Dark)",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Ancient City",
-  "name_vi": "Ancient City"
- },
- {
-  "id": "minecraft:desert_pyramid",
-  "pack": "DnT Overhauls",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Pyramid",
-  "name_vi": "Desert Pyramid",
-  "has3d": "26f91a9d7ec0.json"
  },
  {
   "id": "minecraft:desert_pyramid",
@@ -9462,20 +5678,6 @@ const STRUCTURES_DATA = [
   "has3d": "1d1d9eeb5897.json"
  },
  {
-  "id": "minecraft:fortress",
-  "pack": "DnT Overhauls",
-  "dim": "nether",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Fortress",
-  "name_vi": "Fortress",
-  "has3d": "1d1d9eeb5897.json"
- },
- {
   "id": "minecraft:jungle_pyramid",
   "pack": "DnT Overhauls",
   "dim": "overworld",
@@ -9488,34 +5690,6 @@ const STRUCTURES_DATA = [
   "name_en": "Jungle Pyramid",
   "name_vi": "Jungle Pyramid",
   "has3d": "cd3735389a54.json"
- },
- {
-  "id": "minecraft:jungle_pyramid",
-  "pack": "DnT Overhauls",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Pyramid",
-  "name_vi": "Jungle Pyramid",
-  "has3d": "cd3735389a54.json"
- },
- {
-  "id": "minecraft:mansion",
-  "pack": "DnT Overhauls",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.0x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mansion",
-  "name_vi": "Mansion",
-  "has3d": "2a8551e9e3b9.json"
  },
  {
   "id": "minecraft:mansion",
@@ -9545,32 +5719,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Mineshaft"
  },
  {
-  "id": "minecraft:mineshaft",
-  "pack": "DnT Overhauls",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mineshaft",
-  "name_vi": "Mineshaft"
- },
- {
-  "id": "nova_structures:mineshaft_jaggedpeak",
-  "pack": "DnT Overhauls",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mineshaft Jaggedpeak",
-  "name_vi": "Mineshaft Jaggedpeak"
- },
- {
   "id": "nova_structures:mineshaft_jaggedpeak",
   "pack": "DnT Overhauls",
   "dim": "overworld",
@@ -9597,19 +5745,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Mineshaft Mesa"
  },
  {
-  "id": "minecraft:mineshaft_mesa",
-  "pack": "DnT Overhauls",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mineshaft Mesa",
-  "name_vi": "Mineshaft Mesa"
- },
- {
   "id": "nova_structures:mineshaft_stonepeak",
   "pack": "DnT Overhauls",
   "dim": "overworld",
@@ -9621,32 +5756,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Dưới lòng đất",
   "name_en": "Mineshaft Stonepeak",
   "name_vi": "Mineshaft Stonepeak"
- },
- {
-  "id": "nova_structures:mineshaft_stonepeak",
-  "pack": "DnT Overhauls",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mineshaft Stonepeak",
-  "name_vi": "Mineshaft Stonepeak"
- },
- {
-  "id": "nova_structures:mineshaft_surface",
-  "pack": "DnT Overhauls",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mineshaft Surface",
-  "name_vi": "Mineshaft Surface"
  },
  {
   "id": "nova_structures:mineshaft_surface",
@@ -9676,33 +5785,6 @@ const STRUCTURES_DATA = [
   "has3d": "bb48c4b4ac0d.json"
  },
  {
-  "id": "minecraft:monument",
-  "pack": "DnT Overhauls",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Monument",
-  "name_vi": "Monument",
-  "has3d": "bb48c4b4ac0d.json"
- },
- {
-  "id": "minecraft:pillager_outpost",
-  "pack": "DnT Overhauls",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost",
-  "name_vi": "Pillager Outpost"
- },
- {
   "id": "minecraft:pillager_outpost",
   "pack": "DnT Overhauls",
   "dim": "overworld",
@@ -9727,33 +5809,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Swamp Hut",
   "name_vi": "Swamp Hut"
- },
- {
-  "id": "minecraft:swamp_hut",
-  "pack": "DnT Overhauls",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Hut",
-  "name_vi": "Swamp Hut"
- },
- {
-  "id": "nova_structures:tavern_acacia",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Acacia Tavern",
-  "name_vi": "Acacia Tavern",
-  "has3d": "1a69d041b711.json"
  },
  {
   "id": "nova_structures:tavern_acacia",
@@ -9784,20 +5839,6 @@ const STRUCTURES_DATA = [
   "has3d": "6ce6df379efc.json"
  },
  {
-  "id": "nova_structures:badlands_miner_outpost",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Badlands Miner Outpost",
-  "name_vi": "Badlands Miner Outpost",
-  "has3d": "6ce6df379efc.json"
- },
- {
   "id": "nova_structures:remnant_bee_keeper",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -9810,34 +5851,6 @@ const STRUCTURES_DATA = [
   "name_en": "Beekeeper",
   "name_vi": "Beekeeper",
   "has3d": "263135525f47.json"
- },
- {
-  "id": "nova_structures:remnant_bee_keeper",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Beekeeper",
-  "name_vi": "Beekeeper",
-  "has3d": "263135525f47.json"
- },
- {
-  "id": "nova_structures:remnant_big_remnant",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Big Remnant",
-  "name_vi": "Big Remnant",
-  "has3d": "0ca226e145e3.json"
  },
  {
   "id": "nova_structures:remnant_big_remnant",
@@ -9868,20 +5881,6 @@ const STRUCTURES_DATA = [
   "has3d": "81388691143b.json"
  },
  {
-  "id": "nova_structures:shrine_biome_tier_1",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Biome Shrine Tier I",
-  "name_vi": "Biome Shrine Tier I",
-  "has3d": "81388691143b.json"
- },
- {
   "id": "nova_structures:shrine_biome_tier_2",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -9894,34 +5893,6 @@ const STRUCTURES_DATA = [
   "name_en": "Biome Shrine Tier II",
   "name_vi": "Biome Shrine Tier II",
   "has3d": "72a63a7ca119.json"
- },
- {
-  "id": "nova_structures:shrine_biome_tier_2",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Biome Shrine Tier II",
-  "name_vi": "Biome Shrine Tier II",
-  "has3d": "72a63a7ca119.json"
- },
- {
-  "id": "nova_structures:shrine_biome_tier_3",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Biome Shrine Tier III",
-  "name_vi": "Biome Shrine Tier III",
-  "has3d": "587499fb9a1f.json"
  },
  {
   "id": "nova_structures:shrine_biome_tier_3",
@@ -9952,20 +5923,6 @@ const STRUCTURES_DATA = [
   "has3d": "ae8c8ef91f24.json"
  },
  {
-  "id": "nova_structures:shrine_biome_tier_4",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Biome Shrine Tier IV",
-  "name_vi": "Biome Shrine Tier IV",
-  "has3d": "ae8c8ef91f24.json"
- },
- {
   "id": "nova_structures:shrine_biome_tier_5",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -9978,34 +5935,6 @@ const STRUCTURES_DATA = [
   "name_en": "Biome Shrine Tier V",
   "name_vi": "Biome Shrine Tier V",
   "has3d": "df1b629eac2c.json"
- },
- {
-  "id": "nova_structures:shrine_biome_tier_5",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Biome Shrine Tier V",
-  "name_vi": "Biome Shrine Tier V",
-  "has3d": "df1b629eac2c.json"
- },
- {
-  "id": "nova_structures:firewatch_tower_birch",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Firewatch Tower",
-  "name_vi": "Birch Firewatch Tower",
-  "has3d": "48779d7d1ab3.json"
  },
  {
   "id": "nova_structures:firewatch_tower_birch",
@@ -10036,20 +5965,6 @@ const STRUCTURES_DATA = [
   "has3d": "7cff108ad27e.json"
  },
  {
-  "id": "nova_structures:remnant_birch_graveyard",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Graveyard",
-  "name_vi": "Birch Graveyard",
-  "has3d": "7cff108ad27e.json"
- },
- {
   "id": "nova_structures:tavern_birch",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -10062,34 +5977,6 @@ const STRUCTURES_DATA = [
   "name_en": "Birch Tavern",
   "name_vi": "Birch Tavern",
   "has3d": "f81cf07d9850.json"
- },
- {
-  "id": "nova_structures:tavern_birch",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Tavern",
-  "name_vi": "Birch Tavern",
-  "has3d": "f81cf07d9850.json"
- },
- {
-  "id": "nova_structures:village_birch",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Village",
-  "name_vi": "Birch Village",
-  "has3d": "ebdcdc900bf8.json"
  },
  {
   "id": "nova_structures:village_birch",
@@ -10120,20 +6007,6 @@ const STRUCTURES_DATA = [
   "has3d": "d992bc0b42b3.json"
  },
  {
-  "id": "nova_structures:well_birch",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Well",
-  "name_vi": "Birch Well",
-  "has3d": "d992bc0b42b3.json"
- },
- {
   "id": "nova_structures:bogged_camp",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -10146,34 +6019,6 @@ const STRUCTURES_DATA = [
   "name_en": "Bogged Camp",
   "name_vi": "Bogged Camp",
   "has3d": "13f3426ad29e.json"
- },
- {
-  "id": "nova_structures:bogged_camp",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bogged Camp",
-  "name_vi": "Bogged Camp",
-  "has3d": "13f3426ad29e.json"
- },
- {
-  "id": "nova_structures:remnant_bridge_remnant",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bridge Remnant",
-  "name_vi": "Bridge Remnant",
-  "has3d": "dc37d65017d5.json"
  },
  {
   "id": "nova_structures:remnant_bridge_remnant",
@@ -10204,20 +6049,6 @@ const STRUCTURES_DATA = [
   "has3d": "f9a3ab941d44.json"
  },
  {
-  "id": "nova_structures:remnant_bundle_tent",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bundle Tent",
-  "name_vi": "Bundle Tent",
-  "has3d": "f9a3ab941d44.json"
- },
- {
   "id": "nova_structures:bunker",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -10230,34 +6061,6 @@ const STRUCTURES_DATA = [
   "name_en": "Bunker",
   "name_vi": "Bunker",
   "has3d": "7859c1fd3ffb.json"
- },
- {
-  "id": "nova_structures:bunker",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bunker",
-  "name_vi": "Bunker",
-  "has3d": "7859c1fd3ffb.json"
- },
- {
-  "id": "nova_structures:remnant_bunny_base",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bunny Base",
-  "name_vi": "Bunny Base",
-  "has3d": "e877bdb335c4.json"
  },
  {
   "id": "nova_structures:remnant_bunny_base",
@@ -10288,20 +6091,6 @@ const STRUCTURES_DATA = [
   "has3d": "8af268b66ff2.json"
  },
  {
-  "id": "nova_structures:catacomb",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Catacomb",
-  "name_vi": "Catacomb",
-  "has3d": "8af268b66ff2.json"
- },
- {
   "id": "nova_structures:cave_chamber",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -10314,34 +6103,6 @@ const STRUCTURES_DATA = [
   "name_en": "Cave Chamber",
   "name_vi": "Cave Chamber",
   "has3d": "15b7dfe43ea4.json"
- },
- {
-  "id": "nova_structures:cave_chamber",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Cave Chamber",
-  "name_vi": "Cave Chamber",
-  "has3d": "15b7dfe43ea4.json"
- },
- {
-  "id": "nova_structures:cave_chamber_archeology_ruins",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Cave Chamber Archaeology Ruins",
-  "name_vi": "Cave Chamber Archaeology Ruins",
-  "has3d": "b38b15646df5.json"
  },
  {
   "id": "nova_structures:cave_chamber_archeology_ruins",
@@ -10372,20 +6133,6 @@ const STRUCTURES_DATA = [
   "has3d": "ed66e0587526.json"
  },
  {
-  "id": "nova_structures:cave_chamber_colony",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Cave Chamber Colony",
-  "name_vi": "Cave Chamber Colony",
-  "has3d": "ed66e0587526.json"
- },
- {
   "id": "nova_structures:cave_chamber_dungeon_colony",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -10398,34 +6145,6 @@ const STRUCTURES_DATA = [
   "name_en": "Cave Chamber Dungeon Colony",
   "name_vi": "Cave Chamber Dungeon Colony",
   "has3d": "27dc8beb5a81.json"
- },
- {
-  "id": "nova_structures:cave_chamber_dungeon_colony",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Cave Chamber Dungeon Colony",
-  "name_vi": "Cave Chamber Dungeon Colony",
-  "has3d": "27dc8beb5a81.json"
- },
- {
-  "id": "nova_structures:cave_hut",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Cave Hut",
-  "name_vi": "Cave Hut",
-  "has3d": "7bdb210908a2.json"
  },
  {
   "id": "nova_structures:cave_hut",
@@ -10456,20 +6175,6 @@ const STRUCTURES_DATA = [
   "has3d": "9e384fd5f052.json"
  },
  {
-  "id": "nova_structures:firewatch_tower_cherry",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cherry Firewatch Tower",
-  "name_vi": "Cherry Firewatch Tower",
-  "has3d": "9e384fd5f052.json"
- },
- {
   "id": "nova_structures:tavern_cherry",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -10482,34 +6187,6 @@ const STRUCTURES_DATA = [
   "name_en": "Cherry Tavern",
   "name_vi": "Cherry Tavern",
   "has3d": "9c8e3ee66e5d.json"
- },
- {
-  "id": "nova_structures:tavern_cherry",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cherry Tavern",
-  "name_vi": "Cherry Tavern",
-  "has3d": "9c8e3ee66e5d.json"
- },
- {
-  "id": "nova_structures:well_cherry",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cherry Well",
-  "name_vi": "Cherry Well",
-  "has3d": "63cfa279352e.json"
  },
  {
   "id": "nova_structures:well_cherry",
@@ -10540,20 +6217,6 @@ const STRUCTURES_DATA = [
   "has3d": "2aa934256611.json"
  },
  {
-  "id": "nova_structures:remnant_classic_village",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Classic Village",
-  "name_vi": "Classic Village",
-  "has3d": "2aa934256611.json"
- },
- {
   "id": "nova_structures:shrine_combat_tier_1",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -10566,34 +6229,6 @@ const STRUCTURES_DATA = [
   "name_en": "Combat Shrine Tier I",
   "name_vi": "Combat Shrine Tier I",
   "has3d": "aa844cea0fd1.json"
- },
- {
-  "id": "nova_structures:shrine_combat_tier_1",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Combat Shrine Tier I",
-  "name_vi": "Combat Shrine Tier I",
-  "has3d": "aa844cea0fd1.json"
- },
- {
-  "id": "nova_structures:shrine_combat_tier_2",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Combat Shrine Tier II",
-  "name_vi": "Combat Shrine Tier II",
-  "has3d": "b9d99b50a592.json"
  },
  {
   "id": "nova_structures:shrine_combat_tier_2",
@@ -10624,20 +6259,6 @@ const STRUCTURES_DATA = [
   "has3d": "b6e29ca5afa7.json"
  },
  {
-  "id": "nova_structures:shrine_combat_tier_3",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Combat Shrine Tier III",
-  "name_vi": "Combat Shrine Tier III",
-  "has3d": "b6e29ca5afa7.json"
- },
- {
   "id": "nova_structures:shrine_combat_tier_4",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -10650,34 +6271,6 @@ const STRUCTURES_DATA = [
   "name_en": "Combat Shrine Tier IV",
   "name_vi": "Combat Shrine Tier IV",
   "has3d": "ed29c175b6d0.json"
- },
- {
-  "id": "nova_structures:shrine_combat_tier_4",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Combat Shrine Tier IV",
-  "name_vi": "Combat Shrine Tier IV",
-  "has3d": "ed29c175b6d0.json"
- },
- {
-  "id": "nova_structures:shrine_combat_tier_5",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Combat Shrine Tier V",
-  "name_vi": "Combat Shrine Tier V",
-  "has3d": "9e0f4577ad8d.json"
  },
  {
   "id": "nova_structures:shrine_combat_tier_5",
@@ -10708,34 +6301,6 @@ const STRUCTURES_DATA = [
   "has3d": "29b558f22003.json"
  },
  {
-  "id": "nova_structures:conduit_ruin",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Conduit Ruin",
-  "name_vi": "Conduit Ruin",
-  "has3d": "29b558f22003.json"
- },
- {
-  "id": "nova_structures:remnant_creeper_homestead",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Creeper Homestead",
-  "name_vi": "Creeper Homestead",
-  "has3d": "5e68fadbd063.json"
- },
- {
   "id": "nova_structures:remnant_creeper_homestead",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -10764,20 +6329,6 @@ const STRUCTURES_DATA = [
   "has3d": "34fa4351aa7e.json"
  },
  {
-  "id": "nova_structures:creeping_crypt",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.7x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Creeping Crypt",
-  "name_vi": "Creeping Crypt",
-  "has3d": "34fa4351aa7e.json"
- },
- {
   "id": "nova_structures:nether_skeleton_camp_crimson",
   "pack": "Dungeons & Taverns",
   "dim": "nether",
@@ -10789,33 +6340,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Crimson Nether Camp",
   "name_vi": "Crimson Nether Camp"
- },
- {
-  "id": "nova_structures:nether_skeleton_camp_crimson",
-  "pack": "Dungeons & Taverns",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Crimson Nether Camp",
-  "name_vi": "Crimson Nether Camp"
- },
- {
-  "id": "nova_structures:nether_skeleton_tower_crimson",
-  "pack": "Dungeons & Taverns",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Crimson Nether Tower",
-  "name_vi": "Crimson Nether Tower",
-  "has3d": "f10e3fab2f65.json"
  },
  {
   "id": "nova_structures:nether_skeleton_tower_crimson",
@@ -10846,20 +6370,6 @@ const STRUCTURES_DATA = [
   "has3d": "10348ad7d54a.json"
  },
  {
-  "id": "nova_structures:firewatch_tower_dappled",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dappled Firewatch Tower",
-  "name_vi": "Dappled Firewatch Tower",
-  "has3d": "10348ad7d54a.json"
- },
- {
   "id": "nova_structures:tavern_dappled",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -10872,34 +6382,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dappled Tavern",
   "name_vi": "Dappled Tavern",
   "has3d": "369857c985e2.json"
- },
- {
-  "id": "nova_structures:tavern_dappled",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dappled Tavern",
-  "name_vi": "Dappled Tavern",
-  "has3d": "369857c985e2.json"
- },
- {
-  "id": "nova_structures:dappled_townhall",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dappled Townhall",
-  "name_vi": "Dappled Townhall",
-  "has3d": "de97f385de7f.json"
  },
  {
   "id": "nova_structures:dappled_townhall",
@@ -10930,34 +6412,6 @@ const STRUCTURES_DATA = [
   "has3d": "e065f768a877.json"
  },
  {
-  "id": "nova_structures:village_dappled",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dappled Village",
-  "name_vi": "Dappled Village",
-  "has3d": "e065f768a877.json"
- },
- {
-  "id": "nova_structures:well_dappled",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dappled Well",
-  "name_vi": "Dappled Well",
-  "has3d": "c9f0ea0c36f5.json"
- },
- {
   "id": "nova_structures:well_dappled",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -10983,33 +6437,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Dappled Witch Hut",
   "name_vi": "Dappled Witch Hut"
- },
- {
-  "id": "nova_structures:dappled_witch_hut",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dappled Witch Hut",
-  "name_vi": "Dappled Witch Hut"
- },
- {
-  "id": "nova_structures:firewatch_tower_dark_oak",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Oak Firewatch Tower",
-  "name_vi": "Dark Oak Firewatch Tower",
-  "has3d": "f127b491b27e.json"
  },
  {
   "id": "nova_structures:firewatch_tower_dark_oak",
@@ -11040,20 +6467,6 @@ const STRUCTURES_DATA = [
   "has3d": "461dc3dab251.json"
  },
  {
-  "id": "nova_structures:tavern_dark_oak",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Oak Tavern",
-  "name_vi": "Dark Oak Tavern",
-  "has3d": "461dc3dab251.json"
- },
- {
   "id": "nova_structures:well_dark_oak",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -11066,34 +6479,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dark Oak Well",
   "name_vi": "Dark Oak Well",
   "has3d": "8167bb2e27c2.json"
- },
- {
-  "id": "nova_structures:well_dark_oak",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Oak Well",
-  "name_vi": "Dark Oak Well",
-  "has3d": "8167bb2e27c2.json"
- },
- {
-  "id": "nova_structures:deepslate_camp",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Deepslate Camp",
-  "name_vi": "Deepslate Camp",
-  "has3d": "e5fc11dee57c.json"
  },
  {
   "id": "nova_structures:deepslate_camp",
@@ -11124,20 +6509,6 @@ const STRUCTURES_DATA = [
   "has3d": "88a91d1082e6.json"
  },
  {
-  "id": "nova_structures:remnant_desert_remnant",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Remnant",
-  "name_vi": "Desert Remnant",
-  "has3d": "88a91d1082e6.json"
- },
- {
   "id": "nova_structures:desert_ruins",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -11150,34 +6521,6 @@ const STRUCTURES_DATA = [
   "name_en": "Desert Ruins",
   "name_vi": "Desert Ruins",
   "has3d": "4a468b5571da.json"
- },
- {
-  "id": "nova_structures:desert_ruins",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Ruins",
-  "name_vi": "Desert Ruins",
-  "has3d": "4a468b5571da.json"
- },
- {
-  "id": "nova_structures:tavern_desert",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Tavern",
-  "name_vi": "Desert Tavern",
-  "has3d": "b2c282cbb216.json"
  },
  {
   "id": "nova_structures:tavern_desert",
@@ -11208,20 +6551,6 @@ const STRUCTURES_DATA = [
   "has3d": "37c87085b8ac.json"
  },
  {
-  "id": "nova_structures:well_desert",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Well",
-  "name_vi": "Desert Well",
-  "has3d": "37c87085b8ac.json"
- },
- {
   "id": "nova_structures:surface_dungeon_desert",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -11234,34 +6563,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dusty Surface Dungeon",
   "name_vi": "Dusty Surface Dungeon",
   "has3d": "6571a362d614.json"
- },
- {
-  "id": "nova_structures:surface_dungeon_desert",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Dusty Surface Dungeon",
-  "name_vi": "Dusty Surface Dungeon",
-  "has3d": "6571a362d614.json"
- },
- {
-  "id": "nova_structures:surface_trial_dungeon_desert",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Dusty Surface Trial Dungeon",
-  "name_vi": "Dusty Surface Trial Dungeon",
-  "has3d": "e96dd1a7e1ae.json"
  },
  {
   "id": "nova_structures:surface_trial_dungeon_desert",
@@ -11292,20 +6593,6 @@ const STRUCTURES_DATA = [
   "has3d": "2f99eeb0d8c2.json"
  },
  {
-  "id": "nova_structures:end_castle",
-  "pack": "Dungeons & Taverns",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End Castle",
-  "name_vi": "End Castle",
-  "has3d": "2f99eeb0d8c2.json"
- },
- {
   "id": "nova_structures:end_lighthouse",
   "pack": "Dungeons & Taverns",
   "dim": "end",
@@ -11318,34 +6605,6 @@ const STRUCTURES_DATA = [
   "name_en": "End Lighthouse",
   "name_vi": "End Lighthouse",
   "has3d": "7e160be4c6bf.json"
- },
- {
-  "id": "nova_structures:end_lighthouse",
-  "pack": "Dungeons & Taverns",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "End Highlands",
-  "where_vi": "Cao nguyên The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End Lighthouse",
-  "name_vi": "End Lighthouse",
-  "has3d": "7e160be4c6bf.json"
- },
- {
-  "id": "nova_structures:end_ship",
-  "pack": "Dungeons & Taverns",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End Ship",
-  "name_vi": "End Ship",
-  "has3d": "4200f9d45106.json"
  },
  {
   "id": "nova_structures:end_ship",
@@ -11376,34 +6635,6 @@ const STRUCTURES_DATA = [
   "has3d": "50c4bec25c08.json"
  },
  {
-  "id": "nova_structures:remnant_ruin_farmer",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Farmer's Ruin",
-  "name_vi": "Farmer's Ruin",
-  "has3d": "50c4bec25c08.json"
- },
- {
-  "id": "nova_structures:firewatch_tower_forest",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Forest Firewatch Tower",
-  "name_vi": "Forest Firewatch Tower",
-  "has3d": "7240cc6c8027.json"
- },
- {
   "id": "nova_structures:firewatch_tower_forest",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -11432,20 +6663,6 @@ const STRUCTURES_DATA = [
   "has3d": "55c537203117.json"
  },
  {
-  "id": "nova_structures:remnant_forest_smith",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Forest Smith",
-  "name_vi": "Forest Smith",
-  "has3d": "55c537203117.json"
- },
- {
   "id": "nova_structures:nether_skeleton_camp_fort",
   "pack": "Dungeons & Taverns",
   "dim": "nether",
@@ -11457,33 +6674,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Fortified Nether Camp",
   "name_vi": "Fortified Nether Camp"
- },
- {
-  "id": "nova_structures:nether_skeleton_camp_fort",
-  "pack": "Dungeons & Taverns",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Fortified Nether Camp",
-  "name_vi": "Fortified Nether Camp"
- },
- {
-  "id": "nova_structures:nether_skeleton_tower_fort",
-  "pack": "Dungeons & Taverns",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Fortified Nether Tower",
-  "name_vi": "Fortified Nether Tower",
-  "has3d": "12b6f5193d10.json"
  },
  {
   "id": "nova_structures:nether_skeleton_tower_fort",
@@ -11514,20 +6704,6 @@ const STRUCTURES_DATA = [
   "has3d": "d73e0aaa0a69.json"
  },
  {
-  "id": "nova_structures:remnant_frog_ranch",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Frog Ranch",
-  "name_vi": "Frog Ranch",
-  "has3d": "d73e0aaa0a69.json"
- },
- {
   "id": "nova_structures:remnant_graveyard",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -11540,34 +6716,6 @@ const STRUCTURES_DATA = [
   "name_en": "Graveyard",
   "name_vi": "Graveyard",
   "has3d": "2343c9e43c43.json"
- },
- {
-  "id": "nova_structures:remnant_graveyard",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Graveyard",
-  "name_vi": "Graveyard",
-  "has3d": "2343c9e43c43.json"
- },
- {
-  "id": "nova_structures:hamlet",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Hamlet",
-  "name_vi": "Hamlet",
-  "has3d": "462e98ac9903.json"
  },
  {
   "id": "nova_structures:hamlet",
@@ -11597,19 +6745,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Illager Barracks"
  },
  {
-  "id": "nova_structures:illager_barracks",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Illager Barracks",
-  "name_vi": "Illager Barracks"
- },
- {
   "id": "nova_structures:illager_camp",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -11621,33 +6756,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Illager Camp",
   "name_vi": "Illager Camp"
- },
- {
-  "id": "nova_structures:illager_camp",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Illager Camp",
-  "name_vi": "Illager Camp"
- },
- {
-  "id": "nova_structures:illager_hideout",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Illager Hideout",
-  "name_vi": "Illager Hideout",
-  "has3d": "6c8512d05c87.json"
  },
  {
   "id": "nova_structures:illager_hideout",
@@ -11678,20 +6786,6 @@ const STRUCTURES_DATA = [
   "has3d": "a0c60aff6259.json"
  },
  {
-  "id": "nova_structures:illager_manor",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Illager Manor",
-  "name_vi": "Illager Manor",
-  "has3d": "a0c60aff6259.json"
- },
- {
   "id": "nova_structures:illager_treehouse",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -11703,33 +6797,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Illager Treehouse",
   "name_vi": "Illager Treehouse"
- },
- {
-  "id": "nova_structures:illager_treehouse",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Illager Treehouse",
-  "name_vi": "Illager Treehouse"
- },
- {
-  "id": "nova_structures:firewatch_tower_jungle",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Firewatch Tower",
-  "name_vi": "Jungle Firewatch Tower",
-  "has3d": "72ab2edde9be.json"
  },
  {
   "id": "nova_structures:firewatch_tower_jungle",
@@ -11760,20 +6827,6 @@ const STRUCTURES_DATA = [
   "has3d": "097f123042ff.json"
  },
  {
-  "id": "nova_structures:jungle_ruins",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Ruins",
-  "name_vi": "Jungle Ruins",
-  "has3d": "097f123042ff.json"
- },
- {
   "id": "nova_structures:tavern_jungle",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -11786,34 +6839,6 @@ const STRUCTURES_DATA = [
   "name_en": "Jungle Tavern",
   "name_vi": "Jungle Tavern",
   "has3d": "09c74714aad0.json"
- },
- {
-  "id": "nova_structures:tavern_jungle",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Tavern",
-  "name_vi": "Jungle Tavern",
-  "has3d": "09c74714aad0.json"
- },
- {
-  "id": "nova_structures:village_jungle",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Village",
-  "name_vi": "Jungle Village",
-  "has3d": "19f69d66d584.json"
  },
  {
   "id": "nova_structures:village_jungle",
@@ -11844,20 +6869,6 @@ const STRUCTURES_DATA = [
   "has3d": "a043517c8027.json"
  },
  {
-  "id": "nova_structures:well_jungle",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Well",
-  "name_vi": "Jungle Well",
-  "has3d": "a043517c8027.json"
- },
- {
   "id": "nova_structures:remnant_lava_chicken",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -11870,34 +6881,6 @@ const STRUCTURES_DATA = [
   "name_en": "Lava Chicken Stand",
   "name_vi": "Lava Chicken Stand",
   "has3d": "a621e38ba7dc.json"
- },
- {
-  "id": "nova_structures:remnant_lava_chicken",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Lava Chicken Stand",
-  "name_vi": "Lava Chicken Stand",
-  "has3d": "a621e38ba7dc.json"
- },
- {
-  "id": "nova_structures:lone_citadel",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Lone Citadel",
-  "name_vi": "Lone Citadel",
-  "has3d": "d428bae1cf16.json"
  },
  {
   "id": "nova_structures:lone_citadel",
@@ -11928,34 +6911,6 @@ const STRUCTURES_DATA = [
   "has3d": "b130fb8d9f86.json"
  },
  {
-  "id": "nova_structures:firewatch_tower_mangrove",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mangrove Firewatch Tower",
-  "name_vi": "Mangrove Firewatch Tower",
-  "has3d": "b130fb8d9f86.json"
- },
- {
-  "id": "nova_structures:tavern_mangrove",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mangrove Tavern",
-  "name_vi": "Mangrove Tavern",
-  "has3d": "20027f16f4f5.json"
- },
- {
   "id": "nova_structures:tavern_mangrove",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -11984,20 +6939,6 @@ const STRUCTURES_DATA = [
   "has3d": "bd680d5d2189.json"
  },
  {
-  "id": "nova_structures:well_mangrove",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mangrove Well",
-  "name_vi": "Mangrove Well",
-  "has3d": "bd680d5d2189.json"
- },
- {
   "id": "nova_structures:mangrove_witch_hut",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -12009,33 +6950,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Mangrove Witch Hut",
   "name_vi": "Mangrove Witch Hut"
- },
- {
-  "id": "nova_structures:mangrove_witch_hut",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mangrove Witch Hut",
-  "name_vi": "Mangrove Witch Hut"
- },
- {
-  "id": "nova_structures:remnant_miner_hut",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Miner Hut",
-  "name_vi": "Miner Hut",
-  "has3d": "001af115bdc4.json"
  },
  {
   "id": "nova_structures:remnant_miner_hut",
@@ -12066,34 +6980,6 @@ const STRUCTURES_DATA = [
   "has3d": "a6b88d816ac6.json"
  },
  {
-  "id": "nova_structures:remnant_mud_brick_constructor",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mud Brick Constructor",
-  "name_vi": "Mud Brick Constructor",
-  "has3d": "a6b88d816ac6.json"
- },
- {
-  "id": "nova_structures:surface_dungeon_swamp",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Muddy Surface Dungeon",
-  "name_vi": "Muddy Surface Dungeon",
-  "has3d": "01f816b8b5e2.json"
- },
- {
   "id": "nova_structures:surface_dungeon_swamp",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -12122,20 +7008,6 @@ const STRUCTURES_DATA = [
   "has3d": "ceb6058bf6ae.json"
  },
  {
-  "id": "nova_structures:surface_trial_dungeon_swamp",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Muddy Surface Trial Dungeon",
-  "name_vi": "Muddy Surface Trial Dungeon",
-  "has3d": "ceb6058bf6ae.json"
- },
- {
   "id": "nova_structures:nether_keep",
   "pack": "Dungeons & Taverns",
   "dim": "nether",
@@ -12147,33 +7019,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Dưới lòng đất",
   "name_en": "Nether Keep",
   "name_vi": "Nether Keep"
- },
- {
-  "id": "nova_structures:nether_keep",
-  "pack": "Dungeons & Taverns",
-  "dim": "nether",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Nether Keep",
-  "name_vi": "Nether Keep"
- },
- {
-  "id": "nova_structures:nether_port",
-  "pack": "Dungeons & Taverns",
-  "dim": "nether",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Nether Port",
-  "name_vi": "Nether Port",
-  "has3d": "d515518b9973.json"
  },
  {
   "id": "nova_structures:nether_port",
@@ -12204,20 +7049,6 @@ const STRUCTURES_DATA = [
   "has3d": "e83f08e85fa9.json"
  },
  {
-  "id": "nova_structures:tavern_oak",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak Tavern",
-  "name_vi": "Oak Tavern",
-  "has3d": "e83f08e85fa9.json"
- },
- {
   "id": "nova_structures:well_oak",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -12230,34 +7061,6 @@ const STRUCTURES_DATA = [
   "name_en": "Oak Well",
   "name_vi": "Oak Well",
   "has3d": "1c2782bacc8b.json"
- },
- {
-  "id": "nova_structures:well_oak",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak Well",
-  "name_vi": "Oak Well",
-  "has3d": "1c2782bacc8b.json"
- },
- {
-  "id": "nova_structures:remnant_ominous_shop",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ominous Shop",
-  "name_vi": "Ominous Shop",
-  "has3d": "20e55b802dc5.json"
  },
  {
   "id": "nova_structures:remnant_ominous_shop",
@@ -12288,20 +7091,6 @@ const STRUCTURES_DATA = [
   "has3d": "1305cb7b73f6.json"
  },
  {
-  "id": "nova_structures:shrine_combat_tier_6",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ominous Shrine Tier VI",
-  "name_vi": "Ominous Shrine Tier VI",
-  "has3d": "1305cb7b73f6.json"
- },
- {
   "id": "nova_structures:firewatch_tower_pale",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -12314,34 +7103,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pale Firewatch Tower",
   "name_vi": "Pale Firewatch Tower",
   "has3d": "61bf69da867a.json"
- },
- {
-  "id": "nova_structures:firewatch_tower_pale",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Pale Garden",
-  "where_vi": "Khu Rừng Nhợt Nhạt",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pale Firewatch Tower",
-  "name_vi": "Pale Firewatch Tower",
-  "has3d": "61bf69da867a.json"
- },
- {
-  "id": "nova_structures:pale_residence",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Pale Garden",
-  "where_vi": "Khu Rừng Nhợt Nhạt",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pale Residence",
-  "name_vi": "Pale Residence",
-  "has3d": "96b904f80785.json"
  },
  {
   "id": "nova_structures:pale_residence",
@@ -12372,34 +7133,6 @@ const STRUCTURES_DATA = [
   "has3d": "9913e290de96.json"
  },
  {
-  "id": "nova_structures:tavern_pale",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Pale Garden",
-  "where_vi": "Khu Rừng Nhợt Nhạt",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pale Tavern",
-  "name_vi": "Pale Tavern",
-  "has3d": "9913e290de96.json"
- },
- {
-  "id": "nova_structures:well_pale",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Pale Garden",
-  "where_vi": "Khu Rừng Nhợt Nhạt",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pale Well",
-  "name_vi": "Pale Well",
-  "has3d": "d3cd4199b209.json"
- },
- {
   "id": "nova_structures:well_pale",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -12425,33 +7158,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Parched Camp",
   "name_vi": "Parched Camp"
- },
- {
-  "id": "nova_structures:parched_camp",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Parched Camp",
-  "name_vi": "Parched Camp"
- },
- {
-  "id": "nova_structures:piglin_camp",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Piglin Camp",
-  "name_vi": "Piglin Camp",
-  "has3d": "88f4d02fe4d2.json"
  },
  {
   "id": "nova_structures:piglin_camp",
@@ -12482,20 +7188,6 @@ const STRUCTURES_DATA = [
   "has3d": "74a9f96fd9a9.json"
  },
  {
-  "id": "nova_structures:piglin_camp_collony",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Piglin Camp Colony",
-  "name_vi": "Piglin Camp Colony",
-  "has3d": "74a9f96fd9a9.json"
- },
- {
   "id": "nova_structures:piglin_donjon",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -12508,34 +7200,6 @@ const STRUCTURES_DATA = [
   "name_en": "Piglin Donjon",
   "name_vi": "Piglin Donjon",
   "has3d": "35e833844ba0.json"
- },
- {
-  "id": "nova_structures:piglin_donjon",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Piglin Donjon",
-  "name_vi": "Piglin Donjon",
-  "has3d": "35e833844ba0.json"
- },
- {
-  "id": "nova_structures:piglin_outstation",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Piglin Outstation",
-  "name_vi": "Piglin Outstation",
-  "has3d": "bbf75daf2a4b.json"
  },
  {
   "id": "nova_structures:piglin_outstation",
@@ -12566,34 +7230,6 @@ const STRUCTURES_DATA = [
   "has3d": "212f0799ba04.json"
  },
  {
-  "id": "nova_structures:remnant_medium_remnant",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Remnant",
-  "name_vi": "Remnant",
-  "has3d": "212f0799ba04.json"
- },
- {
-  "id": "nova_structures:remnant_big_remnant_2",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Remnant Big Remnant 2",
-  "name_vi": "Remnant Big Remnant 2",
-  "has3d": "5ed688a80020.json"
- },
- {
   "id": "nova_structures:remnant_big_remnant_2",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -12622,20 +7258,6 @@ const STRUCTURES_DATA = [
   "has3d": "3eef8414ffca.json"
  },
  {
-  "id": "nova_structures:remnant_big_remnant_3",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Remnant Big Remnant 3",
-  "name_vi": "Remnant Big Remnant 3",
-  "has3d": "3eef8414ffca.json"
- },
- {
   "id": "nova_structures:remnant_clifftree",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -12647,33 +7269,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Remnant Clifftree",
   "name_vi": "Remnant Clifftree"
- },
- {
-  "id": "nova_structures:remnant_clifftree",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Remnant Clifftree",
-  "name_vi": "Remnant Clifftree"
- },
- {
-  "id": "nova_structures:remnant_medium_remnant_2",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Remnant Medium Remnant 2",
-  "name_vi": "Remnant Medium Remnant 2",
-  "has3d": "82eaaf9edab5.json"
  },
  {
   "id": "nova_structures:remnant_medium_remnant_2",
@@ -12704,20 +7299,6 @@ const STRUCTURES_DATA = [
   "has3d": "141a4565269a.json"
  },
  {
-  "id": "nova_structures:remnant_shrine_sentinel_mass_grave",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Remnant Shrine Sentinel Mass Grave",
-  "name_vi": "Remnant Shrine Sentinel Mass Grave",
-  "has3d": "141a4565269a.json"
- },
- {
   "id": "nova_structures:remnant_tavern_classic",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -12729,33 +7310,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Remnant Tavern Classic",
   "name_vi": "Remnant Tavern Classic"
- },
- {
-  "id": "nova_structures:remnant_tavern_classic",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Remnant Tavern Classic",
-  "name_vi": "Remnant Tavern Classic"
- },
- {
-  "id": "nova_structures:ruin_town",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruin Town",
-  "name_vi": "Ruin Town",
-  "has3d": "de381f85127f.json"
  },
  {
   "id": "nova_structures:ruin_town",
@@ -12786,20 +7340,6 @@ const STRUCTURES_DATA = [
   "has3d": "7baceb63db27.json"
  },
  {
-  "id": "nova_structures:remnant_lone_shrine_sentinel",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruined Shrine Sentinel",
-  "name_vi": "Ruined Shrine Sentinel",
-  "has3d": "7baceb63db27.json"
- },
- {
   "id": "nova_structures:firewatch_tower_savanna",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -12812,34 +7352,6 @@ const STRUCTURES_DATA = [
   "name_en": "Savanna Firewatch Tower",
   "name_vi": "Savanna Firewatch Tower",
   "has3d": "093440c795a1.json"
- },
- {
-  "id": "nova_structures:firewatch_tower_savanna",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Savanna Firewatch Tower",
-  "name_vi": "Savanna Firewatch Tower",
-  "has3d": "093440c795a1.json"
- },
- {
-  "id": "nova_structures:well_savanna",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Savanna Well",
-  "name_vi": "Savanna Well",
-  "has3d": "b04b559a0738.json"
  },
  {
   "id": "nova_structures:well_savanna",
@@ -12870,20 +7382,6 @@ const STRUCTURES_DATA = [
   "has3d": "351ca722e796.json"
  },
  {
-  "id": "nova_structures:remnant_sawmill",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sawmill",
-  "name_vi": "Sawmill",
-  "has3d": "351ca722e796.json"
- },
- {
   "id": "nova_structures:remnant_school_remnant",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -12896,34 +7394,6 @@ const STRUCTURES_DATA = [
   "name_en": "School Remnant",
   "name_vi": "School Remnant",
   "has3d": "4e39c2fed1f3.json"
- },
- {
-  "id": "nova_structures:remnant_school_remnant",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "School Remnant",
-  "name_vi": "School Remnant",
-  "has3d": "4e39c2fed1f3.json"
- },
- {
-  "id": "nova_structures:sealing_halls",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Sealing Halls",
-  "name_vi": "Sealing Halls",
-  "has3d": "d2d35dc390d9.json"
  },
  {
   "id": "nova_structures:sealing_halls",
@@ -12954,20 +7424,6 @@ const STRUCTURES_DATA = [
   "has3d": "98af714ba303.json"
  },
  {
-  "id": "nova_structures:remnant_shrine_research_station",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Shrine Research Station",
-  "name_vi": "Shrine Research Station",
-  "has3d": "98af714ba303.json"
- },
- {
   "id": "nova_structures:shrine_tower",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -12980,34 +7436,6 @@ const STRUCTURES_DATA = [
   "name_en": "Shrine Tower",
   "name_vi": "Shrine Tower",
   "has3d": "761f1c2daf10.json"
- },
- {
-  "id": "nova_structures:shrine_tower",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Shrine Tower",
-  "name_vi": "Shrine Tower",
-  "has3d": "761f1c2daf10.json"
- },
- {
-  "id": "nova_structures:small_conduit_ruin_cold",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Conduit Ruins",
-  "name_vi": "Small Conduit Ruins",
-  "has3d": "e72f8f4f1765.json"
  },
  {
   "id": "nova_structures:small_conduit_ruin_cold",
@@ -13038,20 +7466,6 @@ const STRUCTURES_DATA = [
   "has3d": "907964425e28.json"
  },
  {
-  "id": "nova_structures:small_conduit_ruin_warm",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Conduit Ruins",
-  "name_vi": "Small Conduit Ruins",
-  "has3d": "907964425e28.json"
- },
- {
   "id": "nova_structures:small_creeping_crypt",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -13064,34 +7478,6 @@ const STRUCTURES_DATA = [
   "name_en": "Small Creeping Crypt",
   "name_vi": "Small Creeping Crypt",
   "has3d": "32d2fea5958b.json"
- },
- {
-  "id": "nova_structures:small_creeping_crypt",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.7x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Small Creeping Crypt",
-  "name_vi": "Small Creeping Crypt",
-  "has3d": "32d2fea5958b.json"
- },
- {
-  "id": "nova_structures:small_undead_crypt",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.7x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Small Undead Crypt",
-  "name_vi": "Small Undead Crypt",
-  "has3d": "faeed636e710.json"
  },
  {
   "id": "nova_structures:small_undead_crypt",
@@ -13122,20 +7508,6 @@ const STRUCTURES_DATA = [
   "has3d": "8b7ac0cb3139.json"
  },
  {
-  "id": "nova_structures:remnant_ruin_smith",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Smith's Ruin",
-  "name_vi": "Smith's Ruin",
-  "has3d": "8b7ac0cb3139.json"
- },
- {
   "id": "nova_structures:surface_dungeon_snowy",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -13148,34 +7520,6 @@ const STRUCTURES_DATA = [
   "name_en": "Snowy Surface Dungeon",
   "name_vi": "Snowy Surface Dungeon",
   "has3d": "5dc5fe166841.json"
- },
- {
-  "id": "nova_structures:surface_dungeon_snowy",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Snowy Surface Dungeon",
-  "name_vi": "Snowy Surface Dungeon",
-  "has3d": "5dc5fe166841.json"
- },
- {
-  "id": "nova_structures:surface_trial_dungeon_snowy",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Snowy Surface Trial Dungeon",
-  "name_vi": "Snowy Surface Trial Dungeon",
-  "has3d": "803ad002dac1.json"
  },
  {
   "id": "nova_structures:surface_trial_dungeon_snowy",
@@ -13206,34 +7550,6 @@ const STRUCTURES_DATA = [
   "has3d": "342f0dc55325.json"
  },
  {
-  "id": "nova_structures:tavern_snowy",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Snowy Tavern",
-  "name_vi": "Snowy Tavern",
-  "has3d": "342f0dc55325.json"
- },
- {
-  "id": "nova_structures:well_snowy",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Snowy Well",
-  "name_vi": "Snowy Well",
-  "has3d": "96059978ffc5.json"
- },
- {
   "id": "nova_structures:well_snowy",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -13259,33 +7575,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Soul Nether Camp",
   "name_vi": "Soul Nether Camp"
- },
- {
-  "id": "nova_structures:nether_skeleton_camp_soul",
-  "pack": "Dungeons & Taverns",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Soul Nether Camp",
-  "name_vi": "Soul Nether Camp"
- },
- {
-  "id": "nova_structures:nether_skeleton_tower_soul",
-  "pack": "Dungeons & Taverns",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Soul Nether Tower",
-  "name_vi": "Soul Nether Tower",
-  "has3d": "c16652926f30.json"
  },
  {
   "id": "nova_structures:nether_skeleton_tower_soul",
@@ -13316,34 +7605,6 @@ const STRUCTURES_DATA = [
   "has3d": "b1e9a7347f3b.json"
  },
  {
-  "id": "nova_structures:remnant_youth_spring",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spring of Youth",
-  "name_vi": "Spring of Youth",
-  "has3d": "b1e9a7347f3b.json"
- },
- {
-  "id": "nova_structures:tavern_spruce",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce Tavern",
-  "name_vi": "Spruce Tavern",
-  "has3d": "9360ab16a46a.json"
- },
- {
   "id": "nova_structures:tavern_spruce",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -13372,20 +7633,6 @@ const STRUCTURES_DATA = [
   "has3d": "4680d96461e9.json"
  },
  {
-  "id": "nova_structures:well_spruce",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce Well",
-  "name_vi": "Spruce Well",
-  "has3d": "4680d96461e9.json"
- },
- {
   "id": "nova_structures:stray_camp",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -13397,33 +7644,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Stray Camp",
   "name_vi": "Stray Camp"
- },
- {
-  "id": "nova_structures:stray_camp",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stray Camp",
-  "name_vi": "Stray Camp"
- },
- {
-  "id": "nova_structures:stray_fort",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stray Fortress",
-  "name_vi": "Stray Fortress",
-  "has3d": "ccda70fa7855.json"
  },
  {
   "id": "nova_structures:stray_fort",
@@ -13454,20 +7674,6 @@ const STRUCTURES_DATA = [
   "has3d": "56fc2c1de57a.json"
  },
  {
-  "id": "nova_structures:stray_outlook",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stray Outlook",
-  "name_vi": "Stray Outlook",
-  "has3d": "56fc2c1de57a.json"
- },
- {
   "id": "nova_structures:surface_dungeon_default",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -13480,34 +7686,6 @@ const STRUCTURES_DATA = [
   "name_en": "Surface Dungeon",
   "name_vi": "Surface Dungeon",
   "has3d": "bdc588a8ab7b.json"
- },
- {
-  "id": "nova_structures:surface_dungeon_default",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Surface Dungeon",
-  "name_vi": "Surface Dungeon",
-  "has3d": "bdc588a8ab7b.json"
- },
- {
-  "id": "nova_structures:surface_trial_dungeon_default",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Surface Trial Dungeon",
-  "name_vi": "Surface Trial Dungeon",
-  "has3d": "27f4c34d2e1e.json"
  },
  {
   "id": "nova_structures:surface_trial_dungeon_default",
@@ -13538,20 +7716,6 @@ const STRUCTURES_DATA = [
   "has3d": "838887f2ed41.json"
  },
  {
-  "id": "nova_structures:firewatch_tower_swamp",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Firewatch Tower",
-  "name_vi": "Swamp Firewatch Tower",
-  "has3d": "838887f2ed41.json"
- },
- {
   "id": "nova_structures:tavern_swamp",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -13564,34 +7728,6 @@ const STRUCTURES_DATA = [
   "name_en": "Swamp Tavern",
   "name_vi": "Swamp Tavern",
   "has3d": "ae71c6e27e26.json"
- },
- {
-  "id": "nova_structures:tavern_swamp",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Tavern",
-  "name_vi": "Swamp Tavern",
-  "has3d": "ae71c6e27e26.json"
- },
- {
-  "id": "nova_structures:village_swamp",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Village",
-  "name_vi": "Swamp Village",
-  "has3d": "5bd1ad70f843.json"
  },
  {
   "id": "nova_structures:village_swamp",
@@ -13622,20 +7758,6 @@ const STRUCTURES_DATA = [
   "has3d": "ce79168e5c13.json"
  },
  {
-  "id": "nova_structures:well_swamp",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Well",
-  "name_vi": "Swamp Well",
-  "has3d": "ce79168e5c13.json"
- },
- {
   "id": "nova_structures:remnant_taiga_castle",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -13648,34 +7770,6 @@ const STRUCTURES_DATA = [
   "name_en": "Taiga Castle",
   "name_vi": "Taiga Castle",
   "has3d": "f688b2d39c67.json"
- },
- {
-  "id": "nova_structures:remnant_taiga_castle",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga Castle",
-  "name_vi": "Taiga Castle",
-  "has3d": "f688b2d39c67.json"
- },
- {
-  "id": "nova_structures:firewatch_tower_taiga",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga Firewatch Tower",
-  "name_vi": "Taiga Firewatch Tower",
-  "has3d": "4fb1596720dd.json"
  },
  {
   "id": "nova_structures:firewatch_tower_taiga",
@@ -13706,20 +7800,6 @@ const STRUCTURES_DATA = [
   "has3d": "96bf9690395e.json"
  },
  {
-  "id": "nova_structures:toxic_lair",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Toxic Lair",
-  "name_vi": "Toxic Lair",
-  "has3d": "96bf9690395e.json"
- },
- {
   "id": "nova_structures:trial_dungeon",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -13732,34 +7812,6 @@ const STRUCTURES_DATA = [
   "name_en": "Trial Dungeon",
   "name_vi": "Trial Dungeon",
   "has3d": "7ec4f8aa8b85.json"
- },
- {
-  "id": "nova_structures:trial_dungeon",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Trial Dungeon",
-  "name_vi": "Trial Dungeon",
-  "has3d": "7ec4f8aa8b85.json"
- },
- {
-  "id": "nova_structures:trident_trial_monument",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Trident Trial Monument",
-  "name_vi": "Trident Trial Monument",
-  "has3d": "2bd9cabb6b2e.json"
  },
  {
   "id": "nova_structures:trident_trial_monument",
@@ -13790,34 +7842,6 @@ const STRUCTURES_DATA = [
   "has3d": "64e9e17b70e4.json"
  },
  {
-  "id": "nova_structures:undead_crypt",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.7x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Undead Crypt",
-  "name_vi": "Undead Crypt",
-  "has3d": "64e9e17b70e4.json"
- },
- {
-  "id": "nova_structures:underground_house",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Underground House",
-  "name_vi": "Underground House",
-  "has3d": "336dd13fdb5a.json"
- },
- {
   "id": "nova_structures:underground_house",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -13843,33 +7867,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Warped Nether Camp",
   "name_vi": "Warped Nether Camp"
- },
- {
-  "id": "nova_structures:nether_skeleton_camp_warped",
-  "pack": "Dungeons & Taverns",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Warped Nether Camp",
-  "name_vi": "Warped Nether Camp"
- },
- {
-  "id": "nova_structures:nether_skeleton_tower_warped",
-  "pack": "Dungeons & Taverns",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Warped Nether Tower",
-  "name_vi": "Warped Nether Tower",
-  "has3d": "dce80ff5e475.json"
  },
  {
   "id": "nova_structures:nether_skeleton_tower_warped",
@@ -13900,20 +7897,6 @@ const STRUCTURES_DATA = [
   "has3d": "82893615e9b8.json"
  },
  {
-  "id": "nova_structures:wild_ruin",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wild Ruin",
-  "name_vi": "Wild Ruin",
-  "has3d": "82893615e9b8.json"
- },
- {
   "id": "nova_structures:witch_villa",
   "pack": "Dungeons & Taverns",
   "dim": "overworld",
@@ -13926,34 +7909,6 @@ const STRUCTURES_DATA = [
   "name_en": "Witch Villa",
   "name_vi": "Witch Villa",
   "has3d": "42dd074af98b.json"
- },
- {
-  "id": "nova_structures:witch_villa",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Witch Villa",
-  "name_vi": "Witch Villa",
-  "has3d": "42dd074af98b.json"
- },
- {
-  "id": "nova_structures:remnant_woodland_hud",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Woodland Hud",
-  "name_vi": "Woodland Hud",
-  "has3d": "3345b7e6f013.json"
  },
  {
   "id": "nova_structures:remnant_woodland_hud",
@@ -13984,20 +7939,6 @@ const STRUCTURES_DATA = [
   "has3d": "9f58cf65777a.json"
  },
  {
-  "id": "nova_structures:remnant_zombie_horse_ranch",
-  "pack": "Dungeons & Taverns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Zombie Horse Ranch",
-  "name_vi": "Zombie Horse Ranch",
-  "has3d": "9f58cf65777a.json"
- },
- {
   "id": "enchantencore:rise",
   "pack": "Enchantments Encore",
   "dim": "overworld",
@@ -14010,34 +7951,6 @@ const STRUCTURES_DATA = [
   "name_en": "Rise",
   "name_vi": "Rise",
   "has3d": "69a6e4df0ce2.json"
- },
- {
-  "id": "enchantencore:rise",
-  "pack": "Enchantments Encore",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rise",
-  "name_vi": "Rise",
-  "has3d": "69a6e4df0ce2.json"
- },
- {
-  "id": "epic:ice_obelisk",
-  "pack": "Epic Dungeons",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ice Obelisk",
-  "name_vi": "Ice Obelisk",
-  "has3d": "e8639f2d5b45.json"
  },
  {
   "id": "epic:ice_obelisk",
@@ -14068,20 +7981,6 @@ const STRUCTURES_DATA = [
   "has3d": "24dadb4839d8.json"
  },
  {
-  "id": "epic:large_dungeon",
-  "pack": "Epic Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Large Dungeon",
-  "name_vi": "Large Dungeon",
-  "has3d": "24dadb4839d8.json"
- },
- {
   "id": "epic:large_ice_dungeon",
   "pack": "Epic Dungeons",
   "dim": "overworld",
@@ -14094,34 +7993,6 @@ const STRUCTURES_DATA = [
   "name_en": "Large Ice Dungeon",
   "name_vi": "Large Ice Dungeon",
   "has3d": "50bd912b0ab2.json"
- },
- {
-  "id": "epic:large_ice_dungeon",
-  "pack": "Epic Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Large Ice Dungeon",
-  "name_vi": "Large Ice Dungeon",
-  "has3d": "50bd912b0ab2.json"
- },
- {
-  "id": "epic:large_sand_dungeon",
-  "pack": "Epic Dungeons",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Large Sand Dungeon",
-  "name_vi": "Large Sand Dungeon",
-  "has3d": "e77a1bfac049.json"
  },
  {
   "id": "epic:large_sand_dungeon",
@@ -14152,20 +8023,6 @@ const STRUCTURES_DATA = [
   "has3d": "a78b5442632f.json"
  },
  {
-  "id": "epic:medium_ice_dungeon",
-  "pack": "Epic Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.7x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Medium Ice Dungeon",
-  "name_vi": "Medium Ice Dungeon",
-  "has3d": "a78b5442632f.json"
- },
- {
   "id": "epic:medium_plains_dungeon",
   "pack": "Epic Dungeons",
   "dim": "overworld",
@@ -14178,34 +8035,6 @@ const STRUCTURES_DATA = [
   "name_en": "Medium Plains Dungeon",
   "name_vi": "Medium Plains Dungeon",
   "has3d": "9c783e154b68.json"
- },
- {
-  "id": "epic:medium_plains_dungeon",
-  "pack": "Epic Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.7x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Medium Plains Dungeon",
-  "name_vi": "Medium Plains Dungeon",
-  "has3d": "9c783e154b68.json"
- },
- {
-  "id": "epic:medium_sand_dungeon",
-  "pack": "Epic Dungeons",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.7x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Medium Sand Dungeon",
-  "name_vi": "Medium Sand Dungeon",
-  "has3d": "cd0c3644794e.json"
  },
  {
   "id": "epic:medium_sand_dungeon",
@@ -14236,20 +8065,6 @@ const STRUCTURES_DATA = [
   "has3d": "40856d314526.json"
  },
  {
-  "id": "epic:plains_obelisk",
-  "pack": "Epic Dungeons",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Plains Obelisk",
-  "name_vi": "Plains Obelisk",
-  "has3d": "40856d314526.json"
- },
- {
   "id": "epic:sand_obelisk",
   "pack": "Epic Dungeons",
   "dim": "overworld",
@@ -14262,34 +8077,6 @@ const STRUCTURES_DATA = [
   "name_en": "Sand Obelisk",
   "name_vi": "Sand Obelisk",
   "has3d": "38a654221568.json"
- },
- {
-  "id": "epic:sand_obelisk",
-  "pack": "Epic Dungeons",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sand Obelisk",
-  "name_vi": "Sand Obelisk",
-  "has3d": "38a654221568.json"
- },
- {
-  "id": "epic:small_ice_dungeon",
-  "pack": "Epic Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Small Ice Dungeon",
-  "name_vi": "Small Ice Dungeon",
-  "has3d": "5958b9e95b4b.json"
  },
  {
   "id": "epic:small_ice_dungeon",
@@ -14320,20 +8107,6 @@ const STRUCTURES_DATA = [
   "has3d": "603a97ad9734.json"
  },
  {
-  "id": "epic:small_plains_dungeon",
-  "pack": "Epic Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Small Plains Dungeon",
-  "name_vi": "Small Plains Dungeon",
-  "has3d": "603a97ad9734.json"
- },
- {
   "id": "epic:small_sand_dungeon",
   "pack": "Epic Dungeons",
   "dim": "overworld",
@@ -14346,34 +8119,6 @@ const STRUCTURES_DATA = [
   "name_en": "Small Sand Dungeon",
   "name_vi": "Small Sand Dungeon",
   "has3d": "951a2f840f24.json"
- },
- {
-  "id": "epic:small_sand_dungeon",
-  "pack": "Epic Dungeons",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Small Sand Dungeon",
-  "name_vi": "Small Sand Dungeon",
-  "has3d": "951a2f840f24.json"
- },
- {
-  "id": "epic:epic_temple",
-  "pack": "Epic Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Epic Temple",
-  "name_vi": "Epic Temple",
-  "has3d": "2ba027dec7e9.json"
  },
  {
   "id": "epic:epic_temple",
@@ -14404,20 +8149,6 @@ const STRUCTURES_DATA = [
   "has3d": "53a780b0cc2d.json"
  },
  {
-  "id": "epic:epic_temple_large",
-  "pack": "Epic Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Epic Temple Large",
-  "name_vi": "Epic Temple Large",
-  "has3d": "53a780b0cc2d.json"
- },
- {
   "id": "epic:epic_temple_ruin",
   "pack": "Epic Structures",
   "dim": "overworld",
@@ -14430,34 +8161,6 @@ const STRUCTURES_DATA = [
   "name_en": "Epic Temple Ruin",
   "name_vi": "Epic Temple Ruin",
   "has3d": "a0ddf2bac60c.json"
- },
- {
-  "id": "epic:epic_temple_ruin",
-  "pack": "Epic Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Epic Temple Ruin",
-  "name_vi": "Epic Temple Ruin",
-  "has3d": "a0ddf2bac60c.json"
- },
- {
-  "id": "epic:large_igloo",
-  "pack": "Epic Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Large Igloo",
-  "name_vi": "Large Igloo",
-  "has3d": "a02e92528b49.json"
  },
  {
   "id": "epic:large_igloo",
@@ -14488,20 +8191,6 @@ const STRUCTURES_DATA = [
   "has3d": "94e42e1d13e8.json"
  },
  {
-  "id": "epic:small_igloo",
-  "pack": "Epic Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Igloo",
-  "name_vi": "Small Igloo",
-  "has3d": "94e42e1d13e8.json"
- },
- {
   "id": "epic:witch_hut",
   "pack": "Epic Structures",
   "dim": "overworld",
@@ -14514,34 +8203,6 @@ const STRUCTURES_DATA = [
   "name_en": "Witch Hut",
   "name_vi": "Witch Hut",
   "has3d": "55aa0d785ea1.json"
- },
- {
-  "id": "epic:witch_hut",
-  "pack": "Epic Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Witch Hut",
-  "name_vi": "Witch Hut",
-  "has3d": "55aa0d785ea1.json"
- },
- {
-  "id": "epic:village_desert",
-  "pack": "Epic Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Desert",
-  "name_vi": "Village Desert",
-  "has3d": "86ca2661a458.json"
  },
  {
   "id": "epic:village_desert",
@@ -14572,20 +8233,6 @@ const STRUCTURES_DATA = [
   "has3d": "8db636136ef2.json"
  },
  {
-  "id": "epic:village_plains",
-  "pack": "Epic Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Plains",
-  "name_vi": "Village Plains",
-  "has3d": "8db636136ef2.json"
- },
- {
   "id": "epic:village_savanna",
   "pack": "Epic Villages",
   "dim": "overworld",
@@ -14598,34 +8245,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Savanna",
   "name_vi": "Village Savanna",
   "has3d": "cfb1c26ff0e9.json"
- },
- {
-  "id": "epic:village_savanna",
-  "pack": "Epic Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Savanna",
-  "name_vi": "Village Savanna",
-  "has3d": "cfb1c26ff0e9.json"
- },
- {
-  "id": "epic:village_snowy",
-  "pack": "Epic Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Snowy",
-  "name_vi": "Village Snowy",
-  "has3d": "d42767910a3d.json"
  },
  {
   "id": "epic:village_snowy",
@@ -14656,20 +8275,6 @@ const STRUCTURES_DATA = [
   "has3d": "8df9ae55bb39.json"
  },
  {
-  "id": "epic:village_taiga",
-  "pack": "Epic Villages",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Taiga",
-  "name_vi": "Village Taiga",
-  "has3d": "8df9ae55bb39.json"
- },
- {
   "id": "explorify:badlands_pyramid",
   "pack": "Explorify",
   "dim": "overworld",
@@ -14682,34 +8287,6 @@ const STRUCTURES_DATA = [
   "name_en": "Badlands Pyramid",
   "name_vi": "Badlands Pyramid",
   "has3d": "1e60c6ac83a7.json"
- },
- {
-  "id": "explorify:badlands_pyramid",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Badlands Pyramid",
-  "name_vi": "Badlands Pyramid",
-  "has3d": "1e60c6ac83a7.json"
- },
- {
-  "id": "explorify:supply_cache/birch",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch",
-  "name_vi": "Birch",
-  "has3d": "84a2d1595fdf.json"
  },
  {
   "id": "explorify:supply_cache/birch",
@@ -14740,20 +8317,6 @@ const STRUCTURES_DATA = [
   "has3d": "25b050d9ad2d.json"
  },
  {
-  "id": "explorify:black_spiral",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Black Spiral",
-  "name_vi": "Black Spiral",
-  "has3d": "25b050d9ad2d.json"
- },
- {
   "id": "explorify:campsite",
   "pack": "Explorify",
   "dim": "overworld",
@@ -14766,34 +8329,6 @@ const STRUCTURES_DATA = [
   "name_en": "Campsite",
   "name_vi": "Campsite",
   "has3d": "2718c969e37a.json"
- },
- {
-  "id": "explorify:campsite",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Campsite",
-  "name_vi": "Campsite",
-  "has3d": "2718c969e37a.json"
- },
- {
-  "id": "explorify:supply_cache/dark",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark",
-  "name_vi": "Dark",
-  "has3d": "0e9442ef58d4.json"
  },
  {
   "id": "explorify:supply_cache/dark",
@@ -14824,34 +8359,6 @@ const STRUCTURES_DATA = [
   "has3d": "1c773013da45.json"
  },
  {
-  "id": "explorify:dark_forest_settlement",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Forest Settlement",
-  "name_vi": "Dark Forest Settlement",
-  "has3d": "1c773013da45.json"
- },
- {
-  "id": "explorify:supply_cache/desert",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert",
-  "name_vi": "Desert",
-  "has3d": "2e069de2a6b9.json"
- },
- {
   "id": "explorify:supply_cache/desert",
   "pack": "Explorify",
   "dim": "overworld",
@@ -14880,20 +8387,6 @@ const STRUCTURES_DATA = [
   "has3d": "7ec2ad066462.json"
  },
  {
-  "id": "explorify:desert_shrine",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Shrine",
-  "name_vi": "Desert Shrine",
-  "has3d": "7ec2ad066462.json"
- },
- {
   "id": "explorify:end_shipwreck",
   "pack": "Explorify",
   "dim": "end",
@@ -14905,33 +8398,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Biển / Dưới nước",
   "name_en": "End Shipwreck",
   "name_vi": "End Shipwreck"
- },
- {
-  "id": "explorify:end_shipwreck",
-  "pack": "Explorify",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "End Shipwreck",
-  "name_vi": "End Shipwreck"
- },
- {
-  "id": "explorify:farmstead",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Farmstead",
-  "name_vi": "Farmstead",
-  "has3d": "b7dcc23dcc1a.json"
  },
  {
   "id": "explorify:farmstead",
@@ -14962,20 +8428,6 @@ const STRUCTURES_DATA = [
   "has3d": "16a7e8eaec14.json"
  },
  {
-  "id": "explorify:supply_cache/forest",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Forest",
-  "name_vi": "Forest",
-  "has3d": "16a7e8eaec14.json"
- },
- {
   "id": "explorify:guide_post_cold",
   "pack": "Explorify",
   "dim": "overworld",
@@ -14988,34 +8440,6 @@ const STRUCTURES_DATA = [
   "name_en": "Guide Post Cold",
   "name_vi": "Guide Post Cold",
   "has3d": "3d803b62f041.json"
- },
- {
-  "id": "explorify:guide_post_cold",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Guide Post Cold",
-  "name_vi": "Guide Post Cold",
-  "has3d": "3d803b62f041.json"
- },
- {
-  "id": "explorify:guide_post_warm",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Guide Post Warm",
-  "name_vi": "Guide Post Warm",
-  "has3d": "9f4845cd5437.json"
  },
  {
   "id": "explorify:guide_post_warm",
@@ -15046,20 +8470,6 @@ const STRUCTURES_DATA = [
   "has3d": "ed126cce436c.json"
  },
  {
-  "id": "explorify:supply_cache/jungle",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle",
-  "name_vi": "Jungle",
-  "has3d": "ed126cce436c.json"
- },
- {
   "id": "explorify:supply_cache/mangrove",
   "pack": "Explorify",
   "dim": "overworld",
@@ -15072,34 +8482,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mangrove",
   "name_vi": "Mangrove",
   "has3d": "809b2b333278.json"
- },
- {
-  "id": "explorify:supply_cache/mangrove",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mangrove",
-  "name_vi": "Mangrove",
-  "has3d": "809b2b333278.json"
- },
- {
-  "id": "explorify:mangrove_hut",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mangrove Hut",
-  "name_vi": "Mangrove Hut",
-  "has3d": "1aae38481bb8.json"
  },
  {
   "id": "explorify:mangrove_hut",
@@ -15130,20 +8512,6 @@ const STRUCTURES_DATA = [
   "has3d": "363937b61e85.json"
  },
  {
-  "id": "explorify:mausoleum",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mausoleum",
-  "name_vi": "Mausoleum",
-  "has3d": "363937b61e85.json"
- },
- {
   "id": "explorify:watchtower/plains",
   "pack": "Explorify",
   "dim": "overworld",
@@ -15156,34 +8524,6 @@ const STRUCTURES_DATA = [
   "name_en": "Plains",
   "name_vi": "Plains",
   "has3d": "60c128b30fc5.json"
- },
- {
-  "id": "explorify:watchtower/plains",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Plains",
-  "name_vi": "Plains",
-  "has3d": "60c128b30fc5.json"
- },
- {
-  "id": "explorify:ruins",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruins",
-  "name_vi": "Ruins",
-  "has3d": "8bcdbeabb2ad.json"
  },
  {
   "id": "explorify:ruins",
@@ -15214,20 +8554,6 @@ const STRUCTURES_DATA = [
   "has3d": "9fc9b08a9303.json"
  },
  {
-  "id": "explorify:watchtower/savanna",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Savanna",
-  "name_vi": "Savanna",
-  "has3d": "9fc9b08a9303.json"
- },
- {
   "id": "explorify:supply_cache/taiga",
   "pack": "Explorify",
   "dim": "overworld",
@@ -15240,34 +8566,6 @@ const STRUCTURES_DATA = [
   "name_en": "Taiga",
   "name_vi": "Taiga",
   "has3d": "12d1c2cc11f8.json"
- },
- {
-  "id": "explorify:supply_cache/taiga",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga",
-  "name_vi": "Taiga",
-  "has3d": "12d1c2cc11f8.json"
- },
- {
-  "id": "explorify:watchtower/taiga",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga",
-  "name_vi": "Taiga",
-  "has3d": "cd02cf211ba8.json"
  },
  {
   "id": "explorify:watchtower/taiga",
@@ -15298,20 +8596,6 @@ const STRUCTURES_DATA = [
   "has3d": "17ad8a9241e3.json"
  },
  {
-  "id": "explorify:tavern",
-  "pack": "Explorify",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Tavern",
-  "name_vi": "Tavern",
-  "has3d": "17ad8a9241e3.json"
- },
- {
   "id": "grim_kingdoms:blackridge_watch",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -15324,34 +8608,6 @@ const STRUCTURES_DATA = [
   "name_en": "Blackridge Watch",
   "name_vi": "Blackridge Watch",
   "has3d": "3f37ff6cd579.json"
- },
- {
-  "id": "grim_kingdoms:blackridge_watch",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Blackridge Watch",
-  "name_vi": "Blackridge Watch",
-  "has3d": "3f37ff6cd579.json"
- },
- {
-  "id": "grim_kingdoms:blackridge_watch_taiga",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Blackridge Watch Taiga",
-  "name_vi": "Blackridge Watch Taiga",
-  "has3d": "a745509f97f5.json"
  },
  {
   "id": "grim_kingdoms:blackridge_watch_taiga",
@@ -15382,20 +8638,6 @@ const STRUCTURES_DATA = [
   "has3d": "345ff12ba8ec.json"
  },
  {
-  "id": "grim_kingdoms:bramblepath",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bramblepath",
-  "name_vi": "Bramblepath",
-  "has3d": "345ff12ba8ec.json"
- },
- {
   "id": "grim_kingdoms:camp1",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -15408,34 +8650,6 @@ const STRUCTURES_DATA = [
   "name_en": "Camp1",
   "name_vi": "Camp1",
   "has3d": "5060c6236bcc.json"
- },
- {
-  "id": "grim_kingdoms:camp1",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Camp1",
-  "name_vi": "Camp1",
-  "has3d": "5060c6236bcc.json"
- },
- {
-  "id": "grim_kingdoms:camp2",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Camp2",
-  "name_vi": "Camp2",
-  "has3d": "890ecfdc16b0.json"
  },
  {
   "id": "grim_kingdoms:camp2",
@@ -15466,20 +8680,6 @@ const STRUCTURES_DATA = [
   "has3d": "48a9ea6a66da.json"
  },
  {
-  "id": "grim_kingdoms:camp3",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Camp3",
-  "name_vi": "Camp3",
-  "has3d": "48a9ea6a66da.json"
- },
- {
   "id": "grim_kingdoms:chill_hallmanor",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -15492,34 +8692,6 @@ const STRUCTURES_DATA = [
   "name_en": "Chill Hallmanor",
   "name_vi": "Chill Hallmanor",
   "has3d": "32a1b877d5c9.json"
- },
- {
-  "id": "grim_kingdoms:chill_hallmanor",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Chill Hallmanor",
-  "name_vi": "Chill Hallmanor",
-  "has3d": "32a1b877d5c9.json"
- },
- {
-  "id": "grim_kingdoms:chillhall_plains_refuge",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Chillhall Plains Refuge",
-  "name_vi": "Chillhall Plains Refuge",
-  "has3d": "0f23e6f1c126.json"
  },
  {
   "id": "grim_kingdoms:chillhall_plains_refuge",
@@ -15550,20 +8722,6 @@ const STRUCTURES_DATA = [
   "has3d": "b55c40a62f47.json"
  },
  {
-  "id": "grim_kingdoms:decrown_monolith",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Decrown Monolith",
-  "name_vi": "Decrown Monolith",
-  "has3d": "b55c40a62f47.json"
- },
- {
   "id": "grim_kingdoms:decrown_monolith_taiga",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -15576,34 +8734,6 @@ const STRUCTURES_DATA = [
   "name_en": "Decrown Monolith Taiga",
   "name_vi": "Decrown Monolith Taiga",
   "has3d": "a3b499a18df4.json"
- },
- {
-  "id": "grim_kingdoms:decrown_monolith_taiga",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Decrown Monolith Taiga",
-  "name_vi": "Decrown Monolith Taiga",
-  "has3d": "a3b499a18df4.json"
- },
- {
-  "id": "grim_kingdoms:east_spur_tower",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "East Spur Tower",
-  "name_vi": "East Spur Tower",
-  "has3d": "dee6ac63a1cd.json"
  },
  {
   "id": "grim_kingdoms:east_spur_tower",
@@ -15634,20 +8764,6 @@ const STRUCTURES_DATA = [
   "has3d": "199be62e2fd6.json"
  },
  {
-  "id": "grim_kingdoms:eldermoor",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Eldermoor",
-  "name_vi": "Eldermoor",
-  "has3d": "199be62e2fd6.json"
- },
- {
   "id": "grim_kingdoms:frostbloom_bastion",
   "pack": "Grim Kingdoms",
   "dim": "nether",
@@ -15660,34 +8776,6 @@ const STRUCTURES_DATA = [
   "name_en": "Frostbloom Bastion",
   "name_vi": "Frostbloom Bastion",
   "has3d": "da3a2ac27999.json"
- },
- {
-  "id": "grim_kingdoms:frostbloom_bastion",
-  "pack": "Grim Kingdoms",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Frostbloom Bastion",
-  "name_vi": "Frostbloom Bastion",
-  "has3d": "da3a2ac27999.json"
- },
- {
-  "id": "grim_kingdoms:frozen_onion_fort",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Frozen Onion Fort",
-  "name_vi": "Frozen Onion Fort",
-  "has3d": "02952651dee2.json"
  },
  {
   "id": "grim_kingdoms:frozen_onion_fort",
@@ -15718,20 +8806,6 @@ const STRUCTURES_DATA = [
   "has3d": "491c89f441a0.json"
  },
  {
-  "id": "grim_kingdoms:frozen_onion_fort_taiga",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Frozen Onion Fort Taiga",
-  "name_vi": "Frozen Onion Fort Taiga",
-  "has3d": "491c89f441a0.json"
- },
- {
   "id": "grim_kingdoms:glacierfall_keep",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -15744,34 +8818,6 @@ const STRUCTURES_DATA = [
   "name_en": "Glacierfall Keep",
   "name_vi": "Glacierfall Keep",
   "has3d": "0269b2da8a71.json"
- },
- {
-  "id": "grim_kingdoms:glacierfall_keep",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Glacierfall Keep",
-  "name_vi": "Glacierfall Keep",
-  "has3d": "0269b2da8a71.json"
- },
- {
-  "id": "grim_kingdoms:glacierfall_keep_plains",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Glacierfall Keep Plains",
-  "name_vi": "Glacierfall Keep Plains",
-  "has3d": "e569e5ed5a68.json"
  },
  {
   "id": "grim_kingdoms:glacierfall_keep_plains",
@@ -15802,20 +8848,6 @@ const STRUCTURES_DATA = [
   "has3d": "44e088b23452.json"
  },
  {
-  "id": "grim_kingdoms:glimmervault_fortress",
-  "pack": "Grim Kingdoms",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Glimmervault Fortress",
-  "name_vi": "Glimmervault Fortress",
-  "has3d": "44e088b23452.json"
- },
- {
   "id": "grim_kingdoms:glimmervault_fortress_plains",
   "pack": "Grim Kingdoms",
   "dim": "nether",
@@ -15828,34 +8860,6 @@ const STRUCTURES_DATA = [
   "name_en": "Glimmervault Fortress Plains",
   "name_vi": "Glimmervault Fortress Plains",
   "has3d": "3002bb080a05.json"
- },
- {
-  "id": "grim_kingdoms:glimmervault_fortress_plains",
-  "pack": "Grim Kingdoms",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Glimmervault Fortress Plains",
-  "name_vi": "Glimmervault Fortress Plains",
-  "has3d": "3002bb080a05.json"
- },
- {
-  "id": "grim_kingdoms:gnome_tall_tower",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Gnome Tall Tower",
-  "name_vi": "Gnome Tall Tower",
-  "has3d": "0bceb008b3bc.json"
  },
  {
   "id": "grim_kingdoms:gnome_tall_tower",
@@ -15886,20 +8890,6 @@ const STRUCTURES_DATA = [
   "has3d": "edd5ad71bd0b.json"
  },
  {
-  "id": "grim_kingdoms:gnome_tower",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Gnome Tower",
-  "name_vi": "Gnome Tower",
-  "has3d": "edd5ad71bd0b.json"
- },
- {
   "id": "grim_kingdoms:gnomish_hut",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -15912,34 +8902,6 @@ const STRUCTURES_DATA = [
   "name_en": "Gnomish Hut",
   "name_vi": "Gnomish Hut",
   "has3d": "ed3c63d7e9d6.json"
- },
- {
-  "id": "grim_kingdoms:gnomish_hut",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Gnomish Hut",
-  "name_vi": "Gnomish Hut",
-  "has3d": "ed3c63d7e9d6.json"
- },
- {
-  "id": "grim_kingdoms:grain_sack_fort",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Grain Sack Fort",
-  "name_vi": "Grain Sack Fort",
-  "has3d": "0a742dd7d4fa.json"
  },
  {
   "id": "grim_kingdoms:grain_sack_fort",
@@ -15970,20 +8932,6 @@ const STRUCTURES_DATA = [
   "has3d": "cf13bd50e960.json"
  },
  {
-  "id": "grim_kingdoms:grain_sack_hold",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Grain Sack Hold",
-  "name_vi": "Grain Sack Hold",
-  "has3d": "cf13bd50e960.json"
- },
- {
   "id": "grim_kingdoms:grain_sack_keep",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -15996,34 +8944,6 @@ const STRUCTURES_DATA = [
   "name_en": "Grain Sack Keep",
   "name_vi": "Grain Sack Keep",
   "has3d": "f531899fbfb5.json"
- },
- {
-  "id": "grim_kingdoms:grain_sack_keep",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Grain Sack Keep",
-  "name_vi": "Grain Sack Keep",
-  "has3d": "f531899fbfb5.json"
- },
- {
-  "id": "grim_kingdoms:high_spur_tower",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "High Spur Tower",
-  "name_vi": "High Spur Tower",
-  "has3d": "20fef9e3c93c.json"
  },
  {
   "id": "grim_kingdoms:high_spur_tower",
@@ -16054,20 +8974,6 @@ const STRUCTURES_DATA = [
   "has3d": "15bfebb0557c.json"
  },
  {
-  "id": "grim_kingdoms:long_pine_cabin",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Long Pine Cabin",
-  "name_vi": "Long Pine Cabin",
-  "has3d": "15bfebb0557c.json"
- },
- {
   "id": "grim_kingdoms:meadow_flower_ruin",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -16080,34 +8986,6 @@ const STRUCTURES_DATA = [
   "name_en": "Meadow Flower Ruin",
   "name_vi": "Meadow Flower Ruin",
   "has3d": "473cf9d4d3c2.json"
- },
- {
-  "id": "grim_kingdoms:meadow_flower_ruin",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Meadow Flower Ruin",
-  "name_vi": "Meadow Flower Ruin",
-  "has3d": "473cf9d4d3c2.json"
- },
- {
-  "id": "grim_kingdoms:meadow_ruin",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Meadow Ruin",
-  "name_vi": "Meadow Ruin",
-  "has3d": "f90cf96333ba.json"
  },
  {
   "id": "grim_kingdoms:meadow_ruin",
@@ -16138,20 +9016,6 @@ const STRUCTURES_DATA = [
   "has3d": "925faebcd22d.json"
  },
  {
-  "id": "grim_kingdoms:mill_stone",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mill Stone",
-  "name_vi": "Mill Stone",
-  "has3d": "925faebcd22d.json"
- },
- {
   "id": "grim_kingdoms:nordic_cabin1",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -16164,34 +9028,6 @@ const STRUCTURES_DATA = [
   "name_en": "Nordic Cabin1",
   "name_vi": "Nordic Cabin1",
   "has3d": "7963d3f96e8a.json"
- },
- {
-  "id": "grim_kingdoms:nordic_cabin1",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nordic Cabin1",
-  "name_vi": "Nordic Cabin1",
-  "has3d": "7963d3f96e8a.json"
- },
- {
-  "id": "grim_kingdoms:nordic_cabin2",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nordic Cabin2",
-  "name_vi": "Nordic Cabin2",
-  "has3d": "d476281e4e6f.json"
  },
  {
   "id": "grim_kingdoms:nordic_cabin2",
@@ -16222,20 +9058,6 @@ const STRUCTURES_DATA = [
   "has3d": "d8222bffc657.json"
  },
  {
-  "id": "grim_kingdoms:nordic_cabin3",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nordic Cabin3",
-  "name_vi": "Nordic Cabin3",
-  "has3d": "d8222bffc657.json"
- },
- {
   "id": "grim_kingdoms:nordic_cabin4",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -16248,34 +9070,6 @@ const STRUCTURES_DATA = [
   "name_en": "Nordic Cabin4",
   "name_vi": "Nordic Cabin4",
   "has3d": "b420574a5c72.json"
- },
- {
-  "id": "grim_kingdoms:nordic_cabin4",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nordic Cabin4",
-  "name_vi": "Nordic Cabin4",
-  "has3d": "b420574a5c72.json"
- },
- {
-  "id": "grim_kingdoms:north_spur_tower",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "North Spur Tower",
-  "name_vi": "North Spur Tower",
-  "has3d": "a03d3b64401a.json"
  },
  {
   "id": "grim_kingdoms:north_spur_tower",
@@ -16306,20 +9100,6 @@ const STRUCTURES_DATA = [
   "has3d": "fcec6961ce1a.json"
  },
  {
-  "id": "grim_kingdoms:old_timber_watch",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Old Timber Watch",
-  "name_vi": "Old Timber Watch",
-  "has3d": "fcec6961ce1a.json"
- },
- {
   "id": "grim_kingdoms:pine_cabin",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -16332,34 +9112,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pine Cabin",
   "name_vi": "Pine Cabin",
   "has3d": "9b4cb912417c.json"
- },
- {
-  "id": "grim_kingdoms:pine_cabin",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pine Cabin",
-  "name_vi": "Pine Cabin",
-  "has3d": "9b4cb912417c.json"
- },
- {
-  "id": "grim_kingdoms:river_bend_watch",
-  "pack": "Grim Kingdoms",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "River Bend Watch",
-  "name_vi": "River Bend Watch",
-  "has3d": "3a17114bd7d3.json"
  },
  {
   "id": "grim_kingdoms:river_bend_watch",
@@ -16390,20 +9142,6 @@ const STRUCTURES_DATA = [
   "has3d": "a2a59eff063a.json"
  },
  {
-  "id": "grim_kingdoms:sandfell_outpost",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sandfell Outpost",
-  "name_vi": "Sandfell Outpost",
-  "has3d": "a2a59eff063a.json"
- },
- {
   "id": "grim_kingdoms:secluded_cabin",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -16416,34 +9154,6 @@ const STRUCTURES_DATA = [
   "name_en": "Secluded Cabin",
   "name_vi": "Secluded Cabin",
   "has3d": "496fc9b4f965.json"
- },
- {
-  "id": "grim_kingdoms:secluded_cabin",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Secluded Cabin",
-  "name_vi": "Secluded Cabin",
-  "has3d": "496fc9b4f965.json"
- },
- {
-  "id": "grim_kingdoms:shardspire_castle",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Shardspire Castle",
-  "name_vi": "Shardspire Castle",
-  "has3d": "29654607f483.json"
  },
  {
   "id": "grim_kingdoms:shardspire_castle",
@@ -16474,20 +9184,6 @@ const STRUCTURES_DATA = [
   "has3d": "d13bd3467c60.json"
  },
  {
-  "id": "grim_kingdoms:ship2",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ship2",
-  "name_vi": "Ship2",
-  "has3d": "d13bd3467c60.json"
- },
- {
   "id": "grim_kingdoms:shipwreck1",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -16500,34 +9196,6 @@ const STRUCTURES_DATA = [
   "name_en": "Shipwreck1",
   "name_vi": "Shipwreck1",
   "has3d": "37dbef1bfad1.json"
- },
- {
-  "id": "grim_kingdoms:shipwreck1",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Shipwreck1",
-  "name_vi": "Shipwreck1",
-  "has3d": "37dbef1bfad1.json"
- },
- {
-  "id": "grim_kingdoms:silentgale_citadel",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Silentgale Citadel",
-  "name_vi": "Silentgale Citadel",
-  "has3d": "1b3db279c7c7.json"
  },
  {
   "id": "grim_kingdoms:silentgale_citadel",
@@ -16558,20 +9226,6 @@ const STRUCTURES_DATA = [
   "has3d": "2eaace512467.json"
  },
  {
-  "id": "grim_kingdoms:silentgale_citadel_plains",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Silentgale Citadel Plains",
-  "name_vi": "Silentgale Citadel Plains",
-  "has3d": "2eaace512467.json"
- },
- {
   "id": "grim_kingdoms:slate_needle",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -16584,34 +9238,6 @@ const STRUCTURES_DATA = [
   "name_en": "Slate Needle",
   "name_vi": "Slate Needle",
   "has3d": "909cfcca4d43.json"
- },
- {
-  "id": "grim_kingdoms:slate_needle",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Slate Needle",
-  "name_vi": "Slate Needle",
-  "has3d": "909cfcca4d43.json"
- },
- {
-  "id": "grim_kingdoms:slate_thin_needle",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Slate Thin Needle",
-  "name_vi": "Slate Thin Needle",
-  "has3d": "8021bb42762f.json"
  },
  {
   "id": "grim_kingdoms:slate_thin_needle",
@@ -16642,20 +9268,6 @@ const STRUCTURES_DATA = [
   "has3d": "01a6dc3350c1.json"
  },
  {
-  "id": "grim_kingdoms:snowgrave_citadel",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Snowgrave Citadel",
-  "name_vi": "Snowgrave Citadel",
-  "has3d": "01a6dc3350c1.json"
- },
- {
   "id": "grim_kingdoms:south_spur_tower",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -16668,34 +9280,6 @@ const STRUCTURES_DATA = [
   "name_en": "South Spur Tower",
   "name_vi": "South Spur Tower",
   "has3d": "3919d5f7c2bd.json"
- },
- {
-  "id": "grim_kingdoms:south_spur_tower",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "South Spur Tower",
-  "name_vi": "South Spur Tower",
-  "has3d": "3919d5f7c2bd.json"
- },
- {
-  "id": "grim_kingdoms:spruce_needle",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce Needle",
-  "name_vi": "Spruce Needle",
-  "has3d": "17973a10070e.json"
  },
  {
   "id": "grim_kingdoms:spruce_needle",
@@ -16726,34 +9310,6 @@ const STRUCTURES_DATA = [
   "has3d": "d80371525213.json"
  },
  {
-  "id": "grim_kingdoms:spruce_thin_needle",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce Thin Needle",
-  "name_vi": "Spruce Thin Needle",
-  "has3d": "d80371525213.json"
- },
- {
-  "id": "grim_kingdoms:stonyfell_outpost",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stonyfell Outpost",
-  "name_vi": "Stonyfell Outpost",
-  "has3d": "239a1713ee1d.json"
- },
- {
   "id": "grim_kingdoms:stonyfell_outpost",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -16782,20 +9338,6 @@ const STRUCTURES_DATA = [
   "has3d": "826818e387df.json"
  },
  {
-  "id": "grim_kingdoms:stonyfell_outpost_plains",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stonyfell Outpost Plains",
-  "name_vi": "Stonyfell Outpost Plains",
-  "has3d": "826818e387df.json"
- },
- {
   "id": "grim_kingdoms:thatch_outpost",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -16807,33 +9349,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Thatch Outpost",
   "name_vi": "Thatch Outpost"
- },
- {
-  "id": "grim_kingdoms:thatch_outpost",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Thatch Outpost",
-  "name_vi": "Thatch Outpost"
- },
- {
-  "id": "grim_kingdoms:thatch_roof",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Thatch Roof",
-  "name_vi": "Thatch Roof",
-  "has3d": "e2aefb26d832.json"
  },
  {
   "id": "grim_kingdoms:thatch_roof",
@@ -16864,20 +9379,6 @@ const STRUCTURES_DATA = [
   "has3d": "cf5ec1fc8596.json"
  },
  {
-  "id": "grim_kingdoms:tor_tower",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Tor Tower",
-  "name_vi": "Tor Tower",
-  "has3d": "cf5ec1fc8596.json"
- },
- {
   "id": "grim_kingdoms:travelers_lodge",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -16890,34 +9391,6 @@ const STRUCTURES_DATA = [
   "name_en": "Travelers Lodge",
   "name_vi": "Travelers Lodge",
   "has3d": "c51433e3c3c0.json"
- },
- {
-  "id": "grim_kingdoms:travelers_lodge",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Travelers Lodge",
-  "name_vi": "Travelers Lodge",
-  "has3d": "c51433e3c3c0.json"
- },
- {
-  "id": "grim_kingdoms:weathered_colosseum",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Weathered Colosseum",
-  "name_vi": "Weathered Colosseum",
-  "has3d": "63d9cdc55166.json"
  },
  {
   "id": "grim_kingdoms:weathered_colosseum",
@@ -16948,20 +9421,6 @@ const STRUCTURES_DATA = [
   "has3d": "73b360d1d95d.json"
  },
  {
-  "id": "grim_kingdoms:west_spur_tower",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "West Spur Tower",
-  "name_vi": "West Spur Tower",
-  "has3d": "73b360d1d95d.json"
- },
- {
   "id": "grim_kingdoms:whitewarden_keep",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -16974,34 +9433,6 @@ const STRUCTURES_DATA = [
   "name_en": "Whitewarden Keep",
   "name_vi": "Whitewarden Keep",
   "has3d": "f8bd2817093f.json"
- },
- {
-  "id": "grim_kingdoms:whitewarden_keep",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Whitewarden Keep",
-  "name_vi": "Whitewarden Keep",
-  "has3d": "f8bd2817093f.json"
- },
- {
-  "id": "grim_kingdoms:winterhold_citadel",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Winterhold Citadel",
-  "name_vi": "Winterhold Citadel",
-  "has3d": "4250eb198536.json"
  },
  {
   "id": "grim_kingdoms:winterhold_citadel",
@@ -17032,20 +9463,6 @@ const STRUCTURES_DATA = [
   "has3d": "1ce0caacad3e.json"
  },
  {
-  "id": "grim_kingdoms:winterhold_citadel_taiga",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Winterhold Citadel Taiga",
-  "name_vi": "Winterhold Citadel Taiga",
-  "has3d": "1ce0caacad3e.json"
- },
- {
   "id": "grim_kingdoms:zweiberg",
   "pack": "Grim Kingdoms",
   "dim": "overworld",
@@ -17058,34 +9475,6 @@ const STRUCTURES_DATA = [
   "name_en": "Zweiberg",
   "name_vi": "Zweiberg",
   "has3d": "fcb63784715c.json"
- },
- {
-  "id": "grim_kingdoms:zweiberg",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Zweiberg",
-  "name_vi": "Zweiberg",
-  "has3d": "fcb63784715c.json"
- },
- {
-  "id": "grim_kingdoms:zweiberg_plains",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Zweiberg Plains",
-  "name_vi": "Zweiberg Plains",
-  "has3d": "0f2922ff2447.json"
  },
  {
   "id": "grim_kingdoms:zweiberg_plains",
@@ -17116,20 +9505,6 @@ const STRUCTURES_DATA = [
   "has3d": "349066857aa7.json"
  },
  {
-  "id": "grim_kingdoms:zweiberg_taiga",
-  "pack": "Grim Kingdoms",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Zweiberg Taiga",
-  "name_vi": "Zweiberg Taiga",
-  "has3d": "349066857aa7.json"
- },
- {
   "id": "hopo:mineshaft/acacia_mineshaft",
   "pack": "Hopo Mineshafts",
   "dim": "overworld",
@@ -17142,34 +9517,6 @@ const STRUCTURES_DATA = [
   "name_en": "Acacia Mineshaft",
   "name_vi": "Acacia Mineshaft",
   "has3d": "d2ef7070d05e.json"
- },
- {
-  "id": "hopo:mineshaft/acacia_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Acacia Mineshaft",
-  "name_vi": "Acacia Mineshaft",
-  "has3d": "d2ef7070d05e.json"
- },
- {
-  "id": "hopo:mineshaft/bamboo_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Bamboo Mineshaft",
-  "name_vi": "Bamboo Mineshaft",
-  "has3d": "e848f0eb7b4b.json"
  },
  {
   "id": "hopo:mineshaft/bamboo_mineshaft",
@@ -17200,20 +9547,6 @@ const STRUCTURES_DATA = [
   "has3d": "f8008499fee6.json"
  },
  {
-  "id": "hopo:mineshaft/birch_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Birch Mineshaft",
-  "name_vi": "Birch Mineshaft",
-  "has3d": "f8008499fee6.json"
- },
- {
   "id": "hopo:mineshaft/cherry_mineshaft",
   "pack": "Hopo Mineshafts",
   "dim": "overworld",
@@ -17226,34 +9559,6 @@ const STRUCTURES_DATA = [
   "name_en": "Cherry Mineshaft",
   "name_vi": "Cherry Mineshaft",
   "has3d": "c0ccf850f13a.json"
- },
- {
-  "id": "hopo:mineshaft/cherry_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Cherry Mineshaft",
-  "name_vi": "Cherry Mineshaft",
-  "has3d": "c0ccf850f13a.json"
- },
- {
-  "id": "hopo:mineshaft/dark_oak_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Dark Oak Mineshaft",
-  "name_vi": "Dark Oak Mineshaft",
-  "has3d": "9895af1f664b.json"
  },
  {
   "id": "hopo:mineshaft/dark_oak_mineshaft",
@@ -17284,20 +9589,6 @@ const STRUCTURES_DATA = [
   "has3d": "a2b2e0c45511.json"
  },
  {
-  "id": "hopo:mineshaft/deepslate_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Deepslate Mineshaft",
-  "name_vi": "Deepslate Mineshaft",
-  "has3d": "a2b2e0c45511.json"
- },
- {
   "id": "hopo:mineshaft/biomes/dripstone_mineshaft",
   "pack": "Hopo Mineshafts",
   "dim": "overworld",
@@ -17310,34 +9601,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dripstone Mineshaft",
   "name_vi": "Dripstone Mineshaft",
   "has3d": "f8784438c6c5.json"
- },
- {
-  "id": "hopo:mineshaft/biomes/dripstone_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Dripstone Mineshaft",
-  "name_vi": "Dripstone Mineshaft",
-  "has3d": "f8784438c6c5.json"
- },
- {
-  "id": "hopo:mineshaft/jungle_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Jungle Mineshaft",
-  "name_vi": "Jungle Mineshaft",
-  "has3d": "6f6923b08488.json"
  },
  {
   "id": "hopo:mineshaft/jungle_mineshaft",
@@ -17368,20 +9631,6 @@ const STRUCTURES_DATA = [
   "has3d": "379e7aacf596.json"
  },
  {
-  "id": "hopo:mineshaft/biomes/lush_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Lush Mineshaft",
-  "name_vi": "Lush Mineshaft",
-  "has3d": "379e7aacf596.json"
- },
- {
   "id": "hopo:mineshaft/mangrove_mineshaft",
   "pack": "Hopo Mineshafts",
   "dim": "overworld",
@@ -17394,34 +9643,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mangrove Mineshaft",
   "name_vi": "Mangrove Mineshaft",
   "has3d": "166c912ffae2.json"
- },
- {
-  "id": "hopo:mineshaft/mangrove_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mangrove Mineshaft",
-  "name_vi": "Mangrove Mineshaft",
-  "has3d": "166c912ffae2.json"
- },
- {
-  "id": "hopo:mineshaft/mud_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mud Mineshaft",
-  "name_vi": "Mud Mineshaft",
-  "has3d": "7ab233b9bb2f.json"
  },
  {
   "id": "hopo:mineshaft/mud_mineshaft",
@@ -17452,20 +9673,6 @@ const STRUCTURES_DATA = [
   "has3d": "abaa87ff475d.json"
  },
  {
-  "id": "hopo:mineshaft/oak_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Oak Mineshaft",
-  "name_vi": "Oak Mineshaft",
-  "has3d": "abaa87ff475d.json"
- },
- {
   "id": "hopo:mineshaft/pale_mineshaft",
   "pack": "Hopo Mineshafts",
   "dim": "overworld",
@@ -17478,34 +9685,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pale Mineshaft",
   "name_vi": "Pale Mineshaft",
   "has3d": "4678b01cabe9.json"
- },
- {
-  "id": "hopo:mineshaft/pale_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Pale Mineshaft",
-  "name_vi": "Pale Mineshaft",
-  "has3d": "4678b01cabe9.json"
- },
- {
-  "id": "hopo:mineshaft/poplar_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Poplar Mineshaft",
-  "name_vi": "Poplar Mineshaft",
-  "has3d": "2ae933217517.json"
  },
  {
   "id": "hopo:mineshaft/poplar_mineshaft",
@@ -17536,20 +9715,6 @@ const STRUCTURES_DATA = [
   "has3d": "096ce61edb25.json"
  },
  {
-  "id": "hopo:mineshaft/spruce_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Spruce Mineshaft",
-  "name_vi": "Spruce Mineshaft",
-  "has3d": "096ce61edb25.json"
- },
- {
   "id": "hopo:mineshaft/stone_mineshaft",
   "pack": "Hopo Mineshafts",
   "dim": "overworld",
@@ -17562,34 +9727,6 @@ const STRUCTURES_DATA = [
   "name_en": "Stone Mineshaft",
   "name_vi": "Stone Mineshaft",
   "has3d": "3f9e46a3386e.json"
- },
- {
-  "id": "hopo:mineshaft/stone_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Stone Mineshaft",
-  "name_vi": "Stone Mineshaft",
-  "has3d": "3f9e46a3386e.json"
- },
- {
-  "id": "hopo:mineshaft/biomes/sulfur_mineshaft",
-  "pack": "Hopo Mineshafts",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Sulfur Mineshaft",
-  "name_vi": "Sulfur Mineshaft",
-  "has3d": "64f82073f39e.json"
  },
  {
   "id": "hopo:mineshaft/biomes/sulfur_mineshaft",
@@ -17620,20 +9757,6 @@ const STRUCTURES_DATA = [
   "has3d": "3346a92ffba2.json"
  },
  {
-  "id": "hopo:portal/nether/piglin_ruin",
-  "pack": "Hopo Portals",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Piglin Ruin",
-  "name_vi": "Piglin Ruin",
-  "has3d": "3346a92ffba2.json"
- },
- {
   "id": "hopo:portal/overworld/portal_deepslate",
   "pack": "Hopo Portals",
   "dim": "overworld",
@@ -17646,34 +9769,6 @@ const STRUCTURES_DATA = [
   "name_en": "Portal Deepslate",
   "name_vi": "Portal Deepslate",
   "has3d": "8dba14829236.json"
- },
- {
-  "id": "hopo:portal/overworld/portal_deepslate",
-  "pack": "Hopo Portals",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Portal Deepslate",
-  "name_vi": "Portal Deepslate",
-  "has3d": "8dba14829236.json"
- },
- {
-  "id": "hopo:portal/overworld/portal_dripstone",
-  "pack": "Hopo Portals",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Portal Dripstone",
-  "name_vi": "Portal Dripstone",
-  "has3d": "89c3392d8179.json"
  },
  {
   "id": "hopo:portal/overworld/portal_dripstone",
@@ -17704,20 +9799,6 @@ const STRUCTURES_DATA = [
   "has3d": "c026c670228b.json"
  },
  {
-  "id": "hopo:portal/overworld/portal_lush",
-  "pack": "Hopo Portals",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Portal Lush",
-  "name_vi": "Portal Lush",
-  "has3d": "c026c670228b.json"
- },
- {
   "id": "hopo:portal/overworld/portal_ruined",
   "pack": "Hopo Portals",
   "dim": "overworld",
@@ -17730,33 +9811,6 @@ const STRUCTURES_DATA = [
   "name_en": "Portal Ruined",
   "name_vi": "Portal Ruined",
   "has3d": "9625805b11d5.json"
- },
- {
-  "id": "hopo:portal/overworld/portal_ruined",
-  "pack": "Hopo Portals",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Portal Ruined",
-  "name_vi": "Portal Ruined",
-  "has3d": "9625805b11d5.json"
- },
- {
-  "id": "minecraft:ruined_portal",
-  "pack": "Hopo Portals",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruined Portal",
-  "name_vi": "Ruined Portal"
  },
  {
   "id": "minecraft:ruined_portal",
@@ -17785,32 +9839,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Ocean Ruin Cold"
  },
  {
-  "id": "minecraft:../../../../RemoveVanillaOceanRuin/data/minecraft/worldgen/structure/ocean_ruin_cold",
-  "pack": "Hopo Underwater",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Ruin Cold",
-  "name_vi": "Ocean Ruin Cold"
- },
- {
-  "id": "minecraft:../../../../RemoveVanillaOceanRuin/data/minecraft/worldgen/structure/ocean_ruin_warm",
-  "pack": "Hopo Underwater",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Ruin Warm",
-  "name_vi": "Ocean Ruin Warm"
- },
- {
   "id": "minecraft:../../../../RemoveVanillaOceanRuin/data/minecraft/worldgen/structure/ocean_ruin_warm",
   "pack": "Hopo Underwater",
   "dim": "overworld",
@@ -17837,19 +9865,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Shipwreck"
  },
  {
-  "id": "minecraft:shipwreck",
-  "pack": "Hopo Underwater",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Shipwreck",
-  "name_vi": "Shipwreck"
- },
- {
   "id": "minecraft:shipwreck_beached",
   "pack": "Hopo Underwater",
   "dim": "overworld",
@@ -17861,33 +9876,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Biển / Dưới nước",
   "name_en": "Shipwreck Beached",
   "name_vi": "Shipwreck Beached"
- },
- {
-  "id": "minecraft:shipwreck_beached",
-  "pack": "Hopo Underwater",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Shipwreck Beached",
-  "name_vi": "Shipwreck Beached"
- },
- {
-  "id": "hopo:underwater/underwater_city",
-  "pack": "Hopo Underwater",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Underwater City",
-  "name_vi": "Underwater City",
-  "has3d": "fc16f950d536.json"
  },
  {
   "id": "hopo:underwater/underwater_city",
@@ -17918,20 +9906,6 @@ const STRUCTURES_DATA = [
   "has3d": "f231317c5f3b.json"
  },
  {
-  "id": "hopo:underwater/underwater_fossils",
-  "pack": "Hopo Underwater",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Underwater Fossils",
-  "name_vi": "Underwater Fossils",
-  "has3d": "f231317c5f3b.json"
- },
- {
   "id": "hopo:underwater/underwater_small_ruins",
   "pack": "Hopo Underwater",
   "dim": "overworld",
@@ -17944,34 +9918,6 @@ const STRUCTURES_DATA = [
   "name_en": "Underwater Small Ruins",
   "name_vi": "Underwater Small Ruins",
   "has3d": "e01800f2b1ba.json"
- },
- {
-  "id": "hopo:underwater/underwater_small_ruins",
-  "pack": "Hopo Underwater",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Underwater Small Ruins",
-  "name_vi": "Underwater Small Ruins",
-  "has3d": "e01800f2b1ba.json"
- },
- {
-  "id": "hopo:underwater/underwater_warm_small_ruins",
-  "pack": "Hopo Underwater",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Underwater Warm Small Ruins",
-  "name_vi": "Underwater Warm Small Ruins",
-  "has3d": "5537c81fc6d1.json"
  },
  {
   "id": "hopo:underwater/underwater_warm_small_ruins",
@@ -18002,20 +9948,6 @@ const STRUCTURES_DATA = [
   "has3d": "1afc32280653.json"
  },
  {
-  "id": "incendium:abandoned_tower",
-  "pack": "Incendium",
-  "dim": "nether",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Abandoned Tower",
-  "name_vi": "Tòa tháp bị lãng quên",
-  "has3d": "1afc32280653.json"
- },
- {
   "id": "incendium:forbidden_castle",
   "pack": "Incendium",
   "dim": "nether",
@@ -18028,34 +9960,6 @@ const STRUCTURES_DATA = [
   "name_en": "Forbidden Castle",
   "name_vi": "Lâu đài cấm",
   "has3d": "bfd568d914a7.json"
- },
- {
-  "id": "incendium:forbidden_castle",
-  "pack": "Incendium",
-  "dim": "nether",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Forbidden Castle",
-  "name_vi": "Lâu đài cấm",
-  "has3d": "bfd568d914a7.json"
- },
- {
-  "id": "incendium:infernal_altar",
-  "pack": "Incendium",
-  "dim": "nether",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Infernal Altar",
-  "name_vi": "Bàn tế địa ngục",
-  "has3d": "6c86f7b8cad4.json"
  },
  {
   "id": "incendium:infernal_altar",
@@ -18086,20 +9990,6 @@ const STRUCTURES_DATA = [
   "has3d": "a7920d7139e9.json"
  },
  {
-  "id": "incendium:nether_reactor",
-  "pack": "Incendium",
-  "dim": "nether",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Nether Reactor",
-  "name_vi": "Lõi địa ngục",
-  "has3d": "a7920d7139e9.json"
- },
- {
   "id": "incendium:piglin_village",
   "pack": "Incendium",
   "dim": "nether",
@@ -18112,34 +10002,6 @@ const STRUCTURES_DATA = [
   "name_en": "Piglin Village",
   "name_vi": "Làng Piglin",
   "has3d": "f0ace8967a19.json"
- },
- {
-  "id": "incendium:piglin_village",
-  "pack": "Incendium",
-  "dim": "nether",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Piglin Village",
-  "name_vi": "Làng Piglin",
-  "has3d": "f0ace8967a19.json"
- },
- {
-  "id": "incendium:pipeline",
-  "pack": "Incendium",
-  "dim": "nether",
-  "step": "top_layer_modification",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pipeline",
-  "name_vi": "Đường ống",
-  "has3d": "01719a697bf3.json"
  },
  {
   "id": "incendium:pipeline",
@@ -18170,20 +10032,6 @@ const STRUCTURES_DATA = [
   "has3d": "74558071d5a7.json"
  },
  {
-  "id": "incendium:quartz_kitchen",
-  "pack": "Incendium",
-  "dim": "nether",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Quartz Kitchen",
-  "name_vi": "Nhà bếp thạch anh",
-  "has3d": "74558071d5a7.json"
- },
- {
   "id": "incendium:ruined_lab",
   "pack": "Incendium",
   "dim": "nether",
@@ -18196,34 +10044,6 @@ const STRUCTURES_DATA = [
   "name_en": "Ruined Lab",
   "name_vi": "Phòng thí nghiệm bị phá hủy",
   "has3d": "5bd1828ab574.json"
- },
- {
-  "id": "incendium:ruined_lab",
-  "pack": "Incendium",
-  "dim": "nether",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Ruined Lab",
-  "name_vi": "Phòng thí nghiệm bị phá hủy",
-  "has3d": "5bd1828ab574.json"
- },
- {
-  "id": "incendium:sanctum",
-  "pack": "Incendium",
-  "dim": "nether",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Sanctum",
-  "name_vi": "Thánh điện",
-  "has3d": "5d29c6fd8653.json"
  },
  {
   "id": "incendium:sanctum",
@@ -18254,20 +10074,6 @@ const STRUCTURES_DATA = [
   "has3d": "9eef4d916ee2.json"
  },
  {
-  "id": "kattersstructures:armory",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Armory",
-  "name_vi": "Armory",
-  "has3d": "9eef4d916ee2.json"
- },
- {
   "id": "kattersstructures:birch_tree",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -18279,33 +10085,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Big Birch Tree",
   "name_vi": "Big Birch Tree"
- },
- {
-  "id": "kattersstructures:birch_tree",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Big Birch Tree",
-  "name_vi": "Big Birch Tree"
- },
- {
-  "id": "kattersstructures:cherry_tree",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Big Cherry Tree",
-  "name_vi": "Big Cherry Tree",
-  "has3d": "7de8fdabdc20.json"
  },
  {
   "id": "kattersstructures:cherry_tree",
@@ -18336,20 +10115,6 @@ const STRUCTURES_DATA = [
   "has3d": "9f421aba2c86.json"
  },
  {
-  "id": "kattersstructures:dark_tree",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Big Dark Oak Tree",
-  "name_vi": "Big Dark Oak Tree",
-  "has3d": "9f421aba2c86.json"
- },
- {
   "id": "kattersstructures:village_birch",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -18362,34 +10127,6 @@ const STRUCTURES_DATA = [
   "name_en": "Birch Village",
   "name_vi": "Birch Village",
   "has3d": "c746435bc3c9.json"
- },
- {
-  "id": "kattersstructures:village_birch",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Village",
-  "name_vi": "Birch Village",
-  "has3d": "c746435bc3c9.json"
- },
- {
-  "id": "kattersstructures:village_cherry",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cherry Village",
-  "name_vi": "Cherry Village",
-  "has3d": "984f75e80d53.json"
  },
  {
   "id": "kattersstructures:village_cherry",
@@ -18420,20 +10157,6 @@ const STRUCTURES_DATA = [
   "has3d": "9ab610f070c6.json"
  },
  {
-  "id": "kattersstructures:deep_blue_city",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Deep Blue, City",
-  "name_vi": "Deep Blue, City",
-  "has3d": "9ab610f070c6.json"
- },
- {
   "id": "kattersstructures:deep_blue_labs",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -18445,33 +10168,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Deep Blue, Lab",
   "name_vi": "Deep Blue, Lab"
- },
- {
-  "id": "kattersstructures:deep_blue_labs",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Deep Blue, Lab",
-  "name_vi": "Deep Blue, Lab"
- },
- {
-  "id": "kattersstructures:desert_dungeon",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Desert Dungeon",
-  "name_vi": "Desert Dungeon",
-  "has3d": "de6ead56fd21.json"
  },
  {
   "id": "kattersstructures:desert_dungeon",
@@ -18502,34 +10198,6 @@ const STRUCTURES_DATA = [
   "has3d": "6e0c01fa2618.json"
  },
  {
-  "id": "kattersstructures:villager_desert",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert villager statue",
-  "name_vi": "Desert villager statue",
-  "has3d": "6e0c01fa2618.json"
- },
- {
-  "id": "kattersstructures:far_watch",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Far Watch",
-  "name_vi": "Far Watch",
-  "has3d": "e2c221e24acc.json"
- },
- {
   "id": "kattersstructures:far_watch",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -18555,33 +10223,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Dưới lòng đất",
   "name_en": "Fossils",
   "name_vi": "Fossils"
- },
- {
-  "id": "kattersstructures:fossils",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Fossils",
-  "name_vi": "Fossils"
- },
- {
-  "id": "kattersstructures:graveyard",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Graveyard",
-  "name_vi": "Graveyard",
-  "has3d": "ca78a24b1313.json"
  },
  {
   "id": "kattersstructures:graveyard",
@@ -18612,20 +10253,6 @@ const STRUCTURES_DATA = [
   "has3d": "10e43368059a.json"
  },
  {
-  "id": "kattersstructures:village_jungle",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Village",
-  "name_vi": "Jungle Village",
-  "has3d": "10e43368059a.json"
- },
- {
   "id": "kattersstructures:magic_tower",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -18638,34 +10265,6 @@ const STRUCTURES_DATA = [
   "name_en": "Magic Tower",
   "name_vi": "Magic Tower",
   "has3d": "8e1d65595379.json"
- },
- {
-  "id": "kattersstructures:magic_tower",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Magic Tower",
-  "name_vi": "Magic Tower",
-  "has3d": "8e1d65595379.json"
- },
- {
-  "id": "kattersstructures:village_mesa",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mesa Village",
-  "name_vi": "Mesa Village",
-  "has3d": "2fe324314bbe.json"
  },
  {
   "id": "kattersstructures:village_mesa",
@@ -18696,20 +10295,6 @@ const STRUCTURES_DATA = [
   "has3d": "3af4a79fb47f.json"
  },
  {
-  "id": "kattersstructures:villager_mountain",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mountain villager statue",
-  "name_vi": "Mountain villager statue",
-  "has3d": "3af4a79fb47f.json"
- },
- {
   "id": "kattersstructures:ocean_ships",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -18721,33 +10306,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Biển / Dưới nước",
   "name_en": "Ocean Ships",
   "name_vi": "Ocean Ships"
- },
- {
-  "id": "kattersstructures:ocean_ships",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Ships",
-  "name_vi": "Ocean Ships"
- },
- {
-  "id": "kattersstructures:village_ocean",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Village",
-  "name_vi": "Ocean Village",
-  "has3d": "fa5fd4c89220.json"
  },
  {
   "id": "kattersstructures:village_ocean",
@@ -18778,20 +10336,6 @@ const STRUCTURES_DATA = [
   "has3d": "78b3e8aaf98c.json"
  },
  {
-  "id": "kattersstructures:villager_ocean",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean villager statue",
-  "name_vi": "Ocean villager statue",
-  "has3d": "78b3e8aaf98c.json"
- },
- {
   "id": "kattersstructures:pillager_village",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -18804,34 +10348,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Village",
   "name_vi": "Pillager Village",
   "has3d": "b06b42e0c2ea.json"
- },
- {
-  "id": "kattersstructures:pillager_village",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Village",
-  "name_vi": "Pillager Village",
-  "has3d": "b06b42e0c2ea.json"
- },
- {
-  "id": "kattersstructures:red_coral",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Red Coral",
-  "name_vi": "Red Coral",
-  "has3d": "93a2c4cc5047.json"
  },
  {
   "id": "kattersstructures:red_coral",
@@ -18862,34 +10378,6 @@ const STRUCTURES_DATA = [
   "has3d": "fc8c85ade5bf.json"
  },
  {
-  "id": "kattersstructures:mini_dungeon_rugged_shack",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Rugged Shack Mini-Dungeon",
-  "name_vi": "Rugged Shack Mini-Dungeon",
-  "has3d": "fc8c85ade5bf.json"
- },
- {
-  "id": "kattersstructures:mini_dungeon_ruin",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Ruin Mini-Dungeon",
-  "name_vi": "Ruin Mini-Dungeon",
-  "has3d": "ea7361725fcb.json"
- },
- {
   "id": "kattersstructures:mini_dungeon_ruin",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -18917,19 +10405,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Ruined Deep Blue Lab"
  },
  {
-  "id": "kattersstructures:deep_blue_lab_ruin",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruined Deep Blue Lab",
-  "name_vi": "Ruined Deep Blue Lab"
- },
- {
   "id": "kattersstructures:ruined_village",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -18941,33 +10416,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Ruined Village",
   "name_vi": "Ruined Village"
- },
- {
-  "id": "kattersstructures:ruined_village",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruined Village",
-  "name_vi": "Ruined Village"
- },
- {
-  "id": "kattersstructures:shroom_cave",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Shroom cave",
-  "name_vi": "Shroom cave",
-  "has3d": "2fecf997e0f7.json"
  },
  {
   "id": "kattersstructures:shroom_cave",
@@ -18998,20 +10446,6 @@ const STRUCTURES_DATA = [
   "has3d": "7104a5f0c525.json"
  },
  {
-  "id": "kattersstructures:sky_decor",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Sky Decor",
-  "name_vi": "Sky Decor",
-  "has3d": "7104a5f0c525.json"
- },
- {
   "id": "kattersstructures:sky_dungeon",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -19024,34 +10458,6 @@ const STRUCTURES_DATA = [
   "name_en": "Sky Dungeon",
   "name_vi": "Sky Dungeon",
   "has3d": "a5c1d36f88ed.json"
- },
- {
-  "id": "kattersstructures:sky_dungeon",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Sky Dungeon",
-  "name_vi": "Sky Dungeon",
-  "has3d": "a5c1d36f88ed.json"
- },
- {
-  "id": "kattersstructures:village_sky",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Sky Village",
-  "name_vi": "Sky Village",
-  "has3d": "f9ff017ab05b.json"
  },
  {
   "id": "kattersstructures:village_sky",
@@ -19082,34 +10488,6 @@ const STRUCTURES_DATA = [
   "has3d": "f56605adc99e.json"
  },
  {
-  "id": "kattersstructures:skyhold",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Skyhold",
-  "name_vi": "Skyhold",
-  "has3d": "f56605adc99e.json"
- },
- {
-  "id": "kattersstructures:skyrtle",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Skyrtle",
-  "name_vi": "Skyrtle",
-  "has3d": "94391e24ea28.json"
- },
- {
   "id": "kattersstructures:skyrtle",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -19135,33 +10513,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Spider Den",
   "name_vi": "Spider Den"
- },
- {
-  "id": "kattersstructures:spider_den",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spider Den",
-  "name_vi": "Spider Den"
- },
- {
-  "id": "kattersstructures:mini_dungeon_stone",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Stone Mini-Dungeon",
-  "name_vi": "Stone Mini-Dungeon",
-  "has3d": "a126db0caf03.json"
  },
  {
   "id": "kattersstructures:mini_dungeon_stone",
@@ -19192,20 +10543,6 @@ const STRUCTURES_DATA = [
   "has3d": "379e9c047a7e.json"
  },
  {
-  "id": "kattersstructures:village_swamp",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Village",
-  "name_vi": "Swamp Village",
-  "has3d": "379e9c047a7e.json"
- },
- {
   "id": "kattersstructures:trader_outposts",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -19218,34 +10555,6 @@ const STRUCTURES_DATA = [
   "name_en": "Trader Outposts",
   "name_vi": "Trader Outposts",
   "has3d": "91e9402ec446.json"
- },
- {
-  "id": "kattersstructures:trader_outposts",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Trader Outposts",
-  "name_vi": "Trader Outposts",
-  "has3d": "91e9402ec446.json"
- },
- {
-  "id": "kattersstructures:mini_dungeon_tuff",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Tuff Mini-Dungeon",
-  "name_vi": "Tuff Mini-Dungeon",
-  "has3d": "caf9204f0874.json"
  },
  {
   "id": "kattersstructures:mini_dungeon_tuff",
@@ -19276,34 +10585,6 @@ const STRUCTURES_DATA = [
   "has3d": "92b161fd1744.json"
  },
  {
-  "id": "kattersstructures:village_underground",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Underground  Village",
-  "name_vi": "Underground  Village",
-  "has3d": "92b161fd1744.json"
- },
- {
-  "id": "kattersstructures:windmill",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Windmill",
-  "name_vi": "Windmill",
-  "has3d": "fe41a91d47e6.json"
- },
- {
   "id": "kattersstructures:windmill",
   "pack": "Katters Structures",
   "dim": "overworld",
@@ -19329,33 +10610,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Witch circle",
   "name_vi": "Witch circle"
- },
- {
-  "id": "kattersstructures:witch_circle",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Witch circle",
-  "name_vi": "Witch circle"
- },
- {
-  "id": "kattersstructures:better_vanilla_dungeon",
-  "pack": "Katters Structures",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "better Vanilla Dungeon",
-  "name_vi": "better Vanilla Dungeon",
-  "has3d": "e9aa8a5f8d29.json"
  },
  {
   "id": "kattersstructures:better_vanilla_dungeon",
@@ -19386,20 +10640,6 @@ const STRUCTURES_DATA = [
   "has3d": "11e20e115378.json"
  },
  {
-  "id": "medieval_buildings:fort",
-  "pack": "Medieval Buildings",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Fort",
-  "name_vi": "Fort",
-  "has3d": "11e20e115378.json"
- },
- {
   "id": "medieval_buildings:house_1",
   "pack": "Medieval Buildings",
   "dim": "overworld",
@@ -19412,34 +10652,6 @@ const STRUCTURES_DATA = [
   "name_en": "House 1",
   "name_vi": "House 1",
   "has3d": "1fa4328152c5.json"
- },
- {
-  "id": "medieval_buildings:house_1",
-  "pack": "Medieval Buildings",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "House 1",
-  "name_vi": "House 1",
-  "has3d": "1fa4328152c5.json"
- },
- {
-  "id": "medieval_buildings:house_2",
-  "pack": "Medieval Buildings",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "House 2",
-  "name_vi": "House 2",
-  "has3d": "2d461e6553b8.json"
  },
  {
   "id": "medieval_buildings:house_2",
@@ -19470,20 +10682,6 @@ const STRUCTURES_DATA = [
   "has3d": "4090f6f0c240.json"
  },
  {
-  "id": "medieval_buildings:ship",
-  "pack": "Medieval Buildings",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ship",
-  "name_vi": "Ship",
-  "has3d": "4090f6f0c240.json"
- },
- {
   "id": "medieval_buildings:tower",
   "pack": "Medieval Buildings",
   "dim": "overworld",
@@ -19496,34 +10694,6 @@ const STRUCTURES_DATA = [
   "name_en": "Tower",
   "name_vi": "Tower",
   "has3d": "6bbda4b22081.json"
- },
- {
-  "id": "medieval_buildings:tower",
-  "pack": "Medieval Buildings",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Tower",
-  "name_vi": "Tower",
-  "has3d": "6bbda4b22081.json"
- },
- {
-  "id": "medieval_end:castle",
-  "pack": "Medieval End",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Castle",
-  "name_vi": "Castle",
-  "has3d": "e973cc4040b2.json"
  },
  {
   "id": "medieval_end:castle",
@@ -19554,20 +10724,6 @@ const STRUCTURES_DATA = [
   "has3d": "b056091c650b.json"
  },
  {
-  "id": "medieval_end:house",
-  "pack": "Medieval End",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "House",
-  "name_vi": "House",
-  "has3d": "b056091c650b.json"
- },
- {
   "id": "medieval_end:pyramid",
   "pack": "Medieval End",
   "dim": "end",
@@ -19580,34 +10736,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pyramid",
   "name_vi": "Pyramid",
   "has3d": "f2fb70394edb.json"
- },
- {
-  "id": "medieval_end:pyramid",
-  "pack": "Medieval End",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pyramid",
-  "name_vi": "Pyramid",
-  "has3d": "f2fb70394edb.json"
- },
- {
-  "id": "medieval_end:ship",
-  "pack": "Medieval End",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ship",
-  "name_vi": "Ship",
-  "has3d": "379358f2dbf5.json"
  },
  {
   "id": "medieval_end:ship",
@@ -19638,20 +10766,6 @@ const STRUCTURES_DATA = [
   "has3d": "a055ba3c2419.json"
  },
  {
-  "id": "medieval_end:shrine",
-  "pack": "Medieval End",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Shrine",
-  "name_vi": "Shrine",
-  "has3d": "a055ba3c2419.json"
- },
- {
   "id": "medieval_nether:castle",
   "pack": "Medieval Nether",
   "dim": "nether",
@@ -19664,34 +10778,6 @@ const STRUCTURES_DATA = [
   "name_en": "Castle",
   "name_vi": "Castle",
   "has3d": "3341d52cd7b8.json"
- },
- {
-  "id": "medieval_nether:castle",
-  "pack": "Medieval Nether",
-  "dim": "nether",
-  "step": "top_layer_modification",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Castle",
-  "name_vi": "Castle",
-  "has3d": "3341d52cd7b8.json"
- },
- {
-  "id": "medieval_nether:dome",
-  "pack": "Medieval Nether",
-  "dim": "nether",
-  "step": "top_layer_modification",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dome",
-  "name_vi": "Dome",
-  "has3d": "d1fb8720c8d6.json"
  },
  {
   "id": "medieval_nether:dome",
@@ -19722,20 +10808,6 @@ const STRUCTURES_DATA = [
   "has3d": "15a05942d769.json"
  },
  {
-  "id": "medieval_nether:house",
-  "pack": "Medieval Nether",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "House",
-  "name_vi": "House",
-  "has3d": "15a05942d769.json"
- },
- {
   "id": "medieval_nether:ship",
   "pack": "Medieval Nether",
   "dim": "nether",
@@ -19748,34 +10820,6 @@ const STRUCTURES_DATA = [
   "name_en": "Ship",
   "name_vi": "Ship",
   "has3d": "040914c21d64.json"
- },
- {
-  "id": "medieval_nether:ship",
-  "pack": "Medieval Nether",
-  "dim": "nether",
-  "step": "top_layer_modification",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ship",
-  "name_vi": "Ship",
-  "has3d": "040914c21d64.json"
- },
- {
-  "id": "medieval_nether:shrine",
-  "pack": "Medieval Nether",
-  "dim": "nether",
-  "step": "top_layer_modification",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Shrine",
-  "name_vi": "Shrine",
-  "has3d": "0e8595568661.json"
  },
  {
   "id": "medieval_nether:shrine",
@@ -19806,20 +10850,6 @@ const STRUCTURES_DATA = [
   "has3d": "d553da79f91d.json"
  },
  {
-  "id": "mes:astral_hideaway",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Astral Hideaway",
-  "name_vi": "Astral Hideaway",
-  "has3d": "d553da79f91d.json"
- },
- {
   "id": "mes:astral_meteorite",
   "pack": "Moog's End (MES)",
   "dim": "end",
@@ -19832,34 +10862,6 @@ const STRUCTURES_DATA = [
   "name_en": "Astral Meteorite",
   "name_vi": "Astral Meteorite",
   "has3d": "9bbcc49d165e.json"
- },
- {
-  "id": "mes:astral_meteorite",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Astral Meteorite",
-  "name_vi": "Astral Meteorite",
-  "has3d": "9bbcc49d165e.json"
- },
- {
-  "id": "mes:ender_spire",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ender Spire",
-  "name_vi": "Ender Spire",
-  "has3d": "5767162ebd87.json"
  },
  {
   "id": "mes:ender_spire",
@@ -19890,20 +10892,6 @@ const STRUCTURES_DATA = [
   "has3d": "ab52ecd3e3a1.json"
  },
  {
-  "id": "mes:enderbloom_grove",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Enderbloom Grove",
-  "name_vi": "Enderbloom Grove",
-  "has3d": "ab52ecd3e3a1.json"
- },
- {
   "id": "mes:enderkeep_courtyard",
   "pack": "Moog's End (MES)",
   "dim": "end",
@@ -19916,34 +10904,6 @@ const STRUCTURES_DATA = [
   "name_en": "Enderkeep Courtyard",
   "name_vi": "Enderkeep Courtyard",
   "has3d": "8f9afcdc7e89.json"
- },
- {
-  "id": "mes:enderkeep_courtyard",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Enderkeep Courtyard",
-  "name_vi": "Enderkeep Courtyard",
-  "has3d": "8f9afcdc7e89.json"
- },
- {
-  "id": "mes:enderpin_spikes",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Enderpin Spikes",
-  "name_vi": "Enderpin Spikes",
-  "has3d": "c96cb23be939.json"
  },
  {
   "id": "mes:enderpin_spikes",
@@ -19974,20 +10934,6 @@ const STRUCTURES_DATA = [
   "has3d": "98718f25fe02.json"
  },
  {
-  "id": "mes:enderskog",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Enderskog",
-  "name_vi": "Enderskog",
-  "has3d": "98718f25fe02.json"
- },
- {
   "id": "mes:enderwatch_tower",
   "pack": "Moog's End (MES)",
   "dim": "end",
@@ -20000,34 +10946,6 @@ const STRUCTURES_DATA = [
   "name_en": "Enderwatch Tower",
   "name_vi": "Enderwatch Tower",
   "has3d": "33fd94ac9e6f.json"
- },
- {
-  "id": "mes:enderwatch_tower",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Enderwatch Tower",
-  "name_vi": "Enderwatch Tower",
-  "has3d": "33fd94ac9e6f.json"
- },
- {
-  "id": "mes:endscraps",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Endscraps",
-  "name_vi": "Endscraps",
-  "has3d": "84b77a1aed94.json"
  },
  {
   "id": "mes:endscraps",
@@ -20058,20 +10976,6 @@ const STRUCTURES_DATA = [
   "has3d": "337a3cefa815.json"
  },
  {
-  "id": "mes:manuscript_shrine",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Manuscript Shrine",
-  "name_vi": "Manuscript Shrine",
-  "has3d": "337a3cefa815.json"
- },
- {
   "id": "mes:mega_ship",
   "pack": "Moog's End (MES)",
   "dim": "end",
@@ -20084,34 +10988,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mega Ship",
   "name_vi": "Mega Ship",
   "has3d": "a538cdc67801.json"
- },
- {
-  "id": "mes:mega_ship",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mega Ship",
-  "name_vi": "Mega Ship",
-  "has3d": "a538cdc67801.json"
- },
- {
-  "id": "mes:mega_ship_basic",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mega Ship Basic",
-  "name_vi": "Mega Ship Basic",
-  "has3d": "768255023802.json"
  },
  {
   "id": "mes:mega_ship_basic",
@@ -20142,20 +11018,6 @@ const STRUCTURES_DATA = [
   "has3d": "290945fb137c.json"
  },
  {
-  "id": "mes:mega_ship_crashed",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mega Ship Crashed",
-  "name_vi": "Mega Ship Crashed",
-  "has3d": "290945fb137c.json"
- },
- {
   "id": "mes:mega_ship_crashed_2",
   "pack": "Moog's End (MES)",
   "dim": "end",
@@ -20168,34 +11030,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mega Ship Crashed 2",
   "name_vi": "Mega Ship Crashed 2",
   "has3d": "243e6e99c109.json"
- },
- {
-  "id": "mes:mega_ship_crashed_2",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mega Ship Crashed 2",
-  "name_vi": "Mega Ship Crashed 2",
-  "has3d": "243e6e99c109.json"
- },
- {
-  "id": "mes:mega_ship_crashed_deepslate",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mega Ship Crashed Deepslate",
-  "name_vi": "Mega Ship Crashed Deepslate",
-  "has3d": "de26253a6f8b.json"
  },
  {
   "id": "mes:mega_ship_crashed_deepslate",
@@ -20226,20 +11060,6 @@ const STRUCTURES_DATA = [
   "has3d": "eb74e297d02c.json"
  },
  {
-  "id": "mes:mega_ship_deepslate",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mega Ship Deepslate",
-  "name_vi": "Mega Ship Deepslate",
-  "has3d": "eb74e297d02c.json"
- },
- {
   "id": "mes:mega_ship_deepslate_2",
   "pack": "Moog's End (MES)",
   "dim": "end",
@@ -20252,34 +11072,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mega Ship Deepslate 2",
   "name_vi": "Mega Ship Deepslate 2",
   "has3d": "5648abcb7274.json"
- },
- {
-  "id": "mes:mega_ship_deepslate_2",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mega Ship Deepslate 2",
-  "name_vi": "Mega Ship Deepslate 2",
-  "has3d": "5648abcb7274.json"
- },
- {
-  "id": "mes:mega_ship_deepslate_3",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mega Ship Deepslate 3",
-  "name_vi": "Mega Ship Deepslate 3",
-  "has3d": "13711bc02080.json"
  },
  {
   "id": "mes:mega_ship_deepslate_3",
@@ -20310,20 +11102,6 @@ const STRUCTURES_DATA = [
   "has3d": "57977a06e5cc.json"
  },
  {
-  "id": "mes:monolith",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Monolith",
-  "name_vi": "Monolith",
-  "has3d": "57977a06e5cc.json"
- },
- {
   "id": "mes:mystical_archway",
   "pack": "Moog's End (MES)",
   "dim": "end",
@@ -20336,34 +11114,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mystical Archway",
   "name_vi": "Mystical Archway",
   "has3d": "2e8b9f4d36f9.json"
- },
- {
-  "id": "mes:mystical_archway",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mystical Archway",
-  "name_vi": "Mystical Archway",
-  "has3d": "2e8b9f4d36f9.json"
- },
- {
-  "id": "mes:mythic_garden",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mythic Garden",
-  "name_vi": "Mythic Garden",
-  "has3d": "2791f4b59356.json"
  },
  {
   "id": "mes:mythic_garden",
@@ -20394,20 +11144,6 @@ const STRUCTURES_DATA = [
   "has3d": "3e230e32b018.json"
  },
  {
-  "id": "mes:phantom_citadel",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Phantom Citadel",
-  "name_vi": "Phantom Citadel",
-  "has3d": "3e230e32b018.json"
- },
- {
   "id": "mes:placid_prairie",
   "pack": "Moog's End (MES)",
   "dim": "end",
@@ -20420,34 +11156,6 @@ const STRUCTURES_DATA = [
   "name_en": "Placid Prairie",
   "name_vi": "Placid Prairie",
   "has3d": "00ca86d9db2a.json"
- },
- {
-  "id": "mes:placid_prairie",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Placid Prairie",
-  "name_vi": "Placid Prairie",
-  "has3d": "00ca86d9db2a.json"
- },
- {
-  "id": "mes:ruined_pillar",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruined Pillar",
-  "name_vi": "Ruined Pillar",
-  "has3d": "81cf5bd60649.json"
  },
  {
   "id": "mes:ruined_pillar",
@@ -20478,33 +11186,6 @@ const STRUCTURES_DATA = [
   "has3d": "6bbdd456466d.json"
  },
  {
-  "id": "mes:starlight_voyager",
-  "pack": "Moog's End (MES)",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Starlight Voyager",
-  "name_vi": "Starlight Voyager",
-  "has3d": "6bbdd456466d.json"
- },
- {
-  "id": "mmr:dark_oak_mineshaft",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Dark Oak Mineshaft",
-  "name_vi": "Dark Oak Mineshaft"
- },
- {
   "id": "mmr:dark_oak_mineshaft",
   "pack": "Moog's Mineshafts (MMR)",
   "dim": "overworld",
@@ -20532,20 +11213,6 @@ const STRUCTURES_DATA = [
   "has3d": "a942616a661e.json"
  },
  {
-  "id": "mmr:dark_oak_mineshaft_underground",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Dark Oak Mineshaft Underground",
-  "name_vi": "Dark Oak Mineshaft Underground",
-  "has3d": "a942616a661e.json"
- },
- {
   "id": "mmr:deep_dark_mineshaft_underground",
   "pack": "Moog's Mineshafts (MMR)",
   "dim": "overworld",
@@ -20557,33 +11224,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Dưới lòng đất",
   "name_en": "Deep Dark Mineshaft Underground",
   "name_vi": "Deep Dark Mineshaft Underground"
- },
- {
-  "id": "mmr:deep_dark_mineshaft_underground",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Deep Dark",
-  "where_vi": "Vực Sâu (Deep Dark)",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Deep Dark Mineshaft Underground",
-  "name_vi": "Deep Dark Mineshaft Underground"
- },
- {
-  "id": "mmr:desert_mineshaft",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Desert Mineshaft",
-  "name_vi": "Desert Mineshaft",
-  "has3d": "4c04f127e3f9.json"
  },
  {
   "id": "mmr:desert_mineshaft",
@@ -20614,34 +11254,6 @@ const STRUCTURES_DATA = [
   "has3d": "10ddb389f4ea.json"
  },
  {
-  "id": "mmr:desert_mineshaft_underground",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Desert Mineshaft Underground",
-  "name_vi": "Desert Mineshaft Underground",
-  "has3d": "10ddb389f4ea.json"
- },
- {
-  "id": "mmr:jungle_mineshaft",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Jungle Mineshaft",
-  "name_vi": "Jungle Mineshaft",
-  "has3d": "2bb97e1ea0f3.json"
- },
- {
   "id": "mmr:jungle_mineshaft",
   "pack": "Moog's Mineshafts (MMR)",
   "dim": "overworld",
@@ -20670,20 +11282,6 @@ const STRUCTURES_DATA = [
   "has3d": "a434c3dc814c.json"
  },
  {
-  "id": "mmr:jungle_mineshaft_underground",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Jungle Mineshaft Underground",
-  "name_vi": "Jungle Mineshaft Underground",
-  "has3d": "a434c3dc814c.json"
- },
- {
   "id": "mmr:mesa_mineshaft",
   "pack": "Moog's Mineshafts (MMR)",
   "dim": "overworld",
@@ -20695,33 +11293,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Dưới lòng đất",
   "name_en": "Mesa Mineshaft",
   "name_vi": "Mesa Mineshaft"
- },
- {
-  "id": "mmr:mesa_mineshaft",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mesa Mineshaft",
-  "name_vi": "Mesa Mineshaft"
- },
- {
-  "id": "mmr:mesa_mineshaft_underground",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mesa Mineshaft Underground",
-  "name_vi": "Mesa Mineshaft Underground",
-  "has3d": "41ffdd6c6af7.json"
  },
  {
   "id": "mmr:mesa_mineshaft_underground",
@@ -20752,34 +11323,6 @@ const STRUCTURES_DATA = [
   "has3d": "720757ab808e.json"
  },
  {
-  "id": "mmr:mineshaft",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mineshaft",
-  "name_vi": "Mineshaft",
-  "has3d": "720757ab808e.json"
- },
- {
-  "id": "mmr:mineshaft_underground",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mineshaft Underground",
-  "name_vi": "Mineshaft Underground",
-  "has3d": "c60e8475b1dd.json"
- },
- {
   "id": "mmr:mineshaft_underground",
   "pack": "Moog's Mineshafts (MMR)",
   "dim": "overworld",
@@ -20808,20 +11351,6 @@ const STRUCTURES_DATA = [
   "has3d": "b7b2224f5f8c.json"
  },
  {
-  "id": "mmr:mushroom_mineshaft",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mushroom Mineshaft",
-  "name_vi": "Mushroom Mineshaft",
-  "has3d": "b7b2224f5f8c.json"
- },
- {
   "id": "mmr:mushroom_mineshaft_underground",
   "pack": "Moog's Mineshafts (MMR)",
   "dim": "overworld",
@@ -20833,33 +11362,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Dưới lòng đất",
   "name_en": "Mushroom Mineshaft Underground",
   "name_vi": "Mushroom Mineshaft Underground"
- },
- {
-  "id": "mmr:mushroom_mineshaft_underground",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Mushroom Mineshaft Underground",
-  "name_vi": "Mushroom Mineshaft Underground"
- },
- {
-  "id": "mmr:nether_mineshaft",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Nether Mineshaft",
-  "name_vi": "Nether Mineshaft",
-  "has3d": "2bc3f6436b33.json"
  },
  {
   "id": "mmr:nether_mineshaft",
@@ -20890,20 +11392,6 @@ const STRUCTURES_DATA = [
   "has3d": "1efde7046c25.json"
  },
  {
-  "id": "mmr:snowy_mineshaft",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Snowy Mineshaft",
-  "name_vi": "Snowy Mineshaft",
-  "has3d": "1efde7046c25.json"
- },
- {
   "id": "mmr:snowy_mineshaft_underground",
   "pack": "Moog's Mineshafts (MMR)",
   "dim": "overworld",
@@ -20916,34 +11404,6 @@ const STRUCTURES_DATA = [
   "name_en": "Snowy Mineshaft Underground",
   "name_vi": "Snowy Mineshaft Underground",
   "has3d": "1f2b8bfe1885.json"
- },
- {
-  "id": "mmr:snowy_mineshaft_underground",
-  "pack": "Moog's Mineshafts (MMR)",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.6x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Snowy Mineshaft Underground",
-  "name_vi": "Snowy Mineshaft Underground",
-  "has3d": "1f2b8bfe1885.json"
- },
- {
-  "id": "mns:bridge_1",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bridge 1",
-  "name_vi": "Bridge 1",
-  "has3d": "86400bc252c4.json"
  },
  {
   "id": "mns:bridge_1",
@@ -20974,20 +11434,6 @@ const STRUCTURES_DATA = [
   "has3d": "359237b9a920.json"
  },
  {
-  "id": "mns:bridge_2",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bridge 2",
-  "name_vi": "Bridge 2",
-  "has3d": "359237b9a920.json"
- },
- {
   "id": "mns:bridge_3",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -21000,34 +11446,6 @@ const STRUCTURES_DATA = [
   "name_en": "Bridge 3",
   "name_vi": "Bridge 3",
   "has3d": "c344d6eecd62.json"
- },
- {
-  "id": "mns:bridge_3",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bridge 3",
-  "name_vi": "Bridge 3",
-  "has3d": "c344d6eecd62.json"
- },
- {
-  "id": "mns:bridge_4",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bridge 4",
-  "name_vi": "Bridge 4",
-  "has3d": "88292a8bead4.json"
  },
  {
   "id": "mns:bridge_4",
@@ -21058,20 +11476,6 @@ const STRUCTURES_DATA = [
   "has3d": "c1d18fee7e30.json"
  },
  {
-  "id": "mns:bridge_5",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bridge 5",
-  "name_vi": "Bridge 5",
-  "has3d": "c1d18fee7e30.json"
- },
- {
   "id": "mns:bridge_6",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -21084,34 +11488,6 @@ const STRUCTURES_DATA = [
   "name_en": "Bridge 6",
   "name_vi": "Bridge 6",
   "has3d": "943d9c6a596b.json"
- },
- {
-  "id": "mns:bridge_6",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bridge 6",
-  "name_vi": "Bridge 6",
-  "has3d": "943d9c6a596b.json"
- },
- {
-  "id": "mns:circle_blackstone",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Circle Blackstone",
-  "name_vi": "Circle Blackstone",
-  "has3d": "72cf9d48ac97.json"
  },
  {
   "id": "mns:circle_blackstone",
@@ -21142,20 +11518,6 @@ const STRUCTURES_DATA = [
   "has3d": "9e4cba24c0f2.json"
  },
  {
-  "id": "mns:circle_nether_brick",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Circle Nether Brick",
-  "name_vi": "Circle Nether Brick",
-  "has3d": "9e4cba24c0f2.json"
- },
- {
   "id": "mns:copper_tower",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -21168,34 +11530,6 @@ const STRUCTURES_DATA = [
   "name_en": "Copper Tower",
   "name_vi": "Copper Tower",
   "has3d": "847030873b69.json"
- },
- {
-  "id": "mns:copper_tower",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Copper Tower",
-  "name_vi": "Copper Tower",
-  "has3d": "847030873b69.json"
- },
- {
-  "id": "mns:crimson_forge",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Crimson Forest",
-  "where_vi": "Rừng Đỏ Thẫm (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Crimson Forge",
-  "name_vi": "Crimson Forge",
-  "has3d": "65cb8a89445a.json"
  },
  {
   "id": "mns:crimson_forge",
@@ -21226,20 +11560,6 @@ const STRUCTURES_DATA = [
   "has3d": "66981c530e61.json"
  },
  {
-  "id": "mns:crimson_lava_well",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Crimson Forest",
-  "where_vi": "Rừng Đỏ Thẫm (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Crimson Lava Well",
-  "name_vi": "Crimson Lava Well",
-  "has3d": "66981c530e61.json"
- },
- {
   "id": "mns:dragon_arena",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -21252,34 +11572,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dragon Arena",
   "name_vi": "Dragon Arena",
   "has3d": "8407955d47da.json"
- },
- {
-  "id": "mns:dragon_arena",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dragon Arena",
-  "name_vi": "Dragon Arena",
-  "has3d": "8407955d47da.json"
- },
- {
-  "id": "mns:giant_skull",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Giant Skull",
-  "name_vi": "Giant Skull",
-  "has3d": "21ec88194c49.json"
  },
  {
   "id": "mns:giant_skull",
@@ -21310,20 +11602,6 @@ const STRUCTURES_DATA = [
   "has3d": "258f1f17290a.json"
  },
  {
-  "id": "mns:grave_yard",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Grave Yard",
-  "name_vi": "Grave Yard",
-  "has3d": "258f1f17290a.json"
- },
- {
   "id": "mns:large_arena",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -21336,34 +11614,6 @@ const STRUCTURES_DATA = [
   "name_en": "Large Arena",
   "name_vi": "Large Arena",
   "has3d": "7bf84415d405.json"
- },
- {
-  "id": "mns:large_arena",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Large Arena",
-  "name_vi": "Large Arena",
-  "has3d": "7bf84415d405.json"
- },
- {
-  "id": "mns:large_blackstone_pillars",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Large Blackstone Pillars",
-  "name_vi": "Large Blackstone Pillars",
-  "has3d": "d126219e1398.json"
  },
  {
   "id": "mns:large_blackstone_pillars",
@@ -21394,20 +11644,6 @@ const STRUCTURES_DATA = [
   "has3d": "8bd66c8f9682.json"
  },
  {
-  "id": "mns:large_blackstone_walls",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Large Blackstone Walls",
-  "name_vi": "Large Blackstone Walls",
-  "has3d": "8bd66c8f9682.json"
- },
- {
   "id": "mns:large_house_1",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -21420,34 +11656,6 @@ const STRUCTURES_DATA = [
   "name_en": "Large House 1",
   "name_vi": "Large House 1",
   "has3d": "727c1edc63bc.json"
- },
- {
-  "id": "mns:large_house_1",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Large House 1",
-  "name_vi": "Large House 1",
-  "has3d": "727c1edc63bc.json"
- },
- {
-  "id": "mns:large_nether_brick",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Large Nether Brick",
-  "name_vi": "Large Nether Brick",
-  "has3d": "e90f42bb6df8.json"
  },
  {
   "id": "mns:large_nether_brick",
@@ -21478,20 +11686,6 @@ const STRUCTURES_DATA = [
   "has3d": "3aa9681542a5.json"
  },
  {
-  "id": "mns:lava_pool",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Lava Pool",
-  "name_vi": "Lava Pool",
-  "has3d": "3aa9681542a5.json"
- },
- {
   "id": "mns:leafy_rubble",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -21504,34 +11698,6 @@ const STRUCTURES_DATA = [
   "name_en": "Leafy Rubble",
   "name_vi": "Leafy Rubble",
   "has3d": "8ce3bb0c29af.json"
- },
- {
-  "id": "mns:leafy_rubble",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Leafy Rubble",
-  "name_vi": "Leafy Rubble",
-  "has3d": "8ce3bb0c29af.json"
- },
- {
-  "id": "mns:medium_blackstone",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium Blackstone",
-  "name_vi": "Medium Blackstone",
-  "has3d": "c58fc53c7553.json"
  },
  {
   "id": "mns:medium_blackstone",
@@ -21562,20 +11728,6 @@ const STRUCTURES_DATA = [
   "has3d": "8f2e7f3f2717.json"
  },
  {
-  "id": "mns:medium_crimson_fungus",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Crimson Forest",
-  "where_vi": "Rừng Đỏ Thẫm (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium Crimson Fungus",
-  "name_vi": "Medium Crimson Fungus",
-  "has3d": "8f2e7f3f2717.json"
- },
- {
   "id": "mns:medium_crimson_fungus_2",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -21588,34 +11740,6 @@ const STRUCTURES_DATA = [
   "name_en": "Medium Crimson Fungus 2",
   "name_vi": "Medium Crimson Fungus 2",
   "has3d": "649242c08dea.json"
- },
- {
-  "id": "mns:medium_crimson_fungus_2",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Crimson Forest",
-  "where_vi": "Rừng Đỏ Thẫm (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium Crimson Fungus 2",
-  "name_vi": "Medium Crimson Fungus 2",
-  "has3d": "649242c08dea.json"
- },
- {
-  "id": "mns:medium_crimson_well",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Crimson Forest",
-  "where_vi": "Rừng Đỏ Thẫm (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium Crimson Well",
-  "name_vi": "Medium Crimson Well",
-  "has3d": "2a72ff8e1bdb.json"
  },
  {
   "id": "mns:medium_crimson_well",
@@ -21646,20 +11770,6 @@ const STRUCTURES_DATA = [
   "has3d": "bf290a981b0c.json"
  },
  {
-  "id": "mns:medium_house",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium House",
-  "name_vi": "Medium House",
-  "has3d": "bf290a981b0c.json"
- },
- {
   "id": "mns:medium_house_2",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -21672,34 +11782,6 @@ const STRUCTURES_DATA = [
   "name_en": "Medium House 2",
   "name_vi": "Medium House 2",
   "has3d": "3ae9364774e5.json"
- },
- {
-  "id": "mns:medium_house_2",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium House 2",
-  "name_vi": "Medium House 2",
-  "has3d": "3ae9364774e5.json"
- },
- {
-  "id": "mns:medium_warped_fungus",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium Warped Fungus",
-  "name_vi": "Medium Warped Fungus",
-  "has3d": "9e571e7ecf98.json"
  },
  {
   "id": "mns:medium_warped_fungus",
@@ -21730,20 +11812,6 @@ const STRUCTURES_DATA = [
   "has3d": "a1771729432d.json"
  },
  {
-  "id": "mns:medium_warped_fungus_2",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium Warped Fungus 2",
-  "name_vi": "Medium Warped Fungus 2",
-  "has3d": "a1771729432d.json"
- },
- {
   "id": "mns:medium_warped_well",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -21756,34 +11824,6 @@ const STRUCTURES_DATA = [
   "name_en": "Medium Warped Well",
   "name_vi": "Medium Warped Well",
   "has3d": "2aa0e70a6595.json"
- },
- {
-  "id": "mns:medium_warped_well",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium Warped Well",
-  "name_vi": "Medium Warped Well",
-  "has3d": "2aa0e70a6595.json"
- },
- {
-  "id": "mns:mega_fortress",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mega Fortress",
-  "name_vi": "Mega Fortress",
-  "has3d": "041269c82db8.json"
  },
  {
   "id": "mns:mega_fortress",
@@ -21814,20 +11854,6 @@ const STRUCTURES_DATA = [
   "has3d": "3d8037bfe1c1.json"
  },
  {
-  "id": "mns:nether_tower",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nether Tower",
-  "name_vi": "Nether Tower",
-  "has3d": "3d8037bfe1c1.json"
- },
- {
   "id": "mns:nether_wart_farm",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -21840,34 +11866,6 @@ const STRUCTURES_DATA = [
   "name_en": "Nether Wart Farm",
   "name_vi": "Nether Wart Farm",
   "has3d": "cb755ab422dc.json"
- },
- {
-  "id": "mns:nether_wart_farm",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nether Wart Farm",
-  "name_vi": "Nether Wart Farm",
-  "has3d": "cb755ab422dc.json"
- },
- {
-  "id": "mns:ruined_portal",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruined Portal",
-  "name_vi": "Ruined Portal",
-  "has3d": "8a392d63bf32.json"
  },
  {
   "id": "mns:ruined_portal",
@@ -21898,20 +11896,6 @@ const STRUCTURES_DATA = [
   "has3d": "ddfb1cff62b2.json"
  },
  {
-  "id": "mns:sandy_skull",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sandy Skull",
-  "name_vi": "Sandy Skull",
-  "has3d": "ddfb1cff62b2.json"
- },
- {
   "id": "mns:shrine",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -21924,34 +11908,6 @@ const STRUCTURES_DATA = [
   "name_en": "Shrine",
   "name_vi": "Shrine",
   "has3d": "9a6b71f7feae.json"
- },
- {
-  "id": "mns:shrine",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Shrine",
-  "name_vi": "Shrine",
-  "has3d": "9a6b71f7feae.json"
- },
- {
-  "id": "mns:small_arena",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Arena",
-  "name_vi": "Small Arena",
-  "has3d": "43e41fe3d518.json"
  },
  {
   "id": "mns:small_arena",
@@ -21982,20 +11938,6 @@ const STRUCTURES_DATA = [
   "has3d": "71b1fe9a459a.json"
  },
  {
-  "id": "mns:small_nether_brick",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Nether Brick",
-  "name_vi": "Small Nether Brick",
-  "has3d": "71b1fe9a459a.json"
- },
- {
   "id": "mns:smoking_shrine",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -22008,34 +11950,6 @@ const STRUCTURES_DATA = [
   "name_en": "Smoking Shrine",
   "name_vi": "Smoking Shrine",
   "has3d": "34834e18a26e.json"
- },
- {
-  "id": "mns:smoking_shrine",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Smoking Shrine",
-  "name_vi": "Smoking Shrine",
-  "has3d": "34834e18a26e.json"
- },
- {
-  "id": "mns:soul_fire",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Soul Fire",
-  "name_vi": "Soul Fire",
-  "has3d": "6f28a7fb578c.json"
  },
  {
   "id": "mns:soul_fire",
@@ -22066,20 +11980,6 @@ const STRUCTURES_DATA = [
   "has3d": "f50345f797af.json"
  },
  {
-  "id": "mns:sword",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Crimson Forest",
-  "where_vi": "Rừng Đỏ Thẫm (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sword",
-  "name_vi": "Sword",
-  "has3d": "f50345f797af.json"
- },
- {
   "id": "mns:train",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -22092,34 +11992,6 @@ const STRUCTURES_DATA = [
   "name_en": "Train",
   "name_vi": "Train",
   "has3d": "8b4b67bcf787.json"
- },
- {
-  "id": "mns:train",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Train",
-  "name_vi": "Train",
-  "has3d": "8b4b67bcf787.json"
- },
- {
-  "id": "mns:very_small_blackstone",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Very Small Blackstone",
-  "name_vi": "Very Small Blackstone",
-  "has3d": "373ed0786a2e.json"
  },
  {
   "id": "mns:very_small_blackstone",
@@ -22150,20 +12022,6 @@ const STRUCTURES_DATA = [
   "has3d": "24e3f82f82fe.json"
  },
  {
-  "id": "mns:very_small_blackstone_2",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Very Small Blackstone 2",
-  "name_vi": "Very Small Blackstone 2",
-  "has3d": "24e3f82f82fe.json"
- },
- {
   "id": "mns:very_small_blackstone_3",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -22176,34 +12034,6 @@ const STRUCTURES_DATA = [
   "name_en": "Very Small Blackstone 3",
   "name_vi": "Very Small Blackstone 3",
   "has3d": "7af8bd4ac7c4.json"
- },
- {
-  "id": "mns:very_small_blackstone_3",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Very Small Blackstone 3",
-  "name_vi": "Very Small Blackstone 3",
-  "has3d": "7af8bd4ac7c4.json"
- },
- {
-  "id": "mns:very_small_blackstone_4",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Very Small Blackstone 4",
-  "name_vi": "Very Small Blackstone 4",
-  "has3d": "7bd5ae06203f.json"
  },
  {
   "id": "mns:very_small_blackstone_4",
@@ -22234,20 +12064,6 @@ const STRUCTURES_DATA = [
   "has3d": "71f926c61838.json"
  },
  {
-  "id": "mns:very_small_nether_brick",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Very Small Nether Brick",
-  "name_vi": "Very Small Nether Brick",
-  "has3d": "71f926c61838.json"
- },
- {
   "id": "mns:very_small_nether_brick_2",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -22260,34 +12076,6 @@ const STRUCTURES_DATA = [
   "name_en": "Very Small Nether Brick 2",
   "name_vi": "Very Small Nether Brick 2",
   "has3d": "808f92fcf19e.json"
- },
- {
-  "id": "mns:very_small_nether_brick_2",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Very Small Nether Brick 2",
-  "name_vi": "Very Small Nether Brick 2",
-  "has3d": "808f92fcf19e.json"
- },
- {
-  "id": "mns:very_small_nether_brick_3",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Very Small Nether Brick 3",
-  "name_vi": "Very Small Nether Brick 3",
-  "has3d": "b594eef6dbea.json"
  },
  {
   "id": "mns:very_small_nether_brick_3",
@@ -22318,20 +12106,6 @@ const STRUCTURES_DATA = [
   "has3d": "4d2299616fec.json"
  },
  {
-  "id": "mns:warped_dome",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Warped Dome",
-  "name_vi": "Warped Dome",
-  "has3d": "4d2299616fec.json"
- },
- {
   "id": "mns:warped_house",
   "pack": "Moog's Nether (MNS)",
   "dim": "nether",
@@ -22344,34 +12118,6 @@ const STRUCTURES_DATA = [
   "name_en": "Warped House",
   "name_vi": "Warped House",
   "has3d": "f8b2160ae5de.json"
- },
- {
-  "id": "mns:warped_house",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Warped House",
-  "name_vi": "Warped House",
-  "has3d": "f8b2160ae5de.json"
- },
- {
-  "id": "mns:warped_pool",
-  "pack": "Moog's Nether (MNS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Warped Pool",
-  "name_vi": "Warped Pool",
-  "has3d": "3566497165f5.json"
  },
  {
   "id": "mns:warped_pool",
@@ -22402,20 +12148,6 @@ const STRUCTURES_DATA = [
   "has3d": "771e6377716b.json"
  },
  {
-  "id": "mss:arena",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Arena",
-  "name_vi": "Arena",
-  "has3d": "771e6377716b.json"
- },
- {
   "id": "mss:birch_river",
   "pack": "Moog's Soaring (MSS)",
   "dim": "overworld",
@@ -22428,34 +12160,6 @@ const STRUCTURES_DATA = [
   "name_en": "Birch River",
   "name_vi": "Birch River",
   "has3d": "bbd41441ffcc.json"
- },
- {
-  "id": "mss:birch_river",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Birch River",
-  "name_vi": "Birch River",
-  "has3d": "bbd41441ffcc.json"
- },
- {
-  "id": "mss:calcite_house",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Calcite House",
-  "name_vi": "Calcite House",
-  "has3d": "8d1aab7203ab.json"
  },
  {
   "id": "mss:calcite_house",
@@ -22486,20 +12190,6 @@ const STRUCTURES_DATA = [
   "has3d": "8fbdc459cb68.json"
  },
  {
-  "id": "mss:castle_ruin",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Castle Ruin",
-  "name_vi": "Castle Ruin",
-  "has3d": "8fbdc459cb68.json"
- },
- {
   "id": "mss:castle_tower",
   "pack": "Moog's Soaring (MSS)",
   "dim": "overworld",
@@ -22512,34 +12202,6 @@ const STRUCTURES_DATA = [
   "name_en": "Castle Tower",
   "name_vi": "Castle Tower",
   "has3d": "7689fc809b64.json"
- },
- {
-  "id": "mss:castle_tower",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Castle Tower",
-  "name_vi": "Castle Tower",
-  "has3d": "7689fc809b64.json"
- },
- {
-  "id": "mss:cherry_river",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Cherry River",
-  "name_vi": "Cherry River",
-  "has3d": "91d35a9d5709.json"
  },
  {
   "id": "mss:cherry_river",
@@ -22570,20 +12232,6 @@ const STRUCTURES_DATA = [
   "has3d": "fb6ad6dcdb43.json"
  },
  {
-  "id": "mss:desert_pyramid",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Desert Pyramid",
-  "name_vi": "Desert Pyramid",
-  "has3d": "fb6ad6dcdb43.json"
- },
- {
   "id": "mss:desert_well",
   "pack": "Moog's Soaring (MSS)",
   "dim": "overworld",
@@ -22596,34 +12244,6 @@ const STRUCTURES_DATA = [
   "name_en": "Desert Well",
   "name_vi": "Desert Well",
   "has3d": "bf154b85751b.json"
- },
- {
-  "id": "mss:desert_well",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Desert Well",
-  "name_vi": "Desert Well",
-  "has3d": "bf154b85751b.json"
- },
- {
-  "id": "mss:diorite_house",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Diorite House",
-  "name_vi": "Diorite House",
-  "has3d": "0233941571c0.json"
  },
  {
   "id": "mss:diorite_house",
@@ -22654,20 +12274,6 @@ const STRUCTURES_DATA = [
   "has3d": "db92ce58b1df.json"
  },
  {
-  "id": "mss:frozen_pond",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Frozen Pond",
-  "name_vi": "Frozen Pond",
-  "has3d": "db92ce58b1df.json"
- },
- {
   "id": "mss:jungle",
   "pack": "Moog's Soaring (MSS)",
   "dim": "overworld",
@@ -22680,34 +12286,6 @@ const STRUCTURES_DATA = [
   "name_en": "Jungle",
   "name_vi": "Jungle",
   "has3d": "ef828cb0ec13.json"
- },
- {
-  "id": "mss:jungle",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Jungle",
-  "name_vi": "Jungle",
-  "has3d": "ef828cb0ec13.json"
- },
- {
-  "id": "mss:large_tower",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Large Tower",
-  "name_vi": "Large Tower",
-  "has3d": "f5ee33265e72.json"
  },
  {
   "id": "mss:large_tower",
@@ -22738,20 +12316,6 @@ const STRUCTURES_DATA = [
   "has3d": "9feeca5424f1.json"
  },
  {
-  "id": "mss:leaf_hollow",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Leaf Hollow",
-  "name_vi": "Leaf Hollow",
-  "has3d": "9feeca5424f1.json"
- },
- {
   "id": "mss:mangrove",
   "pack": "Moog's Soaring (MSS)",
   "dim": "overworld",
@@ -22764,34 +12328,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mangrove",
   "name_vi": "Mangrove",
   "has3d": "5f1fadf3ab2e.json"
- },
- {
-  "id": "mss:mangrove",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Mangrove",
-  "name_vi": "Mangrove",
-  "has3d": "5f1fadf3ab2e.json"
- },
- {
-  "id": "mss:muddy_water_hole",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Muddy Water Hole",
-  "name_vi": "Muddy Water Hole",
-  "has3d": "696f5be66612.json"
  },
  {
   "id": "mss:muddy_water_hole",
@@ -22822,20 +12358,6 @@ const STRUCTURES_DATA = [
   "has3d": "b3994edb0673.json"
  },
  {
-  "id": "mss:mushroom",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Mushroom",
-  "name_vi": "Mushroom",
-  "has3d": "b3994edb0673.json"
- },
- {
   "id": "mss:nether_portal",
   "pack": "Moog's Soaring (MSS)",
   "dim": "nether",
@@ -22848,34 +12370,6 @@ const STRUCTURES_DATA = [
   "name_en": "Nether Portal",
   "name_vi": "Nether Portal",
   "has3d": "1d7fee02b3df.json"
- },
- {
-  "id": "mss:nether_portal",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Nether Portal",
-  "name_vi": "Nether Portal",
-  "has3d": "1d7fee02b3df.json"
- },
- {
-  "id": "mss:palm_island",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Palm Island",
-  "name_vi": "Palm Island",
-  "has3d": "16c6527f9b55.json"
  },
  {
   "id": "mss:palm_island",
@@ -22906,20 +12400,6 @@ const STRUCTURES_DATA = [
   "has3d": "f17db2b5e3d3.json"
  },
  {
-  "id": "mss:red_sand",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Red Sand",
-  "name_vi": "Red Sand",
-  "has3d": "f17db2b5e3d3.json"
- },
- {
   "id": "mss:small_deepslate_house",
   "pack": "Moog's Soaring (MSS)",
   "dim": "overworld",
@@ -22932,34 +12412,6 @@ const STRUCTURES_DATA = [
   "name_en": "Small Deepslate House",
   "name_vi": "Small Deepslate House",
   "has3d": "708ae1420a32.json"
- },
- {
-  "id": "mss:small_deepslate_house",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Small Deepslate House",
-  "name_vi": "Small Deepslate House",
-  "has3d": "708ae1420a32.json"
- },
- {
-  "id": "mss:small_oak_house",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Small Oak House",
-  "name_vi": "Small Oak House",
-  "has3d": "d98645320a93.json"
  },
  {
   "id": "mss:small_oak_house",
@@ -22990,20 +12442,6 @@ const STRUCTURES_DATA = [
   "has3d": "5b87eacc32a8.json"
  },
  {
-  "id": "mss:small_pond",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Small Pond",
-  "name_vi": "Small Pond",
-  "has3d": "5b87eacc32a8.json"
- },
- {
   "id": "mss:small_tower",
   "pack": "Moog's Soaring (MSS)",
   "dim": "overworld",
@@ -23016,34 +12454,6 @@ const STRUCTURES_DATA = [
   "name_en": "Small Tower",
   "name_vi": "Small Tower",
   "has3d": "07bc1622a8bb.json"
- },
- {
-  "id": "mss:small_tower",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Small Tower",
-  "name_vi": "Small Tower",
-  "has3d": "07bc1622a8bb.json"
- },
- {
-  "id": "mss:spruce_huts",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Spruce Huts",
-  "name_vi": "Spruce Huts",
-  "has3d": "e2b690e0159b.json"
  },
  {
   "id": "mss:spruce_huts",
@@ -23074,20 +12484,6 @@ const STRUCTURES_DATA = [
   "has3d": "5ed93dc65bf0.json"
  },
  {
-  "id": "mss:taiga",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Taiga",
-  "name_vi": "Taiga",
-  "has3d": "5ed93dc65bf0.json"
- },
- {
   "id": "mss:tree_1",
   "pack": "Moog's Soaring (MSS)",
   "dim": "overworld",
@@ -23100,34 +12496,6 @@ const STRUCTURES_DATA = [
   "name_en": "Tree 1",
   "name_vi": "Tree 1",
   "has3d": "391190ac88ec.json"
- },
- {
-  "id": "mss:tree_1",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Tree 1",
-  "name_vi": "Tree 1",
-  "has3d": "391190ac88ec.json"
- },
- {
-  "id": "mss:tree_2",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Tree 2",
-  "name_vi": "Tree 2",
-  "has3d": "2413ebfef30f.json"
  },
  {
   "id": "mss:tree_2",
@@ -23158,20 +12526,6 @@ const STRUCTURES_DATA = [
   "has3d": "ff2e830264b8.json"
  },
  {
-  "id": "mss:tree_3",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Tree 3",
-  "name_vi": "Tree 3",
-  "has3d": "ff2e830264b8.json"
- },
- {
   "id": "mss:tree_4",
   "pack": "Moog's Soaring (MSS)",
   "dim": "overworld",
@@ -23184,34 +12538,6 @@ const STRUCTURES_DATA = [
   "name_en": "Tree 4",
   "name_vi": "Tree 4",
   "has3d": "a1df366cd264.json"
- },
- {
-  "id": "mss:tree_4",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Tree 4",
-  "name_vi": "Tree 4",
-  "has3d": "a1df366cd264.json"
- },
- {
-  "id": "mss:tree_5",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Tree 5",
-  "name_vi": "Tree 5",
-  "has3d": "5bc64d41ae32.json"
  },
  {
   "id": "mss:tree_5",
@@ -23242,20 +12568,6 @@ const STRUCTURES_DATA = [
   "has3d": "093cbb6b8bd0.json"
  },
  {
-  "id": "mss:tree_6",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Tree 6",
-  "name_vi": "Tree 6",
-  "has3d": "093cbb6b8bd0.json"
- },
- {
   "id": "mss:tree_7",
   "pack": "Moog's Soaring (MSS)",
   "dim": "overworld",
@@ -23268,34 +12580,6 @@ const STRUCTURES_DATA = [
   "name_en": "Tree 7",
   "name_vi": "Tree 7",
   "has3d": "bd787952a313.json"
- },
- {
-  "id": "mss:tree_7",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Tree 7",
-  "name_vi": "Tree 7",
-  "has3d": "bd787952a313.json"
- },
- {
-  "id": "mss:tree_8",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Tree 8",
-  "name_vi": "Tree 8",
-  "has3d": "f61624559948.json"
  },
  {
   "id": "mss:tree_8",
@@ -23326,20 +12610,6 @@ const STRUCTURES_DATA = [
   "has3d": "51e4fb52d43d.json"
  },
  {
-  "id": "mss:volcano",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Volcano",
-  "name_vi": "Volcano",
-  "has3d": "51e4fb52d43d.json"
- },
- {
   "id": "mss:white_house",
   "pack": "Moog's Soaring (MSS)",
   "dim": "overworld",
@@ -23352,34 +12622,6 @@ const STRUCTURES_DATA = [
   "name_en": "White House",
   "name_vi": "White House",
   "has3d": "7a527b6ab168.json"
- },
- {
-  "id": "mss:white_house",
-  "pack": "Moog's Soaring (MSS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "White House",
-  "name_vi": "White House",
-  "has3d": "7a527b6ab168.json"
- },
- {
-  "id": "mtr:badlands_temple",
-  "pack": "Moog's Temples (MTR)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Badlands Temple",
-  "name_vi": "Badlands Temple",
-  "has3d": "2b36d550ccb6.json"
  },
  {
   "id": "mtr:badlands_temple",
@@ -23410,20 +12652,6 @@ const STRUCTURES_DATA = [
   "has3d": "765fa88b0dc4.json"
  },
  {
-  "id": "mtr:desert_temple",
-  "pack": "Moog's Temples (MTR)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Temple",
-  "name_vi": "Desert Temple",
-  "has3d": "765fa88b0dc4.json"
- },
- {
   "id": "mtr:jungle_temple",
   "pack": "Moog's Temples (MTR)",
   "dim": "overworld",
@@ -23436,34 +12664,6 @@ const STRUCTURES_DATA = [
   "name_en": "Jungle Temple",
   "name_vi": "Jungle Temple",
   "has3d": "128480bb599d.json"
- },
- {
-  "id": "mtr:jungle_temple",
-  "pack": "Moog's Temples (MTR)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Temple",
-  "name_vi": "Jungle Temple",
-  "has3d": "128480bb599d.json"
- },
- {
-  "id": "mtr:nether_temple",
-  "pack": "Moog's Temples (MTR)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nether Temple",
-  "name_vi": "Nether Temple",
-  "has3d": "9c5dc8b24cfa.json"
  },
  {
   "id": "mtr:nether_temple",
@@ -23494,20 +12694,6 @@ const STRUCTURES_DATA = [
   "has3d": "c2c9deb07f35.json"
  },
  {
-  "id": "mtr:ocean_temple",
-  "pack": "Moog's Temples (MTR)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Temple",
-  "name_vi": "Ocean Temple",
-  "has3d": "c2c9deb07f35.json"
- },
- {
   "id": "mtr:stronghold",
   "pack": "Moog's Temples (MTR)",
   "dim": "overworld",
@@ -23520,34 +12706,6 @@ const STRUCTURES_DATA = [
   "name_en": "Stronghold",
   "name_vi": "Stronghold",
   "has3d": "de1744b597dc.json"
- },
- {
-  "id": "mtr:stronghold",
-  "pack": "Moog's Temples (MTR)",
-  "dim": "overworld",
-  "step": "strongholds",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stronghold",
-  "name_vi": "Stronghold",
-  "has3d": "de1744b597dc.json"
- },
- {
-  "id": "mmv:village_dark_forest",
-  "pack": "Moog's Villages (MMV)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Dark Forest",
-  "name_vi": "Village Dark Forest",
-  "has3d": "db991125fc8e.json"
  },
  {
   "id": "mmv:village_dark_forest",
@@ -23578,20 +12736,6 @@ const STRUCTURES_DATA = [
   "has3d": "6abb1067624e.json"
  },
  {
-  "id": "mmv:village_jungle",
-  "pack": "Moog's Villages (MMV)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Jungle",
-  "name_vi": "Village Jungle",
-  "has3d": "6abb1067624e.json"
- },
- {
   "id": "mmv:village_swamp",
   "pack": "Moog's Villages (MMV)",
   "dim": "overworld",
@@ -23604,34 +12748,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Swamp",
   "name_vi": "Village Swamp",
   "has3d": "983f786d0f04.json"
- },
- {
-  "id": "mmv:village_swamp",
-  "pack": "Moog's Villages (MMV)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Swamp",
-  "name_vi": "Village Swamp",
-  "has3d": "983f786d0f04.json"
- },
- {
-  "id": "mvs:acacia_log_pile",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Acacia Log Pile",
-  "name_vi": "Acacia Log Pile",
-  "has3d": "24ffc2ef7de8.json"
  },
  {
   "id": "mvs:acacia_log_pile",
@@ -23662,20 +12778,6 @@ const STRUCTURES_DATA = [
   "has3d": "6f6d1b26ba3d.json"
  },
  {
-  "id": "mvs:acacia_tree",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Acacia Tree",
-  "name_vi": "Acacia Tree",
-  "has3d": "6f6d1b26ba3d.json"
- },
- {
   "id": "mvs:acacia_well",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -23688,34 +12790,6 @@ const STRUCTURES_DATA = [
   "name_en": "Acacia Well",
   "name_vi": "Acacia Well",
   "has3d": "b7988541c0df.json"
- },
- {
-  "id": "mvs:acacia_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Acacia Well",
-  "name_vi": "Acacia Well",
-  "has3d": "b7988541c0df.json"
- },
- {
-  "id": "mvs:azelea_house",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Azelea House",
-  "name_vi": "Azelea House",
-  "has3d": "d102aa7d1e23.json"
  },
  {
   "id": "mvs:azelea_house",
@@ -23746,20 +12820,6 @@ const STRUCTURES_DATA = [
   "has3d": "7103ef0d8981.json"
  },
  {
-  "id": "mvs:barn",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Barn",
-  "name_vi": "Barn",
-  "has3d": "7103ef0d8981.json"
- },
- {
   "id": "mvs:beach_bar",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -23772,34 +12832,6 @@ const STRUCTURES_DATA = [
   "name_en": "Beach Bar",
   "name_vi": "Beach Bar",
   "has3d": "9bd698d602c2.json"
- },
- {
-  "id": "mvs:beach_bar",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Beach Bar",
-  "name_vi": "Beach Bar",
-  "has3d": "9bd698d602c2.json"
- },
- {
-  "id": "mvs:bee_dome",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bee Dome",
-  "name_vi": "Bee Dome",
-  "has3d": "1e6e965ca97d.json"
  },
  {
   "id": "mvs:bee_dome",
@@ -23830,20 +12862,6 @@ const STRUCTURES_DATA = [
   "has3d": "bb2b739bff58.json"
  },
  {
-  "id": "mvs:bench",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bench",
-  "name_vi": "Bench",
-  "has3d": "bb2b739bff58.json"
- },
- {
   "id": "mvs:big_oak_tree",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -23856,34 +12874,6 @@ const STRUCTURES_DATA = [
   "name_en": "Big Oak Tree",
   "name_vi": "Big Oak Tree",
   "has3d": "d625006d2af1.json"
- },
- {
-  "id": "mvs:big_oak_tree",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Big Oak Tree",
-  "name_vi": "Big Oak Tree",
-  "has3d": "d625006d2af1.json"
- },
- {
-  "id": "mvs:birch_log_pile",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Log Pile",
-  "name_vi": "Birch Log Pile",
-  "has3d": "2c9e3d531398.json"
  },
  {
   "id": "mvs:birch_log_pile",
@@ -23914,20 +12904,6 @@ const STRUCTURES_DATA = [
   "has3d": "6767eaeab7f2.json"
  },
  {
-  "id": "mvs:birch_tree",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Tree",
-  "name_vi": "Birch Tree",
-  "has3d": "6767eaeab7f2.json"
- },
- {
   "id": "mvs:birch_well",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -23940,34 +12916,6 @@ const STRUCTURES_DATA = [
   "name_en": "Birch Well",
   "name_vi": "Birch Well",
   "has3d": "ed076a2d5e90.json"
- },
- {
-  "id": "mvs:birch_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Well",
-  "name_vi": "Birch Well",
-  "has3d": "ed076a2d5e90.json"
- },
- {
-  "id": "mvs:blue_stall",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Blue Stall",
-  "name_vi": "Blue Stall",
-  "has3d": "ed2ff1b9932f.json"
  },
  {
   "id": "mvs:blue_stall",
@@ -23998,20 +12946,6 @@ const STRUCTURES_DATA = [
   "has3d": "e81534dfa2b2.json"
  },
  {
-  "id": "mvs:boulder",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Boulder",
-  "name_vi": "Boulder",
-  "has3d": "e81534dfa2b2.json"
- },
- {
   "id": "mvs:campsite",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -24024,34 +12958,6 @@ const STRUCTURES_DATA = [
   "name_en": "Campsite",
   "name_vi": "Campsite",
   "has3d": "2e322cce79da.json"
- },
- {
-  "id": "mvs:campsite",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Campsite",
-  "name_vi": "Campsite",
-  "has3d": "2e322cce79da.json"
- },
- {
-  "id": "mvs:cart",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cart",
-  "name_vi": "Cart",
-  "has3d": "cedfe0d97989.json"
  },
  {
   "id": "mvs:cart",
@@ -24082,20 +12988,6 @@ const STRUCTURES_DATA = [
   "has3d": "2b59eeca8137.json"
  },
  {
-  "id": "mvs:cartographer_tower",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cartographer Tower",
-  "name_vi": "Cartographer Tower",
-  "has3d": "2b59eeca8137.json"
- },
- {
   "id": "mvs:castle_ruins",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -24108,34 +13000,6 @@ const STRUCTURES_DATA = [
   "name_en": "Castle Ruins",
   "name_vi": "Castle Ruins",
   "has3d": "9620e4a69983.json"
- },
- {
-  "id": "mvs:castle_ruins",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Castle Ruins",
-  "name_vi": "Castle Ruins",
-  "has3d": "9620e4a69983.json"
- },
- {
-  "id": "mvs:cathedral",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cathedral",
-  "name_vi": "Cathedral",
-  "has3d": "ae0a0661bbdb.json"
  },
  {
   "id": "mvs:cathedral",
@@ -24166,20 +13030,6 @@ const STRUCTURES_DATA = [
   "has3d": "671782e8296a.json"
  },
  {
-  "id": "mvs:cherry_tree",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cherry Tree",
-  "name_vi": "Cherry Tree",
-  "has3d": "671782e8296a.json"
- },
- {
   "id": "mvs:crimson_enchanting_table",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -24192,34 +13042,6 @@ const STRUCTURES_DATA = [
   "name_en": "Crimson Enchanting Table",
   "name_vi": "Crimson Enchanting Table",
   "has3d": "776c3ca8d604.json"
- },
- {
-  "id": "mvs:crimson_enchanting_table",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Crimson Forest",
-  "where_vi": "Rừng Đỏ Thẫm (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Crimson Enchanting Table",
-  "name_vi": "Crimson Enchanting Table",
-  "has3d": "776c3ca8d604.json"
- },
- {
-  "id": "mvs:crystal",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Crystal",
-  "name_vi": "Crystal",
-  "has3d": "8d2a4e74ee7d.json"
  },
  {
   "id": "mvs:crystal",
@@ -24250,20 +13072,6 @@ const STRUCTURES_DATA = [
   "has3d": "993a295342d8.json"
  },
  {
-  "id": "mvs:dark_oak_log_pile",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Oak Log Pile",
-  "name_vi": "Dark Oak Log Pile",
-  "has3d": "993a295342d8.json"
- },
- {
   "id": "mvs:dark_oak_tree",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -24276,34 +13084,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dark Oak Tree",
   "name_vi": "Dark Oak Tree",
   "has3d": "87f3d29e5c47.json"
- },
- {
-  "id": "mvs:dark_oak_tree",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Oak Tree",
-  "name_vi": "Dark Oak Tree",
-  "has3d": "87f3d29e5c47.json"
- },
- {
-  "id": "mvs:dark_oak_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Oak Well",
-  "name_vi": "Dark Oak Well",
-  "has3d": "6a9c84ff1862.json"
  },
  {
   "id": "mvs:dark_oak_well",
@@ -24334,20 +13114,6 @@ const STRUCTURES_DATA = [
   "has3d": "6589150ecd52.json"
  },
  {
-  "id": "mvs:dead_tree_acacia",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dead Tree Acacia",
-  "name_vi": "Dead Tree Acacia",
-  "has3d": "6589150ecd52.json"
- },
- {
   "id": "mvs:dead_tree_birch",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -24360,34 +13126,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dead Tree Birch",
   "name_vi": "Dead Tree Birch",
   "has3d": "9d3f2a2e9487.json"
- },
- {
-  "id": "mvs:dead_tree_birch",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dead Tree Birch",
-  "name_vi": "Dead Tree Birch",
-  "has3d": "9d3f2a2e9487.json"
- },
- {
-  "id": "mvs:dead_tree_cherry",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dead Tree Cherry",
-  "name_vi": "Dead Tree Cherry",
-  "has3d": "90e98dc5b84b.json"
  },
  {
   "id": "mvs:dead_tree_cherry",
@@ -24418,20 +13156,6 @@ const STRUCTURES_DATA = [
   "has3d": "abfeccf4c1bf.json"
  },
  {
-  "id": "mvs:dead_tree_dark_oak",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dead Tree Dark Oak",
-  "name_vi": "Dead Tree Dark Oak",
-  "has3d": "abfeccf4c1bf.json"
- },
- {
   "id": "mvs:dead_tree_jungle",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -24444,34 +13168,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dead Tree Jungle",
   "name_vi": "Dead Tree Jungle",
   "has3d": "1895d0bca35a.json"
- },
- {
-  "id": "mvs:dead_tree_jungle",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dead Tree Jungle",
-  "name_vi": "Dead Tree Jungle",
-  "has3d": "1895d0bca35a.json"
- },
- {
-  "id": "mvs:dead_tree_mangrove",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dead Tree Mangrove",
-  "name_vi": "Dead Tree Mangrove",
-  "has3d": "c6a54e673688.json"
  },
  {
   "id": "mvs:dead_tree_mangrove",
@@ -24502,20 +13198,6 @@ const STRUCTURES_DATA = [
   "has3d": "1f76497c1c23.json"
  },
  {
-  "id": "mvs:dead_tree_oak",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dead Tree Oak",
-  "name_vi": "Dead Tree Oak",
-  "has3d": "1f76497c1c23.json"
- },
- {
   "id": "mvs:dead_tree_spruce",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -24528,34 +13210,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dead Tree Spruce",
   "name_vi": "Dead Tree Spruce",
   "has3d": "1c0f1b0d1979.json"
- },
- {
-  "id": "mvs:dead_tree_spruce",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dead Tree Spruce",
-  "name_vi": "Dead Tree Spruce",
-  "has3d": "1c0f1b0d1979.json"
- },
- {
-  "id": "mvs:deepslate_house",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Deepslate House",
-  "name_vi": "Deepslate House",
-  "has3d": "8ce166949684.json"
  },
  {
   "id": "mvs:deepslate_house",
@@ -24586,20 +13240,6 @@ const STRUCTURES_DATA = [
   "has3d": "1158e4ff1121.json"
  },
  {
-  "id": "mvs:desert_house",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert House",
-  "name_vi": "Desert House",
-  "has3d": "1158e4ff1121.json"
- },
- {
   "id": "mvs:desert_pump",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -24612,34 +13252,6 @@ const STRUCTURES_DATA = [
   "name_en": "Desert Pump",
   "name_vi": "Desert Pump",
   "has3d": "cda921a33631.json"
- },
- {
-  "id": "mvs:desert_pump",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Pump",
-  "name_vi": "Desert Pump",
-  "has3d": "cda921a33631.json"
- },
- {
-  "id": "mvs:desert_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Well",
-  "name_vi": "Desert Well",
-  "has3d": "d9caadcf12f4.json"
  },
  {
   "id": "mvs:desert_well",
@@ -24670,20 +13282,6 @@ const STRUCTURES_DATA = [
   "has3d": "c902b7967272.json"
  },
  {
-  "id": "mvs:diorite_and_deepslate_house",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Diorite And Deepslate House",
-  "name_vi": "Diorite And Deepslate House",
-  "has3d": "c902b7967272.json"
- },
- {
   "id": "mvs:diorite_tower",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -24696,34 +13294,6 @@ const STRUCTURES_DATA = [
   "name_en": "Diorite Tower",
   "name_vi": "Diorite Tower",
   "has3d": "95811d71bb6e.json"
- },
- {
-  "id": "mvs:diorite_tower",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Diorite Tower",
-  "name_vi": "Diorite Tower",
-  "has3d": "95811d71bb6e.json"
- },
- {
-  "id": "mvs:duck",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Duck",
-  "name_vi": "Duck",
-  "has3d": "56021764e2dd.json"
  },
  {
   "id": "mvs:duck",
@@ -24754,20 +13324,6 @@ const STRUCTURES_DATA = [
   "has3d": "027886c6a646.json"
  },
  {
-  "id": "mvs:fire_camp",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Fire Camp",
-  "name_vi": "Fire Camp",
-  "has3d": "027886c6a646.json"
- },
- {
   "id": "mvs:floating_islands",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -24780,34 +13336,6 @@ const STRUCTURES_DATA = [
   "name_en": "Floating Islands",
   "name_vi": "Floating Islands",
   "has3d": "edbb6b654271.json"
- },
- {
-  "id": "mvs:floating_islands",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Floating Islands",
-  "name_vi": "Floating Islands",
-  "has3d": "edbb6b654271.json"
- },
- {
-  "id": "mvs:flower_hole",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Flower Hole",
-  "name_vi": "Flower Hole",
-  "has3d": "d594a10362c0.json"
  },
  {
   "id": "mvs:flower_hole",
@@ -24838,20 +13366,6 @@ const STRUCTURES_DATA = [
   "has3d": "0c5a6c46e606.json"
  },
  {
-  "id": "mvs:fox_hut",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Fox Hut",
-  "name_vi": "Fox Hut",
-  "has3d": "0c5a6c46e606.json"
- },
- {
   "id": "mvs:gallows",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -24864,34 +13378,6 @@ const STRUCTURES_DATA = [
   "name_en": "Gallows",
   "name_vi": "Gallows",
   "has3d": "5a48e293ea8e.json"
- },
- {
-  "id": "mvs:gallows",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Gallows",
-  "name_vi": "Gallows",
-  "has3d": "5a48e293ea8e.json"
- },
- {
-  "id": "mvs:haystack",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Haystack",
-  "name_vi": "Haystack",
-  "has3d": "f38e0d1d55a6.json"
  },
  {
   "id": "mvs:haystack",
@@ -24922,20 +13408,6 @@ const STRUCTURES_DATA = [
   "has3d": "6ce9f688fd96.json"
  },
  {
-  "id": "mvs:horse_campsite",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Horse Campsite",
-  "name_vi": "Horse Campsite",
-  "has3d": "6ce9f688fd96.json"
- },
- {
   "id": "mvs:horse_pen",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -24948,34 +13420,6 @@ const STRUCTURES_DATA = [
   "name_en": "Horse Pen",
   "name_vi": "Horse Pen",
   "has3d": "02f97ac71840.json"
- },
- {
-  "id": "mvs:horse_pen",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Horse Pen",
-  "name_vi": "Horse Pen",
-  "has3d": "02f97ac71840.json"
- },
- {
-  "id": "mvs:house",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "House",
-  "name_vi": "House",
-  "has3d": "7020e7975f91.json"
  },
  {
   "id": "mvs:house",
@@ -25006,20 +13450,6 @@ const STRUCTURES_DATA = [
   "has3d": "8eafd09ea9c1.json"
  },
  {
-  "id": "mvs:jungle_log_pile",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Log Pile",
-  "name_vi": "Jungle Log Pile",
-  "has3d": "8eafd09ea9c1.json"
- },
- {
   "id": "mvs:jungle_palm_tree",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -25032,34 +13462,6 @@ const STRUCTURES_DATA = [
   "name_en": "Jungle Palm Tree",
   "name_vi": "Jungle Palm Tree",
   "has3d": "75d717df97c5.json"
- },
- {
-  "id": "mvs:jungle_palm_tree",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Palm Tree",
-  "name_vi": "Jungle Palm Tree",
-  "has3d": "75d717df97c5.json"
- },
- {
-  "id": "mvs:jungle_tower",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Tower",
-  "name_vi": "Jungle Tower",
-  "has3d": "46edbf4f4382.json"
  },
  {
   "id": "mvs:jungle_tower",
@@ -25090,20 +13492,6 @@ const STRUCTURES_DATA = [
   "has3d": "7fb325ce64e7.json"
  },
  {
-  "id": "mvs:jungle_tree",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Tree",
-  "name_vi": "Jungle Tree",
-  "has3d": "7fb325ce64e7.json"
- },
- {
   "id": "mvs:jungle_well",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -25116,34 +13504,6 @@ const STRUCTURES_DATA = [
   "name_en": "Jungle Well",
   "name_vi": "Jungle Well",
   "has3d": "7b970d6f0cd9.json"
- },
- {
-  "id": "mvs:jungle_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Well",
-  "name_vi": "Jungle Well",
-  "has3d": "7b970d6f0cd9.json"
- },
- {
-  "id": "mvs:lamp_chest",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Lamp Chest",
-  "name_vi": "Lamp Chest",
-  "has3d": "a89737172091.json"
  },
  {
   "id": "mvs:lamp_chest",
@@ -25174,20 +13534,6 @@ const STRUCTURES_DATA = [
   "has3d": "880af024fcde.json"
  },
  {
-  "id": "mvs:large_cart_1",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Large Cart 1",
-  "name_vi": "Large Cart 1",
-  "has3d": "880af024fcde.json"
- },
- {
   "id": "mvs:large_cart_2",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -25200,34 +13546,6 @@ const STRUCTURES_DATA = [
   "name_en": "Large Cart 2",
   "name_vi": "Large Cart 2",
   "has3d": "2bcd50f1d82b.json"
- },
- {
-  "id": "mvs:large_cart_2",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Large Cart 2",
-  "name_vi": "Large Cart 2",
-  "has3d": "2bcd50f1d82b.json"
- },
- {
-  "id": "mvs:large_floating_island",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Large Floating Island",
-  "name_vi": "Large Floating Island",
-  "has3d": "7e5aeb8210ae.json"
  },
  {
   "id": "mvs:large_floating_island",
@@ -25258,20 +13576,6 @@ const STRUCTURES_DATA = [
   "has3d": "ac8a78326c45.json"
  },
  {
-  "id": "mvs:large_mushroom",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Large Mushroom",
-  "name_vi": "Large Mushroom",
-  "has3d": "ac8a78326c45.json"
- },
- {
   "id": "mvs:large_warped_tower",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -25284,34 +13588,6 @@ const STRUCTURES_DATA = [
   "name_en": "Large Warped Tower",
   "name_vi": "Large Warped Tower",
   "has3d": "11541db8431c.json"
- },
- {
-  "id": "mvs:large_warped_tower",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Large Warped Tower",
-  "name_vi": "Large Warped Tower",
-  "has3d": "11541db8431c.json"
- },
- {
-  "id": "mvs:lecturn_garden",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Lecturn Garden",
-  "name_vi": "Lecturn Garden",
-  "has3d": "ab2ae2e2b174.json"
  },
  {
   "id": "mvs:lecturn_garden",
@@ -25342,20 +13618,6 @@ const STRUCTURES_DATA = [
   "has3d": "fd2e6af3ab32.json"
  },
  {
-  "id": "mvs:lil_house",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Lil House",
-  "name_vi": "Lil House",
-  "has3d": "fd2e6af3ab32.json"
- },
- {
   "id": "mvs:log_ruin",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -25368,34 +13630,6 @@ const STRUCTURES_DATA = [
   "name_en": "Log Ruin",
   "name_vi": "Log Ruin",
   "has3d": "343be7969e68.json"
- },
- {
-  "id": "mvs:log_ruin",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Log Ruin",
-  "name_vi": "Log Ruin",
-  "has3d": "343be7969e68.json"
- },
- {
-  "id": "mvs:medium_bamboo_cart",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium Bamboo Cart",
-  "name_vi": "Medium Bamboo Cart",
-  "has3d": "97f1fe695aae.json"
  },
  {
   "id": "mvs:medium_bamboo_cart",
@@ -25426,20 +13660,6 @@ const STRUCTURES_DATA = [
   "has3d": "3d823e99e2e2.json"
  },
  {
-  "id": "mvs:medium_igloo_1",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium Igloo 1",
-  "name_vi": "Medium Igloo 1",
-  "has3d": "3d823e99e2e2.json"
- },
- {
   "id": "mvs:medium_igloo_2",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -25452,34 +13672,6 @@ const STRUCTURES_DATA = [
   "name_en": "Medium Igloo 2",
   "name_vi": "Medium Igloo 2",
   "has3d": "241bf3fae34f.json"
- },
- {
-  "id": "mvs:medium_igloo_2",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium Igloo 2",
-  "name_vi": "Medium Igloo 2",
-  "has3d": "241bf3fae34f.json"
- },
- {
-  "id": "mvs:medium_oak_lantern",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Medium Oak Lantern",
-  "name_vi": "Medium Oak Lantern",
-  "has3d": "d1ca936ebbe9.json"
  },
  {
   "id": "mvs:medium_oak_lantern",
@@ -25510,20 +13702,6 @@ const STRUCTURES_DATA = [
   "has3d": "f2cb68491573.json"
  },
  {
-  "id": "mvs:mine_with_campsite",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mine With Campsite",
-  "name_vi": "Mine With Campsite",
-  "has3d": "f2cb68491573.json"
- },
- {
   "id": "mvs:mud_brick_house_1",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -25536,34 +13714,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mud Brick House 1",
   "name_vi": "Mud Brick House 1",
   "has3d": "ba4eb96881ae.json"
- },
- {
-  "id": "mvs:mud_brick_house_1",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mud Brick House 1",
-  "name_vi": "Mud Brick House 1",
-  "has3d": "ba4eb96881ae.json"
- },
- {
-  "id": "mvs:mushroom_pond",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mushroom Pond",
-  "name_vi": "Mushroom Pond",
-  "has3d": "c17bfb8598e1.json"
  },
  {
   "id": "mvs:mushroom_pond",
@@ -25594,20 +13744,6 @@ const STRUCTURES_DATA = [
   "has3d": "34bbbf26c319.json"
  },
  {
-  "id": "mvs:mushroom_statue",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mushroom Statue",
-  "name_vi": "Mushroom Statue",
-  "has3d": "34bbbf26c319.json"
- },
- {
   "id": "mvs:mushroom_well",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -25620,34 +13756,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mushroom Well",
   "name_vi": "Mushroom Well",
   "has3d": "111f0b55ac69.json"
- },
- {
-  "id": "mvs:mushroom_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mushroom Well",
-  "name_vi": "Mushroom Well",
-  "has3d": "111f0b55ac69.json"
- },
- {
-  "id": "mvs:nether_devil",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nether Devil",
-  "name_vi": "Nether Devil",
-  "has3d": "b72d35860544.json"
  },
  {
   "id": "mvs:nether_devil",
@@ -25678,20 +13786,6 @@ const STRUCTURES_DATA = [
   "has3d": "694fe99e7168.json"
  },
  {
-  "id": "mvs:nether_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nether Well",
-  "name_vi": "Nether Well",
-  "has3d": "694fe99e7168.json"
- },
- {
   "id": "mvs:oak_log_pile",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -25704,34 +13798,6 @@ const STRUCTURES_DATA = [
   "name_en": "Oak Log Pile",
   "name_vi": "Oak Log Pile",
   "has3d": "0e7bafb1cc74.json"
- },
- {
-  "id": "mvs:oak_log_pile",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak Log Pile",
-  "name_vi": "Oak Log Pile",
-  "has3d": "0e7bafb1cc74.json"
- },
- {
-  "id": "mvs:oak_tree",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak Tree",
-  "name_vi": "Oak Tree",
-  "has3d": "4b8b80d23721.json"
  },
  {
   "id": "mvs:oak_tree",
@@ -25762,20 +13828,6 @@ const STRUCTURES_DATA = [
   "has3d": "675d34ce7bf9.json"
  },
  {
-  "id": "mvs:oak_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak Well",
-  "name_vi": "Oak Well",
-  "has3d": "675d34ce7bf9.json"
- },
- {
   "id": "mvs:ocean_tower",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -25788,34 +13840,6 @@ const STRUCTURES_DATA = [
   "name_en": "Ocean Tower",
   "name_vi": "Ocean Tower",
   "has3d": "12f7de1c0e9b.json"
- },
- {
-  "id": "mvs:ocean_tower",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Tower",
-  "name_vi": "Ocean Tower",
-  "has3d": "12f7de1c0e9b.json"
- },
- {
-  "id": "mvs:orange_stall",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Orange Stall",
-  "name_vi": "Orange Stall",
-  "has3d": "fca26ffa8608.json"
  },
  {
   "id": "mvs:orange_stall",
@@ -25846,20 +13870,6 @@ const STRUCTURES_DATA = [
   "has3d": "f413ee700f10.json"
  },
  {
-  "id": "mvs:out_house",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Out House",
-  "name_vi": "Out House",
-  "has3d": "f413ee700f10.json"
- },
- {
   "id": "mvs:paths",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -25872,34 +13882,6 @@ const STRUCTURES_DATA = [
   "name_en": "Paths",
   "name_vi": "Paths",
   "has3d": "31adc31db176.json"
- },
- {
-  "id": "mvs:paths",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Paths",
-  "name_vi": "Paths",
-  "has3d": "31adc31db176.json"
- },
- {
-  "id": "mvs:pile",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pile",
-  "name_vi": "Pile",
-  "has3d": "ad82c8159d8b.json"
  },
  {
   "id": "mvs:pile",
@@ -25930,20 +13912,6 @@ const STRUCTURES_DATA = [
   "has3d": "1e2c78853860.json"
  },
  {
-  "id": "mvs:pink_stall",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pink Stall",
-  "name_vi": "Pink Stall",
-  "has3d": "1e2c78853860.json"
- },
- {
   "id": "mvs:prismarine_house_1",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -25956,34 +13924,6 @@ const STRUCTURES_DATA = [
   "name_en": "Prismarine House 1",
   "name_vi": "Prismarine House 1",
   "has3d": "86bbad479d01.json"
- },
- {
-  "id": "mvs:prismarine_house_1",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Prismarine House 1",
-  "name_vi": "Prismarine House 1",
-  "has3d": "86bbad479d01.json"
- },
- {
-  "id": "mvs:prismarine_house_2",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Prismarine House 2",
-  "name_vi": "Prismarine House 2",
-  "has3d": "a31b80e1b480.json"
  },
  {
   "id": "mvs:prismarine_house_2",
@@ -26014,20 +13954,6 @@ const STRUCTURES_DATA = [
   "has3d": "296fef3dfd87.json"
  },
  {
-  "id": "mvs:railway",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Railway",
-  "name_vi": "Railway",
-  "has3d": "296fef3dfd87.json"
- },
- {
   "id": "mvs:rare_well",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -26040,34 +13966,6 @@ const STRUCTURES_DATA = [
   "name_en": "Rare Well",
   "name_vi": "Rare Well",
   "has3d": "ede332f1c840.json"
- },
- {
-  "id": "mvs:rare_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rare Well",
-  "name_vi": "Rare Well",
-  "has3d": "ede332f1c840.json"
- },
- {
-  "id": "mvs:red_stall",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Red Stall",
-  "name_vi": "Red Stall",
-  "has3d": "e7c6b385f3eb.json"
  },
  {
   "id": "mvs:red_stall",
@@ -26098,20 +13996,6 @@ const STRUCTURES_DATA = [
   "has3d": "7baa84a553c5.json"
  },
  {
-  "id": "mvs:red_tower",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Red Tower",
-  "name_vi": "Red Tower",
-  "has3d": "7baa84a553c5.json"
- },
- {
   "id": "mvs:rocky_well",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -26124,34 +14008,6 @@ const STRUCTURES_DATA = [
   "name_en": "Rocky Well",
   "name_vi": "Rocky Well",
   "has3d": "c1f969193ecf.json"
- },
- {
-  "id": "mvs:rocky_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rocky Well",
-  "name_vi": "Rocky Well",
-  "has3d": "c1f969193ecf.json"
- },
- {
-  "id": "mvs:ruined_beacon",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruined Beacon",
-  "name_vi": "Ruined Beacon",
-  "has3d": "67b9e126324e.json"
  },
  {
   "id": "mvs:ruined_beacon",
@@ -26182,20 +14038,6 @@ const STRUCTURES_DATA = [
   "has3d": "dd66b018f768.json"
  },
  {
-  "id": "mvs:shed",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Shed",
-  "name_vi": "Shed",
-  "has3d": "dd66b018f768.json"
- },
- {
   "id": "mvs:small_acacia_lantern",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -26208,34 +14050,6 @@ const STRUCTURES_DATA = [
   "name_en": "Small Acacia Lantern",
   "name_vi": "Small Acacia Lantern",
   "has3d": "d2a466088dce.json"
- },
- {
-  "id": "mvs:small_acacia_lantern",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Acacia Lantern",
-  "name_vi": "Small Acacia Lantern",
-  "has3d": "d2a466088dce.json"
- },
- {
-  "id": "mvs:small_bamboo_lantern",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Bamboo Lantern",
-  "name_vi": "Small Bamboo Lantern",
-  "has3d": "04d589b480e0.json"
  },
  {
   "id": "mvs:small_bamboo_lantern",
@@ -26266,20 +14080,6 @@ const STRUCTURES_DATA = [
   "has3d": "e454ff11c71a.json"
  },
  {
-  "id": "mvs:small_birch_lantern",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Birch Lantern",
-  "name_vi": "Small Birch Lantern",
-  "has3d": "e454ff11c71a.json"
- },
- {
   "id": "mvs:small_campfire_lantern",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -26292,34 +14092,6 @@ const STRUCTURES_DATA = [
   "name_en": "Small Campfire Lantern",
   "name_vi": "Small Campfire Lantern",
   "has3d": "06363bd240b0.json"
- },
- {
-  "id": "mvs:small_campfire_lantern",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Campfire Lantern",
-  "name_vi": "Small Campfire Lantern",
-  "has3d": "06363bd240b0.json"
- },
- {
-  "id": "mvs:small_cherry_lantern",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Cherry Lantern",
-  "name_vi": "Small Cherry Lantern",
-  "has3d": "f9c7cb1e5780.json"
  },
  {
   "id": "mvs:small_cherry_lantern",
@@ -26350,20 +14122,6 @@ const STRUCTURES_DATA = [
   "has3d": "7c08da770dc1.json"
  },
  {
-  "id": "mvs:small_copper_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Copper Well",
-  "name_vi": "Small Copper Well",
-  "has3d": "7c08da770dc1.json"
- },
- {
   "id": "mvs:small_dark_oak_lantern",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -26376,34 +14134,6 @@ const STRUCTURES_DATA = [
   "name_en": "Small Dark Oak Lantern",
   "name_vi": "Small Dark Oak Lantern",
   "has3d": "240c8eb7c6a9.json"
- },
- {
-  "id": "mvs:small_dark_oak_lantern",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Dark Oak Lantern",
-  "name_vi": "Small Dark Oak Lantern",
-  "has3d": "240c8eb7c6a9.json"
- },
- {
-  "id": "mvs:small_igloo",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Igloo",
-  "name_vi": "Small Igloo",
-  "has3d": "154ee30382c1.json"
  },
  {
   "id": "mvs:small_igloo",
@@ -26434,20 +14164,6 @@ const STRUCTURES_DATA = [
   "has3d": "0329c44ab587.json"
  },
  {
-  "id": "mvs:small_jungle_lantern",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Jungle Lantern",
-  "name_vi": "Small Jungle Lantern",
-  "has3d": "0329c44ab587.json"
- },
- {
   "id": "mvs:small_mangrove_lantern",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -26460,34 +14176,6 @@ const STRUCTURES_DATA = [
   "name_en": "Small Mangrove Lantern",
   "name_vi": "Small Mangrove Lantern",
   "has3d": "524fb13d7ed4.json"
- },
- {
-  "id": "mvs:small_mangrove_lantern",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Mangrove Lantern",
-  "name_vi": "Small Mangrove Lantern",
-  "has3d": "524fb13d7ed4.json"
- },
- {
-  "id": "mvs:small_oak_lantern",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Oak Lantern",
-  "name_vi": "Small Oak Lantern",
-  "has3d": "d01e76374e43.json"
  },
  {
   "id": "mvs:small_oak_lantern",
@@ -26518,20 +14206,6 @@ const STRUCTURES_DATA = [
   "has3d": "6d8f096e6e10.json"
  },
  {
-  "id": "mvs:small_oak_pond",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Oak Pond",
-  "name_vi": "Small Oak Pond",
-  "has3d": "6d8f096e6e10.json"
- },
- {
   "id": "mvs:small_pillager_tower",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -26544,34 +14218,6 @@ const STRUCTURES_DATA = [
   "name_en": "Small Pillager Tower",
   "name_vi": "Small Pillager Tower",
   "has3d": "11de4a29f66b.json"
- },
- {
-  "id": "mvs:small_pillager_tower",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Pillager Tower",
-  "name_vi": "Small Pillager Tower",
-  "has3d": "11de4a29f66b.json"
- },
- {
-  "id": "mvs:small_ruin",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Ruin",
-  "name_vi": "Small Ruin",
-  "has3d": "f8321eca28c9.json"
  },
  {
   "id": "mvs:small_ruin",
@@ -26602,20 +14248,6 @@ const STRUCTURES_DATA = [
   "has3d": "6f2b4957c733.json"
  },
  {
-  "id": "mvs:small_ship",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Ship",
-  "name_vi": "Small Ship",
-  "has3d": "6f2b4957c733.json"
- },
- {
   "id": "mvs:small_spruce_lantern",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -26628,34 +14260,6 @@ const STRUCTURES_DATA = [
   "name_en": "Small Spruce Lantern",
   "name_vi": "Small Spruce Lantern",
   "has3d": "04caa39de474.json"
- },
- {
-  "id": "mvs:small_spruce_lantern",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Spruce Lantern",
-  "name_vi": "Small Spruce Lantern",
-  "has3d": "04caa39de474.json"
- },
- {
-  "id": "mvs:small_swamp_house",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Swamp House",
-  "name_vi": "Small Swamp House",
-  "has3d": "8e1ce127b139.json"
  },
  {
   "id": "mvs:small_swamp_house",
@@ -26686,20 +14290,6 @@ const STRUCTURES_DATA = [
   "has3d": "4e139b6f0118.json"
  },
  {
-  "id": "mvs:small_tower_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Tower Well",
-  "name_vi": "Small Tower Well",
-  "has3d": "4e139b6f0118.json"
- },
- {
   "id": "mvs:small_well",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -26712,34 +14302,6 @@ const STRUCTURES_DATA = [
   "name_en": "Small Well",
   "name_vi": "Small Well",
   "has3d": "f1411e4b2eff.json"
- },
- {
-  "id": "mvs:small_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Well",
-  "name_vi": "Small Well",
-  "has3d": "f1411e4b2eff.json"
- },
- {
-  "id": "mvs:snowy_dog_hut",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Snowy Dog Hut",
-  "name_vi": "Snowy Dog Hut",
-  "has3d": "229b89130239.json"
  },
  {
   "id": "mvs:snowy_dog_hut",
@@ -26770,20 +14332,6 @@ const STRUCTURES_DATA = [
   "has3d": "70acee387b70.json"
  },
  {
-  "id": "mvs:snowy_fossil",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Snowy Fossil",
-  "name_vi": "Snowy Fossil",
-  "has3d": "70acee387b70.json"
- },
- {
   "id": "mvs:snowy_well",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -26796,34 +14344,6 @@ const STRUCTURES_DATA = [
   "name_en": "Snowy Well",
   "name_vi": "Snowy Well",
   "has3d": "e971ee15bcde.json"
- },
- {
-  "id": "mvs:snowy_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Snowy Well",
-  "name_vi": "Snowy Well",
-  "has3d": "e971ee15bcde.json"
- },
- {
-  "id": "mvs:spruce_log_pile",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce Log Pile",
-  "name_vi": "Spruce Log Pile",
-  "has3d": "b49ddece23f2.json"
  },
  {
   "id": "mvs:spruce_log_pile",
@@ -26854,20 +14374,6 @@ const STRUCTURES_DATA = [
   "has3d": "dcbbde858552.json"
  },
  {
-  "id": "mvs:spruce_tree",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce Tree",
-  "name_vi": "Spruce Tree",
-  "has3d": "dcbbde858552.json"
- },
- {
   "id": "mvs:spruce_well",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -26880,34 +14386,6 @@ const STRUCTURES_DATA = [
   "name_en": "Spruce Well",
   "name_vi": "Spruce Well",
   "has3d": "e83e12ba454d.json"
- },
- {
-  "id": "mvs:spruce_well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce Well",
-  "name_vi": "Spruce Well",
-  "has3d": "e83e12ba454d.json"
- },
- {
-  "id": "mvs:statue_ruins",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Statue Ruins",
-  "name_vi": "Statue Ruins",
-  "has3d": "77165ee9bbbb.json"
  },
  {
   "id": "mvs:statue_ruins",
@@ -26938,20 +14416,6 @@ const STRUCTURES_DATA = [
   "has3d": "88aae14081fd.json"
  },
  {
-  "id": "mvs:stone_fountain",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stone Fountain",
-  "name_vi": "Stone Fountain",
-  "has3d": "88aae14081fd.json"
- },
- {
   "id": "mvs:stone_pillars",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -26964,34 +14428,6 @@ const STRUCTURES_DATA = [
   "name_en": "Stone Pillars",
   "name_vi": "Stone Pillars",
   "has3d": "cb770efa6064.json"
- },
- {
-  "id": "mvs:stone_pillars",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stone Pillars",
-  "name_vi": "Stone Pillars",
-  "has3d": "cb770efa6064.json"
- },
- {
-  "id": "mvs:stone_rock",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stone Rock",
-  "name_vi": "Stone Rock",
-  "has3d": "3ff0fc1418bd.json"
  },
  {
   "id": "mvs:stone_rock",
@@ -27022,20 +14458,6 @@ const STRUCTURES_DATA = [
   "has3d": "4bee602ef8f8.json"
  },
  {
-  "id": "mvs:sunzi_gate",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sunzi Gate",
-  "name_vi": "Sunzi Gate",
-  "has3d": "4bee602ef8f8.json"
- },
- {
   "id": "mvs:tall_house",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -27048,34 +14470,6 @@ const STRUCTURES_DATA = [
   "name_en": "Tall House",
   "name_vi": "Tall House",
   "has3d": "96a2ef8daa0d.json"
- },
- {
-  "id": "mvs:tall_house",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Tall House",
-  "name_vi": "Tall House",
-  "has3d": "96a2ef8daa0d.json"
- },
- {
-  "id": "mvs:tree_monument",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Tree Monument",
-  "name_vi": "Tree Monument",
-  "has3d": "d5303a047f79.json"
  },
  {
   "id": "mvs:tree_monument",
@@ -27106,20 +14500,6 @@ const STRUCTURES_DATA = [
   "has3d": "2cc21a441810.json"
  },
  {
-  "id": "mvs:villager_statue",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Villager Statue",
-  "name_vi": "Villager Statue",
-  "has3d": "2cc21a441810.json"
- },
- {
   "id": "mvs:warped_house",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -27132,34 +14512,6 @@ const STRUCTURES_DATA = [
   "name_en": "Warped House",
   "name_vi": "Warped House",
   "has3d": "22c9803579c5.json"
- },
- {
-  "id": "mvs:warped_house",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Warped House",
-  "name_vi": "Warped House",
-  "has3d": "22c9803579c5.json"
- },
- {
-  "id": "mvs:well",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Well",
-  "name_vi": "Well",
-  "has3d": "764720b6d892.json"
  },
  {
   "id": "mvs:well",
@@ -27190,20 +14542,6 @@ const STRUCTURES_DATA = [
   "has3d": "01dd19aaf08a.json"
  },
  {
-  "id": "mvs:wheat_grain_bin",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wheat Grain Bin",
-  "name_vi": "Wheat Grain Bin",
-  "has3d": "01dd19aaf08a.json"
- },
- {
   "id": "mvs:windmill",
   "pack": "Moog's Voyager (MVS)",
   "dim": "overworld",
@@ -27216,34 +14554,6 @@ const STRUCTURES_DATA = [
   "name_en": "Windmill",
   "name_vi": "Windmill",
   "has3d": "13db9918991e.json"
- },
- {
-  "id": "mvs:windmill",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Windmill",
-  "name_vi": "Windmill",
-  "has3d": "13db9918991e.json"
- },
- {
-  "id": "mvs:wooden_wheat_farm",
-  "pack": "Moog's Voyager (MVS)",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wooden Wheat Farm",
-  "name_vi": "Wooden Wheat Farm",
-  "has3d": "f03345d4e848.json"
  },
  {
   "id": "mvs:wooden_wheat_farm",
@@ -27274,20 +14584,6 @@ const STRUCTURES_DATA = [
   "has3d": "db6fc968365e.json"
  },
  {
-  "id": "nullscape:crashed_ship",
-  "pack": "Nullscape",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Crashed Ship",
-  "name_vi": "Crashed Ship",
-  "has3d": "db6fc968365e.json"
- },
- {
   "id": "nullscape:dragon_skeleton",
   "pack": "Nullscape",
   "dim": "end",
@@ -27300,34 +14596,6 @@ const STRUCTURES_DATA = [
   "name_en": "Dragon Skeleton",
   "name_vi": "Rồng xương",
   "has3d": "8a2dddcf361e.json"
- },
- {
-  "id": "nullscape:dragon_skeleton",
-  "pack": "Nullscape",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dragon Skeleton",
-  "name_vi": "Rồng xương",
-  "has3d": "8a2dddcf361e.json"
- },
- {
-  "id": "nullscape:rift",
-  "pack": "Nullscape",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rift",
-  "name_vi": "Rift",
-  "has3d": "d135c8e1184b.json"
  },
  {
   "id": "nullscape:rift",
@@ -27358,20 +14626,6 @@ const STRUCTURES_DATA = [
   "has3d": "301748613253.json"
  },
  {
-  "id": "lios_outlandish_villages:spiral_tower_village",
-  "pack": "Spiral Tower Village",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spiral Tower Village",
-  "name_vi": "Spiral Tower Village",
-  "has3d": "301748613253.json"
- },
- {
   "id": "lios_outlandish_villages:spiral_tower_village_sea",
   "pack": "Spiral Tower Village",
   "dim": "overworld",
@@ -27384,34 +14638,6 @@ const STRUCTURES_DATA = [
   "name_en": "Spiral Tower Village Sea",
   "name_vi": "Spiral Tower Village Sea",
   "has3d": "e9cf09fa2360.json"
- },
- {
-  "id": "lios_outlandish_villages:spiral_tower_village_sea",
-  "pack": "Spiral Tower Village",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spiral Tower Village Sea",
-  "name_vi": "Spiral Tower Village Sea",
-  "has3d": "e9cf09fa2360.json"
- },
- {
-  "id": "stellarity:campsite",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Campsite",
-  "name_vi": "Campsite",
-  "has3d": "cbfeb3f0f024.json"
  },
  {
   "id": "stellarity:campsite",
@@ -27442,20 +14668,6 @@ const STRUCTURES_DATA = [
   "has3d": "17814db6bac7.json"
  },
  {
-  "id": "stellarity:chapel_of_light",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "End Highlands",
-  "where_vi": "Cao nguyên The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Chapel Of Light",
-  "name_vi": "Chapel Of Light",
-  "has3d": "17814db6bac7.json"
- },
- {
   "id": "stellarity:desert_ruin",
   "pack": "Stellarity",
   "dim": "end",
@@ -27468,34 +14680,6 @@ const STRUCTURES_DATA = [
   "name_en": "Desert Ruin",
   "name_vi": "Desert Ruin",
   "has3d": "471b777649c2.json"
- },
- {
-  "id": "stellarity:desert_ruin",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Ruin",
-  "name_vi": "Desert Ruin",
-  "has3d": "471b777649c2.json"
- },
- {
-  "id": "stellarity:shipwreck/dunes",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Dunes",
-  "name_vi": "Dunes",
-  "has3d": "46f9c6884853.json"
  },
  {
   "id": "stellarity:shipwreck/dunes",
@@ -27525,32 +14709,6 @@ const STRUCTURES_DATA = [
   "name_vi": "End City"
  },
  {
-  "id": "minecraft:end_city",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "raw_generation",
-  "spread": "1.8x",
-  "where_en": "End Highlands",
-  "where_vi": "Cao nguyên The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End City",
-  "name_vi": "End City"
- },
- {
-  "id": "stellarity:fishing_hut",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Fishing Hut",
-  "name_vi": "Fishing Hut"
- },
- {
   "id": "stellarity:fishing_hut",
   "pack": "Stellarity",
   "dim": "end",
@@ -27578,20 +14736,6 @@ const STRUCTURES_DATA = [
   "has3d": "7204c84a39e6.json"
  },
  {
-  "id": "stellarity:floating_treasure",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Floating Treasure",
-  "name_vi": "Floating Treasure",
-  "has3d": "7204c84a39e6.json"
- },
- {
   "id": "stellarity:fossil",
   "pack": "Stellarity",
   "dim": "end",
@@ -27603,33 +14747,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Dưới lòng đất",
   "name_en": "Fossil",
   "name_vi": "Fossil"
- },
- {
-  "id": "stellarity:fossil",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Fossil",
-  "name_vi": "Fossil"
- },
- {
-  "id": "stellarity:shipwreck/normal",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Normal",
-  "name_vi": "Normal",
-  "has3d": "4c0302884270.json"
  },
  {
   "id": "stellarity:shipwreck/normal",
@@ -27660,20 +14777,6 @@ const STRUCTURES_DATA = [
   "has3d": "d6f0475e6713.json"
  },
  {
-  "id": "stellarity:obsidian_spike",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Obsidian Spike",
-  "name_vi": "Obsidian Spike",
-  "has3d": "d6f0475e6713.json"
- },
- {
   "id": "stellarity:old_stronghold",
   "pack": "Stellarity",
   "dim": "end",
@@ -27685,33 +14788,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Old Stronghold",
   "name_vi": "Old Stronghold"
- },
- {
-  "id": "stellarity:old_stronghold",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Old Stronghold",
-  "name_vi": "Old Stronghold"
- },
- {
-  "id": "stellarity:return_gateway",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Return Gateway",
-  "name_vi": "Return Gateway",
-  "has3d": "6bcb3c58814f.json"
  },
  {
   "id": "stellarity:return_gateway",
@@ -27742,20 +14818,6 @@ const STRUCTURES_DATA = [
   "has3d": "06a4c4ad5120.json"
  },
  {
-  "id": "minecraft:stronghold",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stronghold",
-  "name_vi": "Stronghold",
-  "has3d": "06a4c4ad5120.json"
- },
- {
   "id": "stellarity:village",
   "pack": "Stellarity",
   "dim": "end",
@@ -27768,34 +14830,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village",
   "name_vi": "Village",
   "has3d": "ec98cb1173d7.json"
- },
- {
-  "id": "stellarity:village",
-  "pack": "Stellarity",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village",
-  "name_vi": "Village",
-  "has3d": "ec98cb1173d7.json"
- },
- {
-  "id": "structory:abandoned_camp",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "raw_generation",
-  "spread": "1.8x",
-  "where_en": "End Highlands",
-  "where_vi": "Cao nguyên The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Abandoned Camp",
-  "name_vi": "Trại bỏ hoang",
-  "has3d": "08c329f531b1.json"
  },
  {
   "id": "structory:abandoned_camp",
@@ -27826,20 +14860,6 @@ const STRUCTURES_DATA = [
   "has3d": "79cbd3ac8b27.json"
  },
  {
-  "id": "structory:abandoned_chapel",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "raw_generation",
-  "spread": "1.8x",
-  "where_en": "End Highlands",
-  "where_vi": "Cao nguyên The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Abandoned Chapel",
-  "name_vi": "Nhà thờ bỏ hoang",
-  "has3d": "79cbd3ac8b27.json"
- },
- {
   "id": "structory:boat",
   "pack": "Structory",
   "dim": "overworld",
@@ -27852,34 +14872,6 @@ const STRUCTURES_DATA = [
   "name_en": "Boat",
   "name_vi": "Thuyền",
   "has3d": "dfd379d05232.json"
- },
- {
-  "id": "structory:boat",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "raw_generation",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Boat",
-  "name_vi": "Thuyền",
-  "has3d": "dfd379d05232.json"
- },
- {
-  "id": "structory:dense_forest_ruin",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dense Forest Ruin",
-  "name_vi": "Tàn tích rừng rậm",
-  "has3d": "0a84306468d5.json"
  },
  {
   "id": "structory:dense_forest_ruin",
@@ -27910,20 +14902,6 @@ const STRUCTURES_DATA = [
   "has3d": "743760d4958e.json"
  },
  {
-  "id": "structory:outcast_villager_desert",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "raw_generation",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Outcast Villager",
-  "name_vi": "Dân làng hoang mạc vô định",
-  "has3d": "743760d4958e.json"
- },
- {
   "id": "structory:firetower",
   "pack": "Structory",
   "dim": "overworld",
@@ -27936,34 +14914,6 @@ const STRUCTURES_DATA = [
   "name_en": "Firetower",
   "name_vi": "Tháp pháo",
   "has3d": "c2aac6b572e4.json"
- },
- {
-  "id": "structory:firetower",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "raw_generation",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Firetower",
-  "name_vi": "Tháp pháo",
-  "has3d": "c2aac6b572e4.json"
- },
- {
-  "id": "structory:outcast_villager_grassy",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "raw_generation",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Grassy Outcast Villager",
-  "name_vi": "Dân làng đầy cỏ vô định",
-  "has3d": "6394a32b6140.json"
  },
  {
   "id": "structory:outcast_villager_grassy",
@@ -27994,20 +14944,6 @@ const STRUCTURES_DATA = [
   "has3d": "46328c26e748.json"
  },
  {
-  "id": "structory:ruin_grassy",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "raw_generation",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Grassy Ruin",
-  "name_vi": "Tàn tích đầy cỏ",
-  "has3d": "46328c26e748.json"
- },
- {
   "id": "structory:graveyard",
   "pack": "Structory",
   "dim": "overworld",
@@ -28020,34 +14956,6 @@ const STRUCTURES_DATA = [
   "name_en": "Graveyard",
   "name_vi": "Nghĩa địa",
   "has3d": "3909fcf612c8.json"
- },
- {
-  "id": "structory:graveyard",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "raw_generation",
-  "spread": "1.8x",
-  "where_en": "End Highlands",
-  "where_vi": "Cao nguyên The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Graveyard",
-  "name_vi": "Nghĩa địa",
-  "has3d": "3909fcf612c8.json"
- },
- {
-  "id": "structory:jungle_ruin",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Ruin",
-  "name_vi": "Khu rừng tàn tích",
-  "has3d": "a0c78446b6e6.json"
  },
  {
   "id": "structory:jungle_ruin",
@@ -28078,20 +14986,6 @@ const STRUCTURES_DATA = [
   "has3d": "e238fd3fd6d5.json"
  },
  {
-  "id": "structory:northern_ruin",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "raw_generation",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Northern Ruin",
-  "name_vi": "Tàn tích phía Bắc",
-  "has3d": "e238fd3fd6d5.json"
- },
- {
   "id": "structory:old_manor",
   "pack": "Structory",
   "dim": "overworld",
@@ -28104,34 +14998,6 @@ const STRUCTURES_DATA = [
   "name_en": "Old Manor",
   "name_vi": "Trang viên cũ",
   "has3d": "a4161ab5115f.json"
- },
- {
-  "id": "structory:old_manor",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Old Manor",
-  "name_vi": "Trang viên cũ",
-  "has3d": "a4161ab5115f.json"
- },
- {
-  "id": "structory:taiga_ruin_surface",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "raw_generation",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Surface Taiga Ruin",
-  "name_vi": "Tàn tích Taiga bề mặt",
-  "has3d": "e33d5de6c1bf.json"
  },
  {
   "id": "structory:taiga_ruin_surface",
@@ -28162,20 +15028,6 @@ const STRUCTURES_DATA = [
   "has3d": "825563e726e4.json"
  },
  {
-  "id": "structory:swamp_ruin",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Ruin",
-  "name_vi": "Tàn tích đầm lầy",
-  "has3d": "825563e726e4.json"
- },
- {
   "id": "structory:taiga_ruin_underground",
   "pack": "Structory",
   "dim": "overworld",
@@ -28188,34 +15040,6 @@ const STRUCTURES_DATA = [
   "name_en": "Underground Taiga Ruin",
   "name_vi": "Tàn tích Taiga dưới đất",
   "has3d": "c6e10990437a.json"
- },
- {
-  "id": "structory:taiga_ruin_underground",
-  "pack": "Structory",
-  "dim": "overworld",
-  "step": "raw_generation",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Underground Taiga Ruin",
-  "name_vi": "Tàn tích Taiga dưới đất",
-  "has3d": "c6e10990437a.json"
- },
- {
-  "id": "structory_towers:ancient_temple",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ancient Temple",
-  "name_vi": "Ngôi đền cổ đại",
-  "has3d": "31507fb532a4.json"
  },
  {
   "id": "structory_towers:ancient_temple",
@@ -28246,20 +15070,6 @@ const STRUCTURES_DATA = [
   "has3d": "9f898102407c.json"
  },
  {
-  "id": "structory_towers:end/end_tower",
-  "pack": "Structory Towers",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All End Biomes",
-  "where_vi": "Mọi vùng The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End Tower",
-  "name_vi": "End Tower",
-  "has3d": "9f898102407c.json"
- },
- {
   "id": "structory_towers:engineer_tower",
   "pack": "Structory Towers",
   "dim": "overworld",
@@ -28272,34 +15082,6 @@ const STRUCTURES_DATA = [
   "name_en": "Engineer Tower",
   "name_vi": "Tháp kỹ sư",
   "has3d": "6344431795e4.json"
- },
- {
-  "id": "structory_towers:engineer_tower",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Engineer Tower",
-  "name_vi": "Tháp kỹ sư",
-  "has3d": "6344431795e4.json"
- },
- {
-  "id": "structory_towers:farmer_outpost",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Farmer Outpost",
-  "name_vi": "Đồn của nông dân",
-  "has3d": "e257d7570427.json"
  },
  {
   "id": "structory_towers:farmer_outpost",
@@ -28330,20 +15112,6 @@ const STRUCTURES_DATA = [
   "has3d": "6aa27393995f.json"
  },
  {
-  "id": "structory_towers:foraging_outpost",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Foraging Outpost",
-  "name_vi": "Đồn khai thác",
-  "has3d": "6aa27393995f.json"
- },
- {
   "id": "structory_towers:nether/fortress_tower",
   "pack": "Structory Towers",
   "dim": "nether",
@@ -28356,34 +15124,6 @@ const STRUCTURES_DATA = [
   "name_en": "Fortress Tower",
   "name_vi": "Fortress Tower",
   "has3d": "4483ca9fe8ab.json"
- },
- {
-  "id": "structory_towers:nether/fortress_tower",
-  "pack": "Structory Towers",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Nether Biomes",
-  "where_vi": "Các vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Fortress Tower",
-  "name_vi": "Fortress Tower",
-  "has3d": "4483ca9fe8ab.json"
- },
- {
-  "id": "structory_towers:great_toadstool",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Great Toadstool",
-  "name_vi": "Toadstool lớn",
-  "has3d": "9a1a5b91a016.json"
  },
  {
   "id": "structory_towers:great_toadstool",
@@ -28414,20 +15154,6 @@ const STRUCTURES_DATA = [
   "has3d": "028d38d5152b.json"
  },
  {
-  "id": "structory_towers:lighthouse",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Lighthouse",
-  "name_vi": "Ngọn hải đăng",
-  "has3d": "028d38d5152b.json"
- },
- {
   "id": "structory_towers:mirage_outpost",
   "pack": "Structory Towers",
   "dim": "overworld",
@@ -28440,34 +15166,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mirage Outpost",
   "name_vi": "Đồn ảo ảnh",
   "has3d": "0909fadcb139.json"
- },
- {
-  "id": "structory_towers:mirage_outpost",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mirage Outpost",
-  "name_vi": "Đồn ảo ảnh",
-  "has3d": "0909fadcb139.json"
- },
- {
-  "id": "structory_towers:nomad_outpost",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Nomad Outpost",
-  "name_vi": "Đồn du mục",
-  "has3d": "a3b9c073970b.json"
  },
  {
   "id": "structory_towers:nomad_outpost",
@@ -28498,20 +15196,6 @@ const STRUCTURES_DATA = [
   "has3d": "43d0f5d3b973.json"
  },
  {
-  "id": "structory_towers:ocean_pillar",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Pillar",
-  "name_vi": "Trụ biển",
-  "has3d": "43d0f5d3b973.json"
- },
- {
   "id": "structory_towers:overgrown_mangrove",
   "pack": "Structory Towers",
   "dim": "overworld",
@@ -28524,34 +15208,6 @@ const STRUCTURES_DATA = [
   "name_en": "Overgrown Mangrove Tower",
   "name_vi": "Tháp rừng ngập mặn",
   "has3d": "99739da68047.json"
- },
- {
-  "id": "structory_towers:overgrown_mangrove",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Overgrown Mangrove Tower",
-  "name_vi": "Tháp rừng ngập mặn",
-  "has3d": "99739da68047.json"
- },
- {
-  "id": "structory_towers:pillager_lookout",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Lookout",
-  "name_vi": "Trạm quan sát Pillager",
-  "has3d": "ec157ee9b718.json"
  },
  {
   "id": "structory_towers:pillager_lookout",
@@ -28582,20 +15238,6 @@ const STRUCTURES_DATA = [
   "has3d": "23982494b52e.json"
  },
  {
-  "id": "structory_towers:quarter_outpost",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Quarter Outpost",
-  "name_vi": "Đồn phần tư",
-  "has3d": "23982494b52e.json"
- },
- {
   "id": "structory_towers:sacred_relic_temple",
   "pack": "Structory Towers",
   "dim": "overworld",
@@ -28608,34 +15250,6 @@ const STRUCTURES_DATA = [
   "name_en": "Sacred Relic Temple",
   "name_vi": "Đền thánh tích",
   "has3d": "f9c6106ba09b.json"
- },
- {
-  "id": "structory_towers:sacred_relic_temple",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sacred Relic Temple",
-  "name_vi": "Đền thánh tích",
-  "has3d": "f9c6106ba09b.json"
- },
- {
-  "id": "structory_towers:small_firetower",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Firetower",
-  "name_vi": "Tháp pháo nhỏ",
-  "has3d": "f50b4ab4a84c.json"
  },
  {
   "id": "structory_towers:small_firetower",
@@ -28666,20 +15280,6 @@ const STRUCTURES_DATA = [
   "has3d": "fe7268318d9b.json"
  },
  {
-  "id": "structory_towers:nether/strange_outpost",
-  "pack": "Structory Towers",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Soul Sand Valley",
-  "where_vi": "Thung lũng Cát Linh Hồn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Strange Outpost",
-  "name_vi": "Strange Outpost",
-  "has3d": "fe7268318d9b.json"
- },
- {
   "id": "structory_towers:taiga_outpost",
   "pack": "Structory Towers",
   "dim": "overworld",
@@ -28692,34 +15292,6 @@ const STRUCTURES_DATA = [
   "name_en": "Taiga Outpost",
   "name_vi": "Đồn Taiga",
   "has3d": "0f439718549b.json"
- },
- {
-  "id": "structory_towers:taiga_outpost",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga Outpost",
-  "name_vi": "Đồn Taiga",
-  "has3d": "0f439718549b.json"
- },
- {
-  "id": "structory_towers:warped_greatsword",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Warped Greatsword",
-  "name_vi": "Đại kiếm kỳ dị",
-  "has3d": "a3cc7ccf1908.json"
  },
  {
   "id": "structory_towers:warped_greatsword",
@@ -28749,19 +15321,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Warped Outpost"
  },
  {
-  "id": "structory_towers:nether/warped_outpost",
-  "pack": "Structory Towers",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Warped Outpost",
-  "name_vi": "Warped Outpost"
- },
- {
   "id": "structory_towers:wizard_tower",
   "pack": "Structory Towers",
   "dim": "overworld",
@@ -28774,33 +15333,6 @@ const STRUCTURES_DATA = [
   "name_en": "Wizard Tower",
   "name_vi": "Tháp pháp sư",
   "has3d": "49028de2d72b.json"
- },
- {
-  "id": "structory_towers:wizard_tower",
-  "pack": "Structory Towers",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wizard Tower",
-  "name_vi": "Tháp pháp sư",
-  "has3d": "49028de2d72b.json"
- },
- {
-  "id": "joshie:sunken_spires/colossuem",
-  "pack": "Sunken Spires",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Colossuem",
-  "name_vi": "Colossuem"
  },
  {
   "id": "joshie:sunken_spires/colossuem",
@@ -28829,19 +15361,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Conduit Ruins"
  },
  {
-  "id": "joshie:sunken_spires/conduit_ruins",
-  "pack": "Sunken Spires",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Conduit Ruins",
-  "name_vi": "Conduit Ruins"
- },
- {
   "id": "joshie:sunken_spires/floating_spikes",
   "pack": "Sunken Spires",
   "dim": "overworld",
@@ -28853,32 +15372,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Biển / Dưới nước",
   "name_en": "Floating Spikes",
   "name_vi": "Floating Spikes"
- },
- {
-  "id": "joshie:sunken_spires/floating_spikes",
-  "pack": "Sunken Spires",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Floating Spikes",
-  "name_vi": "Floating Spikes"
- },
- {
-  "id": "joshie:sunken_spires/large_fossil",
-  "pack": "Sunken Spires",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Large Fossil",
-  "name_vi": "Large Fossil"
  },
  {
   "id": "joshie:sunken_spires/large_fossil",
@@ -28907,19 +15400,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Ocean Temple"
  },
  {
-  "id": "joshie:sunken_spires/ocean_temple",
-  "pack": "Sunken Spires",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Ocean Temple",
-  "name_vi": "Ocean Temple"
- },
- {
   "id": "joshie:sunken_spires/prismarine_forge",
   "pack": "Sunken Spires",
   "dim": "overworld",
@@ -28931,32 +15411,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Biển / Dưới nước",
   "name_en": "Prismarine Forge",
   "name_vi": "Prismarine Forge"
- },
- {
-  "id": "joshie:sunken_spires/prismarine_forge",
-  "pack": "Sunken Spires",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Prismarine Forge",
-  "name_vi": "Prismarine Forge"
- },
- {
-  "id": "joshie:sunken_spires/small_fossil",
-  "pack": "Sunken Spires",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Small Fossil",
-  "name_vi": "Small Fossil"
  },
  {
   "id": "joshie:sunken_spires/small_fossil",
@@ -28985,32 +15439,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Spires"
  },
  {
-  "id": "joshie:sunken_spires/spires",
-  "pack": "Sunken Spires",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Spires",
-  "name_vi": "Spires"
- },
- {
-  "id": "joshie:sunken_spires/sunken_city",
-  "pack": "Sunken Spires",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Sunken City",
-  "name_vi": "Sunken City"
- },
- {
   "id": "joshie:sunken_spires/sunken_city",
   "pack": "Sunken Spires",
   "dim": "overworld",
@@ -29037,19 +15465,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Trident Shrine"
  },
  {
-  "id": "joshie:sunken_spires/trident_shrine",
-  "pack": "Sunken Spires",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Trident Shrine",
-  "name_vi": "Trident Shrine"
- },
- {
   "id": "terralith:abandoned_camp/alpine_highlands",
   "pack": "Terralith",
   "dim": "overworld",
@@ -29061,33 +15476,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Alpine Highlands",
   "name_vi": "Alpine Highlands"
- },
- {
-  "id": "terralith:abandoned_camp/alpine_highlands",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Alpine Highlands",
-  "name_vi": "Alpine Highlands"
- },
- {
-  "id": "terralith:desert_outpost",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Outpost",
-  "name_vi": "Desert Outpost",
-  "has3d": "bec7e3b457a2.json"
  },
  {
   "id": "terralith:desert_outpost",
@@ -29118,20 +15506,6 @@ const STRUCTURES_DATA = [
   "has3d": "85601c7b8b3d.json"
  },
  {
-  "id": "terralith:fortified_desert_village",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Fortified Desert Village",
-  "name_vi": "Làng kiên cố sa mạc",
-  "has3d": "85601c7b8b3d.json"
- },
- {
   "id": "terralith:fortified_village",
   "pack": "Terralith",
   "dim": "overworld",
@@ -29144,34 +15518,6 @@ const STRUCTURES_DATA = [
   "name_en": "Fortified Village",
   "name_vi": "Làng kiên cố",
   "has3d": "edf0a00d1a80.json"
- },
- {
-  "id": "terralith:fortified_village",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Fortified Village",
-  "name_vi": "Làng kiên cố",
-  "has3d": "edf0a00d1a80.json"
- },
- {
-  "id": "terralith:underground/frosted_dungeon",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Frosted Dungeon",
-  "name_vi": "Frosted Dungeon",
-  "has3d": "ef42dd45e011.json"
  },
  {
   "id": "terralith:underground/frosted_dungeon",
@@ -29202,20 +15548,6 @@ const STRUCTURES_DATA = [
   "has3d": "57bfce8a8969.json"
  },
  {
-  "id": "terralith:underground/giant_bee_hive",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Giant Bee Hive",
-  "name_vi": "Giant Bee Hive",
-  "has3d": "57bfce8a8969.json"
- },
- {
   "id": "terralith:glacial_hut",
   "pack": "Terralith",
   "dim": "overworld",
@@ -29228,34 +15560,6 @@ const STRUCTURES_DATA = [
   "name_en": "Glacial Hut",
   "name_vi": "Lều băng",
   "has3d": "8d00624655b2.json"
- },
- {
-  "id": "terralith:glacial_hut",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Glacial Hut",
-  "name_vi": "Lều băng",
-  "has3d": "8d00624655b2.json"
- },
- {
-  "id": "terralith:igloo",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Igloo",
-  "name_vi": "Igloo",
-  "has3d": "1eeb6d59f6b7.json"
  },
  {
   "id": "terralith:igloo",
@@ -29286,20 +15590,6 @@ const STRUCTURES_DATA = [
   "has3d": "ab9cb1939125.json"
  },
  {
-  "id": "terralith:mage_complex",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mage Complex",
-  "name_vi": "Mage Complex",
-  "has3d": "ab9cb1939125.json"
- },
- {
   "id": "terralith:mage_tower",
   "pack": "Terralith",
   "dim": "overworld",
@@ -29312,34 +15602,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mage Tower",
   "name_vi": "Mage Tower",
   "has3d": "bc82155a5ccd.json"
- },
- {
-  "id": "terralith:mage_tower",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mage Tower",
-  "name_vi": "Mage Tower",
-  "has3d": "bc82155a5ccd.json"
- },
- {
-  "id": "terralith:mage_tower_autumn",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mage Tower Autumn",
-  "name_vi": "Mage Tower Autumn",
-  "has3d": "e6e1904acf38.json"
  },
  {
   "id": "terralith:mage_tower_autumn",
@@ -29370,20 +15632,6 @@ const STRUCTURES_DATA = [
   "has3d": "bae4dacf0bb2.json"
  },
  {
-  "id": "terralith:mage_tower_spring",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mage Tower Spring",
-  "name_vi": "Mage Tower Spring",
-  "has3d": "bae4dacf0bb2.json"
- },
- {
   "id": "terralith:mage_tower_summer",
   "pack": "Terralith",
   "dim": "overworld",
@@ -29396,34 +15644,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mage Tower Summer",
   "name_vi": "Mage Tower Summer",
   "has3d": "6a7d98bfe267.json"
- },
- {
-  "id": "terralith:mage_tower_summer",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mage Tower Summer",
-  "name_vi": "Mage Tower Summer",
-  "has3d": "6a7d98bfe267.json"
- },
- {
-  "id": "terralith:mage_tower_winter",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mage Tower Winter",
-  "name_vi": "Mage Tower Winter",
-  "has3d": "fd80c5399053.json"
  },
  {
   "id": "terralith:mage_tower_winter",
@@ -29454,20 +15674,6 @@ const STRUCTURES_DATA = [
   "has3d": "c2fb166755b9.json"
  },
  {
-  "id": "terralith:underground/mining_outpost",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mining Outpost",
-  "name_vi": "Mining Outpost",
-  "has3d": "c2fb166755b9.json"
- },
- {
   "id": "terralith:underground/oak_cabin",
   "pack": "Terralith",
   "dim": "overworld",
@@ -29480,34 +15686,6 @@ const STRUCTURES_DATA = [
   "name_en": "Oak Cabin",
   "name_vi": "Oak Cabin",
   "has3d": "481f1678c5e2.json"
- },
- {
-  "id": "terralith:underground/oak_cabin",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oak Cabin",
-  "name_vi": "Oak Cabin",
-  "has3d": "481f1678c5e2.json"
- },
- {
-  "id": "terralith:underground/old_refinery",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Old Refinery",
-  "name_vi": "Old Refinery",
-  "has3d": "ab030ef33919.json"
  },
  {
   "id": "terralith:underground/old_refinery",
@@ -29538,20 +15716,6 @@ const STRUCTURES_DATA = [
   "has3d": "170d4139217c.json"
  },
  {
-  "id": "terralith:rubble_desert",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rubble Desert",
-  "name_vi": "Rubble Desert",
-  "has3d": "170d4139217c.json"
- },
- {
   "id": "terralith:rubble_forest",
   "pack": "Terralith",
   "dim": "overworld",
@@ -29564,34 +15728,6 @@ const STRUCTURES_DATA = [
   "name_en": "Rubble Forest",
   "name_vi": "Rubble Forest",
   "has3d": "0ee5e7622088.json"
- },
- {
-  "id": "terralith:rubble_forest",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rubble Forest",
-  "name_vi": "Rubble Forest",
-  "has3d": "0ee5e7622088.json"
- },
- {
-  "id": "terralith:rubble_jungle",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rubble Jungle",
-  "name_vi": "Rubble Jungle",
-  "has3d": "18d7ad7db880.json"
  },
  {
   "id": "terralith:rubble_jungle",
@@ -29622,20 +15758,6 @@ const STRUCTURES_DATA = [
   "has3d": "9f797ac12ee8.json"
  },
  {
-  "id": "terralith:rubble_mesa",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rubble Mesa",
-  "name_vi": "Rubble Mesa",
-  "has3d": "9f797ac12ee8.json"
- },
- {
   "id": "terralith:rubble_mountain",
   "pack": "Terralith",
   "dim": "overworld",
@@ -29648,34 +15770,6 @@ const STRUCTURES_DATA = [
   "name_en": "Rubble Mountain",
   "name_vi": "Rubble Mountain",
   "has3d": "6e84abd1ab14.json"
- },
- {
-  "id": "terralith:rubble_mountain",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rubble Mountain",
-  "name_vi": "Rubble Mountain",
-  "has3d": "6e84abd1ab14.json"
- },
- {
-  "id": "terralith:rubble_taiga",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rubble Taiga",
-  "name_vi": "Rubble Taiga",
-  "has3d": "a5a883dcddcf.json"
  },
  {
   "id": "terralith:rubble_taiga",
@@ -29706,20 +15800,6 @@ const STRUCTURES_DATA = [
   "has3d": "a4a3da178023.json"
  },
  {
-  "id": "terralith:spire",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spire",
-  "name_vi": "Ngọn tháp",
-  "has3d": "a4a3da178023.json"
- },
- {
   "id": "terralith:underground/sunken_tower",
   "pack": "Terralith",
   "dim": "overworld",
@@ -29732,34 +15812,6 @@ const STRUCTURES_DATA = [
   "name_en": "Sunken Tower",
   "name_vi": "Sunken Tower",
   "has3d": "87090e04ed47.json"
- },
- {
-  "id": "terralith:underground/sunken_tower",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Sunken Tower",
-  "name_vi": "Sunken Tower",
-  "has3d": "87090e04ed47.json"
- },
- {
-  "id": "terralith:underground_cabin",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Underground Cabin",
-  "name_vi": "Underground Cabin",
-  "has3d": "c3f690a7c37f.json"
  },
  {
   "id": "terralith:underground_cabin",
@@ -29790,20 +15842,6 @@ const STRUCTURES_DATA = [
   "has3d": "71e7ebc6e397.json"
  },
  {
-  "id": "terralith:valley_lodge",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Valley Lodge",
-  "name_vi": "Valley Lodge",
-  "has3d": "71e7ebc6e397.json"
- },
- {
   "id": "terralith:underground/witch_hut",
   "pack": "Terralith",
   "dim": "overworld",
@@ -29816,34 +15854,6 @@ const STRUCTURES_DATA = [
   "name_en": "Witch Hut",
   "name_vi": "Witch Hut",
   "has3d": "3ddddcc51cd9.json"
- },
- {
-  "id": "terralith:underground/witch_hut",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.6x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Witch Hut",
-  "name_vi": "Witch Hut",
-  "has3d": "3ddddcc51cd9.json"
- },
- {
-  "id": "terralith:witch_hut",
-  "pack": "Terralith",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Witch Hut",
-  "name_vi": "Witch Hut",
-  "has3d": "f49389bd7ca5.json"
  },
  {
   "id": "terralith:witch_hut",
@@ -29874,20 +15884,6 @@ const STRUCTURES_DATA = [
   "has3d": "c5a2106c5c04.json"
  },
  {
-  "id": "joshie:village_ocean",
-  "pack": "Tidal Towns",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Village Ocean",
-  "name_vi": "Village Ocean",
-  "has3d": "c5a2106c5c04.json"
- },
- {
   "id": "towns_and_towers:mimic_desert",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -29900,34 +15896,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mimic Desert",
   "name_vi": "Mimic Desert",
   "has3d": "ad392dc07769.json"
- },
- {
-  "id": "towns_and_towers:mimic_desert",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mimic Desert",
-  "name_vi": "Mimic Desert",
-  "has3d": "ad392dc07769.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_badlands",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Badlands",
-  "name_vi": "Pillager Outpost Badlands",
-  "has3d": "007b3b4bf82d.json"
  },
  {
   "id": "towns_and_towers:pillager_outpost_badlands",
@@ -29958,20 +15926,6 @@ const STRUCTURES_DATA = [
   "has3d": "fd8e8b4096e3.json"
  },
  {
-  "id": "towns_and_towers:pillager_outpost_beach",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Beach",
-  "name_vi": "Pillager Outpost Beach",
-  "has3d": "fd8e8b4096e3.json"
- },
- {
   "id": "towns_and_towers:pillager_outpost_birch_forest",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -29984,34 +15938,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Outpost Birch Forest",
   "name_vi": "Pillager Outpost Birch Forest",
   "has3d": "4d3565b93126.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_birch_forest",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Birch Forest",
-  "name_vi": "Pillager Outpost Birch Forest",
-  "has3d": "4d3565b93126.json"
- },
- {
-  "id": "towns_and_towers:exclusives/pillager_outpost_classic",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Classic",
-  "name_vi": "Pillager Outpost Classic",
-  "has3d": "a105f4b51d73.json"
  },
  {
   "id": "towns_and_towers:exclusives/pillager_outpost_classic",
@@ -30042,20 +15968,6 @@ const STRUCTURES_DATA = [
   "has3d": "0203bad1accb.json"
  },
  {
-  "id": "towns_and_towers:pillager_outpost_desert",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Desert",
-  "name_vi": "Pillager Outpost Desert",
-  "has3d": "0203bad1accb.json"
- },
- {
   "id": "towns_and_towers:pillager_outpost_flower_forest",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -30068,34 +15980,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Outpost Flower Forest",
   "name_vi": "Pillager Outpost Flower Forest",
   "has3d": "bfd81dbacff2.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_flower_forest",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Flower Forest",
-  "name_vi": "Pillager Outpost Flower Forest",
-  "has3d": "bfd81dbacff2.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_forest",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Forest",
-  "name_vi": "Pillager Outpost Forest",
-  "has3d": "1d0b938c3dd4.json"
  },
  {
   "id": "towns_and_towers:pillager_outpost_forest",
@@ -30126,20 +16010,6 @@ const STRUCTURES_DATA = [
   "has3d": "f2af6ce954d8.json"
  },
  {
-  "id": "towns_and_towers:pillager_outpost_grove",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Grove",
-  "name_vi": "Pillager Outpost Grove",
-  "has3d": "f2af6ce954d8.json"
- },
- {
   "id": "towns_and_towers:exclusives/pillager_outpost_iberian",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -30152,34 +16022,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Outpost Iberian",
   "name_vi": "Pillager Outpost Iberian",
   "has3d": "14fc22b5a5e2.json"
- },
- {
-  "id": "towns_and_towers:exclusives/pillager_outpost_iberian",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Iberian",
-  "name_vi": "Pillager Outpost Iberian",
-  "has3d": "14fc22b5a5e2.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_jungle",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Jungle",
-  "name_vi": "Pillager Outpost Jungle",
-  "has3d": "e9031fc322e5.json"
  },
  {
   "id": "towns_and_towers:pillager_outpost_jungle",
@@ -30210,20 +16052,6 @@ const STRUCTURES_DATA = [
   "has3d": "a75c3aae0d05.json"
  },
  {
-  "id": "towns_and_towers:pillager_outpost_meadow",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Meadow",
-  "name_vi": "Pillager Outpost Meadow",
-  "has3d": "a75c3aae0d05.json"
- },
- {
   "id": "towns_and_towers:exclusives/pillager_outpost_mediterranean",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -30236,34 +16064,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Outpost Mediterranean",
   "name_vi": "Pillager Outpost Mediterranean",
   "has3d": "2a033fde4ae0.json"
- },
- {
-  "id": "towns_and_towers:exclusives/pillager_outpost_mediterranean",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Mediterranean",
-  "name_vi": "Pillager Outpost Mediterranean",
-  "has3d": "2a033fde4ae0.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_mushroom_fields",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Mushroom Fields",
-  "name_vi": "Pillager Outpost Mushroom Fields",
-  "has3d": "3d46a5bdbf0c.json"
  },
  {
   "id": "towns_and_towers:pillager_outpost_mushroom_fields",
@@ -30294,20 +16094,6 @@ const STRUCTURES_DATA = [
   "has3d": "a0c42bd93f2f.json"
  },
  {
-  "id": "towns_and_towers:exclusives/pillager_outpost_nilotic",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Nilotic",
-  "name_vi": "Pillager Outpost Nilotic",
-  "has3d": "a0c42bd93f2f.json"
- },
- {
   "id": "towns_and_towers:pillager_outpost_ocean",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -30320,34 +16106,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Outpost Ocean",
   "name_vi": "Pillager Outpost Ocean",
   "has3d": "dfe58ad196e8.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_ocean",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Pillager Outpost Ocean",
-  "name_vi": "Pillager Outpost Ocean",
-  "has3d": "dfe58ad196e8.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_old_growth_taiga",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Old Growth Taiga",
-  "name_vi": "Pillager Outpost Old Growth Taiga",
-  "has3d": "aa1356ecf96f.json"
  },
  {
   "id": "towns_and_towers:pillager_outpost_old_growth_taiga",
@@ -30378,20 +16136,6 @@ const STRUCTURES_DATA = [
   "has3d": "9c4b80c11792.json"
  },
  {
-  "id": "towns_and_towers:exclusives/pillager_outpost_oriental",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Oriental",
-  "name_vi": "Pillager Outpost Oriental",
-  "has3d": "9c4b80c11792.json"
- },
- {
   "id": "towns_and_towers:exclusives/pillager_outpost_rustic",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -30404,34 +16148,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Outpost Rustic",
   "name_vi": "Pillager Outpost Rustic",
   "has3d": "f962ba41eb91.json"
- },
- {
-  "id": "towns_and_towers:exclusives/pillager_outpost_rustic",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Rustic",
-  "name_vi": "Pillager Outpost Rustic",
-  "has3d": "f962ba41eb91.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_savanna",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Savanna",
-  "name_vi": "Pillager Outpost Savanna",
-  "has3d": "669393e2482b.json"
  },
  {
   "id": "towns_and_towers:pillager_outpost_savanna",
@@ -30462,20 +16178,6 @@ const STRUCTURES_DATA = [
   "has3d": "f9d23ce2e64d.json"
  },
  {
-  "id": "towns_and_towers:pillager_outpost_savanna_plateau",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Savanna Plateau",
-  "name_vi": "Pillager Outpost Savanna Plateau",
-  "has3d": "f9d23ce2e64d.json"
- },
- {
   "id": "towns_and_towers:pillager_outpost_snowy_beach",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -30488,34 +16190,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Outpost Snowy Beach",
   "name_vi": "Pillager Outpost Snowy Beach",
   "has3d": "5ea917e06ffa.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_snowy_beach",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Snowy Beach",
-  "name_vi": "Pillager Outpost Snowy Beach",
-  "has3d": "5ea917e06ffa.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_snowy_plains",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Snowy Plains",
-  "name_vi": "Pillager Outpost Snowy Plains",
-  "has3d": "5c6b50c8b8d5.json"
  },
  {
   "id": "towns_and_towers:pillager_outpost_snowy_plains",
@@ -30546,20 +16220,6 @@ const STRUCTURES_DATA = [
   "has3d": "c549314dde94.json"
  },
  {
-  "id": "towns_and_towers:pillager_outpost_snowy_slopes",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Snowy Slopes",
-  "name_vi": "Pillager Outpost Snowy Slopes",
-  "has3d": "c549314dde94.json"
- },
- {
   "id": "towns_and_towers:pillager_outpost_snowy_taiga",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -30572,34 +16232,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Outpost Snowy Taiga",
   "name_vi": "Pillager Outpost Snowy Taiga",
   "has3d": "b70073bf1db3.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_snowy_taiga",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Snowy Taiga",
-  "name_vi": "Pillager Outpost Snowy Taiga",
-  "has3d": "b70073bf1db3.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_sparse_jungle",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Sparse Jungle",
-  "name_vi": "Pillager Outpost Sparse Jungle",
-  "has3d": "2ad2ca8dfcaf.json"
  },
  {
   "id": "towns_and_towers:pillager_outpost_sparse_jungle",
@@ -30630,20 +16262,6 @@ const STRUCTURES_DATA = [
   "has3d": "915542eed5be.json"
  },
  {
-  "id": "towns_and_towers:pillager_outpost_sunflower_plains",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Sunflower Plains",
-  "name_vi": "Pillager Outpost Sunflower Plains",
-  "has3d": "915542eed5be.json"
- },
- {
   "id": "towns_and_towers:pillager_outpost_swamp",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -30656,34 +16274,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Outpost Swamp",
   "name_vi": "Pillager Outpost Swamp",
   "has3d": "50071de0b85f.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_swamp",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Swamp",
-  "name_vi": "Pillager Outpost Swamp",
-  "has3d": "50071de0b85f.json"
- },
- {
-  "id": "towns_and_towers:exclusives/pillager_outpost_swedish",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Swedish",
-  "name_vi": "Pillager Outpost Swedish",
-  "has3d": "76348fa1eeae.json"
  },
  {
   "id": "towns_and_towers:exclusives/pillager_outpost_swedish",
@@ -30714,20 +16304,6 @@ const STRUCTURES_DATA = [
   "has3d": "f8be7bf5255c.json"
  },
  {
-  "id": "towns_and_towers:pillager_outpost_taiga",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Taiga",
-  "name_vi": "Pillager Outpost Taiga",
-  "has3d": "f8be7bf5255c.json"
- },
- {
   "id": "towns_and_towers:exclusives/pillager_outpost_tudor",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -30740,34 +16316,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Outpost Tudor",
   "name_vi": "Pillager Outpost Tudor",
   "has3d": "00c1494fe637.json"
- },
- {
-  "id": "towns_and_towers:exclusives/pillager_outpost_tudor",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Tudor",
-  "name_vi": "Pillager Outpost Tudor",
-  "has3d": "00c1494fe637.json"
- },
- {
-  "id": "towns_and_towers:pillager_outpost_wooded_badlands",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Wooded Badlands",
-  "name_vi": "Pillager Outpost Wooded Badlands",
-  "has3d": "f32b8384f6f3.json"
  },
  {
   "id": "towns_and_towers:pillager_outpost_wooded_badlands",
@@ -30798,20 +16346,6 @@ const STRUCTURES_DATA = [
   "has3d": "c47083663629.json"
  },
  {
-  "id": "towns_and_towers:village_badlands",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Badlands",
-  "name_vi": "Village Badlands",
-  "has3d": "c47083663629.json"
- },
- {
   "id": "towns_and_towers:village_beach",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -30824,34 +16358,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Beach",
   "name_vi": "Village Beach",
   "has3d": "1309ace2fa8f.json"
- },
- {
-  "id": "towns_and_towers:village_beach",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Beach",
-  "name_vi": "Village Beach",
-  "has3d": "1309ace2fa8f.json"
- },
- {
-  "id": "towns_and_towers:village_birch_forest",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Birch Forest",
-  "name_vi": "Village Birch Forest",
-  "has3d": "b43dd4ead415.json"
  },
  {
   "id": "towns_and_towers:village_birch_forest",
@@ -30882,20 +16388,6 @@ const STRUCTURES_DATA = [
   "has3d": "db5b3f635409.json"
  },
  {
-  "id": "towns_and_towers:exclusives/village_classic",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Classic",
-  "name_vi": "Village Classic",
-  "has3d": "db5b3f635409.json"
- },
- {
   "id": "towns_and_towers:village_flower_forest",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -30908,34 +16400,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Flower Forest",
   "name_vi": "Village Flower Forest",
   "has3d": "2c8d37154cae.json"
- },
- {
-  "id": "towns_and_towers:village_flower_forest",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Flower Forest",
-  "name_vi": "Village Flower Forest",
-  "has3d": "2c8d37154cae.json"
- },
- {
-  "id": "towns_and_towers:village_forest",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Forest",
-  "name_vi": "Village Forest",
-  "has3d": "e1569a69f662.json"
  },
  {
   "id": "towns_and_towers:village_forest",
@@ -30966,20 +16430,6 @@ const STRUCTURES_DATA = [
   "has3d": "fa2f409756a3.json"
  },
  {
-  "id": "towns_and_towers:village_grove",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Grove",
-  "name_vi": "Village Grove",
-  "has3d": "fa2f409756a3.json"
- },
- {
   "id": "towns_and_towers:exclusives/village_iberian",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -30992,34 +16442,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Iberian",
   "name_vi": "Village Iberian",
   "has3d": "cbb46e0aae75.json"
- },
- {
-  "id": "towns_and_towers:exclusives/village_iberian",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Iberian",
-  "name_vi": "Village Iberian",
-  "has3d": "cbb46e0aae75.json"
- },
- {
-  "id": "towns_and_towers:village_jungle",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Jungle",
-  "name_vi": "Village Jungle",
-  "has3d": "06be9b429bf4.json"
  },
  {
   "id": "towns_and_towers:village_jungle",
@@ -31050,20 +16472,6 @@ const STRUCTURES_DATA = [
   "has3d": "16f6228733c6.json"
  },
  {
-  "id": "towns_and_towers:village_meadow",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Meadow",
-  "name_vi": "Village Meadow",
-  "has3d": "16f6228733c6.json"
- },
- {
   "id": "towns_and_towers:exclusives/village_mediterranean",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -31076,34 +16484,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Mediterranean",
   "name_vi": "Village Mediterranean",
   "has3d": "788186269ad9.json"
- },
- {
-  "id": "towns_and_towers:exclusives/village_mediterranean",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Mediterranean",
-  "name_vi": "Village Mediterranean",
-  "has3d": "788186269ad9.json"
- },
- {
-  "id": "towns_and_towers:village_mushroom_fields",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Mushroom Fields",
-  "name_vi": "Village Mushroom Fields",
-  "has3d": "c00c20d920cf.json"
  },
  {
   "id": "towns_and_towers:village_mushroom_fields",
@@ -31133,19 +16513,6 @@ const STRUCTURES_DATA = [
   "name_vi": "Village Nilotic"
  },
  {
-  "id": "towns_and_towers:exclusives/village_nilotic",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Nilotic",
-  "name_vi": "Village Nilotic"
- },
- {
   "id": "towns_and_towers:village_ocean",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -31157,33 +16524,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Dưới lòng đất",
   "name_en": "Village Ocean",
   "name_vi": "Village Ocean"
- },
- {
-  "id": "towns_and_towers:village_ocean",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Village Ocean",
-  "name_vi": "Village Ocean"
- },
- {
-  "id": "towns_and_towers:village_old_growth_taiga",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Old Growth Taiga",
-  "name_vi": "Village Old Growth Taiga",
-  "has3d": "df570d21e51f.json"
  },
  {
   "id": "towns_and_towers:village_old_growth_taiga",
@@ -31214,20 +16554,6 @@ const STRUCTURES_DATA = [
   "has3d": "3e66fa0b4f34.json"
  },
  {
-  "id": "towns_and_towers:exclusives/village_piglin",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Piglin",
-  "name_vi": "Village Piglin",
-  "has3d": "3e66fa0b4f34.json"
- },
- {
   "id": "towns_and_towers:exclusives/village_rustic",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -31240,34 +16566,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Rustic",
   "name_vi": "Village Rustic",
   "has3d": "2bf97e969949.json"
- },
- {
-  "id": "towns_and_towers:exclusives/village_rustic",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Rustic",
-  "name_vi": "Village Rustic",
-  "has3d": "2bf97e969949.json"
- },
- {
-  "id": "towns_and_towers:village_savanna_plateau",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Savanna Plateau",
-  "name_vi": "Village Savanna Plateau",
-  "has3d": "014520d6cd77.json"
  },
  {
   "id": "towns_and_towers:village_savanna_plateau",
@@ -31298,20 +16596,6 @@ const STRUCTURES_DATA = [
   "has3d": "b542c249be91.json"
  },
  {
-  "id": "towns_and_towers:village_snowy_slopes",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Snowy Slopes",
-  "name_vi": "Village Snowy Slopes",
-  "has3d": "b542c249be91.json"
- },
- {
   "id": "towns_and_towers:village_snowy_taiga",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -31324,34 +16608,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Snowy Taiga",
   "name_vi": "Village Snowy Taiga",
   "has3d": "e11d6d087a15.json"
- },
- {
-  "id": "towns_and_towers:village_snowy_taiga",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Snowy Taiga",
-  "name_vi": "Village Snowy Taiga",
-  "has3d": "e11d6d087a15.json"
- },
- {
-  "id": "towns_and_towers:village_sparse_jungle",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Sparse Jungle",
-  "name_vi": "Village Sparse Jungle",
-  "has3d": "7d9e320cb8c4.json"
  },
  {
   "id": "towns_and_towers:village_sparse_jungle",
@@ -31382,20 +16638,6 @@ const STRUCTURES_DATA = [
   "has3d": "dd3069c18508.json"
  },
  {
-  "id": "towns_and_towers:village_sunflower_plains",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Sunflower Plains",
-  "name_vi": "Village Sunflower Plains",
-  "has3d": "dd3069c18508.json"
- },
- {
   "id": "towns_and_towers:village_swamp",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -31408,34 +16650,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Swamp",
   "name_vi": "Village Swamp",
   "has3d": "9d05aa10f510.json"
- },
- {
-  "id": "towns_and_towers:village_swamp",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Swamp",
-  "name_vi": "Village Swamp",
-  "has3d": "9d05aa10f510.json"
- },
- {
-  "id": "towns_and_towers:exclusives/village_swedish",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Swedish",
-  "name_vi": "Village Swedish",
-  "has3d": "d4c29833f756.json"
  },
  {
   "id": "towns_and_towers:exclusives/village_swedish",
@@ -31466,20 +16680,6 @@ const STRUCTURES_DATA = [
   "has3d": "68739d86fa1e.json"
  },
  {
-  "id": "towns_and_towers:exclusives/village_tudor",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Tudor",
-  "name_vi": "Village Tudor",
-  "has3d": "68739d86fa1e.json"
- },
- {
   "id": "towns_and_towers:exclusives/village_wandering_trader_camp",
   "pack": "Towns & Towers",
   "dim": "overworld",
@@ -31492,34 +16692,6 @@ const STRUCTURES_DATA = [
   "name_en": "Village Wandering Trader Camp",
   "name_vi": "Village Wandering Trader Camp",
   "has3d": "f1407b5ad273.json"
- },
- {
-  "id": "towns_and_towers:exclusives/village_wandering_trader_camp",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Wandering Trader Camp",
-  "name_vi": "Village Wandering Trader Camp",
-  "has3d": "f1407b5ad273.json"
- },
- {
-  "id": "towns_and_towers:village_wooded_badlands",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Village Wooded Badlands",
-  "name_vi": "Village Wooded Badlands",
-  "has3d": "5e63bb6b86cb.json"
  },
  {
   "id": "towns_and_towers:village_wooded_badlands",
@@ -31550,20 +16722,6 @@ const STRUCTURES_DATA = [
   "has3d": "dc340748e086.json"
  },
  {
-  "id": "towns_and_towers:wreckage_ocean",
-  "pack": "Towns & Towers",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Wreckage Ocean",
-  "name_vi": "Wreckage Ocean",
-  "has3d": "dc340748e086.json"
- },
- {
   "id": "trek:overworld/rare/abandoned_castle_pillager",
   "pack": "Trek",
   "dim": "overworld",
@@ -31576,34 +16734,6 @@ const STRUCTURES_DATA = [
   "name_en": "Abandoned Castle Pillager",
   "name_vi": "Abandoned Castle Pillager",
   "has3d": "ae0c22c2ccdd.json"
- },
- {
-  "id": "trek:overworld/rare/abandoned_castle_pillager",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Abandoned Castle Pillager",
-  "name_vi": "Abandoned Castle Pillager",
-  "has3d": "ae0c22c2ccdd.json"
- },
- {
-  "id": "trek:overworld/medium/all_abandoned",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "All Abandoned",
-  "name_vi": "All Abandoned",
-  "has3d": "bb52f40ed612.json"
  },
  {
   "id": "trek:overworld/medium/all_abandoned",
@@ -31634,20 +16764,6 @@ const STRUCTURES_DATA = [
   "has3d": "9cba2fe81ac2.json"
  },
  {
-  "id": "trek:overworld/medium/base_1",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Base 1",
-  "name_vi": "Base 1",
-  "has3d": "9cba2fe81ac2.json"
- },
- {
   "id": "trek:overworld/medium/base_2",
   "pack": "Trek",
   "dim": "overworld",
@@ -31660,34 +16776,6 @@ const STRUCTURES_DATA = [
   "name_en": "Base 2",
   "name_vi": "Base 2",
   "has3d": "0498de2ab3a0.json"
- },
- {
-  "id": "trek:overworld/medium/base_2",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Base 2",
-  "name_vi": "Base 2",
-  "has3d": "0498de2ab3a0.json"
- },
- {
-  "id": "trek:overworld/medium/base_pillager",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Base Pillager",
-  "name_vi": "Base Pillager",
-  "has3d": "9cdc7a18635a.json"
  },
  {
   "id": "trek:overworld/medium/base_pillager",
@@ -31718,20 +16806,6 @@ const STRUCTURES_DATA = [
   "has3d": "e7055adbe309.json"
  },
  {
-  "id": "trek:overworld/medium/beehive_house",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Beehive House",
-  "name_vi": "Beehive House",
-  "has3d": "e7055adbe309.json"
- },
- {
   "id": "trek:overworld/medium/birch_fort",
   "pack": "Trek",
   "dim": "overworld",
@@ -31744,34 +16818,6 @@ const STRUCTURES_DATA = [
   "name_en": "Birch Fort",
   "name_vi": "Birch Fort",
   "has3d": "602ba5a2250a.json"
- },
- {
-  "id": "trek:overworld/medium/birch_fort",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Fort",
-  "name_vi": "Birch Fort",
-  "has3d": "602ba5a2250a.json"
- },
- {
-  "id": "trek:overworld/medium/birch_trade",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Birch Trade",
-  "name_vi": "Birch Trade",
-  "has3d": "c3e8f28f187a.json"
  },
  {
   "id": "trek:overworld/medium/birch_trade",
@@ -31802,20 +16848,6 @@ const STRUCTURES_DATA = [
   "has3d": "774c9848c953.json"
  },
  {
-  "id": "trek:overworld/medium/bone_dragon",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bone Dragon",
-  "name_vi": "Bone Dragon",
-  "has3d": "774c9848c953.json"
- },
- {
   "id": "trek:overworld/medium/buried_village",
   "pack": "Trek",
   "dim": "overworld",
@@ -31828,34 +16860,6 @@ const STRUCTURES_DATA = [
   "name_en": "Buried Village",
   "name_vi": "Buried Village",
   "has3d": "b96b47b0d3cc.json"
- },
- {
-  "id": "trek:overworld/medium/buried_village",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Buried Village",
-  "name_vi": "Buried Village",
-  "has3d": "b96b47b0d3cc.json"
- },
- {
-  "id": "trek:overworld/medium/camp_1",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Camp 1",
-  "name_vi": "Camp 1",
-  "has3d": "603a7b9f11bd.json"
  },
  {
   "id": "trek:overworld/medium/camp_1",
@@ -31886,20 +16890,6 @@ const STRUCTURES_DATA = [
   "has3d": "e36e8d483c4c.json"
  },
  {
-  "id": "trek:overworld/medium/camp_2",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Camp 2",
-  "name_vi": "Camp 2",
-  "has3d": "e36e8d483c4c.json"
- },
- {
   "id": "trek:overworld/medium/camp_3",
   "pack": "Trek",
   "dim": "overworld",
@@ -31912,34 +16902,6 @@ const STRUCTURES_DATA = [
   "name_en": "Camp 3",
   "name_vi": "Camp 3",
   "has3d": "fac429b6cec2.json"
- },
- {
-  "id": "trek:overworld/medium/camp_3",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Camp 3",
-  "name_vi": "Camp 3",
-  "has3d": "fac429b6cec2.json"
- },
- {
-  "id": "trek:overworld/medium/camp_4",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Camp 4",
-  "name_vi": "Camp 4",
-  "has3d": "ff5415f30fe1.json"
  },
  {
   "id": "trek:overworld/medium/camp_4",
@@ -31970,20 +16932,6 @@ const STRUCTURES_DATA = [
   "has3d": "e3b9ded91e78.json"
  },
  {
-  "id": "trek:overworld/rare/castle",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Castle",
-  "name_vi": "Castle",
-  "has3d": "e3b9ded91e78.json"
- },
- {
   "id": "trek:village/cherry",
   "pack": "Trek",
   "dim": "overworld",
@@ -31996,34 +16944,6 @@ const STRUCTURES_DATA = [
   "name_en": "Cherry",
   "name_vi": "Cherry",
   "has3d": "c06a94f4f491.json"
- },
- {
-  "id": "trek:village/cherry",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cherry",
-  "name_vi": "Cherry",
-  "has3d": "c06a94f4f491.json"
- },
- {
-  "id": "trek:overworld/medium/church",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Church",
-  "name_vi": "Church",
-  "has3d": "18ef942dd345.json"
  },
  {
   "id": "trek:overworld/medium/church",
@@ -32054,20 +16974,6 @@ const STRUCTURES_DATA = [
   "has3d": "b36b5afdcd93.json"
  },
  {
-  "id": "trek:overworld/medium/claw_pillager",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Claw Pillager",
-  "name_vi": "Claw Pillager",
-  "has3d": "b36b5afdcd93.json"
- },
- {
   "id": "trek:overworld/medium/claw_spike",
   "pack": "Trek",
   "dim": "overworld",
@@ -32080,34 +16986,6 @@ const STRUCTURES_DATA = [
   "name_en": "Claw Spike",
   "name_vi": "Claw Spike",
   "has3d": "48f685950055.json"
- },
- {
-  "id": "trek:overworld/medium/claw_spike",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Claw Spike",
-  "name_vi": "Claw Spike",
-  "has3d": "48f685950055.json"
- },
- {
-  "id": "trek:overworld/medium/cold_hideout",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cold Hideout",
-  "name_vi": "Cold Hideout",
-  "has3d": "390093112c2a.json"
  },
  {
   "id": "trek:overworld/medium/cold_hideout",
@@ -32138,20 +17016,6 @@ const STRUCTURES_DATA = [
   "has3d": "ee57d9423a6f.json"
  },
  {
-  "id": "trek:overworld/medium/cold_red_trade",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cold Red Trade",
-  "name_vi": "Cold Red Trade",
-  "has3d": "ee57d9423a6f.json"
- },
- {
   "id": "trek:overworld/common/cooking_pork",
   "pack": "Trek",
   "dim": "overworld",
@@ -32164,34 +17028,6 @@ const STRUCTURES_DATA = [
   "name_en": "Cooking Pork",
   "name_vi": "Cooking Pork",
   "has3d": "8bb803b69137.json"
- },
- {
-  "id": "trek:overworld/common/cooking_pork",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cooking Pork",
-  "name_vi": "Cooking Pork",
-  "has3d": "8bb803b69137.json"
- },
- {
-  "id": "trek:overworld/rare/cottage_island",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cottage Island",
-  "name_vi": "Cottage Island",
-  "has3d": "a2efd867a623.json"
  },
  {
   "id": "trek:overworld/rare/cottage_island",
@@ -32222,34 +17058,6 @@ const STRUCTURES_DATA = [
   "has3d": "7ed3d22a3090.json"
  },
  {
-  "id": "trek:overworld/very_rare/coves",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Coves",
-  "name_vi": "Coves",
-  "has3d": "7ed3d22a3090.json"
- },
- {
-  "id": "trek:overworld/medium/dark_oak_trade",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Oak Trade",
-  "name_vi": "Dark Oak Trade",
-  "has3d": "626ee7bd008a.json"
- },
- {
   "id": "trek:overworld/medium/dark_oak_trade",
   "pack": "Trek",
   "dim": "overworld",
@@ -32278,47 +17086,7 @@ const STRUCTURES_DATA = [
   "has3d": "3ed3d6bac679.json"
  },
  {
-  "id": "trek:monster_room/lower/deep_dark",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Deep Dark",
-  "where_vi": "Vực Sâu (Deep Dark)",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Deep Dark",
-  "name_vi": "Deep Dark",
-  "has3d": "3ed3d6bac679.json"
- },
- {
   "id": "trek:monster_room/lower/default",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Default",
-  "name_vi": "Default"
- },
- {
-  "id": "trek:monster_room/lower/default",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Default",
-  "name_vi": "Default"
- },
- {
-  "id": "trek:monster_room/upper/default",
   "pack": "Trek",
   "dim": "overworld",
   "step": "underground_structures",
@@ -32358,20 +17126,6 @@ const STRUCTURES_DATA = [
   "has3d": "43c0abb79108.json"
  },
  {
-  "id": "trek:village/desert",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert",
-  "name_vi": "Desert",
-  "has3d": "43c0abb79108.json"
- },
- {
   "id": "trek:overworld/medium/desert_outpost",
   "pack": "Trek",
   "dim": "overworld",
@@ -32384,34 +17138,6 @@ const STRUCTURES_DATA = [
   "name_en": "Desert Outpost",
   "name_vi": "Desert Outpost",
   "has3d": "0fd78a92637f.json"
- },
- {
-  "id": "trek:overworld/medium/desert_outpost",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Outpost",
-  "name_vi": "Desert Outpost",
-  "has3d": "0fd78a92637f.json"
- },
- {
-  "id": "trek:overworld/medium/desert_ranch",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Desert Ranch",
-  "name_vi": "Desert Ranch",
-  "has3d": "aa31b74829e2.json"
  },
  {
   "id": "trek:overworld/medium/desert_ranch",
@@ -32442,34 +17168,6 @@ const STRUCTURES_DATA = [
   "has3d": "ae085c7e5fe6.json"
  },
  {
-  "id": "trek:overworld/medium/destroyed_house",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Destroyed House",
-  "name_vi": "Destroyed House",
-  "has3d": "ae085c7e5fe6.json"
- },
- {
-  "id": "trek:overworld/medium/dirt_hut",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dirt Hut",
-  "name_vi": "Dirt Hut",
-  "has3d": "0db11176e531.json"
- },
- {
   "id": "trek:overworld/medium/dirt_hut",
   "pack": "Trek",
   "dim": "overworld",
@@ -32485,32 +17183,6 @@ const STRUCTURES_DATA = [
  },
  {
   "id": "trek:monster_room/lower/dripstone",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Dripstone",
-  "name_vi": "Dripstone"
- },
- {
-  "id": "trek:monster_room/lower/dripstone",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Dripstone",
-  "name_vi": "Dripstone"
- },
- {
-  "id": "trek:monster_room/upper/dripstone",
   "pack": "Trek",
   "dim": "overworld",
   "step": "underground_structures",
@@ -32550,20 +17222,6 @@ const STRUCTURES_DATA = [
   "has3d": "3454f22c8771.json"
  },
  {
-  "id": "trek:overworld/common/elven_pillars",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Elven Pillars",
-  "name_vi": "Elven Pillars",
-  "has3d": "3454f22c8771.json"
- },
- {
   "id": "trek:overworld/rare/elven_tree",
   "pack": "Trek",
   "dim": "overworld",
@@ -32576,34 +17234,6 @@ const STRUCTURES_DATA = [
   "name_en": "Elven Tree",
   "name_vi": "Elven Tree",
   "has3d": "4cf0dda19764.json"
- },
- {
-  "id": "trek:overworld/rare/elven_tree",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Elven Tree",
-  "name_vi": "Elven Tree",
-  "has3d": "4cf0dda19764.json"
- },
- {
-  "id": "trek:overworld/medium/enchanter",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Enchanter",
-  "name_vi": "Enchanter",
-  "has3d": "0a0e0954c2da.json"
  },
  {
   "id": "trek:overworld/medium/enchanter",
@@ -32634,20 +17264,6 @@ const STRUCTURES_DATA = [
   "has3d": "36209cef42f9.json"
  },
  {
-  "id": "trek:end/medium/end_city",
-  "pack": "Trek",
-  "dim": "end",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "End Highlands",
-  "where_vi": "Cao nguyên The End",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "End City",
-  "name_vi": "End City",
-  "has3d": "36209cef42f9.json"
- },
- {
   "id": "trek:overworld/medium/explorer_cabin",
   "pack": "Trek",
   "dim": "overworld",
@@ -32660,34 +17276,6 @@ const STRUCTURES_DATA = [
   "name_en": "Explorer Cabin",
   "name_vi": "Explorer Cabin",
   "has3d": "a2a529f2b729.json"
- },
- {
-  "id": "trek:overworld/medium/explorer_cabin",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Explorer Cabin",
-  "name_vi": "Explorer Cabin",
-  "has3d": "a2a529f2b729.json"
- },
- {
-  "id": "trek:overworld/medium/farm",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Farm",
-  "name_vi": "Farm",
-  "has3d": "700be1a3d726.json"
  },
  {
   "id": "trek:overworld/medium/farm",
@@ -32718,20 +17306,6 @@ const STRUCTURES_DATA = [
   "has3d": "2f4b73d449aa.json"
  },
  {
-  "id": "trek:overworld/very_rare/farm_island",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Farm Island",
-  "name_vi": "Farm Island",
-  "has3d": "2f4b73d449aa.json"
- },
- {
   "id": "trek:overworld/medium/farm_pillager",
   "pack": "Trek",
   "dim": "overworld",
@@ -32744,34 +17318,6 @@ const STRUCTURES_DATA = [
   "name_en": "Farm Pillager",
   "name_vi": "Farm Pillager",
   "has3d": "c0ed55490bc5.json"
- },
- {
-  "id": "trek:overworld/medium/farm_pillager",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Farm Pillager",
-  "name_vi": "Farm Pillager",
-  "has3d": "c0ed55490bc5.json"
- },
- {
-  "id": "trek:overworld/very_rare/floating_farm_large",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Sky / Floating",
-  "layer_vi": "Trên không",
-  "name_en": "Floating Farm Large",
-  "name_vi": "Floating Farm Large",
-  "has3d": "4577274ea77a.json"
  },
  {
   "id": "trek:overworld/very_rare/floating_farm_large",
@@ -32802,20 +17348,6 @@ const STRUCTURES_DATA = [
   "has3d": "ea98b9bb4e12.json"
  },
  {
-  "id": "trek:overworld/medium/fort",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Fort",
-  "name_vi": "Fort",
-  "has3d": "ea98b9bb4e12.json"
- },
- {
   "id": "trek:overworld/common/frozen_remains",
   "pack": "Trek",
   "dim": "overworld",
@@ -32828,34 +17360,6 @@ const STRUCTURES_DATA = [
   "name_en": "Frozen Remains",
   "name_vi": "Frozen Remains",
   "has3d": "12314bf0b108.json"
- },
- {
-  "id": "trek:overworld/common/frozen_remains",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Frozen Remains",
-  "name_vi": "Frozen Remains",
-  "has3d": "12314bf0b108.json"
- },
- {
-  "id": "trek:overworld/medium/frozen_tree",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Frozen Tree",
-  "name_vi": "Frozen Tree",
-  "has3d": "246529a6992d.json"
  },
  {
   "id": "trek:overworld/medium/frozen_tree",
@@ -32886,20 +17390,6 @@ const STRUCTURES_DATA = [
   "has3d": "39d3bc52b4e6.json"
  },
  {
-  "id": "trek:overworld/medium/graveyard",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Graveyard",
-  "name_vi": "Graveyard",
-  "has3d": "39d3bc52b4e6.json"
- },
- {
   "id": "trek:overworld/medium/haunted_house",
   "pack": "Trek",
   "dim": "overworld",
@@ -32912,34 +17402,6 @@ const STRUCTURES_DATA = [
   "name_en": "Haunted House",
   "name_vi": "Haunted House",
   "has3d": "7d98c9488176.json"
- },
- {
-  "id": "trek:overworld/medium/haunted_house",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Haunted House",
-  "name_vi": "Haunted House",
-  "has3d": "7d98c9488176.json"
- },
- {
-  "id": "trek:overworld/medium/hobbit_hole",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Hobbit Hole",
-  "name_vi": "Hobbit Hole",
-  "has3d": "4d30443d1c2f.json"
  },
  {
   "id": "trek:overworld/medium/hobbit_hole",
@@ -32970,20 +17432,6 @@ const STRUCTURES_DATA = [
   "has3d": "f35d1510c152.json"
  },
  {
-  "id": "trek:overworld/medium/ice_fort",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ice Fort",
-  "name_vi": "Ice Fort",
-  "has3d": "f35d1510c152.json"
- },
- {
   "id": "trek:overworld/medium/igloo_village",
   "pack": "Trek",
   "dim": "overworld",
@@ -32996,34 +17444,6 @@ const STRUCTURES_DATA = [
   "name_en": "Igloo Village",
   "name_vi": "Igloo Village",
   "has3d": "07aee6d98c24.json"
- },
- {
-  "id": "trek:overworld/medium/igloo_village",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Igloo Village",
-  "name_vi": "Igloo Village",
-  "has3d": "07aee6d98c24.json"
- },
- {
-  "id": "trek:overworld/medium/jungle_outpost",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Outpost",
-  "name_vi": "Jungle Outpost",
-  "has3d": "a9e78718b89b.json"
  },
  {
   "id": "trek:overworld/medium/jungle_outpost",
@@ -33054,34 +17474,6 @@ const STRUCTURES_DATA = [
   "has3d": "0f07f13f7d45.json"
  },
  {
-  "id": "trek:overworld/medium/jungle_trade",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Trade",
-  "name_vi": "Jungle Trade",
-  "has3d": "0f07f13f7d45.json"
- },
- {
-  "id": "trek:overworld/medium/jungle_treehouse",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Jungle Treehouse",
-  "name_vi": "Jungle Treehouse",
-  "has3d": "33ab6deca9b4.json"
- },
- {
   "id": "trek:overworld/medium/jungle_treehouse",
   "pack": "Trek",
   "dim": "overworld",
@@ -33097,32 +17489,6 @@ const STRUCTURES_DATA = [
  },
  {
   "id": "trek:monster_room/lower/lush",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Lush",
-  "name_vi": "Lush"
- },
- {
-  "id": "trek:monster_room/lower/lush",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Lush",
-  "name_vi": "Lush"
- },
- {
-  "id": "trek:monster_room/upper/lush",
   "pack": "Trek",
   "dim": "overworld",
   "step": "underground_structures",
@@ -33162,20 +17528,6 @@ const STRUCTURES_DATA = [
   "has3d": "5475fc7fa176.json"
  },
  {
-  "id": "trek:overworld/medium/lush_ice",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Lush Ice",
-  "name_vi": "Lush Ice",
-  "has3d": "5475fc7fa176.json"
- },
- {
   "id": "trek:overworld/medium/maison",
   "pack": "Trek",
   "dim": "overworld",
@@ -33188,34 +17540,6 @@ const STRUCTURES_DATA = [
   "name_en": "Maison",
   "name_vi": "Maison",
   "has3d": "d2f56f825b13.json"
- },
- {
-  "id": "trek:overworld/medium/maison",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Maison",
-  "name_vi": "Maison",
-  "has3d": "d2f56f825b13.json"
- },
- {
-  "id": "trek:overworld/medium/mangrove_watchtower",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mangrove Watchtower",
-  "name_vi": "Mangrove Watchtower",
-  "has3d": "d1982c3239a4.json"
  },
  {
   "id": "trek:overworld/medium/mangrove_watchtower",
@@ -33246,20 +17570,6 @@ const STRUCTURES_DATA = [
   "has3d": "0da20993d890.json"
  },
  {
-  "id": "trek:overworld/rare/maya",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Maya",
-  "name_vi": "Maya",
-  "has3d": "0da20993d890.json"
- },
- {
   "id": "trek:village/mushroom",
   "pack": "Trek",
   "dim": "overworld",
@@ -33272,34 +17582,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mushroom",
   "name_vi": "Mushroom",
   "has3d": "02521350d9d3.json"
- },
- {
-  "id": "trek:village/mushroom",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mushroom",
-  "name_vi": "Mushroom",
-  "has3d": "02521350d9d3.json"
- },
- {
-  "id": "trek:overworld/common/mushroom_house",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mushroom House",
-  "name_vi": "Mushroom House",
-  "has3d": "16b26ee156f3.json"
  },
  {
   "id": "trek:overworld/common/mushroom_house",
@@ -33330,20 +17612,6 @@ const STRUCTURES_DATA = [
   "has3d": "15732b26b2fc.json"
  },
  {
-  "id": "trek:overworld/rare/mushroom_island",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mushroom Island",
-  "name_vi": "Mushroom Island",
-  "has3d": "15732b26b2fc.json"
- },
- {
   "id": "trek:nether/common/nether_pillar",
   "pack": "Trek",
   "dim": "nether",
@@ -33356,34 +17624,6 @@ const STRUCTURES_DATA = [
   "name_en": "Nether Pillar",
   "name_vi": "Nether Pillar",
   "has3d": "1af3daa10e0a.json"
- },
- {
-  "id": "trek:nether/common/nether_pillar",
-  "pack": "Trek",
-  "dim": "nether",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Nether Pillar",
-  "name_vi": "Nether Pillar",
-  "has3d": "1af3daa10e0a.json"
- },
- {
-  "id": "trek:monster_room/upper/oak",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Oak",
-  "name_vi": "Oak",
-  "has3d": "78070652fc13.json"
  },
  {
   "id": "trek:monster_room/upper/oak",
@@ -33414,20 +17654,6 @@ const STRUCTURES_DATA = [
   "has3d": "33ebabef855a.json"
  },
  {
-  "id": "trek:overworld/medium/oasis",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Oasis",
-  "name_vi": "Oasis",
-  "has3d": "33ebabef855a.json"
- },
- {
   "id": "trek:overworld/medium/offshore_platform_pillager",
   "pack": "Trek",
   "dim": "overworld",
@@ -33440,34 +17666,6 @@ const STRUCTURES_DATA = [
   "name_en": "Offshore Platform Pillager",
   "name_vi": "Offshore Platform Pillager",
   "has3d": "61fb291f5eb2.json"
- },
- {
-  "id": "trek:overworld/medium/offshore_platform_pillager",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Offshore Platform Pillager",
-  "name_vi": "Offshore Platform Pillager",
-  "has3d": "61fb291f5eb2.json"
- },
- {
-  "id": "trek:overworld/medium/orbital",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Orbital",
-  "name_vi": "Orbital",
-  "has3d": "1d8a14d7a0d4.json"
  },
  {
   "id": "trek:overworld/medium/orbital",
@@ -33498,20 +17696,6 @@ const STRUCTURES_DATA = [
   "has3d": "16dab340bc88.json"
  },
  {
-  "id": "trek:nether/medium/overworld_leak_1",
-  "pack": "Trek",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Overworld Leak 1",
-  "name_vi": "Overworld Leak 1",
-  "has3d": "16dab340bc88.json"
- },
- {
   "id": "trek:nether/medium/overworld_leak_2",
   "pack": "Trek",
   "dim": "nether",
@@ -33524,34 +17708,6 @@ const STRUCTURES_DATA = [
   "name_en": "Overworld Leak 2",
   "name_vi": "Overworld Leak 2",
   "has3d": "5db82bbd9e99.json"
- },
- {
-  "id": "trek:nether/medium/overworld_leak_2",
-  "pack": "Trek",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "All Nether Biomes",
-  "where_vi": "Mọi vùng Nether",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Overworld Leak 2",
-  "name_vi": "Overworld Leak 2",
-  "has3d": "5db82bbd9e99.json"
- },
- {
-  "id": "trek:overworld/rare/pillager_mansion",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.0x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Mansion",
-  "name_vi": "Pillager Mansion",
-  "has3d": "463f63b13509.json"
  },
  {
   "id": "trek:overworld/rare/pillager_mansion",
@@ -33582,20 +17738,6 @@ const STRUCTURES_DATA = [
   "has3d": "07b9e1741590.json"
  },
  {
-  "id": "trek:overworld/medium/pillager_old_camp",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Old Camp",
-  "name_vi": "Pillager Old Camp",
-  "has3d": "07b9e1741590.json"
- },
- {
   "id": "minecraft:pillager_outpost_dark_forest",
   "pack": "Trek",
   "dim": "overworld",
@@ -33608,34 +17750,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Outpost Dark Forest",
   "name_vi": "Pillager Outpost Dark Forest",
   "has3d": "be6ad0a38987.json"
- },
- {
-  "id": "minecraft:pillager_outpost_dark_forest",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Dark Forest",
-  "name_vi": "Pillager Outpost Dark Forest",
-  "has3d": "be6ad0a38987.json"
- },
- {
-  "id": "minecraft:pillager_outpost_forest",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Forest",
-  "name_vi": "Pillager Outpost Forest",
-  "has3d": "8a9bdf704efe.json"
  },
  {
   "id": "minecraft:pillager_outpost_forest",
@@ -33666,20 +17780,6 @@ const STRUCTURES_DATA = [
   "has3d": "64ec30e878cb.json"
  },
  {
-  "id": "minecraft:pillager_outpost_mangrove",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Mangrove",
-  "name_vi": "Pillager Outpost Mangrove",
-  "has3d": "64ec30e878cb.json"
- },
- {
   "id": "minecraft:pillager_outpost_swamp",
   "pack": "Trek",
   "dim": "overworld",
@@ -33692,34 +17792,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pillager Outpost Swamp",
   "name_vi": "Pillager Outpost Swamp",
   "has3d": "14cc8edcf5bf.json"
- },
- {
-  "id": "minecraft:pillager_outpost_swamp",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Outpost Swamp",
-  "name_vi": "Pillager Outpost Swamp",
-  "has3d": "14cc8edcf5bf.json"
- },
- {
-  "id": "trek:overworld/medium/pillager_weapons",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pillager Weapons",
-  "name_vi": "Pillager Weapons",
-  "has3d": "8d14055530ef.json"
  },
  {
   "id": "trek:overworld/medium/pillager_weapons",
@@ -33750,20 +17822,6 @@ const STRUCTURES_DATA = [
   "has3d": "886fd995994b.json"
  },
  {
-  "id": "trek:overworld/very_common/plains",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Plains",
-  "name_vi": "Plains",
-  "has3d": "886fd995994b.json"
- },
- {
   "id": "trek:village/plains",
   "pack": "Trek",
   "dim": "overworld",
@@ -33776,34 +17834,6 @@ const STRUCTURES_DATA = [
   "name_en": "Plains",
   "name_vi": "Plains",
   "has3d": "dda12ce0940a.json"
- },
- {
-  "id": "trek:village/plains",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Plains / Meadow",
-  "where_vi": "Đồng bằng / Thảo nguyên",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Plains",
-  "name_vi": "Plains",
-  "has3d": "dda12ce0940a.json"
- },
- {
-  "id": "trek:overworld/medium/plains_cottage",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Plains Cottage",
-  "name_vi": "Plains Cottage",
-  "has3d": "c3e994e830c5.json"
  },
  {
   "id": "trek:overworld/medium/plains_cottage",
@@ -33834,20 +17864,6 @@ const STRUCTURES_DATA = [
   "has3d": "432cfbc82790.json"
  },
  {
-  "id": "trek:overworld/rare/portal_sword",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Portal Sword",
-  "name_vi": "Portal Sword",
-  "has3d": "432cfbc82790.json"
- },
- {
   "id": "trek:overworld/rare/pyramide_of_anubis",
   "pack": "Trek",
   "dim": "overworld",
@@ -33860,34 +17876,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pyramide Of Anubis",
   "name_vi": "Pyramide Of Anubis",
   "has3d": "c95f1a290015.json"
- },
- {
-  "id": "trek:overworld/rare/pyramide_of_anubis",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pyramide Of Anubis",
-  "name_vi": "Pyramide Of Anubis",
-  "has3d": "c95f1a290015.json"
- },
- {
-  "id": "trek:overworld/medium/railroad",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Railroad",
-  "name_vi": "Railroad",
-  "has3d": "b9fae2dd59c2.json"
  },
  {
   "id": "trek:overworld/medium/railroad",
@@ -33918,20 +17906,6 @@ const STRUCTURES_DATA = [
   "has3d": "303822a000ff.json"
  },
  {
-  "id": "trek:overworld/medium/ritual",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ritual",
-  "name_vi": "Ritual",
-  "has3d": "303822a000ff.json"
- },
- {
   "id": "trek:overworld/very_common/rocks",
   "pack": "Trek",
   "dim": "overworld",
@@ -33944,34 +17918,6 @@ const STRUCTURES_DATA = [
   "name_en": "Rocks",
   "name_vi": "Rocks",
   "has3d": "467d1c59098f.json"
- },
- {
-  "id": "trek:overworld/very_common/rocks",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rocks",
-  "name_vi": "Rocks",
-  "has3d": "467d1c59098f.json"
- },
- {
-  "id": "trek:overworld/medium/ruine_bateaux",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruine Bateaux",
-  "name_vi": "Ruine Bateaux",
-  "has3d": "56dfff56dae5.json"
  },
  {
   "id": "trek:overworld/medium/ruine_bateaux",
@@ -34002,20 +17948,6 @@ const STRUCTURES_DATA = [
   "has3d": "d5cce1c68721.json"
  },
  {
-  "id": "trek:overworld/medium/ruine_cabane",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruine Cabane",
-  "name_vi": "Ruine Cabane",
-  "has3d": "d5cce1c68721.json"
- },
- {
   "id": "trek:overworld/medium/ruine_tour",
   "pack": "Trek",
   "dim": "overworld",
@@ -34028,34 +17960,6 @@ const STRUCTURES_DATA = [
   "name_en": "Ruine Tour",
   "name_vi": "Ruine Tour",
   "has3d": "8bbafdbc63b6.json"
- },
- {
-  "id": "trek:overworld/medium/ruine_tour",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruine Tour",
-  "name_vi": "Ruine Tour",
-  "has3d": "8bbafdbc63b6.json"
- },
- {
-  "id": "trek:overworld/common/ruins",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ruins",
-  "name_vi": "Ruins",
-  "has3d": "94f8bd15ed1d.json"
  },
  {
   "id": "trek:overworld/common/ruins",
@@ -34086,20 +17990,6 @@ const STRUCTURES_DATA = [
   "has3d": "e26579de01bb.json"
  },
  {
-  "id": "trek:village/savanna",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Savanna",
-  "name_vi": "Savanna",
-  "has3d": "e26579de01bb.json"
- },
- {
   "id": "trek:overworld/medium/ship_pillager",
   "pack": "Trek",
   "dim": "overworld",
@@ -34112,34 +18002,6 @@ const STRUCTURES_DATA = [
   "name_en": "Ship Pillager",
   "name_vi": "Ship Pillager",
   "has3d": "61cebd62e8e2.json"
- },
- {
-  "id": "trek:overworld/medium/ship_pillager",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ship Pillager",
-  "name_vi": "Ship Pillager",
-  "has3d": "61cebd62e8e2.json"
- },
- {
-  "id": "trek:overworld/rare/sleepy_island",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sleepy Island",
-  "name_vi": "Sleepy Island",
-  "has3d": "d06f215cb077.json"
  },
  {
   "id": "trek:overworld/rare/sleepy_island",
@@ -34170,20 +18032,6 @@ const STRUCTURES_DATA = [
   "has3d": "bb7b678fa2d5.json"
  },
  {
-  "id": "trek:overworld/common/small_desert_ruins",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Desert Ruins",
-  "name_vi": "Small Desert Ruins",
-  "has3d": "bb7b678fa2d5.json"
- },
- {
   "id": "trek:overworld/medium/small_pyramide",
   "pack": "Trek",
   "dim": "overworld",
@@ -34196,34 +18044,6 @@ const STRUCTURES_DATA = [
   "name_en": "Small Pyramide",
   "name_vi": "Small Pyramide",
   "has3d": "72a474cd7683.json"
- },
- {
-  "id": "trek:overworld/medium/small_pyramide",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Pyramide",
-  "name_vi": "Small Pyramide",
-  "has3d": "72a474cd7683.json"
- },
- {
-  "id": "trek:overworld/medium/small_red_trade",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Red Trade",
-  "name_vi": "Small Red Trade",
-  "has3d": "975e9c3353cc.json"
  },
  {
   "id": "trek:overworld/medium/small_red_trade",
@@ -34254,20 +18074,6 @@ const STRUCTURES_DATA = [
   "has3d": "99e7ffa5d7ae.json"
  },
  {
-  "id": "trek:overworld/common/small_swamp_ruins",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Small Swamp Ruins",
-  "name_vi": "Small Swamp Ruins",
-  "has3d": "99e7ffa5d7ae.json"
- },
- {
   "id": "trek:overworld/common/smoldering_altar",
   "pack": "Trek",
   "dim": "overworld",
@@ -34280,34 +18086,6 @@ const STRUCTURES_DATA = [
   "name_en": "Smoldering Altar",
   "name_vi": "Smoldering Altar",
   "has3d": "73250f8e5dc5.json"
- },
- {
-  "id": "trek:overworld/common/smoldering_altar",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Smoldering Altar",
-  "name_vi": "Smoldering Altar",
-  "has3d": "73250f8e5dc5.json"
- },
- {
-  "id": "trek:overworld/medium/snow_cottage",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Snow Cottage",
-  "name_vi": "Snow Cottage",
-  "has3d": "158d618abb73.json"
  },
  {
   "id": "trek:overworld/medium/snow_cottage",
@@ -34338,20 +18116,6 @@ const STRUCTURES_DATA = [
   "has3d": "1447b5be83dd.json"
  },
  {
-  "id": "trek:overworld/medium/snowman",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Snowman",
-  "name_vi": "Snowman",
-  "has3d": "1447b5be83dd.json"
- },
- {
   "id": "trek:village/snowy",
   "pack": "Trek",
   "dim": "overworld",
@@ -34364,34 +18128,6 @@ const STRUCTURES_DATA = [
   "name_en": "Snowy",
   "name_vi": "Snowy",
   "has3d": "7d4bac415fc0.json"
- },
- {
-  "id": "trek:village/snowy",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Snowy",
-  "name_vi": "Snowy",
-  "has3d": "7d4bac415fc0.json"
- },
- {
-  "id": "trek:overworld/medium/sorcerers_house",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sorcerers House",
-  "name_vi": "Sorcerers House",
-  "has3d": "a1271f267c81.json"
  },
  {
   "id": "trek:overworld/medium/sorcerers_house",
@@ -34422,20 +18158,6 @@ const STRUCTURES_DATA = [
   "has3d": "c1a7ca9d1f00.json"
  },
  {
-  "id": "trek:overworld/medium/spruce_camp",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce Camp",
-  "name_vi": "Spruce Camp",
-  "has3d": "c1a7ca9d1f00.json"
- },
- {
   "id": "trek:overworld/medium/spruce_cottage",
   "pack": "Trek",
   "dim": "overworld",
@@ -34448,34 +18170,6 @@ const STRUCTURES_DATA = [
   "name_en": "Spruce Cottage",
   "name_vi": "Spruce Cottage",
   "has3d": "bedddbfc04e9.json"
- },
- {
-  "id": "trek:overworld/medium/spruce_cottage",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce Cottage",
-  "name_vi": "Spruce Cottage",
-  "has3d": "bedddbfc04e9.json"
- },
- {
-  "id": "trek:overworld/medium/square_tower",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Square Tower",
-  "name_vi": "Square Tower",
-  "has3d": "a994d4c94185.json"
  },
  {
   "id": "trek:overworld/medium/square_tower",
@@ -34506,20 +18200,6 @@ const STRUCTURES_DATA = [
   "has3d": "7b65e017e642.json"
  },
  {
-  "id": "trek:overworld/medium/star_spike",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Star Spike",
-  "name_vi": "Star Spike",
-  "has3d": "7b65e017e642.json"
- },
- {
   "id": "trek:overworld/medium/stelzen",
   "pack": "Trek",
   "dim": "overworld",
@@ -34532,34 +18212,6 @@ const STRUCTURES_DATA = [
   "name_en": "Stelzen",
   "name_vi": "Stelzen",
   "has3d": "54def9353139.json"
- },
- {
-  "id": "trek:overworld/medium/stelzen",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stelzen",
-  "name_vi": "Stelzen",
-  "has3d": "54def9353139.json"
- },
- {
-  "id": "trek:overworld/medium/stonehedge",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stonehedge",
-  "name_vi": "Stonehedge",
-  "has3d": "c7a865c07248.json"
  },
  {
   "id": "trek:overworld/medium/stonehedge",
@@ -34590,20 +18242,6 @@ const STRUCTURES_DATA = [
   "has3d": "b686da0c5c5c.json"
  },
  {
-  "id": "trek:overworld/medium/strange_house",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Strange House",
-  "name_vi": "Strange House",
-  "has3d": "b686da0c5c5c.json"
- },
- {
   "id": "trek:overworld/common/strange_stone",
   "pack": "Trek",
   "dim": "overworld",
@@ -34616,34 +18254,6 @@ const STRUCTURES_DATA = [
   "name_en": "Strange Stone",
   "name_vi": "Strange Stone",
   "has3d": "7721a9ddedd0.json"
- },
- {
-  "id": "trek:overworld/common/strange_stone",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Strange Stone",
-  "name_vi": "Strange Stone",
-  "has3d": "7721a9ddedd0.json"
- },
- {
-  "id": "trek:overworld/medium/street_vendor_pillager",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Street Vendor Pillager",
-  "name_vi": "Street Vendor Pillager",
-  "has3d": "8acacc950b03.json"
  },
  {
   "id": "trek:overworld/medium/street_vendor_pillager",
@@ -34674,20 +18284,6 @@ const STRUCTURES_DATA = [
   "has3d": "54c7d57f39a8.json"
  },
  {
-  "id": "trek:overworld/medium/street_vendor_stall",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Street Vendor Stall",
-  "name_vi": "Street Vendor Stall",
-  "has3d": "54c7d57f39a8.json"
- },
- {
   "id": "minecraft:stronghold_big",
   "pack": "Trek",
   "dim": "overworld",
@@ -34700,34 +18296,6 @@ const STRUCTURES_DATA = [
   "name_en": "Stronghold Big",
   "name_vi": "Stronghold Big",
   "has3d": "14b0a28122a0.json"
- },
- {
-  "id": "minecraft:stronghold_big",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Stronghold Big",
-  "name_vi": "Stronghold Big",
-  "has3d": "14b0a28122a0.json"
- },
- {
-  "id": "trek:overworld/rare/sunken_city",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Sunken City",
-  "name_vi": "Sunken City",
-  "has3d": "105d3387943b.json"
  },
  {
   "id": "trek:overworld/rare/sunken_city",
@@ -34758,20 +18326,6 @@ const STRUCTURES_DATA = [
   "has3d": "5f022619acb3.json"
  },
  {
-  "id": "trek:village/swamp_vanilla",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Swamp Vanilla",
-  "name_vi": "Swamp Vanilla",
-  "has3d": "5f022619acb3.json"
- },
- {
   "id": "trek:village/taiga",
   "pack": "Trek",
   "dim": "overworld",
@@ -34784,34 +18338,6 @@ const STRUCTURES_DATA = [
   "name_en": "Taiga",
   "name_vi": "Taiga",
   "has3d": "6ea098ddf668.json"
- },
- {
-  "id": "trek:village/taiga",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Taiga",
-  "name_vi": "Taiga",
-  "has3d": "6ea098ddf668.json"
- },
- {
-  "id": "trek:overworld/common/termite_hill",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Termite Hill",
-  "name_vi": "Termite Hill",
-  "has3d": "dc8b087d75df.json"
  },
  {
   "id": "trek:overworld/common/termite_hill",
@@ -34842,20 +18368,6 @@ const STRUCTURES_DATA = [
   "has3d": "2d3e65c6e7cf.json"
  },
  {
-  "id": "trek:overworld/medium/three_finger_ice",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Three Finger Ice",
-  "name_vi": "Three Finger Ice",
-  "has3d": "2d3e65c6e7cf.json"
- },
- {
   "id": "trek:overworld/medium/tour",
   "pack": "Trek",
   "dim": "overworld",
@@ -34868,34 +18380,6 @@ const STRUCTURES_DATA = [
   "name_en": "Tour",
   "name_vi": "Tour",
   "has3d": "d5b4c45a0990.json"
- },
- {
-  "id": "trek:overworld/medium/tour",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Tour",
-  "name_vi": "Tour",
-  "has3d": "d5b4c45a0990.json"
- },
- {
-  "id": "trek:overworld/medium/tour_desert",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Tour Desert",
-  "name_vi": "Tour Desert",
-  "has3d": "407ff9de26a6.json"
  },
  {
   "id": "trek:overworld/medium/tour_desert",
@@ -34926,20 +18410,6 @@ const STRUCTURES_DATA = [
   "has3d": "be7918880906.json"
  },
  {
-  "id": "trek:overworld/medium/tower",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Tower",
-  "name_vi": "Tower",
-  "has3d": "be7918880906.json"
- },
- {
   "id": "trek:overworld/rare/tower_island",
   "pack": "Trek",
   "dim": "overworld",
@@ -34952,34 +18422,6 @@ const STRUCTURES_DATA = [
   "name_en": "Tower Island",
   "name_vi": "Tower Island",
   "has3d": "fa9564f534c4.json"
- },
- {
-  "id": "trek:overworld/rare/tower_island",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Tower Island",
-  "name_vi": "Tower Island",
-  "has3d": "fa9564f534c4.json"
- },
- {
-  "id": "trek:overworld/medium/tower_of_ice",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Tower Of Ice",
-  "name_vi": "Tower Of Ice",
-  "has3d": "5f989b4ca6af.json"
  },
  {
   "id": "trek:overworld/medium/tower_of_ice",
@@ -35010,20 +18452,6 @@ const STRUCTURES_DATA = [
   "has3d": "cfa0b5927bd7.json"
  },
  {
-  "id": "trek:overworld/common/two_woods",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Two Woods",
-  "name_vi": "Two Woods",
-  "has3d": "cfa0b5927bd7.json"
- },
- {
   "id": "trek:overworld/medium/underwater_sword",
   "pack": "Trek",
   "dim": "overworld",
@@ -35036,34 +18464,6 @@ const STRUCTURES_DATA = [
   "name_en": "Underwater Sword",
   "name_vi": "Underwater Sword",
   "has3d": "2df1860c5ca5.json"
- },
- {
-  "id": "trek:overworld/medium/underwater_sword",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Underwater Sword",
-  "name_vi": "Underwater Sword",
-  "has3d": "2df1860c5ca5.json"
- },
- {
-  "id": "trek:overworld/rare/villager_castle",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Villager Castle",
-  "name_vi": "Villager Castle",
-  "has3d": "0a8e1c9bd218.json"
  },
  {
   "id": "trek:overworld/rare/villager_castle",
@@ -35094,20 +18494,6 @@ const STRUCTURES_DATA = [
   "has3d": "5777d33e4472.json"
  },
  {
-  "id": "trek:overworld/rare/villager_fortress",
-  "pack": "Trek",
-  "dim": "nether",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Villager Fortress",
-  "name_vi": "Villager Fortress",
-  "has3d": "5777d33e4472.json"
- },
- {
   "id": "trek:overworld/rare/villager_island",
   "pack": "Trek",
   "dim": "overworld",
@@ -35120,34 +18506,6 @@ const STRUCTURES_DATA = [
   "name_en": "Villager Island",
   "name_vi": "Villager Island",
   "has3d": "4360d81a4a86.json"
- },
- {
-  "id": "trek:overworld/rare/villager_island",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Villager Island",
-  "name_vi": "Villager Island",
-  "has3d": "4360d81a4a86.json"
- },
- {
-  "id": "trek:overworld/medium/wandering_trader_dark_oak",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wandering Trader Dark Oak",
-  "name_vi": "Wandering Trader Dark Oak",
-  "has3d": "e590efe4a828.json"
  },
  {
   "id": "trek:overworld/medium/wandering_trader_dark_oak",
@@ -35178,20 +18536,6 @@ const STRUCTURES_DATA = [
   "has3d": "5e644a662777.json"
  },
  {
-  "id": "trek:overworld/medium/wandering_trader_oak",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wandering Trader Oak",
-  "name_vi": "Wandering Trader Oak",
-  "has3d": "5e644a662777.json"
- },
- {
   "id": "trek:overworld/medium/wandering_trader_spruce",
   "pack": "Trek",
   "dim": "overworld",
@@ -35204,34 +18548,6 @@ const STRUCTURES_DATA = [
   "name_en": "Wandering Trader Spruce",
   "name_vi": "Wandering Trader Spruce",
   "has3d": "3f3764fb491a.json"
- },
- {
-  "id": "trek:overworld/medium/wandering_trader_spruce",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wandering Trader Spruce",
-  "name_vi": "Wandering Trader Spruce",
-  "has3d": "3f3764fb491a.json"
- },
- {
-  "id": "trek:overworld/medium/water_reservoir_pillager",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Water Reservoir Pillager",
-  "name_vi": "Water Reservoir Pillager",
-  "has3d": "72d1da6c5b20.json"
  },
  {
   "id": "trek:overworld/medium/water_reservoir_pillager",
@@ -35262,20 +18578,6 @@ const STRUCTURES_DATA = [
   "has3d": "b9c573e05a7b.json"
  },
  {
-  "id": "trek:overworld/common/well",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Well",
-  "name_vi": "Well",
-  "has3d": "b9c573e05a7b.json"
- },
- {
   "id": "trek:overworld/medium/well_pillager_medium",
   "pack": "Trek",
   "dim": "overworld",
@@ -35288,34 +18590,6 @@ const STRUCTURES_DATA = [
   "name_en": "Well Pillager Medium",
   "name_vi": "Well Pillager Medium",
   "has3d": "95146ab12d8c.json"
- },
- {
-  "id": "trek:overworld/medium/well_pillager_medium",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Well Pillager Medium",
-  "name_vi": "Well Pillager Medium",
-  "has3d": "95146ab12d8c.json"
- },
- {
-  "id": "trek:overworld/common/well_pillager_small",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Well Pillager Small",
-  "name_vi": "Well Pillager Small",
-  "has3d": "be88d6e5f624.json"
  },
  {
   "id": "trek:overworld/common/well_pillager_small",
@@ -35346,20 +18620,6 @@ const STRUCTURES_DATA = [
   "has3d": "dfb304920403.json"
  },
  {
-  "id": "trek:overworld/medium/wild_stone",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wild Stone",
-  "name_vi": "Wild Stone",
-  "has3d": "dfb304920403.json"
- },
- {
   "id": "trek:overworld/medium/witch_tower",
   "pack": "Trek",
   "dim": "overworld",
@@ -35372,34 +18632,6 @@ const STRUCTURES_DATA = [
   "name_en": "Witch Tower",
   "name_vi": "Witch Tower",
   "has3d": "f95df8093055.json"
- },
- {
-  "id": "trek:overworld/medium/witch_tower",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Witch Tower",
-  "name_vi": "Witch Tower",
-  "has3d": "f95df8093055.json"
- },
- {
-  "id": "trek:overworld/rare/wooden_manor",
-  "pack": "Trek",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wooden Manor",
-  "name_vi": "Wooden Manor",
-  "has3d": "3b6f3099f3e4.json"
  },
  {
   "id": "trek:overworld/rare/wooden_manor",
@@ -35430,20 +18662,6 @@ const STRUCTURES_DATA = [
   "has3d": "2228a236f728.json"
  },
  {
-  "id": "u_sea:raft/temperate/beam",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Beam",
-  "name_vi": "Beam",
-  "has3d": "2228a236f728.json"
- },
- {
   "id": "u_sea:raft/temperate/box",
   "pack": "U-Sea",
   "dim": "overworld",
@@ -35456,34 +18674,6 @@ const STRUCTURES_DATA = [
   "name_en": "Box",
   "name_vi": "Box",
   "has3d": "b5697152f904.json"
- },
- {
-  "id": "u_sea:raft/temperate/box",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Box",
-  "name_vi": "Box",
-  "has3d": "b5697152f904.json"
- },
- {
-  "id": "u_sea:raft/warm/cone_skipper",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Cone Skipper",
-  "name_vi": "Cone Skipper",
-  "has3d": "dae7404923b4.json"
  },
  {
   "id": "u_sea:raft/warm/cone_skipper",
@@ -35514,20 +18704,6 @@ const STRUCTURES_DATA = [
   "has3d": "607ffb58dd6c.json"
  },
  {
-  "id": "u_sea:raft/cold/cone_tide_breaker",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Cone Tide Breaker",
-  "name_vi": "Cone Tide Breaker",
-  "has3d": "607ffb58dd6c.json"
- },
- {
   "id": "u_sea:ship/cove",
   "pack": "U-Sea",
   "dim": "overworld",
@@ -35540,34 +18716,6 @@ const STRUCTURES_DATA = [
   "name_en": "Cove",
   "name_vi": "Cove",
   "has3d": "f93b2f9a7fc7.json"
- },
- {
-  "id": "u_sea:ship/cove",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Cove",
-  "name_vi": "Cove",
-  "has3d": "f93b2f9a7fc7.json"
- },
- {
-  "id": "u_sea:island/cold/glacier",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Glacier",
-  "name_vi": "Glacier",
-  "has3d": "f1af090cba1a.json"
  },
  {
   "id": "u_sea:island/cold/glacier",
@@ -35598,20 +18746,6 @@ const STRUCTURES_DATA = [
   "has3d": "5f749db831bf.json"
  },
  {
-  "id": "u_sea:raft/temperate/grid",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Grid",
-  "name_vi": "Grid",
-  "has3d": "5f749db831bf.json"
- },
- {
   "id": "u_sea:island/warm/hill",
   "pack": "U-Sea",
   "dim": "overworld",
@@ -35624,34 +18758,6 @@ const STRUCTURES_DATA = [
   "name_en": "Hill",
   "name_vi": "Hill",
   "has3d": "fdfbd40e1a8f.json"
- },
- {
-  "id": "u_sea:island/warm/hill",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Hill",
-  "name_vi": "Hill",
-  "has3d": "fdfbd40e1a8f.json"
- },
- {
-  "id": "u_sea:ship/hopper",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Hopper",
-  "name_vi": "Hopper",
-  "has3d": "8b861248e0a5.json"
  },
  {
   "id": "u_sea:ship/hopper",
@@ -35682,20 +18788,6 @@ const STRUCTURES_DATA = [
   "has3d": "27590c9a1ff9.json"
  },
  {
-  "id": "u_sea:lighthouse",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Lighthouse",
-  "name_vi": "Lighthouse",
-  "has3d": "27590c9a1ff9.json"
- },
- {
   "id": "u_sea:raft/warm/skipper",
   "pack": "U-Sea",
   "dim": "overworld",
@@ -35708,34 +18800,6 @@ const STRUCTURES_DATA = [
   "name_en": "Skipper",
   "name_vi": "Skipper",
   "has3d": "ff83b54f93fb.json"
- },
- {
-  "id": "u_sea:raft/warm/skipper",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Skipper",
-  "name_vi": "Skipper",
-  "has3d": "ff83b54f93fb.json"
- },
- {
-  "id": "u_sea:raft/cold/tide_breaker",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Tide Breaker",
-  "name_vi": "Tide Breaker",
-  "has3d": "252dc12cc963.json"
  },
  {
   "id": "u_sea:raft/cold/tide_breaker",
@@ -35766,20 +18830,6 @@ const STRUCTURES_DATA = [
   "has3d": "e239d715b114.json"
  },
  {
-  "id": "u_sea:island/warm/tower",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Ocean / Coast",
-  "where_vi": "Đại dương / Bờ biển",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Tower",
-  "name_vi": "Tower",
-  "has3d": "e239d715b114.json"
- },
- {
   "id": "u_sea:raft/cold/wide_tide_breaker",
   "pack": "U-Sea",
   "dim": "overworld",
@@ -35792,34 +18842,6 @@ const STRUCTURES_DATA = [
   "name_en": "Wide Tide Breaker",
   "name_vi": "Wide Tide Breaker",
   "has3d": "24130dbaacc4.json"
- },
- {
-  "id": "u_sea:raft/cold/wide_tide_breaker",
-  "pack": "U-Sea",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Wide Tide Breaker",
-  "name_vi": "Wide Tide Breaker",
-  "has3d": "24130dbaacc4.json"
- },
- {
-  "id": "wabi_sabi_structures:abandoned_small_castle",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Abandoned Small Castle",
-  "name_vi": "Abandoned Small Castle",
-  "has3d": "6a1011f8a27f.json"
  },
  {
   "id": "wabi_sabi_structures:abandoned_small_castle",
@@ -35850,20 +18872,6 @@ const STRUCTURES_DATA = [
   "has3d": "aff94da5f067.json"
  },
  {
-  "id": "wabi_sabi_structures:badlands_dwelling",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Badlands Dwelling",
-  "name_vi": "Badlands Dwelling",
-  "has3d": "aff94da5f067.json"
- },
- {
   "id": "wabi_sabi_structures:bamboo_firework_site",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -35876,34 +18884,6 @@ const STRUCTURES_DATA = [
   "name_en": "Bamboo Firework Site",
   "name_vi": "Bamboo Firework Site",
   "has3d": "4e7311ed45f5.json"
- },
- {
-  "id": "wabi_sabi_structures:bamboo_firework_site",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bamboo Firework Site",
-  "name_vi": "Bamboo Firework Site",
-  "has3d": "4e7311ed45f5.json"
- },
- {
-  "id": "wabi_sabi_structures:basalt_castle",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Basalt Deltas",
-  "where_vi": "Đồng bằng Bazan",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Basalt Castle",
-  "name_vi": "Basalt Castle",
-  "has3d": "c3b7d892f0a6.json"
  },
  {
   "id": "wabi_sabi_structures:basalt_castle",
@@ -35934,20 +18914,6 @@ const STRUCTURES_DATA = [
   "has3d": "be51821fb191.json"
  },
  {
-  "id": "wabi_sabi_structures:basalt_factory_ruin",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Basalt Deltas",
-  "where_vi": "Đồng bằng Bazan",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Basalt Factory Ruin",
-  "name_vi": "Basalt Factory Ruin",
-  "has3d": "be51821fb191.json"
- },
- {
   "id": "wabi_sabi_structures:bat_monolith",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -35960,34 +18926,6 @@ const STRUCTURES_DATA = [
   "name_en": "Bat Monolith",
   "name_vi": "Bat Monolith",
   "has3d": "0c236bb32947.json"
- },
- {
-  "id": "wabi_sabi_structures:bat_monolith",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Bat Monolith",
-  "name_vi": "Bat Monolith",
-  "has3d": "0c236bb32947.json"
- },
- {
-  "id": "wabi_sabi_structures:bee_farm_cherry",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bee Farm Cherry",
-  "name_vi": "Bee Farm Cherry",
-  "has3d": "ca2f448336c0.json"
  },
  {
   "id": "wabi_sabi_structures:bee_farm_cherry",
@@ -36018,20 +18956,6 @@ const STRUCTURES_DATA = [
   "has3d": "d588e92891ac.json"
  },
  {
-  "id": "wabi_sabi_structures:bee_farm_forest",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Bee Farm Forest",
-  "name_vi": "Bee Farm Forest",
-  "has3d": "d588e92891ac.json"
- },
- {
   "id": "wabi_sabi_structures:beetroot_patch",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -36044,34 +18968,6 @@ const STRUCTURES_DATA = [
   "name_en": "Beetroot Patch",
   "name_vi": "Beetroot Patch",
   "has3d": "cb755579bada.json"
- },
- {
-  "id": "wabi_sabi_structures:beetroot_patch",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Beetroot Patch",
-  "name_vi": "Beetroot Patch",
-  "has3d": "cb755579bada.json"
- },
- {
-  "id": "wabi_sabi_structures:birch_mushroom_cave",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Birch Mushroom Cave",
-  "name_vi": "Birch Mushroom Cave",
-  "has3d": "47eb6e761eb4.json"
  },
  {
   "id": "wabi_sabi_structures:birch_mushroom_cave",
@@ -36102,20 +18998,6 @@ const STRUCTURES_DATA = [
   "has3d": "849e5d260795.json"
  },
  {
-  "id": "wabi_sabi_structures:candlemaker_house",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Candlemaker House",
-  "name_vi": "Candlemaker House",
-  "has3d": "849e5d260795.json"
- },
- {
   "id": "wabi_sabi_structures:carrot_patch",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -36128,34 +19010,6 @@ const STRUCTURES_DATA = [
   "name_en": "Carrot Patch",
   "name_vi": "Carrot Patch",
   "has3d": "c2b1919b9efa.json"
- },
- {
-  "id": "wabi_sabi_structures:carrot_patch",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Carrot Patch",
-  "name_vi": "Carrot Patch",
-  "has3d": "c2b1919b9efa.json"
- },
- {
-  "id": "wabi_sabi_structures:chorus_orchard",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Chorus Orchard",
-  "name_vi": "Chorus Orchard",
-  "has3d": "99e520879d61.json"
  },
  {
   "id": "wabi_sabi_structures:chorus_orchard",
@@ -36186,20 +19040,6 @@ const STRUCTURES_DATA = [
   "has3d": "8df037a03799.json"
  },
  {
-  "id": "wabi_sabi_structures:concrete_mill_ruins_desert",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Desert",
-  "where_vi": "Sa mạc",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Concrete Mill Ruins Desert",
-  "name_vi": "Concrete Mill Ruins Desert",
-  "has3d": "8df037a03799.json"
- },
- {
   "id": "wabi_sabi_structures:concrete_mill_ruins_shore",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -36212,34 +19052,6 @@ const STRUCTURES_DATA = [
   "name_en": "Concrete Mill Ruins Shore",
   "name_vi": "Concrete Mill Ruins Shore",
   "has3d": "19cee5a6a71c.json"
- },
- {
-  "id": "wabi_sabi_structures:concrete_mill_ruins_shore",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Concrete Mill Ruins Shore",
-  "name_vi": "Concrete Mill Ruins Shore",
-  "has3d": "19cee5a6a71c.json"
- },
- {
-  "id": "wabi_sabi_structures:dark_witch_keep",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dark Witch Keep",
-  "name_vi": "Dark Witch Keep",
-  "has3d": "b30aea6e2fb0.json"
  },
  {
   "id": "wabi_sabi_structures:dark_witch_keep",
@@ -36270,20 +19082,6 @@ const STRUCTURES_DATA = [
   "has3d": "b3d346972c9c.json"
  },
  {
-  "id": "wabi_sabi_structures:effigy_patch_forest",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Effigy Patch Forest",
-  "name_vi": "Effigy Patch Forest",
-  "has3d": "b3d346972c9c.json"
- },
- {
   "id": "wabi_sabi_structures:effigy_patch_jungle",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -36296,34 +19094,6 @@ const STRUCTURES_DATA = [
   "name_en": "Effigy Patch Jungle",
   "name_vi": "Effigy Patch Jungle",
   "has3d": "4d99d5aafec4.json"
- },
- {
-  "id": "wabi_sabi_structures:effigy_patch_jungle",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Jungle",
-  "where_vi": "Rừng rậm nhiệt đới",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Effigy Patch Jungle",
-  "name_vi": "Effigy Patch Jungle",
-  "has3d": "4d99d5aafec4.json"
- },
- {
-  "id": "wabi_sabi_structures:effigy_patch_mushroom",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Effigy Patch Mushroom",
-  "name_vi": "Effigy Patch Mushroom",
-  "has3d": "953d683b4aac.json"
  },
  {
   "id": "wabi_sabi_structures:effigy_patch_mushroom",
@@ -36354,20 +19124,6 @@ const STRUCTURES_DATA = [
   "has3d": "ada115933654.json"
  },
  {
-  "id": "wabi_sabi_structures:effigy_patch_savanna",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Effigy Patch Savanna",
-  "name_vi": "Effigy Patch Savanna",
-  "has3d": "ada115933654.json"
- },
- {
   "id": "wabi_sabi_structures:effigy_patch_swamp",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -36380,34 +19136,6 @@ const STRUCTURES_DATA = [
   "name_en": "Effigy Patch Swamp",
   "name_vi": "Effigy Patch Swamp",
   "has3d": "ced6082cdeb4.json"
- },
- {
-  "id": "wabi_sabi_structures:effigy_patch_swamp",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Swamp / Mangrove",
-  "where_vi": "Đầm lầy / Rừng ngập mặn",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Effigy Patch Swamp",
-  "name_vi": "Effigy Patch Swamp",
-  "has3d": "ced6082cdeb4.json"
- },
- {
-  "id": "wabi_sabi_structures:ender_claw",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ender Claw",
-  "name_vi": "Ender Claw",
-  "has3d": "c0a60010fd4b.json"
  },
  {
   "id": "wabi_sabi_structures:ender_claw",
@@ -36438,20 +19166,6 @@ const STRUCTURES_DATA = [
   "has3d": "849e2e97a0c7.json"
  },
  {
-  "id": "wabi_sabi_structures:firewatch_tower",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Firewatch Tower",
-  "name_vi": "Firewatch Tower",
-  "has3d": "849e2e97a0c7.json"
- },
- {
   "id": "wabi_sabi_structures:forgotten_remnants",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -36464,34 +19178,6 @@ const STRUCTURES_DATA = [
   "name_en": "Forgotten Remnants",
   "name_vi": "Forgotten Remnants",
   "has3d": "988399fa872b.json"
- },
- {
-  "id": "wabi_sabi_structures:forgotten_remnants",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Forgotten Remnants",
-  "name_vi": "Forgotten Remnants",
-  "has3d": "988399fa872b.json"
- },
- {
-  "id": "wabi_sabi_structures:frost_reactor_plant",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Frost Reactor Plant",
-  "name_vi": "Frost Reactor Plant",
-  "has3d": "93d5da70ef7b.json"
  },
  {
   "id": "wabi_sabi_structures:frost_reactor_plant",
@@ -36522,20 +19208,6 @@ const STRUCTURES_DATA = [
   "has3d": "181facd4830d.json"
  },
  {
-  "id": "wabi_sabi_structures:gallows",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Gallows",
-  "name_vi": "Gallows",
-  "has3d": "181facd4830d.json"
- },
- {
   "id": "wabi_sabi_structures:hellish_orphanage",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -36548,34 +19220,6 @@ const STRUCTURES_DATA = [
   "name_en": "Hellish Orphanage",
   "name_vi": "Hellish Orphanage",
   "has3d": "4dd6ce22ec79.json"
- },
- {
-  "id": "wabi_sabi_structures:hellish_orphanage",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Hellish Orphanage",
-  "name_vi": "Hellish Orphanage",
-  "has3d": "4dd6ce22ec79.json"
- },
- {
-  "id": "wabi_sabi_structures:hide_tannery_cherry",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Cherry Grove",
-  "where_vi": "Rừng Anh Đào",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Hide Tannery Cherry",
-  "name_vi": "Hide Tannery Cherry",
-  "has3d": "604d4a441987.json"
  },
  {
   "id": "wabi_sabi_structures:hide_tannery_cherry",
@@ -36606,20 +19250,6 @@ const STRUCTURES_DATA = [
   "has3d": "355bba5d2370.json"
  },
  {
-  "id": "wabi_sabi_structures:hide_tannery_oak",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Hide Tannery Oak",
-  "name_vi": "Hide Tannery Oak",
-  "has3d": "355bba5d2370.json"
- },
- {
   "id": "wabi_sabi_structures:howlers_garrison",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -36632,34 +19262,6 @@ const STRUCTURES_DATA = [
   "name_en": "Howlers Garrison",
   "name_vi": "Howlers Garrison",
   "has3d": "1bc3623cf586.json"
- },
- {
-  "id": "wabi_sabi_structures:howlers_garrison",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Howlers Garrison",
-  "name_vi": "Howlers Garrison",
-  "has3d": "1bc3623cf586.json"
- },
- {
-  "id": "wabi_sabi_structures:ice_shanty",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Ice Shanty",
-  "name_vi": "Ice Shanty",
-  "has3d": "372ee8acfcf2.json"
  },
  {
   "id": "wabi_sabi_structures:ice_shanty",
@@ -36690,20 +19292,6 @@ const STRUCTURES_DATA = [
   "has3d": "5da985938620.json"
  },
  {
-  "id": "wabi_sabi_structures:infested_castle_stony",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Infested Castle Stony",
-  "name_vi": "Infested Castle Stony",
-  "has3d": "5da985938620.json"
- },
- {
   "id": "wabi_sabi_structures:lighthouse",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -36716,34 +19304,6 @@ const STRUCTURES_DATA = [
   "name_en": "Lighthouse",
   "name_vi": "Lighthouse",
   "has3d": "213aa51c194d.json"
- },
- {
-  "id": "wabi_sabi_structures:lighthouse",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Lighthouse",
-  "name_vi": "Lighthouse",
-  "has3d": "213aa51c194d.json"
- },
- {
-  "id": "wabi_sabi_structures:llama_sanctuary_hills",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Mountains / Peaks",
-  "where_vi": "Núi cao",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Llama Sanctuary Hills",
-  "name_vi": "Llama Sanctuary Hills",
-  "has3d": "cb7764d1a391.json"
  },
  {
   "id": "wabi_sabi_structures:llama_sanctuary_hills",
@@ -36774,20 +19334,6 @@ const STRUCTURES_DATA = [
   "has3d": "f68af308e101.json"
  },
  {
-  "id": "wabi_sabi_structures:llama_sanctuary_plateau",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Llama Sanctuary Plateau",
-  "name_vi": "Llama Sanctuary Plateau",
-  "has3d": "f68af308e101.json"
- },
- {
   "id": "wabi_sabi_structures:lost_foot",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -36800,34 +19346,6 @@ const STRUCTURES_DATA = [
   "name_en": "Lost Foot",
   "name_vi": "Lost Foot",
   "has3d": "d3ecabaad154.json"
- },
- {
-  "id": "wabi_sabi_structures:lost_foot",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Lost Foot",
-  "name_vi": "Lost Foot",
-  "has3d": "d3ecabaad154.json"
- },
- {
-  "id": "wabi_sabi_structures:lumpy_tower",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Lumpy Tower",
-  "name_vi": "Lumpy Tower",
-  "has3d": "824ed918ccd0.json"
  },
  {
   "id": "wabi_sabi_structures:lumpy_tower",
@@ -36858,20 +19376,6 @@ const STRUCTURES_DATA = [
   "has3d": "a9efa6cacff2.json"
  },
  {
-  "id": "wabi_sabi_structures:marine_observation_hub",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "fluid_springs",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Marine Observation Hub",
-  "name_vi": "Marine Observation Hub",
-  "has3d": "a9efa6cacff2.json"
- },
- {
   "id": "wabi_sabi_structures:melon_field",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -36884,34 +19388,6 @@ const STRUCTURES_DATA = [
   "name_en": "Melon Field",
   "name_vi": "Melon Field",
   "has3d": "12ca5613299e.json"
- },
- {
-  "id": "wabi_sabi_structures:melon_field",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Melon Field",
-  "name_vi": "Melon Field",
-  "has3d": "12ca5613299e.json"
- },
- {
-  "id": "wabi_sabi_structures:melon_patch",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Melon Patch",
-  "name_vi": "Melon Patch",
-  "has3d": "a9dd2f622559.json"
  },
  {
   "id": "wabi_sabi_structures:melon_patch",
@@ -36942,20 +19418,6 @@ const STRUCTURES_DATA = [
   "has3d": "cf677af46551.json"
  },
  {
-  "id": "wabi_sabi_structures:memorial_of_tonkis",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Memorial Of Tonkis",
-  "name_vi": "Memorial Of Tonkis",
-  "has3d": "cf677af46551.json"
- },
- {
   "id": "wabi_sabi_structures:monster_egg",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -36968,34 +19430,6 @@ const STRUCTURES_DATA = [
   "name_en": "Monster Egg",
   "name_vi": "Monster Egg",
   "has3d": "58ffa9178064.json"
- },
- {
-  "id": "wabi_sabi_structures:monster_egg",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Monster Egg",
-  "name_vi": "Monster Egg",
-  "has3d": "58ffa9178064.json"
- },
- {
-  "id": "wabi_sabi_structures:monster_egg_banquet",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Monster Egg Banquet",
-  "name_vi": "Monster Egg Banquet",
-  "has3d": "ce3c4746a9b0.json"
  },
  {
   "id": "wabi_sabi_structures:monster_egg_banquet",
@@ -37026,20 +19460,6 @@ const STRUCTURES_DATA = [
   "has3d": "1b84badadc3b.json"
  },
  {
-  "id": "wabi_sabi_structures:moss_blob",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Moss Blob",
-  "name_vi": "Moss Blob",
-  "has3d": "1b84badadc3b.json"
- },
- {
   "id": "wabi_sabi_structures:mossy_roof_house",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -37052,34 +19472,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mossy Roof House",
   "name_vi": "Mossy Roof House",
   "has3d": "7a194fb4ba12.json"
- },
- {
-  "id": "wabi_sabi_structures:mossy_roof_house",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mossy Roof House",
-  "name_vi": "Mossy Roof House",
-  "has3d": "7a194fb4ba12.json"
- },
- {
-  "id": "wabi_sabi_structures:mossy_roof_shed",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mossy Roof Shed",
-  "name_vi": "Mossy Roof Shed",
-  "has3d": "b640b58067bb.json"
  },
  {
   "id": "wabi_sabi_structures:mossy_roof_shed",
@@ -37110,20 +19502,6 @@ const STRUCTURES_DATA = [
   "has3d": "3816ea289382.json"
  },
  {
-  "id": "wabi_sabi_structures:muddy_badlands_well",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Badlands",
-  "where_vi": "Đồi Đất Đỏ (Badlands)",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Muddy Badlands Well",
-  "name_vi": "Muddy Badlands Well",
-  "has3d": "3816ea289382.json"
- },
- {
   "id": "wabi_sabi_structures:mushroom_house",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -37136,34 +19514,6 @@ const STRUCTURES_DATA = [
   "name_en": "Mushroom House",
   "name_vi": "Mushroom House",
   "has3d": "8b8d6861635d.json"
- },
- {
-  "id": "wabi_sabi_structures:mushroom_house",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Mushroom Island",
-  "where_vi": "Đảo Nấm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Mushroom House",
-  "name_vi": "Mushroom House",
-  "has3d": "8b8d6861635d.json"
- },
- {
-  "id": "wabi_sabi_structures:obsidian_egg",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Obsidian Egg",
-  "name_vi": "Obsidian Egg",
-  "has3d": "3a6fa75ffb9f.json"
  },
  {
   "id": "wabi_sabi_structures:obsidian_egg",
@@ -37194,20 +19544,6 @@ const STRUCTURES_DATA = [
   "has3d": "69f59ae40680.json"
  },
  {
-  "id": "wabi_sabi_structures:old_fort",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Old Fort",
-  "name_vi": "Old Fort",
-  "has3d": "69f59ae40680.json"
- },
- {
   "id": "wabi_sabi_structures:old_stable",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -37220,34 +19556,6 @@ const STRUCTURES_DATA = [
   "name_en": "Old Stable",
   "name_vi": "Old Stable",
   "has3d": "a0e707d1af71.json"
- },
- {
-  "id": "wabi_sabi_structures:old_stable",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Old Stable",
-  "name_vi": "Old Stable",
-  "has3d": "a0e707d1af71.json"
- },
- {
-  "id": "wabi_sabi_structures:old_tiny_house",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Old Tiny House",
-  "name_vi": "Old Tiny House",
-  "has3d": "0c9debae1d00.json"
  },
  {
   "id": "wabi_sabi_structures:old_tiny_house",
@@ -37278,20 +19586,6 @@ const STRUCTURES_DATA = [
   "has3d": "67c852854e50.json"
  },
  {
-  "id": "wabi_sabi_structures:potato_patch",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Potato Patch",
-  "name_vi": "Potato Patch",
-  "has3d": "67c852854e50.json"
- },
- {
   "id": "wabi_sabi_structures:pumpkin_field",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -37304,34 +19598,6 @@ const STRUCTURES_DATA = [
   "name_en": "Pumpkin Field",
   "name_vi": "Pumpkin Field",
   "has3d": "b51f41575516.json"
- },
- {
-  "id": "wabi_sabi_structures:pumpkin_field",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pumpkin Field",
-  "name_vi": "Pumpkin Field",
-  "has3d": "b51f41575516.json"
- },
- {
-  "id": "wabi_sabi_structures:pumpkin_patch",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Pumpkin Patch",
-  "name_vi": "Pumpkin Patch",
-  "has3d": "5d841996d58e.json"
  },
  {
   "id": "wabi_sabi_structures:pumpkin_patch",
@@ -37362,20 +19628,6 @@ const STRUCTURES_DATA = [
   "has3d": "4e1f355deb91.json"
  },
  {
-  "id": "wabi_sabi_structures:river_boat",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "River Boat",
-  "name_vi": "River Boat",
-  "has3d": "4e1f355deb91.json"
- },
- {
   "id": "wabi_sabi_structures:rot_tree",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -37388,34 +19640,6 @@ const STRUCTURES_DATA = [
   "name_en": "Rot Tree",
   "name_vi": "Rot Tree",
   "has3d": "dd2eddc96370.json"
- },
- {
-  "id": "wabi_sabi_structures:rot_tree",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Rot Tree",
-  "name_vi": "Rot Tree",
-  "has3d": "dd2eddc96370.json"
- },
- {
-  "id": "wabi_sabi_structures:sand_ship",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sand Ship",
-  "name_vi": "Sand Ship",
-  "has3d": "52824877d557.json"
  },
  {
   "id": "wabi_sabi_structures:sand_ship",
@@ -37446,20 +19670,6 @@ const STRUCTURES_DATA = [
   "has3d": "458e93ad3a94.json"
  },
  {
-  "id": "wabi_sabi_structures:shrine_of_preservation",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Shrine Of Preservation",
-  "name_vi": "Shrine Of Preservation",
-  "has3d": "458e93ad3a94.json"
- },
- {
   "id": "wabi_sabi_structures:sphinx_hidey_hole_icy",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -37472,34 +19682,6 @@ const STRUCTURES_DATA = [
   "name_en": "Sphinx Hidey Hole Icy",
   "name_vi": "Sphinx Hidey Hole Icy",
   "has3d": "4aebe46a2f69.json"
- },
- {
-  "id": "wabi_sabi_structures:sphinx_hidey_hole_icy",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sphinx Hidey Hole Icy",
-  "name_vi": "Sphinx Hidey Hole Icy",
-  "has3d": "4aebe46a2f69.json"
- },
- {
-  "id": "wabi_sabi_structures:sphinx_hidey_hole_sandy",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Sphinx Hidey Hole Sandy",
-  "name_vi": "Sphinx Hidey Hole Sandy",
-  "has3d": "76f8b95b8506.json"
  },
  {
   "id": "wabi_sabi_structures:sphinx_hidey_hole_sandy",
@@ -37530,20 +19712,6 @@ const STRUCTURES_DATA = [
   "has3d": "384037d78949.json"
  },
  {
-  "id": "wabi_sabi_structures:spider_cellar",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Spider Cellar",
-  "name_vi": "Spider Cellar",
-  "has3d": "384037d78949.json"
- },
- {
   "id": "wabi_sabi_structures:spruce_berry_farm",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -37556,34 +19724,6 @@ const STRUCTURES_DATA = [
   "name_en": "Spruce Berry Farm",
   "name_vi": "Spruce Berry Farm",
   "has3d": "68352052759f.json"
- },
- {
-  "id": "wabi_sabi_structures:spruce_berry_farm",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce Berry Farm",
-  "name_vi": "Spruce Berry Farm",
-  "has3d": "68352052759f.json"
- },
- {
-  "id": "wabi_sabi_structures:spruce_cabin",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Spruce Cabin",
-  "name_vi": "Spruce Cabin",
-  "has3d": "df999d91bb75.json"
  },
  {
   "id": "wabi_sabi_structures:spruce_cabin",
@@ -37614,20 +19754,6 @@ const STRUCTURES_DATA = [
   "has3d": "2599a3d0d279.json"
  },
  {
-  "id": "wabi_sabi_structures:strider_stable",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Strider Stable",
-  "name_vi": "Strider Stable",
-  "has3d": "2599a3d0d279.json"
- },
- {
   "id": "wabi_sabi_structures:sunken_steamboat",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -37640,34 +19766,6 @@ const STRUCTURES_DATA = [
   "name_en": "Sunken Steamboat",
   "name_vi": "Sunken Steamboat",
   "has3d": "caaedfd41deb.json"
- },
- {
-  "id": "wabi_sabi_structures:sunken_steamboat",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Ocean / Sea",
-  "layer_vi": "Biển / Dưới nước",
-  "name_en": "Sunken Steamboat",
-  "name_vi": "Sunken Steamboat",
-  "has3d": "caaedfd41deb.json"
- },
- {
-  "id": "wabi_sabi_structures:tall_birch_house",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Birch Forest",
-  "where_vi": "Rừng Bạch dương",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Tall Birch House",
-  "name_vi": "Tall Birch House",
-  "has3d": "e1b20be853bf.json"
  },
  {
   "id": "wabi_sabi_structures:tall_birch_house",
@@ -37698,20 +19796,6 @@ const STRUCTURES_DATA = [
   "has3d": "aa44eb23d8de.json"
  },
  {
-  "id": "wabi_sabi_structures:totem_pole",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Totem Pole",
-  "name_vi": "Totem Pole",
-  "has3d": "aa44eb23d8de.json"
- },
- {
   "id": "wabi_sabi_structures:tree_cage",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -37724,34 +19808,6 @@ const STRUCTURES_DATA = [
   "name_en": "Tree Cage",
   "name_vi": "Tree Cage",
   "has3d": "a19260bf9f5a.json"
- },
- {
-  "id": "wabi_sabi_structures:tree_cage",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Tree Cage",
-  "name_vi": "Tree Cage",
-  "has3d": "a19260bf9f5a.json"
- },
- {
-  "id": "wabi_sabi_structures:turtle_soup_kitchen",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Turtle Soup Kitchen",
-  "name_vi": "Turtle Soup Kitchen",
-  "has3d": "a24b49b755df.json"
  },
  {
   "id": "wabi_sabi_structures:turtle_soup_kitchen",
@@ -37782,20 +19838,6 @@ const STRUCTURES_DATA = [
   "has3d": "4468a5da5276.json"
  },
  {
-  "id": "wabi_sabi_structures:vigilante_fort",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Vigilante Fort",
-  "name_vi": "Vigilante Fort",
-  "has3d": "4468a5da5276.json"
- },
- {
   "id": "wabi_sabi_structures:wandering_trader_cart_cold",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -37808,34 +19850,6 @@ const STRUCTURES_DATA = [
   "name_en": "Wandering Trader Cart Cold",
   "name_vi": "Wandering Trader Cart Cold",
   "has3d": "28a70ec9f04c.json"
- },
- {
-  "id": "wabi_sabi_structures:wandering_trader_cart_cold",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Snowy / Cold",
-  "where_vi": "Vùng tuyết / Băng giá",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wandering Trader Cart Cold",
-  "name_vi": "Wandering Trader Cart Cold",
-  "has3d": "28a70ec9f04c.json"
- },
- {
-  "id": "wabi_sabi_structures:wandering_trader_cart_temperate",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wandering Trader Cart Temperate",
-  "name_vi": "Wandering Trader Cart Temperate",
-  "has3d": "e118bafd870f.json"
  },
  {
   "id": "wabi_sabi_structures:wandering_trader_cart_temperate",
@@ -37866,20 +19880,6 @@ const STRUCTURES_DATA = [
   "has3d": "dba19700cb2e.json"
  },
  {
-  "id": "wabi_sabi_structures:warped_ender_claw",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "underground_decoration",
-  "spread": "0.65x",
-  "where_en": "Warped Forest",
-  "where_vi": "Rừng Dị Biến (Nether)",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Warped Ender Claw",
-  "name_vi": "Warped Ender Claw",
-  "has3d": "dba19700cb2e.json"
- },
- {
   "id": "wabi_sabi_structures:water_tower_dark_oak",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -37892,34 +19892,6 @@ const STRUCTURES_DATA = [
   "name_en": "Water Tower Dark Oak",
   "name_vi": "Water Tower Dark Oak",
   "has3d": "118eb3e15e11.json"
- },
- {
-  "id": "wabi_sabi_structures:water_tower_dark_oak",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Dark Forest",
-  "where_vi": "Rừng sẫm",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Water Tower Dark Oak",
-  "name_vi": "Water Tower Dark Oak",
-  "has3d": "118eb3e15e11.json"
- },
- {
-  "id": "wabi_sabi_structures:water_tower_forest",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Water Tower Forest",
-  "name_vi": "Water Tower Forest",
-  "has3d": "bbe6c5be4986.json"
  },
  {
   "id": "wabi_sabi_structures:water_tower_forest",
@@ -37950,20 +19922,6 @@ const STRUCTURES_DATA = [
   "has3d": "e70dbb8ab780.json"
  },
  {
-  "id": "wabi_sabi_structures:water_tower_oak",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Forest",
-  "where_vi": "Rừng cây",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Water Tower Oak",
-  "name_vi": "Water Tower Oak",
-  "has3d": "e70dbb8ab780.json"
- },
- {
   "id": "wabi_sabi_structures:water_tower_savanna",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -37976,34 +19934,6 @@ const STRUCTURES_DATA = [
   "name_en": "Water Tower Savanna",
   "name_vi": "Water Tower Savanna",
   "has3d": "1816ebf3ae3c.json"
- },
- {
-  "id": "wabi_sabi_structures:water_tower_savanna",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Savanna",
-  "where_vi": "Thảo nguyên Savanna",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Water Tower Savanna",
-  "name_vi": "Water Tower Savanna",
-  "has3d": "1816ebf3ae3c.json"
- },
- {
-  "id": "wabi_sabi_structures:water_tower_spruce",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Taiga / Spruce",
-  "where_vi": "Rừng Taiga / Vân sam",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Water Tower Spruce",
-  "name_vi": "Water Tower Spruce",
-  "has3d": "d271ccfb4e6c.json"
  },
  {
   "id": "wabi_sabi_structures:water_tower_spruce",
@@ -38034,20 +19964,6 @@ const STRUCTURES_DATA = [
   "has3d": "2ab1314f297c.json"
  },
  {
-  "id": "wabi_sabi_structures:wheat_patch",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Wheat Patch",
-  "name_vi": "Wheat Patch",
-  "has3d": "2ab1314f297c.json"
- },
- {
   "id": "wabi_sabi_structures:woody_camp",
   "pack": "Wabi-Sabi",
   "dim": "overworld",
@@ -38060,34 +19976,6 @@ const STRUCTURES_DATA = [
   "name_en": "Woody Camp",
   "name_vi": "Woody Camp",
   "has3d": "40c87e1b7e58.json"
- },
- {
-  "id": "wabi_sabi_structures:woody_camp",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Woody Camp",
-  "name_vi": "Woody Camp",
-  "has3d": "40c87e1b7e58.json"
- },
- {
-  "id": "wabi_sabi_structures:xocolatl_farm",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Xocolatl Farm",
-  "name_vi": "Xocolatl Farm",
-  "has3d": "227dd770a805.json"
  },
  {
   "id": "wabi_sabi_structures:xocolatl_farm",
@@ -38118,20 +20006,6 @@ const STRUCTURES_DATA = [
   "has3d": "2d0f9fc0da40.json"
  },
  {
-  "id": "wabi_sabi_structures:zen_chair_museum",
-  "pack": "Wabi-Sabi",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Zen Chair Museum",
-  "name_vi": "Zen Chair Museum",
-  "has3d": "2d0f9fc0da40.json"
- },
- {
   "id": "yggdrasil:alfheim_tree",
   "pack": "Yggdrasil",
   "dim": "overworld",
@@ -38144,34 +20018,6 @@ const STRUCTURES_DATA = [
   "name_en": "Alfheim Tree",
   "name_vi": "Alfheim Tree",
   "has3d": "b5f1710b3a82.json"
- },
- {
-  "id": "yggdrasil:alfheim_tree",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Alfheim Tree",
-  "name_vi": "Alfheim Tree",
-  "has3d": "b5f1710b3a82.json"
- },
- {
-  "id": "yggdrasil:asflors",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Asflors",
-  "name_vi": "Asflors",
-  "has3d": "05c272dd0d48.json"
  },
  {
   "id": "yggdrasil:asflors",
@@ -38202,20 +20048,6 @@ const STRUCTURES_DATA = [
   "has3d": "e3c86de02619.json"
  },
  {
-  "id": "yggdrasil:asgard",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Asgard",
-  "name_vi": "Asgard",
-  "has3d": "e3c86de02619.json"
- },
- {
   "id": "yggdrasil:cubeoid",
   "pack": "Yggdrasil",
   "dim": "overworld",
@@ -38228,34 +20060,6 @@ const STRUCTURES_DATA = [
   "name_en": "Cubeoid",
   "name_vi": "Cubeoid",
   "has3d": "17f6889fba88.json"
- },
- {
-  "id": "yggdrasil:cubeoid",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Cubeoid",
-  "name_vi": "Cubeoid",
-  "has3d": "17f6889fba88.json"
- },
- {
-  "id": "yggdrasil:dokkalfar_ruins",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Dokkalfar Ruins",
-  "name_vi": "Dokkalfar Ruins",
-  "has3d": "a1315c1c6f74.json"
  },
  {
   "id": "yggdrasil:dokkalfar_ruins",
@@ -38286,20 +20090,6 @@ const STRUCTURES_DATA = [
   "has3d": "d6e4de96e2b2.json"
  },
  {
-  "id": "yggdrasil:folkvangr",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Folkvangr",
-  "name_vi": "Folkvangr",
-  "has3d": "d6e4de96e2b2.json"
- },
- {
   "id": "yggdrasil:glaosheimr",
   "pack": "Yggdrasil",
   "dim": "overworld",
@@ -38312,34 +20102,6 @@ const STRUCTURES_DATA = [
   "name_en": "Glaosheimr",
   "name_vi": "Glaosheimr",
   "has3d": "b6580ad9e2a5.json"
- },
- {
-  "id": "yggdrasil:glaosheimr",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Glaosheimr",
-  "name_vi": "Glaosheimr",
-  "has3d": "b6580ad9e2a5.json"
- },
- {
-  "id": "yggdrasil:helblom",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Helblom",
-  "name_vi": "Helblom",
-  "has3d": "abe54c8d05bb.json"
  },
  {
   "id": "yggdrasil:helblom",
@@ -38370,20 +20132,6 @@ const STRUCTURES_DATA = [
   "has3d": "a849aa3a17fd.json"
  },
  {
-  "id": "yggdrasil:helheim",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "underground_structures",
-  "spread": "0.65x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Underground",
-  "layer_vi": "Dưới lòng đất",
-  "name_en": "Helheim",
-  "name_vi": "Helheim",
-  "has3d": "a849aa3a17fd.json"
- },
- {
   "id": "yggdrasil:lifblom",
   "pack": "Yggdrasil",
   "dim": "overworld",
@@ -38395,33 +20143,6 @@ const STRUCTURES_DATA = [
   "layer_vi": "Mặt đất",
   "name_en": "Lifblom",
   "name_vi": "Lifblom"
- },
- {
-  "id": "yggdrasil:lifblom",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Lifblom",
-  "name_vi": "Lifblom"
- },
- {
-  "id": "yggdrasil:neogard",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Neogard",
-  "name_vi": "Neogard",
-  "has3d": "991011b1b837.json"
  },
  {
   "id": "yggdrasil:neogard",
@@ -38452,20 +20173,6 @@ const STRUCTURES_DATA = [
   "has3d": "983bdfeceb18.json"
  },
  {
-  "id": "yggdrasil:proto_fracture",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Proto Fracture",
-  "name_vi": "Proto Fracture",
-  "has3d": "983bdfeceb18.json"
- },
- {
   "id": "yggdrasil:runic_crystal",
   "pack": "Yggdrasil",
   "dim": "overworld",
@@ -38478,34 +20185,6 @@ const STRUCTURES_DATA = [
   "name_en": "Runic Crystal",
   "name_vi": "Runic Crystal",
   "has3d": "1c88e3706925.json"
- },
- {
-  "id": "yggdrasil:runic_crystal",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Runic Crystal",
-  "name_vi": "Runic Crystal",
-  "has3d": "1c88e3706925.json"
- },
- {
-  "id": "yggdrasil:runic_fracture",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Runic Fracture",
-  "name_vi": "Runic Fracture",
-  "has3d": "db084f47333b.json"
  },
  {
   "id": "yggdrasil:runic_fracture",
@@ -38536,34 +20215,6 @@ const STRUCTURES_DATA = [
   "has3d": "f3c8687e8015.json"
  },
  {
-  "id": "yggdrasil:runic_labyrinth",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Runic Labyrinth",
-  "name_vi": "Runic Labyrinth",
-  "has3d": "f3c8687e8015.json"
- },
- {
-  "id": "yggdrasil:vanaheim",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Vanaheim",
-  "name_vi": "Vanaheim",
-  "has3d": "3fcd74fd48b9.json"
- },
- {
   "id": "yggdrasil:vanaheim",
   "pack": "Yggdrasil",
   "dim": "overworld",
@@ -38590,33 +20241,6 @@ const STRUCTURES_DATA = [
   "name_en": "Voroblom",
   "name_vi": "Voroblom",
   "has3d": "3d82e16de40f.json"
- },
- {
-  "id": "yggdrasil:voroblom",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Voroblom",
-  "name_vi": "Voroblom",
-  "has3d": "3d82e16de40f.json"
- },
- {
-  "id": "yggdrasil:zenflors",
-  "pack": "Yggdrasil",
-  "dim": "overworld",
-  "step": "surface_structures",
-  "spread": "1.8x",
-  "where_en": "Overworld Biomes",
-  "where_vi": "Mọi vùng Overworld",
-  "layer_en": "Surface",
-  "layer_vi": "Mặt đất",
-  "name_en": "Zenflors",
-  "name_vi": "Zenflors"
  },
  {
   "id": "yggdrasil:zenflors",
