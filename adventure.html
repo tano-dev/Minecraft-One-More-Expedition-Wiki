@@ -331,6 +331,7 @@
         <button type="button" class="dim-tab" data-dim="end"><img class="mc-pixel" src="assets/icons/dragon_egg.png" alt=""/> <span id="tabEnd">The End (8)</span></button>
       </div>
       <div class="gallery-grid" id="galleryGrid"></div>
+      <div id="discordShotNote" style="margin-top:14px;padding:12px 16px;border-radius:12px;background:rgba(88,101,242,0.12);border:1px solid rgba(88,101,242,0.42);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;"></div>
     </section>
 
     <!-- World Overhauls, Structure Spacing & Mechanics -->
@@ -461,6 +462,9 @@
 
       document.getElementById("galTitle").textContent = vi ? "Thư Viện Ảnh Thế Giới Thực Tế (42 Ảnh)" : "World Exploration Gallery (42 Screenshots)";
       document.getElementById("galHint").textContent = vi ? "Nhấp vào ảnh để phóng to & chuyển tiếp" : "Click any photo to enlarge & navigate";
+      document.getElementById("discordShotNote").innerHTML = vi
+        ? `<div style="font-size:0.86rem;color:#e2e8f0;">Muốn ảnh chụp của bạn được thêm vào thư viện này? Hãy gửi ảnh vào kênh <strong>#screenshot</strong> trên Discord của server nhé!</div><a href="https://discord.gg/UhNPy7wgX7" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:8px;background:rgba(88,101,242,0.28);border:1px solid rgba(88,101,242,0.65);color:#c7d2fe;font-weight:800;font-size:0.82rem;text-decoration:none;white-space:nowrap;">Tham gia Discord (#screenshot) ↗</a>`
+        : `<div style="font-size:0.86rem;color:#e2e8f0;">Want your own screenshots featured in this gallery? Share them in <strong>#screenshot</strong> on our Discord server!</div><a href="https://discord.gg/UhNPy7wgX7" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:8px;background:rgba(88,101,242,0.28);border:1px solid rgba(88,101,242,0.65);color:#c7d2fe;font-weight:800;font-size:0.82rem;text-decoration:none;white-space:nowrap;">Join Discord (#screenshot) ↗</a>`;
       document.getElementById("tabAll").textContent = vi ? "Tất cả (42)" : "All (42)";
       document.getElementById("changesTitle").textContent = vi ? "Thay Đổi Thế Giới, Công Trình & Khoảng Cách" : "World Overhauls, Structure Changes & Spacing";
       document.getElementById("otherTitle").textContent = vi ? "Khám Phá Hệ Thống Khác" : "Browse Other Systems";
