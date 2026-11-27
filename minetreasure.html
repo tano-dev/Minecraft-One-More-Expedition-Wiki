@@ -227,16 +227,16 @@
     .b-chip img { width: 16px; height: 16px; }
 
     /* Exclusives & Cards Grid */
-    .excl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; margin-bottom: 16px; }
+    .excl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; margin-bottom: 16px; }
     .item-card {
-      background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 12px; padding: 12px 14px;
-      display: flex; flex-direction: column; gap: 6px; min-width: 0; overflow: hidden;
+      background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 12px; padding: 13px 15px;
+      display: flex; flex-direction: column; gap: 7px; min-width: 0;
     }
     .item-card.excl { border-color: rgba(245, 196, 81, 0.45); background: rgba(245, 196, 81, 0.06); }
-    .item-card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
-    .item-card-left { display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1; }
-    .item-card-left img { width: 26px; height: 26px; flex-shrink: 0; }
-    .item-card-name { font-size: 0.92rem; font-weight: 800; color: #fff; overflow-wrap: anywhere; }
+    .item-card-top { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+    .item-card-left { display: flex; align-items: center; gap: 10px; width: 100%; min-width: 0; }
+    .item-card-left img { width: 28px; height: 28px; flex-shrink: 0; }
+    .item-card-name { font-size: 0.94rem; font-weight: 800; color: #fff; line-height: 1.3; word-break: normal; overflow-wrap: break-word; }
     .badge {
       font-size: 0.68rem; font-weight: 800; padding: 2px 7px; border-radius: 6px; white-space: nowrap;
       background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); color: #cbd5e1;
@@ -244,8 +244,8 @@
     .badge.gold { background: rgba(245, 196, 81, 0.15); border-color: rgba(245, 196, 81, 0.45); color: var(--gold); }
     .badge.aqua { background: rgba(56, 189, 248, 0.14); border-color: rgba(56, 189, 248, 0.4); color: var(--aqua); }
     .badge.epic { background: rgba(232, 121, 249, 0.14); border-color: rgba(232, 121, 249, 0.4); color: var(--epic); }
-    .item-lore { font-size: 0.79rem; color: #cbd5e1; line-height: 1.42; overflow-wrap: anywhere; }
-    .item-meta { font-size: 0.74rem; color: var(--aqua); font-family: 'JetBrains Mono', monospace; overflow-wrap: anywhere; }
+    .item-lore { font-size: 0.79rem; color: #cbd5e1; line-height: 1.45; overflow-wrap: break-word; }
+    .item-meta { font-size: 0.74rem; color: var(--aqua); font-family: 'JetBrains Mono', monospace; overflow-wrap: break-word; }
 
     .mech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
     .mech-box { background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 12px; padding: 14px 16px; }
