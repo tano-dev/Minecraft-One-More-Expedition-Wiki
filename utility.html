@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,16 +7,13 @@
   <meta name="theme-color" content="#f5c451" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="One More Expedition • KHTN 26.3" />
-  <meta property="og:title" content="Utility & QoL — One More Expedition Wiki" />
-  <meta property="og:description" content="Stash (/stash), KeepInventory, and quality-of-life server features." />
+  <meta property="og:title" content="Utility, QoL & Server Changes — One More Expedition Wiki" />
+  <meta property="og:description" content="Toàn bộ lệnh tiện ích (/skin, /flex, /wits, /stash), 15 Anti-Dupe, Villager Trade Balance, Enchantments, Scarce Ores & chi tiết vật phẩm giữ lại trong NiceKeepInventory." />
   <meta property="og:url" content="https://tano-dev.github.io/Minecraft-One-More-Expedition-Wiki/utility.html" />
   <meta property="og:image" content="https://tano-dev.github.io/Minecraft-One-More-Expedition-Wiki/assets/server-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Utility & QoL — One More Expedition Wiki" />
-  <meta name="twitter:description" content="Stash (/stash), KeepInventory, and quality-of-life server features." />
-  <meta name="twitter:image" content="https://tano-dev.github.io/Minecraft-One-More-Expedition-Wiki/assets/server-icon.png" />
   <!-- /OME Embed Meta -->
-  <title>Utility & QoL — One More Expedition Wiki</title>
+  <title>Utility, QoL &amp; Server Changes — One More Expedition Wiki</title>
   <link rel="icon" type="image/png" href="assets/server-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,12 +23,12 @@
   <style>
     :root {
       --bg-dark: #0d131f;
-      --card-bg: rgba(18, 24, 38, 0.88);
-      --card-inner: rgba(25, 34, 52, 0.78);
+      --card-bg: rgba(18, 24, 38, 0.9);
+      --card-inner: rgba(25, 34, 52, 0.82);
       --border-card: rgba(255, 255, 255, 0.1);
       --text-main: #f1f5f9;
       --text-muted: #94a3b8;
-      --gold-primary: #f5c451;
+      --gold: #f5c451;
       --aqua: #38bdf8;
       --green: #4ade80;
       --epic: #e879f9;
@@ -42,244 +39,132 @@
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: var(--text-main);
       min-height: 100vh;
-      line-height: 1.6;
+      line-height: 1.55;
       background-color: var(--bg-dark);
-      position: relative;
       -webkit-font-smoothing: antialiased;
     }
     .minecraft-bg-fixed {
-      position: fixed;
-      inset: 0;
-      z-index: -10;
-      pointer-events: none;
+      position: fixed; inset: 0; z-index: -10; pointer-events: none;
       background: #101726 url('assets/bg.jpg') no-repeat center center / cover;
     }
     .minecraft-bg-overlay {
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 50% 25%, rgba(15, 23, 42, 0.45) 0%, rgba(7, 10, 18, 0.84) 100%);
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 50% 20%, rgba(15, 23, 42, 0.5) 0%, rgba(7, 10, 18, 0.88) 100%);
     }
     .mc-pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
-    .header-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      padding: 10px 24px;
-      background: rgba(11, 15, 23, 0.94);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      flex-wrap: wrap;
-    }
-    .brand-group { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-    .brand-cube-icon { width: 32px; height: 32px; border-radius: 6px; }
-    .brand-text-stack { display: flex; flex-direction: column; line-height: 1.15; }
-    .brand-khtn { font-size: 0.95rem; font-weight: 800; color: #fff; }
-    .brand-wiki { font-size: 0.72rem; font-weight: 600; color: var(--gold-primary); }
-    .nav-tabs-pill {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(255, 255, 255, 0.04);
-      padding: 4px;
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      flex-wrap: wrap;
-    }
-    .nav-tab-btn {
-      padding: 6px 13px;
-      font-size: 0.82rem;
-      font-weight: 700;
-      color: var(--text-muted);
-      background: transparent;
-      border: 1px solid transparent;
-      border-radius: 7px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.15s ease;
-    }
-    .nav-tab-btn:hover { color: #fff; background: rgba(255, 255, 255, 0.06); }
-    .lang-pill {
-      display: inline-flex;
-      background: #0d1118;
-      border: 1px solid #2d3648;
-      border-radius: 8px;
-      padding: 2px;
-      gap: 2px;
-    }
-    .lang-btn {
-      border: none;
-      background: transparent;
-      color: var(--text-muted);
-      font-size: 0.76rem;
-      font-weight: 800;
-      padding: 5px 10px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-family: inherit;
-    }
-    .lang-btn.active { background: var(--gold-primary); color: #111827; }
-    .page-wrap {
-      max-width: 980px;
-      margin: 26px auto 54px;
-      padding: 0 20px;
-    }
-    .back-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 16px;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
+    .page-wrap { max-width: 1140px; margin: 22px auto 60px; padding: 0 20px; }
+
+    .back-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; gap: 10px; flex-wrap: wrap; }
     .back-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 7px 14px;
-      border-radius: 9px;
-      background: var(--card-bg);
-      border: 1px solid var(--border-card);
-      color: #fff;
-      text-decoration: none;
-      font-size: 0.84rem;
-      font-weight: 700;
-      backdrop-filter: blur(10px);
+      display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 9px;
+      background: var(--card-bg); border: 1px solid var(--border-card); color: #fff;
+      text-decoration: none; font-size: 0.84rem; font-weight: 700; backdrop-filter: blur(10px);
     }
-    .back-btn:hover { border-color: rgba(245, 196, 81, 0.5); color: var(--gold-primary); }
+    .back-btn:hover { border-color: rgba(245, 196, 81, 0.5); color: var(--gold); }
+
     .hero-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-card);
-      border-radius: 16px;
-      padding: 22px 24px;
-      backdrop-filter: blur(12px);
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 18px;
+      background: var(--card-bg); border: 1px solid var(--border-card); border-radius: 16px;
+      padding: 20px 24px; backdrop-filter: blur(12px);
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 16px;
     }
+    .hero-left { display: flex; align-items: center; gap: 15px; }
     .hero-icon-box {
-      width: 58px;
-      height: 58px;
-      border-radius: 14px;
-      background: rgba(10, 14, 23, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
+      width: 56px; height: 56px; border-radius: 14px; background: rgba(10, 14, 23, 0.85);
+      border: 1px solid rgba(56, 189, 248, 0.35); display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-    .hero-icon-box img { width: 38px; height: 38px; }
-    .hero-title { font-size: 1.5rem; font-weight: 800; color: #fff; line-height: 1.2; }
-    .hero-sub { font-size: 0.9rem; color: var(--text-muted); margin-top: 4px; }
-    .articles-stack { display: flex; flex-direction: column; gap: 16px; }
-    .article-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-card);
-      border-radius: 16px;
-      padding: 20px 22px;
-      backdrop-filter: blur(12px);
+    .hero-icon-box img { width: 36px; height: 36px; }
+    .hero-title { font-size: 1.48rem; font-weight: 800; color: #fff; line-height: 1.2; }
+    .hero-sub { font-size: 0.88rem; color: var(--text-muted); margin-top: 3px; }
+    .hero-stats { display: flex; gap: 8px; flex-wrap: wrap; }
+    .stat-pill {
+      background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 10px;
+      padding: 7px 12px; text-align: center; min-width: 86px;
     }
-    .article-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 10px;
-      flex-wrap: wrap;
+    .stat-val { font-size: 1.02rem; font-weight: 800; color: var(--aqua); font-family: 'JetBrains Mono', monospace; }
+    .stat-lbl { font-size: 0.7rem; color: var(--text-muted); font-weight: 600; }
+
+    .main-tabs {
+      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;
+      background: var(--card-bg); padding: 6px; border-radius: 13px; border: 1px solid var(--border-card);
     }
-    .article-title-row { display: flex; align-items: center; gap: 10px; }
-    .article-title-row img { width: 24px; height: 24px; }
-    .article-title-row h2 { font-size: 1.12rem; font-weight: 800; color: #fff; }
-    .article-badge {
-      font-size: 0.7rem;
-      font-weight: 800;
-      padding: 3px 9px;
-      border-radius: 6px;
-      text-transform: uppercase;
-      background: rgba(245, 196, 81, 0.14);
-      color: var(--gold-primary);
-      border: 1px solid rgba(245, 196, 81, 0.35);
+    .main-tab-btn {
+      flex: 1; min-width: 170px; padding: 10px 14px; border: 1px solid transparent; border-radius: 9px;
+      background: transparent; color: var(--text-muted); font-size: 0.85rem; font-weight: 800;
+      cursor: pointer; font-family: inherit; transition: all 0.15s ease;
     }
-    .article-desc { color: #cbd5e1; font-size: 0.92rem; margin-bottom: 14px; }
-    .feature-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+    .main-tab-btn:hover { color: #fff; background: rgba(255, 255, 255, 0.05); }
+    .main-tab-btn.active {
+      background: rgba(56, 189, 248, 0.16); color: var(--aqua); border-color: rgba(56, 189, 248, 0.45);
     }
-    .feature-list li {
-      background: var(--card-inner);
-      border: 1px solid var(--border-card);
-      border-radius: 10px;
-      padding: 10px 13px;
-      font-size: 0.87rem;
-      color: #e2e8f0;
-      display: flex;
-      align-items: flex-start;
-      gap: 9px;
+
+    .panel { display: none; }
+    .panel.active { display: block; }
+
+    .sec-card {
+      background: var(--card-bg); border: 1px solid var(--border-card); border-radius: 16px;
+      padding: 20px 22px; backdrop-filter: blur(12px); margin-bottom: 16px;
     }
-    .feature-dot { color: var(--gold-primary); font-weight: 800; flex-shrink: 0; }
-    .other-systems {
-      margin-top: 24px;
-      background: var(--card-bg);
-      border: 1px solid var(--border-card);
-      border-radius: 16px;
-      padding: 16px 20px;
-      backdrop-filter: blur(12px);
+    .sec-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+    .sec-title { font-size: 1.12rem; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 10px; }
+    .sec-title img { width: 24px; height: 24px; }
+    .sec-sub { font-size: 0.86rem; color: var(--text-muted); margin-bottom: 14px; }
+
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+    .info-card {
+      background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 12px;
+      padding: 14px 16px; display: flex; flex-direction: column; gap: 8px;
     }
-    .other-title { font-size: 0.86rem; font-weight: 800; color: var(--text-muted); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.04em; }
-    .other-pills { display: flex; flex-wrap: wrap; gap: 7px; }
-    .other-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 11px;
-      border-radius: 8px;
-      background: var(--card-inner);
-      border: 1px solid var(--border-card);
-      color: #e2e8f0;
-      text-decoration: none;
-      font-size: 0.78rem;
-      font-weight: 700;
+    .info-card.highlight { border-color: rgba(245, 196, 81, 0.45); background: rgba(245, 196, 81, 0.05); }
+    .info-card.danger { border-color: rgba(248, 113, 113, 0.4); background: rgba(248, 113, 113, 0.05); }
+    .info-card.green { border-color: rgba(74, 222, 128, 0.4); background: rgba(74, 222, 128, 0.05); }
+    .info-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+    .info-title { font-size: 0.94rem; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 8px; }
+    .info-title img { width: 22px; height: 22px; }
+    .badge {
+      font-size: 0.68rem; font-weight: 800; padding: 2px 8px; border-radius: 6px; white-space: nowrap;
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); color: #cbd5e1;
     }
-    .other-pill:hover { border-color: rgba(56, 189, 248, 0.5); color: #fff; }
-    .other-pill.current { border-color: var(--gold-primary); color: var(--gold-primary); }
-    .other-pill img { width: 16px; height: 16px; }
-    @media (max-width: 1280px) {
-      .header-bar { padding: 10px 16px; gap: 10px; }
-      .nav-tab-btn { padding: 5px 10px; font-size: 0.78rem; }
+    .badge.gold { background: rgba(245, 196, 81, 0.15); border-color: rgba(245, 196, 81, 0.45); color: var(--gold); }
+    .badge.aqua { background: rgba(56, 189, 248, 0.14); border-color: rgba(56, 189, 248, 0.4); color: var(--aqua); }
+    .badge.green { background: rgba(74, 222, 128, 0.14); border-color: rgba(74, 222, 128, 0.45); color: var(--green); }
+    .badge.red { background: rgba(248, 113, 113, 0.14); border-color: rgba(248, 113, 113, 0.45); color: var(--red); }
+
+    .feat-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .feat-list li { font-size: 0.84rem; color: #cbd5e1; display: flex; align-items: flex-start; gap: 8px; }
+    .feat-list li::before { content: "▸"; color: var(--gold); font-weight: 800; flex-shrink: 0; }
+    code {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+      background: rgba(0,0,0,0.42); border: 1px solid rgba(255,255,255,0.1);
+      padding: 1px 6px; border-radius: 5px; color: #93c5fd;
     }
-    @media (max-width: 1120px) {
-      .nav-tabs-pill { width: 100%; justify-content: center; order: 3; }
+
+    .chip-wrap { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 0.75rem; font-weight: 600; padding: 4px 9px; border-radius: 7px;
+      background: rgba(10, 14, 23, 0.7); border: 1px solid rgba(255,255,255,0.1); color: #e2e8f0;
     }
+    .chip.blocked { border-color: rgba(248, 113, 113, 0.35); color: #fecaca; }
+    .chip.kept { border-color: rgba(74, 222, 128, 0.35); color: #bbf7d0; }
+
+    .tbl-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border-card); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+    th {
+      background: rgba(10, 14, 23, 0.9); color: var(--text-muted); font-weight: 800;
+      text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border-card);
+    }
+    td { padding: 9px 12px; border-bottom: 1px solid rgba(255,255,255,0.06); color: #e2e8f0; }
+    tr:last-child td { border-bottom: none; }
+    .mono { font-family: 'JetBrains Mono', monospace; font-weight: 700; }
+
     @media (max-width: 680px) {
-      .header-bar { padding: 9px 12px; gap: 8px; }
-      .brand-khtn { font-size: 0.88rem; }
-      .nav-tabs-pill {
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-      }
-      .nav-tabs-pill::-webkit-scrollbar { display: none; }
-      .nav-tab-btn { flex-shrink: 0; white-space: nowrap; font-size: 0.75rem; padding: 5px 9px; }
-      .page-wrap { padding: 0 12px; margin: 16px auto 36px; }
-      .hero-card { padding: 16px; }
-      .article-card { padding: 15px; }
+      .page-wrap { padding: 0 12px; }
+      .sec-card, .hero-card { padding: 15px; }
     }
   </style>
 </head>
 <body>
-  <div class="minecraft-bg-fixed">
-    <div class="minecraft-bg-overlay"></div>
-  </div>
+  <div class="minecraft-bg-fixed"><div class="minecraft-bg-overlay"></div></div>
 
   <header class="ome-header">
     <a href="main.html" class="ome-brand">
@@ -289,7 +174,6 @@
         <span class="ome-brand-sub">KHTN Server Wiki • 26.3</span>
       </div>
     </a>
-
     <nav class="ome-nav">
       <a href="main.html" class="ome-nav-btn" style="border-color: rgba(59, 130, 246, 0.45); color: #93c5fd;">
         <img src="assets/icons/grass_block_side.png" alt=""/>
@@ -308,7 +192,6 @@
         <span>Biomes &amp; Structures</span>
       </a>
     </nav>
-
     <div class="ome-header-right">
       <div class="ome-lang-pill">
         <button class="ome-lang-btn" id="btnLangEn" onclick="setLanguage('en')">🇺🇸 EN</button>
@@ -319,106 +202,366 @@
 
   <main class="page-wrap">
     <div class="back-bar">
-      <a href="main.html" class="back-btn" id="backHomeBtn">← Back to Main Page</a>
+      <a href="main.html" class="back-btn" id="backHomeBtn">← Quay lại Trang Chủ</a>
     </div>
 
     <section class="hero-card">
-      <div class="hero-icon-box">
-        <img class="mc-pixel" src="assets/icons/amethyst_shard.png" alt="Utility & QoL" />
+      <div class="hero-left">
+        <div class="hero-icon-box">
+          <img class="mc-pixel" src="assets/icons/amethyst_shard.png" alt="Utility & QoL" />
+        </div>
+        <div>
+          <h1 class="hero-title" id="heroTitle">Utility, QoL &amp; Thay Đổi So Với Vanilla</h1>
+          <p class="hero-sub" id="heroSub">/skin • /flex • /wits • /stash • 15 Anti-Dupe • Villager Balance • KeepInventory &amp; Scarce Ores</p>
+        </div>
       </div>
-      <div>
-        <h1 class="hero-title" id="heroTitle">Utility & QoL</h1>
-        <p class="hero-sub" id="heroSub">/skin • /flex • /wits</p>
-      </div>
+      <div class="hero-stats" id="heroStats"></div>
     </section>
 
-    <section class="articles-stack" id="articlesContainer"></section>
+    <div class="main-tabs">
+      <button class="main-tab-btn active" data-tab="qol" onclick="switchTab('qol')" id="tabQol">1. Lệnh &amp; QoL</button>
+      <button class="main-tab-btn" data-tab="keepinv" onclick="switchTab('keepinv')" id="tabKeepInv">2. KeepInventory &amp; Sinh Tồn</button>
+      <button class="main-tab-btn" data-tab="balance" onclick="switchTab('balance')" id="tabBalance">3. Dân Làng, Phù Phép &amp; Quặng</button>
+      <button class="main-tab-btn" data-tab="antidupe" onclick="switchTab('antidupe')" id="tabAntiDupe">4. Chống Dupe &amp; Bảo Mật</button>
+    </div>
 
-    <section class="other-systems">
-      <div class="other-title" id="otherTitle">Browse Other Systems</div>
-      <div class="other-pills" id="otherPills"></div>
-    </section>
+    <div id="tabContent"></div>
   </main>
 
   <script>
     const LANG_KEY = "ome_wiki_lang";
-    let currentLang = localStorage.getItem(LANG_KEY) || "en";
-    const PAGE_DATA = {"id": "utility", "icon": "assets/icons/amethyst_shard.png", "badge": {"vi": "TIỆN ÍCH", "en": "UTILITY"}, "name": {"vi": "Utility & QoL", "en": "Utility & QoL"}, "sub": {"vi": "/skin • /flex • /wits", "en": "/skin • /flex • /wits"}, "subItems": [{"icon": "assets/icons/amethyst_shard.png", "badge": "PLAYER TOOLS", "rarity": "color-aqua", "name": {"vi": "Lệnh Tiện Ích Người Chơi", "en": "Quality-of-Life Commands"}, "desc": {"vi": "Các lệnh giúp trải nghiệm mượt mà hơn khi chơi cùng bạn bè trên server.", "en": "Helpful commands for customization, HUD control, and sharing items."}, "features": {"vi": ["/skin set <tên> | /skin url <link> — Đổi skin trực tiếp", "/sidebar toggle — Ẩn/hiện bảng HUD bên phải", "/wits — Xem tên cấu trúc đang đứng", "/flex — Khoe vật phẩm đang cầm lên kênh chat", "/tips — Xem lại danh sách mẹo & lệnh server"], "en": ["/skin set <name> | /skin url <url> — Change your skin", "/sidebar toggle — Hide/show the HUD sidebar", "/wits — Identify the structure you are standing in", "/flex — Showcase your held item in chat", "/tips — View server command tips"]}}]};
-    const ALL_SYSTEMS = [{"id": "skyblock", "icon": "assets/icons/oak_sapling.png", "name": {"vi": "Skyblock", "en": "Skyblock"}, "href": "skyblock.html"}, {"id": "world", "icon": "assets/icons/spyglass.png", "name": {"vi": "Biomes & Structures", "en": "Biomes & Structures"}, "href": "world.html"}, {"id": "adventure", "icon": "assets/icons/compass.png", "name": {"vi": "Adventure", "en": "Adventure"}, "href": "adventure.html"}, {"id": "enchants", "icon": "assets/icons/enchanted_book.png", "name": {"vi": "Enchantments", "en": "Enchantments"}, "href": "enchants.html"}, {"id": "fishing", "icon": "assets/icons/fishing_rod.png", "name": {"vi": "Fishing", "en": "Fishing"}, "href": "fishing.html"}, {"id": "minetreasure", "icon": "assets/icons/netherite_pickaxe.png", "name": {"vi": "Mine Treasure", "en": "Mine Treasure"}, "href": "minetreasure.html"}, {"id": "bosses", "icon": "assets/icons/dragonblade.png", "name": {"vi": "Custom Items / Bosses", "en": "Custom Items / Bosses"}, "href": "bosses.html"}, {"id": "warping", "icon": "assets/icons/ender_pearl.png", "name": {"vi": "Teleports", "en": "Teleports"}, "href": "warping.html"}, {"id": "quests", "icon": "assets/icons/writable_book.png", "name": {"vi": "Daily Quests", "en": "Daily Quests"}, "href": "quests.html"}, {"id": "economy", "icon": "assets/icons/emerald.png", "name": {"vi": "Economy", "en": "Economy"}, "href": "economy.html"}, {"id": "prefix", "icon": "assets/icons/name_tag.png", "name": {"vi": "Rank / Prefix", "en": "Rank / Prefix"}, "href": "prefix.html"}, {"id": "redeem", "icon": "assets/icons/paper.png", "name": {"vi": "Codes", "en": "Codes"}, "href": "redeem.html"}, {"id": "utility", "icon": "assets/icons/amethyst_shard.png", "name": {"vi": "Utility & QoL", "en": "Utility & QoL"}, "href": "utility.html"}, {"id": "recommended_mods", "icon": "assets/icons/nether_star.png", "name": {"vi": "Best Client Mods", "en": "Best Client Mods"}, "href": "mods.html"}];
+    let currentLang = localStorage.getItem(LANG_KEY) || "vi";
+    let activeTab = "qol";
 
     function setLanguage(lang) {
-      currentLang = (lang === "en") ? "en" : "vi";
+      currentLang = lang === "en" ? "en" : "vi";
       localStorage.setItem(LANG_KEY, currentLang);
-      renderPage();
-    window.addEventListener("storage", e => {
-      if (e.key === LANG_KEY && e.newValue && e.newValue !== currentLang) {
-        currentLang = e.newValue === "en" ? "en" : "vi";
-        renderPage();
-      }
-    });
+      render();
     }
 
-    function renderPage() {
+    function switchTab(tab) {
+      activeTab = tab;
+      document.querySelectorAll(".main-tab-btn").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
+      render();
+    }
+
+    function render() {
+      const vi = currentLang === "vi";
       document.documentElement.lang = currentLang;
-      document.getElementById("btnLangEn").classList.toggle("active", currentLang === "en");
-      document.getElementById("btnLangVi").classList.toggle("active", currentLang === "vi");
+      document.getElementById("btnLangEn").classList.toggle("active", !vi);
+      document.getElementById("btnLangVi").classList.toggle("active", vi);
 
-      const ui = currentLang === "vi" ? {
-        navHome: "Trang Chủ",
-        navEnchants: "Bách Khoa Phù Phép",
-        navFishing: "Bách Khoa Câu Cá",
-        navCommands: "Lệnh Nhanh",
-        back: "← Quay lại Trang Chủ",
-        other: "Khám Phá Hệ Thống Khác"
-      } : {
-        navHome: "Main Page",
-        navEnchants: "Enchantments Wiki",
-        navFishing: "Fishing Wiki",
-        navCommands: "Quick Commands",
-        back: "← Back to Main Page",
-        other: "Browse Other Systems"
-      };
-
+      const navMap = vi
+        ? { navHome: "Trang Chủ", navEnchants: "Bách Khoa Phù Phép", navFishing: "Bách Khoa Câu Cá" }
+        : { navHome: "Main Page", navEnchants: "Enchantments Wiki", navFishing: "Fishing Wiki" };
       document.querySelectorAll("[data-i18n]").forEach(el => {
         const k = el.getAttribute("data-i18n");
-        if (ui[k]) el.textContent = ui[k];
+        if (navMap[k]) el.textContent = navMap[k];
       });
-      document.getElementById("backHomeBtn").textContent = ui.back;
-      document.getElementById("otherTitle").textContent = ui.other;
-      document.getElementById("heroTitle").textContent = PAGE_DATA.name[currentLang] || PAGE_DATA.name.en;
-      document.getElementById("heroSub").textContent = PAGE_DATA.sub[currentLang] || PAGE_DATA.sub.en;
+      document.getElementById("backHomeBtn").textContent = vi ? "← Quay lại Trang Chủ" : "← Back to Main Page";
+      document.getElementById("heroTitle").textContent = vi ? "Utility, QoL & Thay Đổi So Với Vanilla" : "Utility, QoL & Non-Vanilla Server Changes";
+      document.getElementById("heroSub").textContent = vi
+        ? "/skin • /flex • /wits • /stash • 15 Anti-Dupe • Dân Làng • Phù Phép • KeepInventory & Khoáng Sản"
+        : "/skin • /flex • /wits • /stash • 15 Anti-Dupe • Villagers • Enchants • KeepInventory & Scarce Ores";
 
-      document.getElementById("articlesContainer").innerHTML = (PAGE_DATA.subItems || []).map(item => `
-        <article class="article-card">
-          <div class="article-head">
-            <div class="article-title-row">
-              <img class="mc-pixel" src="${item.icon || PAGE_DATA.icon}" alt=""/>
-              <h2>${item.name[currentLang] || item.name.en}</h2>
-            </div>
-            ${item.badge ? `<span class="article-badge">${item.badge}</span>` : ""}
-          </div>
-          <p class="article-desc">${item.desc[currentLang] || item.desc.en}</p>
-          <ul class="feature-list">
-            ${((item.features && (item.features[currentLang] || item.features.en)) || []).map(f => `
-              <li><span class="feature-dot">▸</span><span>${f}</span></li>
-            `).join("")}
-          </ul>
-        </article>
-      `).join("");
+      document.getElementById("heroStats").innerHTML = [
+        ["15", "Anti-Dupe"],
+        ["540", vi ? "Ô /stash" : "Stash Slots"],
+        ["-64.3%", vi ? "Quặng KC" : "Diamond Ore"],
+        ["60s", "PvP Combat"],
+      ].map(([v, l]) => `<div class="stat-pill"><div class="stat-val">${v}</div><div class="stat-lbl">${l}</div></div>`).join("");
 
-      document.getElementById("otherPills").innerHTML = ALL_SYSTEMS.map(sys => `
-        <a href="${sys.href}" class="other-pill ${sys.id === PAGE_DATA.id ? 'current' : ''}">
-          <img class="mc-pixel" src="${sys.icon}" alt=""/>
-          <span>${sys.name[currentLang] || sys.name.en}</span>
-        </a>
-      `).join("");
+      document.getElementById("tabQol").textContent = vi ? "1. Lệnh & QoL" : "1. Commands & QoL";
+      document.getElementById("tabKeepInv").textContent = vi ? "2. KeepInventory & Sinh Tồn" : "2. KeepInventory & Survival";
+      document.getElementById("tabBalance").textContent = vi ? "3. Dân Làng, Phù Phép & Quặng" : "3. Villagers, Enchants & Ores";
+      document.getElementById("tabAntiDupe").textContent = vi ? "4. Chống Dupe & Bảo Mật" : "4. Anti-Dupe & Security";
+
+      const container = document.getElementById("tabContent");
+      if (activeTab === "qol") container.innerHTML = renderQol(vi);
+      else if (activeTab === "keepinv") container.innerHTML = renderKeepInv(vi);
+      else if (activeTab === "balance") container.innerHTML = renderBalance(vi);
+      else container.innerHTML = renderAntiDupe(vi);
     }
 
-    renderPage();
+    function renderQol(vi) {
+      return `
+        <div class="sec-card">
+          <div class="sec-head">
+            <h2 class="sec-title"><img class="mc-pixel" src="assets/icons/amethyst_shard.png" alt=""/>${vi ? "Lệnh Tiện Ích Người Chơi" : "Player Utility Commands"}</h2>
+          </div>
+          <div class="cards-grid">
+            <div class="info-card highlight">
+              <div class="info-head">
+                <div class="info-title"><img class="mc-pixel" src="assets/icons/name_tag.png" alt=""/>${vi ? "Đổi Skin & Khoe Đồ" : "Skin & Item Flex"}</div>
+                <span class="badge gold">COMMAND</span>
+              </div>
+              <ul class="feat-list">
+                <li><span><code>/skin set &lt;tên&gt;</code> | <code>/skin url &lt;link&gt;</code> — ${vi ? "Đổi skin trực tiếp trên server (SkinRestorer)." : "Change your skin directly in-game (SkinRestorer)."}</span></li>
+                <li><span><code>/flex</code> — ${vi ? "Khoe vật phẩm đang cầm trên tay kèm chỉ số & phù phép lên kênh chat (ItemFlexer)." : "Showcase your held item & enchants in chat (ItemFlexer)."}</span></li>
+                <li><span><code>/wits</code> — ${vi ? "Kiểm tra chính xác tên/ID công trình bạn đang đứng bên trong (WITS)." : "Identify the exact structure ID you are standing in (WITS)."}</span></li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <div class="info-head">
+                <div class="info-title"><img class="mc-pixel" src="assets/icons/writable_book.png" alt=""/>${vi ? "HUD, Mẹo & Kho Nhận Thưởng" : "HUD, Tips & Reward Stash"}</div>
+                <span class="badge aqua">HUD / STASH</span>
+              </div>
+              <ul class="feat-list">
+                <li><span><code>/sidebar toggle</code> — ${vi ? "Bật/tắt bảng thông tin HUD bên phải màn hình." : "Toggle the right-hand server HUD sidebar."}</span></li>
+                <li><span><code>/tips</code> — ${vi ? "Xem danh sách mẹo & lệnh hữu ích của server." : "Show server tips & quick commands."}</span></li>
+                <li><span><code>/stash</code> — ${vi ? "Mở kho nhận thưởng Boss & Quest (tối đa <strong>540 ô</strong>). Đã tắt tự nhặt block/mob drop (<code>autoPickup=false</code>)." : "Open Boss & Quest reward stash (up to <strong>540 slots</strong>). Block/mob auto-pickup is disabled."}</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-head">
+            <h2 class="sec-title"><img class="mc-pixel" src="assets/icons/grass_block_side.png" alt=""/>${vi ? "Mod QoL Tự Động (Không Cần Cài Client)" : "Server-Side QoL Improvements"}</h2>
+          </div>
+          <div class="cards-grid">
+            <div class="info-card">
+              <div class="info-head"><div class="info-title">Double Doors &amp; Nether Portal Fix</div><span class="badge green">QoL</span></div>
+              <ul class="feat-list">
+                <li><span><strong>Double Doors</strong>: ${vi ? "Mở/đóng đồng thời 2 cánh cửa đôi, cổng hàng rào hoặc cửa sập." : "Opens/closes paired double doors, fence gates, and trapdoors together."}</span></li>
+                <li><span><strong>Nether Portal Fix</strong>: ${vi ? "Ghi nhớ liên kết cổng Nether 2 chiều, tránh bị dịch chuyển nhầm cổng." : "Remembers exact 2-way Nether portal links to prevent portal mismatch."}</span></li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <div class="info-head"><div class="info-title">Clumps, Drops &amp; AI Fix</div><span class="badge green">PERF</span></div>
+              <ul class="feat-list">
+                <li><span><strong>Clumps &amp; GetItTogetherDrops</strong>: ${vi ? "Gộp chung XP orb và item rơi gần nhau giúp giảm lag khi farm." : "Merges nearby XP orbs and dropped items to reduce entity lag."}</span></li>
+                <li><span><strong>SkeletonAIFix</strong>: ${vi ? "Khắc phục lỗi AI di chuyển/bắn của Skeleton." : "Fixes vanilla Skeleton AI pathing and combat behavior."}</span></li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <div class="info-head"><div class="info-title">VoiceChat, Squaremap &amp; Privacy</div><span class="badge aqua">SOCIAL</span></div>
+              <ul class="feat-list">
+                <li><span><strong>Simple Voice Chat</strong>: ${vi ? "Hỗ trợ chat thoại gần trong game." : "Supports proximity voice chat in-game."}</span></li>
+                <li><span><strong>Squaremap &amp; NoChatReports</strong>: ${vi ? "Bản đồ web trực tuyến và tắt tính năng báo cáo tin nhắn." : "Live web map and disabled cryptographic chat reporting."}</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderKeepInv(vi) {
+      const keptGroups = [
+        [
+          vi ? "Giáp, Khiên & Cánh (Armor & Elytra)" : "Armor, Shield & Elytra",
+          "gold",
+          ["#minecraft:head_armor", "#minecraft:chest_armor", "#minecraft:leg_armor", "#minecraft:foot_armor", "turtle_helmet", "elytra", "shield"]
+        ],
+        [
+          vi ? "Vũ Khí & Đạn Dược (Weapons & Ammo)" : "Weapons & Ammunition",
+          "gold",
+          ["#minecraft:swords", "#minecraft:axes", "#minecraft:spears", "bow", "crossbow", "trident", "mace", "arrow", "spectral_arrow", "tipped_arrow"]
+        ],
+        [
+          vi ? "Công Cụ & Thiết Bị Thám Hiểm (Tools)" : "Tools & Exploration Gear",
+          "aqua",
+          ["#minecraft:pickaxes", "#minecraft:shovels", "#minecraft:hoes", "fishing_rod", "shears", "flint_and_steel", "brush", "spyglass", "compass", "recovery_compass", "clock", "carrot_on_a_stick", "warped_fungus_on_a_stick", "firework_rocket", "goat_horn", "written_book"]
+        ],
+        [
+          vi ? "Túi & Hộp Lưu Trữ (Storage)" : "Bundles & Shulker Boxes",
+          "green",
+          ["#minecraft:bundles", "#minecraft:shulker_boxes"]
+        ],
+        [
+          vi ? "Đồ Ăn & Trứng Sinh Vật (Food & Spawn Eggs)" : "Food & Spawn Eggs",
+          "green",
+          ["#keepinv:food (Mọi loại thức ăn)", "#keepinv:spawn_eggs"]
+        ],
+        [
+          vi ? "Vật Phẩm Server Đặc Biệt (Charms & Vouchers)" : "Server Specials (Charms & Vouchers)",
+          "gold",
+          ["gray_dye (Common Charm)", "blue_dye (Rare Charm)", "red_dye (Epic Charm)", "yellow_dye (Legendary Charm)", "name_tag (Prefix Vouchers)", "music_disc_5", "music_disc_13"]
+        ],
+      ];
+
+      return `
+        <div class="sec-card">
+          <div class="sec-head">
+            <h2 class="sec-title"><img class="mc-pixel" src="assets/icons/mc/totem_of_undying.png" alt=""/>${vi ? "KeepInventory Thông Minh & Mộ (NiceKeepInventory 4.2)" : "Smart KeepInventory & Grave System (NiceKeepInventory 4.2)"}</h2>
+            <span class="badge green">${vi ? "ĐỒ QUAN TRỌNG GIỮ NGUYÊN" : "GEAR KEPT ON DEATH"}</span>
+          </div>
+          <p class="sec-sub">${vi
+            ? "Khi tử vong, toàn bộ trang bị, công cụ, thức ăn, Shulker/Bundle, Mine Treasure Charms và Prefix Vouchers được <strong>giữ nguyên trên người</strong>. Toàn bộ khoáng sản/block/đồ còn lại được <strong>cất an toàn vào Mộ (Grave)</strong> tại nơi bạn chết để quay lại nhặt."
+            : "Upon death, all gear, tools, food, Shulkers/Bundles, Mine Treasure Charms, and Prefix Vouchers are <strong>kept in your inventory</strong>. All remaining blocks/ores/misc items are <strong>safely stored in a Grave</strong> at your death location."}</p>
+
+          <div class="cards-grid">
+            ${keptGroups.map(([title, bcls, items]) => `
+              <div class="info-card ${bcls === 'green' ? 'green' : (bcls === 'gold' ? 'highlight' : '')}">
+                <div class="info-head">
+                  <div class="info-title">${title}</div>
+                  <span class="badge ${bcls}">${items.length} ${vi ? "mục" : "entries"}</span>
+                </div>
+                <div class="chip-wrap">
+                  ${items.map(it => `<span class="chip kept">${it}</span>`).join("")}
+                </div>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-head">
+            <h2 class="sec-title"><img class="mc-pixel" src="assets/icons/ender_pearl.png" alt=""/>${vi ? "Chiến Đấu, Dịch Chuyển, Boss & Kit Khởi Đầu" : "Combat Log, Teleports, Bosses & Starter Kit"}</h2>
+          </div>
+          <div class="cards-grid">
+            <div class="info-card danger">
+              <div class="info-head"><div class="info-title">Combat Log (expedition-skyblock)</div><span class="badge red">ANTI-COMBATLOG</span></div>
+              <ul class="feat-list">
+                <li><span><strong>PvP Cooldown</strong>: <code>60 giây</code> — ${vi ? "Bị khóa dịch chuyển (/rtp, /is...) khi đang đánh nhau với người chơi." : "Teleports blocked for 60s during PvP."}</span></li>
+                <li><span><strong>Mob Cooldown</strong>: <code>5 giây</code> — ${vi ? "Chặn dịch chuyển tức thời khi vừa bị quái gây sát thương." : "5s teleport cooldown after taking mob damage."}</span></li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <div class="info-head"><div class="info-title">FastRTP &amp; Teleport Guard</div><span class="badge aqua">WORLD</span></div>
+              <ul class="feat-list">
+                <li><span>${vi ? "Bán kính dịch chuyển:" : "Radius:"} <code>500 – 10,000</code> blocks • Cooldown: <code>30 phút (1800s)</code>.</span></li>
+                <li><span>${vi ? "Chặn dùng ở <strong>The End / The Void / Small End Islands</strong> và giới hạn <code>/rtp back</code> sau khi teleport." : "Blocked in The End / The Void / Small End Islands; guarded post-teleport <code>/rtp back</code>."}</span></li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <div class="info-head"><div class="info-title">Ender Dragon &amp; Starter Kit</div><span class="badge gold">BALANCE</span></div>
+              <ul class="feat-list">
+                <li><span><strong>Ender Dragon</strong>: ${vi ? "Tăng tần suất chiêu thức (<code>expedition_dragon_attacks</code>), phần thưởng Boss gửi thẳng vào <code>/stash</code>." : "Buffed Dragon attack patterns; Boss loot delivered directly to <code>/stash</code>."}</span></li>
+                <li><span><strong>Starter Kit</strong>: ${vi ? "Người chơi mới nhận sách hướng dẫn <strong>Expedition Guide</strong> ở ô số 6." : "New players receive the <strong>Expedition Guide</strong> book in slot 6."}</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderBalance(vi) {
+      return `
+        <div class="sec-card">
+          <div class="sec-head">
+            <h2 class="sec-title"><img class="mc-pixel" src="assets/icons/emerald.png" alt=""/>${vi ? "Thay Đổi Giao Dịch Dân Làng (Villager Trade Balance)" : "Villager Trade Balance (vs Vanilla)"}</h2>
+            <span class="badge gold">expedition_trade_balance</span>
+          </div>
+          <p class="sec-sub">${vi
+            ? "Khác với Vanilla (chỉ cần Emerald là mua được full giáp/công cụ Kim Cương), trên server các giao dịch đồ Kim Cương từ dân làng cấp 3–5 <strong>bắt buộc phải kèm thêm Kim Cương</strong>:"
+            : "Unlike Vanilla where Emeralds alone buy infinite Diamond gear, Level 3–5 Diamond villager trades now <strong>require additional Diamonds</strong> alongside Emeralds:"}</p>
+          <div class="tbl-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>${vi ? "Nghề Dân Làng" : "Profession"}</th>
+                  <th>${vi ? "Cấp" : "Level"}</th>
+                  <th>${vi ? "Vật phẩm bán" : "Result"}</th>
+                  <th>${vi ? "Yêu cầu thêm (so với Vanilla)" : "Extra Cost Added"}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Armorer</strong></td><td class="mono">Lv 4–5</td><td>Diamond Helmet, Chestplate, Leggings, Boots</td><td class="mono" style="color:var(--aqua);">+ Diamonds (additional_wants)</td></tr>
+                <tr><td><strong>Toolsmith</strong></td><td class="mono">Lv 3–5</td><td>Diamond Hoe, Axe, Shovel, Pickaxe</td><td class="mono" style="color:var(--aqua);">+ Diamonds (e.g. +2 Diamonds for Pickaxe)</td></tr>
+                <tr><td><strong>Weaponsmith</strong></td><td class="mono">Lv 4–5</td><td>Diamond Axe, Diamond Sword</td><td class="mono" style="color:var(--aqua);">+ Diamonds (additional_wants)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-head">
+            <h2 class="sec-title"><img class="mc-pixel" src="assets/icons/enchanted_book.png" alt=""/>${vi ? "Thay Đổi Cơ Chế Phù Phép & VeinMiner" : "Enchantments & VeinMiner Mechanics"}</h2>
+          </div>
+          <div class="cards-grid">
+            <div class="info-card highlight">
+              <div class="info-head"><div class="info-title">Enchantments Control</div><span class="badge gold">436 ENCHANTS</span></div>
+              <ul class="feat-list">
+                <li><span>${vi ? "Bàn phù phép (<code>in_enchanting_table</code>):" : "Enchanting Table:"} <strong>187</strong> ${vi ? "phù phép" : "enchants"} • Random Loot: <strong>432</strong> • Treasure: <strong>212</strong>.</span></li>
+                <li><span><strong>Auto-Smelt</strong>: ${vi ? "Đã gộp <code>enchantsplus:pyrolysis</code> &amp; <code>auto_smelt</code> vào 1 tag <code>#minecraft:smelts_loot</code>, hoạt động trên cả quặng/đá Mine Treasure." : "Unified into <code>#minecraft:smelts_loot</code>, working across both Vanilla and Mine Treasure blocks."}</span></li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <div class="info-head"><div class="info-title">VeinMiner (veinminer-enchant 2.14.0)</div><span class="badge aqua">MINING</span></div>
+              <ul class="feat-list">
+                <li><span>${vi ? "Đào dây chuyền tối đa:" : "Max Chain:"} <code>100</code> blocks • Cooldown: <code>20 ticks (1s)</code>.</span></li>
+                <li><span><code>needCorrectTool = true</code>, <code>decreaseDurability = true</code>, <code>hungerPerBlock = 0.0</code> (${vi ? "không tốn thêm thức ăn" : "no extra hunger cost"}).</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-head">
+            <h2 class="sec-title"><img class="mc-pixel" src="assets/icons/mc/diamond_ore.png" alt=""/>${vi ? "Khoáng Sản Khan Hiếm Hơn Vanilla (Scarce Ores)" : "Scarce Ores Worldgen (vs Vanilla)"}</h2>
+            <span class="badge red">expedition_scarce_ores</span>
+          </div>
+          <div class="tbl-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>${vi ? "Loại Quặng" : "Ore Feature"}</th>
+                  <th>Vanilla</th>
+                  <th>Server (One More Expedition)</th>
+                  <th>${vi ? "Mức giảm" : "Reduction"}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Diamond Ore</strong> (<code>ore_diamond</code>, <code>buried</code>, <code>medium</code>, <code>large</code>)</td><td class="mono">7 veins / chunk (100%)</td><td class="mono">1/2 chunk × 5 veins (~2.5/chunk)</td><td class="mono" style="color:var(--red);">-64.3%</td></tr>
+                <tr><td><strong>Ancient Debris Large</strong> (<code>ore_ancient_debris_large</code>)</td><td class="mono">100% chunks</td><td class="mono">1/3 chunks (33.3%)</td><td class="mono" style="color:var(--red);">-66.7%</td></tr>
+                <tr><td><strong>Iron Ore Middle</strong> (<code>ore_iron_middle</code>)</td><td class="mono">10 veins / chunk</td><td class="mono">8 veins / chunk</td><td class="mono" style="color:var(--gold);">-20.0%</td></tr>
+                <tr><td><strong>Gold / Emerald / Small Iron &amp; Debris</strong></td><td class="mono">Vanilla rate</td><td class="mono">${vi ? "Đã tinh chỉnh giảm nhẹ mật độ" : "Reduced vein count / rarity"}</td><td class="mono" style="color:var(--gold);">${vi ? "Khan hiếm hơn" : "Scarcer"}</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderAntiDupe(vi) {
+      const dupes = [
+        "BookDupe", "ShulkerBoxDupe", "RailDupe", "HorseQuickMoveDupe", "StackSplitDupe",
+        "HopperDupe", "PistonDupe", "EntityDimensionDupe", "TridentDupe", "BeeDupe",
+        "TripwireDupe", "LecternDupe", "TripwireHookDupe", "GravityBlockDupe", "NBTListDupe"
+      ];
+      return `
+        <div class="sec-card">
+          <div class="sec-head">
+            <h2 class="sec-title"><img class="mc-pixel" src="assets/icons/mc/bedrock.png" alt=""/>${vi ? "15 Lỗi Dupe Vanilla Đã Bị Khóa (PandaAntiDupe)" : "15 Blocked Vanilla Dupes (PandaAntiDupe)"}</h2>
+            <span class="badge red">ALL ENABLED</span>
+          </div>
+          <p class="sec-sub">${vi
+            ? "Server bật toàn bộ 15 cơ chế chống nhân bản vật phẩm trong <code>config/PandaAntiDupe.json</code> để bảo vệ nền kinh tế:"
+            : "All 15 item duplication patches in <code>config/PandaAntiDupe.json</code> are active to protect the server economy:"}</p>
+          <div class="chip-wrap">
+            ${dupes.map(d => `<span class="chip blocked">✕ ${d}</span>`).join("")}
+          </div>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-head">
+            <h2 class="sec-title"><img class="mc-pixel" src="assets/icons/mc/anvil.png" alt=""/>${vi ? "Mod Bảo Mật & Chống Crash Khác" : "Additional Anti-Exploit & Crash Protection"}</h2>
+          </div>
+          <div class="cards-grid">
+            <div class="info-card">
+              <div class="info-head"><div class="info-title">PandaAntiExploit &amp; CrashExploitFixer</div><span class="badge red">SECURITY</span></div>
+              <ul class="feat-list">
+                <li><span>${vi ? "Chặn các packet độc hại, crash chunk/book/sign và khai thác lỗi vận chuyển thực thể." : "Blocks malformed packets, chunk/book/sign crashes, and entity exploits."}</span></li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <div class="info-head"><div class="info-title">PacketFixer &amp; PandaLeadBreak</div><span class="badge aqua">STABILITY</span></div>
+              <ul class="feat-list">
+                <li><span><strong>PacketFixer</strong>: ${vi ? "Tăng giới hạn gói tin an toàn cho inventory/NBT lớn (tránh kick nhầm khi mở đồ nhiều mod)." : "Prevents false disconnects on large NBT/inventory packets."}</span></li>
+                <li><span><strong>PandaLeadBreak</strong>: ${vi ? "Khắc phục lỗi dây dắt (Lead) bất thường." : "Fixes lead attachment/break edge cases."}</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    render();
     window.addEventListener("storage", e => {
       if (e.key === LANG_KEY && e.newValue && e.newValue !== currentLang) {
         currentLang = e.newValue === "en" ? "en" : "vi";
-        renderPage();
+        render();
       }
     });
   </script>
