@@ -157,6 +157,55 @@
     tr:last-child td { border-bottom: none; }
     .mono { font-family: 'JetBrains Mono', monospace; font-weight: 700; }
 
+    /* Custom Crafting Recipe Grid */
+    .recipe-showcase { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 14px; }
+    .recipe-box {
+      display: flex; align-items: center; justify-content: center; gap: 14px;
+      padding: 12px; border-radius: 10px; background: rgba(10, 14, 23, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.08); flex-wrap: wrap;
+    }
+    .mc-grid-3x3 {
+      display: grid; grid-template-columns: repeat(3, 36px); grid-template-rows: repeat(3, 36px);
+      gap: 3px; padding: 5px; border-radius: 8px;
+      background: rgba(30, 41, 59, 0.8); border: 1px solid rgba(255,255,255,0.12);
+    }
+    .mc-slot {
+      position: relative; width: 36px; height: 36px; border-radius: 5px;
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.55);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .mc-slot.empty { background: rgba(15, 23, 42, 0.45); border-color: rgba(148, 163, 184, 0.12); }
+    .mc-slot img { width: 24px; height: 24px; image-rendering: pixelated; image-rendering: crisp-edges; }
+    .mc-slot.out {
+      width: 44px; height: 44px; border-color: rgba(245, 196, 81, 0.55);
+      background: rgba(245, 196, 81, 0.08);
+    }
+    .mc-slot.out img { width: 28px; height: 28px; }
+    .mc-slot.glint::after {
+      content: ""; position: absolute; inset: 2px; border-radius: 4px; pointer-events: none;
+      background: linear-gradient(125deg, rgba(232,121,249,0) 20%, rgba(232,121,249,0.28) 50%, rgba(168,85,247,0) 80%);
+    }
+    .mc-count {
+      position: absolute; right: 2px; bottom: 0px; font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem; font-weight: 800; color: #fff; text-shadow: 1px 1px 0 #000;
+      line-height: 1;
+    }
+    .mc-arrow { font-size: 1.15rem; font-weight: 800; color: var(--gold); }
+    .recipe-rows { display: flex; flex-direction: column; gap: 8px; }
+    .recipe-row {
+      display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;
+      padding: 8px 10px; border-radius: 9px; background: rgba(10, 14, 23, 0.68);
+      border: 1px solid rgba(255,255,255,0.07);
+    }
+    .recipe-row-left { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+    .recipe-plus { font-size: 0.8rem; font-weight: 800; color: var(--text-muted); }
+    .recipe-meta { font-size: 0.78rem; color: #cbd5e1; text-align: right; }
+    .recipe-note { font-size: 0.82rem; color: #cbd5e1; line-height: 1.45; }
+    .inline-link { color: var(--aqua); font-weight: 700; text-decoration: none; }
+    .inline-link:hover { text-decoration: underline; }
+
     @media (max-width: 680px) {
       .page-wrap { padding: 0 12px; }
       .sec-card, .hero-card { padding: 15px; }
@@ -283,7 +332,50 @@
       else container.innerHTML = renderAntiDupe(vi);
     }
 
+    function mcSlot(item, count = 1, label = "", isOut = false, glint = false) {
+      if (!item) return `<div class="mc-slot empty"></div>`;
+      const cls = `mc-slot${isOut ? " out" : ""}${glint ? " glint" : ""}`;
+      const cnt = count > 1 ? `<span class="mc-count">${count}</span>` : "";
+      const tip = label || item.replace(/_/g, " ");
+      return `<div class="${cls}" title="${tip}"><img src="assets/icons/mc/${item}.png" alt="${tip}" loading="lazy"/>${cnt}</div>`;
+    }
+
+    function craft3x3(grid, outItem, outCount, outLabel, glint = false) {
+      const cells = grid.map(c => Array.isArray(c) ? mcSlot(c[0], c[1] || 1, c[2] || "") : mcSlot(c)).join("");
+      return `
+        <div class="recipe-box">
+          <div class="mc-grid-3x3">${cells}</div>
+          <span class="mc-arrow">➔</span>
+          ${mcSlot(outItem, outCount, outLabel, true, glint)}
+        </div>
+      `;
+    }
+
+    function recipeRow(inputs, outItem, outCount, outLabel, metaHtml = "") {
+      const left = inputs.map(([id, cnt, lbl]) => mcSlot(id, cnt || 1, lbl || "")).join(`<span class="recipe-plus">+</span>`);
+      return `
+        <div class="recipe-row">
+          <div class="recipe-row-left">
+            ${left}
+            <span class="mc-arrow">➔</span>
+            ${mcSlot(outItem, outCount, outLabel, true)}
+          </div>
+          ${metaHtml ? `<div class="recipe-meta">${metaHtml}</div>` : ""}
+        </div>
+      `;
+    }
+
     function renderQol(vi) {
+      const teeGrid = [
+        ["amethyst_shard", 1, "Amethyst Shard"], ["amethyst_shard", 1, "Amethyst Shard"], ["amethyst_shard", 1, "Amethyst Shard"],
+        ["echo_shard", 1, "Echo Shard"], ["paper", 1, "Paper"], ["echo_shard", 1, "Echo Shard"],
+        ["amethyst_shard", 1, "Amethyst Shard"], ["amethyst_shard", 1, "Amethyst Shard"], ["amethyst_shard", 1, "Amethyst Shard"]
+      ];
+      const rajGrid = [
+        null, ["copper_ingot", 1, "Copper Ingot"], null,
+        null, ["copper_ingot", 1, "Copper Ingot"], null,
+        ["stick", 1, "Stick"], ["smooth_stone_slab", 1, "Smooth Stone Slab"], ["stick", 1, "Stick"]
+      ];
       return `
         <div class="sec-card">
           <div class="sec-head">
@@ -311,6 +403,75 @@
                 <li><span><code>/tips</code> — ${vi ? "Xem danh sách mẹo & lệnh hữu ích của server." : "Show server tips & quick commands."}</span></li>
                 <li><span><code>/stash</code> — ${vi ? "Mở kho nhận thưởng Boss & Quest (tối đa <strong>540 ô</strong>). Đã tắt tự nhặt block/mob drop (<code>autoPickup=false</code>)." : "Open Boss & Quest reward stash (up to <strong>540 slots</strong>). Block/mob auto-pickup is disabled."}</span></li>
               </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-head">
+            <h2 class="sec-title"><img class="mc-pixel" src="assets/icons/mc/echo_shard.png" alt=""/>${vi ? "Công Thức Chế Tạo Custom (Custom Recipes)" : "Custom Crafting Recipes"}</h2>
+            <span class="badge gold">${vi ? "DATAPACK RECIPES" : "DATAPACK RECIPES"}</span>
+          </div>
+          <p class="sec-sub">
+            ${vi
+              ? 'Các công thức chế tạo riêng trên server (xem thêm công thức Waypoint & La Bàn tại <a class="inline-link" href="warping.html">Dịch Chuyển &amp; Waypoint</a>).'
+              : 'Server-exclusive custom recipes (for Waypoint &amp; Wayfinder Compass recipes, check <a class="inline-link" href="warping.html">Teleports &amp; Waypoints</a>).'}
+          </p>
+          <div class="recipe-showcase">
+            <div class="info-card highlight">
+              <div class="info-head">
+                <div class="info-title"><img class="mc-pixel" src="assets/icons/mc/smithing_table.png" alt=""/>Too Expensive Extractor</div>
+                <span class="badge gold">EPIC • SMITHING</span>
+              </div>
+              ${craft3x3(teeGrid, "paper", 1, "Too Expensive Extractor", true)}
+              <p class="recipe-note">
+                ${vi
+                  ? "<strong>Nguyên liệu:</strong> 6× Amethyst Shard + 2× Echo Shard + 1× Paper.<br/><strong>Cách dùng:</strong> Đặt trang bị bị lỗi <em>Too Expensive!</em> cùng Extractor vào <strong>Bàn Rèn (Smithing Table)</strong> để xóa giới hạn sửa đồ mà vẫn giữ nguyên phù phép."
+                  : "<strong>Ingredients:</strong> 6× Amethyst Shard + 2× Echo Shard + 1× Paper.<br/><strong>Usage:</strong> Combine your <em>Too Expensive!</em> gear with the Extractor in a <strong>Smithing Table</strong> to reset its anvil repair cost while keeping all enchants."}
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-head">
+                <div class="info-title"><img class="mc-pixel" src="assets/icons/mc/lightning_rod.png" alt=""/>Raj's Lightning Rod Holder</div>
+                <span class="badge aqua">KATTERS STRUCTURES</span>
+              </div>
+              ${craft3x3(rajGrid, "lightning_rod", 1, "Raj's Lightning Rod Holder", false)}
+              <p class="recipe-note">
+                ${vi
+                  ? "<strong>Nguyên liệu:</strong> 2× Copper Ingot + 1× Smooth Stone Slab + 2× Stick.<br/><strong>Cách dùng:</strong> Đặt giá đỡ và gắn <em>Raj's Lightning Rod</em> vào để triệu hồi sét định kỳ xung quanh."
+                  : "<strong>Ingredients:</strong> 2× Copper Ingot + 1× Smooth Stone Slab + 2× Stick.<br/><strong>Usage:</strong> Place this holder and insert a <em>Raj's Lightning Rod</em> to periodically summon lightning around it."}
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-head">
+                <div class="info-title"><img class="mc-pixel" src="assets/icons/mc/chorus_fruit.png" alt=""/>${vi ? "Stellarity — Chế Tạo Sinh Tồn The End" : "Stellarity — End Survival Recipes"}</div>
+                <span class="badge green">STELLARITY</span>
+              </div>
+              <div class="recipe-rows">
+                ${recipeRow([["chorus_fruit", 4, "4× Chorus Fruit (2×2)"]], "chorus_plant", 4, "Chorus Plant", "4× Chorus Plant")}
+                ${recipeRow([["end_stone", 1, "End Stone"], ["blaze_powder", 1, "Blaze Powder"]], "glass", 3, "Glass", "3× Glass")}
+                ${recipeRow([["chorus_plant", 3, "3× Chorus Plant"], ["water_bucket", 1, "Water Bucket"]], "paper", 6, "Paper", "6× Paper")}
+                ${recipeRow([["phantom_membrane", 4, "4× Phantom Membrane (2×2)"]], "leather", 2, "Leather", "2× Leather")}
+                ${recipeRow([["popped_chorus_fruit", 1, "Popped Chorus Fruit"], ["blast_furnace", 1, "Blast Furnace / Campfire"]], "gunpowder", 1, "Gunpowder", vi ? "Nung / Lửa trại" : "Blast / Campfire")}
+                ${recipeRow([["water_bucket", 1, "Water Bucket"], ["ender_eye", 1, "Ender Eye"]], "slime_ball", 3, "Slime Ball", "3× Slime Ball")}
+                ${recipeRow([["arrow", 1, "Arrow"], ["glowstone", 1, "Glowstone"]], "spectral_arrow", 4, "Spectral Arrow", "4× Spectral Arrow")}
+                ${recipeRow([["chorus_flower", 1, "Chorus Flower"]], "purple_dye", 2, "Purple Dye", "2× Purple Dye")}
+                ${recipeRow([["chorus_fruit", 1, "Chorus Fruit"]], "sugar", 1, "Sugar", "1× Sugar")}
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-head">
+                <div class="info-title"><img class="mc-pixel" src="assets/icons/mc/suspicious_stew.png" alt=""/>${vi ? "Stellarity — Súp Đáng Ngờ Đặc Biệt" : "Stellarity — Custom Suspicious Stews"}</div>
+                <span class="badge green">STELLARITY</span>
+              </div>
+              <div class="recipe-rows">
+                ${recipeRow([["bowl", 1, "Bowl"], ["red_mushroom", 1, "Red Mushroom"], ["brown_mushroom", 1, "Brown Mushroom"], ["chorus_fruit", 1, "Chorus Fruit"]], "suspicious_stew", 1, "Suspicious Stew (Levitation)", "<strong>Levitation</strong> (8s)")}
+                ${recipeRow([["bowl", 1, "Bowl"], ["red_mushroom", 1, "Red Mushroom"], ["brown_mushroom", 1, "Brown Mushroom"], ["pink_petals", 1, "Pink Petals"]], "suspicious_stew", 1, "Suspicious Stew (Absorption)", "<strong>Absorption</strong> (9s)")}
+                ${recipeRow([["bowl", 1, "Bowl"], ["red_mushroom", 1, "Red Mushroom"], ["brown_mushroom", 1, "Brown Mushroom"], ["pitcher_plant", 1, "Pitcher Plant"]], "suspicious_stew", 1, "Suspicious Stew (Strength)", "<strong>Strength</strong> (11s)")}
+              </div>
             </div>
           </div>
         </div>
