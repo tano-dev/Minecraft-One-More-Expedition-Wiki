@@ -8,7 +8,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="One More Expedition • KHTN 26.3" />
   <meta property="og:title" content="Mine Treasure — One More Expedition Wiki" />
-  <meta property="og:description" content="Cơ chế đào kho báu, bảng tỉ lệ rơi chi tiết theo 43 block, 4 loại Charm, 23 Biome Loots, Mythical, 12 Runes & 28 Custom Items." />
+  <meta property="og:description" content="Tra cứu chi tiết kho báu đào mỏ theo từng Biome và độ hiếm (Common, Rare, Epic, Legendary, Mythical), tỉ lệ rơi 43 Block, Charms, Runes & Custom Items." />
   <meta property="og:url" content="https://tano-dev.github.io/Minecraft-One-More-Expedition-Wiki/minetreasure.html" />
   <meta property="og:image" content="https://tano-dev.github.io/Minecraft-One-More-Expedition-Wiki/assets/server-icon.png" />
   <meta name="twitter:card" content="summary" />
@@ -25,7 +25,7 @@
     :root {
       --bg-dark: #0d131f;
       --card-bg: rgba(18, 24, 38, 0.9);
-      --card-inner: rgba(25, 34, 52, 0.82);
+      --card-inner: rgba(25, 34, 52, 0.84);
       --border-card: rgba(255, 255, 255, 0.1);
       --text-main: #f1f5f9;
       --text-muted: #94a3b8;
@@ -34,14 +34,13 @@
       --green: #4ade80;
       --epic: #e879f9;
       --red: #f87171;
-      --orange: #fb923c;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: var(--text-main);
       min-height: 100vh;
-      line-height: 1.55;
+      line-height: 1.5;
       background-color: var(--bg-dark);
       -webkit-font-smoothing: antialiased;
     }
@@ -51,12 +50,12 @@
     }
     .minecraft-bg-overlay {
       position: absolute; inset: 0;
-      background: radial-gradient(circle at 50% 20%, rgba(15, 23, 42, 0.5) 0%, rgba(7, 10, 18, 0.88) 100%);
+      background: radial-gradient(circle at 50% 20%, rgba(15, 23, 42, 0.5) 0%, rgba(7, 10, 18, 0.9) 100%);
     }
     .mc-pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
-    .page-wrap { max-width: 1180px; margin: 22px auto 60px; padding: 0 20px; }
+    .page-wrap { max-width: 1280px; margin: 20px auto 60px; padding: 0 20px; }
 
-    .back-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; gap: 10px; flex-wrap: wrap; }
+    .back-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; gap: 10px; flex-wrap: wrap; }
     .back-btn {
       display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 9px;
       background: var(--card-bg); border: 1px solid var(--border-card); color: #fff;
@@ -66,28 +65,28 @@
 
     .hero-card {
       background: var(--card-bg); border: 1px solid var(--border-card); border-radius: 16px;
-      padding: 20px 24px; backdrop-filter: blur(12px);
-      display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; margin-bottom: 18px;
+      padding: 18px 22px; backdrop-filter: blur(12px);
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 16px;
     }
-    .hero-left { display: flex; align-items: center; gap: 16px; }
+    .hero-left { display: flex; align-items: center; gap: 14px; }
     .hero-icon-box {
-      width: 58px; height: 58px; border-radius: 14px; background: rgba(10, 14, 23, 0.85);
+      width: 54px; height: 54px; border-radius: 14px; background: rgba(10, 14, 23, 0.85);
       border: 1px solid rgba(245, 196, 81, 0.35); display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-    .hero-icon-box img { width: 38px; height: 38px; }
-    .hero-title { font-size: 1.5rem; font-weight: 800; color: #fff; line-height: 1.2; }
-    .hero-sub { font-size: 0.9rem; color: var(--text-muted); margin-top: 4px; }
-    .hero-stats { display: flex; gap: 10px; flex-wrap: wrap; }
+    .hero-icon-box img { width: 36px; height: 36px; }
+    .hero-title { font-size: 1.45rem; font-weight: 800; color: #fff; line-height: 1.2; }
+    .hero-sub { font-size: 0.88rem; color: var(--text-muted); margin-top: 3px; }
+    .hero-stats { display: flex; gap: 8px; flex-wrap: wrap; }
     .stat-pill {
       background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 10px;
-      padding: 8px 13px; text-align: center; min-width: 88px;
+      padding: 7px 12px; text-align: center; min-width: 82px;
     }
-    .stat-val { font-size: 1.08rem; font-weight: 800; color: var(--gold); font-family: 'JetBrains Mono', monospace; }
-    .stat-lbl { font-size: 0.72rem; color: var(--text-muted); font-weight: 600; }
+    .stat-val { font-size: 1.02rem; font-weight: 800; color: var(--gold); font-family: 'JetBrains Mono', monospace; }
+    .stat-lbl { font-size: 0.7rem; color: var(--text-muted); font-weight: 600; }
 
     /* Main Tabs */
     .main-tabs {
-      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px;
+      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;
       background: var(--card-bg); padding: 6px; border-radius: 13px; border: 1px solid var(--border-card);
     }
     .main-tab-btn {
@@ -103,108 +102,181 @@
     .panel { display: none; }
     .panel.active { display: block; }
 
+    /* Biome-first 2-column layout */
+    .biome-layout {
+      display: grid;
+      grid-template-columns: 310px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+    .biome-sidebar {
+      background: var(--card-bg); border: 1px solid var(--border-card); border-radius: 16px;
+      padding: 14px; backdrop-filter: blur(12px);
+      position: sticky; top: 76px; max-height: calc(100vh - 96px);
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .biome-list {
+      overflow-y: auto; display: flex; flex-direction: column; gap: 6px; padding-right: 4px;
+    }
+    .biome-list::-webkit-scrollbar { width: 5px; }
+    .biome-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.16); border-radius: 4px; }
+    .biome-btn {
+      display: flex; align-items: center; gap: 10px; width: 100%; text-align: left;
+      padding: 9px 11px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.07);
+      background: var(--card-inner); color: #cbd5e1; cursor: pointer; font-family: inherit;
+      transition: all 0.12s ease;
+    }
+    .biome-btn:hover { border-color: rgba(245, 196, 81, 0.4); color: #fff; }
+    .biome-btn.active {
+      background: rgba(245, 196, 81, 0.14); border-color: rgba(245, 196, 81, 0.65); color: #fff;
+    }
+    .biome-btn img { width: 24px; height: 24px; flex-shrink: 0; }
+    .biome-btn-info { flex: 1; min-width: 0; }
+    .biome-btn-name { font-size: 0.84rem; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .biome-btn-sub { font-size: 0.7rem; color: var(--text-muted); display: flex; gap: 6px; align-items: center; }
+
+    .dim-pills { display: flex; gap: 5px; flex-wrap: wrap; }
+    .dim-pill {
+      flex: 1; text-align: center; padding: 5px 8px; border-radius: 7px; border: 1px solid var(--border-card);
+      background: rgba(10,14,23,0.7); color: var(--text-muted); font-size: 0.74rem; font-weight: 800;
+      cursor: pointer; font-family: inherit;
+    }
+    .dim-pill.active { background: rgba(56, 189, 248, 0.16); color: var(--aqua); border-color: rgba(56, 189, 248, 0.5); }
+
     .sec-card {
       background: var(--card-bg); border: 1px solid var(--border-card); border-radius: 16px;
-      padding: 20px 22px; backdrop-filter: blur(12px); margin-bottom: 18px;
+      padding: 18px 20px; backdrop-filter: blur(12px); margin-bottom: 16px;
     }
-    .sec-head {
-      display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px;
-    }
-    .sec-title { font-size: 1.12rem; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 8px; }
-    .sec-sub { font-size: 0.86rem; color: var(--text-muted); margin-bottom: 14px; }
+    .sec-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+    .sec-title { font-size: 1.12rem; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 10px; }
+    .sec-sub { font-size: 0.84rem; color: var(--text-muted); margin-bottom: 12px; }
 
-    .mech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
-    .mech-box {
-      background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 12px; padding: 14px 16px;
+    .biome-hero {
+      display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+      padding-bottom: 14px; border-bottom: 1px solid var(--border-card); margin-bottom: 14px;
     }
-    .mech-box h3 { font-size: 0.94rem; font-weight: 800; color: var(--gold); margin-bottom: 6px; }
-    .mech-box p, .mech-box li { font-size: 0.84rem; color: #cbd5e1; }
-    .mech-box ul { list-style: none; display: flex; flex-direction: column; gap: 5px; margin-top: 6px; }
-    .mech-box li::before { content: "▸ "; color: var(--aqua); font-weight: 800; }
-    code {
-      font-family: 'JetBrains Mono', monospace; font-size: 0.8rem;
-      background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1);
-      padding: 1px 6px; border-radius: 5px; color: #93c5fd;
+    .biome-hero-left { display: flex; align-items: center; gap: 14px; }
+    .biome-hero-icon {
+      width: 48px; height: 48px; border-radius: 12px; background: rgba(10,14,23,0.85);
+      border: 1px solid rgba(255,255,255,0.14); display: flex; align-items: center; justify-content: center;
     }
+    .biome-hero-icon img { width: 32px; height: 32px; }
 
-    /* Charms Grid */
-    .charms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 10px; }
-    .charm-card {
-      background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 12px; padding: 12px 14px;
+    /* Rarity Sections */
+    .rarity-section {
+      border-radius: 14px; border: 1px solid var(--border-card); background: rgba(13, 19, 31, 0.75);
+      margin-bottom: 14px; overflow: hidden;
     }
-    .charm-name { font-weight: 800; font-size: 0.92rem; margin-bottom: 4px; }
+    .rarity-section.r-common { border-color: rgba(148, 163, 184, 0.35); }
+    .rarity-section.r-rare { border-color: rgba(56, 189, 248, 0.45); }
+    .rarity-section.r-epic { border-color: rgba(232, 121, 249, 0.45); }
+    .rarity-section.r-legendary { border-color: rgba(245, 196, 81, 0.55); }
+
+    .rarity-head {
+      display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+      padding: 11px 15px; background: rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .rarity-title { font-size: 0.96rem; font-weight: 800; display: flex; align-items: center; gap: 8px; }
+    .rarity-meta { font-size: 0.76rem; color: var(--text-muted); display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+
     .t-common { color: #cbd5e1; }
     .t-rare { color: #38bdf8; }
     .t-epic { color: #e879f9; }
     .t-legendary { color: #f5c451; }
     .t-mythical { color: #fb7185; }
 
-    /* Toggle */
-    .toggle-btn {
-      display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 9px;
-      background: var(--card-inner); border: 1px solid rgba(255,255,255,0.16); color: #cbd5e1;
-      font-size: 0.82rem; font-weight: 800; cursor: pointer; font-family: inherit;
+    .ctrl-input {
+      background: rgba(11, 15, 24, 0.9); border: 1px solid var(--border-card); border-radius: 9px;
+      color: #fff; padding: 8px 12px; font-size: 0.84rem; font-weight: 600; font-family: inherit; width: 100%;
     }
-    .toggle-btn.on {
-      background: rgba(74, 222, 128, 0.16); border-color: rgba(74, 222, 128, 0.5); color: var(--green);
+    .controls-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+    .tier-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+    .tier-pill {
+      padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border-card);
+      background: var(--card-inner); color: var(--text-muted); font-size: 0.8rem; font-weight: 800;
+      cursor: pointer; font-family: inherit;
     }
+    .tier-pill.active { border-color: currentColor; background: rgba(255,255,255,0.09); color: #fff; }
 
     /* Tables */
-    .tbl-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border-card); }
-    table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+    .tbl-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
     th {
-      background: rgba(10, 14, 23, 0.92); color: var(--text-muted); font-weight: 800;
-      text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border-card); white-space: nowrap;
+      background: rgba(10, 14, 23, 0.75); color: var(--text-muted); font-weight: 800;
+      text-align: left; padding: 8px 12px; border-bottom: 1px solid rgba(255,255,255,0.08); white-space: nowrap;
     }
-    td { padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.06); vertical-align: top; }
+    td { padding: 8px 12px; border-bottom: 1px solid rgba(255,255,255,0.05); vertical-align: middle; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: rgba(255,255,255,0.03); }
     .mono { font-family: 'JetBrains Mono', monospace; font-weight: 700; white-space: nowrap; }
-    .block-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
-    .b-chip {
-      font-size: 0.72rem; padding: 2px 7px; border-radius: 5px;
-      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.09); color: #cbd5e1;
-    }
 
-    /* Controls */
-    .controls-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
-    .ctrl-select, .ctrl-input {
-      background: rgba(11, 15, 24, 0.9); border: 1px solid var(--border-card); border-radius: 10px;
-      color: #fff; padding: 9px 13px; font-size: 0.86rem; font-weight: 600; font-family: inherit;
+    .item-cell { display: flex; align-items: center; gap: 10px; }
+    .item-icon {
+      width: 26px; height: 26px; border-radius: 6px; background: rgba(10,14,23,0.75);
+      border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-    .ctrl-select { min-width: 230px; }
-    .ctrl-input { flex: 1; min-width: 200px; }
-    .tier-pills { display: flex; gap: 6px; flex-wrap: wrap; }
-    .tier-pill {
-      padding: 7px 14px; border-radius: 8px; border: 1px solid var(--border-card);
-      background: var(--card-inner); color: var(--text-muted); font-size: 0.82rem; font-weight: 800;
-      cursor: pointer; font-family: inherit;
+    .item-icon img { width: 20px; height: 20px; }
+
+    .block-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px; }
+    .b-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 0.74rem; padding: 3px 8px; border-radius: 6px;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.09); color: #e2e8f0;
     }
-    .tier-pill.active { border-color: currentColor; background: rgba(255,255,255,0.08); }
+    .b-chip img { width: 16px; height: 16px; }
 
     /* Exclusives & Cards Grid */
-    .excl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 10px; margin-bottom: 16px; }
+    .excl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 10px; margin-bottom: 16px; }
     .item-card {
-      background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 12px; padding: 13px 15px;
+      background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 12px; padding: 12px 14px;
       display: flex; flex-direction: column; gap: 6px;
     }
     .item-card.excl { border-color: rgba(245, 196, 81, 0.45); background: rgba(245, 196, 81, 0.06); }
-    .item-card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
-    .item-card-name { font-size: 0.94rem; font-weight: 800; color: #fff; }
+    .item-card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .item-card-left { display: flex; align-items: center; gap: 10px; min-width: 0; }
+    .item-card-left img { width: 26px; height: 26px; flex-shrink: 0; }
+    .item-card-name { font-size: 0.92rem; font-weight: 800; color: #fff; }
     .badge {
-      font-size: 0.7rem; font-weight: 800; padding: 2px 8px; border-radius: 6px;
+      font-size: 0.68rem; font-weight: 800; padding: 2px 7px; border-radius: 6px; white-space: nowrap;
       background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); color: #cbd5e1;
     }
     .badge.gold { background: rgba(245, 196, 81, 0.15); border-color: rgba(245, 196, 81, 0.45); color: var(--gold); }
     .badge.aqua { background: rgba(56, 189, 248, 0.14); border-color: rgba(56, 189, 248, 0.4); color: var(--aqua); }
     .badge.epic { background: rgba(232, 121, 249, 0.14); border-color: rgba(232, 121, 249, 0.4); color: var(--epic); }
-    .item-lore { font-size: 0.8rem; color: #cbd5e1; line-height: 1.45; }
-    .item-meta { font-size: 0.75rem; color: var(--aqua); font-family: 'JetBrains Mono', monospace; }
+    .item-lore { font-size: 0.79rem; color: #cbd5e1; line-height: 1.42; }
+    .item-meta { font-size: 0.74rem; color: var(--aqua); font-family: 'JetBrains Mono', monospace; }
 
+    .mech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+    .mech-box { background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 12px; padding: 14px 16px; }
+    .mech-box h3 { font-size: 0.92rem; font-weight: 800; color: var(--gold); margin-bottom: 6px; }
+    .mech-box li { font-size: 0.83rem; color: #cbd5e1; list-style: none; margin-top: 5px; }
+    .mech-box li::before { content: "▸ "; color: var(--aqua); font-weight: 800; }
+    code {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+      background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1);
+      padding: 1px 6px; border-radius: 5px; color: #93c5fd;
+    }
+    .charms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 10px; }
+    .charm-card {
+      background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 12px; padding: 12px 14px;
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .charm-card img { width: 28px; height: 28px; flex-shrink: 0; }
+    .toggle-btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 9px;
+      background: var(--card-inner); border: 1px solid rgba(255,255,255,0.16); color: #cbd5e1;
+      font-size: 0.82rem; font-weight: 800; cursor: pointer; font-family: inherit;
+    }
+    .toggle-btn.on { background: rgba(74, 222, 128, 0.16); border-color: rgba(74, 222, 128, 0.5); color: var(--green); }
     .sub-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+
+    @media (max-width: 920px) {
+      .biome-layout { grid-template-columns: 1fr; }
+      .biome-sidebar { position: static; max-height: 360px; }
+    }
     @media (max-width: 680px) {
       .page-wrap { padding: 0 12px; }
-      .sec-card, .hero-card { padding: 15px; }
+      .sec-card, .hero-card { padding: 14px; }
     }
   </style>
 </head>
@@ -257,21 +329,42 @@
         </div>
         <div>
           <h1 class="hero-title">Mine Treasure</h1>
-          <p class="hero-sub" id="heroSub">Cơ chế đào kho báu • Tỉ lệ rơi 43 Block • 23 Biome Loots • Mythical, Runes &amp; Custom Items</p>
+          <p class="hero-sub" id="heroSub">Kho báu theo từng Biome &amp; Độ hiếm • Tỉ lệ rơi 43 Block • Mythical, Runes &amp; Custom Items</p>
         </div>
       </div>
       <div class="hero-stats" id="heroStats"></div>
     </section>
 
     <div class="main-tabs">
-      <button class="main-tab-btn active" data-tab="rates" onclick="switchTab('rates')" id="tabBtnRates">1. Cơ Chế &amp; Tỉ Lệ Rơi</button>
-      <button class="main-tab-btn" data-tab="biomes" onclick="switchTab('biomes')" id="tabBtnBiomes">2. Kho Báu Theo Biome (23)</button>
+      <button class="main-tab-btn active" data-tab="biomes" onclick="switchTab('biomes')" id="tabBtnBiomes">1. Kho Báu Theo Biome (23)</button>
+      <button class="main-tab-btn" data-tab="rates" onclick="switchTab('rates')" id="tabBtnRates">2. Cơ Chế &amp; Tỉ Lệ Rơi (43 Block)</button>
       <button class="main-tab-btn" data-tab="mythical" onclick="switchTab('mythical')" id="tabBtnMythical">3. Mythical, Runes &amp; Totems</button>
       <button class="main-tab-btn" data-tab="custom" onclick="switchTab('custom')" id="tabBtnCustom">4. Vật Phẩm Đặc Biệt (28)</button>
     </div>
 
-    <!-- TAB 1: MECHANICS & DROP RATES -->
-    <section class="panel active" id="panel-rates">
+    <!-- TAB 1 (DEFAULT): BIOME-FIRST EXPLORER -->
+    <section class="panel active" id="panel-biomes">
+      <div class="biome-layout">
+        <aside class="biome-sidebar">
+          <input type="text" class="ctrl-input" id="biomeNameSearch" placeholder="Tìm Biome..." oninput="renderBiomeSidebar()" />
+          <div class="dim-pills" id="dimPills"></div>
+          <div class="biome-list" id="biomeList"></div>
+        </aside>
+
+        <div class="sec-card" style="margin-bottom:0;" id="biomeDetailPane">
+          <div class="biome-hero" id="biomeHero"></div>
+          <div id="biomeExclusivesWrap"></div>
+          <div class="controls-row">
+            <div class="tier-pills" id="tierFilterPills"></div>
+            <input type="text" class="ctrl-input" id="biomeLootSearch" style="flex:1;min-width:180px;" placeholder="Tìm vật phẩm trong Biome này..." oninput="renderBiomeDetail()" />
+          </div>
+          <div id="biomeTiersContainer"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: MECHANICS & DROP RATES -->
+    <section class="panel" id="panel-rates">
       <div class="sec-card">
         <div class="sec-head">
           <h2 class="sec-title" id="mechTitle">Cơ Chế Hoạt Động (Mine Treasure v1.6.5)</h2>
@@ -296,7 +389,7 @@
           </button>
         </div>
         <p class="sec-sub" id="ratesSub"></p>
-        <div class="tbl-wrap">
+        <div class="tbl-wrap" style="border:1px solid var(--border-card);border-radius:12px;">
           <table>
             <thead>
               <tr>
@@ -309,33 +402,6 @@
               </tr>
             </thead>
             <tbody id="ratesBody"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- TAB 2: BIOME CHESTS -->
-    <section class="panel" id="panel-biomes">
-      <div class="sec-card">
-        <div class="controls-row">
-          <select class="ctrl-select" id="biomeSelect" onchange="renderBiomePanel()"></select>
-          <div class="tier-pills" id="tierPills"></div>
-          <input type="text" class="ctrl-input" id="biomeSearch" placeholder="Tìm vật phẩm trong rương..." oninput="renderBiomePanel()" />
-        </div>
-        <div id="biomeMetaInfo" class="sec-sub"></div>
-        <div id="biomeExclusivesWrap"></div>
-        <div class="tbl-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th id="thItem">Vật phẩm</th>
-                <th id="thCount">Số lượng</th>
-                <th id="thWeight">Weight</th>
-                <th id="thPct">Tỉ lệ / Roll</th>
-                <th id="thNotes">Chi tiết / Phù phép</th>
-              </tr>
-            </thead>
-            <tbody id="biomeLootBody"></tbody>
           </table>
         </div>
       </div>
@@ -369,15 +435,22 @@
   <script>
     const LANG_KEY = "ome_wiki_lang";
     let currentLang = localStorage.getItem(LANG_KEY) || "vi";
-    let activeTab = "rates";
+    let activeTab = "biomes";
+    let selectedBiomeId = "default";
+    let selectedDimFilter = "all";
+    let selectedTierFilter = "all";
     let charmActive = false;
-    let activeTier = "legendary";
     let activeMythCat = "all";
 
     const MT = MINE_TREASURE_DATA;
 
     function esc(s) {
       return String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+    }
+
+    function iconImg(src, size = 20) {
+      if (!src) return `<img class="mc-pixel" src="assets/icons/netherite_pickaxe.png" width="${size}" height="${size}" alt="" />`;
+      return `<img class="mc-pixel" src="${esc(src)}" width="${size}" height="${size}" loading="lazy" alt="" />`;
     }
 
     function setLanguage(lang) {
@@ -419,29 +492,189 @@
       });
       document.getElementById("backHomeBtn").textContent = vi ? "← Quay lại Trang Chủ" : "← Back to Main Page";
       document.getElementById("heroSub").textContent = vi
-        ? "Cơ chế đào kho báu • Tỉ lệ rơi 43 Block • 23 Biome Loots • Mythical, Runes & Custom Items"
-        : "Mining Treasure Mechanics • 43 Block Drop Rates • 23 Biome Loots • Mythical, Runes & Custom Items";
+        ? "Kho báu theo từng Biome & Độ hiếm • Tỉ lệ rơi 43 Block • Mythical, Runes & Custom Items"
+        : "Biome-by-Biome Chest Loots & Rarities • 43 Block Drop Rates • Mythical, Runes & Custom Items";
 
       const totalBlocks = MT.block_tiers.reduce((a, b) => a + b.blocks.length, 0);
       const mythTotal = MT.mythical.armor.length + MT.mythical.weapon.length + MT.mythical.utility.length;
       document.getElementById("heroStats").innerHTML = [
-        [totalBlocks, vi ? "Blocks" : "Blocks"],
         [MT.biomes.length, "Biomes"],
+        [totalBlocks, "Blocks"],
         [mythTotal, "Mythical"],
         [MT.runes.length + MT.totems.length, "Runes/Totems"],
         [MT.custom_items.length, "Custom Items"],
       ].map(([v, l]) => `<div class="stat-pill"><div class="stat-val">${v}</div><div class="stat-lbl">${l}</div></div>`).join("");
 
-      document.getElementById("tabBtnRates").textContent = vi ? "1. Cơ Chế & Tỉ Lệ Rơi" : "1. Mechanics & Drop Rates";
-      document.getElementById("tabBtnBiomes").textContent = vi ? `2. Kho Báu Theo Biome (${MT.biomes.length})` : `2. Biome Chests (${MT.biomes.length})`;
+      document.getElementById("tabBtnBiomes").textContent = vi ? `1. Kho Báu Theo Biome (${MT.biomes.length})` : `1. Biome Chests (${MT.biomes.length})`;
+      document.getElementById("tabBtnRates").textContent = vi ? `2. Cơ Chế & Tỉ Lệ Rơi (${totalBlocks} Block)` : `2. Mechanics & Drop Rates (${totalBlocks} Blocks)`;
       document.getElementById("tabBtnMythical").textContent = vi ? "3. Mythical, Runes & Totems" : "3. Mythical, Runes & Totems";
       document.getElementById("tabBtnCustom").textContent = vi ? `4. Vật Phẩm Đặc Biệt (${MT.custom_items.length})` : `4. Custom Items (${MT.custom_items.length})`;
 
+      renderBiomeSidebar();
+      renderBiomeDetail();
       renderRatesPanel();
-      populateBiomeSelect();
-      renderBiomePanel();
       renderMythicalPanel();
       renderCustomPanel();
+    }
+
+    function selectBiome(id) {
+      selectedBiomeId = id;
+      renderBiomeSidebar();
+      renderBiomeDetail();
+    }
+
+    function renderBiomeSidebar() {
+      const vi = currentLang === "vi";
+      const q = (document.getElementById("biomeNameSearch").value || "").trim().toLowerCase();
+      document.getElementById("biomeNameSearch").placeholder = vi ? "Tìm Biome..." : "Search Biome...";
+
+      const dims = [
+        ["all", vi ? "Tất cả" : "All"],
+        ["overworld", "Overworld"],
+        ["nether", "Nether"],
+        ["end", "End"],
+      ];
+      document.getElementById("dimPills").innerHTML = dims.map(([k, l]) =>
+        `<button class="dim-pill ${selectedDimFilter === k ? 'active' : ''}" onclick="selectedDimFilter='${k}';renderBiomeSidebar();">${l}</button>`
+      ).join("");
+
+      const filtered = MT.biomes.filter(b => {
+        if (selectedDimFilter !== "all" && b.dim !== selectedDimFilter) return false;
+        if (q && !(b.name_en + " " + b.name_vi + " " + b.id).toLowerCase().includes(q)) return false;
+        return true;
+      });
+
+      document.getElementById("biomeList").innerHTML = filtered.map(b => {
+        const exclCount = (b.exclusives || []).length;
+        return `<button class="biome-btn ${b.id === selectedBiomeId ? 'active' : ''}" onclick="selectBiome('${esc(b.id)}')">
+          ${iconImg(b.icon, 24)}
+          <div class="biome-btn-info">
+            <div class="biome-btn-name">${esc(vi ? b.name_vi : b.name_en)}</div>
+            <div class="biome-btn-sub">
+              <span>${b.dim.toUpperCase()}</span>
+              ${exclCount ? `<span style="color:var(--gold);">★ ${exclCount} ${vi ? "độc quyền" : "excl."}</span>` : ""}
+            </div>
+          </div>
+        </button>`;
+      }).join("") || `<div style="color:var(--text-muted);font-size:0.82rem;text-align:center;padding:12px;">${vi ? "Không tìm thấy Biome" : "No Biomes found"}</div>`;
+    }
+
+    function renderBiomeDetail() {
+      const vi = currentLang === "vi";
+      const b = MT.biomes.find(x => x.id === selectedBiomeId) || MT.biomes[0];
+      const q = (document.getElementById("biomeLootSearch").value || "").trim().toLowerCase();
+      document.getElementById("biomeLootSearch").placeholder = vi ? "Tìm vật phẩm trong Biome này..." : "Search loot in this Biome...";
+
+      const tagStr = (b.tag_biomes || []).slice(0, 8).map(x => x.replace("minecraft:", "")).join(", ");
+      document.getElementById("biomeHero").innerHTML = `
+        <div class="biome-hero-left">
+          <div class="biome-hero-icon">${iconImg(b.icon, 32)}</div>
+          <div>
+            <h2 style="font-size:1.22rem;font-weight:800;color:#fff;">${esc(vi ? b.name_vi : b.name_en)}</h2>
+            <div style="font-size:0.78rem;color:var(--text-muted);margin-top:2px;">
+              <strong>${vi ? "Áp dụng tại:" : "Applies in:"}</strong> ${esc(tagStr || b.id)}
+            </div>
+          </div>
+        </div>
+        <span class="badge ${b.dim === 'nether' ? 'gold' : (b.dim === 'end' ? 'epic' : 'aqua')}">${b.dim.toUpperCase()}</span>
+      `;
+
+      const exWrap = document.getElementById("biomeExclusivesWrap");
+      if (b.exclusives && b.exclusives.length) {
+        exWrap.innerHTML = `<div style="font-size:0.86rem;font-weight:800;color:var(--gold);margin-bottom:8px;">★ ${vi ? "Trang Bị / Vật Phẩm Độc Quyền Của Biome:" : "Biome Exclusive Gear:"}</div>
+          <div class="excl-grid">${b.exclusives.map(ex => `
+            <div class="item-card excl">
+              <div class="item-card-top">
+                <div class="item-card-left">
+                  ${iconImg(ex.icon, 26)}
+                  <span class="item-card-name">${esc(ex.name)}</span>
+                </div>
+                <span class="badge gold">${esc(ex.raw_id.replace("minecraft:",""))}</span>
+              </div>
+              ${ex.enchants && ex.enchants.length ? `<div class="item-meta">${esc(ex.enchants.join(" • "))}</div>` : ""}
+              ${ex.attrs && ex.attrs.length ? `<div class="item-meta" style="color:var(--green);">${esc(ex.attrs.join(" • "))}</div>` : ""}
+              ${ex.lore && ex.lore.length ? `<div class="item-lore">${esc(ex.lore.join(" "))}</div>` : ""}
+            </div>
+          `).join("")}</div>`;
+      } else {
+        exWrap.innerHTML = "";
+      }
+
+      const tierOpts = [
+        ["all", vi ? "Tất cả (4 độ hiếm)" : "All (4 Rarities)", ""],
+        ["common", "Common", "t-common"],
+        ["rare", "Rare", "t-rare"],
+        ["epic", "Epic", "t-epic"],
+        ["legendary", "Legendary", "t-legendary"],
+      ];
+      document.getElementById("tierFilterPills").innerHTML = tierOpts.map(([k, lbl, cls]) =>
+        `<button class="tier-pill ${cls} ${selectedTierFilter === k ? 'active' : ''}" onclick="selectedTierFilter='${k}';renderBiomeDetail();">${lbl}</button>`
+      ).join("");
+
+      const tiersToShow = selectedTierFilter === "all"
+        ? ["common", "rare", "epic", "legendary"]
+        : [selectedTierFilter];
+      const tierLabels = {
+        common: ["Common Chest", "Rương Common", "t-common", "r-common"],
+        rare: ["Rare Chest", "Rương Rare", "t-rare", "r-rare"],
+        epic: ["Epic Chest", "Rương Epic", "t-epic", "r-epic"],
+        legendary: ["Legendary Chest", "Rương Legendary", "t-legendary", "r-legendary"],
+      };
+
+      document.getElementById("biomeTiersContainer").innerHTML = tiersToShow.map(tk => {
+        const td = b.tiers[tk];
+        if (!td) return "";
+        const [len, lvi, tcls, rcls] = tierLabels[tk];
+        const items = td.items.filter(it => !q || (it.name + " " + it.raw_id + " " + (it.lore || []).join(" ")).toLowerCase().includes(q));
+        return `
+          <div class="rarity-section ${rcls}">
+            <div class="rarity-head">
+              <div class="rarity-title ${tcls}">◆ ${vi ? lvi : len} <span class="badge">${items.length} ${vi ? "món" : "items"}</span></div>
+              <div class="rarity-meta">
+                <span>Rolls: <code>${esc(td.rolls)}</code></span>
+                <span>Total Weight: <code>${td.total_weight}</code></span>
+              </div>
+            </div>
+            <div class="tbl-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>${vi ? "Vật phẩm" : "Item"}</th>
+                    <th>${vi ? "Số lượng" : "Count"}</th>
+                    <th>Weight</th>
+                    <th>${vi ? "Tỉ lệ / Roll" : "Chance / Roll"}</th>
+                    <th>${vi ? "Chi tiết / Phù phép" : "Details / Enchants"}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${items.map(it => {
+                    const badges = [];
+                    if (it.is_exclusive) badges.push(`<span class="badge gold">${vi ? "Độc quyền" : "Excl."}</span>`);
+                    else if (it.is_custom) badges.push(`<span class="badge epic">Custom</span>`);
+                    if (it.chance_cond != null) badges.push(`<span class="badge aqua">Bonus</span>`);
+                    const details = [...(it.enchants || []), ...(it.attrs || []), ...(it.lore || []).slice(0, 2)].join(" • ");
+                    return `<tr>
+                      <td>
+                        <div class="item-cell">
+                          <div class="item-icon">${iconImg(it.icon, 20)}</div>
+                          <div>
+                            <div style="font-weight:700;color:${it.is_exclusive ? 'var(--gold)' : '#fff'};">${esc(it.name)} ${badges.join(" ")}</div>
+                            <div style="font-size:0.7rem;color:var(--text-muted);font-family:'JetBrains Mono',monospace;">${esc(it.raw_id)}</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="mono">${esc(it.count)}</td>
+                      <td class="mono">${it.chance_cond != null ? "—" : it.weight}</td>
+                      <td class="mono" style="color:var(--green);">${fmtPct(it.pct)}</td>
+                      <td style="font-size:0.77rem;color:#cbd5e1;max-width:300px;">${esc(details || "—")}</td>
+                    </tr>`;
+                  }).join("") || `<tr><td colspan="5" style="text-align:center;color:var(--text-muted);">${vi ? "Không có vật phẩm khớp tìm kiếm" : "No matching items"}</td></tr>`}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }).join("");
     }
 
     function renderRatesPanel() {
@@ -466,7 +699,7 @@
       document.getElementById("mechGrid").innerHTML = (vi ? [
         ["1. Đào Block & Roll Kho Báu", ["Hỗ trợ <strong>43 loại block</strong> tự nhiên (Đá, Deepslate, Quặng, Netherrack, End Stone, Terracotta...).", "Mỗi block thuộc 1 trong 8 nhóm hệ số từ <code>0.4x</code> (Low) đến <code>2.0x</code> (Diamond/Emerald Ore).", "Mỗi lần đập block sẽ roll độc lập từng hạng: Common, Rare, Epic, Legendary, Mythical."]],
         ["2. Phụ Thuộc Biome Đang Đứng", ["Rương rơi ra sẽ lấy bảng loot theo <strong>Biome nơi bạn đang đào</strong> (23 nhóm Biome từ Overworld, Hang sâu, Nether đến The End).", "Mỗi Biome có <strong>vũ khí / giáp độc quyền</strong> riêng (VD: <em>Rift Axe</em> ở Deep Dark, <em>Soul Scythe</em> ở Soul Sand Valley)."]],
-        ["3. Số Rolls & Thống Kê", ["Số vật phẩm trong mỗi rương dùng công thức <code>Scaled Binomial + Bonus Rolls</code> (Legend/Mythical cho nhiều roll hơn).", "Dùng lệnh <code>/trigger mt_stats</code> trong game để xem tổng số rương đã đào và thời gian Charm còn lại."]]
+        ["3. Số Rolls & Thống Kê", ["Số vật phẩm trong mỗi rương dùng công thức <code>Scaled Binomial + Bonus Rolls</code> (Legendary/Mythical cho nhiều roll hơn).", "Dùng lệnh <code>/trigger mt_stats</code> trong game để xem tổng số rương đã đào và thời gian Charm còn lại."]]
       ] : [
         ["1. Block Mining & Chest Rolls", ["Supports <strong>43 natural blocks</strong> (Stone, Deepslate, Ores, Netherrack, End Stone, Terracotta...).", "Each block belongs to 1 of 8 multiplier tiers from <code>0.4x</code> (Low) up to <code>2.0x</code> (Diamond/Emerald Ore).", "Breaking a block independently rolls Common, Rare, Epic, Legendary, and Mythical."]],
         ["2. Biome-Based Loot Tables", ["Unearthed chests pull from the <strong>Biome you are mining in</strong> (23 Biome groups across Overworld, Caves, Nether & The End).", "Each Biome features <strong>exclusive weapons/armor</strong> (e.g. <em>Rift Axe</em> in Deep Dark, <em>Soul Scythe</em> in Soul Sand Valley)."]],
@@ -478,9 +711,12 @@
       document.getElementById("charmsGrid").innerHTML = MT.charms.map(c => {
         const key = c.id.split("/").pop();
         return `<div class="charm-card">
-          <div class="charm-name ${charmCls[key] || ''}">${esc(c.name)}</div>
-          <div class="item-meta">${vi ? "Thời gian:" : "Duration:"} ${charmDurs[key] || "?"} • Boost: +25% (×5/4)</div>
-          <div class="item-lore" style="margin-top:4px;">${esc((c.lore || []).slice(0, 2).join(" "))}</div>
+          ${iconImg(c.icon, 28)}
+          <div>
+            <div class="charm-name ${charmCls[key] || ''}" style="font-weight:800;">${esc(c.name)}</div>
+            <div class="item-meta">${vi ? "Thời gian:" : "Duration:"} ${charmDurs[key] || "?"} • +25% (×5/4)</div>
+            <div class="item-lore" style="margin-top:4px;">${esc((c.lore || []).slice(0, 2).join(" "))}</div>
+          </div>
         </div>`;
       }).join("");
 
@@ -489,7 +725,7 @@
         return `<tr>
           <td>
             <div style="font-weight:800;color:#fff;">${esc(vi ? t.name_vi : t.name_en)}</div>
-            <div class="block-chips">${t.blocks_pretty.map(b => `<span class="b-chip">${esc(b)}</span>`).join("")}</div>
+            <div class="block-chips">${t.blocks_pretty.map((b, i) => `<span class="b-chip">${iconImg((t.block_icons || [])[i], 16)}${esc(b)}</span>`).join("")}</div>
           </td>
           <td class="mono t-common">${fmtPct(r.common)}</td>
           <td class="mono t-rare">${fmtPct(r.rare)}</td>
@@ -498,83 +734,6 @@
           <td class="mono t-mythical">${fmtPct(r.mythical)}</td>
         </tr>`;
       }).join("");
-    }
-
-    function populateBiomeSelect() {
-      const vi = currentLang === "vi";
-      const sel = document.getElementById("biomeSelect");
-      const prev = sel.value || "default";
-      sel.innerHTML = MT.biomes.map(b => {
-        const dTag = b.dim === "nether" ? "[Nether]" : (b.dim === "end" ? "[End]" : "[Overworld]");
-        return `<option value="${esc(b.id)}">${dTag} ${esc(vi ? b.name_vi : b.name_en)}</option>`;
-      }).join("");
-      sel.value = MT.biomes.some(b => b.id === prev) ? prev : "default";
-    }
-
-    function renderBiomePanel() {
-      const vi = currentLang === "vi";
-      const bid = document.getElementById("biomeSelect").value || "default";
-      const biome = MT.biomes.find(b => b.id === bid) || MT.biomes[0];
-      const q = (document.getElementById("biomeSearch").value || "").trim().toLowerCase();
-
-      document.getElementById("biomeSearch").placeholder = vi ? "Tìm vật phẩm trong rương..." : "Search chest loot...";
-      document.getElementById("thItem").textContent = vi ? "Vật phẩm" : "Item";
-      document.getElementById("thCount").textContent = vi ? "Số lượng" : "Count";
-      document.getElementById("thWeight").textContent = "Weight";
-      document.getElementById("thPct").textContent = vi ? "Tỉ lệ / Roll" : "Chance / Roll";
-      document.getElementById("thNotes").textContent = vi ? "Chi tiết / Phù phép" : "Details / Enchants";
-
-      const tierNames = [
-        ["common", "Common", "t-common"],
-        ["rare", "Rare", "t-rare"],
-        ["epic", "Epic", "t-epic"],
-        ["legendary", "Legendary", "t-legendary"],
-      ];
-      document.getElementById("tierPills").innerHTML = tierNames.map(([k, lbl, cls]) =>
-        `<button class="tier-pill ${cls} ${activeTier === k ? 'active' : ''}" onclick="activeTier='${k}';renderBiomePanel();">${lbl}</button>`
-      ).join("");
-
-      const tData = biome.tiers[activeTier];
-      const tagStr = (biome.tag_biomes || []).slice(0, 6).map(x => x.replace("minecraft:", "")).join(", ");
-      document.getElementById("biomeMetaInfo").innerHTML =
-        `<strong>${vi ? "Vùng áp dụng:" : "Applies in:"}</strong> ${esc(tagStr || biome.id)} &nbsp;•&nbsp; <strong>Rolls:</strong> <code>${esc(tData ? tData.rolls : "-")}</code> &nbsp;•&nbsp; <strong>Total Weight:</strong> <code>${tData ? tData.total_weight : 0}</code>`;
-
-      const exWrap = document.getElementById("biomeExclusivesWrap");
-      if (biome.exclusives && biome.exclusives.length) {
-        exWrap.innerHTML = `<div style="font-size:0.86rem;font-weight:800;color:var(--gold);margin-bottom:8px;">★ ${vi ? "Vật Phẩm Độc Quyền Của Biome Này:" : "Biome Exclusive Gear:"}</div>
-          <div class="excl-grid">${biome.exclusives.map(ex => `
-            <div class="item-card excl">
-              <div class="item-card-top">
-                <span class="item-card-name">${esc(ex.name)}</span>
-                <span class="badge gold">${esc(ex.raw_id.replace("minecraft:",""))}</span>
-              </div>
-              ${ex.enchants && ex.enchants.length ? `<div class="item-meta">${esc(ex.enchants.join(" • "))}</div>` : ""}
-              ${ex.attrs && ex.attrs.length ? `<div class="item-meta" style="color:var(--green);">${esc(ex.attrs.join(" • "))}</div>` : ""}
-              ${ex.lore && ex.lore.length ? `<div class="item-lore">${esc(ex.lore.join(" "))}</div>` : ""}
-            </div>
-          `).join("")}</div>`;
-      } else {
-        exWrap.innerHTML = "";
-      }
-
-      const items = (tData ? tData.items : []).filter(it => !q || (it.name + " " + it.raw_id + " " + (it.lore || []).join(" ")).toLowerCase().includes(q));
-      document.getElementById("biomeLootBody").innerHTML = items.map(it => {
-        const badges = [];
-        if (it.is_exclusive) badges.push(`<span class="badge gold">${vi ? "Độc quyền" : "Exclusive"}</span>`);
-        else if (it.is_custom) badges.push(`<span class="badge epic">Custom</span>`);
-        if (it.chance_cond !== null && it.chance_cond !== undefined) badges.push(`<span class="badge aqua">Bonus Roll</span>`);
-        const details = [...(it.enchants || []), ...(it.attrs || []), ...(it.lore || []).slice(0, 2)].join(" • ");
-        return `<tr>
-          <td>
-            <div style="font-weight:700;color:${it.is_exclusive ? 'var(--gold)' : '#fff'};">${esc(it.name)} ${badges.join(" ")}</div>
-            <div style="font-size:0.72rem;color:var(--text-muted);font-family:'JetBrains Mono',monospace;">${esc(it.raw_id)}</div>
-          </td>
-          <td class="mono">${esc(it.count)}</td>
-          <td class="mono">${it.chance_cond != null ? "—" : it.weight}</td>
-          <td class="mono" style="color:var(--green);">${fmtPct(it.pct)}</td>
-          <td style="font-size:0.78rem;color:#cbd5e1;max-width:360px;">${esc(details || "—")}</td>
-        </tr>`;
-      }).join("") || `<tr><td colspan="5" style="text-align:center;color:var(--text-muted);">${vi ? "Không có vật phẩm phù hợp" : "No matching items"}</td></tr>`;
     }
 
     function renderMythicalPanel() {
@@ -606,7 +765,10 @@
       document.getElementById("mythGrid").innerHTML = filtered.map(it => `
         <div class="item-card ${it.cat.startsWith('Mythical') ? 'excl' : ''}">
           <div class="item-card-top">
-            <span class="item-card-name">${esc(it.name)}</span>
+            <div class="item-card-left">
+              ${iconImg(it.icon, 26)}
+              <span class="item-card-name">${esc(it.name)}</span>
+            </div>
             <span class="badge ${it.cat === 'Rune' ? 'epic' : 'gold'}">${esc(it.cat)}${it.pct && it.cat.startsWith('Mythical') ? ' • ' + fmtPct(it.pct) : ''}</span>
           </div>
           ${it.enchants && it.enchants.length ? `<div class="item-meta">${esc(it.enchants.join(" • "))}</div>` : ""}
@@ -629,7 +791,10 @@
       document.getElementById("customGrid").innerHTML = filtered.map(it => `
         <div class="item-card">
           <div class="item-card-top">
-            <span class="item-card-name">${esc(it.name)}</span>
+            <div class="item-card-left">
+              ${iconImg(it.icon, 26)}
+              <span class="item-card-name">${esc(it.name)}</span>
+            </div>
             <span class="badge aqua">${esc(it.raw_id.replace("minecraft:",""))}</span>
           </div>
           ${it.enchants && it.enchants.length ? `<div class="item-meta">${esc(it.enchants.join(" • "))}</div>` : ""}

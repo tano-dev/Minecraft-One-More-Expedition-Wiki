@@ -36,7 +36,12 @@ const MINE_TREASURE_DATA = {
     "epic": 0.0,
     "legendary": 0.0,
     "mythical": 0.0
-   }
+   },
+   "block_icons": [
+    "assets/icons/mc/calcite.png",
+    "assets/icons/mc/netherrack.png",
+    "assets/icons/mc/sandstone.png"
+   ]
   },
   {
    "id": "mt:technical/normal",
@@ -92,7 +97,25 @@ const MINE_TREASURE_DATA = {
     "epic": 0.0,
     "legendary": 0.0,
     "mythical": 0.0
-   }
+   },
+   "block_icons": [
+    "assets/icons/mc/amethyst_block.png",
+    "assets/icons/mc/basalt.png",
+    "assets/icons/mc/blackstone.png",
+    "assets/icons/mc/brown_terracotta.png",
+    "assets/icons/mc/cinnabar.png",
+    "assets/icons/mc/dripstone_block.png",
+    "assets/icons/mc/light_gray_terracotta.png",
+    "assets/icons/mc/orange_terracotta.png",
+    "assets/icons/mc/red_terracotta.png",
+    "assets/icons/mc/smooth_basalt.png",
+    "assets/icons/mc/stone.png",
+    "assets/icons/mc/sulfur.png",
+    "assets/icons/mc/terracotta.png",
+    "assets/icons/mc/tuff.png",
+    "assets/icons/mc/white_terracotta.png",
+    "assets/icons/mc/yellow_terracotta.png"
+   ]
   },
   {
    "id": "mt:technical/high_common",
@@ -118,7 +141,10 @@ const MINE_TREASURE_DATA = {
     "epic": 0.0,
     "legendary": 0.0,
     "mythical": 0.0
-   }
+   },
+   "block_icons": [
+    "assets/icons/mc/diorite.png"
+   ]
   },
   {
    "id": "mt:technical/high_rare",
@@ -146,7 +172,11 @@ const MINE_TREASURE_DATA = {
     "epic": 0.0,
     "legendary": 0.0,
     "mythical": 0.0
-   }
+   },
+   "block_icons": [
+    "assets/icons/mc/andesite.png",
+    "assets/icons/mc/magma_block.png"
+   ]
   },
   {
    "id": "mt:technical/high_epic",
@@ -172,7 +202,10 @@ const MINE_TREASURE_DATA = {
     "epic": 0.0,
     "legendary": 0.0,
     "mythical": 0.0
-   }
+   },
+   "block_icons": [
+    "assets/icons/mc/granite.png"
+   ]
   },
   {
    "id": "mt:technical/high",
@@ -216,7 +249,19 @@ const MINE_TREASURE_DATA = {
     "epic": 0.0,
     "legendary": 0.0,
     "mythical": 0.0
-   }
+   },
+   "block_icons": [
+    "assets/icons/mc/coal_ore.png",
+    "assets/icons/mc/copper_ore.png",
+    "assets/icons/mc/deepslate.png",
+    "assets/icons/mc/end_stone.png",
+    "assets/icons/mc/gold_ore.png",
+    "assets/icons/mc/iron_ore.png",
+    "assets/icons/mc/lapis_ore.png",
+    "assets/icons/mc/nether_gold_ore.png",
+    "assets/icons/mc/nether_quartz_ore.png",
+    "assets/icons/mc/redstone_ore.png"
+   ]
   },
   {
    "id": "mt:technical/very_high",
@@ -252,7 +297,15 @@ const MINE_TREASURE_DATA = {
     "epic": 0.0,
     "legendary": 0.0,
     "mythical": 0.0
-   }
+   },
+   "block_icons": [
+    "assets/icons/mc/deepslate_coal_ore.png",
+    "assets/icons/mc/deepslate_copper_ore.png",
+    "assets/icons/mc/deepslate_gold_ore.png",
+    "assets/icons/mc/deepslate_iron_ore.png",
+    "assets/icons/mc/deepslate_lapis_ore.png",
+    "assets/icons/mc/deepslate_redstone_ore.png"
+   ]
   },
   {
    "id": "mt:technical/diamond",
@@ -284,7 +337,13 @@ const MINE_TREASURE_DATA = {
     "epic": 0.0,
     "legendary": 0.0,
     "mythical": 0.0
-   }
+   },
+   "block_icons": [
+    "assets/icons/mc/deepslate_diamond_ore.png",
+    "assets/icons/mc/deepslate_emerald_ore.png",
+    "assets/icons/mc/diamond_ore.png",
+    "assets/icons/mc/emerald_ore.png"
+   ]
   }
  ],
  "biomes": [
@@ -316,7 +375,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -336,7 +396,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -356,7 +417,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -376,7 +438,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -396,7 +459,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -416,7 +480,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -436,7 +501,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -456,7 +522,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -476,7 +543,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -496,7 +564,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -516,7 +585,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -536,7 +606,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -556,7 +627,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -576,7 +648,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -596,7 +669,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -616,7 +690,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -636,7 +711,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -656,7 +732,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -676,7 +753,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -696,7 +774,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -716,7 +795,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -736,7 +816,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -756,7 +837,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -776,7 +858,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -796,7 +879,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -816,7 +900,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -836,7 +921,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -856,7 +942,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -876,7 +963,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -896,7 +984,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -916,7 +1005,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -936,7 +1026,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -956,7 +1047,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -976,7 +1068,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -996,7 +1089,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -1016,7 +1110,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Badlands Helmet",
@@ -1036,7 +1131,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/badlands/badlands_helmet"
+     "ref_id": "mt:chests/badlands/badlands_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Book",
@@ -1050,7 +1146,8 @@ const MINE_TREASURE_DATA = {
       "Random Enchantment"
      ],
      "attrs": [],
-     "ref_id": "mt:chests/badlands/mineshaft"
+     "ref_id": "mt:chests/badlands/mineshaft",
+     "icon": "assets/icons/mc/book.png"
     }
    ],
    "tiers": {
@@ -1068,7 +1165,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Common Charm",
@@ -1085,7 +1183,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Rare Golden Hoe",
@@ -1097,7 +1196,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/golden_hoe.png"
       },
       {
        "name": "Medium Powered Rocket",
@@ -1111,7 +1211,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/firework_rocket.png"
       },
       {
        "name": "Raw Gold",
@@ -1123,7 +1224,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/raw_gold.png"
       },
       {
        "name": "Gold Nugget",
@@ -1135,7 +1237,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/gold_nugget.png"
       },
       {
        "name": "Rail",
@@ -1147,7 +1250,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/rail.png"
       },
       {
        "name": "Powered Rail",
@@ -1159,7 +1263,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/powered_rail.png"
       },
       {
        "name": "Gold Block",
@@ -1171,7 +1276,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Raw Copper",
@@ -1183,7 +1289,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/raw_copper.png"
       },
       {
        "name": "Gold Ingot",
@@ -1195,7 +1302,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/gold_ingot.png"
       },
       {
        "name": "Cobweb",
@@ -1207,7 +1315,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/cobweb.png"
       },
       {
        "name": "Experience Bottle",
@@ -1219,7 +1328,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Wither Rose",
@@ -1231,7 +1341,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/wither_rose.png"
       },
       {
        "name": "Repeater",
@@ -1243,7 +1354,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/repeater.png"
       },
       {
        "name": "Firework Rocket",
@@ -1255,7 +1367,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/firework_rocket.png"
       },
       {
        "name": "Copper Block",
@@ -1267,7 +1380,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 1.0
+       "pct": 1.0,
+       "icon": "assets/icons/mc/copper_block.png"
       }
      ]
     },
@@ -1291,7 +1405,8 @@ const MINE_TREASURE_DATA = {
        ],
        "attrs": [],
        "ref_id": "mt:custom_items/grenade",
-       "pct": 4.55
+       "pct": 4.55,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Boomproof Hat",
@@ -1308,7 +1423,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/boomproof_hat",
-       "pct": 4.55
+       "pct": 4.55,
+       "icon": "assets/icons/mc/structure_block.png"
       },
       {
        "name": "Mineshaft Loot Chest",
@@ -1323,7 +1439,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.55
+       "pct": 4.55,
+       "icon": "assets/icons/mc/chest.png"
       },
       {
        "name": "Rare Charm",
@@ -1340,7 +1457,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Bone",
@@ -1352,7 +1470,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/bone.png"
       },
       {
        "name": "Skeleton Skull",
@@ -1364,7 +1483,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/skeleton_skull.png"
       },
       {
        "name": "Experience Bottle",
@@ -1376,7 +1496,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Tnt",
@@ -1388,7 +1509,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/tnt.png"
       },
       {
        "name": "Tipped Arrow",
@@ -1400,7 +1522,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Tipped Arrow",
@@ -1412,7 +1535,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Tipped Arrow",
@@ -1424,7 +1548,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Tipped Arrow",
@@ -1436,7 +1561,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Tipped Arrow",
@@ -1448,7 +1574,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.55
+       "pct": 4.55,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Gold Block",
@@ -1460,7 +1587,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.55
+       "pct": 4.55,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Crossbow",
@@ -1472,7 +1600,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.55
+       "pct": 4.55,
+       "icon": "assets/icons/mc/crossbow.png"
       }
      ]
     },
@@ -1493,7 +1622,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 15.38
+       "pct": 15.38,
+       "icon": "assets/icons/mc/firework_rocket.png"
       },
       {
        "name": "Detonation Mine",
@@ -1510,7 +1640,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/detonation_mine",
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/fire_charge.png"
       },
       {
        "name": "Epic Charm",
@@ -1527,7 +1658,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Gold Block",
@@ -1539,7 +1671,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.38
+       "pct": 15.38,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Firework Star",
@@ -1551,7 +1684,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.38
+       "pct": 15.38,
+       "icon": "assets/icons/mc/firework_star.png"
       },
       {
        "name": "Golden Apple",
@@ -1563,7 +1697,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.38
+       "pct": 15.38,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Tnt",
@@ -1578,7 +1713,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 15.38
+       "pct": 15.38,
+       "icon": "assets/icons/mc/tnt.png"
       },
       {
        "name": "Netherite Scrap",
@@ -1590,7 +1726,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       },
       {
        "name": "Diamond",
@@ -1602,7 +1739,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/diamond.png"
       }
      ]
     },
@@ -1630,7 +1768,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/badlands/badlands_helmet",
        "is_exclusive": true,
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/leather_helmet.png"
       },
       {
        "name": "Legendary Charm",
@@ -1647,7 +1786,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Grenade",
@@ -1665,7 +1805,8 @@ const MINE_TREASURE_DATA = {
        ],
        "attrs": [],
        "ref_id": "mt:custom_items/grenade",
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Desolation Rocket",
@@ -1680,7 +1821,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/firework_rocket.png"
       },
       {
        "name": "Orange Shulker Box",
@@ -1692,7 +1834,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/orange_shulker_box.png"
       },
       {
        "name": "Golden Apple",
@@ -1704,7 +1847,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 17.65
+       "pct": 17.65,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Gold Block",
@@ -1716,7 +1860,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 17.65
+       "pct": 17.65,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Shulker Shell",
@@ -1728,7 +1873,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 17.65
+       "pct": 17.65,
+       "icon": "assets/icons/mc/shulker_shell.png"
       },
       {
        "name": "Enchanted Book",
@@ -1740,7 +1886,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Crossbow",
@@ -1755,7 +1902,8 @@ const MINE_TREASURE_DATA = {
         "Movement Speed: 0.05–0.05",
         "Movement Speed: 0.05–0.05"
        ],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/crossbow.png"
       },
       {
        "name": "Splash Potion",
@@ -1770,7 +1918,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Netherite Scrap",
@@ -1782,11 +1931,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/red_sand.png"
   },
   {
    "id": "basalt",
@@ -1814,7 +1965,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -1835,7 +1987,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -1856,7 +2009,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -1877,7 +2031,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -1898,7 +2053,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -1919,7 +2075,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -1940,7 +2097,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -1961,7 +2119,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -1982,7 +2141,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2003,7 +2163,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2024,7 +2185,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2045,7 +2207,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2066,7 +2229,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2087,7 +2251,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2108,7 +2273,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2129,7 +2295,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2150,7 +2317,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2171,7 +2339,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2192,7 +2361,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2213,7 +2383,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2234,7 +2405,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2255,7 +2427,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2276,7 +2449,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2297,7 +2471,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2318,7 +2493,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2339,7 +2515,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2360,7 +2537,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2381,7 +2559,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2402,7 +2581,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2423,7 +2603,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2444,7 +2625,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2465,7 +2647,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2486,7 +2669,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2507,7 +2691,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2528,7 +2713,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Basalt Deltas Boots",
@@ -2549,7 +2735,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/basalt/basalt_boots"
+     "ref_id": "mt:chests/basalt/basalt_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     }
    ],
    "tiers": {
@@ -2571,7 +2758,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/fiery_flesh",
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/rotten_flesh.png"
       },
       {
        "name": "Common Charm",
@@ -2588,7 +2776,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 1.0
+       "pct": 1.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Potion",
@@ -2600,7 +2789,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.0
+       "pct": 16.0,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Basalt",
@@ -2612,7 +2802,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/basalt.png"
       },
       {
        "name": "Blackstone",
@@ -2624,7 +2815,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/blackstone.png"
       },
       {
        "name": "Chiseled Polished Blackstone",
@@ -2636,7 +2828,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/chiseled_polished_blackstone.png"
       },
       {
        "name": "Magma Cream",
@@ -2648,7 +2841,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/magma_cream.png"
       },
       {
        "name": "Fire Charge",
@@ -2660,7 +2854,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/fire_charge.png"
       },
       {
        "name": "Magma Block",
@@ -2672,7 +2867,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/magma_block.png"
       },
       {
        "name": "Blaze Powder",
@@ -2684,7 +2880,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/blaze_powder.png"
       },
       {
        "name": "Polished Blackstone",
@@ -2696,7 +2893,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/polished_blackstone.png"
       },
       {
        "name": "Porkchop",
@@ -2708,7 +2906,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/porkchop.png"
       },
       {
        "name": "Experience Bottle",
@@ -2720,7 +2919,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Obsidian",
@@ -2732,7 +2932,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/obsidian.png"
       }
      ]
     },
@@ -2754,7 +2955,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/fiery_flesh",
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/rotten_flesh.png"
       },
       {
        "name": "Rare Charm",
@@ -2771,7 +2973,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 1.0
+       "pct": 1.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Blaze Rod",
@@ -2783,7 +2986,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 75.0
+       "pct": 75.0,
+       "icon": "assets/icons/mc/blaze_rod.png"
       },
       {
        "name": "Smooth Basalt",
@@ -2795,7 +2999,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/smooth_basalt.png"
       },
       {
        "name": "Blackstone",
@@ -2807,7 +3012,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/blackstone.png"
       },
       {
        "name": "Polished Blackstone",
@@ -2819,7 +3025,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/polished_blackstone.png"
       },
       {
        "name": "Chiseled Polished Blackstone",
@@ -2831,7 +3038,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/chiseled_polished_blackstone.png"
       },
       {
        "name": "Magma Cream",
@@ -2843,7 +3051,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/magma_cream.png"
       },
       {
        "name": "Magma Block",
@@ -2855,7 +3064,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/magma_block.png"
       },
       {
        "name": "Potion",
@@ -2867,7 +3077,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Cooked Porkchop",
@@ -2879,7 +3090,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/cooked_porkchop.png"
       },
       {
        "name": "Experience Bottle",
@@ -2891,7 +3103,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Obsidian",
@@ -2903,7 +3116,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/obsidian.png"
       },
       {
        "name": "Potion",
@@ -2915,7 +3129,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/potion.png"
       }
      ]
     },
@@ -2939,7 +3154,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/black_armor",
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Durable Potion",
@@ -2951,7 +3167,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Epic Charm",
@@ -2968,7 +3185,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 1.75
+       "pct": 1.75,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Smooth Basalt",
@@ -2980,7 +3198,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/smooth_basalt.png"
       },
       {
        "name": "Gilded Blackstone",
@@ -2992,7 +3211,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/gilded_blackstone.png"
       },
       {
        "name": "Gold Block",
@@ -3004,7 +3224,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Chiseled Polished Blackstone",
@@ -3016,7 +3237,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/chiseled_polished_blackstone.png"
       },
       {
        "name": "Magma Cream",
@@ -3028,7 +3250,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/magma_cream.png"
       },
       {
        "name": "Magma Block",
@@ -3040,7 +3263,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/magma_block.png"
       },
       {
        "name": "Cooked Porkchop",
@@ -3052,7 +3276,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/cooked_porkchop.png"
       },
       {
        "name": "Experience Bottle",
@@ -3064,7 +3289,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Obsidian",
@@ -3076,7 +3302,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/obsidian.png"
       },
       {
        "name": "Potion",
@@ -3088,7 +3315,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Potion",
@@ -3100,7 +3328,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Ancient Debris",
@@ -3112,7 +3341,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/ancient_debris.png"
       }
      ]
     },
@@ -3141,7 +3371,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/basalt/basalt_boots",
        "is_exclusive": true,
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/leather_boots.png"
       },
       {
        "name": "Nether Driller",
@@ -3157,7 +3388,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/nether_driller",
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/golden_pickaxe.png"
       },
       {
        "name": "Black Armor",
@@ -3175,7 +3407,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/black_armor",
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Durable Potion",
@@ -3187,7 +3420,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Super Durable Potion",
@@ -3199,7 +3433,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Legendary Charm",
@@ -3216,7 +3451,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 2.5
+       "pct": 2.5,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Gold Block",
@@ -3228,7 +3464,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Magma Block",
@@ -3240,7 +3477,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/magma_block.png"
       },
       {
        "name": "Cooked Porkchop",
@@ -3252,7 +3490,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/cooked_porkchop.png"
       },
       {
        "name": "Experience Bottle",
@@ -3264,7 +3503,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Gilded Blackstone",
@@ -3276,7 +3516,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/gilded_blackstone.png"
       },
       {
        "name": "Polished Blackstone Bricks",
@@ -3288,7 +3529,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/polished_blackstone_bricks.png"
       },
       {
        "name": "Enchanted Book",
@@ -3300,7 +3542,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Diamond",
@@ -3312,7 +3555,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/diamond.png"
       },
       {
        "name": "Bedrock",
@@ -3324,7 +3568,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/bedrock.png"
       },
       {
        "name": "Potion",
@@ -3336,7 +3581,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Netherite Scrap",
@@ -3348,11 +3594,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/basalt.png"
   },
   {
    "id": "crimson",
@@ -3378,7 +3626,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3397,7 +3646,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3416,7 +3666,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3435,7 +3686,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3454,7 +3706,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3473,7 +3726,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3492,7 +3746,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3511,7 +3766,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3530,7 +3786,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3549,7 +3806,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3568,7 +3826,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3587,7 +3846,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3606,7 +3866,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3625,7 +3886,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3644,7 +3906,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3663,7 +3926,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3682,7 +3946,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3701,7 +3966,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3720,7 +3986,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3739,7 +4006,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3758,7 +4026,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3777,7 +4046,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3796,7 +4066,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3815,7 +4086,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3834,7 +4106,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3853,7 +4126,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3872,7 +4146,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3891,7 +4166,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3910,7 +4186,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3929,7 +4206,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3948,7 +4226,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Crimson Forest Chestplate",
@@ -3967,7 +4246,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/crimson/crimson_chestplate"
+     "ref_id": "mt:chests/crimson/crimson_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     }
    ],
    "tiers": {
@@ -3990,7 +4270,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 1.0
+       "pct": 1.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Ghast Tear",
@@ -4002,7 +4283,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 25.0
+       "pct": 25.0,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Potion",
@@ -4014,7 +4296,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.0
+       "pct": 16.0,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Crimson Roots",
@@ -4026,7 +4309,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/crimson_roots.png"
       },
       {
        "name": "Rotten Flesh",
@@ -4038,7 +4322,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/rotten_flesh.png"
       },
       {
        "name": "Bone",
@@ -4050,7 +4335,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/bone.png"
       },
       {
        "name": "Weeping Vines",
@@ -4062,7 +4348,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/weeping_vines.png"
       },
       {
        "name": "Shroomlight",
@@ -4074,7 +4361,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/shroomlight.png"
       },
       {
        "name": "Piglin Head",
@@ -4086,7 +4374,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/piglin_head.png"
       },
       {
        "name": "Crimson Stem",
@@ -4098,7 +4387,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/crimson_stem.png"
       },
       {
        "name": "Nether Wart",
@@ -4110,7 +4400,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/nether_wart.png"
       },
       {
        "name": "Crimson Stem",
@@ -4122,7 +4413,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/crimson_stem.png"
       },
       {
        "name": "Cooked Porkchop",
@@ -4134,7 +4426,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/cooked_porkchop.png"
       },
       {
        "name": "Porkchop",
@@ -4146,7 +4439,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/porkchop.png"
       },
       {
        "name": "Experience Bottle",
@@ -4158,7 +4452,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Enchanted Book",
@@ -4172,7 +4467,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Looting 3"
        ],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/enchanted_book.png"
       }
      ]
     },
@@ -4190,7 +4486,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.86
+       "pct": 2.86,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Blood Soup",
@@ -4206,7 +4503,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/blood_soup",
-       "pct": 2.86
+       "pct": 2.86,
+       "icon": "assets/icons/mc/beetroot_soup.png"
       },
       {
        "name": "Full Respawn Anchor",
@@ -4218,7 +4516,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.86
+       "pct": 2.86,
+       "icon": "assets/icons/mc/respawn_anchor.png"
       },
       {
        "name": "Rare Charm",
@@ -4235,7 +4534,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 1.0
+       "pct": 1.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Cooked Porkchop",
@@ -4247,7 +4547,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.57
+       "pct": 8.57,
+       "icon": "assets/icons/mc/cooked_porkchop.png"
       },
       {
        "name": "Bone Block",
@@ -4259,7 +4560,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.57
+       "pct": 8.57,
+       "icon": "assets/icons/mc/bone_block.png"
       },
       {
        "name": "Iron Chain",
@@ -4271,7 +4573,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.57
+       "pct": 8.57,
+       "icon": "assets/icons/mc/iron_chain.png"
       },
       {
        "name": "Spider Eye",
@@ -4283,7 +4586,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/spider_eye.png"
       },
       {
        "name": "Crimson Roots",
@@ -4295,7 +4599,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/crimson_roots.png"
       },
       {
        "name": "Nether Wart",
@@ -4307,7 +4612,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/nether_wart.png"
       },
       {
        "name": "Ghast Tear",
@@ -4319,7 +4625,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Crimson Hyphae",
@@ -4331,7 +4638,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/crimson_hyphae.png"
       },
       {
        "name": "Iron Ingot",
@@ -4343,7 +4651,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/iron_ingot.png"
       },
       {
        "name": "Redstone",
@@ -4355,7 +4664,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/redstone.png"
       },
       {
        "name": "Fermented Spider Eye",
@@ -4367,7 +4677,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/fermented_spider_eye.png"
       },
       {
        "name": "Lantern",
@@ -4379,7 +4690,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/lantern.png"
       },
       {
        "name": "Experience Bottle",
@@ -4391,7 +4703,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Enchanted Book",
@@ -4405,7 +4718,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Looting 3"
        ],
        "attrs": [],
-       "pct": 2.86
+       "pct": 2.86,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Fire Charge",
@@ -4417,7 +4731,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.86
+       "pct": 2.86,
+       "icon": "assets/icons/mc/fire_charge.png"
       },
       {
        "name": "Lava Bucket",
@@ -4429,7 +4744,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.86
+       "pct": 2.86,
+       "icon": "assets/icons/mc/lava_bucket.png"
       }
      ]
     },
@@ -4451,7 +4767,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/blood_soup",
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/beetroot_soup.png"
       },
       {
        "name": "Full Respawn Anchor",
@@ -4463,7 +4780,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/respawn_anchor.png"
       },
       {
        "name": "Piglin Jealousy",
@@ -4483,7 +4801,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/piglin_jealousy",
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Sharpened Sword",
@@ -4505,7 +4824,8 @@ const MINE_TREASURE_DATA = {
        ],
        "attrs": [],
        "ref_id": "mt:custom_items/sharpened_sword",
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/iron_sword.png"
       },
       {
        "name": "Nether Potion",
@@ -4518,7 +4838,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/nether_potion",
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Epic Charm",
@@ -4535,7 +4856,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 1.75
+       "pct": 1.75,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Nether Wart",
@@ -4547,7 +4869,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/nether_wart.png"
       },
       {
        "name": "Ghast Tear",
@@ -4559,7 +4882,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Redstone",
@@ -4571,7 +4895,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/redstone.png"
       },
       {
        "name": "Bone Block",
@@ -4583,7 +4908,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/bone_block.png"
       },
       {
        "name": "Redstone Block",
@@ -4595,7 +4921,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/redstone_block.png"
       },
       {
        "name": "Redstone",
@@ -4607,7 +4934,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/redstone.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -4619,7 +4947,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "Experience Bottle",
@@ -4631,7 +4960,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Diamond",
@@ -4643,7 +4973,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/diamond.png"
       },
       {
        "name": "Netherite Scrap",
@@ -4655,7 +4986,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     },
@@ -4682,7 +5014,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/crimson/crimson_chestplate",
        "is_exclusive": true,
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/leather_chestplate.png"
       },
       {
        "name": "Blood Soup",
@@ -4698,7 +5031,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/blood_soup",
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/beetroot_soup.png"
       },
       {
        "name": "Piglin Jealousy",
@@ -4718,7 +5052,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/piglin_jealousy",
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Full Respawn Anchor",
@@ -4730,7 +5065,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/respawn_anchor.png"
       },
       {
        "name": "Demon Potion",
@@ -4742,7 +5078,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Legendary Charm",
@@ -4759,7 +5096,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 2.5
+       "pct": 2.5,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Redstone Block",
@@ -4771,7 +5109,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/redstone_block.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -4783,7 +5122,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "Crimson Hyphae",
@@ -4795,7 +5135,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/crimson_hyphae.png"
       },
       {
        "name": "Ender Pearl",
@@ -4807,7 +5148,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Experience Bottle",
@@ -4819,7 +5161,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Enchanted Book",
@@ -4831,7 +5174,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Netherite Scrap",
@@ -4843,11 +5187,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/crimson_fungus.png"
   },
   {
    "id": "dark_forest",
@@ -4883,7 +5229,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.75",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -4909,7 +5256,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.75",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -4935,7 +5283,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.75",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -4961,7 +5310,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.75",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -4987,7 +5337,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5013,7 +5364,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5039,7 +5391,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5065,7 +5418,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5091,7 +5445,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5117,7 +5472,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5143,7 +5499,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5169,7 +5526,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5195,7 +5553,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5221,7 +5580,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5247,7 +5607,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5273,7 +5634,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5299,7 +5661,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5325,7 +5688,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5351,7 +5715,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5377,7 +5742,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5403,7 +5769,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5429,7 +5796,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Barbaric Axe",
@@ -5455,7 +5823,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/dark_forest/barbaric_axe"
+     "ref_id": "mt:chests/dark_forest/barbaric_axe",
+     "icon": "assets/icons/mc/golden_axe.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5475,7 +5844,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5495,7 +5865,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5515,7 +5886,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5535,7 +5907,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5555,7 +5928,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5575,7 +5949,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5595,7 +5970,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5615,7 +5991,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5635,7 +6012,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5655,7 +6033,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5675,7 +6054,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5695,7 +6075,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5715,7 +6096,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5735,7 +6117,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5755,7 +6138,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5775,7 +6159,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5795,7 +6180,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5815,7 +6201,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5835,7 +6222,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5855,7 +6243,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5875,7 +6264,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Dark Forest Chestplate",
@@ -5895,7 +6285,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate"
+     "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     }
    ],
    "tiers": {
@@ -5916,7 +6307,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/item_frame.png"
       },
       {
        "name": "Hero of the Village Potion",
@@ -5928,7 +6320,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Hero of the Village Potion II",
@@ -5940,7 +6333,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Common Charm",
@@ -5957,7 +6351,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Dark Oak Log",
@@ -5969,7 +6364,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.89
+       "pct": 7.89,
+       "icon": "assets/icons/mc/dark_oak_log.png"
       },
       {
        "name": "Red Mushroom Block",
@@ -5981,7 +6377,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.89
+       "pct": 7.89,
+       "icon": "assets/icons/mc/red_mushroom_block.png"
       },
       {
        "name": "Gold Nugget",
@@ -5993,7 +6390,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.89
+       "pct": 7.89,
+       "icon": "assets/icons/mc/gold_nugget.png"
       },
       {
        "name": "Brown Mushroom Block",
@@ -6005,7 +6403,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.89
+       "pct": 7.89,
+       "icon": "assets/icons/mc/brown_mushroom_block.png"
       },
       {
        "name": "Iron Nugget",
@@ -6017,7 +6416,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.89
+       "pct": 7.89,
+       "icon": "assets/icons/mc/iron_nugget.png"
       },
       {
        "name": "Dark Oak Leaves",
@@ -6029,7 +6429,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.89
+       "pct": 7.89,
+       "icon": "assets/icons/mc/dark_oak_leaves.png"
       },
       {
        "name": "Dark Oak Sapling",
@@ -6041,7 +6442,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.89
+       "pct": 7.89,
+       "icon": "assets/icons/mc/dark_oak_sapling.png"
       },
       {
        "name": "Map",
@@ -6053,7 +6455,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/map.png"
       },
       {
        "name": "Cobweb",
@@ -6065,7 +6468,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/cobweb.png"
       },
       {
        "name": "Iron Ingot",
@@ -6077,7 +6481,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/iron_ingot.png"
       },
       {
        "name": "Iron Pickaxe",
@@ -6091,7 +6496,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 5)"
        ],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/iron_pickaxe.png"
       },
       {
        "name": "Experience Bottle",
@@ -6103,7 +6509,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Spire Armor Trim Smithing Template",
@@ -6115,7 +6522,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.63
+       "pct": 2.63,
+       "icon": "assets/icons/mc/spire_armor_trim_smithing_template.png"
       }
      ]
     },
@@ -6137,7 +6545,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/sense_of_urgency",
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/armor_stand.png"
       },
       {
        "name": "Level II Raid Potion",
@@ -6149,7 +6558,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Rare Charm",
@@ -6166,7 +6576,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Arrow",
@@ -6178,7 +6589,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/arrow.png"
       },
       {
        "name": "Iron Pickaxe",
@@ -6192,7 +6604,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 18)"
        ],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/iron_pickaxe.png"
       },
       {
        "name": "Emerald",
@@ -6204,7 +6617,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/emerald.png"
       },
       {
        "name": "Dark Oak Log",
@@ -6216,7 +6630,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/dark_oak_log.png"
       },
       {
        "name": "Red Mushroom Block",
@@ -6228,7 +6643,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/red_mushroom_block.png"
       },
       {
        "name": "Brown Mushroom Block",
@@ -6240,7 +6656,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/brown_mushroom_block.png"
       },
       {
        "name": "Mushroom Stem",
@@ -6252,7 +6669,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/mushroom_stem.png"
       },
       {
        "name": "Gold Ingot",
@@ -6264,7 +6682,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/gold_ingot.png"
       },
       {
        "name": "Iron Ingot",
@@ -6276,7 +6695,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/iron_ingot.png"
       },
       {
        "name": "Experience Bottle",
@@ -6288,7 +6708,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/experience_bottle.png"
       }
      ]
     },
@@ -6306,7 +6727,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Level III Raid Potion",
@@ -6318,7 +6740,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Pillager Spawn Egg",
@@ -6332,7 +6755,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/pillager_spawn_egg.png"
       },
       {
        "name": "Totem of Shade",
@@ -6350,7 +6774,8 @@ const MINE_TREASURE_DATA = {
         "Attack Speed: 0.05"
        ],
        "ref_id": "mt:totems/shade",
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/totem_of_undying.png"
       },
       {
        "name": "Epic Charm",
@@ -6367,7 +6792,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Golden Carrot",
@@ -6379,7 +6805,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/golden_carrot.png"
       },
       {
        "name": "Gold Block",
@@ -6391,7 +6818,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Ender Pearl",
@@ -6403,7 +6831,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Iron Block",
@@ -6415,7 +6844,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/iron_block.png"
       },
       {
        "name": "Emerald Block",
@@ -6427,7 +6857,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/emerald_block.png"
       }
      ]
     },
@@ -6461,7 +6892,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/dark_forest/barbaric_axe",
        "is_exclusive": true,
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/golden_axe.png"
       },
       {
        "name": "Dark Forest Chestplate",
@@ -6483,7 +6915,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/dark_forest/dark_forest_chestplate",
        "is_exclusive": true,
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/leather_chestplate.png"
       },
       {
        "name": "Level IV Raid Potion",
@@ -6495,7 +6928,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 17.65
+       "pct": 17.65,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Level V Raid Potion",
@@ -6507,7 +6941,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Legendary Charm",
@@ -6524,7 +6959,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Totem of Shade",
@@ -6542,7 +6978,8 @@ const MINE_TREASURE_DATA = {
         "Attack Speed: 0.05"
        ],
        "ref_id": "mt:totems/shade",
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/totem_of_undying.png"
       },
       {
        "name": "Black Shulker Box",
@@ -6554,7 +6991,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/black_shulker_box.png"
       },
       {
        "name": "Dark Oak Log",
@@ -6566,7 +7004,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 17.65
+       "pct": 17.65,
+       "icon": "assets/icons/mc/dark_oak_log.png"
       },
       {
        "name": "Golden Apple",
@@ -6578,7 +7017,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Enchanted Book",
@@ -6590,7 +7030,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -6602,7 +7043,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "Totem Of Undying",
@@ -6614,11 +7056,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/totem_of_undying.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/dark_oak_sapling.png"
   },
   {
    "id": "deep_dark",
@@ -6651,7 +7095,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6675,7 +7120,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6699,7 +7145,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6723,7 +7170,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6747,7 +7195,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6771,7 +7220,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6795,7 +7245,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6819,7 +7270,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6843,7 +7295,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6867,7 +7320,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6891,7 +7345,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6915,7 +7370,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6939,7 +7395,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6963,7 +7420,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -6987,7 +7445,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7011,7 +7470,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7035,7 +7495,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7059,7 +7520,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7083,7 +7545,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7107,7 +7570,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7131,7 +7595,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7155,7 +7620,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7179,7 +7645,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7203,7 +7670,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7227,7 +7695,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7251,7 +7720,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7275,7 +7745,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7299,7 +7770,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7323,7 +7795,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7347,7 +7820,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7371,7 +7845,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7395,7 +7870,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7419,7 +7895,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7443,7 +7920,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7467,7 +7945,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7491,7 +7970,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7515,7 +7995,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7539,7 +8020,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7563,7 +8045,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7587,7 +8070,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7611,7 +8095,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7635,7 +8120,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Deep Dark Leggings",
@@ -7659,7 +8145,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/deep_dark/deep_dark_legs"
+     "ref_id": "mt:chests/deep_dark/deep_dark_legs",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -7686,7 +8173,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.75",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -7713,7 +8201,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.75",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -7740,7 +8229,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.75",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -7767,7 +8257,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.75",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -7794,7 +8285,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -7821,7 +8313,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -7848,7 +8341,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -7875,7 +8369,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -7902,7 +8397,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -7929,7 +8425,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -7956,7 +8453,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -7983,7 +8481,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -8010,7 +8509,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -8037,7 +8537,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -8064,7 +8565,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -8091,7 +8593,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -8118,7 +8621,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -8145,7 +8649,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -8172,7 +8677,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -8199,7 +8705,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -8226,7 +8733,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -8253,7 +8761,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     },
     {
      "name": "Rift Battle Axe",
@@ -8280,7 +8789,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/deep_dark/rift_axe"
+     "ref_id": "mt:chests/deep_dark/rift_axe",
+     "icon": "assets/icons/mc/netherite_axe.png"
     }
    ],
    "tiers": {
@@ -8305,7 +8815,8 @@ const MINE_TREASURE_DATA = {
        ],
        "attrs": [],
        "ref_id": "mt:custom_items/warden_killer",
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/echo_shard.png"
       },
       {
        "name": "Dark Stone Hoe",
@@ -8323,7 +8834,8 @@ const MINE_TREASURE_DATA = {
        "attrs": [
         "Attack Damage: 2–2"
        ],
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/stone_hoe.png"
       },
       {
        "name": "Common Charm",
@@ -8340,7 +8852,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.5
+       "pct": 2.5,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Sculk Sensor",
@@ -8352,7 +8865,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/sculk_sensor.png"
       },
       {
        "name": "Experience Bottle",
@@ -8364,7 +8878,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Amethyst Shard",
@@ -8376,7 +8891,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/amethyst_shard.png"
       },
       {
        "name": "Sculk",
@@ -8388,7 +8904,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/sculk.png"
       },
       {
        "name": "Sculk Vein",
@@ -8400,7 +8917,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/sculk_vein.png"
       },
       {
        "name": "Echo Shard",
@@ -8412,7 +8930,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/echo_shard.png"
       },
       {
        "name": "Gray Wool",
@@ -8424,7 +8943,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/gray_wool.png"
       },
       {
        "name": "Candle",
@@ -8436,7 +8956,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/candle.png"
       },
       {
        "name": "Sculk Catalyst",
@@ -8448,7 +8969,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/sculk_catalyst.png"
       },
       {
        "name": "Experience Bottle",
@@ -8460,7 +8982,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/experience_bottle.png"
       }
      ]
     },
@@ -8482,7 +9005,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/flint_and_steel.png"
       },
       {
        "name": "Warden Shrieker",
@@ -8497,7 +9021,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/sculk_shrieker.png"
       },
       {
        "name": "Dark Meat",
@@ -8513,7 +9038,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/dark_meat",
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/dried_kelp.png"
       },
       {
        "name": "Rare Charm",
@@ -8530,7 +9056,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.5
+       "pct": 2.5,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Echo Shard",
@@ -8542,7 +9069,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/echo_shard.png"
       },
       {
        "name": "Sculk Sensor",
@@ -8554,7 +9082,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/sculk_sensor.png"
       },
       {
        "name": "Experience Bottle",
@@ -8566,7 +9095,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Sculk Catalyst",
@@ -8578,7 +9108,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/sculk_catalyst.png"
       },
       {
        "name": "Soul Lantern",
@@ -8590,7 +9121,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/soul_lantern.png"
       },
       {
        "name": "Amethyst Cluster",
@@ -8602,7 +9134,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/amethyst_cluster.png"
       },
       {
        "name": "Recovery Compass",
@@ -8614,7 +9147,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/recovery_compass.png"
       },
       {
        "name": "Golden Apple",
@@ -8626,7 +9160,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/golden_apple.png"
       }
      ]
     },
@@ -8648,7 +9183,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/flint_and_steel.png"
       },
       {
        "name": "Dark Meat",
@@ -8664,7 +9200,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/dark_meat",
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/dried_kelp.png"
       },
       {
        "name": "Epic Charm",
@@ -8681,7 +9218,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Sculk Sensor",
@@ -8693,7 +9231,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/sculk_sensor.png"
       },
       {
        "name": "Sculk Catalyst",
@@ -8705,7 +9244,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/sculk_catalyst.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -8717,7 +9257,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "Budding Amethyst",
@@ -8729,7 +9270,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/budding_amethyst.png"
       },
       {
        "name": "Soul Lantern",
@@ -8741,7 +9283,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/soul_lantern.png"
       },
       {
        "name": "Recovery Compass",
@@ -8753,7 +9296,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/recovery_compass.png"
       },
       {
        "name": "Golden Apple",
@@ -8765,7 +9309,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Reinforced Deepslate",
@@ -8777,7 +9322,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/reinforced_deepslate.png"
       },
       {
        "name": "Deepslate Diamond Ore",
@@ -8789,7 +9335,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/deepslate_diamond_ore.png"
       }
      ]
     },
@@ -8824,7 +9371,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/deep_dark/rift_axe",
        "is_exclusive": true,
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/netherite_axe.png"
       },
       {
        "name": "Deep Dark Leggings",
@@ -8850,7 +9398,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/deep_dark/deep_dark_legs",
        "is_exclusive": true,
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/leather_leggings.png"
       },
       {
        "name": "Legendary Charm",
@@ -8867,7 +9416,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Soul Flint and Steel",
@@ -8883,7 +9433,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/flint_and_steel.png"
       },
       {
        "name": "Dark Meat",
@@ -8899,7 +9450,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/dark_meat",
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/dried_kelp.png"
       },
       {
        "name": "Black Shulker Box",
@@ -8911,7 +9463,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/black_shulker_box.png"
       },
       {
        "name": "Lapis Block",
@@ -8923,7 +9476,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/lapis_block.png"
       },
       {
        "name": "Sculk Sensor",
@@ -8935,7 +9489,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/sculk_sensor.png"
       },
       {
        "name": "Budding Amethyst",
@@ -8947,7 +9502,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/budding_amethyst.png"
       },
       {
        "name": "Reinforced Deepslate",
@@ -8959,7 +9515,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/reinforced_deepslate.png"
       },
       {
        "name": "Obsidian",
@@ -8971,7 +9528,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/obsidian.png"
       },
       {
        "name": "Crying Obsidian",
@@ -8983,7 +9541,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/crying_obsidian.png"
       },
       {
        "name": "Golden Apple",
@@ -8995,7 +9554,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Enchanted Book",
@@ -9007,7 +9567,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Ward Armor Trim Smithing Template",
@@ -9019,11 +9580,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/ward_armor_trim_smithing_template.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/sculk_catalyst.png"
   },
   {
    "id": "default",
@@ -9059,7 +9622,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.5",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9080,7 +9644,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9101,7 +9666,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.5",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9122,7 +9688,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9143,7 +9710,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.5",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9164,7 +9732,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9185,7 +9754,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.5",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9206,7 +9776,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9227,7 +9798,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.5",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9248,7 +9820,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9269,7 +9842,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.5",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9290,7 +9864,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9311,7 +9886,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.5",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9332,7 +9908,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9353,7 +9930,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.5",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9374,7 +9952,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9395,7 +9974,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.5",
       "Attack Damage: 12"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9416,7 +9996,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2",
       "Attack Damage: 12"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9437,7 +10018,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.5",
       "Attack Damage: 12"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9458,7 +10040,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1",
       "Attack Damage: 12"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9479,7 +10062,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.5",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9500,7 +10084,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9521,7 +10106,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.5",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Sword",
@@ -9542,7 +10128,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/default/netherite_swords"
+     "ref_id": "mt:chests/default/netherite_swords",
+     "icon": "assets/icons/mc/netherite_sword.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9563,7 +10150,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 2.5"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9580,7 +10168,8 @@ const MINE_TREASURE_DATA = {
      ],
      "enchants": [],
      "attrs": [],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9601,7 +10190,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 3"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9622,7 +10212,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 3.5"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9643,7 +10234,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 4"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9664,7 +10256,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 4.5"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9685,7 +10278,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 3"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9706,7 +10300,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 3.5"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9727,7 +10322,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 4"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9748,7 +10344,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 4.5"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9769,7 +10366,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 2.5"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9790,7 +10388,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 2.5"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9811,7 +10410,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 2.5"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9832,7 +10432,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 2.5"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9853,7 +10454,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 3"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9874,7 +10476,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 3.5"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9895,7 +10498,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 4"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Boots",
@@ -9916,7 +10520,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 4.5"
      ],
-     "ref_id": "mt:chests/default/refined_boots"
+     "ref_id": "mt:chests/default/refined_boots",
+     "icon": "assets/icons/mc/netherite_boots.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -9937,7 +10542,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -9958,7 +10564,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -9979,7 +10586,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -10000,7 +10608,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -10021,7 +10630,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -10042,7 +10652,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -10063,7 +10674,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -10084,7 +10696,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -10105,7 +10718,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -10126,7 +10740,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -10147,7 +10762,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -10168,7 +10784,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Chestplate",
@@ -10189,7 +10806,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/default/refined_chestplate"
+     "ref_id": "mt:chests/default/refined_chestplate",
+     "icon": "assets/icons/mc/netherite_chestplate.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10210,7 +10828,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 2.5"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10227,7 +10846,8 @@ const MINE_TREASURE_DATA = {
      ],
      "enchants": [],
      "attrs": [],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10248,7 +10868,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 3"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10269,7 +10890,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 3.5"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10290,7 +10912,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 4"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10311,7 +10934,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 4.5"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10332,7 +10956,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 3"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10353,7 +10978,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 3.5"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10374,7 +11000,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 4"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10395,7 +11022,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 4.5"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10416,7 +11044,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 2.5"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10437,7 +11066,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 2.5"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10458,7 +11088,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 2.5"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10479,7 +11110,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 2.5"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10500,7 +11132,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 3"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10521,7 +11154,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 3.5"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10542,7 +11176,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 4"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Helmet",
@@ -10563,7 +11198,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 4.5"
      ],
-     "ref_id": "mt:chests/default/refined_helmet"
+     "ref_id": "mt:chests/default/refined_helmet",
+     "icon": "assets/icons/mc/netherite_helmet.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10584,7 +11220,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10605,7 +11242,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10626,7 +11264,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10647,7 +11286,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10668,7 +11308,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10689,7 +11330,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10710,7 +11352,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10731,7 +11374,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10752,7 +11396,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10773,7 +11418,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10794,7 +11440,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10815,7 +11462,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10836,7 +11484,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10857,7 +11506,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10878,7 +11528,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10899,7 +11550,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10920,7 +11572,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     },
     {
      "name": "Refined Netherite Leggings",
@@ -10941,7 +11594,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/default/refined_leggings"
+     "ref_id": "mt:chests/default/refined_leggings",
+     "icon": "assets/icons/mc/netherite_leggings.png"
     }
    ],
    "tiers": {
@@ -10962,7 +11616,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/bread.png"
       },
       {
        "name": "Common Charm",
@@ -10979,7 +11634,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Ender Pearl",
@@ -10991,7 +11647,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 20.0
+       "pct": 20.0,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Potion",
@@ -11003,7 +11660,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.0
+       "pct": 16.0,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Oak Planks",
@@ -11015,7 +11673,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.82
+       "pct": 8.82,
+       "icon": "assets/icons/mc/oak_planks.png"
       },
       {
        "name": "Oak Log",
@@ -11027,7 +11686,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.82
+       "pct": 8.82,
+       "icon": "assets/icons/mc/oak_log.png"
       },
       {
        "name": "Wooden Pickaxe",
@@ -11041,7 +11701,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 12)"
        ],
        "attrs": [],
-       "pct": 8.82
+       "pct": 8.82,
+       "icon": "assets/icons/mc/wooden_pickaxe.png"
       },
       {
        "name": "Bread",
@@ -11053,7 +11714,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/bread.png"
       },
       {
        "name": "String",
@@ -11065,7 +11727,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/string.png"
       },
       {
        "name": "Gunpowder",
@@ -11077,7 +11740,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/gunpowder.png"
       },
       {
        "name": "Iron Nugget",
@@ -11089,7 +11753,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/iron_nugget.png"
       },
       {
        "name": "Coal",
@@ -11101,7 +11766,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/coal.png"
       },
       {
        "name": "Gold Nugget",
@@ -11113,7 +11779,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/gold_nugget.png"
       },
       {
        "name": "Experience Bottle",
@@ -11125,7 +11792,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Leather Helmet",
@@ -11139,7 +11807,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 12)"
        ],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/leather_helmet.png"
       },
       {
        "name": "Leather Chestplate",
@@ -11153,7 +11822,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 12)"
        ],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/leather_chestplate.png"
       },
       {
        "name": "Leather Leggings",
@@ -11167,7 +11837,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 8)"
        ],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/leather_leggings.png"
       },
       {
        "name": "Leather Boots",
@@ -11181,7 +11852,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 12)"
        ],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/leather_boots.png"
       },
       {
        "name": "Enchanted Book",
@@ -11195,7 +11867,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Unbreaking 2"
        ],
        "attrs": [],
-       "pct": 2.94
+       "pct": 2.94,
+       "icon": "assets/icons/mc/enchanted_book.png"
       }
      ]
     },
@@ -11215,7 +11888,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/chicken_spawn_egg.png"
       },
       {
        "name": "Rare Charm",
@@ -11232,7 +11906,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Raw Gold Block",
@@ -11244,7 +11919,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/raw_gold_block.png"
       },
       {
        "name": "Coal",
@@ -11256,7 +11932,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/coal.png"
       },
       {
        "name": "Raw Iron",
@@ -11268,7 +11945,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/raw_iron.png"
       },
       {
        "name": "Raw Iron Block",
@@ -11280,7 +11958,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/raw_iron_block.png"
       },
       {
        "name": "Emerald",
@@ -11292,7 +11971,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/emerald.png"
       },
       {
        "name": "Experience Bottle",
@@ -11304,7 +11984,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Cobweb",
@@ -11316,7 +11997,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.25
+       "pct": 6.25,
+       "icon": "assets/icons/mc/cobweb.png"
       },
       {
        "name": "Redstone",
@@ -11328,7 +12010,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.25
+       "pct": 6.25,
+       "icon": "assets/icons/mc/redstone.png"
       },
       {
        "name": "Gold Ingot",
@@ -11340,7 +12023,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.12
+       "pct": 3.12,
+       "icon": "assets/icons/mc/gold_ingot.png"
       },
       {
        "name": "Iron Helmet",
@@ -11354,7 +12038,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 22)"
        ],
        "attrs": [],
-       "pct": 3.12
+       "pct": 3.12,
+       "icon": "assets/icons/mc/iron_helmet.png"
       },
       {
        "name": "Iron Chestplate",
@@ -11368,7 +12053,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 22)"
        ],
        "attrs": [],
-       "pct": 3.12
+       "pct": 3.12,
+       "icon": "assets/icons/mc/iron_chestplate.png"
       },
       {
        "name": "Iron Leggings",
@@ -11382,7 +12068,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 22)"
        ],
        "attrs": [],
-       "pct": 3.12
+       "pct": 3.12,
+       "icon": "assets/icons/mc/iron_leggings.png"
       },
       {
        "name": "Iron Boots",
@@ -11396,7 +12083,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 22)"
        ],
        "attrs": [],
-       "pct": 3.12
+       "pct": 3.12,
+       "icon": "assets/icons/mc/iron_boots.png"
       },
       {
        "name": "Iron Axe",
@@ -11410,7 +12098,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 22)"
        ],
        "attrs": [],
-       "pct": 3.12
+       "pct": 3.12,
+       "icon": "assets/icons/mc/iron_axe.png"
       },
       {
        "name": "Iron Pickaxe",
@@ -11424,7 +12113,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 22)"
        ],
        "attrs": [],
-       "pct": 3.12
+       "pct": 3.12,
+       "icon": "assets/icons/mc/iron_pickaxe.png"
       }
      ]
     },
@@ -11447,7 +12137,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/detonation_mine",
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/fire_charge.png"
       },
       {
        "name": "Spawner",
@@ -11459,7 +12150,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/spawner.png"
       },
       {
        "name": "Epic Charm",
@@ -11476,7 +12168,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Gold Block",
@@ -11488,7 +12181,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Iron Block",
@@ -11500,7 +12194,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/iron_block.png"
       },
       {
        "name": "Coal Block",
@@ -11512,7 +12207,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/coal_block.png"
       },
       {
        "name": "Lapis Block",
@@ -11524,7 +12220,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/lapis_block.png"
       },
       {
        "name": "Tnt",
@@ -11536,7 +12233,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/tnt.png"
       },
       {
        "name": "Ender Eye",
@@ -11548,7 +12246,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/ender_eye.png"
       },
       {
        "name": "Golden Apple",
@@ -11560,7 +12259,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Diamond",
@@ -11572,7 +12272,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/diamond.png"
       },
       {
        "name": "Diamond Shovel",
@@ -11586,7 +12287,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/diamond_shovel.png"
       },
       {
        "name": "Diamond Pickaxe",
@@ -11600,7 +12302,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/diamond_pickaxe.png"
       },
       {
        "name": "Diamond Axe",
@@ -11614,7 +12317,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/diamond_axe.png"
       },
       {
        "name": "Diamond Helmet",
@@ -11628,7 +12332,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/diamond_helmet.png"
       },
       {
        "name": "Diamond Chestplate",
@@ -11642,7 +12347,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/diamond_chestplate.png"
       },
       {
        "name": "Diamond Leggings",
@@ -11656,7 +12362,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/diamond_leggings.png"
       },
       {
        "name": "Diamond Boots",
@@ -11670,7 +12377,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/diamond_boots.png"
       },
       {
        "name": "Shulker Shell",
@@ -11682,7 +12390,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/shulker_shell.png"
       }
      ]
     },
@@ -11711,7 +12420,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/default/refined_helmet",
        "is_exclusive": true,
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/netherite_helmet.png"
       },
       {
        "name": "Refined Netherite Chestplate",
@@ -11734,7 +12444,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/default/refined_chestplate",
        "is_exclusive": true,
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/netherite_chestplate.png"
       },
       {
        "name": "Refined Netherite Leggings",
@@ -11757,7 +12468,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/default/refined_leggings",
        "is_exclusive": true,
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/netherite_leggings.png"
       },
       {
        "name": "Refined Netherite Boots",
@@ -11780,7 +12492,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/default/refined_boots",
        "is_exclusive": true,
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/netherite_boots.png"
       },
       {
        "name": "Legendary Charm",
@@ -11797,7 +12510,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Detonation Mine",
@@ -11814,7 +12528,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/detonation_mine",
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/fire_charge.png"
       },
       {
        "name": "Gold Block",
@@ -11826,7 +12541,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Iron Block",
@@ -11838,7 +12554,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/iron_block.png"
       },
       {
        "name": "Ender Pearl",
@@ -11850,7 +12567,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "End Crystal",
@@ -11862,7 +12580,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/end_crystal.png"
       },
       {
        "name": "Golden Apple",
@@ -11874,7 +12593,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Shulker Shell",
@@ -11886,7 +12606,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/shulker_shell.png"
       },
       {
        "name": "Enchanted Book",
@@ -11898,7 +12619,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Diamond Helmet",
@@ -11912,7 +12634,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/diamond_helmet.png"
       },
       {
        "name": "Diamond Chestplate",
@@ -11926,7 +12649,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/diamond_chestplate.png"
       },
       {
        "name": "Diamond Leggings",
@@ -11940,7 +12664,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/diamond_leggings.png"
       },
       {
        "name": "Diamond Boots",
@@ -11954,11 +12679,13 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/diamond_boots.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/stone.png"
   },
   {
    "id": "desert",
@@ -11993,7 +12720,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12018,7 +12746,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12043,7 +12772,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12068,7 +12798,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12093,7 +12824,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12118,7 +12850,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12143,7 +12876,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12168,7 +12902,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12193,7 +12928,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12218,7 +12954,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12243,7 +12980,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12268,7 +13006,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12293,7 +13032,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12318,7 +13058,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12343,7 +13084,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12368,7 +13110,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12393,7 +13136,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 12"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12418,7 +13162,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 12"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12443,7 +13188,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 12"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12468,7 +13214,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 12"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12493,7 +13240,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12518,7 +13266,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12543,7 +13292,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Assassin's Blade",
@@ -12568,7 +13318,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/desert/assassin_sword"
+     "ref_id": "mt:chests/desert/assassin_sword",
+     "icon": "assets/icons/mc/golden_sword.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12592,7 +13343,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12616,7 +13368,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12640,7 +13393,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12664,7 +13418,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12688,7 +13443,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12712,7 +13468,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12736,7 +13493,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12760,7 +13518,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12784,7 +13543,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12808,7 +13568,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12832,7 +13593,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12856,7 +13618,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12880,7 +13643,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12904,7 +13668,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12928,7 +13693,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12952,7 +13718,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -12976,7 +13743,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -13000,7 +13768,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -13024,7 +13793,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -13048,7 +13818,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -13072,7 +13843,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -13096,7 +13868,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -13120,7 +13893,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -13144,7 +13918,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -13168,7 +13943,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -13192,7 +13968,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -13216,7 +13993,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -13240,7 +14018,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Desert Chestplate",
@@ -13264,7 +14043,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/desert/desert_chestplate"
+     "ref_id": "mt:chests/desert/desert_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Book",
@@ -13278,7 +14058,8 @@ const MINE_TREASURE_DATA = {
       "Random Enchantment"
      ],
      "attrs": [],
-     "ref_id": "mt:chests/desert/desert_pyramid"
+     "ref_id": "mt:chests/desert/desert_pyramid",
+     "icon": "assets/icons/mc/book.png"
     }
    ],
    "tiers": {
@@ -13301,7 +14082,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Rare Golden Shovel",
@@ -13313,7 +14095,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 1.19
+       "pct": 1.19,
+       "icon": "assets/icons/mc/golden_shovel.png"
       },
       {
        "name": "Emerald Block",
@@ -13325,7 +14108,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/emerald_block.png"
       },
       {
        "name": "Sand",
@@ -13337,7 +14121,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/sand.png"
       },
       {
        "name": "Gold Nugget",
@@ -13349,7 +14134,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/gold_nugget.png"
       },
       {
        "name": "Cactus",
@@ -13361,7 +14147,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/cactus.png"
       },
       {
        "name": "Rotten Flesh",
@@ -13373,7 +14160,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/rotten_flesh.png"
       },
       {
        "name": "Bone",
@@ -13385,7 +14173,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/bone.png"
       },
       {
        "name": "String",
@@ -13397,7 +14186,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/string.png"
       },
       {
        "name": "Dried Kelp",
@@ -13409,7 +14199,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/dried_kelp.png"
       },
       {
        "name": "Orange Stained Glass",
@@ -13421,7 +14212,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/orange_stained_glass.png"
       },
       {
        "name": "Yellow Stained Glass",
@@ -13433,7 +14225,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/yellow_stained_glass.png"
       },
       {
        "name": "Blue Stained Glass",
@@ -13445,7 +14238,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/blue_stained_glass.png"
       },
       {
        "name": "Light Blue Stained Glass",
@@ -13457,7 +14251,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/light_blue_stained_glass.png"
       },
       {
        "name": "Green Stained Glass",
@@ -13469,7 +14264,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/green_stained_glass.png"
       },
       {
        "name": "Lime Stained Glass",
@@ -13481,7 +14277,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/lime_stained_glass.png"
       },
       {
        "name": "Red Stained Glass",
@@ -13493,7 +14290,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/red_stained_glass.png"
       },
       {
        "name": "Black Stained Glass",
@@ -13505,7 +14303,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/black_stained_glass.png"
       },
       {
        "name": "White Stained Glass",
@@ -13517,7 +14316,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/white_stained_glass.png"
       },
       {
        "name": "Black Stained Glass",
@@ -13529,7 +14329,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/black_stained_glass.png"
       },
       {
        "name": "Black Stained Glass",
@@ -13541,7 +14342,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/black_stained_glass.png"
       },
       {
        "name": "Magenta Stained Glass",
@@ -13553,7 +14355,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/magenta_stained_glass.png"
       },
       {
        "name": "Brown Stained Glass",
@@ -13565,7 +14368,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/brown_stained_glass.png"
       },
       {
        "name": "Cyan Stained Glass",
@@ -13577,7 +14381,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/cyan_stained_glass.png"
       },
       {
        "name": "Gray Stained Glass",
@@ -13589,7 +14394,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/gray_stained_glass.png"
       },
       {
        "name": "Light Gray Stained Glass",
@@ -13601,7 +14407,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/light_gray_stained_glass.png"
       },
       {
        "name": "Orange Stained Glass",
@@ -13613,7 +14420,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/orange_stained_glass.png"
       },
       {
        "name": "Raw Iron",
@@ -13625,7 +14433,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.38
+       "pct": 2.38,
+       "icon": "assets/icons/mc/raw_iron.png"
       },
       {
        "name": "Cobweb",
@@ -13637,7 +14446,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.38
+       "pct": 2.38,
+       "icon": "assets/icons/mc/cobweb.png"
       },
       {
        "name": "Experience Bottle",
@@ -13649,7 +14459,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.38
+       "pct": 2.38,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Glass",
@@ -13661,7 +14472,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.38
+       "pct": 2.38,
+       "icon": "assets/icons/mc/glass.png"
       },
       {
        "name": "Potion",
@@ -13673,7 +14485,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 1.19
+       "pct": 1.19,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Potion",
@@ -13685,7 +14498,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 1.19
+       "pct": 1.19,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Lava Bucket",
@@ -13697,7 +14511,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 1.19
+       "pct": 1.19,
+       "icon": "assets/icons/mc/lava_bucket.png"
       }
      ]
     },
@@ -13717,7 +14532,8 @@ const MINE_TREASURE_DATA = {
        "attrs": [],
        "ref_id": "mt:chests/desert/glazed",
        "is_exclusive": true,
-       "pct": 1.79
+       "pct": 1.79,
+       "icon": "assets/icons/mc/pink_glazed_terracotta.png"
       },
       {
        "name": "Rare Charm",
@@ -13734,7 +14550,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "\"Holy Eye\"",
@@ -13749,7 +14566,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 1.79
+       "pct": 1.79,
+       "icon": "assets/icons/mc/spider_eye.png"
       },
       {
        "name": "Gold Ingot",
@@ -13761,7 +14579,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 70.0
+       "pct": 70.0,
+       "icon": "assets/icons/mc/gold_ingot.png"
       },
       {
        "name": "Emerald",
@@ -13773,7 +14592,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 70.0
+       "pct": 70.0,
+       "icon": "assets/icons/mc/emerald.png"
       },
       {
        "name": "Cobweb",
@@ -13785,7 +14605,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/cobweb.png"
       },
       {
        "name": "Orange Stained Glass",
@@ -13797,7 +14618,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/orange_stained_glass.png"
       },
       {
        "name": "Yellow Stained Glass",
@@ -13809,7 +14631,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/yellow_stained_glass.png"
       },
       {
        "name": "Blue Stained Glass",
@@ -13821,7 +14644,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/blue_stained_glass.png"
       },
       {
        "name": "Light Blue Stained Glass",
@@ -13833,7 +14657,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/light_blue_stained_glass.png"
       },
       {
        "name": "Green Stained Glass",
@@ -13845,7 +14670,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/green_stained_glass.png"
       },
       {
        "name": "Lime Stained Glass",
@@ -13857,7 +14683,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/lime_stained_glass.png"
       },
       {
        "name": "Red Stained Glass",
@@ -13869,7 +14696,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/red_stained_glass.png"
       },
       {
        "name": "Black Stained Glass",
@@ -13881,7 +14709,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/black_stained_glass.png"
       },
       {
        "name": "White Stained Glass",
@@ -13893,7 +14722,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/white_stained_glass.png"
       },
       {
        "name": "Black Stained Glass",
@@ -13905,7 +14735,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/black_stained_glass.png"
       },
       {
        "name": "Black Stained Glass",
@@ -13917,7 +14748,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/black_stained_glass.png"
       },
       {
        "name": "Magenta Stained Glass",
@@ -13929,7 +14761,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/magenta_stained_glass.png"
       },
       {
        "name": "Brown Stained Glass",
@@ -13941,7 +14774,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/brown_stained_glass.png"
       },
       {
        "name": "Cyan Stained Glass",
@@ -13953,7 +14787,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/cyan_stained_glass.png"
       },
       {
        "name": "Gray Stained Glass",
@@ -13965,7 +14800,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/gray_stained_glass.png"
       },
       {
        "name": "Light Gray Stained Glass",
@@ -13977,7 +14813,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.36
+       "pct": 5.36,
+       "icon": "assets/icons/mc/light_gray_stained_glass.png"
       },
       {
        "name": "Experience Bottle",
@@ -13989,7 +14826,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Lava Bucket",
@@ -14001,7 +14839,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 1.79
+       "pct": 1.79,
+       "icon": "assets/icons/mc/lava_bucket.png"
       }
      ]
     },
@@ -14026,7 +14865,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/assassin_instinct",
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Desert Temple Loot",
@@ -14041,7 +14881,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/chest.png"
       },
       {
        "name": "Totem of Assassination",
@@ -14059,7 +14900,8 @@ const MINE_TREASURE_DATA = {
         "Attack Damage: 0.05"
        ],
        "ref_id": "mt:totems/assassin",
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/totem_of_undying.png"
       },
       {
        "name": "Epic Charm",
@@ -14076,7 +14918,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Emerald Block",
@@ -14088,7 +14931,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 75.0
+       "pct": 75.0,
+       "icon": "assets/icons/mc/emerald_block.png"
       },
       {
        "name": "Tnt",
@@ -14100,7 +14944,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/tnt.png"
       },
       {
        "name": "Tinted Glass",
@@ -14112,7 +14957,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/tinted_glass.png"
       },
       {
        "name": "Golden Carrot",
@@ -14124,7 +14970,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/golden_carrot.png"
       },
       {
        "name": "Golden Apple",
@@ -14136,7 +14983,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Cobweb",
@@ -14148,7 +14996,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/cobweb.png"
       },
       {
        "name": "Experience Bottle",
@@ -14160,7 +15009,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Diamond",
@@ -14172,7 +15022,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/diamond.png"
       },
       {
        "name": "Golden Boots",
@@ -14186,7 +15037,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/golden_boots.png"
       },
       {
        "name": "Golden Leggings",
@@ -14200,7 +15052,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/golden_leggings.png"
       },
       {
        "name": "Golden Chestplate",
@@ -14214,7 +15067,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/golden_chestplate.png"
       },
       {
        "name": "Golden Helmet",
@@ -14228,7 +15082,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/golden_helmet.png"
       }
      ]
     },
@@ -14261,7 +15116,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/desert/assassin_sword",
        "is_exclusive": true,
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/golden_sword.png"
       },
       {
        "name": "Desert Chestplate",
@@ -14287,7 +15143,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/desert/desert_chestplate",
        "is_exclusive": true,
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/leather_chestplate.png"
       },
       {
        "name": "Legendary Charm",
@@ -14304,7 +15161,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Assassin Instinct",
@@ -14322,7 +15180,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Totem of Assassination",
@@ -14340,7 +15199,8 @@ const MINE_TREASURE_DATA = {
         "Attack Damage: 0.05"
        ],
        "ref_id": "mt:totems/assassin",
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/totem_of_undying.png"
       },
       {
        "name": "Yellow Shulker Box",
@@ -14352,7 +15212,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/yellow_shulker_box.png"
       },
       {
        "name": "Gold Block",
@@ -14364,7 +15225,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Tnt",
@@ -14376,7 +15238,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/tnt.png"
       },
       {
        "name": "Golden Carrot",
@@ -14388,7 +15251,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/golden_carrot.png"
       },
       {
        "name": "Golden Apple",
@@ -14400,7 +15264,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Golden Boots",
@@ -14414,7 +15279,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/golden_boots.png"
       },
       {
        "name": "Golden Leggings",
@@ -14428,7 +15294,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/golden_leggings.png"
       },
       {
        "name": "Golden Chestplate",
@@ -14442,7 +15309,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/golden_chestplate.png"
       },
       {
        "name": "Golden Helmet",
@@ -14456,7 +15324,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/golden_helmet.png"
       },
       {
        "name": "Enchanted Book",
@@ -14468,7 +15337,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Diamond",
@@ -14480,11 +15350,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/diamond.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/sand.png"
   },
   {
    "id": "dripstone",
@@ -14514,7 +15386,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14535,7 +15408,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14556,7 +15430,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14577,7 +15452,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14598,7 +15474,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14619,7 +15496,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14640,7 +15518,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14661,7 +15540,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14682,7 +15562,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14703,7 +15584,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14724,7 +15606,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14745,7 +15628,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14766,7 +15650,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14787,7 +15672,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14808,7 +15694,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14829,7 +15716,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14850,7 +15738,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14871,7 +15760,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14892,7 +15782,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14913,7 +15804,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14934,7 +15826,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14955,7 +15848,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14976,7 +15870,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -14997,7 +15892,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15018,7 +15914,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15039,7 +15936,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15060,7 +15958,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15081,7 +15980,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15102,7 +16002,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15123,7 +16024,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15144,7 +16046,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15165,7 +16068,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15186,7 +16090,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15207,7 +16112,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15228,7 +16134,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15249,7 +16156,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Dripstone Helmet",
@@ -15270,7 +16178,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/dripstone/dripstone_helmet"
+     "ref_id": "mt:chests/dripstone/dripstone_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     }
    ],
    "tiers": {
@@ -15293,7 +16202,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Pointed Dripstone",
@@ -15305,7 +16215,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/pointed_dripstone.png"
       },
       {
        "name": "Dripstone Block",
@@ -15317,7 +16228,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/dripstone_block.png"
       },
       {
        "name": "Raw Copper",
@@ -15329,7 +16241,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/raw_copper.png"
       },
       {
        "name": "Pointed Dripstone",
@@ -15341,7 +16254,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/pointed_dripstone.png"
       },
       {
        "name": "Stone",
@@ -15353,7 +16267,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/stone.png"
       },
       {
        "name": "Prismarine",
@@ -15365,7 +16280,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/prismarine.png"
       },
       {
        "name": "Prismarine Crystals",
@@ -15377,7 +16293,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/prismarine_crystals.png"
       },
       {
        "name": "Water Bucket",
@@ -15389,7 +16306,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/water_bucket.png"
       },
       {
        "name": "Experience Bottle",
@@ -15401,7 +16319,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Iron Shovel",
@@ -15415,7 +16334,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 16)"
        ],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/iron_shovel.png"
       },
       {
        "name": "Deepslate",
@@ -15427,7 +16347,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/deepslate.png"
       },
       {
        "name": "Deepslate",
@@ -15439,7 +16360,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/deepslate.png"
       },
       {
        "name": "Quartz",
@@ -15451,7 +16373,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/quartz.png"
       },
       {
        "name": "Iron Sword",
@@ -15465,7 +16388,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 16)"
        ],
        "attrs": [],
-       "pct": 5.0
+       "pct": 5.0,
+       "icon": "assets/icons/mc/iron_sword.png"
       },
       {
        "name": "Copper Chest",
@@ -15477,7 +16401,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/copper_chest.png"
       },
       {
        "name": "Iron Chestplate",
@@ -15491,7 +16416,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 16)"
        ],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/iron_chestplate.png"
       },
       {
        "name": "Iron Boots",
@@ -15505,7 +16431,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 16)"
        ],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/iron_boots.png"
       },
       {
        "name": "Stonecutter",
@@ -15517,7 +16444,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/stonecutter.png"
       },
       {
        "name": "Grindstone",
@@ -15529,7 +16457,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/grindstone.png"
       },
       {
        "name": "Hopper",
@@ -15541,7 +16470,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/hopper.png"
       },
       {
        "name": "Cauldron",
@@ -15553,7 +16483,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/cauldron.png"
       }
      ]
     },
@@ -15576,7 +16507,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Copper Golem Statue",
@@ -15588,7 +16520,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 30.0
+       "pct": 30.0,
+       "icon": "assets/icons/mc/copper_golem_statue.png"
       },
       {
        "name": "Pointed Dripstone",
@@ -15600,7 +16533,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/pointed_dripstone.png"
       },
       {
        "name": "Raw Iron",
@@ -15612,7 +16546,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/raw_iron.png"
       },
       {
        "name": "Pointed Dripstone",
@@ -15624,7 +16559,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/pointed_dripstone.png"
       },
       {
        "name": "Dripstone Block",
@@ -15636,7 +16572,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/dripstone_block.png"
       },
       {
        "name": "Gold Ingot",
@@ -15648,7 +16585,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/gold_ingot.png"
       },
       {
        "name": "Experience Bottle",
@@ -15660,7 +16598,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Ink Sac",
@@ -15672,7 +16611,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/ink_sac.png"
       },
       {
        "name": "Glow Ink Sac",
@@ -15684,7 +16624,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/glow_ink_sac.png"
       },
       {
        "name": "Anvil",
@@ -15696,7 +16637,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/anvil.png"
       },
       {
        "name": "Water Bucket",
@@ -15708,7 +16650,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/water_bucket.png"
       },
       {
        "name": "Lightning Rod",
@@ -15720,7 +16663,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/lightning_rod.png"
       },
       {
        "name": "Spyglass",
@@ -15732,7 +16676,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/spyglass.png"
       },
       {
        "name": "Copper Helmet",
@@ -15746,7 +16691,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 22)"
        ],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/copper_helmet.png"
       },
       {
        "name": "Copper Chestplate",
@@ -15760,7 +16706,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 22)"
        ],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/copper_chestplate.png"
       },
       {
        "name": "Copper Leggings",
@@ -15774,7 +16721,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 22)"
        ],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/copper_leggings.png"
       },
       {
        "name": "Copper Boots",
@@ -15788,7 +16736,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 22)"
        ],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/copper_boots.png"
       },
       {
        "name": "Copper Sword",
@@ -15802,7 +16751,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 22)"
        ],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/copper_sword.png"
       },
       {
        "name": "Copper Shovel",
@@ -15816,7 +16766,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 22)"
        ],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/copper_shovel.png"
       }
      ]
     },
@@ -15838,7 +16789,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/floor_is_spikes",
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/armor_stand.png"
       },
       {
        "name": "Dripstone Rain",
@@ -15857,7 +16809,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/dripstone_rain",
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Drowned Spawn Egg",
@@ -15871,7 +16824,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/drowned_spawn_egg.png"
       },
       {
        "name": "Pointed Boots",
@@ -15892,7 +16846,8 @@ const MINE_TREASURE_DATA = {
        ],
        "attrs": [],
        "ref_id": "mt:custom_items/pointed_boots",
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/leather_boots.png"
       },
       {
        "name": "Epic Charm",
@@ -15909,7 +16864,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Nautilus Shell",
@@ -15921,7 +16877,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 75.0
+       "pct": 75.0,
+       "icon": "assets/icons/mc/nautilus_shell.png"
       },
       {
        "name": "Oxidized Copper",
@@ -15933,7 +16890,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/oxidized_copper.png"
       },
       {
        "name": "Copper Block",
@@ -15945,7 +16903,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/copper_block.png"
       },
       {
        "name": "Pointed Dripstone",
@@ -15957,7 +16916,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/pointed_dripstone.png"
       },
       {
        "name": "Firework Star",
@@ -15969,7 +16929,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/firework_star.png"
       },
       {
        "name": "Anvil",
@@ -15981,7 +16942,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/anvil.png"
       },
       {
        "name": "Diamond",
@@ -15993,7 +16955,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/diamond.png"
       },
       {
        "name": "Diamond Chestplate",
@@ -16007,7 +16970,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/diamond_chestplate.png"
       },
       {
        "name": "Diamond Boots",
@@ -16021,7 +16985,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/diamond_boots.png"
       },
       {
        "name": "Diamond Sword",
@@ -16035,7 +17000,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/diamond_sword.png"
       },
       {
        "name": "Diamond Shovel",
@@ -16049,7 +17015,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/diamond_shovel.png"
       },
       {
        "name": "Netherite Scrap",
@@ -16061,7 +17028,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     },
@@ -16090,7 +17058,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/dripstone/dripstone_helmet",
        "is_exclusive": true,
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/leather_helmet.png"
       },
       {
        "name": "Legendary Charm",
@@ -16107,7 +17076,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Dripstone Rain",
@@ -16126,7 +17096,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/dripstone_rain",
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Pointed Boots",
@@ -16147,7 +17118,8 @@ const MINE_TREASURE_DATA = {
        ],
        "attrs": [],
        "ref_id": "mt:custom_items/pointed_boots",
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/leather_boots.png"
       },
       {
        "name": "Stone Driller",
@@ -16163,7 +17135,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/stone_driller",
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/stone_pickaxe.png"
       },
       {
        "name": "Pointed Dripstone",
@@ -16175,7 +17148,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/pointed_dripstone.png"
       },
       {
        "name": "Golden Apple",
@@ -16187,7 +17161,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Gold Block",
@@ -16199,7 +17174,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Copper Block",
@@ -16211,7 +17187,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/copper_block.png"
       },
       {
        "name": "Iron Block",
@@ -16223,7 +17200,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/iron_block.png"
       },
       {
        "name": "Enchanted Book",
@@ -16235,7 +17213,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Diamond",
@@ -16247,7 +17226,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/diamond.png"
       },
       {
        "name": "Netherite Scrap",
@@ -16259,11 +17239,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/pointed_dripstone.png"
   },
   {
    "id": "end",
@@ -16292,7 +17274,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16314,7 +17297,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16336,7 +17320,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16358,7 +17343,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16380,7 +17366,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16402,7 +17389,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16424,7 +17412,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16446,7 +17435,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16468,7 +17458,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16490,7 +17481,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16512,7 +17504,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16534,7 +17527,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16556,7 +17550,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16578,7 +17573,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16600,7 +17596,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16622,7 +17619,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16644,7 +17642,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16666,7 +17665,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16688,7 +17688,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16710,7 +17711,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16732,7 +17734,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16754,7 +17757,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16775,7 +17779,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16797,7 +17802,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16819,7 +17825,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16841,7 +17848,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16863,7 +17871,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16885,7 +17894,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16907,7 +17917,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16929,7 +17940,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16951,7 +17963,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16973,7 +17986,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -16995,7 +18009,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -17017,7 +18032,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -17039,7 +18055,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "End Boots",
@@ -17061,7 +18078,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Knockback Resistance: 0.05"
      ],
-     "ref_id": "mt:chests/end/end_boots"
+     "ref_id": "mt:chests/end/end_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     }
    ],
    "tiers": {
@@ -17083,7 +18101,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/better_flight_rocket",
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/firework_rocket.png"
       },
       {
        "name": "Common Charm",
@@ -17100,7 +18119,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.5
+       "pct": 2.5,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Potion",
@@ -17112,7 +18132,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.0
+       "pct": 16.0,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "End Stone",
@@ -17124,7 +18145,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.79
+       "pct": 15.79,
+       "icon": "assets/icons/mc/end_stone.png"
       },
       {
        "name": "Chorus Fruit",
@@ -17136,7 +18158,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.79
+       "pct": 15.79,
+       "icon": "assets/icons/mc/chorus_fruit.png"
       },
       {
        "name": "Experience Bottle",
@@ -17148,7 +18171,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.79
+       "pct": 15.79,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "End Rod",
@@ -17160,7 +18184,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.53
+       "pct": 10.53,
+       "icon": "assets/icons/mc/end_rod.png"
       },
       {
        "name": "Dragon Breath",
@@ -17172,7 +18197,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.53
+       "pct": 10.53,
+       "icon": "assets/icons/mc/dragon_breath.png"
       },
       {
        "name": "Ender Pearl",
@@ -17184,7 +18210,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.53
+       "pct": 10.53,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Phantom Membrane",
@@ -17196,7 +18223,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.53
+       "pct": 10.53,
+       "icon": "assets/icons/mc/phantom_membrane.png"
       },
       {
        "name": "Shulker Shell",
@@ -17208,7 +18236,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/shulker_shell.png"
       }
      ]
     },
@@ -17230,7 +18259,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/better_flight_rocket",
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/firework_rocket.png"
       },
       {
        "name": "Flight Rocket",
@@ -17246,7 +18276,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/flight_5",
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/firework_rocket.png"
       },
       {
        "name": "Flight Rocket",
@@ -17262,7 +18293,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/flight_5",
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/firework_rocket.png"
       },
       {
        "name": "Rare Charm",
@@ -17279,7 +18311,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.5
+       "pct": 2.5,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "End Stone Bricks",
@@ -17291,7 +18324,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/end_stone_bricks.png"
       },
       {
        "name": "Chorus Fruit",
@@ -17303,7 +18337,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/chorus_fruit.png"
       },
       {
        "name": "Shulker Shell",
@@ -17315,7 +18350,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/shulker_shell.png"
       },
       {
        "name": "Dragon Breath",
@@ -17327,7 +18363,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/dragon_breath.png"
       },
       {
        "name": "Experience Bottle",
@@ -17339,7 +18376,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Ender Pearl",
@@ -17351,7 +18389,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Phantom Membrane",
@@ -17363,7 +18402,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/phantom_membrane.png"
       },
       {
        "name": "End Crystal",
@@ -17375,7 +18415,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/end_crystal.png"
       }
      ]
     },
@@ -17397,7 +18438,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/better_flight_rocket",
-       "pct": 16.67
+       "pct": 16.67,
+       "icon": "assets/icons/mc/firework_rocket.png"
       },
       {
        "name": "Endruption",
@@ -17417,7 +18459,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/endruption",
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "End Amulet",
@@ -17435,7 +18478,8 @@ const MINE_TREASURE_DATA = {
        "attrs": [
         "Block Interaction Range: 2"
        ],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/amethyst_shard.png"
       },
       {
        "name": "Enchanted Chorus Fruit",
@@ -17448,7 +18492,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/enchanted_chorus_fruit",
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/chorus_fruit.png"
       },
       {
        "name": "Flight Rocket",
@@ -17464,7 +18509,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/flight_5",
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/firework_rocket.png"
       },
       {
        "name": "Epic Charm",
@@ -17481,7 +18527,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Shulker Shell",
@@ -17493,7 +18540,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.67
+       "pct": 16.67,
+       "icon": "assets/icons/mc/shulker_shell.png"
       },
       {
        "name": "Ender Pearl",
@@ -17505,7 +18553,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.67
+       "pct": 16.67,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Ender Chest",
@@ -17517,7 +18566,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.67
+       "pct": 16.67,
+       "icon": "assets/icons/mc/ender_chest.png"
       },
       {
        "name": "Netherite Scrap",
@@ -17529,7 +18579,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     },
@@ -17559,7 +18610,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/end/end_boots",
        "is_exclusive": true,
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/leather_boots.png"
       },
       {
        "name": "Ultimate Flight Rocket",
@@ -17574,7 +18626,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 20.0
+       "pct": 20.0,
+       "icon": "assets/icons/mc/firework_rocket.png"
       },
       {
        "name": "Endruption",
@@ -17594,7 +18647,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/endruption",
-       "pct": 13.33
+       "pct": 13.33,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Legendary Charm",
@@ -17611,7 +18665,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Enchanted Chorus Fruit",
@@ -17624,7 +18679,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/enchanted_chorus_fruit",
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/chorus_fruit.png"
       },
       {
        "name": "Ender Chest",
@@ -17636,7 +18692,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 20.0
+       "pct": 20.0,
+       "icon": "assets/icons/mc/ender_chest.png"
       },
       {
        "name": "Shulker Box",
@@ -17648,7 +18705,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.33
+       "pct": 13.33,
+       "icon": "assets/icons/mc/shulker_box.png"
       },
       {
        "name": "Enchanted Book",
@@ -17660,7 +18718,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.33
+       "pct": 13.33,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Elytra",
@@ -17672,11 +18731,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/elytra.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/end_stone.png"
   },
   {
    "id": "flower",
@@ -17712,7 +18773,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17734,7 +18796,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17756,7 +18819,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17778,7 +18842,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17800,7 +18865,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17822,7 +18888,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17844,7 +18911,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17866,7 +18934,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17888,7 +18957,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17910,7 +18980,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17932,7 +19003,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17954,7 +19026,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17976,7 +19049,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -17998,7 +19072,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18020,7 +19095,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18042,7 +19118,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18064,7 +19141,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18086,7 +19164,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18108,7 +19187,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18130,7 +19210,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18152,7 +19233,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18174,7 +19256,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18196,7 +19279,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18218,7 +19302,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18240,7 +19325,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18262,7 +19348,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18284,7 +19371,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18306,7 +19394,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18328,7 +19417,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18350,7 +19440,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18372,7 +19463,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18394,7 +19486,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18416,7 +19509,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18438,7 +19532,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18460,7 +19555,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18482,7 +19578,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Flower Helmet",
@@ -18504,7 +19601,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/flower/flower_helmet"
+     "ref_id": "mt:chests/flower/flower_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     }
    ],
    "tiers": {
@@ -18528,7 +19626,8 @@ const MINE_TREASURE_DATA = {
        "attrs": [
         "Attack Damage: 2–2"
        ],
-       "pct": 2.44
+       "pct": 2.44,
+       "icon": "assets/icons/mc/wooden_hoe.png"
       },
       {
        "name": "Common Charm",
@@ -18545,7 +19644,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Tall Grass",
@@ -18557,7 +19657,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/tall_grass.png"
       },
       {
        "name": "Poppy",
@@ -18569,7 +19670,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/poppy.png"
       },
       {
        "name": "Dandelion",
@@ -18581,7 +19683,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/dandelion.png"
       },
       {
        "name": "Honey Bottle",
@@ -18593,7 +19696,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/honey_bottle.png"
       },
       {
        "name": "Dirt",
@@ -18605,7 +19709,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/dirt.png"
       },
       {
        "name": "Paper",
@@ -18617,7 +19722,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.88
+       "pct": 4.88,
+       "icon": "assets/icons/mc/paper.png"
       },
       {
        "name": "Sugar",
@@ -18629,7 +19735,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.88
+       "pct": 4.88,
+       "icon": "assets/icons/mc/sugar.png"
       },
       {
        "name": "Potion",
@@ -18641,7 +19748,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.88
+       "pct": 4.88,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Red Tulip",
@@ -18653,7 +19761,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.88
+       "pct": 4.88,
+       "icon": "assets/icons/mc/red_tulip.png"
       },
       {
        "name": "Orange Tulip",
@@ -18665,7 +19774,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.88
+       "pct": 4.88,
+       "icon": "assets/icons/mc/orange_tulip.png"
       },
       {
        "name": "White Tulip",
@@ -18677,7 +19787,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.88
+       "pct": 4.88,
+       "icon": "assets/icons/mc/white_tulip.png"
       },
       {
        "name": "Pink Tulip",
@@ -18689,7 +19800,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.88
+       "pct": 4.88,
+       "icon": "assets/icons/mc/pink_tulip.png"
       },
       {
        "name": "Beetroot",
@@ -18701,7 +19813,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.88
+       "pct": 4.88,
+       "icon": "assets/icons/mc/beetroot.png"
       },
       {
        "name": "Hanging Roots",
@@ -18713,7 +19826,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.88
+       "pct": 4.88,
+       "icon": "assets/icons/mc/hanging_roots.png"
       },
       {
        "name": "Experience Bottle",
@@ -18725,7 +19839,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.88
+       "pct": 4.88,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Book",
@@ -18739,7 +19854,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 6)"
        ],
        "attrs": [],
-       "pct": 2.44
+       "pct": 2.44,
+       "icon": "assets/icons/mc/book.png"
       },
       {
        "name": "Book",
@@ -18753,7 +19869,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 16)"
        ],
        "attrs": [],
-       "pct": 2.44
+       "pct": 2.44,
+       "icon": "assets/icons/mc/book.png"
       },
       {
        "name": "Sniffer Egg",
@@ -18765,7 +19882,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.44
+       "pct": 2.44,
+       "icon": "assets/icons/mc/sniffer_egg.png"
       },
       {
        "name": "Flower Banner Pattern",
@@ -18777,7 +19895,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.44
+       "pct": 2.44,
+       "icon": "assets/icons/mc/flower_banner_pattern.png"
       },
       {
        "name": "Suspicious Stew",
@@ -18789,7 +19908,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.44
+       "pct": 2.44,
+       "icon": "assets/icons/mc/suspicious_stew.png"
       }
      ]
     },
@@ -18811,7 +19931,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/flower_pie",
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/pumpkin_pie.png"
       },
       {
        "name": "Healing Flower",
@@ -18827,7 +19948,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/healing_flower",
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/armor_stand.png"
       },
       {
        "name": "Stone Hoe",
@@ -18845,7 +19967,8 @@ const MINE_TREASURE_DATA = {
        "attrs": [
         "Attack Damage: 3–3"
        ],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/stone_hoe.png"
       },
       {
        "name": "Rare Charm",
@@ -18862,7 +19985,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Coarse Dirt",
@@ -18874,7 +19998,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/coarse_dirt.png"
       },
       {
        "name": "Blue Orchid",
@@ -18886,7 +20011,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/blue_orchid.png"
       },
       {
        "name": "Allium",
@@ -18898,7 +20024,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/allium.png"
       },
       {
        "name": "Azure Bluet",
@@ -18910,7 +20037,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/azure_bluet.png"
       },
       {
        "name": "Oxeye Daisy",
@@ -18922,7 +20050,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/oxeye_daisy.png"
       },
       {
        "name": "Cornflower",
@@ -18934,7 +20063,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/cornflower.png"
       },
       {
        "name": "Lily Of The Valley",
@@ -18946,7 +20076,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/lily_of_the_valley.png"
       },
       {
        "name": "Sunflower",
@@ -18958,7 +20089,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/sunflower.png"
       },
       {
        "name": "Lilac",
@@ -18970,7 +20102,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/lilac.png"
       },
       {
        "name": "Rose Bush",
@@ -18982,7 +20115,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/rose_bush.png"
       },
       {
        "name": "Peony",
@@ -18994,7 +20128,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/peony.png"
       },
       {
        "name": "Hanging Roots",
@@ -19006,7 +20141,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/hanging_roots.png"
       },
       {
        "name": "Chorus Fruit",
@@ -19018,7 +20154,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/chorus_fruit.png"
       },
       {
        "name": "Experience Bottle",
@@ -19030,7 +20167,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Cherry Sapling",
@@ -19042,7 +20180,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/cherry_sapling.png"
       },
       {
        "name": "Enchanted Book",
@@ -19056,7 +20195,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Mending 1"
        ],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Book",
@@ -19070,7 +20210,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 2.78
+       "pct": 2.78,
+       "icon": "assets/icons/mc/book.png"
       }
      ]
     },
@@ -19092,7 +20233,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/flower_pie",
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/pumpkin_pie.png"
       },
       {
        "name": "Heal Purification",
@@ -19111,7 +20253,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/heal_purification",
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Refined Iron Axe",
@@ -19133,7 +20276,8 @@ const MINE_TREASURE_DATA = {
         "Attack Speed: -4",
         "Attack Damage: 9–9"
        ],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/iron_axe.png"
       },
       {
        "name": "Refined Iron Shovel",
@@ -19155,7 +20299,8 @@ const MINE_TREASURE_DATA = {
         "Attack Speed: -4",
         "Attack Damage: 5–5"
        ],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/iron_shovel.png"
       },
       {
        "name": "Refined Iron Hoe",
@@ -19175,7 +20320,8 @@ const MINE_TREASURE_DATA = {
        "attrs": [
         "Attack Damage: 3–3"
        ],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/iron_hoe.png"
       },
       {
        "name": "Epic Charm",
@@ -19192,7 +20338,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Wither Rose",
@@ -19204,7 +20351,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/wither_rose.png"
       },
       {
        "name": "Chorus Flower",
@@ -19216,7 +20364,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/chorus_flower.png"
       },
       {
        "name": "Experience Bottle",
@@ -19228,7 +20377,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Chorus Fruit",
@@ -19240,7 +20390,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/chorus_fruit.png"
       },
       {
        "name": "Book",
@@ -19254,7 +20405,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 50)"
        ],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/book.png"
       },
       {
        "name": "Brush",
@@ -19266,7 +20418,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/brush.png"
       },
       {
        "name": "Golden Apple",
@@ -19278,7 +20431,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/golden_apple.png"
       }
      ]
     },
@@ -19308,7 +20462,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/flower/flower_helmet",
        "is_exclusive": true,
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/leather_helmet.png"
       },
       {
        "name": "Flower Pie",
@@ -19324,7 +20479,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/flower_pie",
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/pumpkin_pie.png"
       },
       {
        "name": "Legendary Charm",
@@ -19341,7 +20497,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Juicy Experience Drink",
@@ -19357,7 +20514,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/juicy_experience_drink",
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/honey_bottle.png"
       },
       {
        "name": "Heal Purification",
@@ -19376,7 +20534,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/heal_purification",
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Refined Diamond Axe",
@@ -19398,7 +20557,8 @@ const MINE_TREASURE_DATA = {
         "Attack Speed: -4",
         "Attack Damage: 8–8"
        ],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/diamond_axe.png"
       },
       {
        "name": "Refined Diamond Shovel",
@@ -19420,7 +20580,8 @@ const MINE_TREASURE_DATA = {
         "Attack Speed: -4",
         "Attack Damage: 6–6"
        ],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/diamond_shovel.png"
       },
       {
        "name": "Refined Diamond Hoe",
@@ -19440,7 +20601,8 @@ const MINE_TREASURE_DATA = {
        "attrs": [
         "Attack Damage: 5–5"
        ],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/diamond_hoe.png"
       },
       {
        "name": "Lime Shulker Box",
@@ -19452,7 +20614,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/lime_shulker_box.png"
       },
       {
        "name": "Chorus Flower",
@@ -19464,7 +20627,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/chorus_flower.png"
       },
       {
        "name": "Nether Wart",
@@ -19476,7 +20640,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/nether_wart.png"
       },
       {
        "name": "Book",
@@ -19490,7 +20655,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 60)"
        ],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/book.png"
       },
       {
        "name": "Enchanted Book",
@@ -19502,7 +20668,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Green Shulker Box",
@@ -19514,11 +20681,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/green_shulker_box.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/cherry_blossom_sapling.png"
   },
   {
    "id": "ice",
@@ -19554,7 +20723,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19576,7 +20746,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19598,7 +20769,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19620,7 +20792,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19642,7 +20815,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19664,7 +20838,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19686,7 +20861,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19708,7 +20884,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19730,7 +20907,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19752,7 +20930,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19774,7 +20953,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19796,7 +20976,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19818,7 +20999,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19840,7 +21022,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19862,7 +21045,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19884,7 +21068,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19906,7 +21091,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19928,7 +21114,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19950,7 +21137,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19972,7 +21160,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -19994,7 +21183,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20016,7 +21206,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20038,7 +21229,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20060,7 +21252,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20082,7 +21275,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20104,7 +21298,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20126,7 +21321,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20148,7 +21344,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20170,7 +21367,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20192,7 +21390,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20214,7 +21413,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20236,7 +21436,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20258,7 +21459,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20280,7 +21482,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20302,7 +21505,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Shoes",
@@ -20324,7 +21528,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/ice/ice_boots"
+     "ref_id": "mt:chests/ice/ice_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Ice Sword",
@@ -20348,7 +21553,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 6"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20372,7 +21578,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 6"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20396,7 +21603,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 6"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20420,7 +21628,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 6"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20444,7 +21653,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20468,7 +21678,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20492,7 +21703,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20516,7 +21728,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20540,7 +21753,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20564,7 +21778,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20588,7 +21803,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20612,7 +21828,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20636,7 +21853,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20660,7 +21878,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20684,7 +21903,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20708,7 +21928,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20732,7 +21953,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20756,7 +21978,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20780,7 +22003,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20804,7 +22028,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20828,7 +22053,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20852,7 +22078,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20876,7 +22103,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     },
     {
      "name": "Ice Sword",
@@ -20900,7 +22128,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/ice/ice_sword"
+     "ref_id": "mt:chests/ice/ice_sword",
+     "icon": "assets/icons/mc/diamond_sword.png"
     }
    ],
    "tiers": {
@@ -20918,7 +22147,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/wooden_pickaxe.png"
       },
       {
        "name": "Old Wooden Axe",
@@ -20930,7 +22160,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/wooden_axe.png"
       },
       {
        "name": "Arrow of Freeze",
@@ -20945,7 +22176,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Common Charm",
@@ -20962,7 +22194,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Packed Ice",
@@ -20974,7 +22207,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/packed_ice.png"
       },
       {
        "name": "Ice",
@@ -20986,7 +22220,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/ice.png"
       },
       {
        "name": "Snowball",
@@ -20998,7 +22233,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/snowball.png"
       },
       {
        "name": "Snow Block",
@@ -21010,7 +22246,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/snow_block.png"
       },
       {
        "name": "Light Blue Stained Glass",
@@ -21022,7 +22259,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/light_blue_stained_glass.png"
       },
       {
        "name": "Blue Ice",
@@ -21034,7 +22272,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/blue_ice.png"
       },
       {
        "name": "Potion",
@@ -21046,7 +22285,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Sea Lantern",
@@ -21058,7 +22298,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/sea_lantern.png"
       },
       {
        "name": "Skeleton Skull",
@@ -21070,7 +22311,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/skeleton_skull.png"
       },
       {
        "name": "Experience Bottle",
@@ -21082,7 +22324,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Blue Ice",
@@ -21094,7 +22337,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/blue_ice.png"
       }
      ]
     },
@@ -21116,7 +22360,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/frozen_apple",
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/apple.png"
       },
       {
        "name": "Potion of Freeze",
@@ -21128,7 +22373,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/lingering_potion.png"
       },
       {
        "name": "Rare Charm",
@@ -21145,7 +22391,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Packed Ice",
@@ -21157,7 +22404,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.67
+       "pct": 16.67,
+       "icon": "assets/icons/mc/packed_ice.png"
       },
       {
        "name": "Blue Ice",
@@ -21169,7 +22417,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/blue_ice.png"
       },
       {
        "name": "Experience Bottle",
@@ -21181,7 +22430,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Iron Ingot",
@@ -21193,7 +22443,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/iron_ingot.png"
       },
       {
        "name": "Salmon",
@@ -21205,7 +22456,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/salmon.png"
       },
       {
        "name": "Snow Block",
@@ -21217,7 +22469,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/snow_block.png"
       },
       {
        "name": "Cooked Salmon",
@@ -21229,7 +22482,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/cooked_salmon.png"
       },
       {
        "name": "Flint",
@@ -21241,7 +22495,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/flint.png"
       },
       {
        "name": "Campfire",
@@ -21253,7 +22508,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/campfire.png"
       },
       {
        "name": "Powder Snow Bucket",
@@ -21265,7 +22521,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/powder_snow_bucket.png"
       }
      ]
     },
@@ -21290,7 +22547,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/ice_platform",
-       "pct": 13.33
+       "pct": 13.33,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Frozen Apple",
@@ -21306,7 +22564,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/frozen_apple",
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/apple.png"
       },
       {
        "name": "Arrow of Frostbite",
@@ -21318,7 +22577,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Epic Charm",
@@ -21335,7 +22595,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Dragon Breath",
@@ -21347,7 +22608,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 20.0
+       "pct": 20.0,
+       "icon": "assets/icons/mc/dragon_breath.png"
       },
       {
        "name": "Blue Ice",
@@ -21359,7 +22621,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 20.0
+       "pct": 20.0,
+       "icon": "assets/icons/mc/blue_ice.png"
       },
       {
        "name": "Lodestone",
@@ -21371,7 +22634,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.33
+       "pct": 13.33,
+       "icon": "assets/icons/mc/lodestone.png"
       },
       {
        "name": "Golden Apple",
@@ -21383,7 +22647,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.33
+       "pct": 13.33,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Diamond Boots",
@@ -21395,7 +22660,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/diamond_boots.png"
       }
      ]
     },
@@ -21425,7 +22691,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/ice/ice_boots",
        "is_exclusive": true,
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/leather_boots.png"
       },
       {
        "name": "Ice Sword",
@@ -21451,7 +22718,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/ice/ice_sword",
        "is_exclusive": true,
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/diamond_sword.png"
       },
       {
        "name": "Ice Platform",
@@ -21470,7 +22738,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/ice_platform",
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Arrow of Frostbite",
@@ -21482,7 +22751,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Legendary Charm",
@@ -21499,7 +22769,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Stray Bow",
@@ -21518,7 +22789,8 @@ const MINE_TREASURE_DATA = {
         "Stray Bow 1"
        ],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/bow.png"
       },
       {
        "name": "Frozen Apple",
@@ -21534,7 +22806,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/frozen_apple",
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/apple.png"
       },
       {
        "name": "Light Blue Shulker Box",
@@ -21546,7 +22819,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/light_blue_shulker_box.png"
       },
       {
        "name": "Blue Ice",
@@ -21558,7 +22832,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 17.65
+       "pct": 17.65,
+       "icon": "assets/icons/mc/blue_ice.png"
       },
       {
        "name": "Golden Apple",
@@ -21570,7 +22845,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Enchanted Book",
@@ -21582,7 +22858,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Netherite Scrap",
@@ -21594,7 +22871,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       },
       {
        "name": "Diamond",
@@ -21606,11 +22884,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/diamond.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/blue_ice.png"
   },
   {
    "id": "jungle",
@@ -21641,7 +22921,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21662,7 +22943,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21683,7 +22965,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21704,7 +22987,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21725,7 +23009,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21746,7 +23031,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21767,7 +23053,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21788,7 +23075,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21809,7 +23097,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21830,7 +23119,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21851,7 +23141,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21872,7 +23163,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21893,7 +23185,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21914,7 +23207,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21935,7 +23229,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21956,7 +23251,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21977,7 +23273,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -21998,7 +23295,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22019,7 +23317,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22040,7 +23339,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22061,7 +23361,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22082,7 +23383,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22101,7 +23403,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22122,7 +23425,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22143,7 +23447,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22164,7 +23469,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22185,7 +23491,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22206,7 +23513,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22227,7 +23535,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22248,7 +23557,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22269,7 +23579,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22290,7 +23601,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22311,7 +23623,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22332,7 +23645,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22353,7 +23667,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Jungle Shoes",
@@ -22374,7 +23689,8 @@ const MINE_TREASURE_DATA = {
       "Movement Speed: 0.3",
       "Safe Fall Distance: 100"
      ],
-     "ref_id": "mt:chests/jungle/jungle_shoes"
+     "ref_id": "mt:chests/jungle/jungle_shoes",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Rumble Axe",
@@ -22400,7 +23716,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.75",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22426,7 +23743,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.75",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22452,7 +23770,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.75",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22478,7 +23797,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.75",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22504,7 +23824,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22530,7 +23851,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22556,7 +23878,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22582,7 +23905,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22608,7 +23932,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22634,7 +23959,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22660,7 +23986,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22686,7 +24013,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22712,7 +24040,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22738,7 +24067,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.05",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22764,7 +24094,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22790,7 +24121,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22816,7 +24148,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22842,7 +24175,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22868,7 +24202,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 1.2",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22894,7 +24229,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22920,7 +24256,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 13"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22946,7 +24283,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 15"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     },
     {
      "name": "Rumble Axe",
@@ -22972,7 +24310,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: 0.9",
       "Attack Damage: 17"
      ],
-     "ref_id": "mt:chests/jungle/rumble_axe"
+     "ref_id": "mt:chests/jungle/rumble_axe",
+     "icon": "assets/icons/mc/wooden_axe.png"
     }
    ],
    "tiers": {
@@ -22990,7 +24329,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.12
+       "pct": 3.12,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Rumble Stone Axe",
@@ -23010,7 +24350,8 @@ const MINE_TREASURE_DATA = {
         "Attack Speed: -4",
         "Attack Speed: 0.6–0.6"
        ],
-       "pct": 3.12
+       "pct": 3.12,
+       "icon": "assets/icons/mc/stone_axe.png"
       },
       {
        "name": "Common Charm",
@@ -23027,7 +24368,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Bamboo",
@@ -23039,7 +24381,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/bamboo.png"
       },
       {
        "name": "Sugar Cane",
@@ -23051,7 +24394,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/sugar_cane.png"
       },
       {
        "name": "Melon",
@@ -23063,7 +24407,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/melon.png"
       },
       {
        "name": "Cocoa Beans",
@@ -23075,7 +24420,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/cocoa_beans.png"
       },
       {
        "name": "Experience Bottle",
@@ -23087,7 +24433,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Jungle Sapling",
@@ -23099,7 +24446,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.38
+       "pct": 9.38,
+       "icon": "assets/icons/mc/jungle_sapling.png"
       },
       {
        "name": "Bamboo Block",
@@ -23111,7 +24459,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.25
+       "pct": 6.25,
+       "icon": "assets/icons/mc/bamboo_block.png"
       },
       {
        "name": "Potion",
@@ -23123,7 +24472,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.25
+       "pct": 6.25,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Gold Ingot",
@@ -23135,7 +24485,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.25
+       "pct": 6.25,
+       "icon": "assets/icons/mc/gold_ingot.png"
       },
       {
        "name": "Piston",
@@ -23147,7 +24498,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.25
+       "pct": 6.25,
+       "icon": "assets/icons/mc/piston.png"
       },
       {
        "name": "Sticky Piston",
@@ -23159,7 +24511,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.25
+       "pct": 6.25,
+       "icon": "assets/icons/mc/sticky_piston.png"
       },
       {
        "name": "Tipped Arrow",
@@ -23171,7 +24524,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.25
+       "pct": 6.25,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       }
      ]
     },
@@ -23192,7 +24546,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Leaf Blower",
@@ -23208,7 +24563,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/leaf_blower",
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/goat_horn.png"
       },
       {
        "name": "Creeper Helmet",
@@ -23223,7 +24579,8 @@ const MINE_TREASURE_DATA = {
         "Armor: 2–2",
         "Armor Toughness: 1–1"
        ],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/creeper_head.png"
       },
       {
        "name": "Skeleton Helmet",
@@ -23238,7 +24595,8 @@ const MINE_TREASURE_DATA = {
         "Armor: 2–2",
         "Armor Toughness: 1–1"
        ],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/skeleton_skull.png"
       },
       {
        "name": "Rare Charm",
@@ -23255,7 +24613,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Piston",
@@ -23267,7 +24626,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.67
+       "pct": 16.67,
+       "icon": "assets/icons/mc/piston.png"
       },
       {
        "name": "Emerald",
@@ -23279,7 +24639,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.67
+       "pct": 16.67,
+       "icon": "assets/icons/mc/emerald.png"
       },
       {
        "name": "Experience Bottle",
@@ -23291,7 +24652,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.67
+       "pct": 16.67,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Saddle",
@@ -23303,7 +24665,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/saddle.png"
       },
       {
        "name": "Golden Apple",
@@ -23315,7 +24678,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Dispenser",
@@ -23329,7 +24693,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/dispenser.png"
       }
      ]
     },
@@ -23350,7 +24715,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 16.67
+       "pct": 16.67,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Roaring Jungle",
@@ -23369,7 +24735,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/roaring_jungle",
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Panda Helmet",
@@ -23384,7 +24751,8 @@ const MINE_TREASURE_DATA = {
         "Armor: 4–6",
         "Armor Toughness: 4–4"
        ],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/player_head.png"
       },
       {
        "name": "Wither Helmet",
@@ -23399,7 +24767,8 @@ const MINE_TREASURE_DATA = {
         "Armor: 3.5–3.5",
         "Armor Toughness: 3.5–3.5"
        ],
-       "pct": 5.56
+       "pct": 5.56,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "Epic Charm",
@@ -23416,7 +24785,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Emerald Block",
@@ -23428,7 +24798,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.67
+       "pct": 16.67,
+       "icon": "assets/icons/mc/emerald_block.png"
       },
       {
        "name": "Sculk Sensor",
@@ -23440,7 +24811,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.67
+       "pct": 16.67,
+       "icon": "assets/icons/mc/sculk_sensor.png"
       },
       {
        "name": "Turtle Egg",
@@ -23452,7 +24824,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.67
+       "pct": 16.67,
+       "icon": "assets/icons/mc/turtle_egg.png"
       },
       {
        "name": "Golden Apple",
@@ -23464,7 +24837,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/golden_apple.png"
       }
      ]
     },
@@ -23493,7 +24867,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/jungle/jungle_shoes",
        "is_exclusive": true,
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/leather_boots.png"
       },
       {
        "name": "Rumble Axe",
@@ -23521,7 +24896,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/jungle/rumble_axe",
        "is_exclusive": true,
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/wooden_axe.png"
       },
       {
        "name": "Roaring Jungle",
@@ -23540,7 +24916,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/roaring_jungle",
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Legendary Charm",
@@ -23557,7 +24934,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Sculk Sensor",
@@ -23569,7 +24947,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 21.43
+       "pct": 21.43,
+       "icon": "assets/icons/mc/sculk_sensor.png"
       },
       {
        "name": "Green Shulker Box",
@@ -23581,7 +24960,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 21.43
+       "pct": 21.43,
+       "icon": "assets/icons/mc/green_shulker_box.png"
       },
       {
        "name": "Golden Apple",
@@ -23593,7 +24973,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Enchanted Book",
@@ -23605,11 +24986,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/enchanted_book.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/bamboo.png"
   },
   {
    "id": "lush_caves",
@@ -23639,7 +25022,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23662,7 +25046,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23685,7 +25070,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23708,7 +25094,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23731,7 +25118,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23754,7 +25142,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23777,7 +25166,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23800,7 +25190,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23823,7 +25214,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23846,7 +25238,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23869,7 +25262,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23892,7 +25286,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23915,7 +25310,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23938,7 +25334,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23961,7 +25358,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -23984,7 +25382,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24007,7 +25406,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24030,7 +25430,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24053,7 +25454,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24076,7 +25478,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24099,7 +25502,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24122,7 +25526,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24145,7 +25550,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24168,7 +25574,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24191,7 +25598,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24214,7 +25622,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24237,7 +25646,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24260,7 +25670,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24283,7 +25694,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24306,7 +25718,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24329,7 +25742,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24352,7 +25766,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24375,7 +25790,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24398,7 +25814,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24421,7 +25838,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24444,7 +25862,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24467,7 +25886,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24490,7 +25910,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24513,7 +25934,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24536,7 +25958,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24559,7 +25982,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24582,7 +26006,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Lush Cave Pants",
@@ -24605,7 +26030,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/lush_caves/lush_caves_leggings"
+     "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     }
    ],
    "tiers": {
@@ -24626,7 +26052,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/glow_item_frame.png"
       },
       {
        "name": "Rare Golden Shovel",
@@ -24638,7 +26065,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/golden_shovel.png"
       },
       {
        "name": "Lush Potion",
@@ -24650,7 +26078,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Common Charm",
@@ -24667,7 +26096,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Spore Blossom",
@@ -24679,7 +26109,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 75.0
+       "pct": 75.0,
+       "icon": "assets/icons/mc/spore_blossom.png"
       },
       {
        "name": "Flowering Azalea",
@@ -24691,7 +26122,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/flowering_azalea.png"
       },
       {
        "name": "Shroomlight",
@@ -24703,7 +26135,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/shroomlight.png"
       },
       {
        "name": "Clay",
@@ -24715,7 +26148,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/clay.png"
       },
       {
        "name": "Glow Berries",
@@ -24727,7 +26161,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/glow_berries.png"
       },
       {
        "name": "Flowering Azalea Leaves",
@@ -24739,7 +26174,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/flowering_azalea_leaves.png"
       },
       {
        "name": "Big Dripleaf",
@@ -24751,7 +26187,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/big_dripleaf.png"
       },
       {
        "name": "Cobweb",
@@ -24763,7 +26200,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/cobweb.png"
       },
       {
        "name": "Experience Bottle",
@@ -24775,7 +26213,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Moss Block",
@@ -24787,7 +26226,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/moss_block.png"
       },
       {
        "name": "Axolotl Bucket",
@@ -24799,7 +26239,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/axolotl_bucket.png"
       },
       {
        "name": "Water Bucket",
@@ -24811,7 +26252,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/water_bucket.png"
       }
      ]
     },
@@ -24830,7 +26272,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/glowy_arrow",
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Squid Spawn Egg",
@@ -24844,7 +26287,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/squid_spawn_egg.png"
       },
       {
        "name": "Sweet Glow Berry Soup",
@@ -24856,7 +26300,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/suspicious_stew.png"
       },
       {
        "name": "Rare Charm",
@@ -24873,7 +26318,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Honey Block",
@@ -24885,7 +26331,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/honey_block.png"
       },
       {
        "name": "Vine",
@@ -24897,7 +26344,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/vine.png"
       },
       {
        "name": "Honey Bottle",
@@ -24909,7 +26357,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/honey_bottle.png"
       },
       {
        "name": "Sweet Berries",
@@ -24921,7 +26370,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/sweet_berries.png"
       },
       {
        "name": "Experience Bottle",
@@ -24933,7 +26383,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Rose Bush",
@@ -24945,7 +26396,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/rose_bush.png"
       },
       {
        "name": "Tall Grass",
@@ -24957,7 +26409,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/tall_grass.png"
       },
       {
        "name": "Small Dripleaf",
@@ -24969,7 +26422,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/small_dripleaf.png"
       }
      ]
     },
@@ -24987,7 +26441,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Glowy Arrow",
@@ -25000,7 +26455,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/glowy_arrow",
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Juicy Experience Drink",
@@ -25016,7 +26472,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/juicy_experience_drink",
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/honey_bottle.png"
       },
       {
        "name": "Invisible Glow Item Frame",
@@ -25031,7 +26488,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/glow_item_frame.png"
       },
       {
        "name": "Experient Trousers",
@@ -25048,7 +26506,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/experient_trousers",
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/leather_leggings.png"
       },
       {
        "name": "Shrink Potion",
@@ -25063,7 +26522,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Epic Charm",
@@ -25080,7 +26540,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "End Stone",
@@ -25092,7 +26553,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/end_stone.png"
       },
       {
        "name": "Golden Apple",
@@ -25104,7 +26566,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Experience Bottle",
@@ -25116,7 +26579,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Chorus Fruit",
@@ -25128,7 +26592,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/chorus_fruit.png"
       },
       {
        "name": "Chorus Plant",
@@ -25140,7 +26605,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/chorus_plant.png"
       },
       {
        "name": "Shears",
@@ -25152,7 +26618,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/shears.png"
       },
       {
        "name": "Enchanted Book",
@@ -25167,7 +26634,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Unbreaking 3"
        ],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/enchanted_book.png"
       }
      ]
     },
@@ -25198,7 +26666,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/lush_caves/lush_caves_leggings",
        "is_exclusive": true,
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/leather_leggings.png"
       },
       {
        "name": "Lush Arrow",
@@ -25210,7 +26679,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.64
+       "pct": 13.64,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Legendary Charm",
@@ -25227,7 +26697,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Juicy Experience Drink",
@@ -25243,7 +26714,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/juicy_experience_drink",
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/honey_bottle.png"
       },
       {
        "name": "Arrow of Lusting Hunger",
@@ -25255,7 +26727,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Potion of The Lush Caves",
@@ -25267,7 +26740,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.55
+       "pct": 4.55,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Shrink Potion",
@@ -25282,7 +26756,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.55
+       "pct": 4.55,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Glow Ink Sac",
@@ -25294,7 +26769,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.64
+       "pct": 13.64,
+       "icon": "assets/icons/mc/glow_ink_sac.png"
       },
       {
        "name": "Lime Shulker Box",
@@ -25306,7 +26782,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/lime_shulker_box.png"
       },
       {
        "name": "Golden Apple",
@@ -25318,7 +26795,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Honey Block",
@@ -25330,7 +26808,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/honey_block.png"
       },
       {
        "name": "Enchanted Book",
@@ -25342,11 +26821,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/enchanted_book.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/moss_block.png"
   },
   {
    "id": "mountain",
@@ -25372,7 +26853,8 @@ const MINE_TREASURE_DATA = {
      "lore": [],
      "enchants": [],
      "attrs": [],
-     "ref_id": "mt:chests/mountain/mineshaft"
+     "ref_id": "mt:chests/mountain/mineshaft",
+     "icon": "assets/icons/mc/chest.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25392,7 +26874,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25412,7 +26895,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25432,7 +26916,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25452,7 +26937,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25472,7 +26958,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25492,7 +26979,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25512,7 +27000,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25532,7 +27021,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25552,7 +27042,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25572,7 +27063,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25592,7 +27084,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25612,7 +27105,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25632,7 +27126,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25652,7 +27147,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25672,7 +27168,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25692,7 +27189,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25712,7 +27210,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25732,7 +27231,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25752,7 +27252,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25772,7 +27273,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25792,7 +27294,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25812,7 +27315,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25832,7 +27336,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25852,7 +27357,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25872,7 +27378,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25892,7 +27399,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25912,7 +27420,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25932,7 +27441,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25952,7 +27462,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25972,7 +27483,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -25992,7 +27504,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -26012,7 +27525,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -26032,7 +27546,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -26052,7 +27567,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -26072,7 +27588,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -26092,7 +27609,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -26112,7 +27630,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -26132,7 +27651,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -26152,7 +27672,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Mountain Leggings",
@@ -26172,7 +27693,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/mountain/mountain_leggings"
+     "ref_id": "mt:chests/mountain/mountain_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     }
    ],
    "tiers": {
@@ -26190,7 +27712,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Common Charm",
@@ -26207,7 +27730,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Raw Copper",
@@ -26219,7 +27743,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/raw_copper.png"
       },
       {
        "name": "Raw Gold",
@@ -26231,7 +27756,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/raw_gold.png"
       },
       {
        "name": "Raw Iron",
@@ -26243,7 +27769,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/raw_iron.png"
       },
       {
        "name": "Coal Block",
@@ -26255,7 +27782,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/coal_block.png"
       },
       {
        "name": "Coal",
@@ -26267,7 +27795,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/coal.png"
       },
       {
        "name": "Budding Amethyst",
@@ -26279,7 +27808,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/budding_amethyst.png"
       },
       {
        "name": "Amethyst Shard",
@@ -26291,7 +27821,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/amethyst_shard.png"
       },
       {
        "name": "Experience Bottle",
@@ -26303,7 +27834,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Iron Axe",
@@ -26317,7 +27849,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 16)"
        ],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/iron_axe.png"
       },
       {
        "name": "Iron Pickaxe",
@@ -26331,7 +27864,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 16)"
        ],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/iron_pickaxe.png"
       },
       {
        "name": "Bundle",
@@ -26343,7 +27877,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/bundle.png"
       },
       {
        "name": "Iron Helmet",
@@ -26357,7 +27892,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 16)"
        ],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/iron_helmet.png"
       },
       {
        "name": "Iron Leggings",
@@ -26371,7 +27907,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 16)"
        ],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/iron_leggings.png"
       }
      ]
     },
@@ -26389,7 +27926,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Goat Potion",
@@ -26405,7 +27943,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/goat_potion_short",
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Rare Charm",
@@ -26422,7 +27961,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Iron Ingot",
@@ -26434,7 +27974,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/iron_ingot.png"
       },
       {
        "name": "Obsidian",
@@ -26446,7 +27987,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/obsidian.png"
       },
       {
        "name": "Powered Rail",
@@ -26458,7 +28000,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/powered_rail.png"
       },
       {
        "name": "Experience Bottle",
@@ -26470,7 +28013,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Gold Ingot",
@@ -26482,7 +28026,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/gold_ingot.png"
       },
       {
        "name": "Glow Berries",
@@ -26494,7 +28039,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/glow_berries.png"
       },
       {
        "name": "Tnt Minecart",
@@ -26506,7 +28052,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/tnt_minecart.png"
       },
       {
        "name": "Gunpowder",
@@ -26518,7 +28065,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/gunpowder.png"
       }
      ]
     },
@@ -26538,7 +28086,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/iron_golem_spawn_egg.png"
       },
       {
        "name": "Goat Potion",
@@ -26554,7 +28103,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/goat_potion_long",
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Epic Charm",
@@ -26571,7 +28121,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Golden Apple",
@@ -26583,7 +28134,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Gold Block",
@@ -26595,7 +28147,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Iron Block",
@@ -26607,7 +28160,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/iron_block.png"
       },
       {
        "name": "Copper Block",
@@ -26619,7 +28173,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/copper_block.png"
       },
       {
        "name": "Lapis Block",
@@ -26631,7 +28186,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/lapis_block.png"
       },
       {
        "name": "Bundle",
@@ -26643,7 +28199,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/bundle.png"
       },
       {
        "name": "Diamond",
@@ -26655,7 +28212,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/diamond.png"
       }
      ]
     },
@@ -26683,7 +28241,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/mountain/mountain_leggings",
        "is_exclusive": true,
-       "pct": 5.0
+       "pct": 5.0,
+       "icon": "assets/icons/mc/leather_leggings.png"
       },
       {
        "name": "Iron Golem Spawn Egg",
@@ -26697,7 +28256,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0
+       "pct": 15.0,
+       "icon": "assets/icons/mc/iron_golem_spawn_egg.png"
       },
       {
        "name": "Legendary Charm",
@@ -26714,7 +28274,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Horn of the Mountain",
@@ -26732,7 +28293,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.0
+       "pct": 5.0,
+       "icon": "assets/icons/mc/goat_horn.png"
       },
       {
        "name": "Golden Apple",
@@ -26744,7 +28306,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 100.0
+       "pct": 100.0,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Obsidian",
@@ -26756,7 +28319,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0
+       "pct": 15.0,
+       "icon": "assets/icons/mc/obsidian.png"
       },
       {
        "name": "Emerald Block",
@@ -26768,7 +28332,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0
+       "pct": 15.0,
+       "icon": "assets/icons/mc/emerald_block.png"
       },
       {
        "name": "Gold Block",
@@ -26780,7 +28345,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0
+       "pct": 15.0,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Anvil",
@@ -26792,7 +28358,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/anvil.png"
       },
       {
        "name": "Brown Shulker Box",
@@ -26804,7 +28371,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/brown_shulker_box.png"
       },
       {
        "name": "Enchanted Book",
@@ -26816,11 +28384,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/enchanted_book.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/emerald_ore.png"
   },
   {
    "id": "mushroom",
@@ -26852,7 +28422,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -26874,7 +28445,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -26896,7 +28468,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -26918,7 +28491,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -26940,7 +28514,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -26962,7 +28537,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -26984,7 +28560,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27006,7 +28583,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27028,7 +28606,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27050,7 +28629,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27072,7 +28652,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27094,7 +28675,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27116,7 +28698,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27138,7 +28721,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27160,7 +28744,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27182,7 +28767,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27204,7 +28790,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27226,7 +28813,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27248,7 +28836,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27270,7 +28859,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27292,7 +28882,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27314,7 +28905,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27336,7 +28928,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27358,7 +28951,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27380,7 +28974,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27402,7 +28997,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Boots",
@@ -27424,7 +29020,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Max Health: 4"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_boots"
+     "ref_id": "mt:chests/mushroom/mushroom_boots",
+     "icon": "assets/icons/mc/leather_boots.png"
     },
     {
      "name": "Mushroom Shield",
@@ -27452,7 +29049,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 1",
       "Armor Toughness: 1"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_shield"
+     "ref_id": "mt:chests/mushroom/mushroom_shield",
+     "icon": "assets/icons/mc/shield.png"
     },
     {
      "name": "Mushroom Shield",
@@ -27480,7 +29078,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 1.5",
       "Armor Toughness: 1.5"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_shield"
+     "ref_id": "mt:chests/mushroom/mushroom_shield",
+     "icon": "assets/icons/mc/shield.png"
     },
     {
      "name": "Mushroom Shield",
@@ -27508,7 +29107,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2",
       "Armor Toughness: 2"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_shield"
+     "ref_id": "mt:chests/mushroom/mushroom_shield",
+     "icon": "assets/icons/mc/shield.png"
     },
     {
      "name": "Mushroom Shield",
@@ -27536,7 +29136,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 1",
       "Armor Toughness: 1.5"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_shield"
+     "ref_id": "mt:chests/mushroom/mushroom_shield",
+     "icon": "assets/icons/mc/shield.png"
     },
     {
      "name": "Mushroom Shield",
@@ -27564,7 +29165,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 1",
       "Armor Toughness: 2"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_shield"
+     "ref_id": "mt:chests/mushroom/mushroom_shield",
+     "icon": "assets/icons/mc/shield.png"
     },
     {
      "name": "Mushroom Shield",
@@ -27592,7 +29194,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 1.5",
       "Armor Toughness: 1"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_shield"
+     "ref_id": "mt:chests/mushroom/mushroom_shield",
+     "icon": "assets/icons/mc/shield.png"
     },
     {
      "name": "Mushroom Shield",
@@ -27620,7 +29223,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2",
       "Armor Toughness: 1"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_shield"
+     "ref_id": "mt:chests/mushroom/mushroom_shield",
+     "icon": "assets/icons/mc/shield.png"
     },
     {
      "name": "Mushroom Shield",
@@ -27648,7 +29252,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 1",
       "Armor Toughness: 1"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_shield"
+     "ref_id": "mt:chests/mushroom/mushroom_shield",
+     "icon": "assets/icons/mc/shield.png"
     },
     {
      "name": "Mushroom Shield",
@@ -27676,7 +29281,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 1",
       "Armor Toughness: 1"
      ],
-     "ref_id": "mt:chests/mushroom/mushroom_shield"
+     "ref_id": "mt:chests/mushroom/mushroom_shield",
+     "icon": "assets/icons/mc/shield.png"
     },
     {
      "name": "Rare Treasure",
@@ -27688,7 +29294,8 @@ const MINE_TREASURE_DATA = {
      "lore": [],
      "enchants": [],
      "attrs": [],
-     "ref_id": "mt:chests/mushroom/rare_loot"
+     "ref_id": "mt:chests/mushroom/rare_loot",
+     "icon": "assets/icons/mc/chest.png"
     }
    ],
    "tiers": {
@@ -27706,7 +29313,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/suspicious_stew.png"
       },
       {
        "name": "Shroom Milk",
@@ -27721,7 +29329,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/milk_bucket.png"
       },
       {
        "name": "Regeneration Stew",
@@ -27733,7 +29342,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/suspicious_stew.png"
       },
       {
        "name": "Mushroom Cloud",
@@ -27745,7 +29355,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/lingering_potion.png"
       },
       {
        "name": "Common Charm",
@@ -27762,7 +29373,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Red Mushroom",
@@ -27774,7 +29386,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/red_mushroom.png"
       },
       {
        "name": "Brown Mushroom",
@@ -27786,7 +29399,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/brown_mushroom.png"
       },
       {
        "name": "Brown Mushroom Block",
@@ -27798,7 +29412,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/brown_mushroom_block.png"
       },
       {
        "name": "Mycelium",
@@ -27810,7 +29425,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/mycelium.png"
       },
       {
        "name": "Red Mushroom Block",
@@ -27822,7 +29438,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/red_mushroom_block.png"
       },
       {
        "name": "Mushroom Stem",
@@ -27834,7 +29451,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/mushroom_stem.png"
       },
       {
        "name": "Experience Bottle",
@@ -27846,7 +29464,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Bell",
@@ -27858,7 +29477,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/bell.png"
       },
       {
        "name": "Shroomlight",
@@ -27870,7 +29490,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/shroomlight.png"
       }
      ]
     },
@@ -27890,7 +29511,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/mooshroom_spawn_egg.png"
       },
       {
        "name": "Haste Stew",
@@ -27902,7 +29524,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/suspicious_stew.png"
       },
       {
        "name": "Resistance Stew",
@@ -27914,7 +29537,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/suspicious_stew.png"
       },
       {
        "name": "Super Stew",
@@ -27929,7 +29553,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/mushroom_stew.png"
       },
       {
        "name": "Forged Iron Axe",
@@ -27948,7 +29573,8 @@ const MINE_TREASURE_DATA = {
         "Attack Damage: 7–7",
         "Attack Speed: -3.2"
        ],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/iron_axe.png"
       },
       {
        "name": "Rare Charm",
@@ -27965,7 +29591,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Crimson Fungus",
@@ -27977,7 +29604,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/crimson_fungus.png"
       },
       {
        "name": "Warped Fungus",
@@ -27989,7 +29617,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/warped_fungus.png"
       },
       {
        "name": "Bone Block",
@@ -28001,7 +29630,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/bone_block.png"
       },
       {
        "name": "Fermented Spider Eye",
@@ -28013,7 +29643,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/fermented_spider_eye.png"
       },
       {
        "name": "Experience Bottle",
@@ -28025,7 +29656,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/experience_bottle.png"
       }
      ]
     },
@@ -28045,7 +29677,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0
+       "pct": 15.0,
+       "icon": "assets/icons/mc/mooshroom_spawn_egg.png"
       },
       {
        "name": "Strength Stew",
@@ -28057,7 +29690,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/suspicious_stew.png"
       },
       {
        "name": "Enlarge Potion",
@@ -28072,7 +29706,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.0
+       "pct": 5.0,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Epic Charm",
@@ -28089,7 +29724,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Bone Block",
@@ -28101,7 +29737,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0
+       "pct": 15.0,
+       "icon": "assets/icons/mc/bone_block.png"
       },
       {
        "name": "Fermented Spider Eye",
@@ -28113,7 +29750,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0
+       "pct": 15.0,
+       "icon": "assets/icons/mc/fermented_spider_eye.png"
       },
       {
        "name": "Crimson Fungus",
@@ -28125,7 +29763,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0
+       "pct": 15.0,
+       "icon": "assets/icons/mc/crimson_fungus.png"
       },
       {
        "name": "Warped Fungus",
@@ -28137,7 +29776,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0
+       "pct": 15.0,
+       "icon": "assets/icons/mc/warped_fungus.png"
       },
       {
        "name": "Red Bundle",
@@ -28149,7 +29789,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/red_bundle.png"
       }
      ]
     },
@@ -28179,7 +29820,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/mushroom/mushroom_boots",
        "is_exclusive": true,
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/leather_boots.png"
       },
       {
        "name": "Mushroom Shield",
@@ -28209,7 +29851,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/mushroom/mushroom_shield",
        "is_exclusive": true,
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/shield.png"
       },
       {
        "name": "Legendary Charm",
@@ -28226,7 +29869,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Enlarge Potion",
@@ -28241,7 +29885,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Health Boost Stew",
@@ -28253,7 +29898,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/suspicious_stew.png"
       },
       {
        "name": "Redstone Block",
@@ -28265,7 +29911,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/redstone_block.png"
       },
       {
        "name": "Iron Block",
@@ -28277,7 +29924,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/iron_block.png"
       },
       {
        "name": "Fermented Spider Eye",
@@ -28289,7 +29937,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/fermented_spider_eye.png"
       },
       {
        "name": "Red Mushroom Block",
@@ -28301,7 +29950,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.04
+       "pct": 13.04,
+       "icon": "assets/icons/mc/red_mushroom_block.png"
       },
       {
        "name": "Light Gray Shulker Box",
@@ -28313,7 +29963,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/light_gray_shulker_box.png"
       },
       {
        "name": "Golden Apple",
@@ -28325,7 +29976,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Enchanted Book",
@@ -28337,7 +29989,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.7
+       "pct": 8.7,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Warped Fungus On A Stick",
@@ -28349,11 +30002,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.35
+       "pct": 4.35,
+       "icon": "assets/icons/mc/warped_fungus_on_a_stick.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/red_mushroom.png"
   },
   {
    "id": "nether",
@@ -28381,7 +30036,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28402,7 +30058,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28423,7 +30080,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28444,7 +30102,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28465,7 +30124,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28486,7 +30146,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28507,7 +30168,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28528,7 +30190,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28549,7 +30212,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28570,7 +30234,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28591,7 +30256,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28612,7 +30278,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28633,7 +30300,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28654,7 +30322,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28675,7 +30344,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28696,7 +30366,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28717,7 +30388,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28738,7 +30410,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28759,7 +30432,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28780,7 +30454,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28801,7 +30476,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28822,7 +30498,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28843,7 +30520,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28864,7 +30542,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28885,7 +30564,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28906,7 +30586,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28927,7 +30608,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28948,7 +30630,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28969,7 +30652,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -28990,7 +30674,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29011,7 +30696,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29032,7 +30718,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29053,7 +30740,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29074,7 +30762,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29095,7 +30784,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29116,7 +30806,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29137,7 +30828,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29158,7 +30850,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29179,7 +30872,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29200,7 +30894,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29221,7 +30916,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29242,7 +30938,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Nether Leggings",
@@ -29263,7 +30960,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/nether/nether_leggings"
+     "ref_id": "mt:chests/nether/nether_leggings",
+     "icon": "assets/icons/mc/leather_leggings.png"
     }
    ],
    "tiers": {
@@ -29286,7 +30984,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 1.0
+       "pct": 1.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Quartz",
@@ -29298,7 +30997,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/quartz.png"
       },
       {
        "name": "Gold Nugget",
@@ -29310,7 +31010,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/gold_nugget.png"
       },
       {
        "name": "Fire Charge",
@@ -29322,7 +31023,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/fire_charge.png"
       },
       {
        "name": "Rotten Flesh",
@@ -29334,7 +31036,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/rotten_flesh.png"
       },
       {
        "name": "Bone",
@@ -29346,7 +31049,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/bone.png"
       },
       {
        "name": "Coal",
@@ -29358,7 +31062,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/coal.png"
       },
       {
        "name": "Magma Block",
@@ -29370,7 +31075,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/magma_block.png"
       },
       {
        "name": "Blaze Rod",
@@ -29382,7 +31088,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/blaze_rod.png"
       },
       {
        "name": "Nether Wart",
@@ -29394,7 +31101,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/nether_wart.png"
       },
       {
        "name": "Flint",
@@ -29406,7 +31114,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/flint.png"
       },
       {
        "name": "Cooked Porkchop",
@@ -29418,7 +31127,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/cooked_porkchop.png"
       },
       {
        "name": "Porkchop",
@@ -29430,7 +31140,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/porkchop.png"
       },
       {
        "name": "Experience Bottle",
@@ -29442,7 +31153,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Ghast Tear",
@@ -29454,7 +31166,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.0
+       "pct": 5.0,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Piglin Banner Pattern",
@@ -29466,7 +31179,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/piglin_banner_pattern.png"
       },
       {
        "name": "Magma Cream",
@@ -29478,7 +31192,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/magma_cream.png"
       }
      ]
     },
@@ -29498,7 +31213,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 2.94
+       "pct": 2.94,
+       "icon": "assets/icons/mc/respawn_anchor.png"
       },
       {
        "name": "Rare Charm",
@@ -29515,7 +31231,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 1.0
+       "pct": 1.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Fire Charge",
@@ -29527,7 +31244,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.82
+       "pct": 8.82,
+       "icon": "assets/icons/mc/fire_charge.png"
       },
       {
        "name": "Cooked Porkchop",
@@ -29539,7 +31257,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.82
+       "pct": 8.82,
+       "icon": "assets/icons/mc/cooked_porkchop.png"
       },
       {
        "name": "Bone Block",
@@ -29551,7 +31270,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.82
+       "pct": 8.82,
+       "icon": "assets/icons/mc/bone_block.png"
       },
       {
        "name": "Iron Ingot",
@@ -29563,7 +31283,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.82
+       "pct": 8.82,
+       "icon": "assets/icons/mc/iron_ingot.png"
       },
       {
        "name": "Soul Sand",
@@ -29575,7 +31296,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.82
+       "pct": 8.82,
+       "icon": "assets/icons/mc/soul_sand.png"
       },
       {
        "name": "Magma Cream",
@@ -29587,7 +31309,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.82
+       "pct": 8.82,
+       "icon": "assets/icons/mc/magma_cream.png"
       },
       {
        "name": "Blaze Powder",
@@ -29599,7 +31322,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/blaze_powder.png"
       },
       {
        "name": "Nether Wart",
@@ -29611,7 +31335,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/nether_wart.png"
       },
       {
        "name": "Ghast Tear",
@@ -29623,7 +31348,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Gold Ingot",
@@ -29635,7 +31361,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/gold_ingot.png"
       },
       {
        "name": "Soul Lantern",
@@ -29647,7 +31374,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/soul_lantern.png"
       },
       {
        "name": "Experience Bottle",
@@ -29659,7 +31387,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -29671,7 +31400,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.0
+       "pct": 5.0,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "Enchanted Book",
@@ -29687,7 +31417,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Fire Protection 4"
        ],
        "attrs": [],
-       "pct": 2.94
+       "pct": 2.94,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Fire Charge",
@@ -29699,7 +31430,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.94
+       "pct": 2.94,
+       "icon": "assets/icons/mc/fire_charge.png"
       },
       {
        "name": "Lava Bucket",
@@ -29711,7 +31443,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.94
+       "pct": 2.94,
+       "icon": "assets/icons/mc/lava_bucket.png"
       }
      ]
     },
@@ -29731,7 +31464,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/blaze_spawn_egg.png"
       },
       {
        "name": "Full Respawn Anchor",
@@ -29745,7 +31479,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 3.23
+       "pct": 3.23,
+       "icon": "assets/icons/mc/respawn_anchor.png"
       },
       {
        "name": "Piglin Jealousy",
@@ -29765,7 +31500,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/piglin_jealousy",
-       "pct": 3.23
+       "pct": 3.23,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Wither Sword",
@@ -29789,7 +31525,8 @@ const MINE_TREASURE_DATA = {
         "Attack Speed: -2.5–-2.5",
         "Attack Damage: 6.5–6.5"
        ],
-       "pct": 3.23
+       "pct": 3.23,
+       "icon": "assets/icons/mc/stone_sword.png"
       },
       {
        "name": "Nether Potion",
@@ -29802,7 +31539,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/nether_potion",
-       "pct": 3.23
+       "pct": 3.23,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Epic Charm",
@@ -29819,7 +31557,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 1.75
+       "pct": 1.75,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Blaze Powder",
@@ -29831,7 +31570,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/blaze_powder.png"
       },
       {
        "name": "Nether Wart",
@@ -29843,7 +31583,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/nether_wart.png"
       },
       {
        "name": "Ghast Tear",
@@ -29855,7 +31596,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Glowstone",
@@ -29867,7 +31609,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/glowstone.png"
       },
       {
        "name": "Bone Block",
@@ -29879,7 +31622,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/bone_block.png"
       },
       {
        "name": "Magma Cream",
@@ -29891,7 +31635,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/magma_cream.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -29903,7 +31648,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.45
+       "pct": 6.45,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "Experience Bottle",
@@ -29915,7 +31661,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.45
+       "pct": 6.45,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Ancient Debris",
@@ -29927,7 +31674,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.23
+       "pct": 3.23,
+       "icon": "assets/icons/mc/ancient_debris.png"
       },
       {
        "name": "Netherite Scrap",
@@ -29939,7 +31687,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.23
+       "pct": 3.23,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     },
@@ -29968,7 +31717,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/nether/nether_leggings",
        "is_exclusive": true,
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/leather_leggings.png"
       },
       {
        "name": "Blaze Spawn Egg",
@@ -29982,7 +31732,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/blaze_spawn_egg.png"
       },
       {
        "name": "Piglin Jealousy",
@@ -30002,7 +31753,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/piglin_jealousy",
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Infinity Strength",
@@ -30019,7 +31771,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Full Respawn Anchor",
@@ -30033,7 +31786,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/respawn_anchor.png"
       },
       {
        "name": "Demon Potion",
@@ -30045,7 +31799,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Legendary Charm",
@@ -30062,7 +31817,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 2.5
+       "pct": 2.5,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Blaze Powder",
@@ -30074,7 +31830,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/blaze_powder.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -30086,7 +31843,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "Ghast Tear",
@@ -30098,7 +31856,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Ender Pearl",
@@ -30110,7 +31869,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Experience Bottle",
@@ -30122,7 +31882,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Enchanted Book",
@@ -30134,7 +31895,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Netherite Scrap",
@@ -30146,11 +31908,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/netherrack.png"
   },
   {
    "id": "ocean",
@@ -30190,7 +31954,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30215,7 +31980,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30240,7 +32006,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30265,7 +32032,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30290,7 +32058,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30315,7 +32084,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30340,7 +32110,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30365,7 +32136,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30390,7 +32162,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30415,7 +32188,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30440,7 +32214,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30465,7 +32240,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30490,7 +32266,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30515,7 +32292,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30540,7 +32318,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30565,7 +32344,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30590,7 +32370,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30615,7 +32396,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30640,7 +32422,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30665,7 +32448,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30690,7 +32474,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30715,7 +32500,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30740,7 +32526,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30765,7 +32552,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30790,7 +32578,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30815,7 +32604,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30840,7 +32630,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30865,7 +32656,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Ocean Chestplate",
@@ -30890,7 +32682,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/ocean/ocean_chestplate"
+     "ref_id": "mt:chests/ocean/ocean_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Oceanic Spear",
@@ -30916,7 +32709,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Attack Speed: -3.2"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Oceanic Spear",
@@ -30942,7 +32736,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 8",
       "Attack Speed: -3"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Oceanic Spear",
@@ -30968,7 +32763,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 9",
       "Attack Speed: -2.8"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Oceanic Spear",
@@ -30994,7 +32790,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 10",
       "Attack Speed: -2.6"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Oceanic Spear",
@@ -31020,7 +32817,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 11",
       "Attack Speed: -2.4"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Oceanic Spear",
@@ -31046,7 +32844,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Attack Speed: -3"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Oceanic Spear",
@@ -31072,7 +32871,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 8",
       "Attack Speed: -3.2"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Oceanic Spear",
@@ -31098,7 +32898,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 9",
       "Attack Speed: -3.2"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Oceanic Spear",
@@ -31124,7 +32925,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 10",
       "Attack Speed: -3.2"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Oceanic Spear",
@@ -31150,7 +32952,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 11",
       "Attack Speed: -3.2"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Oceanic Spear",
@@ -31176,7 +32979,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Attack Speed: -2.8"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Oceanic Spear",
@@ -31202,7 +33006,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Attack Speed: -2.6"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Oceanic Spear",
@@ -31228,7 +33033,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Attack Speed: -2.4"
      ],
-     "ref_id": "mt:chests/ocean/oceanic_spear"
+     "ref_id": "mt:chests/ocean/oceanic_spear",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Rare Treasure",
@@ -31240,7 +33046,8 @@ const MINE_TREASURE_DATA = {
      "lore": [],
      "enchants": [],
      "attrs": [],
-     "ref_id": "mt:chests/ocean/rare_loot"
+     "ref_id": "mt:chests/ocean/rare_loot",
+     "icon": "assets/icons/mc/chest.png"
     },
     {
      "name": "Trident",
@@ -31261,7 +33068,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Attack Speed: -3.2"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Trident",
@@ -31282,7 +33090,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 8",
       "Attack Speed: -3"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Trident",
@@ -31303,7 +33112,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 9",
       "Attack Speed: -2.8"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Trident",
@@ -31324,7 +33134,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 10",
       "Attack Speed: -2.6"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Trident",
@@ -31345,7 +33156,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 11",
       "Attack Speed: -2.4"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Trident",
@@ -31366,7 +33178,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Attack Speed: -3"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Trident",
@@ -31387,7 +33200,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 8",
       "Attack Speed: -3.2"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Trident",
@@ -31408,7 +33222,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 9",
       "Attack Speed: -3.2"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Trident",
@@ -31429,7 +33244,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 10",
       "Attack Speed: -3.2"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Trident",
@@ -31450,7 +33266,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 11",
       "Attack Speed: -3.2"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Trident",
@@ -31471,7 +33288,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Attack Speed: -2.8"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Trident",
@@ -31492,7 +33310,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Attack Speed: -2.6"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     },
     {
      "name": "Trident",
@@ -31513,7 +33332,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Attack Speed: -2.4"
      ],
-     "ref_id": "mt:chests/ocean/trident"
+     "ref_id": "mt:chests/ocean/trident",
+     "icon": "assets/icons/mc/trident.png"
     }
    ],
    "tiers": {
@@ -31531,7 +33351,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Potion of Gills",
@@ -31543,7 +33364,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Common Charm",
@@ -31560,7 +33382,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Turtle Scute",
@@ -31572,7 +33395,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/turtle_scute.png"
       },
       {
        "name": "Sea Lantern",
@@ -31584,7 +33408,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/sea_lantern.png"
       },
       {
        "name": "Prismarine Shard",
@@ -31596,7 +33421,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/prismarine_shard.png"
       },
       {
        "name": "Lapis Lazuli",
@@ -31608,7 +33434,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/lapis_lazuli.png"
       },
       {
        "name": "Cooked Cod",
@@ -31620,7 +33447,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/cooked_cod.png"
       },
       {
        "name": "Cod",
@@ -31632,7 +33460,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/cod.png"
       },
       {
        "name": "Cooked Salmon",
@@ -31644,7 +33473,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/cooked_salmon.png"
       },
       {
        "name": "Salmon",
@@ -31656,7 +33486,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/salmon.png"
       },
       {
        "name": "Coal",
@@ -31668,7 +33499,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/coal.png"
       },
       {
        "name": "Experience Bottle",
@@ -31680,7 +33512,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Leather Helmet",
@@ -31694,7 +33527,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/leather_helmet.png"
       },
       {
        "name": "Leather Leggings",
@@ -31708,7 +33542,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/leather_leggings.png"
       },
       {
        "name": "Stone Axe",
@@ -31722,7 +33557,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/stone_axe.png"
       },
       {
        "name": "Stone Pickaxe",
@@ -31736,7 +33572,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/stone_pickaxe.png"
       }
      ]
     },
@@ -31754,7 +33591,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.53
+       "pct": 10.53,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Rare Charm",
@@ -31771,7 +33609,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Turtle Helmet",
@@ -31785,7 +33624,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 40.0
+       "pct": 40.0,
+       "icon": "assets/icons/mc/turtle_helmet.png"
       },
       {
        "name": "Iron Ingot",
@@ -31797,7 +33637,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.53
+       "pct": 10.53,
+       "icon": "assets/icons/mc/iron_ingot.png"
       },
       {
        "name": "Experience Bottle",
@@ -31809,7 +33650,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.53
+       "pct": 10.53,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Cooked Cod",
@@ -31821,7 +33663,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.53
+       "pct": 10.53,
+       "icon": "assets/icons/mc/cooked_cod.png"
       },
       {
        "name": "Cooked Salmon",
@@ -31833,7 +33676,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.53
+       "pct": 10.53,
+       "icon": "assets/icons/mc/cooked_salmon.png"
       },
       {
        "name": "Pufferfish",
@@ -31845,7 +33689,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.53
+       "pct": 10.53,
+       "icon": "assets/icons/mc/pufferfish.png"
       },
       {
        "name": "Tropical Fish",
@@ -31857,7 +33702,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.53
+       "pct": 10.53,
+       "icon": "assets/icons/mc/tropical_fish.png"
       },
       {
        "name": "Heart Of The Sea",
@@ -31869,7 +33715,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/heart_of_the_sea.png"
       },
       {
        "name": "Fishing Rod",
@@ -31883,7 +33730,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/fishing_rod.png"
       },
       {
        "name": "Enchanted Book",
@@ -31899,7 +33747,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Impaling 5"
        ],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Enchanted Book",
@@ -31913,7 +33762,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Riptide 3"
        ],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Enchanted Book",
@@ -31929,7 +33779,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Depth Strider 3"
        ],
        "attrs": [],
-       "pct": 5.26
+       "pct": 5.26,
+       "icon": "assets/icons/mc/enchanted_book.png"
       }
      ]
     },
@@ -31949,7 +33800,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/guardian_spawn_egg.png"
       },
       {
        "name": "Sponge Master",
@@ -31967,7 +33819,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/sponge_master",
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Epic Charm",
@@ -31984,7 +33837,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Potion",
@@ -31996,7 +33850,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 33.0
+       "pct": 33.0,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Sponge",
@@ -32008,7 +33863,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/sponge.png"
       },
       {
        "name": "Tnt",
@@ -32020,7 +33876,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/tnt.png"
       },
       {
        "name": "Cooked Salmon",
@@ -32032,7 +33889,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/cooked_salmon.png"
       },
       {
        "name": "Cooked Cod",
@@ -32044,7 +33902,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/cooked_cod.png"
       },
       {
        "name": "Shulker Shell",
@@ -32056,7 +33915,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.11
+       "pct": 11.11,
+       "icon": "assets/icons/mc/shulker_shell.png"
       },
       {
        "name": "Golden Apple",
@@ -32068,7 +33928,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Nautilus Shell",
@@ -32080,7 +33941,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.41
+       "pct": 7.41,
+       "icon": "assets/icons/mc/nautilus_shell.png"
       },
       {
        "name": "Trident",
@@ -32092,7 +33954,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/trident.png"
       },
       {
        "name": "Trident",
@@ -32104,7 +33967,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/trident.png"
       },
       {
        "name": "Fishing Rod",
@@ -32116,7 +33980,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.7
+       "pct": 3.7,
+       "icon": "assets/icons/mc/fishing_rod.png"
       }
      ]
     },
@@ -32149,7 +34014,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/ocean/ocean_chestplate",
        "is_exclusive": true,
-       "pct": 3.33
+       "pct": 3.33,
+       "icon": "assets/icons/mc/leather_chestplate.png"
       },
       {
        "name": "Oceanic Spear",
@@ -32177,7 +34043,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/ocean/oceanic_spear",
        "is_exclusive": true,
-       "pct": 3.33
+       "pct": 3.33,
+       "icon": "assets/icons/mc/trident.png"
       },
       {
        "name": "Trident",
@@ -32200,7 +34067,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/ocean/trident",
        "is_exclusive": true,
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/trident.png"
       },
       {
        "name": "Legendary Charm",
@@ -32217,7 +34085,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Guardian Spawn Egg",
@@ -32231,7 +34100,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/guardian_spawn_egg.png"
       },
       {
        "name": "Sponge Master",
@@ -32249,7 +34119,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/sponge_master",
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Saturation Stew",
@@ -32261,7 +34132,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/suspicious_stew.png"
       },
       {
        "name": "Lightweight Shield",
@@ -32277,7 +34149,8 @@ const MINE_TREASURE_DATA = {
         "Armor: -1",
         "Armor Toughness: -1"
        ],
-       "pct": 3.33
+       "pct": 3.33,
+       "icon": "assets/icons/mc/shield.png"
       },
       {
        "name": "Heart Of The Sea",
@@ -32289,7 +34162,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 25.0
+       "pct": 25.0,
+       "icon": "assets/icons/mc/heart_of_the_sea.png"
       },
       {
        "name": "Sponge",
@@ -32301,7 +34175,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 25.0
+       "pct": 25.0,
+       "icon": "assets/icons/mc/sponge.png"
       },
       {
        "name": "Cooked Salmon",
@@ -32313,7 +34188,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/cooked_salmon.png"
       },
       {
        "name": "Prismarine",
@@ -32325,7 +34201,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/prismarine.png"
       },
       {
        "name": "Dark Prismarine",
@@ -32337,7 +34214,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/dark_prismarine.png"
       },
       {
        "name": "Splash Potion",
@@ -32349,7 +34227,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Blue Shulker Box",
@@ -32361,7 +34240,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/blue_shulker_box.png"
       },
       {
        "name": "Golden Apple",
@@ -32373,7 +34253,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Enchanted Book",
@@ -32385,7 +34266,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Fishing Rod",
@@ -32397,11 +34279,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.33
+       "pct": 3.33,
+       "icon": "assets/icons/mc/fishing_rod.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/prismarine_shard.png"
   },
   {
    "id": "savanna",
@@ -32430,7 +34314,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32449,7 +34334,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32468,7 +34354,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32487,7 +34374,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32506,7 +34394,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32525,7 +34414,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32544,7 +34434,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32563,7 +34454,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32582,7 +34474,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32601,7 +34494,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32620,7 +34514,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32639,7 +34534,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32658,7 +34554,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32677,7 +34574,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32696,7 +34594,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32715,7 +34614,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32734,7 +34634,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32753,7 +34654,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32772,7 +34674,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32791,7 +34694,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32810,7 +34714,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32829,7 +34734,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32848,7 +34754,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32867,7 +34774,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32886,7 +34794,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32905,7 +34814,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32924,7 +34834,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32943,7 +34854,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32962,7 +34874,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -32981,7 +34894,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -33000,7 +34914,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -33019,7 +34934,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -33038,7 +34954,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -33057,7 +34974,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -33076,7 +34994,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -33095,7 +35014,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Savanna Helmet",
@@ -33114,7 +35034,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/savanna/savanna_helmet"
+     "ref_id": "mt:chests/savanna/savanna_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     }
    ],
    "tiers": {
@@ -33137,7 +35058,8 @@ const MINE_TREASURE_DATA = {
         "Movement Speed: 0.25–0.25",
         "Armor: 2–2"
        ],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/leather_horse_armor.png"
       },
       {
        "name": "Common Charm",
@@ -33154,7 +35076,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Tall Grass",
@@ -33166,7 +35089,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/tall_grass.png"
       },
       {
        "name": "Acacia Log",
@@ -33178,7 +35102,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/acacia_log.png"
       },
       {
        "name": "Wheat",
@@ -33190,7 +35115,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/wheat.png"
       },
       {
        "name": "Bone Block",
@@ -33202,7 +35128,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/bone_block.png"
       },
       {
        "name": "Acacia Leaves",
@@ -33214,7 +35141,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/acacia_leaves.png"
       },
       {
        "name": "Crossbow",
@@ -33226,7 +35154,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/crossbow.png"
       },
       {
        "name": "Apple",
@@ -33238,7 +35167,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/apple.png"
       },
       {
        "name": "Experience Bottle",
@@ -33250,7 +35180,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Stone Pickaxe",
@@ -33264,7 +35195,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 12)"
        ],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/stone_pickaxe.png"
       },
       {
        "name": "Armadillo Scute",
@@ -33276,7 +35208,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/armadillo_scute.png"
       },
       {
        "name": "Stone",
@@ -33288,7 +35221,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/stone.png"
       }
      ]
     },
@@ -33308,7 +35242,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/rabbit_spawn_egg.png"
       },
       {
        "name": "Rare Charm",
@@ -33325,7 +35260,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Iron Pickaxe",
@@ -33339,7 +35275,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 20)"
        ],
        "attrs": [],
-       "pct": 75.0
+       "pct": 75.0,
+       "icon": "assets/icons/mc/iron_pickaxe.png"
       },
       {
        "name": "Iron Block",
@@ -33351,7 +35288,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 30.0
+       "pct": 30.0,
+       "icon": "assets/icons/mc/iron_block.png"
       },
       {
        "name": "Gold Block",
@@ -33363,7 +35301,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 20.0
+       "pct": 20.0,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Carrot",
@@ -33375,7 +35314,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/carrot.png"
       },
       {
        "name": "Apple",
@@ -33387,7 +35327,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/apple.png"
       },
       {
        "name": "Acacia Sapling",
@@ -33399,7 +35340,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/acacia_sapling.png"
       },
       {
        "name": "Armadillo Scute",
@@ -33411,7 +35353,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/armadillo_scute.png"
       },
       {
        "name": "Golden Carrot",
@@ -33423,7 +35366,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/golden_carrot.png"
       },
       {
        "name": "Golden Apple",
@@ -33435,7 +35379,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Dirt Path",
@@ -33447,7 +35392,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/dirt_path.png"
       },
       {
        "name": "Gold Ingot",
@@ -33459,7 +35405,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/gold_ingot.png"
       },
       {
        "name": "Hay Block",
@@ -33471,7 +35418,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/hay_block.png"
       },
       {
        "name": "Experience Bottle",
@@ -33483,7 +35431,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Enchanted Book",
@@ -33498,7 +35447,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Quick Charge 3"
        ],
        "attrs": [],
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Enchanted Book",
@@ -33513,7 +35463,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Quick Charge 3"
        ],
        "attrs": [],
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Splash Potion",
@@ -33525,7 +35476,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/splash_potion.png"
       }
      ]
     },
@@ -33550,7 +35502,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 13.33
+       "pct": 13.33,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Epic Charm",
@@ -33567,7 +35520,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Iron Block",
@@ -33579,7 +35533,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 75.0
+       "pct": 75.0,
+       "icon": "assets/icons/mc/iron_block.png"
       },
       {
        "name": "Gold Block",
@@ -33591,7 +35546,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Golden Carrot",
@@ -33603,7 +35559,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 20.0
+       "pct": 20.0,
+       "icon": "assets/icons/mc/golden_carrot.png"
       },
       {
        "name": "Golden Apple",
@@ -33615,7 +35572,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 20.0
+       "pct": 20.0,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Lead",
@@ -33627,7 +35585,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 20.0
+       "pct": 20.0,
+       "icon": "assets/icons/mc/lead.png"
       },
       {
        "name": "Hay Block",
@@ -33639,7 +35598,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 20.0
+       "pct": 20.0,
+       "icon": "assets/icons/mc/hay_block.png"
       },
       {
        "name": "Carrot On A Stick",
@@ -33651,7 +35611,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/carrot_on_a_stick.png"
       }
      ]
     },
@@ -33678,7 +35639,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/savanna/savanna_helmet",
        "is_exclusive": true,
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/leather_helmet.png"
       },
       {
        "name": "Legendary Charm",
@@ -33695,7 +35657,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Ally Boost",
@@ -33714,7 +35677,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Horse Drugs",
@@ -33726,7 +35690,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Drylands Piercer",
@@ -33744,7 +35709,8 @@ const MINE_TREASURE_DATA = {
         "Drylands Piercer 1"
        ],
        "attrs": [],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/crossbow.png"
       },
       {
        "name": "Legendary Horse Armor",
@@ -33762,7 +35728,8 @@ const MINE_TREASURE_DATA = {
         "Movement Speed: 0.5–1",
         "Armor: 2.25–4.5"
        ],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/golden_horse_armor.png"
       },
       {
        "name": "Pink Shulker Box",
@@ -33774,7 +35741,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/pink_shulker_box.png"
       },
       {
        "name": "Golden Carrot",
@@ -33786,7 +35754,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/golden_carrot.png"
       },
       {
        "name": "Lead",
@@ -33798,7 +35767,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/lead.png"
       },
       {
        "name": "Hay Block",
@@ -33810,7 +35780,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/hay_block.png"
       },
       {
        "name": "Golden Apple",
@@ -33822,7 +35793,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Enchanted Book",
@@ -33834,7 +35806,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Carrot On A Stick",
@@ -33846,11 +35819,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/carrot_on_a_stick.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/acacia_sapling.png"
   },
   {
    "id": "soul_valley",
@@ -33880,7 +35855,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -33901,7 +35877,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -33922,7 +35899,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -33943,7 +35921,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -33964,7 +35943,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -33985,7 +35965,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34006,7 +35987,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34027,7 +36009,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34048,7 +36031,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34069,7 +36053,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34090,7 +36075,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34111,7 +36097,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34132,7 +36119,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34153,7 +36141,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34174,7 +36163,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34195,7 +36185,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34216,7 +36207,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34237,7 +36229,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34258,7 +36251,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34279,7 +36273,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34300,7 +36295,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34321,7 +36317,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34342,7 +36339,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34363,7 +36361,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34384,7 +36383,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34405,7 +36405,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34426,7 +36427,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34447,7 +36449,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34468,7 +36471,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34489,7 +36493,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34510,7 +36515,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34531,7 +36537,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34552,7 +36559,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34573,7 +36581,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34594,7 +36603,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34615,7 +36625,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Soul Valley Helmet",
@@ -34636,7 +36647,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_helmet"
+     "ref_id": "mt:chests/soul_valley/soul_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34662,7 +36674,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 11",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34688,7 +36701,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 11",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34714,7 +36728,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 11",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34740,7 +36755,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 11",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34766,7 +36782,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34792,7 +36809,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34818,7 +36836,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34844,7 +36863,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 7",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34870,7 +36890,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 8",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34896,7 +36917,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 8",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34922,7 +36944,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 8",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34948,7 +36971,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 8",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -34974,7 +36998,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 9",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -35000,7 +37025,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 9",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -35026,7 +37052,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 9",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -35052,7 +37079,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 9",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -35078,7 +37106,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 10",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -35104,7 +37133,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 10",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -35130,7 +37160,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 10",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -35156,7 +37187,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 10",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -35182,7 +37214,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 11",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -35208,7 +37241,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 11",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -35234,7 +37268,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 11",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     },
     {
      "name": "Scythe of Souls",
@@ -35260,7 +37295,8 @@ const MINE_TREASURE_DATA = {
       "Attack Damage: 11",
       "Entity Interaction Range: 0.5"
      ],
-     "ref_id": "mt:chests/soul_valley/soul_scythe"
+     "ref_id": "mt:chests/soul_valley/soul_scythe",
+     "icon": "assets/icons/mc/netherite_hoe.png"
     }
    ],
    "tiers": {
@@ -35280,7 +37316,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/skeleton_spawn_egg.png"
       },
       {
        "name": "Common Charm",
@@ -35297,7 +37334,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 1.0
+       "pct": 1.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Bone",
@@ -35309,7 +37347,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/bone.png"
       },
       {
        "name": "Gold Nugget",
@@ -35321,7 +37360,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/gold_nugget.png"
       },
       {
        "name": "Fire Charge",
@@ -35333,7 +37373,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/fire_charge.png"
       },
       {
        "name": "Arrow",
@@ -35345,7 +37386,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/arrow.png"
       },
       {
        "name": "Soul Torch",
@@ -35357,7 +37399,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/soul_torch.png"
       },
       {
        "name": "Soul Soil",
@@ -35369,7 +37412,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.68
+       "pct": 9.68,
+       "icon": "assets/icons/mc/soul_soil.png"
       },
       {
        "name": "Skeleton Skull",
@@ -35381,7 +37425,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/skeleton_skull.png"
       },
       {
        "name": "Bone Block",
@@ -35393,7 +37438,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.45
+       "pct": 6.45,
+       "icon": "assets/icons/mc/bone_block.png"
       },
       {
        "name": "Porkchop",
@@ -35405,7 +37451,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.45
+       "pct": 6.45,
+       "icon": "assets/icons/mc/porkchop.png"
       },
       {
        "name": "Experience Bottle",
@@ -35417,7 +37464,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.45
+       "pct": 6.45,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -35429,7 +37477,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.45
+       "pct": 6.45,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "Ghast Tear",
@@ -35441,7 +37490,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.0
+       "pct": 5.0,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Skull Banner Pattern",
@@ -35453,7 +37503,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.23
+       "pct": 3.23,
+       "icon": "assets/icons/mc/skull_banner_pattern.png"
       },
       {
        "name": "Soul Campfire",
@@ -35465,7 +37516,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.23
+       "pct": 3.23,
+       "icon": "assets/icons/mc/soul_campfire.png"
       }
      ]
     },
@@ -35485,7 +37537,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/skeleton_spawn_egg.png"
       },
       {
        "name": "Reach Potion",
@@ -35500,7 +37553,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 2.44
+       "pct": 2.44,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Spawner",
@@ -35512,7 +37566,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.44
+       "pct": 2.44,
+       "icon": "assets/icons/mc/spawner.png"
       },
       {
        "name": "Rare Charm",
@@ -35529,7 +37584,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 1.0
+       "pct": 1.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Bone Block",
@@ -35541,7 +37597,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/bone_block.png"
       },
       {
        "name": "Nether Wart",
@@ -35553,7 +37610,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/nether_wart.png"
       },
       {
        "name": "Ghast Tear",
@@ -35565,7 +37623,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Fire Charge",
@@ -35577,7 +37636,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/fire_charge.png"
       },
       {
        "name": "Cooked Porkchop",
@@ -35589,7 +37649,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/cooked_porkchop.png"
       },
       {
        "name": "Arrow",
@@ -35601,7 +37662,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/arrow.png"
       },
       {
        "name": "Gunpowder",
@@ -35613,7 +37675,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/gunpowder.png"
       },
       {
        "name": "Soul Sand",
@@ -35625,7 +37688,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/soul_sand.png"
       },
       {
        "name": "Soul Soil",
@@ -35637,7 +37701,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/soul_soil.png"
       },
       {
        "name": "Soul Campfire",
@@ -35649,7 +37714,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/soul_campfire.png"
       },
       {
        "name": "Soul Lantern",
@@ -35661,7 +37727,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.32
+       "pct": 7.32,
+       "icon": "assets/icons/mc/soul_lantern.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -35673,7 +37740,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.0
+       "pct": 5.0,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "Experience Bottle",
@@ -35685,7 +37753,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.88
+       "pct": 4.88,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Skeleton Skull",
@@ -35697,7 +37766,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.44
+       "pct": 2.44,
+       "icon": "assets/icons/mc/skeleton_skull.png"
       }
      ]
     },
@@ -35718,7 +37788,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/armor_stand.png"
       },
       {
        "name": "Reach Potion",
@@ -35733,7 +37804,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Wither Skeleton Spawn Egg",
@@ -35747,7 +37819,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/wither_skeleton_spawn_egg.png"
       },
       {
        "name": "Soul Potion",
@@ -35759,7 +37832,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Epic Charm",
@@ -35776,7 +37850,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 1.75
+       "pct": 1.75,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Nether Wart Block",
@@ -35788,7 +37863,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/nether_wart_block.png"
       },
       {
        "name": "Nether Wart",
@@ -35800,7 +37876,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/nether_wart.png"
       },
       {
        "name": "Ghast Tear",
@@ -35812,7 +37889,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Crying Obsidian",
@@ -35824,7 +37902,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/crying_obsidian.png"
       },
       {
        "name": "Magma Cream",
@@ -35836,7 +37915,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/magma_cream.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -35848,7 +37928,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "End Crystal",
@@ -35860,7 +37941,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/end_crystal.png"
       },
       {
        "name": "Experience Bottle",
@@ -35872,7 +37954,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Ancient Debris",
@@ -35884,7 +37967,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/ancient_debris.png"
       },
       {
        "name": "Netherite Scrap",
@@ -35896,7 +37980,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     },
@@ -35930,7 +38015,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/soul_valley/soul_scythe",
        "is_exclusive": true,
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/netherite_hoe.png"
       },
       {
        "name": "Soul Valley Helmet",
@@ -35953,7 +38039,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/soul_valley/soul_helmet",
        "is_exclusive": true,
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/leather_helmet.png"
       },
       {
        "name": "Reach Potion",
@@ -35968,7 +38055,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Wither Skeleton Spawn Egg",
@@ -35982,7 +38070,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/wither_skeleton_spawn_egg.png"
       },
       {
        "name": "Spawner",
@@ -35994,7 +38083,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/spawner.png"
       },
       {
        "name": "Pure Soul Potion",
@@ -36006,7 +38096,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Legendary Charm",
@@ -36023,7 +38114,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 2.5
+       "pct": 2.5,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Ghast Tear",
@@ -36035,7 +38127,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Crying Obsidian",
@@ -36047,7 +38140,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/crying_obsidian.png"
       },
       {
        "name": "Obsidian",
@@ -36059,7 +38153,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/obsidian.png"
       },
       {
        "name": "Ender Pearl",
@@ -36071,7 +38166,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -36083,7 +38179,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "End Crystal",
@@ -36095,7 +38192,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/end_crystal.png"
       },
       {
        "name": "Experience Bottle",
@@ -36107,7 +38205,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Enchanted Book",
@@ -36119,11 +38218,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/enchanted_book.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/soul_sand.png"
   },
   {
    "id": "swamp",
@@ -36158,7 +38259,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36182,7 +38284,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36206,7 +38309,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36230,7 +38334,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36254,7 +38359,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36278,7 +38384,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36302,7 +38409,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36326,7 +38434,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36350,7 +38459,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36374,7 +38484,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36398,7 +38509,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36422,7 +38534,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36446,7 +38559,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36470,7 +38584,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36494,7 +38609,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36518,7 +38634,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36542,7 +38659,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36566,7 +38684,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36590,7 +38709,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36614,7 +38734,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36638,7 +38759,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36662,7 +38784,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36686,7 +38809,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36710,7 +38834,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36734,7 +38859,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36758,7 +38884,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36782,7 +38909,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36806,7 +38934,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36830,7 +38959,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36854,7 +38984,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36878,7 +39009,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Swamp Chestplate",
@@ -36902,7 +39034,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/swamp/swamp_chestplate"
+     "ref_id": "mt:chests/swamp/swamp_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Toxic Machette",
@@ -36924,7 +39057,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 6"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -36946,7 +39080,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 6"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -36968,7 +39103,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 6"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -36990,7 +39126,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 6"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37012,7 +39149,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37034,7 +39172,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37056,7 +39195,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37078,7 +39218,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37100,7 +39241,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37122,7 +39264,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37144,7 +39287,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37166,7 +39310,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37188,7 +39333,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37210,7 +39356,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37232,7 +39379,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37254,7 +39402,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37276,7 +39425,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37298,7 +39448,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37320,7 +39471,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37342,7 +39494,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37364,7 +39517,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37386,7 +39540,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37408,7 +39563,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     },
     {
      "name": "Toxic Machette",
@@ -37430,7 +39586,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/swamp/toxic_machette"
+     "ref_id": "mt:chests/swamp/toxic_machette",
+     "icon": "assets/icons/mc/wooden_sword.png"
     }
    ],
    "tiers": {
@@ -37453,7 +39610,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Seagrass",
@@ -37465,7 +39623,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/seagrass.png"
       },
       {
        "name": "Slime Ball",
@@ -37477,7 +39636,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/slime_ball.png"
       },
       {
        "name": "Experience Bottle",
@@ -37489,7 +39649,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Slime Block",
@@ -37501,7 +39662,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/slime_block.png"
       },
       {
        "name": "Lily Pad",
@@ -37513,7 +39675,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/lily_pad.png"
       },
       {
        "name": "Ochre Froglight",
@@ -37525,7 +39688,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/ochre_froglight.png"
       },
       {
        "name": "Verdant Froglight",
@@ -37537,7 +39701,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/verdant_froglight.png"
       },
       {
        "name": "Pearlescent Froglight",
@@ -37549,7 +39714,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/pearlescent_froglight.png"
       },
       {
        "name": "Glow Lichen",
@@ -37561,7 +39727,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/glow_lichen.png"
       },
       {
        "name": "Poisonous Potato",
@@ -37573,7 +39740,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/poisonous_potato.png"
       },
       {
        "name": "Slime Block",
@@ -37585,7 +39753,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/slime_block.png"
       },
       {
        "name": "Book",
@@ -37599,7 +39768,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 15)"
        ],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/book.png"
       },
       {
        "name": "Clay",
@@ -37611,7 +39781,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/clay.png"
       }
      ]
     },
@@ -37631,7 +39802,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/slime_spawn_egg.png"
       },
       {
        "name": "Stinky Splash Potion",
@@ -37643,7 +39815,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Rare Charm",
@@ -37660,7 +39833,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Cauldron",
@@ -37672,7 +39846,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/cauldron.png"
       },
       {
        "name": "Emerald",
@@ -37684,7 +39859,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/emerald.png"
       },
       {
        "name": "Slime Block",
@@ -37696,7 +39872,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.0
+       "pct": 12.0,
+       "icon": "assets/icons/mc/slime_block.png"
       },
       {
        "name": "Dried Kelp",
@@ -37708,7 +39885,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/dried_kelp.png"
       },
       {
        "name": "Kelp",
@@ -37720,7 +39898,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/kelp.png"
       },
       {
        "name": "Moss Block",
@@ -37732,7 +39911,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/moss_block.png"
       },
       {
        "name": "String",
@@ -37744,7 +39924,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/string.png"
       },
       {
        "name": "Spider Eye",
@@ -37756,7 +39937,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/spider_eye.png"
       },
       {
        "name": "Experience Bottle",
@@ -37768,7 +39950,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Dried Kelp Block",
@@ -37780,7 +39963,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/dried_kelp_block.png"
       },
       {
        "name": "Book",
@@ -37794,7 +39978,8 @@ const MINE_TREASURE_DATA = {
         "Random Enchant (Lv 30)"
        ],
        "attrs": [],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/book.png"
       },
       {
        "name": "Leather Boots",
@@ -37809,7 +39994,8 @@ const MINE_TREASURE_DATA = {
         "Armor Toughness: 1–1",
         "Armor: 1–1"
        ],
-       "pct": 4.0
+       "pct": 4.0,
+       "icon": "assets/icons/mc/leather_boots.png"
       }
      ]
     },
@@ -37827,7 +40013,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Ultra Instant Heal",
@@ -37839,7 +40026,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Ultra Splash Damage",
@@ -37851,7 +40039,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Ultra Poison",
@@ -37863,7 +40052,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Epic Charm",
@@ -37880,7 +40070,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Gunpowder",
@@ -37892,7 +40083,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 20.0
+       "pct": 20.0,
+       "icon": "assets/icons/mc/gunpowder.png"
       },
       {
        "name": "Glowstone",
@@ -37904,7 +40096,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.33
+       "pct": 13.33,
+       "icon": "assets/icons/mc/glowstone.png"
       },
       {
        "name": "Blaze Rod",
@@ -37916,7 +40109,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.33
+       "pct": 13.33,
+       "icon": "assets/icons/mc/blaze_rod.png"
       },
       {
        "name": "Redstone Block",
@@ -37928,7 +40122,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.33
+       "pct": 13.33,
+       "icon": "assets/icons/mc/redstone_block.png"
       },
       {
        "name": "Nether Wart",
@@ -37940,7 +40135,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 13.33
+       "pct": 13.33,
+       "icon": "assets/icons/mc/nether_wart.png"
       }
      ]
     },
@@ -37972,7 +40168,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/swamp/swamp_chestplate",
        "is_exclusive": true,
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/leather_chestplate.png"
       },
       {
        "name": "Toxic Machette",
@@ -37996,7 +40193,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/swamp/toxic_machette",
        "is_exclusive": true,
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/wooden_sword.png"
       },
       {
        "name": "Legendary Charm",
@@ -38013,7 +40211,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Spinach",
@@ -38029,7 +40228,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/green_dye.png"
       },
       {
        "name": "UltimateSplash",
@@ -38041,7 +40241,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "UltimatePotion",
@@ -38053,7 +40254,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Turtle Helmet",
@@ -38065,7 +40267,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/turtle_helmet.png"
       },
       {
        "name": "Glistering Melon Slice",
@@ -38077,7 +40280,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/glistering_melon_slice.png"
       },
       {
        "name": "Golden Carrot",
@@ -38089,7 +40293,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/golden_carrot.png"
       },
       {
        "name": "Bone Block",
@@ -38101,7 +40306,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/bone_block.png"
       },
       {
        "name": "Mangrove Log",
@@ -38113,7 +40319,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/mangrove_log.png"
       },
       {
        "name": "Ender Chest",
@@ -38125,7 +40332,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/ender_chest.png"
       },
       {
        "name": "Skeleton Skull",
@@ -38137,7 +40345,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/skeleton_skull.png"
       },
       {
        "name": "Phantom Membrane",
@@ -38149,7 +40358,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/phantom_membrane.png"
       },
       {
        "name": "Golden Apple",
@@ -38161,7 +40371,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Green Shulker Box",
@@ -38173,7 +40384,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/green_shulker_box.png"
       },
       {
        "name": "Enchanted Book",
@@ -38185,11 +40397,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/enchanted_book.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/mangrove_propagule.png"
   },
   {
    "id": "taiga",
@@ -38220,7 +40434,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38241,7 +40456,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38262,7 +40478,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38283,7 +40500,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38304,7 +40522,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38325,7 +40544,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38346,7 +40566,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38367,7 +40588,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38388,7 +40610,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38409,7 +40632,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 5.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38430,7 +40654,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38451,7 +40676,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38472,7 +40698,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38493,7 +40720,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38514,7 +40742,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 2.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38535,7 +40764,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38556,7 +40786,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38577,7 +40808,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38598,7 +40830,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38619,7 +40852,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38640,7 +40874,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38661,7 +40896,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38682,7 +40918,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38703,7 +40940,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38724,7 +40962,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38745,7 +40984,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38766,7 +41006,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38787,7 +41028,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38808,7 +41050,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 6.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38829,7 +41072,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38850,7 +41094,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38871,7 +41116,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38892,7 +41138,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38913,7 +41160,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38934,7 +41182,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38955,7 +41204,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38976,7 +41226,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -38997,7 +41248,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -39018,7 +41270,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -39039,7 +41292,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -39060,7 +41314,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     },
     {
      "name": "Taiga Pants",
@@ -39081,7 +41336,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/taiga/taiga_pants"
+     "ref_id": "mt:chests/taiga/taiga_pants",
+     "icon": "assets/icons/mc/leather_leggings.png"
     }
    ],
    "tiers": {
@@ -39104,7 +41360,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Potion",
@@ -39116,7 +41373,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 16.0
+       "pct": 16.0,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Mossy Cobblestone",
@@ -39128,7 +41386,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/mossy_cobblestone.png"
       },
       {
        "name": "Spruce Log",
@@ -39140,7 +41399,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/spruce_log.png"
       },
       {
        "name": "Podzol",
@@ -39152,7 +41412,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/podzol.png"
       },
       {
        "name": "Spruce Leaves",
@@ -39164,7 +41425,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/spruce_leaves.png"
       },
       {
        "name": "Sweet Berries",
@@ -39176,7 +41438,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/sweet_berries.png"
       },
       {
        "name": "Fern",
@@ -39188,7 +41451,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/fern.png"
       },
       {
        "name": "Experience Bottle",
@@ -39200,7 +41464,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.33
+       "pct": 8.33,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Skull Banner Pattern",
@@ -39212,7 +41477,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/skull_banner_pattern.png"
       },
       {
        "name": "Water Bucket",
@@ -39224,7 +41490,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/water_bucket.png"
       },
       {
        "name": "Blast Furnace",
@@ -39236,7 +41503,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/blast_furnace.png"
       },
       {
        "name": "Stone Shovel",
@@ -39248,7 +41516,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/stone_shovel.png"
       },
       {
        "name": "Iron Axe",
@@ -39260,7 +41529,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.17
+       "pct": 4.17,
+       "icon": "assets/icons/mc/iron_axe.png"
       }
      ]
     },
@@ -39286,7 +41556,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/mysterichant",
-       "pct": 3.33
+       "pct": 3.33,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Rare Charm",
@@ -39303,7 +41574,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Cooked Rabbit",
@@ -39315,7 +41587,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/cooked_rabbit.png"
       },
       {
        "name": "Iron Ingot",
@@ -39327,7 +41600,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/iron_ingot.png"
       },
       {
        "name": "Redstone",
@@ -39339,7 +41613,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/redstone.png"
       },
       {
        "name": "String",
@@ -39351,7 +41626,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/string.png"
       },
       {
        "name": "Bone",
@@ -39363,7 +41639,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/bone.png"
       },
       {
        "name": "Leather",
@@ -39375,7 +41652,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/leather.png"
       },
       {
        "name": "Pumpkin Seeds",
@@ -39387,7 +41665,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/pumpkin_seeds.png"
       },
       {
        "name": "Rabbit Foot",
@@ -39399,7 +41678,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/rabbit_foot.png"
       },
       {
        "name": "Feather",
@@ -39411,7 +41691,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/feather.png"
       },
       {
        "name": "Gunpowder",
@@ -39423,7 +41704,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/gunpowder.png"
       },
       {
        "name": "Experience Bottle",
@@ -39435,7 +41717,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Flint And Steel",
@@ -39447,7 +41730,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.33
+       "pct": 3.33,
+       "icon": "assets/icons/mc/flint_and_steel.png"
       },
       {
        "name": "Compass",
@@ -39459,7 +41743,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.33
+       "pct": 3.33,
+       "icon": "assets/icons/mc/compass.png"
       },
       {
        "name": "Iron Pickaxe",
@@ -39471,7 +41756,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.33
+       "pct": 3.33,
+       "icon": "assets/icons/mc/iron_pickaxe.png"
       },
       {
        "name": "Iron Axe",
@@ -39483,7 +41769,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.33
+       "pct": 3.33,
+       "icon": "assets/icons/mc/iron_axe.png"
       }
      ]
     },
@@ -39509,7 +41796,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/mysterichant",
-       "pct": 6.25
+       "pct": 6.25,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Epic Charm",
@@ -39526,7 +41814,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Emerald",
@@ -39538,7 +41827,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 18.75
+       "pct": 18.75,
+       "icon": "assets/icons/mc/emerald.png"
       },
       {
        "name": "Wither Rose",
@@ -39550,7 +41840,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 18.75
+       "pct": 18.75,
+       "icon": "assets/icons/mc/wither_rose.png"
       },
       {
        "name": "Gold Block",
@@ -39562,7 +41853,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Golden Apple",
@@ -39574,7 +41866,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Experience Bottle",
@@ -39586,7 +41879,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Ender Pearl",
@@ -39598,7 +41892,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 12.5
+       "pct": 12.5,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Diamond",
@@ -39610,7 +41905,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.25
+       "pct": 6.25,
+       "icon": "assets/icons/mc/diamond.png"
       }
      ]
     },
@@ -39639,7 +41935,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/taiga/taiga_pants",
        "is_exclusive": true,
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/leather_leggings.png"
       },
       {
        "name": "Legendary Charm",
@@ -39656,7 +41953,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Mysterichant",
@@ -39676,7 +41974,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/mysterichant",
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Witch Egg",
@@ -39690,7 +41989,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/witch_spawn_egg.png"
       },
       {
        "name": "Laser Scope",
@@ -39707,7 +42007,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/spyglass.png"
       },
       {
        "name": "Magenta Shulker Box",
@@ -39719,7 +42020,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 50.0
+       "pct": 50.0,
+       "icon": "assets/icons/mc/magenta_shulker_box.png"
       },
       {
        "name": "Gold Block",
@@ -39731,7 +42033,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 17.65
+       "pct": 17.65,
+       "icon": "assets/icons/mc/gold_block.png"
       },
       {
        "name": "Bookshelf",
@@ -39743,7 +42046,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 17.65
+       "pct": 17.65,
+       "icon": "assets/icons/mc/bookshelf.png"
       },
       {
        "name": "Ender Chest",
@@ -39755,7 +42059,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/ender_chest.png"
       },
       {
        "name": "Enchanting Table",
@@ -39767,7 +42072,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/enchanting_table.png"
       },
       {
        "name": "Enchanted Book",
@@ -39779,7 +42085,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.76
+       "pct": 11.76,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Netherite Scrap",
@@ -39791,11 +42098,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.88
+       "pct": 5.88,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/spruce_sapling.png"
   },
   {
    "id": "warped",
@@ -39824,7 +42133,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -39846,7 +42156,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -39868,7 +42179,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -39890,7 +42202,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -39912,7 +42225,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -39934,7 +42248,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -39956,7 +42271,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -39978,7 +42294,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40000,7 +42317,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40022,7 +42340,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40044,7 +42363,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40066,7 +42386,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 2.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40088,7 +42409,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40110,7 +42432,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40132,7 +42455,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40154,7 +42478,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40176,7 +42501,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40198,7 +42524,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40220,7 +42547,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40242,7 +42570,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40264,7 +42593,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40286,7 +42616,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40308,7 +42639,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40330,7 +42662,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40352,7 +42685,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40374,7 +42708,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40396,7 +42731,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40418,7 +42754,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40440,7 +42777,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40462,7 +42800,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 3.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40484,7 +42823,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40506,7 +42846,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 4.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40528,7 +42869,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40550,7 +42892,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 3.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40572,7 +42915,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40594,7 +42938,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 4.5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     },
     {
      "name": "Warped Forest Helmet",
@@ -40616,7 +42961,8 @@ const MINE_TREASURE_DATA = {
       "Armor: 2.5",
       "Armor Toughness: 5"
      ],
-     "ref_id": "mt:chests/warped/warped_helmet"
+     "ref_id": "mt:chests/warped/warped_helmet",
+     "icon": "assets/icons/mc/leather_helmet.png"
     }
    ],
    "tiers": {
@@ -40639,7 +42985,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 1.0
+       "pct": 1.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Ghast Tear",
@@ -40651,7 +42998,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 25.0
+       "pct": 25.0,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Warped Roots",
@@ -40663,7 +43011,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/warped_roots.png"
       },
       {
        "name": "Rotten Flesh",
@@ -40675,7 +43024,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/rotten_flesh.png"
       },
       {
        "name": "Bone",
@@ -40687,7 +43037,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/bone.png"
       },
       {
        "name": "Twisting Vines",
@@ -40699,7 +43050,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/twisting_vines.png"
       },
       {
        "name": "Shroomlight",
@@ -40711,7 +43063,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/shroomlight.png"
       },
       {
        "name": "Ender Pearl",
@@ -40723,7 +43076,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.71
+       "pct": 10.71,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Piglin Head",
@@ -40735,7 +43089,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.0
+       "pct": 8.0,
+       "icon": "assets/icons/mc/piglin_head.png"
       },
       {
        "name": "Warped Stem",
@@ -40747,7 +43102,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/warped_stem.png"
       },
       {
        "name": "Pitcher Plant",
@@ -40759,7 +43115,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/pitcher_plant.png"
       },
       {
        "name": "Warped Stem",
@@ -40771,7 +43128,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/warped_stem.png"
       },
       {
        "name": "Experience Bottle",
@@ -40783,7 +43141,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.14
+       "pct": 7.14,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Enchanted Book",
@@ -40797,7 +43156,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Fortune 1"
        ],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Ender Pearl",
@@ -40809,7 +43169,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.57
+       "pct": 3.57,
+       "icon": "assets/icons/mc/ender_pearl.png"
       }
      ]
     },
@@ -40827,7 +43188,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Full Respawn Anchor",
@@ -40839,7 +43201,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/respawn_anchor.png"
       },
       {
        "name": "Rare Charm",
@@ -40856,7 +43219,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 1.0
+       "pct": 1.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Cooked Porkchop",
@@ -40868,7 +43232,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/cooked_porkchop.png"
       },
       {
        "name": "Iron Chain",
@@ -40880,7 +43245,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.09
+       "pct": 9.09,
+       "icon": "assets/icons/mc/iron_chain.png"
       },
       {
        "name": "Warped Roots",
@@ -40892,7 +43258,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/warped_roots.png"
       },
       {
        "name": "Warped Fungus",
@@ -40904,7 +43271,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/warped_fungus.png"
       },
       {
        "name": "Ghast Tear",
@@ -40916,7 +43284,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Warped Hyphae",
@@ -40928,7 +43297,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/warped_hyphae.png"
       },
       {
        "name": "Ender Pearl",
@@ -40940,7 +43310,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Iron Ingot",
@@ -40952,7 +43323,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/iron_ingot.png"
       },
       {
        "name": "Lapis Lazuli",
@@ -40964,7 +43336,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/lapis_lazuli.png"
       },
       {
        "name": "Lapis Block",
@@ -40976,7 +43349,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/lapis_block.png"
       },
       {
        "name": "Lantern",
@@ -40988,7 +43362,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/lantern.png"
       },
       {
        "name": "Experience Bottle",
@@ -41000,7 +43375,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.06
+       "pct": 6.06,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Ender Eye",
@@ -41012,7 +43388,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/ender_eye.png"
       },
       {
        "name": "Enchanted Book",
@@ -41026,7 +43403,8 @@ const MINE_TREASURE_DATA = {
         "Stored: Fortune 3"
        ],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Fire Charge",
@@ -41038,7 +43416,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/fire_charge.png"
       },
       {
        "name": "Chorus Fruit",
@@ -41050,7 +43429,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/chorus_fruit.png"
       },
       {
        "name": "Lava Bucket",
@@ -41062,7 +43442,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.03
+       "pct": 3.03,
+       "icon": "assets/icons/mc/lava_bucket.png"
       }
      ]
     },
@@ -41085,7 +43466,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Full Respawn Anchor",
@@ -41097,7 +43479,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/respawn_anchor.png"
       },
       {
        "name": "Reverse",
@@ -41115,7 +43498,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/reverse",
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Warped Bow",
@@ -41134,7 +43518,8 @@ const MINE_TREASURE_DATA = {
         "Warped Bow 1"
        ],
        "attrs": [],
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/bow.png"
       },
       {
        "name": "Warped Potion",
@@ -41146,7 +43531,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Epic Charm",
@@ -41163,7 +43549,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 1.75
+       "pct": 1.75,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Ender Pearl",
@@ -41175,7 +43562,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Ghast Tear",
@@ -41187,7 +43575,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/ghast_tear.png"
       },
       {
        "name": "Lapis Lazuli",
@@ -41199,7 +43588,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/lapis_lazuli.png"
       },
       {
        "name": "Bone Block",
@@ -41211,7 +43601,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/bone_block.png"
       },
       {
        "name": "Lapis Block",
@@ -41223,7 +43614,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.34
+       "pct": 10.34,
+       "icon": "assets/icons/mc/lapis_block.png"
       },
       {
        "name": "Lapis Lazuli",
@@ -41235,7 +43627,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/lapis_lazuli.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -41247,7 +43640,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "Experience Bottle",
@@ -41259,7 +43653,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.9
+       "pct": 6.9,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Diamond",
@@ -41271,7 +43666,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/diamond.png"
       },
       {
        "name": "Netherite Scrap",
@@ -41283,7 +43679,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.45
+       "pct": 3.45,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     },
@@ -41313,7 +43710,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/warped/warped_helmet",
        "is_exclusive": true,
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/leather_helmet.png"
       },
       {
        "name": "Black Armor",
@@ -41330,7 +43728,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Full Respawn Anchor",
@@ -41342,7 +43741,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/respawn_anchor.png"
       },
       {
        "name": "Warped Potion",
@@ -41354,7 +43754,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Reverse",
@@ -41372,7 +43773,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/reverse",
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Enchanted Chorus Fruit",
@@ -41385,7 +43787,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:custom_items/enchanted_chorus_fruit",
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/chorus_fruit.png"
       },
       {
        "name": "Legendary Charm",
@@ -41402,7 +43805,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 2.5
+       "pct": 2.5,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Lapis Block",
@@ -41414,7 +43818,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/lapis_block.png"
       },
       {
        "name": "Wither Skeleton Skull",
@@ -41426,7 +43831,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/wither_skeleton_skull.png"
       },
       {
        "name": "Warped Hyphae",
@@ -41438,7 +43844,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 11.54
+       "pct": 11.54,
+       "icon": "assets/icons/mc/warped_hyphae.png"
       },
       {
        "name": "Ender Pearl",
@@ -41450,7 +43857,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Experience Bottle",
@@ -41462,7 +43870,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Enchanted Book",
@@ -41474,7 +43883,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 7.69
+       "pct": 7.69,
+       "icon": "assets/icons/mc/enchanted_book.png"
       },
       {
        "name": "Diamond",
@@ -41486,7 +43896,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/diamond.png"
       },
       {
        "name": "Netherite Scrap",
@@ -41498,11 +43909,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.85
+       "pct": 3.85,
+       "icon": "assets/icons/mc/netherite_scrap.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/warped_fungus.png"
   },
   {
    "id": "wind",
@@ -41537,7 +43950,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41562,7 +43976,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41587,7 +44002,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41612,7 +44028,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 7"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41637,7 +44054,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41662,7 +44080,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41687,7 +44106,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41712,7 +44132,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 8"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41737,7 +44158,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41762,7 +44184,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41787,7 +44210,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41812,7 +44236,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 9"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41837,7 +44262,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41862,7 +44288,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41887,7 +44314,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41912,7 +44340,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 10"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41937,7 +44366,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41962,7 +44392,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -41987,7 +44418,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -42012,7 +44444,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 11"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -42037,7 +44470,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -2.1",
       "Attack Damage: 12"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -42062,7 +44496,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.75",
       "Attack Damage: 12"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -42087,7 +44522,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -1.1",
       "Attack Damage: 12"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Hurricane Sword",
@@ -42112,7 +44548,8 @@ const MINE_TREASURE_DATA = {
       "Attack Speed: -0.75",
       "Attack Damage: 12"
      ],
-     "ref_id": "mt:chests/wind/hurricane_sword"
+     "ref_id": "mt:chests/wind/hurricane_sword",
+     "icon": "assets/icons/mc/iron_sword.png"
     },
     {
      "name": "Knockchant",
@@ -42131,7 +44568,8 @@ const MINE_TREASURE_DATA = {
      ],
      "enchants": [],
      "attrs": [],
-     "ref_id": "mt:chests/wind/knockchant"
+     "ref_id": "mt:chests/wind/knockchant",
+     "icon": "assets/icons/mc/ender_eye.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42155,7 +44593,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42179,7 +44618,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42203,7 +44643,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42227,7 +44668,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42251,7 +44693,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42275,7 +44718,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42299,7 +44743,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42323,7 +44768,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42347,7 +44793,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42371,7 +44818,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42395,7 +44843,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 5.5",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42419,7 +44868,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42443,7 +44893,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42467,7 +44918,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42491,7 +44943,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42515,7 +44968,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42539,7 +44993,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42563,7 +45018,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42587,7 +45043,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42611,7 +45068,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42635,7 +45093,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 7.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42659,7 +45118,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42683,7 +45143,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42707,7 +45168,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42731,7 +45193,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42755,7 +45218,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 8.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42779,7 +45243,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42803,7 +45268,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42827,7 +45293,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42851,7 +45318,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42875,7 +45343,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 3.5",
       "Armor: 10"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     },
     {
      "name": "Wind Chestplate",
@@ -42899,7 +45368,8 @@ const MINE_TREASURE_DATA = {
       "Armor Toughness: 4.5",
       "Armor: 9.5"
      ],
-     "ref_id": "mt:chests/wind/wind_chestplate"
+     "ref_id": "mt:chests/wind/wind_chestplate",
+     "icon": "assets/icons/mc/leather_chestplate.png"
     }
    ],
    "tiers": {
@@ -42917,7 +45387,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Common Charm",
@@ -42934,7 +45405,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/common",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/gray_dye.png"
       },
       {
        "name": "Feather",
@@ -42946,7 +45418,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/feather.png"
       },
       {
        "name": "Stick",
@@ -42958,7 +45431,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/stick.png"
       },
       {
        "name": "Experience Bottle",
@@ -42970,7 +45444,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Iron Nugget",
@@ -42982,7 +45457,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/iron_nugget.png"
       },
       {
        "name": "Paper",
@@ -42994,7 +45470,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/paper.png"
       },
       {
        "name": "Arrow",
@@ -43006,7 +45483,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/arrow.png"
       },
       {
        "name": "Egg",
@@ -43018,7 +45496,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/egg.png"
       },
       {
        "name": "Gravel",
@@ -43030,7 +45509,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/gravel.png"
       },
       {
        "name": "Name Tag",
@@ -43042,7 +45522,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/name_tag.png"
       },
       {
        "name": "Golden Pickaxe",
@@ -43054,7 +45535,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 6.67
+       "pct": 6.67,
+       "icon": "assets/icons/mc/golden_pickaxe.png"
       },
       {
        "name": "Phantom Membrane",
@@ -43066,7 +45548,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.33
+       "pct": 3.33,
+       "icon": "assets/icons/mc/phantom_membrane.png"
       },
       {
        "name": "Lead",
@@ -43078,7 +45561,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 3.33
+       "pct": 3.33,
+       "icon": "assets/icons/mc/lead.png"
       }
      ]
     },
@@ -43098,7 +45582,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 8.57
+       "pct": 8.57,
+       "icon": "assets/icons/mc/phantom_spawn_egg.png"
       },
       {
        "name": "Kinetic Bomb",
@@ -43115,7 +45600,8 @@ const MINE_TREASURE_DATA = {
        ],
        "attrs": [],
        "ref_id": "mt:custom_items/kinetic_bomb",
-       "pct": 2.86
+       "pct": 2.86,
+       "icon": "assets/icons/mc/snowball.png"
       },
       {
        "name": "Knockchant",
@@ -43135,7 +45621,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:runes/knockchant",
-       "pct": 2.86
+       "pct": 2.86,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Updraft Potion",
@@ -43147,7 +45634,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.86
+       "pct": 2.86,
+       "icon": "assets/icons/mc/potion.png"
       },
       {
        "name": "Rare Charm",
@@ -43164,7 +45652,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/rare",
-       "pct": 2.0
+       "pct": 2.0,
+       "icon": "assets/icons/mc/blue_dye.png"
       },
       {
        "name": "Feather",
@@ -43176,7 +45665,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.57
+       "pct": 8.57,
+       "icon": "assets/icons/mc/feather.png"
       },
       {
        "name": "Bone Block",
@@ -43188,7 +45678,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.57
+       "pct": 8.57,
+       "icon": "assets/icons/mc/bone_block.png"
       },
       {
        "name": "Leather",
@@ -43200,7 +45691,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.57
+       "pct": 8.57,
+       "icon": "assets/icons/mc/leather.png"
       },
       {
        "name": "Rabbit Hide",
@@ -43212,7 +45704,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 8.57
+       "pct": 8.57,
+       "icon": "assets/icons/mc/rabbit_hide.png"
       },
       {
        "name": "Firework Star",
@@ -43224,7 +45717,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/firework_star.png"
       },
       {
        "name": "Flint",
@@ -43236,7 +45730,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/flint.png"
       },
       {
        "name": "Rabbit Foot",
@@ -43248,7 +45743,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/rabbit_foot.png"
       },
       {
        "name": "Cooked Chicken",
@@ -43260,7 +45756,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/cooked_chicken.png"
       },
       {
        "name": "Gunpowder",
@@ -43272,7 +45769,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/gunpowder.png"
       },
       {
        "name": "Experience Bottle",
@@ -43284,7 +45782,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/experience_bottle.png"
       },
       {
        "name": "Iron Ingot",
@@ -43296,7 +45795,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 5.71
+       "pct": 5.71,
+       "icon": "assets/icons/mc/iron_ingot.png"
       },
       {
        "name": "Golden Pickaxe",
@@ -43308,7 +45808,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.86
+       "pct": 2.86,
+       "icon": "assets/icons/mc/golden_pickaxe.png"
       },
       {
        "name": "Golden Axe",
@@ -43320,7 +45821,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.86
+       "pct": 2.86,
+       "icon": "assets/icons/mc/golden_axe.png"
       },
       {
        "name": "Golden Shovel",
@@ -43332,7 +45834,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 2.86
+       "pct": 2.86,
+       "icon": "assets/icons/mc/golden_shovel.png"
       }
      ]
     },
@@ -43350,7 +45853,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Kinetic Bomb",
@@ -43367,7 +45871,8 @@ const MINE_TREASURE_DATA = {
        ],
        "attrs": [],
        "ref_id": "mt:custom_items/kinetic_bomb",
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/snowball.png"
       },
       {
        "name": "Lightness Potion",
@@ -43382,7 +45887,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Knockchant",
@@ -43401,7 +45907,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/globe_banner_pattern.png"
       },
       {
        "name": "Chicken Helmet",
@@ -43416,7 +45923,8 @@ const MINE_TREASURE_DATA = {
         "Armor: 3.5",
         "Armor Toughness: 2"
        ],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/player_head.png"
       },
       {
        "name": "Epic Charm",
@@ -43433,7 +45941,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/epic",
-       "pct": 3.5
+       "pct": 3.5,
+       "icon": "assets/icons/mc/red_dye.png"
       },
       {
        "name": "Ender Pearl",
@@ -43445,7 +45954,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/ender_pearl.png"
       },
       {
        "name": "Emerald",
@@ -43457,7 +45967,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/emerald.png"
       },
       {
        "name": "Arrow",
@@ -43469,7 +45980,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 14.29
+       "pct": 14.29,
+       "icon": "assets/icons/mc/arrow.png"
       },
       {
        "name": "Golden Apple",
@@ -43481,7 +45993,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 9.52
+       "pct": 9.52,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Golden Pickaxe",
@@ -43493,7 +46006,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/golden_pickaxe.png"
       },
       {
        "name": "Diamond",
@@ -43505,7 +46019,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/diamond.png"
       },
       {
        "name": "Bow",
@@ -43517,7 +46032,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 4.76
+       "pct": 4.76,
+       "icon": "assets/icons/mc/bow.png"
       }
      ]
     },
@@ -43549,7 +46065,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/wind/wind_chestplate",
        "is_exclusive": true,
-       "pct": 5.0
+       "pct": 5.0,
+       "icon": "assets/icons/mc/leather_chestplate.png"
       },
       {
        "name": "Hurricane Sword",
@@ -43576,7 +46093,8 @@ const MINE_TREASURE_DATA = {
        ],
        "ref_id": "mt:chests/wind/hurricane_sword",
        "is_exclusive": true,
-       "pct": 5.0
+       "pct": 5.0,
+       "icon": "assets/icons/mc/iron_sword.png"
       },
       {
        "name": "Upwind Arrow",
@@ -43588,7 +46106,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0
+       "pct": 15.0,
+       "icon": "assets/icons/mc/tipped_arrow.png"
       },
       {
        "name": "Legendary Charm",
@@ -43605,7 +46124,8 @@ const MINE_TREASURE_DATA = {
        "enchants": [],
        "attrs": [],
        "ref_id": "mt:charms/legendary",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/yellow_dye.png"
       },
       {
        "name": "Kinetic Bomb",
@@ -43622,7 +46142,8 @@ const MINE_TREASURE_DATA = {
        ],
        "attrs": [],
        "ref_id": "mt:custom_items/kinetic_bomb",
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/snowball.png"
       },
       {
        "name": "Lightness Potion",
@@ -43637,7 +46158,8 @@ const MINE_TREASURE_DATA = {
        ],
        "enchants": [],
        "attrs": [],
-       "pct": 5.0
+       "pct": 5.0,
+       "icon": "assets/icons/mc/splash_potion.png"
       },
       {
        "name": "Arrow",
@@ -43649,7 +46171,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0
+       "pct": 15.0,
+       "icon": "assets/icons/mc/arrow.png"
       },
       {
        "name": "Feather",
@@ -43661,7 +46184,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 15.0
+       "pct": 15.0,
+       "icon": "assets/icons/mc/feather.png"
       },
       {
        "name": "White Shulker Box",
@@ -43673,7 +46197,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/white_shulker_box.png"
       },
       {
        "name": "Golden Apple",
@@ -43685,7 +46210,8 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/golden_apple.png"
       },
       {
        "name": "Enchanted Book",
@@ -43697,11 +46223,13 @@ const MINE_TREASURE_DATA = {
        "lore": [],
        "enchants": [],
        "attrs": [],
-       "pct": 10.0
+       "pct": 10.0,
+       "icon": "assets/icons/mc/enchanted_book.png"
       }
      ]
     }
-   }
+   },
+   "icon": "assets/icons/mc/wind_charge.png"
   }
  ],
  "mythical": {
@@ -43718,7 +46246,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_badlands_badlands_helmet.png"
    },
    {
     "name": "Basalt Boots",
@@ -43732,7 +46261,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_basalt_basalt_boots.png"
    },
    {
     "name": "Crimson Chestplate",
@@ -43746,7 +46276,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_crimson_crimson_chestplate.png"
    },
    {
     "name": "Dark Forest Chestplate",
@@ -43760,7 +46291,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_dark_forest_dark_forest_chestplate.png"
    },
    {
     "name": "Deep Dark Legs",
@@ -43774,7 +46306,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_deep_dark_deep_dark_legs.png"
    },
    {
     "name": "Refined Boots",
@@ -43788,7 +46321,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_default_refined_boots.png"
    },
    {
     "name": "Refined Chestplate",
@@ -43802,7 +46336,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 6.9
+    "pct": 6.9,
+    "icon": "assets/icons/mc/chests_default_refined_chestplate.png"
    },
    {
     "name": "Refined Leggings",
@@ -43816,7 +46351,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 6.9
+    "pct": 6.9,
+    "icon": "assets/icons/mc/chests_default_refined_leggings.png"
    },
    {
     "name": "Refined Helmet",
@@ -43830,7 +46366,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 6.9
+    "pct": 6.9,
+    "icon": "assets/icons/mc/chests_default_refined_helmet.png"
    },
    {
     "name": "Desert Chestplate",
@@ -43844,7 +46381,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 6.9
+    "pct": 6.9,
+    "icon": "assets/icons/mc/chests_desert_desert_chestplate.png"
    },
    {
     "name": "Dripstone Helmet",
@@ -43858,7 +46396,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_dripstone_dripstone_helmet.png"
    },
    {
     "name": "End Boots",
@@ -43872,7 +46411,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_end_end_boots.png"
    },
    {
     "name": "Flower Helmet",
@@ -43886,7 +46426,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_flower_flower_helmet.png"
    },
    {
     "name": "Ice Boots",
@@ -43900,7 +46441,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_ice_ice_boots.png"
    },
    {
     "name": "Jungle Shoes",
@@ -43914,7 +46456,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_jungle_jungle_shoes.png"
    },
    {
     "name": "Lush Caves Leggings",
@@ -43928,7 +46471,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_lush_caves_lush_caves_leggings.png"
    },
    {
     "name": "Mountain Leggings",
@@ -43942,7 +46486,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_mountain_mountain_leggings.png"
    },
    {
     "name": "Mushroom Boots",
@@ -43956,7 +46501,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_mushroom_mushroom_boots.png"
    },
    {
     "name": "Nether Leggings",
@@ -43970,7 +46516,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_nether_nether_leggings.png"
    },
    {
     "name": "Ocean Chestplate",
@@ -43984,7 +46531,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_ocean_ocean_chestplate.png"
    },
    {
     "name": "Savanna Helmet",
@@ -43998,7 +46546,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_savanna_savanna_helmet.png"
    },
    {
     "name": "Swamp Chestplate",
@@ -44012,7 +46561,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_swamp_swamp_chestplate.png"
    },
    {
     "name": "Taiga Pants",
@@ -44026,7 +46576,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_taiga_taiga_pants.png"
    },
    {
     "name": "Warped Helmet",
@@ -44040,7 +46591,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_warped_warped_helmet.png"
    },
    {
     "name": "Wind Chestplate",
@@ -44054,7 +46606,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/armor",
-    "pct": 3.45
+    "pct": 3.45,
+    "icon": "assets/icons/mc/chests_wind_wind_chestplate.png"
    }
   ],
   "weapon": [
@@ -44072,7 +46625,8 @@ const MINE_TREASURE_DATA = {
      "Movement Speed: 0.05–0.05"
     ],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/crossbow.png"
    },
    {
     "name": "Barbaric Axe",
@@ -44086,7 +46640,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/chests_dark_forest_barbaric_axe.png"
    },
    {
     "name": "Rift Axe",
@@ -44100,7 +46655,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/chests_deep_dark_rift_axe.png"
    },
    {
     "name": "Netherite Swords",
@@ -44114,7 +46670,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/chests_default_netherite_swords.png"
    },
    {
     "name": "Assassin Sword",
@@ -44128,7 +46685,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/chests_desert_assassin_sword.png"
    },
    {
     "name": "Refined Diamond Axe",
@@ -44151,7 +46709,8 @@ const MINE_TREASURE_DATA = {
      "Attack Damage: 8–8"
     ],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/diamond_axe.png"
    },
    {
     "name": "Ice Sword",
@@ -44165,7 +46724,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 10.0
+    "pct": 10.0,
+    "icon": "assets/icons/mc/chests_ice_ice_sword.png"
    },
    {
     "name": "Rumble Axe",
@@ -44179,7 +46739,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 10.0
+    "pct": 10.0,
+    "icon": "assets/icons/mc/chests_jungle_rumble_axe.png"
    },
    {
     "name": "Brown Shulker Box",
@@ -44192,7 +46753,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 10.0
+    "pct": 10.0,
+    "icon": "assets/icons/mc/brown_shulker_box.png"
    },
    {
     "name": "Mushroom Shield",
@@ -44206,7 +46768,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/chests_mushroom_mushroom_shield.png"
    },
    {
     "name": "Oceanic Spear",
@@ -44220,7 +46783,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/chests_ocean_oceanic_spear.png"
    },
    {
     "name": "Drylands Piercer",
@@ -44239,7 +46803,8 @@ const MINE_TREASURE_DATA = {
     ],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/crossbow.png"
    },
    {
     "name": "Soul Scythe",
@@ -44253,7 +46818,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/chests_soul_valley_soul_scythe.png"
    },
    {
     "name": "Toxic Machette",
@@ -44267,7 +46833,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/chests_swamp_toxic_machette.png"
    },
    {
     "name": "Forged Netherite Shovel",
@@ -44287,7 +46854,8 @@ const MINE_TREASURE_DATA = {
      "Attack Speed: -2.5"
     ],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/netherite_shovel.png"
    },
    {
     "name": "Laser Scope",
@@ -44305,7 +46873,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/spyglass.png"
    },
    {
     "name": "Hurricane Sword",
@@ -44319,7 +46888,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/weapon",
-    "pct": 5.0
+    "pct": 5.0,
+    "icon": "assets/icons/mc/chests_wind_hurricane_sword.png"
    }
   ],
   "utility": [
@@ -44340,7 +46910,8 @@ const MINE_TREASURE_DATA = {
     ],
     "attrs": [],
     "id": "mt:chests/mythical/utility",
-    "pct": 6.25
+    "pct": 6.25,
+    "icon": "assets/icons/mc/netherite_pickaxe.png"
    },
    {
     "name": "Epic",
@@ -44354,7 +46925,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/utility",
-    "pct": 12.5
+    "pct": 12.5,
+    "icon": "assets/icons/mc/charms_epic.png"
    },
    {
     "name": "Rare",
@@ -44368,7 +46940,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/utility",
-    "pct": 12.5
+    "pct": 12.5,
+    "icon": "assets/icons/mc/charms_rare.png"
    },
    {
     "name": "Common",
@@ -44382,7 +46955,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/utility",
-    "pct": 12.5
+    "pct": 12.5,
+    "icon": "assets/icons/mc/charms_common.png"
    },
    {
     "name": "Juicy Experience Drink",
@@ -44396,7 +46970,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/utility",
-    "pct": 12.5
+    "pct": 12.5,
+    "icon": "assets/icons/mc/custom_items_juicy_experience_drink.png"
    },
    {
     "name": "Legendary",
@@ -44410,7 +46985,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/utility",
-    "pct": 12.5
+    "pct": 12.5,
+    "icon": "assets/icons/mc/charms_legendary.png"
    },
    {
     "name": "Progression Increase",
@@ -44427,7 +47003,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/utility",
-    "pct": 6.25
+    "pct": 6.25,
+    "icon": "assets/icons/mc/lime_dye.png"
    },
    {
     "name": "Legendary Spawn",
@@ -44443,7 +47020,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/utility",
-    "pct": 6.25
+    "pct": 6.25,
+    "icon": "assets/icons/mc/golden_pickaxe.png"
    },
    {
     "name": "Epic Spawn",
@@ -44459,7 +47037,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/utility",
-    "pct": 6.25
+    "pct": 6.25,
+    "icon": "assets/icons/mc/diamond_pickaxe.png"
    },
    {
     "name": "Enchanted Book",
@@ -44472,7 +47051,8 @@ const MINE_TREASURE_DATA = {
     "enchants": [],
     "attrs": [],
     "id": "mt:chests/mythical/utility",
-    "pct": 12.5
+    "pct": 12.5,
+    "icon": "assets/icons/mc/enchanted_book.png"
    }
   ]
  },
@@ -44494,7 +47074,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:runes/assassin_instinct",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/globe_banner_pattern.png"
   },
   {
    "name": "Black Armor",
@@ -44512,7 +47093,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:runes/black_armor",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/globe_banner_pattern.png"
   },
   {
    "name": "Dripstone Rain",
@@ -44531,7 +47113,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:runes/dripstone_rain",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/globe_banner_pattern.png"
   },
   {
    "name": "Endruption",
@@ -44551,7 +47134,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:runes/endruption",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/globe_banner_pattern.png"
   },
   {
    "name": "Heal Purification",
@@ -44570,7 +47154,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:runes/heal_purification",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/globe_banner_pattern.png"
   },
   {
    "name": "Ice Platform",
@@ -44589,7 +47174,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:runes/ice_platform",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/globe_banner_pattern.png"
   },
   {
    "name": "Knockchant",
@@ -44609,7 +47195,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:runes/knockchant",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/globe_banner_pattern.png"
   },
   {
    "name": "Mysterichant",
@@ -44629,7 +47216,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:runes/mysterichant",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/globe_banner_pattern.png"
   },
   {
    "name": "Piglin Jealousy",
@@ -44649,7 +47237,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:runes/piglin_jealousy",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/globe_banner_pattern.png"
   },
   {
    "name": "Reverse",
@@ -44667,7 +47256,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:runes/reverse",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/globe_banner_pattern.png"
   },
   {
    "name": "Roaring Jungle",
@@ -44686,7 +47276,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:runes/roaring_jungle",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/globe_banner_pattern.png"
   },
   {
    "name": "Sponge Master",
@@ -44704,7 +47295,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:runes/sponge_master",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/globe_banner_pattern.png"
   }
  ],
  "totems": [
@@ -44724,7 +47316,8 @@ const MINE_TREASURE_DATA = {
     "Attack Damage: 0.05"
    ],
    "id": "mt:totems/assassin",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/totem_of_undying.png"
   },
   {
    "name": "Totem of Shade",
@@ -44742,7 +47335,8 @@ const MINE_TREASURE_DATA = {
     "Attack Speed: 0.05"
    ],
    "id": "mt:totems/shade",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/totem_of_undying.png"
   }
  ],
  "custom_items": [
@@ -44760,7 +47354,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/better_flight_rocket",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/firework_rocket.png"
   },
   {
    "name": "Blood Soup",
@@ -44776,7 +47371,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/blood_soup",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/beetroot_soup.png"
   },
   {
    "name": "Boomproof Hat",
@@ -44793,7 +47389,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/boomproof_hat",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/structure_block.png"
   },
   {
    "name": "Dark Meat",
@@ -44809,7 +47406,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/dark_meat",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/dried_kelp.png"
   },
   {
    "name": "Detonation Mine",
@@ -44826,7 +47424,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/detonation_mine",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/fire_charge.png"
   },
   {
    "name": "Enchanted Chorus Fruit",
@@ -44839,7 +47438,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/enchanted_chorus_fruit",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/chorus_fruit.png"
   },
   {
    "name": "Experient Trousers",
@@ -44856,7 +47456,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/experient_trousers",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/leather_leggings.png"
   },
   {
    "name": "Fiery Flesh",
@@ -44872,7 +47473,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/fiery_flesh",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/rotten_flesh.png"
   },
   {
    "name": "Flight Rocket",
@@ -44888,7 +47490,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/flight_5",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/firework_rocket.png"
   },
   {
    "name": "Floor is Spikes",
@@ -44904,7 +47507,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/floor_is_spikes",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/armor_stand.png"
   },
   {
    "name": "Flower Pie",
@@ -44920,7 +47524,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/flower_pie",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/pumpkin_pie.png"
   },
   {
    "name": "Frozen Apple",
@@ -44936,7 +47541,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/frozen_apple",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/apple.png"
   },
   {
    "name": "Glowy Arrow",
@@ -44949,7 +47555,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/glowy_arrow",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/tipped_arrow.png"
   },
   {
    "name": "Goat Potion",
@@ -44965,7 +47572,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/goat_potion_long",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/splash_potion.png"
   },
   {
    "name": "Goat Potion",
@@ -44981,7 +47589,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/goat_potion_short",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/splash_potion.png"
   },
   {
    "name": "Grenade",
@@ -44999,7 +47608,8 @@ const MINE_TREASURE_DATA = {
    ],
    "attrs": [],
    "id": "mt:custom_items/grenade",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/splash_potion.png"
   },
   {
    "name": "Healing Flower",
@@ -45015,7 +47625,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/healing_flower",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/armor_stand.png"
   },
   {
    "name": "Indestructia",
@@ -45033,7 +47644,8 @@ const MINE_TREASURE_DATA = {
     "Armor Toughness: 3"
    ],
    "id": "mt:custom_items/indestructia",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/elytra.png"
   },
   {
    "name": "Juicy Experience Drink",
@@ -45049,7 +47661,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/juicy_experience_drink",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/honey_bottle.png"
   },
   {
    "name": "Kinetic Bomb",
@@ -45066,7 +47679,8 @@ const MINE_TREASURE_DATA = {
    ],
    "attrs": [],
    "id": "mt:custom_items/kinetic_bomb",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/snowball.png"
   },
   {
    "name": "Leaf Blower",
@@ -45082,7 +47696,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/leaf_blower",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/goat_horn.png"
   },
   {
    "name": "Nether Driller",
@@ -45098,7 +47713,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/nether_driller",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/golden_pickaxe.png"
   },
   {
    "name": "Nether Potion",
@@ -45111,7 +47727,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/nether_potion",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/potion.png"
   },
   {
    "name": "Pointed Boots",
@@ -45132,7 +47749,8 @@ const MINE_TREASURE_DATA = {
    ],
    "attrs": [],
    "id": "mt:custom_items/pointed_boots",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/leather_boots.png"
   },
   {
    "name": "Sense of Urgency",
@@ -45148,7 +47766,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/sense_of_urgency",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/armor_stand.png"
   },
   {
    "name": "Sharpened Sword",
@@ -45170,7 +47789,8 @@ const MINE_TREASURE_DATA = {
    ],
    "attrs": [],
    "id": "mt:custom_items/sharpened_sword",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/iron_sword.png"
   },
   {
    "name": "Stone Driller",
@@ -45186,7 +47806,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:custom_items/stone_driller",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/stone_pickaxe.png"
   },
   {
    "name": "Echoing Scream",
@@ -45205,7 +47826,8 @@ const MINE_TREASURE_DATA = {
    ],
    "attrs": [],
    "id": "mt:custom_items/warden_killer",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/echo_shard.png"
   }
  ],
  "charms": [
@@ -45224,7 +47846,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:charms/common",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/gray_dye.png"
   },
   {
    "name": "Epic Charm",
@@ -45241,7 +47864,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:charms/epic",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/red_dye.png"
   },
   {
    "name": "Legendary Charm",
@@ -45258,7 +47882,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:charms/legendary",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/yellow_dye.png"
   },
   {
    "name": "Rare Charm",
@@ -45275,7 +47900,8 @@ const MINE_TREASURE_DATA = {
    "enchants": [],
    "attrs": [],
    "id": "mt:charms/rare",
-   "pct": 100.0
+   "pct": 100.0,
+   "icon": "assets/icons/mc/blue_dye.png"
   }
  ]
 };
