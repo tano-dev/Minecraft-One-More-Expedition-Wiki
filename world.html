@@ -166,8 +166,8 @@
     .dim-overworld { color: #4ade80; border-color: rgba(74, 222, 128, 0.4); background: rgba(74, 222, 128, 0.12); }
     .dim-nether { color: #f87171; border-color: rgba(248, 113, 113, 0.42); background: rgba(248, 113, 113, 0.14); }
     .dim-end { color: #e879f9; border-color: rgba(232, 121, 249, 0.42); background: rgba(232, 121, 249, 0.14); }
-    .spread-pill { color: #fde68a; border-color: rgba(245, 196, 81, 0.35); background: rgba(245, 196, 81, 0.1); }
-    .badge-3d { color: #38bdf8; border-color: rgba(56, 189, 248, 0.55); background: rgba(56, 189, 248, 0.16); }
+    .where-pill { color: #fde68a; border-color: rgba(245, 196, 81, 0.35); background: rgba(245, 196, 81, 0.1); }
+    .layer-pill { color: #7dd3fc; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.1); }
 
     .viewer-3d-wrap {
       margin-top: 12px;
@@ -559,8 +559,8 @@
           <div class="badge-row">
             <span class="badge dim-${x.dim}">${dimName(x.dim)}</span>
             <span class="badge">${esc(x.pack)}</span>
-            ${x.spread ? `<span class="badge spread-pill">${esc(x.spread)}</span>` : ""}
-            ${x.has3d ? `<span class="badge badge-3d">3D</span>` : ""}
+            ${x.where_en ? `<span class="badge where-pill">${esc(vi ? x.where_vi : x.where_en)}</span>` : ""}
+            ${x.layer_en ? `<span class="badge layer-pill">${esc(vi ? x.layer_vi : x.layer_en)}</span>` : ""}
           </div>
         </div>
       `).join("");
@@ -896,8 +896,8 @@
       document.getElementById("wModalBadges").innerHTML = `
         <span class="badge dim-${x.dim}">${dimName(x.dim)}</span>
         <span class="badge">${esc(x.pack)}</span>
-        ${x.spread ? `<span class="badge spread-pill">${vi ? "Giãn cách:" : "Spread:"} ${esc(x.spread)}</span>` : ""}
-        ${x.has3d ? `<span class="badge badge-3d">3D NBT</span>` : ""}
+        ${x.where_en ? `<span class="badge where-pill">${esc(vi ? x.where_vi : x.where_en)}</span>` : ""}
+        ${x.layer_en ? `<span class="badge layer-pill">${esc(vi ? x.layer_vi : x.layer_en)}</span>` : ""}
       `;
       const cmd = currentMode === "biomes" ? `/locate biome ${x.id}` : `/locate structure ${x.id}`;
       document.getElementById("wModalBody").innerHTML = `
