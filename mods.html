@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,14 +7,11 @@
   <meta name="theme-color" content="#f5c451" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="One More Expedition • KHTN 26.3" />
-  <meta property="og:title" content="Recommended Client Mods — One More Expedition Wiki" />
-  <meta property="og:description" content="Curated client-side performance and visual mods for One More Expedition (MC 26.3)." />
+  <meta property="og:title" content="Best Client Mods — One More Expedition Wiki" />
+  <meta property="og:description" content="Modpack Fabulously Optimized, Simple Voice Chat, Xaero's Minimap, Distant Horizons, Fresh Animations & Complementary Shaders cho Fabric 26.3." />
   <meta property="og:url" content="https://tano-dev.github.io/Minecraft-One-More-Expedition-Wiki/mods.html" />
   <meta property="og:image" content="https://tano-dev.github.io/Minecraft-One-More-Expedition-Wiki/assets/server-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Recommended Client Mods — One More Expedition Wiki" />
-  <meta name="twitter:description" content="Curated client-side performance and visual mods for One More Expedition (MC 26.3)." />
-  <meta name="twitter:image" content="https://tano-dev.github.io/Minecraft-One-More-Expedition-Wiki/assets/server-icon.png" />
   <!-- /OME Embed Meta -->
   <title>Best Client Mods — One More Expedition Wiki</title>
   <link rel="icon" type="image/png" href="assets/server-icon.png" />
@@ -26,260 +23,116 @@
   <style>
     :root {
       --bg-dark: #0d131f;
-      --card-bg: rgba(18, 24, 38, 0.88);
-      --card-inner: rgba(25, 34, 52, 0.78);
+      --card-bg: rgba(18, 24, 38, 0.9);
+      --card-inner: rgba(25, 34, 52, 0.82);
       --border-card: rgba(255, 255, 255, 0.1);
       --text-main: #f1f5f9;
       --text-muted: #94a3b8;
-      --gold-primary: #f5c451;
+      --gold: #f5c451;
       --aqua: #38bdf8;
       --green: #4ade80;
       --epic: #e879f9;
-      --red: #f87171;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: var(--text-main);
       min-height: 100vh;
-      line-height: 1.6;
+      line-height: 1.55;
       background-color: var(--bg-dark);
-      position: relative;
       -webkit-font-smoothing: antialiased;
     }
     .minecraft-bg-fixed {
-      position: fixed;
-      inset: 0;
-      z-index: -10;
-      pointer-events: none;
+      position: fixed; inset: 0; z-index: -10; pointer-events: none;
       background: #101726 url('assets/bg.jpg') no-repeat center center / cover;
     }
     .minecraft-bg-overlay {
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 50% 25%, rgba(15, 23, 42, 0.45) 0%, rgba(7, 10, 18, 0.84) 100%);
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 50% 25%, rgba(15, 23, 42, 0.45) 0%, rgba(7, 10, 18, 0.86) 100%);
     }
     .mc-pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
-    .header-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      padding: 10px 24px;
-      background: rgba(11, 15, 23, 0.94);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      flex-wrap: wrap;
-    }
-    .brand-group { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-    .brand-cube-icon { width: 32px; height: 32px; border-radius: 6px; }
-    .brand-text-stack { display: flex; flex-direction: column; line-height: 1.15; }
-    .brand-khtn { font-size: 0.95rem; font-weight: 800; color: #fff; }
-    .brand-wiki { font-size: 0.72rem; font-weight: 600; color: var(--gold-primary); }
-    .nav-tabs-pill {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(255, 255, 255, 0.04);
-      padding: 4px;
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      flex-wrap: wrap;
-    }
-    .nav-tab-btn {
-      padding: 6px 13px;
-      font-size: 0.82rem;
-      font-weight: 700;
-      color: var(--text-muted);
-      background: transparent;
-      border: 1px solid transparent;
-      border-radius: 7px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.15s ease;
-    }
-    .nav-tab-btn:hover { color: #fff; background: rgba(255, 255, 255, 0.06); }
-    .lang-pill {
-      display: inline-flex;
-      background: #0d1118;
-      border: 1px solid #2d3648;
-      border-radius: 8px;
-      padding: 2px;
-      gap: 2px;
-    }
-    .lang-btn {
-      border: none;
-      background: transparent;
-      color: var(--text-muted);
-      font-size: 0.76rem;
-      font-weight: 800;
-      padding: 5px 10px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-family: inherit;
-    }
-    .lang-btn.active { background: var(--gold-primary); color: #111827; }
-    .page-wrap {
-      max-width: 980px;
-      margin: 26px auto 54px;
-      padding: 0 20px;
-    }
-    .back-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 16px;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
+    .page-wrap { max-width: 1060px; margin: 24px auto 56px; padding: 0 20px; }
+
+    .back-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; gap: 10px; flex-wrap: wrap; }
     .back-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 7px 14px;
-      border-radius: 9px;
-      background: var(--card-bg);
-      border: 1px solid var(--border-card);
-      color: #fff;
-      text-decoration: none;
-      font-size: 0.84rem;
-      font-weight: 700;
-      backdrop-filter: blur(10px);
+      display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 9px;
+      background: var(--card-bg); border: 1px solid var(--border-card); color: #fff;
+      text-decoration: none; font-size: 0.84rem; font-weight: 700; backdrop-filter: blur(10px);
     }
-    .back-btn:hover { border-color: rgba(245, 196, 81, 0.5); color: var(--gold-primary); }
+    .back-btn:hover { border-color: rgba(245, 196, 81, 0.5); color: var(--gold); }
+
     .hero-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-card);
-      border-radius: 16px;
-      padding: 22px 24px;
-      backdrop-filter: blur(12px);
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 18px;
+      background: var(--card-bg); border: 1px solid var(--border-card); border-radius: 16px;
+      padding: 20px 24px; backdrop-filter: blur(12px);
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 18px;
     }
+    .hero-left { display: flex; align-items: center; gap: 16px; }
     .hero-icon-box {
-      width: 58px;
-      height: 58px;
-      border-radius: 14px;
-      background: rgba(10, 14, 23, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
+      width: 58px; height: 58px; border-radius: 14px; background: rgba(10, 14, 23, 0.85);
+      border: 1px solid rgba(56, 189, 248, 0.35); display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
     .hero-icon-box img { width: 38px; height: 38px; }
     .hero-title { font-size: 1.5rem; font-weight: 800; color: #fff; line-height: 1.2; }
     .hero-sub { font-size: 0.9rem; color: var(--text-muted); margin-top: 4px; }
-    .articles-stack { display: flex; flex-direction: column; gap: 16px; }
-    .article-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-card);
-      border-radius: 16px;
-      padding: 20px 22px;
-      backdrop-filter: blur(12px);
+
+    .sec-card {
+      background: var(--card-bg); border: 1px solid var(--border-card); border-radius: 16px;
+      padding: 20px 22px; backdrop-filter: blur(12px); margin-bottom: 18px;
     }
-    .article-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 10px;
-      flex-wrap: wrap;
+    .sec-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+    .sec-title { display: flex; align-items: center; gap: 10px; font-size: 1.14rem; font-weight: 800; color: #fff; }
+    .sec-title img { width: 24px; height: 24px; }
+    .sec-badge {
+      font-size: 0.7rem; font-weight: 800; padding: 3px 9px; border-radius: 6px; text-transform: uppercase;
+      background: rgba(56, 189, 248, 0.14); color: var(--aqua); border: 1px solid rgba(56, 189, 248, 0.35);
     }
-    .article-title-row { display: flex; align-items: center; gap: 10px; }
-    .article-title-row img { width: 24px; height: 24px; }
-    .article-title-row h2 { font-size: 1.12rem; font-weight: 800; color: #fff; }
-    .article-badge {
-      font-size: 0.7rem;
-      font-weight: 800;
-      padding: 3px 9px;
-      border-radius: 6px;
-      text-transform: uppercase;
-      background: rgba(245, 196, 81, 0.14);
-      color: var(--gold-primary);
-      border: 1px solid rgba(245, 196, 81, 0.35);
+    .sec-badge.gold { background: rgba(245, 196, 81, 0.14); color: var(--gold); border-color: rgba(245, 196, 81, 0.4); }
+    .sec-badge.epic { background: rgba(232, 121, 249, 0.14); color: var(--epic); border-color: rgba(232, 121, 249, 0.4); }
+    .sec-desc { color: #cbd5e1; font-size: 0.9rem; margin-bottom: 14px; }
+
+    .mods-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+    .mod-card {
+      background: var(--card-inner); border: 1px solid var(--border-card); border-radius: 12px;
+      padding: 14px 16px; display: flex; flex-direction: column; gap: 8px;
+      transition: border-color 0.15s ease;
     }
-    .article-desc { color: #cbd5e1; font-size: 0.92rem; margin-bottom: 14px; }
-    .feature-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+    .mod-card:hover { border-color: rgba(74, 222, 128, 0.45); }
+    .mod-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .mod-name-row { display: flex; align-items: center; gap: 9px; min-width: 0; }
+    .mod-name-row img { width: 22px; height: 22px; flex-shrink: 0; }
+    .mod-name { font-size: 0.95rem; font-weight: 800; color: #fff; }
+    .mod-desc { font-size: 0.84rem; color: #cbd5e1; line-height: 1.48; flex: 1; }
+    .mod-link {
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      padding: 7px 12px; border-radius: 8px; text-decoration: none; font-size: 0.79rem; font-weight: 800;
+      background: rgba(74, 222, 128, 0.14); border: 1px solid rgba(74, 222, 128, 0.4); color: var(--green);
+      align-self: flex-start;
     }
-    .feature-list li {
-      background: var(--card-inner);
-      border: 1px solid var(--border-card);
-      border-radius: 10px;
-      padding: 10px 13px;
-      font-size: 0.87rem;
-      color: #e2e8f0;
-      display: flex;
-      align-items: flex-start;
-      gap: 9px;
-    }
-    .feature-dot { color: var(--gold-primary); font-weight: 800; flex-shrink: 0; }
+    .mod-link:hover { background: rgba(74, 222, 128, 0.25); color: #fff; }
+
     .other-systems {
-      margin-top: 24px;
-      background: var(--card-bg);
-      border: 1px solid var(--border-card);
-      border-radius: 16px;
-      padding: 16px 20px;
-      backdrop-filter: blur(12px);
+      margin-top: 24px; background: var(--card-bg); border: 1px solid var(--border-card);
+      border-radius: 16px; padding: 16px 20px; backdrop-filter: blur(12px);
     }
     .other-title { font-size: 0.86rem; font-weight: 800; color: var(--text-muted); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.04em; }
     .other-pills { display: flex; flex-wrap: wrap; gap: 7px; }
     .other-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 11px;
-      border-radius: 8px;
-      background: var(--card-inner);
-      border: 1px solid var(--border-card);
-      color: #e2e8f0;
-      text-decoration: none;
-      font-size: 0.78rem;
-      font-weight: 700;
+      display: inline-flex; align-items: center; gap: 6px; padding: 6px 11px; border-radius: 8px;
+      background: var(--card-inner); border: 1px solid var(--border-card); color: #e2e8f0;
+      text-decoration: none; font-size: 0.78rem; font-weight: 700;
     }
     .other-pill:hover { border-color: rgba(56, 189, 248, 0.5); color: #fff; }
-    .other-pill.current { border-color: var(--gold-primary); color: var(--gold-primary); }
+    .other-pill.current { border-color: var(--gold); color: var(--gold); }
     .other-pill img { width: 16px; height: 16px; }
-    @media (max-width: 1280px) {
-      .header-bar { padding: 10px 16px; gap: 10px; }
-      .nav-tab-btn { padding: 5px 10px; font-size: 0.78rem; }
-    }
-    @media (max-width: 1120px) {
-      .nav-tabs-pill { width: 100%; justify-content: center; order: 3; }
-    }
+
     @media (max-width: 680px) {
-      .header-bar { padding: 9px 12px; gap: 8px; }
-      .brand-khtn { font-size: 0.88rem; }
-      .nav-tabs-pill {
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-      }
-      .nav-tabs-pill::-webkit-scrollbar { display: none; }
-      .nav-tab-btn { flex-shrink: 0; white-space: nowrap; font-size: 0.75rem; padding: 5px 9px; }
-      .page-wrap { padding: 0 12px; margin: 16px auto 36px; }
-      .hero-card { padding: 16px; }
-      .article-card { padding: 15px; }
+      .page-wrap { padding: 0 12px; }
+      .hero-card, .sec-card { padding: 15px; }
     }
   </style>
 </head>
 <body>
-  <div class="minecraft-bg-fixed">
-    <div class="minecraft-bg-overlay"></div>
-  </div>
+  <div class="minecraft-bg-fixed"><div class="minecraft-bg-overlay"></div></div>
 
   <header class="ome-header">
     <a href="main.html" class="ome-brand">
@@ -289,7 +142,6 @@
         <span class="ome-brand-sub">KHTN Server Wiki • 26.3</span>
       </div>
     </a>
-
     <nav class="ome-nav">
       <a href="main.html" class="ome-nav-btn" style="border-color: rgba(59, 130, 246, 0.45); color: #93c5fd;">
         <img src="assets/icons/grass_block_side.png" alt=""/>
@@ -308,7 +160,6 @@
         <span>Biomes &amp; Structures</span>
       </a>
     </nav>
-
     <div class="ome-header-right">
       <div class="ome-lang-pill">
         <button class="ome-lang-btn" id="btnLangEn" onclick="setLanguage('en')">🇺🇸 EN</button>
@@ -319,64 +170,219 @@
 
   <main class="page-wrap">
     <div class="back-bar">
-      <a href="main.html" class="back-btn" id="backHomeBtn">← Back to Main Page</a>
+      <a href="main.html" class="back-btn" id="backHomeBtn">← Quay lại Trang Chủ</a>
     </div>
 
     <section class="hero-card">
-      <div class="hero-icon-box">
-        <img class="mc-pixel" src="assets/icons/nether_star.png" alt="Best Client Mods" />
-      </div>
-      <div>
-        <h1 class="hero-title" id="heroTitle">Best Client Mods</h1>
-        <p class="hero-sub" id="heroSub">Voice Chat • FPS • Map</p>
+      <div class="hero-left">
+        <div class="hero-icon-box">
+          <img class="mc-pixel" src="assets/icons/nether_star.png" alt="Best Client Mods" />
+        </div>
+        <div>
+          <h1 class="hero-title">Best Client Mods</h1>
+          <p class="hero-sub" id="heroSub">Modpacks • Mods • Resourcepacks &amp; Shaders (Fabric 26.3)</p>
+        </div>
       </div>
     </section>
 
-    <section class="articles-stack" id="articlesContainer"></section>
+    <div id="sectionsContainer"></div>
 
     <section class="other-systems">
-      <div class="other-title" id="otherTitle">Browse Other Systems</div>
+      <div class="other-title" id="otherTitle">Khám Phá Hệ Thống Khác</div>
       <div class="other-pills" id="otherPills"></div>
     </section>
   </main>
 
   <script>
     const LANG_KEY = "ome_wiki_lang";
-    let currentLang = localStorage.getItem(LANG_KEY) || "en";
-    const PAGE_DATA = {"id": "recommended_mods", "icon": "assets/icons/nether_star.png", "badge": {"vi": "MODS", "en": "MODS"}, "name": {"vi": "Best Client Mods", "en": "Best Client Mods"}, "sub": {"vi": "Voice Chat • FPS • Map", "en": "Voice Chat • FPS • Map"}, "subItems": [{"icon": "assets/icons/nether_star.png", "badge": "CLIENT MODS (26.3)", "rarity": "color-aqua", "name": {"vi": "Bộ Mod Client Khuyên Dùng", "en": "Recommended Client Mods"}, "desc": {"vi": "Server chạy Fabric 26.3 và hỗ trợ nhiều mod client tiện ích (không bắt buộc cài nhưng giúp trải nghiệm mượt hơn rất nhiều).", "en": "The server runs Fabric 26.3 and supports helpful client-side mods (optional, but strongly recommended for the best experience)."}, "features": {"vi": ["Simple Voice Chat (2.6.27+26.3) — Trò chuyện giọng nói trực tiếp trong game", "Sodium + Lithium + Iris Shaders — Tăng FPS tối đa & hỗ trợ shader mượt", "Xaero's Minimap / World Map — Bản đồ mini & đánh dấu tọa độ tiện lợi", "Mod Menu + Roughly Enough Items (REI) — Xem công thức chế tạo nhanh"], "en": ["Simple Voice Chat (2.6.27+26.3) — Proximity voice chat directly in-game", "Sodium + Lithium + Iris Shaders — Massive FPS boost & shader support", "Xaero's Minimap / World Map — Convenient minimap & personal waypoints", "Mod Menu + Roughly Enough Items (REI) — Quick recipe viewer"]}}]};
-    const ALL_SYSTEMS = [{"id": "skyblock", "icon": "assets/icons/oak_sapling.png", "name": {"vi": "Skyblock", "en": "Skyblock"}, "href": "skyblock.html"}, {"id": "world", "icon": "assets/icons/spyglass.png", "name": {"vi": "Biomes & Structures", "en": "Biomes & Structures"}, "href": "world.html"}, {"id": "adventure", "icon": "assets/icons/compass.png", "name": {"vi": "Adventure", "en": "Adventure"}, "href": "adventure.html"}, {"id": "enchants", "icon": "assets/icons/enchanted_book.png", "name": {"vi": "Enchantments", "en": "Enchantments"}, "href": "enchants.html"}, {"id": "fishing", "icon": "assets/icons/fishing_rod.png", "name": {"vi": "Fishing", "en": "Fishing"}, "href": "fishing.html"}, {"id": "minetreasure", "icon": "assets/icons/netherite_pickaxe.png", "name": {"vi": "Mine Treasure", "en": "Mine Treasure"}, "href": "minetreasure.html"}, {"id": "bosses", "icon": "assets/icons/dragonblade.png", "name": {"vi": "Custom Items / Bosses", "en": "Custom Items / Bosses"}, "href": "bosses.html"}, {"id": "warping", "icon": "assets/icons/ender_pearl.png", "name": {"vi": "Teleports", "en": "Teleports"}, "href": "warping.html"}, {"id": "quests", "icon": "assets/icons/writable_book.png", "name": {"vi": "Daily Quests", "en": "Daily Quests"}, "href": "quests.html"}, {"id": "economy", "icon": "assets/icons/emerald.png", "name": {"vi": "Economy", "en": "Economy"}, "href": "economy.html"}, {"id": "prefix", "icon": "assets/icons/name_tag.png", "name": {"vi": "Rank / Prefix", "en": "Rank / Prefix"}, "href": "prefix.html"}, {"id": "redeem", "icon": "assets/icons/paper.png", "name": {"vi": "Codes", "en": "Codes"}, "href": "redeem.html"}, {"id": "utility", "icon": "assets/icons/amethyst_shard.png", "name": {"vi": "Utility & QoL", "en": "Utility & QoL"}, "href": "utility.html"}, {"id": "recommended_mods", "icon": "assets/icons/nether_star.png", "name": {"vi": "Best Client Mods", "en": "Best Client Mods"}, "href": "mods.html"}];
+    let currentLang = localStorage.getItem(LANG_KEY) || "vi";
+
+    const MOD_SECTIONS = [
+      {
+        id: "modpacks",
+        icon: "assets/icons/nether_star.png",
+        badge: "MODPACK",
+        badgeCls: "gold",
+        title: { vi: "1. Modpacks (Nền tảng tối ưu khuyên dùng)", en: "1. Modpacks (Recommended Base)" },
+        desc: {
+          vi: "Cài sẵn Fabric cùng toàn bộ mod tăng FPS, hỗ trợ Shader và Entity Model Features (EMF/ETF) để chạy mượt mọi tính năng bên dưới.",
+          en: "Pre-configured Fabric optimization pack with Sodium, Lithium, Iris Shaders, and EMF/ETF support out of the box."
+        },
+        items: [
+          {
+            icon: "assets/icons/nether_star.png",
+            name: "Fabulously Optimized",
+            url: "https://modrinth.com/modpack/fabulously-optimized",
+            desc: {
+              vi: "Modpack tối ưu FPS hàng đầu (tích hợp Sodium, Iris, Zoom, Dynamic Lights, Mod Menu, EMF/ETF...). Rất nhẹ và dễ cài trên Modrinth App / Prism Launcher.",
+              en: "Top-tier FPS optimization modpack (bundles Sodium, Iris, Zoom, Dynamic Lights, Mod Menu, EMF/ETF...). Lightweight and ready for shaders & Fresh Animations."
+            }
+          }
+        ]
+      },
+      {
+        id: "mods",
+        icon: "assets/icons/compass.png",
+        badge: "CLIENT MODS",
+        badgeCls: "",
+        title: { vi: "2. Mods (Tiện ích & Hình ảnh nên cài thêm)", en: "2. Mods (Recommended Add-ons)" },
+        desc: {
+          vi: "Các mod client hoàn toàn hợp lệ trên server giúp giao tiếp, định vị, quản lý đồ đạc và ngắm cảnh mượt mà hơn.",
+          en: "Server-friendly client mods for proximity voice chat, minimap waypoints, inventory QoL, and massive render distance."
+        },
+        items: [
+          {
+            icon: "assets/icons/amethyst_shard.png",
+            name: "Simple Voice Chat (2.6.27+26.3)",
+            url: "https://modrinth.com/plugin/simple-voice-chat",
+            desc: {
+              vi: "Trò chuyện giọng nói trực tiếp theo khoảng cách trong game (server đã cài sẵn). Hỗ trợ nhóm chat riêng và điều chỉnh âm lượng từng người.",
+              en: "Proximity voice chat directly in-game (already installed server-side). Supports private voice groups and per-player volume control."
+            }
+          },
+          {
+            icon: "assets/icons/compass.png",
+            name: "Xaero's Minimap",
+            url: "https://modrinth.com/mod/xaeros-minimap",
+            desc: {
+              vi: "Bản đồ mini góc màn hình, hiển thị địa hình, mob, người chơi gần bạn và lưu điểm đánh dấu tọa độ (Waypoint) tiện lợi.",
+              en: "Clean corner minimap showing terrain, nearby mobs/players, and custom coordinate waypoints."
+            }
+          },
+          {
+            icon: "assets/icons/mc/glowstone_dust.png",
+            name: "Full Brightness Toggle",
+            url: "https://modrinth.com/mod/full-brightness-toggle",
+            desc: {
+              vi: "Bật/tắt chế độ sáng tối đa (Fullbright) chỉ bằng 1 phím bấm, giúp nhìn rõ khi khám phá hang sâu và đào mỏ.",
+              en: "Toggle full brightness (night vision effect) with a single keybind for caves and deep mining."
+            }
+          },
+          {
+            icon: "assets/icons/chest_front.png",
+            name: "Shulker Box Tooltip",
+            url: "https://modrinth.com/mod/shulkerboxtooltip",
+            desc: {
+              vi: "Giữ Shift khi di chuột vào Shulker Box, Bundle hoặc Ender Chest để xem nhanh toàn bộ vật phẩm bên trong mà không cần đặt xuống.",
+              en: "Hold Shift over Shulker Boxes, Bundles, or Ender Chests to preview their contents without placing them."
+            }
+          },
+          {
+            icon: "assets/icons/writable_book.png",
+            name: "Inventory Profiles Next",
+            url: "https://modrinth.com/mod/inventory-profiles-next",
+            desc: {
+              vi: "Tự động sắp xếp rương & túi đồ chỉ với 1 click, khóa ô vật phẩm cố định và tự động đổi công cụ mới khi sắp hỏng.",
+              en: "1-click inventory & chest sorting, slot locking, and automatic tool replacement before breaking."
+            }
+          },
+          {
+            icon: "assets/icons/spyglass.png",
+            name: "Distant Horizons",
+            url: "https://modrinth.com/mod/distanthorizons",
+            desc: {
+              vi: "Render tầm nhìn cực xa bằng công nghệ LOD giúp ngắm trọn địa hình Terralith/Tectonic và các công trình khổng lồ mà vẫn giữ FPS cao.",
+              en: "LOD-based extreme render distance letting you see Terralith/Tectonic landscapes and giant structures at high FPS."
+            }
+          }
+        ]
+      },
+      {
+        id: "visuals",
+        icon: "assets/icons/enchanted_book.png",
+        badge: "PACKS & SHADERS",
+        badgeCls: "epic",
+        title: { vi: "3. Resourcepacks & Shaders (Hoạt ảnh & Ánh sáng)", en: "3. Resourcepacks & Shaders" },
+        desc: {
+          vi: "Bộ gói tài nguyên hoạt ảnh sinh động và Shader ánh sáng chân thực. Lưu ý: Fresh Animations cần EMF + ETF (đã có sẵn trong Fabulously Optimized).",
+          en: "Dynamic entity animations and realistic lighting shaders. Note: Fresh Animations requires EMF + ETF (included in Fabulously Optimized)."
+        },
+        items: [
+          {
+            icon: "assets/icons/mc/zombie_spawn_egg.png",
+            name: "Fresh Animations",
+            url: "https://modrinth.com/resourcepack/fresh-animations",
+            desc: {
+              vi: "Làm mới toàn bộ hoạt ảnh di chuyển, chớp mắt, biểu cảm và chiến đấu cho quái vật, động vật và dân làng.",
+              en: "Overhauls mob, animal, and villager animations with expressive blinking, walking, and combat movements."
+            }
+          },
+          {
+            icon: "assets/icons/mc/warden_spawn_egg.png",
+            name: "Fresh Animations Extensions",
+            url: "https://modrinth.com/resourcepack/fresh-animations-extensions",
+            desc: {
+              vi: "Gói mở rộng bổ sung hoạt ảnh mượt mà cho các mob và biến thể còn thiếu của Fresh Animations.",
+              en: "Add-on pack adding detailed animations for additional mobs and variants."
+            }
+          },
+          {
+            icon: "assets/icons/mc/armor_stand.png",
+            name: "FA Player Extension",
+            url: "https://modrinth.com/resourcepack/fa-player-extension",
+            desc: {
+              vi: "Nâng cấp hoạt ảnh nhân vật người chơi (chạy, nhảy, cầm vũ khí) đồng bộ với phong cách Fresh Animations.",
+              en: "Enhances player model animations to match the Fresh Animations style."
+            }
+          },
+          {
+            icon: "assets/icons/mc/lantern.png",
+            name: "Complementary Shaders - Unbound",
+            url: "https://modrinth.com/shader/complementary-unbound",
+            desc: {
+              vi: "Shader ánh sáng, mặt nước, bầu trời, mây và phản chiếu đẹp chân thực, chạy rất mượt với Iris Shaders.",
+              en: "High-quality lighting, realistic water, volumetric clouds, and reflections optimized for Iris Shaders."
+            }
+          }
+        ]
+      }
+    ];
+
+    const ALL_SYSTEMS = [
+      { id: "skyblock", icon: "assets/icons/oak_sapling.png", name: { vi: "Skyblock", en: "Skyblock" }, href: "skyblock.html" },
+      { id: "world", icon: "assets/icons/spyglass.png", name: { vi: "Biomes & Structures", en: "Biomes & Structures" }, href: "world.html" },
+      { id: "adventure", icon: "assets/icons/compass.png", name: { vi: "Adventure", en: "Adventure" }, href: "adventure.html" },
+      { id: "enchants", icon: "assets/icons/enchanted_book.png", name: { vi: "Enchantments", en: "Enchantments" }, href: "enchants.html" },
+      { id: "fishing", icon: "assets/icons/fishing_rod.png", name: { vi: "Fishing", en: "Fishing" }, href: "fishing.html" },
+      { id: "minetreasure", icon: "assets/icons/netherite_pickaxe.png", name: { vi: "Mine Treasure", en: "Mine Treasure" }, href: "minetreasure.html" },
+      { id: "bosses", icon: "assets/icons/dragonblade.png", name: { vi: "Custom Items / Bosses", en: "Custom Items / Bosses" }, href: "bosses.html" },
+      { id: "warping", icon: "assets/icons/ender_pearl.png", name: { vi: "Teleports", en: "Teleports" }, href: "warping.html" },
+      { id: "quests", icon: "assets/icons/writable_book.png", name: { vi: "Daily Quests", en: "Daily Quests" }, href: "quests.html" },
+      { id: "economy", icon: "assets/icons/emerald.png", name: { vi: "Economy", en: "Economy" }, href: "economy.html" },
+      { id: "prefix", icon: "assets/icons/name_tag.png", name: { vi: "Rank / Prefix", en: "Rank / Prefix" }, href: "prefix.html" },
+      { id: "redeem", icon: "assets/icons/paper.png", name: { vi: "Codes", en: "Codes" }, href: "redeem.html" },
+      { id: "utility", icon: "assets/icons/amethyst_shard.png", name: { vi: "Utility & QoL", en: "Utility & QoL" }, href: "utility.html" },
+      { id: "recommended_mods", icon: "assets/icons/nether_star.png", name: { vi: "Best Client Mods", en: "Best Client Mods" }, href: "mods.html" }
+    ];
 
     function setLanguage(lang) {
-      currentLang = (lang === "en") ? "en" : "vi";
+      currentLang = lang === "en" ? "en" : "vi";
       localStorage.setItem(LANG_KEY, currentLang);
       renderPage();
-    window.addEventListener("storage", e => {
-      if (e.key === LANG_KEY && e.newValue && e.newValue !== currentLang) {
-        currentLang = e.newValue === "en" ? "en" : "vi";
-        renderPage();
-      }
-    });
     }
 
     function renderPage() {
+      const vi = currentLang === "vi";
       document.documentElement.lang = currentLang;
-      document.getElementById("btnLangEn").classList.toggle("active", currentLang === "en");
-      document.getElementById("btnLangVi").classList.toggle("active", currentLang === "vi");
+      document.getElementById("btnLangEn").classList.toggle("active", !vi);
+      document.getElementById("btnLangVi").classList.toggle("active", vi);
 
-      const ui = currentLang === "vi" ? {
+      const ui = vi ? {
         navHome: "Trang Chủ",
         navEnchants: "Bách Khoa Phù Phép",
         navFishing: "Bách Khoa Câu Cá",
-        navCommands: "Lệnh Nhanh",
         back: "← Quay lại Trang Chủ",
-        other: "Khám Phá Hệ Thống Khác"
+        other: "Khám Phá Hệ Thống Khác",
+        sub: "Modpacks • Mods • Resourcepacks & Shaders (Fabric 26.3)",
+        openBtn: "Mở trên Modrinth ↗"
       } : {
         navHome: "Main Page",
         navEnchants: "Enchantments Wiki",
         navFishing: "Fishing Wiki",
-        navCommands: "Quick Commands",
         back: "← Back to Main Page",
-        other: "Browse Other Systems"
+        other: "Browse Other Systems",
+        sub: "Modpacks • Mods • Resourcepacks & Shaders (Fabric 26.3)",
+        openBtn: "Open on Modrinth ↗"
       };
 
       document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -385,29 +391,34 @@
       });
       document.getElementById("backHomeBtn").textContent = ui.back;
       document.getElementById("otherTitle").textContent = ui.other;
-      document.getElementById("heroTitle").textContent = PAGE_DATA.name[currentLang] || PAGE_DATA.name.en;
-      document.getElementById("heroSub").textContent = PAGE_DATA.sub[currentLang] || PAGE_DATA.sub.en;
+      document.getElementById("heroSub").textContent = ui.sub;
 
-      document.getElementById("articlesContainer").innerHTML = (PAGE_DATA.subItems || []).map(item => `
-        <article class="article-card">
-          <div class="article-head">
-            <div class="article-title-row">
-              <img class="mc-pixel" src="${item.icon || PAGE_DATA.icon}" alt=""/>
-              <h2>${item.name[currentLang] || item.name.en}</h2>
-            </div>
-            ${item.badge ? `<span class="article-badge">${item.badge}</span>` : ""}
+      document.getElementById("sectionsContainer").innerHTML = MOD_SECTIONS.map(sec => `
+        <section class="sec-card">
+          <div class="sec-head">
+            <h2 class="sec-title"><img class="mc-pixel" src="${sec.icon}" alt=""/>${sec.title[currentLang] || sec.title.en}</h2>
+            <span class="sec-badge ${sec.badgeCls}">${sec.badge}</span>
           </div>
-          <p class="article-desc">${item.desc[currentLang] || item.desc.en}</p>
-          <ul class="feature-list">
-            ${((item.features && (item.features[currentLang] || item.features.en)) || []).map(f => `
-              <li><span class="feature-dot">▸</span><span>${f}</span></li>
+          <p class="sec-desc">${sec.desc[currentLang] || sec.desc.en}</p>
+          <div class="mods-grid">
+            ${sec.items.map(it => `
+              <div class="mod-card">
+                <div class="mod-top">
+                  <div class="mod-name-row">
+                    <img class="mc-pixel" src="${it.icon}" alt=""/>
+                    <span class="mod-name">${it.name}</span>
+                  </div>
+                </div>
+                <p class="mod-desc">${it.desc[currentLang] || it.desc.en}</p>
+                <a class="mod-link" href="${it.url}" target="_blank" rel="noopener noreferrer">${ui.openBtn}</a>
+              </div>
             `).join("")}
-          </ul>
-        </article>
+          </div>
+        </section>
       `).join("");
 
       document.getElementById("otherPills").innerHTML = ALL_SYSTEMS.map(sys => `
-        <a href="${sys.href}" class="other-pill ${sys.id === PAGE_DATA.id ? 'current' : ''}">
+        <a href="${sys.href}" class="other-pill ${sys.id === 'recommended_mods' ? 'current' : ''}">
           <img class="mc-pixel" src="${sys.icon}" alt=""/>
           <span>${sys.name[currentLang] || sys.name.en}</span>
         </a>
