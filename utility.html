@@ -336,8 +336,11 @@
       if (!item) return `<div class="mc-slot empty"></div>`;
       const cls = `mc-slot${isOut ? " out" : ""}${glint ? " glint" : ""}`;
       const cnt = count > 1 ? `<span class="mc-count">${count}</span>` : "";
-      const tip = label || item.replace(/_/g, " ");
-      return `<div class="${cls}" title="${tip}"><img src="assets/icons/mc/${item}.png" alt="${tip}" loading="lazy"/>${cnt}</div>`;
+      const isStel = item.startsWith("stel:");
+      const cleanName = isStel ? item.slice(5) : item;
+      const src = isStel ? `assets/icons/items/stellarity/${cleanName}.png` : `assets/icons/mc/${cleanName}.png`;
+      const tip = label || cleanName.split("/").pop().replace(/_/g, " ");
+      return `<div class="${cls}" title="${tip}"><img src="${src}" alt="${tip}" loading="lazy"/>${cnt}</div>`;
     }
 
     function craft3x3(grid, outItem, outCount, outLabel, glint = false) {
@@ -471,6 +474,87 @@
                 ${recipeRow([["bowl", 1, "Bowl"], ["red_mushroom", 1, "Red Mushroom"], ["brown_mushroom", 1, "Brown Mushroom"], ["chorus_fruit", 1, "Chorus Fruit"]], "suspicious_stew", 1, "Suspicious Stew (Levitation)", "<strong>Levitation</strong> (8s)")}
                 ${recipeRow([["bowl", 1, "Bowl"], ["red_mushroom", 1, "Red Mushroom"], ["brown_mushroom", 1, "Brown Mushroom"], ["pink_petals", 1, "Pink Petals"]], "suspicious_stew", 1, "Suspicious Stew (Absorption)", "<strong>Absorption</strong> (9s)")}
                 ${recipeRow([["bowl", 1, "Bowl"], ["red_mushroom", 1, "Red Mushroom"], ["brown_mushroom", 1, "Brown Mushroom"], ["pitcher_plant", 1, "Pitcher Plant"]], "suspicious_stew", 1, "Suspicious Stew (Strength)", "<strong>Strength</strong> (11s)")}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec-card">
+          <div class="sec-head">
+            <h2 class="sec-title"><img class="mc-pixel" src="assets/icons/mc/crying_obsidian.png" alt=""/>${vi ? "Stellarity — Tế Đàn Accursed Altar (Altar of the Accursed)" : "Stellarity — Altar of the Accursed Recipes"}</h2>
+            <span class="badge gold">STELLARITY • ALTAR</span>
+          </div>
+          <p class="sec-sub">
+            ${vi
+              ? "Ném đúng nguyên liệu (đúng số lượng) lên mặt <strong>Altar of the Accursed</strong> (đã kích hoạt sau khi hạ Ender Dragon) để hợp thành trang bị &amp; vật phẩm Stellarity. Giữ nguyên phù phép từ trang bị gốc."
+              : "Drop the exact ingredients &amp; counts onto an activated <strong>Altar of the Accursed</strong> (unlocked after defeating the Ender Dragon) to forge Stellarity gear &amp; items. Preserves enchants from the base item."}
+          </p>
+          <div class="recipe-showcase">
+            <div class="info-card highlight">
+              <div class="info-head">
+                <div class="info-title"><img class="mc-pixel" src="assets/icons/items/stellarity/endonomicon.png" alt=""/>${vi ? "Vật Phẩm, Sách Phép & Trang Sức" : "General, Spellbooks & Trinkets"}</div>
+                <span class="badge gold">7 RECIPES</span>
+              </div>
+              <div class="recipe-rows">
+                ${recipeRow([["enchanted_book", 1, "Enchanted Book"]], "stel:endonomicon", 1, "Endonomicon", "<strong>Endonomicon</strong>")}
+                ${recipeRow([["iron_ingot", 1, "Iron Ingot"], ["popped_chorus_fruit", 2, "2× Popped Chorus Fruit"]], "stel:chorus_plating", 1, "Chorus Plating", "<strong>Chorus Plating</strong>")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Smithing Template"], ["purpur_block", 9, "9× Purpur Block"], ["stel:enderite_shard", 5, "5× Enderite Shard"]], "stel:enderite_upgrade_smithing_template", 2, "2× Enderite Smithing Template", vi ? "Nhân đôi Template" : "2× Template")}
+                ${recipeRow([["stel:chorus_plating", 8, "8× Chorus Plating"], ["book", 1, "Book"], ["stel:enderite_shard", 10, "10× Enderite Shard"]], "stel:book_of_jinx", 1, "Book of Jinx", "<strong>Book of Jinx</strong>")}
+                ${recipeRow([["ender_pearl", 16, "16× Ender Pearl"], ["book", 1, "Book"], ["stel:enderite_shard", 32, "32× Enderite Shard"]], "stel:book_of_conveyance", 1, "Book of Conveyance", "<strong>Book of Conveyance</strong>")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Smithing Template"], ["shield", 1, "Shield"], ["netherite_ingot", 1, "Netherite Ingot"]], "shield", 1, "Crest of the End", "<strong>Crest of the End</strong>")}
+                ${recipeRow([["bundle", 1, "Bundle"], ["gunpowder", 64, "64× Starlight Soot"], ["nether_star", 2, "2× Nether Star"], ["stel:enderite_shard", 64, "64× Enderite Shard"], ["netherite_ingot", 4, "4× Netherite Ingot"]], "stel:satchel_of_voids", 1, "Satchel of Voids", "<strong>Satchel of Voids</strong>")}
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-head">
+                <div class="info-title"><img class="mc-pixel" src="assets/icons/items/stellarity/tamaris.png" alt=""/>${vi ? "Vũ Khí & Công Cụ (Weapons & Tools)" : "Weapons & Tools"}</div>
+                <span class="badge aqua">9 RECIPES</span>
+              </div>
+              <div class="recipe-rows">
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["shulker_shell", 4, "4× Shulker Shell"], ["netherite_sword", 1, "Netherite Sword"]], "stel:shulker_sword", 1, "Shulker Sword", "<strong>Shulker Sword</strong>")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["shulker_shell", 4, "4× Shulker Shell"], ["netherite_spear", 1, "Netherite Spear"]], "stel:shulker_spear", 1, "Shulker Spear", "<strong>Shulker Spear</strong>")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["diamond", 3, "3× Diamond"], ["phantom_membrane", 8, "8× Phantom Membrane"], ["stel:sharanga", 1, "Sharanga"]], "stel:spectral_fury", 1, "Spectral Fury", "<strong>Spectral Fury</strong>")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["stel:sand_rune", 1, "Sand Rune"], ["trident", 1, "Trident"], ["breeze_rod", 2, "2× Breeze Rod"]], "stel:sandstorm_trident", 1, "Sandstorm Trident", "<strong>Sandstorm Trident</strong>")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["netherite_sword", 1, "Netherite Sword"], ["stel:enderite_shard", 8, "8× Enderite Shard"], ["wither_skeleton_skull", 1, "Wither Skeleton Skull"]], "stel:tamaris", 1, "Tamaris", "<strong>Tamaris</strong>")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["shulker_shell", 4, "4× Shulker Shell"], ["netherite_pickaxe", 1, "Netherite Pickaxe"]], "stel:shulker_pickaxe", 1, "Shulker Pickaxe", "<strong>Shulker Pickaxe</strong>")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["shulker_shell", 4, "4× Shulker Shell"], ["netherite_axe", 1, "Netherite Axe"]], "stel:shulker_axe", 1, "Shulker Axe", "<strong>Shulker Axe</strong>")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["shulker_shell", 4, "4× Shulker Shell"], ["netherite_shovel", 1, "Netherite Shovel"]], "stel:shulker_shovel", 1, "Shulker Shovel", "<strong>Shulker Shovel</strong>")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["shulker_shell", 4, "4× Shulker Shell"], ["netherite_hoe", 1, "Netherite Hoe"]], "stel:shulker_hoe", 1, "Shulker Hoe", "<strong>Shulker Hoe</strong>")}
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-head">
+                <div class="info-title"><img class="mc-pixel" src="assets/icons/items/stellarity/hallowed_chestplate.png" alt=""/>${vi ? "4 Bộ Giáp Nâng Cấp (Armor Sets)" : "Upgraded Armor Sets (16 Pieces)"}</div>
+                <span class="badge green">16 RECIPES</span>
+              </div>
+              <div class="recipe-rows">
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["stel:hallowed_ingot", 4, "4× Hallowed Ingot"], ["netherite_chestplate", 1, "Netherite Armor (Helmet/Chest/Legs/Boots)"]], "stel:hallowed_chestplate", 1, "Hallowed Armor", "<strong>Hallowed Set</strong> (4)")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["stel:chorus_plating", 4, "4× Chorus Plating"], ["netherite_chestplate", 1, "Netherite Armor (Helmet/Chest/Legs/Boots)"]], "stel:champion_chestplate", 1, "Champion Armor", "<strong>Champion Set</strong> (4)")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["shulker_shell", 4, "4× Shulker Shell"], ["netherite_chestplate", 1, "Netherite Armor (Helmet/Chest/Legs/Boots)"]], "stel:shulker_chestplate", 1, "Shulker Armor", "<strong>Shulker Set</strong> (4)")}
+                ${recipeRow([["stel:enderite_upgrade_smithing_template", 1, "Enderite Template"], ["cherry_leaves", 8, "8× Cherry Leaves"], ["netherite_chestplate", 1, "Netherite Armor (Helmet/Chest/Legs/Boots)"]], "stel:floral_chestplate", 1, "Floral Armor", "<strong>Floral Set</strong> (4)")}
+              </div>
+              <p class="recipe-note">${vi ? "Áp dụng cho cả 4 mảnh: <strong>Helmet, Chestplate, Leggings, Boots</strong> (Netherite gốc)." : "Applies to all 4 slots: <strong>Helmet, Chestplate, Leggings, Boots</strong> (Netherite base)."}</p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-head">
+                <div class="info-title"><img class="mc-pixel" src="assets/icons/items/stellarity/void_pendant.png" alt=""/>${vi ? "Void Pendant & Nhuộm Elytra" : "Void Pendant & Elytra Dyeing"}</div>
+                <span class="badge aqua">9 + 17 RECIPES</span>
+              </div>
+              <div class="recipe-rows">
+                ${recipeRow([["stel:void_pendant", 1, "Void Pendant"], ["stel:enderite_shard", 1, "Enderite Shard"], ["amethyst_shard", 1, "Amethyst Shard"]], "stel:void_pendant/amethyst", 1, "Void Pendant (Amethyst)", "Amethyst")}
+                ${recipeRow([["stel:void_pendant", 1, "Void Pendant"], ["stel:enderite_shard", 1, "Enderite Shard"], ["copper_ingot", 1, "Copper Ingot"]], "stel:void_pendant/copper", 1, "Void Pendant (Copper)", "Copper")}
+                ${recipeRow([["stel:void_pendant", 1, "Void Pendant"], ["stel:enderite_shard", 1, "Enderite Shard"], ["diamond", 1, "Diamond"]], "stel:void_pendant/diamond", 1, "Void Pendant (Diamond)", "Diamond")}
+                ${recipeRow([["stel:void_pendant", 1, "Void Pendant"], ["stel:enderite_shard", 1, "Enderite Shard"], ["emerald", 1, "Emerald"]], "stel:void_pendant/emerald", 1, "Void Pendant (Emerald)", "Emerald")}
+                ${recipeRow([["stel:void_pendant", 1, "Void Pendant"], ["stel:enderite_shard", 1, "Enderite Shard"], ["gold_ingot", 1, "Gold Ingot"]], "stel:void_pendant/gold", 1, "Void Pendant (Gold)", "Gold")}
+                ${recipeRow([["stel:void_pendant", 1, "Void Pendant"], ["stel:enderite_shard", 1, "Enderite Shard"], ["iron_ingot", 1, "Iron Ingot"]], "stel:void_pendant/iron", 1, "Void Pendant (Iron)", "Iron")}
+                ${recipeRow([["stel:void_pendant", 1, "Void Pendant"], ["stel:enderite_shard", 1, "Enderite Shard"], ["lapis_lazuli", 1, "Lapis Lazuli"]], "stel:void_pendant/lapis", 1, "Void Pendant (Lapis)", "Lapis")}
+                ${recipeRow([["stel:void_pendant", 1, "Void Pendant"], ["stel:enderite_shard", 1, "Enderite Shard"], ["netherite_ingot", 1, "Netherite Ingot"]], "stel:void_pendant/netherite", 1, "Void Pendant (Netherite)", "Netherite")}
+                ${recipeRow([["stel:void_pendant", 1, "Void Pendant"], ["stel:enderite_shard", 1, "Enderite Shard"], ["quartz", 1, "Nether Quartz"]], "stel:void_pendant/quartz", 1, "Void Pendant (Quartz)", "Quartz")}
+                ${recipeRow([["elytra", 1, "Elytra"], ["red_dye", 1, "Any Dye (16 colors)"]], "elytra", 1, "Dyed Elytra", vi ? "Nhuộm 16 màu" : "Dye (16 colors)")}
+                ${recipeRow([["elytra", 1, "Dyed Elytra"], ["water_bucket", 1, "Water Bucket"]], "elytra", 1, "Uncolored Elytra", vi ? "Tẩy màu Elytra" : "Uncolor Elytra")}
               </div>
             </div>
           </div>
