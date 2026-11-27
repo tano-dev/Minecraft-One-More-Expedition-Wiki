@@ -170,7 +170,7 @@
 
     .quests-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
       gap: 14px;
     }
     .quest-card {
@@ -209,6 +209,27 @@
     .dim-pill { color: #bae6fd; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.12); }
     .reward-pill { color: #fde68a; border-color: rgba(245, 196, 81, 0.35); background: rgba(245, 196, 81, 0.1); }
     .q-desc { font-size: 0.82rem; color: #cbd5e1; }
+    .q-target-list {
+      display: flex; flex-direction: column; gap: 5px;
+      background: rgba(10, 14, 23, 0.55); border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px; padding: 8px;
+    }
+    .q-target-row {
+      display: flex; align-items: center; justify-content: space-between; gap: 8px;
+      padding: 4px 6px; border-radius: 7px; background: rgba(255, 255, 255, 0.03);
+      font-size: 0.8rem; color: #e2e8f0;
+    }
+    .q-target-left { display: flex; align-items: center; gap: 8px; min-width: 0; }
+    .q-target-left img { width: 20px; height: 20px; flex-shrink: 0; }
+    .q-target-name { font-weight: 600; line-height: 1.25; }
+    .q-qty-pill {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; font-weight: 700;
+      padding: 2px 7px; border-radius: 6px; white-space: nowrap; flex-shrink: 0;
+      background: rgba(56, 189, 248, 0.14); border: 1px solid rgba(56, 189, 248, 0.35); color: #bae6fd;
+    }
+    .q-qty-pill.boss {
+      background: rgba(248, 113, 113, 0.16); border-color: rgba(248, 113, 113, 0.45); color: #fecaca;
+    }
     .q-foot {
       margin-top: auto; padding-top: 8px;
       border-top: 1px dashed rgba(255, 255, 255, 0.08);
@@ -410,18 +431,30 @@
       { id: "exp_biome_easy", branch: "EXPLORE_BIOME", diff: "EASY", dim: "overworld", icon: "assets/icons/grass_block_side.png",
         name_en: "Explore Biome (Easy)", name_vi: "Khám Phá Biome (Dễ)",
         target_en: "Reach unexplored Biome (500–1,200m)", target_vi: "Đến Biome chưa khám phá (500–1,200m)",
+        targets: [
+          { icon: "assets/icons/grass_block_side.png", vi: "Biome chưa khám phá (Overworld)", en: "Unexplored Overworld Biome", qty: "500–1,200m" },
+          { icon: "assets/icons/compass.png", vi: "Bán kính nhận mục tiêu", en: "Capture Radius", qty: "64 blocks" }
+        ],
         desc_en: "Visit an unexplored biome within 64 blocks radius. Excludes Deep Dark & Pale Garden.",
         desc_vi: "Đến vùng Biome chưa từng đặt chân trong bán kính 64 block. Không xuất hiện Deep Dark & Pale Garden.",
         reward: "0.50x × 1.35x | 50–68 XP (+10%/1km)" },
       { id: "exp_biome_med", branch: "EXPLORE_BIOME", diff: "MEDIUM", dim: "all", icon: "assets/icons/grass_block_side.png",
         name_en: "Explore Biome (Medium)", name_vi: "Khám Phá Biome (Trung Bình)",
         target_en: "Reach unexplored Biome (1,500–2,800m)", target_vi: "Đến Biome chưa khám phá (1,500–2,800m)",
+        targets: [
+          { icon: "assets/icons/grass_block_side.png", vi: "Biome chưa khám phá (Mọi chiều)", en: "Unexplored Biome (Any Dim)", qty: "1,500–2,800m" },
+          { icon: "assets/icons/compass.png", vi: "Tỉ lệ khoảng cách Nether / End", en: "Nether / End Scale", qty: "0.65x / 1.15x" }
+        ],
         desc_en: "Long-range biome expedition (x0.65 distance in Nether, x1.15 in End). 64-block capture radius.",
         desc_vi: "Thám hiểm Biome tầm trung (khoảng cách x0.65 ở Nether, x1.15 ở End). Bán kính nhận 64 block.",
         reward: "1.80x × 1.35x | 130+ XP (+10%/1km)" },
       { id: "exp_biome_hard", branch: "EXPLORE_BIOME", diff: "HARD", dim: "all", icon: "assets/icons/grass_block_side.png",
         name_en: "Explore Biome (Hard)", name_vi: "Khám Phá Biome (Khó)",
         target_en: "Reach unexplored Biome (3,500–6,000m)", target_vi: "Đến Biome chưa khám phá (3,500–6,000m)",
+        targets: [
+          { icon: "assets/icons/grass_block_side.png", vi: "Biome cực xa (Viễn chinh)", en: "Deep Frontier Biome", qty: "3,500–6,000m" },
+          { icon: "assets/icons/emerald.png", vi: "Thưởng thêm theo khoảng cách", en: "Distance Coin Bonus", qty: "+10% / 1km" }
+        ],
         desc_en: "Deep frontier biome trek with +10% bonus Coins per 1,000 blocks distance.",
         desc_vi: "Hành trình viễn chinh cực xa kèm +10% Coins thưởng thêm mỗi 1,000 block.",
         reward: "5.00x × 1.35x | 320+ XP (+10%/1km)" },
@@ -429,18 +462,30 @@
       { id: "exp_struct_easy", branch: "EXPLORE_STRUCTURE", diff: "EASY", dim: "overworld", icon: "assets/icons/paper.png",
         name_en: "Explore Structure (Easy)", name_vi: "Khám Phá Công Trình (Dễ)",
         target_en: "Reach unexplored Structure (600–1,300m)", target_vi: "Đến Công trình chưa khám phá (600–1,300m)",
+        targets: [
+          { icon: "assets/icons/paper.png", vi: "Làng / Tàn tích / Trại lân cận", en: "Nearby Village / Ruin / Camp", qty: "600–1,300m" },
+          { icon: "assets/icons/compass.png", vi: "Bán kính nhận (Mở tọa độ sẵn)", en: "Capture Radius (Coords shown)", qty: "48 blocks" }
+        ],
         desc_en: "Discover nearby villages, ruins, or camps (48-block capture radius). Coordinates unlock on accept.",
         desc_vi: "Tìm đến làng, tàn tích hoặc trại lân cận (bán kính 48 block). Tọa độ mở khóa ngay khi nhận.",
         reward: "0.50x × 1.50x | 50–75 XP" },
       { id: "exp_struct_med", branch: "EXPLORE_STRUCTURE", diff: "MEDIUM", dim: "all", icon: "assets/icons/paper.png",
         name_en: "Explore Structure (Medium)", name_vi: "Khám Phá Công Trình (Trung Bình)",
         target_en: "Reach unexplored Structure (1,600–3,200m)", target_vi: "Đến Công trình chưa khám phá (1,600–3,200m)",
+        targets: [
+          { icon: "assets/icons/paper.png", vi: "Công trình tầm trung", en: "Mid-range Structure", qty: "1,600–3,200m" },
+          { icon: "assets/icons/compass.png", vi: "Bán kính nhận mục tiêu", en: "Capture Radius", qty: "48 blocks" }
+        ],
         desc_en: "Locate mid-range modded or vanilla structures (48-block capture radius).",
         desc_vi: "Định vị công trình tầm trung trên bản đồ (bán kính nhận 48 block).",
         reward: "1.80x × 1.50x | 195+ XP" },
       { id: "exp_struct_hard", branch: "EXPLORE_STRUCTURE", diff: "HARD", dim: "all", icon: "assets/icons/paper.png",
         name_en: "Explore Structure (Hard)", name_vi: "Khám Phá Công Trình (Khó)",
         target_en: "Reach unexplored Structure (3,800–6,500m)", target_vi: "Đến Công trình chưa khám phá (3,800–6,500m)",
+        targets: [
+          { icon: "assets/icons/paper.png", vi: "Công trình lớn cực xa", en: "Major Far Landmark", qty: "3,800–6,500m" },
+          { icon: "assets/icons/emerald.png", vi: "Thưởng thêm khoảng cách", en: "Distance Coin Bonus", qty: "+10% / 1km" }
+        ],
         desc_en: "Far expedition to major landmarks (48-block capture radius, +10%/1km distance bonus).",
         desc_vi: "Viễn chinh công trình lớn ở cực xa (bán kính 48 block, +10%/1km khoảng cách).",
         reward: "5.00x × 1.50x | 480+ XP" },
@@ -448,12 +493,20 @@
       { id: "exp_dun_med", branch: "EXPLORE_DUNGEON", diff: "MEDIUM", dim: "all", icon: "assets/icons/compass.png",
         name_en: "Explore Dungeon (Medium)", name_vi: "Khám Phá Dungeon (Trung Bình)",
         target_en: "Reach unexplored Dungeon (1,800–3,500m)", target_vi: "Đến Dungeon chưa khám phá (1,800–3,500m)",
+        targets: [
+          { icon: "assets/icons/compass.png", vi: "Hầm ngục & Trial Structures", en: "Dungeons & Trial Structures", qty: "1,800–3,500m" },
+          { icon: "assets/icons/spyglass.png", vi: "Bán kính nhận mục tiêu", en: "Capture Radius", qty: "40 blocks" }
+        ],
         desc_en: "Venture into dangerous dungeons & trial structures (40-block capture radius).",
         desc_vi: "Đột kích các hầm ngục nguy hiểm (bán kính nhận 40 block).",
         reward: "1.80x × 1.75x | 228+ XP" },
       { id: "exp_dun_hard", branch: "EXPLORE_DUNGEON", diff: "HARD", dim: "all", icon: "assets/icons/compass.png",
         name_en: "Explore Dungeon (Hard)", name_vi: "Khám Phá Dungeon (Khó)",
         target_en: "Reach unexplored Dungeon (4,200–7,500m)", target_vi: "Đến Dungeon chưa khám phá (4,200–7,500m)",
+        targets: [
+          { icon: "assets/icons/mc/sculk_catalyst.png", vi: "Ancient City / Mansion / Stronghold", en: "Ancient City / Mansion / Stronghold", qty: "4,200–7,500m" },
+          { icon: "assets/icons/mc/nether_star.png", vi: "Bastion / End City / Boss Dungeon", en: "Bastion / End City / Boss Dungeon", qty: "40 blocks" }
+        ],
         desc_en: "Raid Ancient Cities, Mansions, Monuments, Strongholds, Bastions, End Cities or modded boss dungeons.",
         desc_vi: "Chinh phục Ancient City, Mansion, Monument, Stronghold, Bastion, End City hoặc dungeon mod.",
         reward: "5.00x × 1.75x | 560+ XP" },
@@ -462,6 +515,11 @@
       { id: "min_ow_easy", branch: "MINING", diff: "EASY", dim: "overworld", icon: "assets/icons/diamond_pickaxe.png",
         name_en: "Overworld Mining (Easy)", name_vi: "Đào Quặng Overworld (Dễ)",
         target_en: "Coal Ore (24–36) • Copper Ore (24–36) • Iron Ore (16–24)", target_vi: "Than (24–36) • Đồng (24–36) • Sắt (16–24)",
+        targets: [
+          { icon: "assets/icons/mc/coal_ore.png", vi: "Quặng Than (Coal Ore)", en: "Coal Ore", qty: "24–36" },
+          { icon: "assets/icons/mc/copper_ore.png", vi: "Quặng Đồng (Copper Ore)", en: "Copper Ore", qty: "24–36" },
+          { icon: "assets/icons/mc/iron_ore.png", vi: "Quặng Sắt (Iron Ore)", en: "Iron Ore", qty: "16–24" }
+        ],
         desc_en: "Mine natural Coal, Copper, or Iron ore blocks underground.",
         desc_vi: "Đào quặng Than, Đồng hoặc Sắt tự nhiên dưới lòng đất.",
         reward: "0.50x Daily | 50 XP" },
@@ -469,6 +527,13 @@
         name_en: "Overworld Mining (Medium)", name_vi: "Đào Quặng Overworld (Trung Bình)",
         target_en: "Gold (16–24) • Redstone (18–28) • Lapis (16–24) • Amethyst Cluster (8–14) • Sculk (20–32)",
         target_vi: "Vàng (16–24) • Redstone (18–28) • Lapis (16–24) • Cụm Amethyst (8–14) • Sculk (20–32)",
+        targets: [
+          { icon: "assets/icons/mc/gold_ore.png", vi: "Quặng Vàng (Gold Ore)", en: "Gold Ore", qty: "16–24" },
+          { icon: "assets/icons/mc/redstone_ore.png", vi: "Quặng Đá Đỏ (Redstone Ore)", en: "Redstone Ore", qty: "18–28" },
+          { icon: "assets/icons/mc/lapis_ore.png", vi: "Quặng Lapis (Lapis Ore)", en: "Lapis Ore", qty: "16–24" },
+          { icon: "assets/icons/mc/amethyst_cluster.png", vi: "Cụm Thạch Anh Tím (Amethyst Cluster)", en: "Amethyst Cluster", qty: "8–14" },
+          { icon: "assets/icons/mc/sculk.png", vi: "Khối Sculk (Deep Dark)", en: "Sculk Block", qty: "20–32" }
+        ],
         desc_en: "Mine mid-tier Overworld minerals, geodes, or Deep Dark sculk.",
         desc_vi: "Đào khoáng sản tầm trung, tinh thể Amethyst hoặc khối Sculk.",
         reward: "1.80x Daily | 130 XP" },
@@ -476,12 +541,22 @@
         name_en: "Overworld Mining (Hard)", name_vi: "Đào Quặng Overworld (Khó)",
         target_en: "Diamond Ore (14–20) • Emerald Ore (10–16) • Sculk Catalyst (3–5) • Obsidian (16–24)",
         target_vi: "Quặng Kim Cương (14–20) • Ngọc Lục Bảo (10–16) • Sculk Catalyst (3–5) • Hắc Diện Thạch (16–24)",
+        targets: [
+          { icon: "assets/icons/mc/diamond_ore.png", vi: "Quặng Kim Cương (Diamond Ore)", en: "Diamond Ore", qty: "14–20" },
+          { icon: "assets/icons/mc/emerald_ore.png", vi: "Quặng Lục Bảo (Emerald Ore)", en: "Emerald Ore", qty: "10–16" },
+          { icon: "assets/icons/mc/sculk_catalyst.png", vi: "Sculk Catalyst", en: "Sculk Catalyst", qty: "3–5" },
+          { icon: "assets/icons/mc/obsidian.png", vi: "Hắc Diện Thạch (Obsidian)", en: "Obsidian", qty: "16–24" }
+        ],
         desc_en: "High-tier Overworld mining targets.",
         desc_vi: "Khai thác các khoáng sản quý hiếm bậc cao ở Overworld.",
         reward: "5.00x Daily | 320 XP" },
       { id: "min_net_easy", branch: "MINING", diff: "EASY", dim: "nether", icon: "assets/icons/netherite_pickaxe.png",
         name_en: "Nether Mining (Easy)", name_vi: "Đào Quặng Nether (Dễ)",
         target_en: "Nether Quartz Ore (20–30) • Nether Gold Ore (20–30)", target_vi: "Thạch Anh Nether (20–30) • Quặng Vàng Nether (20–30)",
+        targets: [
+          { icon: "assets/icons/mc/nether_quartz_ore.png", vi: "Quặng Thạch Anh Nether", en: "Nether Quartz Ore", qty: "20–30" },
+          { icon: "assets/icons/mc/nether_gold_ore.png", vi: "Quặng Vàng Nether", en: "Nether Gold Ore", qty: "20–30" }
+        ],
         desc_en: "Unlocks at Adventure Level 15. Includes 1.20x Nether reward multiplier.",
         desc_vi: "Mở khóa ở Adventure Lv 15. Được nhân thưởng Nether 1.20x.",
         reward: "0.50x × 1.20x | 60 XP" },
@@ -489,18 +564,30 @@
         name_en: "Nether Mining (Medium)", name_vi: "Đào Quặng Nether (Trung Bình)",
         target_en: "Nether Quartz (40–56) • Nether Gold (36–48) • Glowstone (20–32)",
         target_vi: "Thạch Anh (40–56) • Vàng Nether (36–48) • Đá Phát Sáng (20–32)",
+        targets: [
+          { icon: "assets/icons/mc/nether_quartz_ore.png", vi: "Quặng Thạch Anh Nether", en: "Nether Quartz Ore", qty: "40–56" },
+          { icon: "assets/icons/mc/nether_gold_ore.png", vi: "Quặng Vàng Nether", en: "Nether Gold Ore", qty: "36–48" },
+          { icon: "assets/icons/mc/glowstone.png", vi: "Đá Phát Sáng (Glowstone)", en: "Glowstone", qty: "20–32" }
+        ],
         desc_en: "Unlocks at Adventure Level 15. Includes 1.20x Nether reward multiplier.",
         desc_vi: "Mở khóa ở Adventure Lv 15. Được nhân thưởng Nether 1.20x.",
         reward: "1.80x × 1.20x | 156 XP" },
       { id: "min_net_hard", branch: "MINING", diff: "HARD", dim: "nether", icon: "assets/icons/netherite_pickaxe.png",
         name_en: "Nether Mining (Hard — Ancient Debris)", name_vi: "Đào Ancient Debris (Khó)",
         target_en: "Ancient Debris (4–7)", target_vi: "Mảnh Vỡ Cổ Đại / Ancient Debris (4–7)",
+        targets: [
+          { icon: "assets/icons/mc/ancient_debris.png", vi: "Mảnh Vỡ Cổ Đại (Ancient Debris)", en: "Ancient Debris", qty: "4–7" }
+        ],
         desc_en: "Unlocks at Adventure Level 15. Mine Ancient Debris deep in the Nether.",
         desc_vi: "Mở khóa ở Adventure Lv 15. Khai thác Ancient Debris dưới tầng sâu Nether.",
         reward: "5.00x × 1.20x | 384 XP" },
       { id: "min_end", branch: "MINING", diff: "HARD", dim: "end", icon: "assets/icons/dragon_egg.png",
         name_en: "The End Mining (Easy/Med/Hard)", name_vi: "Đào Khoáng The End (Dễ/TB/Khó)",
         target_en: "End Stone (48 Easy / 96 Med) • Obsidian (24–32 Hard)", target_vi: "Đá End Stone (48 Dễ / 96 TB) • Obsidian (24–32 Khó)",
+        targets: [
+          { icon: "assets/icons/mc/end_stone.png", vi: "Đá End Stone (Dễ / TB)", en: "End Stone (Easy / Med)", qty: "48 / 96" },
+          { icon: "assets/icons/mc/obsidian.png", vi: "Hắc Diện Thạch (Khó)", en: "Obsidian (Hard)", qty: "24–32" }
+        ],
         desc_en: "Unlocks at Adventure Level 30. Includes 1.40x End reward multiplier.",
         desc_vi: "Mở khóa ở Adventure Lv 30. Được nhân thưởng The End 1.40x.",
         reward: "1.40x End Mult | 70–448 XP" },
@@ -509,18 +596,33 @@
       { id: "log_ow_easy", branch: "LOGGING", diff: "EASY", dim: "overworld", icon: "assets/icons/oak_sapling.png",
         name_en: "Timber Harvesting (Easy)", name_vi: "Chặt Gỗ Overworld (Dễ)",
         target_en: "Oak / Birch / Spruce Logs (24–36)", target_vi: "Gỗ Sồi / Bạch Dương / Vân Sam (24–36)",
+        targets: [
+          { icon: "assets/icons/mc/oak_log.png", vi: "Gỗ Sồi (Oak Log)", en: "Oak Log", qty: "24–36" },
+          { icon: "assets/icons/mc/birch_log.png", vi: "Gỗ Bạch Dương (Birch Log)", en: "Birch Log", qty: "24–36" },
+          { icon: "assets/icons/mc/spruce_log.png", vi: "Gỗ Vân Sam (Spruce Log)", en: "Spruce Log", qty: "24–36" }
+        ],
         desc_en: "Chop common forest timber in the Overworld.",
         desc_vi: "Khai thác các loại gỗ phổ thông trong rừng Overworld.",
         reward: "0.50x Daily | 50 XP" },
       { id: "log_ow_med", branch: "LOGGING", diff: "MEDIUM", dim: "overworld", icon: "assets/icons/oak_sapling.png",
         name_en: "Exotic Timber (Medium)", name_vi: "Chặt Gỗ Hiếm (Trung Bình)",
         target_en: "Dark Oak / Acacia / Jungle / Cherry / Mangrove / Pale Oak (48–64)", target_vi: "Gỗ Sồi Sẫm / Keo / Rừng Nhiệt Đới / Anh Đào / Đước / Pale Oak (48–64)",
+        targets: [
+          { icon: "assets/icons/mc/dark_oak_log.png", vi: "Gỗ Sồi Sẫm / Keo", en: "Dark Oak / Acacia Log", qty: "48–64" },
+          { icon: "assets/icons/mc/jungle_log.png", vi: "Gỗ Rừng Rậm / Đước", en: "Jungle / Mangrove Log", qty: "48–64" },
+          { icon: "assets/icons/mc/cherry_log.png", vi: "Gỗ Anh Đào (Cherry Log)", en: "Cherry Log", qty: "48–64" },
+          { icon: "assets/icons/mc/pale_oak_log.png", vi: "Gỗ Sồi Nhợt (Pale Oak Log)", en: "Pale Oak Log", qty: "48–64" }
+        ],
         desc_en: "Harvest specialty logs across diverse Overworld biomes.",
         desc_vi: "Thu hoạch các loại gỗ đặc trưng từ nhiều quần xã khác nhau.",
         reward: "1.80x Daily | 130 XP" },
       { id: "log_net", branch: "LOGGING", diff: "MEDIUM", dim: "nether", icon: "assets/icons/oak_sapling.png",
         name_en: "Nether Stem Harvesting (Easy/Med)", name_vi: "Chặt Thân Nấm Nether (Dễ/TB)",
         target_en: "Crimson / Warped Stems (20–30 Easy • 48–64 Med)", target_vi: "Thân Đỏ Thẫm / Dị Biến (20–30 Dễ • 48–64 TB)",
+        targets: [
+          { icon: "assets/icons/mc/crimson_stem.png", vi: "Thân Nấm Đỏ Thẫm (Crimson Stem)", en: "Crimson Stem", qty: "20–30 / 48–64" },
+          { icon: "assets/icons/mc/warped_stem.png", vi: "Thân Nấm Dị Biến (Warped Stem)", en: "Warped Stem", qty: "20–30 / 48–64" }
+        ],
         desc_en: "Unlocks at Adventure Level 15. Note: Logging never spawns in Hard slots.",
         desc_vi: "Mở khóa ở Adventure Lv 15. Lưu ý: Nhánh Chặt Gỗ không xuất hiện ở ô Khó.",
         reward: "1.20x Nether Mult | 60–156 XP" },
@@ -529,12 +631,24 @@
       { id: "gat_ow_easy", branch: "GATHER_SUBMIT", diff: "EASY", dim: "overworld", icon: "assets/icons/chest_front.png",
         name_en: "Overworld Delivery (Easy)", name_vi: "Giao Nộp Overworld (Dễ)",
         target_en: "Cobblestone / Sand (48–64) • Clay Ball / Moss Block (24–36)", target_vi: "Đá Cuội / Cát (48–64) • Đất Sét / Rêu (24–36)",
+        targets: [
+          { icon: "assets/icons/mc/cobblestone.png", vi: "Đá Cuội (Cobblestone)", en: "Cobblestone", qty: "48–64" },
+          { icon: "assets/icons/mc/sand.png", vi: "Cát (Sand)", en: "Sand", qty: "48–64" },
+          { icon: "assets/icons/mc/clay_ball.png", vi: "Đất Sét (Clay Ball)", en: "Clay Ball", qty: "24–36" },
+          { icon: "assets/icons/mc/moss_block.png", vi: "Khối Rêu (Moss Block)", en: "Moss Block", qty: "24–36" }
+        ],
         desc_en: "Gather items and submit via /quest GUI or /quest submit <slot>.",
         desc_vi: "Thu thập vật phẩm rồi nộp trực tiếp trong /quest hoặc /quest submit <ô>.",
         reward: "0.50x Daily | 50 XP" },
       { id: "gat_ow_med", branch: "GATHER_SUBMIT", diff: "MEDIUM", dim: "overworld", icon: "assets/icons/amethyst_shard.png",
         name_en: "Overworld Delivery (Medium)", name_vi: "Giao Nộp Overworld (Trung Bình)",
         target_en: "Honey Bottle (8–12) • Slime Ball (12–20) • Amethyst / Prismarine Shard (16–24)", target_vi: "Chai Mật Ong (8–12) • Slime Ball (12–20) • Mảnh Amethyst / Prismarine (16–24)",
+        targets: [
+          { icon: "assets/icons/mc/honey_bottle.png", vi: "Chai Mật Ong (Honey Bottle)", en: "Honey Bottle", qty: "8–12" },
+          { icon: "assets/icons/mc/slime_ball.png", vi: "Bóng Slime (Slime Ball)", en: "Slime Ball", qty: "12–20" },
+          { icon: "assets/icons/mc/amethyst_shard.png", vi: "Mảnh Thạch Anh Tím", en: "Amethyst Shard", qty: "16–24" },
+          { icon: "assets/icons/mc/prismarine_shard.png", vi: "Mảnh Prismarine", en: "Prismarine Shard", qty: "16–24" }
+        ],
         desc_en: "Gather mid-tier Overworld drops and submit in /quest.",
         desc_vi: "Thu thập nguyên liệu tầm trung và giao nộp qua /quest.",
         reward: "1.80x Daily | 130 XP" },
@@ -542,6 +656,13 @@
         name_en: "Overworld Delivery (Hard)", name_vi: "Giao Nộp Overworld (Khó)",
         target_en: "Echo Shard (4–8) • Breeze Rod (6–12) • Diamond (8–12) • Phantom Membrane (12–20) • Emerald / Prismarine Crystals (20–32)",
         target_vi: "Echo Shard (4–8) • Breeze Rod (6–12) • Kim Cương (8–12) • Màng Phantom (12–20) • Ngọc Lục Bảo / Tinh Thể Prismarine (20–32)",
+        targets: [
+          { icon: "assets/icons/mc/echo_shard.png", vi: "Mảnh Vang (Echo Shard)", en: "Echo Shard", qty: "4–8" },
+          { icon: "assets/icons/mc/breeze_rod.png", vi: "Que Gió (Breeze Rod)", en: "Breeze Rod", qty: "6–12" },
+          { icon: "assets/icons/mc/diamond.png", vi: "Kim Cương (Diamond)", en: "Diamond", qty: "8–12" },
+          { icon: "assets/icons/mc/phantom_membrane.png", vi: "Màng Phantom", en: "Phantom Membrane", qty: "12–20" },
+          { icon: "assets/icons/mc/emerald.png", vi: "Ngọc Lục Bảo / Prismarine", en: "Emerald / Prismarine Crystals", qty: "20–32" }
+        ],
         desc_en: "High-value Overworld delivery contract.",
         desc_vi: "Đơn giao nộp tài nguyên giá trị cao ở Overworld.",
         reward: "5.00x Daily | 320 XP" },
@@ -549,6 +670,14 @@
         name_en: "Nether Delivery (Easy/Med/Hard)", name_vi: "Giao Nộp Nether (Dễ/TB/Khó)",
         target_en: "Easy: Netherrack (48–64) | Med: Magma Cream (12–18), Glowstone/Quartz (24–40) | Hard: Ghast Tear (4–8), Blaze Rod (12–18), Crying Obsidian (16–24)",
         target_vi: "Dễ: Netherrack (48–64) | TB: Kem Magma (12–18), Glowstone/Thạch Anh (24–40) | Khó: Nước Mắt Ghast (4–8), Que Blaze (12–18), Hắc Diện Thạch Khóc (16–24)",
+        targets: [
+          { icon: "assets/icons/mc/netherrack.png", vi: "Netherrack (Dễ)", en: "Netherrack (Easy)", qty: "48–64" },
+          { icon: "assets/icons/mc/magma_cream.png", vi: "Kem Magma (TB)", en: "Magma Cream (Med)", qty: "12–18" },
+          { icon: "assets/icons/mc/glowstone_dust.png", vi: "Bụi Glowstone / Thạch Anh (TB)", en: "Glowstone / Quartz (Med)", qty: "24–40" },
+          { icon: "assets/icons/mc/ghast_tear.png", vi: "Nước Mắt Ghast (Khó)", en: "Ghast Tear (Hard)", qty: "4–8" },
+          { icon: "assets/icons/mc/blaze_rod.png", vi: "Que Blaze (Khó)", en: "Blaze Rod (Hard)", qty: "12–18" },
+          { icon: "assets/icons/mc/crying_obsidian.png", vi: "Hắc Diện Thạch Khóc (Khó)", en: "Crying Obsidian (Hard)", qty: "16–24" }
+        ],
         desc_en: "Unlocks at Adventure Level 15. Includes 1.20x Nether multiplier.",
         desc_vi: "Mở khóa ở Adventure Lv 15. Nhân thưởng Nether 1.20x.",
         reward: "1.20x Nether Mult | 60–384 XP" },
@@ -556,6 +685,13 @@
         name_en: "The End Delivery (Easy/Med/Hard)", name_vi: "Giao Nộp The End (Dễ/TB/Khó)",
         target_en: "Easy: End Stone (32–48) | Med: Chorus Fruit (24–36), Purpur (32–48) | Hard: Shulker Shell (4–8), Ender Pearl (16–24)",
         target_vi: "Dễ: End Stone (32–48) | TB: Quả Chorus (24–36), Purpur (32–48) | Khó: Vỏ Shulker (4–8), Ngọc Ender (16–24)",
+        targets: [
+          { icon: "assets/icons/mc/end_stone.png", vi: "End Stone (Dễ)", en: "End Stone (Easy)", qty: "32–48" },
+          { icon: "assets/icons/mc/chorus_fruit.png", vi: "Quả Chorus (TB)", en: "Chorus Fruit (Med)", qty: "24–36" },
+          { icon: "assets/icons/mc/purpur_block.png", vi: "Khối Purpur (TB)", en: "Purpur Block (Med)", qty: "32–48" },
+          { icon: "assets/icons/mc/shulker_shell.png", vi: "Vỏ Shulker (Khó)", en: "Shulker Shell (Hard)", qty: "4–8" },
+          { icon: "assets/icons/mc/ender_pearl.png", vi: "Ngọc Ender (Khó)", en: "Ender Pearl (Hard)", qty: "16–24" }
+        ],
         desc_en: "Unlocks at Adventure Level 30. Includes 1.40x End multiplier.",
         desc_vi: "Mở khóa ở Adventure Lv 30. Nhân thưởng The End 1.40x.",
         reward: "1.40x End Mult | 70–448 XP" },
@@ -564,30 +700,45 @@
       { id: "fis_ow_easy", branch: "FISHING", diff: "EASY", dim: "overworld", icon: "assets/icons/fishing_rod.png",
         name_en: "Casual Fishing (Easy)", name_vi: "Câu Cá Thường (Dễ)",
         target_en: "Reel in 10–14 catches", target_vi: "Câu thành công 10–14 lần",
+        targets: [
+          { icon: "assets/icons/fishing_rod.png", vi: "Mọi lần câu cá / kho báu", en: "Any Fish / Treasure Catch", qty: "10–14" }
+        ],
         desc_en: "Any fish, treasure, or catch counts toward progress.",
         desc_vi: "Mọi lần giật cần câu cá, kho báu hoặc sinh vật biển đều được tính.",
         reward: "0.50x Daily | 50 XP" },
       { id: "fis_ow_med", branch: "FISHING", diff: "MEDIUM", dim: "overworld", icon: "assets/icons/fishing_rod.png",
         name_en: "Sea Creature Hunter (Medium)", name_vi: "Săn Thủy Quái Câu Cá (Trung Bình)",
         target_en: "Slay 4–6 Sea Creatures", target_vi: "Hạ gục 4–6 Thủy Quái (Sea Creatures)",
+        targets: [
+          { icon: "assets/icons/diamond_sword.png", vi: "Hạ gục Thủy Quái câu được", en: "Slay Fished Sea Creatures", qty: "4–6" }
+        ],
         desc_en: "Fish up and defeat Expedition Fishing Sea Creatures.",
         desc_vi: "Câu lên và tiêu diệt các Thủy Quái trong hệ thống Expedition Fishing.",
         reward: "1.80x Daily | 130 XP" },
       { id: "fis_ow_hard", branch: "FISHING", diff: "HARD", dim: "overworld", icon: "assets/icons/fishing_rod.png",
         name_en: "Rare & Treasure Catcher (Hard)", name_vi: "Câu Kho Báu & Thủy Quái Hiếm (Khó)",
         target_en: "Fish up 3–4 Treasures or Rare Creatures", target_vi: "Câu được 3–4 Kho Báu hoặc Thủy Quái Hiếm",
+        targets: [
+          { icon: "assets/icons/nether_star.png", vi: "Kho Báu / Thủy Quái Hiếm", en: "Treasures or Rare Sea Creatures", qty: "3–4" }
+        ],
         desc_en: "High-tier Expedition Fishing luck challenge.",
         desc_vi: "Thử thách câu kho báu hoặc thủy quái hiếm.",
         reward: "5.00x Daily | 320 XP" },
       { id: "fis_lava", branch: "FISHING", diff: "HARD", dim: "nether", icon: "assets/icons/blaze_powder.png",
         name_en: "Nether Lava Fishing (Med/Hard)", name_vi: "Câu Cá Dung Nham Nether (TB/Khó)",
         target_en: "Catch 8–12 (Med) or 16–22 (Hard) times in Nether Lava", target_vi: "Câu 8–12 (TB) hoặc 16–22 (Khó) lần trong Lava Nether",
+        targets: [
+          { icon: "assets/icons/blaze_powder.png", vi: "Câu trong Dung Nham Nether (TB / Khó)", en: "Nether Lava Catches (Med / Hard)", qty: "8–12 / 16–22" }
+        ],
         desc_en: "Requires Adventure Lv 15+ and Fishing Lv 27+.",
         desc_vi: "Yêu cầu Adventure Lv 15+ và Fishing Lv 27+.",
         reward: "1.20x Nether Mult | 156–384 XP" },
       { id: "fis_void", branch: "FISHING", diff: "HARD", dim: "end", icon: "assets/icons/ender_pearl.png",
         name_en: "The End Void Fishing (Med/Hard)", name_vi: "Câu Cá Hư Không The End (TB/Khó)",
         target_en: "Catch 8–10 (Med) or 14–20 (Hard) times in The End Void", target_vi: "Câu 8–10 (TB) hoặc 14–20 (Khó) lần tại Void The End",
+        targets: [
+          { icon: "assets/icons/ender_pearl.png", vi: "Câu tại Hư Không The End (TB / Khó)", en: "End Void Catches (Med / Hard)", qty: "8–10 / 14–20" }
+        ],
         desc_en: "Requires Adventure Lv 30+ and Fishing Lv 35+.",
         desc_vi: "Yêu cầu Adventure Lv 30+ và Fishing Lv 35+.",
         reward: "1.40x End Mult | 182–448 XP" },
@@ -597,6 +748,12 @@
         name_en: "Overworld Slayer (Easy)", name_vi: "Săn Quái Overworld (Dễ)",
         target_en: "Zombie/Skeleton/Spider/Husk/Stray (14–20) • Creeper/Drowned/Cave Spider (10–15) • Slime (8–14)",
         target_vi: "Zombie/Skeleton/Nhện/Husk/Stray (14–20) • Creeper/Drowned/Cave Spider (10–15) • Slime (8–14)",
+        targets: [
+          { icon: "assets/icons/mc/zombie_spawn_egg.png", vi: "Zombie / Husk / Drowned", en: "Zombie / Husk / Drowned", qty: "10–20" },
+          { icon: "assets/icons/mc/skeleton_spawn_egg.png", vi: "Skeleton / Stray / Nhện", en: "Skeleton / Stray / Spider", qty: "14–20" },
+          { icon: "assets/icons/mc/creeper_spawn_egg.png", vi: "Creeper / Cave Spider", en: "Creeper / Cave Spider", qty: "10–15" },
+          { icon: "assets/icons/mc/slime_spawn_egg.png", vi: "Slime", en: "Slime", qty: "8–14" }
+        ],
         desc_en: "Hunt common Overworld hostile mobs.",
         desc_vi: "Tiêu diệt các quái vật phổ thông ở Overworld.",
         reward: "0.50x Daily | 50 XP" },
@@ -604,6 +761,12 @@
         name_en: "Overworld Slayer (Medium)", name_vi: "Săn Quái Overworld (Trung Bình)",
         target_en: "Pillager/Bogged/Silverfish (12–18) • Phantom/Guardian (8–12) • Witch (6–10) • Breeze/Zombie Villager (4–6)",
         target_vi: "Pillager/Bogged/Silverfish (12–18) • Phantom/Guardian (8–12) • Phù Thủy (6–10) • Breeze/Dân Làng Zombie (4–6)",
+        targets: [
+          { icon: "assets/icons/mc/pillager_spawn_egg.png", vi: "Pillager / Bogged / Silverfish", en: "Pillager / Bogged / Silverfish", qty: "12–18" },
+          { icon: "assets/icons/mc/phantom_spawn_egg.png", vi: "Phantom / Guardian", en: "Phantom / Guardian", qty: "8–12" },
+          { icon: "assets/icons/mc/witch_spawn_egg.png", vi: "Phù Thủy (Witch)", en: "Witch", qty: "6–10" },
+          { icon: "assets/icons/mc/breeze_spawn_egg.png", vi: "Breeze / Dân Làng Zombie", en: "Breeze / Zombie Villager", qty: "4–6" }
+        ],
         desc_en: "Hunt specialized Overworld mobs and Trial Chamber foes.",
         desc_vi: "Săn các quái đặc biệt và quái trong Trial Chamber.",
         reward: "1.80x Daily | 130 XP" },
@@ -611,6 +774,12 @@
         name_en: "Overworld Elite & Boss Bounty (Hard)", name_vi: "Săn Tinh Anh & Boss Overworld (Khó)",
         target_en: "Warden (x1 • 1.5x) • Elder Guardian (x1 • 1.5x) • Ravager (2–3) • Evoker (3–5) • Vindicator (10–15)",
         target_vi: "Warden (x1 • 1.5x) • Elder Guardian (x1 • 1.5x) • Ravager (2–3) • Evoker (3–5) • Vindicator (10–15)",
+        targets: [
+          { icon: "assets/icons/mc/warden_spawn_egg.png", vi: "Warden (Boss)", en: "Warden (Boss)", qty: "x1 • 1.5x", boss: true },
+          { icon: "assets/icons/mc/elder_guardian_spawn_egg.png", vi: "Elder Guardian (Boss)", en: "Elder Guardian (Boss)", qty: "x1 • 1.5x", boss: true },
+          { icon: "assets/icons/mc/ravager_spawn_egg.png", vi: "Ravager", en: "Ravager", qty: "2–3" },
+          { icon: "assets/icons/mc/pillager_spawn_egg.png", vi: "Evoker (3–5) / Vindicator (10–15)", en: "Evoker (3–5) / Vindicator (10–15)", qty: "3–15" }
+        ],
         desc_en: "Warden & Elder Guardian bounties grant an extra 1.5x Coin & XP bonus!",
         desc_vi: "Nhiệm vụ săn Warden & Elder Guardian được nhân thêm 1.5x Coins & XP!",
         reward: "5.00x (up to 7.50x Boss) | 320–480 XP" },
@@ -618,6 +787,12 @@
         name_en: "Nether Slayer & Wither Bounty (Easy/Med/Hard)", name_vi: "Săn Quái Nether & Wither (Dễ/TB/Khó)",
         target_en: "Easy: Zombified Piglin (14–20), Magma Cube (10–16) | Med: Blaze/Piglin (12–18), Hoglin (8–14) | Hard: Wither (x1 • 1.5x), Piglin Brute (4–7), Ghast (8–14), Wither Skeleton (16–24)",
         target_vi: "Dễ: Zombified Piglin (14–20), Magma Cube (10–16) | TB: Blaze/Piglin (12–18), Hoglin (8–14) | Khó: Wither (x1 • 1.5x), Piglin Brute (4–7), Ghast (8–14), Wither Skeleton (16–24)",
+        targets: [
+          { icon: "assets/icons/mc/wither_spawn_egg.png", vi: "Wither (Boss • Khó)", en: "Wither (Boss • Hard)", qty: "x1 • 1.5x", boss: true },
+          { icon: "assets/icons/mc/zombified_piglin_spawn_egg.png", vi: "Zombified Piglin / Magma Cube (Dễ)", en: "Zombified Piglin / Magma Cube (Easy)", qty: "10–20" },
+          { icon: "assets/icons/mc/blaze_spawn_egg.png", vi: "Blaze / Piglin / Hoglin (TB)", en: "Blaze / Piglin / Hoglin (Med)", qty: "8–18" },
+          { icon: "assets/icons/mc/ghast_spawn_egg.png", vi: "Ghast / Piglin Brute / Wither Skel (Khó)", en: "Ghast / Brute / Wither Skel (Hard)", qty: "4–24" }
+        ],
         desc_en: "Unlocks at Adventure Level 15. Wither bounty grants 1.5x extra Coins & XP.",
         desc_vi: "Mở khóa ở Adventure Lv 15. Săn Wither được nhân thêm 1.5x Coins & XP.",
         reward: "1.20x Nether (up to 9.0x Wither) | 60–576 XP" },
@@ -625,6 +800,11 @@
         name_en: "The End Slayer & Dragon Bounty (Easy/Med/Hard)", name_vi: "Săn Quái The End & Ender Dragon (Dễ/TB/Khó)",
         target_en: "Easy: Enderman (10–15), Endermite (6–10) | Med: Enderman (20–28), Shulker (6–10) | Hard: Ender Dragon (x1 • 1.5x), Shulker (12–18), Enderman (35–50)",
         target_vi: "Dễ: Enderman (10–15), Endermite (6–10) | TB: Enderman (20–28), Shulker (6–10) | Khó: Ender Dragon (x1 • 1.5x), Shulker (12–18), Enderman (35–50)",
+        targets: [
+          { icon: "assets/icons/mc/ender_dragon_spawn_egg.png", vi: "Ender Dragon (Boss • Khó)", en: "Ender Dragon (Boss • Hard)", qty: "x1 • 1.5x", boss: true },
+          { icon: "assets/icons/mc/enderman_spawn_egg.png", vi: "Enderman (Dễ / TB / Khó)", en: "Enderman (Easy / Med / Hard)", qty: "10–50" },
+          { icon: "assets/icons/mc/shulker_spawn_egg.png", vi: "Shulker (TB / Khó)", en: "Shulker (Med / Hard)", qty: "6–18" }
+        ],
         desc_en: "Unlocks at Adventure Level 30. Ender Dragon bounty grants 1.5x extra Coins & XP.",
         desc_vi: "Mở khóa ở Adventure Lv 30. Săn Ender Dragon được nhân thêm 1.5x Coins & XP.",
         reward: "1.40x End (up to 10.5x Dragon) | 70–672 XP" },
@@ -634,18 +814,29 @@
         name_en: "Boat, Mount & Swim Travel", name_vi: "Di Chuyển Bằng Thuyền, Thú Cưỡi & Bơi",
         target_en: "Boat: 500m (E) / 1,200m (M) / 2,500m (H) • Mount: 600m (E) / 1,500m (M) / 3,000m (H) • Swim: 300m (E) / 1,000m (M)",
         target_vi: "Thuyền: 500m (D) / 1,200m (TB) / 2,500m (K) • Thú cưỡi: 600m (D) / 1,500m (TB) / 3,000m (K) • Bơi: 300m (D) / 1,000m (TB)",
+        targets: [
+          { icon: "assets/icons/mc/oak_boat.png", vi: "Chèo Thuyền (Dễ / TB / Khó)", en: "Boat Travel (E / M / H)", qty: "500–2,500m" },
+          { icon: "assets/icons/mc/saddle.png", vi: "Cưỡi Thú (Dễ / TB / Khó)", en: "Mount Travel (E / M / H)", qty: "600–3,000m" },
+          { icon: "assets/icons/mc/water_bucket.png", vi: "Bơi Lội (Dễ / TB)", en: "Swimming (E / M)", qty: "300–1,000m" }
+        ],
         desc_en: "Tracked via 12-block movement checkpoints.",
         desc_vi: "Tính tiến độ theo từng mốc di chuyển mỗi 12 block.",
         reward: "0.50x / 1.80x / 5.00x | 50–320 XP" },
       { id: "act_strider", branch: "ACTION", diff: "HARD", dim: "nether", icon: "assets/icons/blaze_powder.png",
         name_en: "Lava Strider Riding (Med/Hard)", name_vi: "Cưỡi Strider Trên Dung Nham (TB/Khó)",
         target_en: "Ride Strider 700m (Med) or 1,500m (Hard) in The Nether", target_vi: "Cưỡi Strider 700m (TB) hoặc 1,500m (Khó) tại Nether",
+        targets: [
+          { icon: "assets/icons/mc/strider_spawn_egg.png", vi: "Cưỡi Strider trên Lava (TB / Khó)", en: "Ride Strider on Lava (Med / Hard)", qty: "700m / 1,500m" }
+        ],
         desc_en: "Unlocks at Adventure Level 15. Includes 1.20x Nether multiplier.",
         desc_vi: "Mở khóa ở Adventure Lv 15. Nhân thưởng Nether 1.20x.",
         reward: "1.20x Nether Mult | 156–384 XP" },
       { id: "act_elytra", branch: "ACTION", diff: "HARD", dim: "end", icon: "assets/icons/nether_star.png",
         name_en: "Elytra Flight (Med/Hard)", name_vi: "Bay Lượn Bằng Elytra (TB/Khó)",
         target_en: "Glide 2,500m (Med) or 5,000m (Hard) with Elytra", target_vi: "Lướt Elytra 2,500m (TB) hoặc 5,000m (Khó)",
+        targets: [
+          { icon: "assets/icons/mc/elytra.png", vi: "Bay lượn bằng Elytra (TB / Khó)", en: "Elytra Glide (Med / Hard)", qty: "2,500m / 5,000m" }
+        ],
         desc_en: "Requires Adventure Level 30 (End Unlock).",
         desc_vi: "Yêu cầu Adventure Lv 30 (Mở khóa The End).",
         reward: "1.0x–1.4x Mult | 130–448 XP" },
@@ -653,6 +844,13 @@
         name_en: "Crafting, Farming & Villager Actions", name_vi: "Nông Nghiệp, Chế Tạo & Giao Dịch",
         target_en: "Harvest Crops (24–36 E) • Shear Sheep (8–12 E) • Smelt (16–24 E / 32–48 M) • Enchant (2–3 E / 4–6 M) • Brew (6–9 M) • Anvil (3–6 M) • Villager Trade (5–8 E / 8–12 M)",
         target_vi: "Thu hoạch nông sản (24–36 D) • Cắt lông cừu (8–12 D) • Nung lò (16–24 D / 32–48 TB) • Phù phép (2–3 D / 4–6 TB) • Pha thuốc (6–9 TB) • Đập đe (3–6 TB) • Trao đổi Dân làng (5–8 D / 8–12 TB)",
+        targets: [
+          { icon: "assets/icons/mc/wheat.png", vi: "Thu hoạch nông sản (Dễ)", en: "Harvest Crops (Easy)", qty: "24–36" },
+          { icon: "assets/icons/mc/shears.png", vi: "Cắt lông cừu (Dễ)", en: "Shear Sheep (Easy)", qty: "8–12" },
+          { icon: "assets/icons/mc/blast_furnace.png", vi: "Nung lò (Dễ / TB)", en: "Smelt Items (Easy / Med)", qty: "16–48" },
+          { icon: "assets/icons/enchanted_book.png", vi: "Phù phép (2–6) / Pha thuốc (6–9)", en: "Enchant (2–6) / Brew (6–9)", qty: "2–9" },
+          { icon: "assets/icons/mc/anvil.png", vi: "Đập đe (3–6 TB) / Dân làng (5–12)", en: "Anvil (3–6 M) / Trade (5–12)", qty: "3–12" }
+        ],
         desc_en: "Complete everyday survival station & farming tasks.",
         desc_vi: "Thực hiện các thao tác sinh tồn tại bàn phù phép, lò nung, đe, giàn pha thuốc và dân làng.",
         reward: "0.50x / 1.80x Daily | 50 / 130 XP" }
@@ -828,6 +1026,20 @@
         ? `Đang hiển thị ${list.length} / ${QUESTS_DATA.length} nhóm nhiệm vụ`
         : `Showing ${list.length} of ${QUESTS_DATA.length} quest pools`;
 
+      function renderTargetList(it, vi) {
+        const rows = it.targets || [];
+        if (!rows.length) return `<div class="q-desc">${esc(vi ? it.target_vi : it.target_en)}</div>`;
+        return `<div class="q-target-list">${rows.map(r => `
+          <div class="q-target-row">
+            <div class="q-target-left">
+              <img class="mc-pixel" src="${esc(r.icon)}" loading="lazy" alt=""/>
+              <span class="q-target-name">${esc(vi ? r.vi : r.en)}</span>
+            </div>
+            <span class="q-qty-pill ${r.boss ? 'boss' : ''}">${esc(r.qty)}</span>
+          </div>
+        `).join("")}</div>`;
+      }
+
       document.getElementById("questsGrid").innerHTML = list.map(it => `
         <div class="quest-card" onclick="openQuestModal('${it.id}')">
           <div class="card-top">
@@ -841,7 +1053,7 @@
             <span class="badge diff-${it.diff}">${it.diff}</span>
             <span class="badge dim-pill">${esc(dimLabel(it.dim, vi))}</span>
           </div>
-          <div class="q-desc">${esc(vi ? it.target_vi : it.target_en)}</div>
+          ${renderTargetList(it, vi)}
           <div class="q-foot">
             <span class="badge reward-pill">${esc(it.reward)}</span>
           </div>
@@ -860,10 +1072,21 @@
         <span class="badge dim-pill">${esc(dimLabel(it.dim, vi))}</span>
         <span class="badge">${esc(it.branch)}</span>
       `;
+      const targetHtml = (it.targets && it.targets.length)
+        ? `<div class="q-target-list">${it.targets.map(r => `
+            <div class="q-target-row">
+              <div class="q-target-left">
+                <img class="mc-pixel" src="${esc(r.icon)}" style="width:24px;height:24px;" alt=""/>
+                <span class="q-target-name" style="font-size:0.86rem;">${esc(vi ? r.vi : r.en)}</span>
+              </div>
+              <span class="q-qty-pill ${r.boss ? 'boss' : ''}">${esc(r.qty)}</span>
+            </div>
+          `).join("")}</div>`
+        : `<div style="font-size:0.9rem;color:#f8fafc;">${esc(vi ? it.target_vi : it.target_en)}</div>`;
       document.getElementById("qModalBody").innerHTML = `
         <div class="modal-section">
           <div class="modal-sec-title"><img class="mc-pixel" src="assets/icons/compass.png" alt=""/> ${vi ? "Mục Tiêu & Số Lượng" : "Targets & Quantities"}</div>
-          <div style="font-size:0.9rem;color:#f8fafc;">${esc(vi ? it.target_vi : it.target_en)}</div>
+          ${targetHtml}
         </div>
         <div class="modal-section">
           <div class="modal-sec-title"><img class="mc-pixel" src="assets/icons/writable_book.png" alt=""/> ${vi ? "Cơ Chế & Điều Kiện" : "Mechanics & Requirements"}</div>
