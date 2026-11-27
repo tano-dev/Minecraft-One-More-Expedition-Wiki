@@ -1769,7 +1769,11 @@
     });
 
     function filterAndSortData() {
+      const hasSearch = Boolean((currentSearch || "").trim());
       const filtered = allData.map(getEffectiveItem).filter(item => {
+        if (item.namespace === "mt" && !hasSearch && currentPack !== "mt") {
+          if (currentTier !== "all" || currentGear !== "all") return false;
+        }
         if (item.enabled === false && currentTier !== "all") return false;
         if (currentTier === "all" && item.tier === "ultimate") return false;
         if (currentTier === "curse") {
@@ -1825,6 +1829,8 @@
 
       const TIER_RANK = { ultimate: 0, epic: 1, rare: 2, common: 3, curse: 4 };
       filtered.sort((a, b) => {
+        const mtCmp = (a.namespace === "mt" ? 1 : 0) - (b.namespace === "mt" ? 1 : 0);
+        if (mtCmp !== 0) return mtCmp;
         const nameCmp = (a.name || "").localeCompare(b.name || "");
         if (currentSort === "tier") {
           const ra = TIER_RANK[a.tier] ?? (typeof a.tier_order === "number" ? a.tier_order : 99);
