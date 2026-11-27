@@ -532,7 +532,7 @@
         if (dim !== "all" && x.dim !== dim) return false;
         if (pack !== "all" && x.pack !== pack) return false;
         if (q) {
-          const hay = [x.id, x.name_en, x.name_vi, x.pack].join(" ").toLowerCase();
+          const hay = [x.id, x.name_en, x.name_vi, x.pack, x.where_en, x.where_vi, x.spawns_en, x.spawns_vi].filter(Boolean).join(" ").toLowerCase();
           if (!hay.includes(q)) return false;
         }
         return true;
@@ -957,6 +957,7 @@
             </div>
           </div>
         </div>` : ""}
+        ${x.spawns_en ? `<div class="modal-sec"><strong>${vi ? "Có thể xuất hiện tại (Biomes):" : "Spawn Biomes:"}</strong> ${esc(vi ? x.spawns_vi : x.spawns_en)}</div>` : ""}
         ${x.step ? `<div class="modal-sec"><strong>${vi ? "Tầng tạo sinh (Generation Step):" : "Generation Step:"}</strong> ${esc(x.step)}</div>` : ""}
         <div class="modal-sec">
           <strong>${vi ? "ID / Lệnh tham khảo:" : "Reference ID / Locate Command:"}</strong>
