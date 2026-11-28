@@ -402,11 +402,55 @@
                 <span class="badge aqua">HUD / STASH</span>
               </div>
               <ul class="feat-list">
-                <li><span><code>/sidebar toggle</code> — ${vi ? "Bật/tắt bảng thông tin HUD bên phải màn hình." : "Toggle the right-hand server HUD sidebar."}</span></li>
-                <li><span><code>/tips</code> — ${vi ? "Xem danh sách mẹo & lệnh hữu ích của server." : "Show server tips & quick commands."}</span></li>
-                <li><span><code>/stash</code> — ${vi ? "Mở kho nhận thưởng Boss & Quest (tối đa <strong>540 ô</strong>). Đã tắt tự nhặt block/mob drop (<code>autoPickup=false</code>)." : "Open Boss & Quest reward stash (up to <strong>540 slots</strong>). Block/mob auto-pickup is disabled."}</span></li>
+                <li><span><code>/sidebar toggle</code> | <code>/hud</code> — ${vi ? "Bật/tắt bảng thông tin HUD bên phải màn hình." : "Toggle the right-hand server HUD sidebar."}</span></li>
+                <li><span><code>/tips</code> | <code>/meo</code> — ${vi ? "Xem danh sách mẹo & lệnh hữu ích của server." : "Show server tips & quick commands."}</span></li>
+                <li><span><code>/stash</code> | <code>/kho</code> | <code>/rewards</code> — ${vi ? "Mở kho nhận thưởng Boss & Quest (tối đa <strong>540 ô</strong>). Đã tắt tự nhặt block/mob drop (<code>autoPickup=false</code>)." : "Open Boss & Quest reward stash (up to <strong>540 slots</strong>). Block/mob auto-pickup is disabled."}</span></li>
               </ul>
             </div>
+          </div>
+
+          <div class="tbl-wrap" style="margin-top: 12px;">
+            <table>
+              <thead>
+                <tr>
+                  <th>${vi ? "Nhóm Tính Năng" : "Category"}</th>
+                  <th>${vi ? "Lệnh Chính" : "Primary Command"}</th>
+                  <th>${vi ? "Lệnh Viết Tắt / Thay Thế (QoL Aliases)" : "QoL Aliases"}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Skyblock</strong></td>
+                  <td class="mono"><code>/is</code> • <code>/return</code> • <code>/visit</code> • <code>/invite</code></td>
+                  <td><code>/island</code>, <code>/skyblock</code>, <code>/sb</code> • <code>/back</code>, <code>/leave</code>, <code>/exit</code> • <code>/isvisit</code> • <code>/isinvite</code></td>
+                </tr>
+                <tr>
+                  <td><strong>${vi ? "Nhiệm Vụ & Câu Cá" : "Quests & Fishing"}</strong></td>
+                  <td class="mono"><code>/quest</code> • <code>/fish</code></td>
+                  <td><code>/q</code>, <code>/quests</code>, <code>/nv</code>, <code>/nhiemvu</code> • <code>/fishing</code>, <code>/fs</code>, <code>/efish</code>, <code>/cauca</code>, <code>/ca</code></td>
+                </tr>
+                <tr>
+                  <td><strong>${vi ? "Kho & Tiện Ích" : "Stash & Utility"}</strong></td>
+                  <td class="mono"><code>/stash</code> • <code>/sidebar</code> • <code>/prefix</code> • <code>/redeem</code></td>
+                  <td><code>/kho</code>, <code>/rewards</code>, <code>/reward</code> • <code>/hud</code> • <code>/rank</code>, <code>/emblem</code>, <code>/danhhieu</code> • <code>/code</code>, <code>/giftcode</code>, <code>/nhapcode</code></td>
+                </tr>
+                <tr>
+                  <td><strong>${vi ? "Kinh Tế (EconomyCraft)" : "Economy"}</strong></td>
+                  <td class="mono"><code>/ah</code> • <code>/orders</code> • <code>/bal</code> • <code>/shop</code> • <code>/daily</code></td>
+                  <td><code>/auction</code>, <code>/daugia</code>, <code>/choden</code> • <code>/order</code>, <code>/dathang</code> • <code>/balance</code>, <code>/money</code>, <code>/coin</code>, <code>/tien</code>, <code>/vi</code> • <code>/store</code>, <code>/market</code>, <code>/cuahang</code> • <code>/checkin</code>, <code>/diemdanh</code></td>
+                </tr>
+                <tr>
+                  <td><strong>${vi ? "Giao Dịch & Giá" : "Trade & Worth"}</strong></td>
+                  <td class="mono"><code>/sell</code> • <code>/worth</code> • <code>/deliveries</code> • <code>/transactions</code></td>
+                  <td><code>/sellhand</code>, <code>/bando</code> • <code>/price</code>, <code>/giatri</code> • <code>/nhanhang</code>, <code>/giaohang</code> • <code>/history</code>, <code>/giaodich</code></td>
+                </tr>
+                <tr>
+                  <td><strong>${vi ? "Khám Phá & Xã Hội" : "Explore & Social"}</strong></td>
+                  <td class="mono"><code>/rtp</code> • <code>/skin</code> • <code>/flex</code> • <code>/wits</code></td>
+                  <td><code>/wild</code>, <code>/ngaunhien</code> • <code>/changeskin</code>, <code>/doiskin</code> • <code>/show</code>, <code>/khoe</code> • <code>/structure</code>, <code>/congtrinh</code></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
